@@ -12,7 +12,7 @@ import path from 'path';
  */
 export async function generateStaticParams() {
     // Tenta ler o diretório onde os JSONs estão.
-    const dataDir = path.join(process.cwd(), 'app', 'data');
+    const dataDir = path.join(process.cwd(), 'app', 'data', 'soccer');
     let allPicks = [];
 
     try {
@@ -35,7 +35,10 @@ export async function generateStaticParams() {
                             const picksForDay = JSON.parse(fileContent);
 
                             if (Array.isArray(picksForDay)) {
-                                const dayPicks = picksForDay.map(pick => ({ id: pick.id }));
+                                const dayPicks = picksForDay.map(pick => ({
+                                  date: `${year}-${month}-${dayFile.split('.')[0]}`, // <--- A CHAVETA '}' EXTRA ESTÁ AQUI
+                                  id: pick.id
+                                }));
                                 allPicks.push(...dayPicks);
                             }
                         } catch (e) {
@@ -49,8 +52,8 @@ export async function generateStaticParams() {
         console.error("[Build Error] Não foi possível ler o diretório base 'app/data'. Recorrendo a IDs simulados.", error);
         // Fallback: Retorna IDs de mock para garantir que o build estático não falha totalmente.
         return [
-            { id: 'futebol-001' },
-            { id: 'futebol-002' },
+            { date: '2025-11-04', id: 'futebol-001' },
+            { date: '2025-11-04', id: 'futebol-002' },
         ];
     }
 
@@ -64,12 +67,13 @@ export async function generateStaticParams() {
 /**
  * Componente da Página de Análise (Server Side).
  * Recebe o ID da rota e passa-o para o componente Cliente.
- * @param {{ params: { id: string } }} props
+ * @param {{ params: { id: string } date: string } }} props
  */
-export default function PickAnalysisPage({ params = { id: 'futebol-002' } }) {
+export default function PickAnalysisPage({ params = { id: 'futebol-002', date: new Date().toISOString().split('T')[0]} }: { params: { id: string, date: string} }) {
     // Garante que usamos o ID necessário
     const pickId = params.id || 'futebol-002';
+    const pickDate = params.date || new Date().toISOString().split('T')[0];
 
     // Renderiza o Cliente Component, passando o ID necessário.
-    return <PickAnalysisClient pickId={pickId} />;
+    return <PickAnalysisClient pickId={pickId} date={pickDate} />;
 }

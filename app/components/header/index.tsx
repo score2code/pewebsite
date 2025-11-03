@@ -6,7 +6,7 @@ const Header = ({ currentPath = '/' }) => {
     const navItems = [
         { name: 'Início', path: '/', icon: Home },
         { name: 'Futebol', path: '/futebol', icon: Goal },
-        { name: 'Tênis', path: '/tenis', icon: BarChart3 },
+        { name: 'Futebol Americano', path: '/futebol-americano', icon: BarChart3 },
         { name: 'Guias', path: '/guias', icon: BookOpen },
     ];
 
@@ -20,7 +20,7 @@ const Header = ({ currentPath = '/' }) => {
                     href="/"
                     className="text-2xl font-black text-green-500 cursor-pointer hover:text-green-400 transition"
                 >
-                    Apostas.net
+                    Palpite Esportivo
                 </a>
 
                 {/* Menu de Navegação */}

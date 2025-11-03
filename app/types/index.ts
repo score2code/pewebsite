@@ -1,4 +1,4 @@
-export interface PickData {
+export interface Pick {
   id: string;
   league: string;
   dateTime: string;

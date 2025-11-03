@@ -22,16 +22,14 @@ export interface PickData {
  */
 export async function getDailyPicks(dateString?: string): Promise<PickData[]> {
     try {
-        // Para este exemplo, vou manter o hardcode para o dia 2025-11-04 para que funcione com o arquivo que criamos.
-        // Em produção, você usaria new Date().
-        const date = dateString ? new Date(dateString) : new Date('2025-11-04');
+        const date = dateString ? new Date(dateString) : new Date();
 
         // Formata a data para YYYY/MM/DD
         const year = date.getFullYear();
         const month = String(date.getMonth() + 1).padStart(2, '0');
         const day = String(date.getDate()).padStart(2, '0');
 
-        // Cria o caminho do arquivo JSON: /project-root/data/YYYY/MM/DD.json
+        // Cria o caminho do arquivo JSON: /project-root/data/soccer/YYYY/MM/DD.json
         // process.cwd() garante que o caminho seja absoluto a partir da raiz do projeto.
         const filePath = path.join(process.cwd(), 'data', String(year), month, `${day}.json`);
 

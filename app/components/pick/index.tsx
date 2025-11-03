@@ -3,25 +3,22 @@
 import React from 'react';
 import { ChevronLeft, Loader, AlertTriangle, Trophy, TrendingUp } from 'lucide-react';
 
-const PickAnalysisClient = ({ pickId }) => {
+const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string, date: string, type?: string }) => {
     // Hooks de Estado
     const [pick, setPick] = React.useState(null);
     const [loading, setLoading] = React.useState(true);
+
+    console.log("PickAnalysisClient Props:", { pickId, date, type });
 
     // Efeito para buscar os dados da API
     React.useEffect(() => {
         const fetchAnalysis = async () => {
             setLoading(true);
 
-            // Usamos uma data mock fixa para simular o acesso ao ficheiro JSON
-            // no seu servidor (/app/data/2025/11/04.json).
-            // Numa aplicação real, esta data viria do componente pai.
-            const mockDate = '2025-11-04';
-
             try {
                 // 🛑 CORREÇÃO: Usar um URL absoluto (incluindo window.location.origin)
                 // para evitar o erro 'Failed to parse URL' em ambientes restritos.
-                const relativePath = `/api/picks?date=${mockDate}&id=${pickId}`;
+                const relativePath = `/api/picks?&type=${type}&date=${date}&id=${pickId}`;
                 // Garantir que a chamada fetch usa um URL que pode ser parseado corretamente.
                 const apiUrl = new URL(relativePath, window.location.origin).toString();
 

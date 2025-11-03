@@ -50,7 +50,7 @@ const PickCard = ({ pick, date }) => {
 
     // CORRIGIDO: Agora usa o router.push para navegar
     const handleNavigation = () => {
-        router.push(`/futebol/${date}/${pick.id}`);
+        router.push(`/futebol-americano/${date}/${pick.id}`);
     };
 
     return (
@@ -108,7 +108,7 @@ const PickCard = ({ pick, date }) => {
 
 // --- Componente Principal da Rota /futebol ---
 
-const Soccer = () => {
+const Football = () => {
     const getFormattedDate = () => {
       const date = new Date();
       const year = date.getFullYear();
@@ -130,12 +130,13 @@ const Soccer = () => {
         setIsLoading(true);
         setError(null);
 
+
         try {
             // Tenta buscar da API primeiro (com timeout)
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), 2000);
 
-            const response = await fetch(`${API_BASE_URL}?date=${date}`, { signal: controller.signal });
+            const response = await fetch(`${API_BASE_URL}?type=football&date=${date}`, { signal: controller.signal });
             clearTimeout(timeoutId);
 
             if (!response.ok) {
@@ -145,17 +146,17 @@ const Soccer = () => {
             const data = await response.json();
 
             if (data.data && data.data.length > 0) {
-                setPicksData(data.data);
+              setPicksData(data.data);
             } else {
               setPicksData([]);
             }
         } catch (err) {
-          // Se falhar a API (ou timeout), usa o mock
-          console.error("Erro ao buscar dados da API. Usando Mock Data:", err);
-          setError(`Não foi possível conectar à API. (Usando mock data, mas não há dados para ${date}).`);
-          setPicksData([]);
+            // Se falhar a API (ou timeout), usa o mock
+            console.error("Erro ao buscar dados da API. Usando Mock Data:", err);
+            setError(`Não foi possível conectar à API. (Usando mock data, mas não há dados para ${date}).`);
+            setPicksData([]);
         } finally {
-          setIsLoading(false);
+            setIsLoading(false);
         }
     }, []);
 
@@ -248,4 +249,4 @@ const Soccer = () => {
     );
 };
 
-export default Soccer;
+export default Football;

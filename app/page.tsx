@@ -3,6 +3,9 @@
 import React from 'react';
 // Importa apenas os ícones necessários para a Página Inicial.
 import { BarChart3, TrendingUp, BookOpen, Goal } from 'lucide-react';
+import PickCard from '@/app/components/pick/card';
+import { Pick } from '@/app/types';
+import soccerPicks from '@/app/data/soccer/2025/11/03.json';
 
 /**
  * Componente principal para a Página Inicial do site (simula o conteúdo de /page.tsx).
@@ -39,6 +42,8 @@ const HomePage = () => {
             color: 'text-yellow-500'
         },
     ];
+
+    const latestPicks: Pick[] = soccerPicks;
 
     // Estrutura principal da página
     return (
@@ -83,6 +88,16 @@ const HomePage = () => {
                             </div>
                         );
                     })}
+                </div>
+
+                {/* Seção de Últimos Palpites */}
+                <div className="mb-12">
+                    <h2 className="text-3xl font-bold text-white text-center mb-8">Últimos Palpites</h2>
+                    <div className="grid gap-8 md:grid-cols-2">
+                        {latestPicks.map((pick) => (
+                            <PickCard key={pick.id} pick={pick} />
+                        ))}
+                    </div>
                 </div>
 
                 {/* Seção de Destaque / Chamada à Ação */}

@@ -7,11 +7,12 @@ import path from 'path';
  * Acessa um arquivo JSON local: /app/data/{ano}/{mes}/{dia}.json
  *
  * Exemplo de uso:
- * GET /api/picks/?date=2025-11-04
- * GET /api/picks/?date=2025-11-04&id=futebol-002
+ * GET /api/picks/?type=soccer&date=2025-11-04
+ * GET /api/picks/?type=soccerdate=2025-11-04&id=futebol-002
  */
 export async function GET(request: NextRequest) {
     const url = new URL(request.url);
+    const typeQuery = url.searchParams.get('type') || 'soccer';
     const dateQuery = url.searchParams.get('date'); // Pega o valor de '?date=YYYY-MM-DD'
     const idQuery = url.searchParams.get('id');       // 🆕 Pega o valor do novo filtro '?id=...'
 
@@ -32,7 +33,7 @@ export async function GET(request: NextRequest) {
         }, { status: 400 });
     }
 
-    const filePath = path.join(process.cwd(), 'app', 'data', year, month, `${day}.json`);
+    const filePath = path.join(process.cwd(), 'app', 'data', typeQuery, year, month, `${day}.json`);
     let data;
 
     try {
