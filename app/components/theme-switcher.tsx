@@ -19,13 +19,13 @@ export function ThemeSwitcher() {
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+      className="p-2 rounded-lg bg-light-200 dark:bg-dark-700 hover:bg-light-300 dark:hover:bg-dark-600 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300 transform hover:scale-105"
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-gray-300"
+          className="h-5 w-5 text-purple-500"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -40,7 +40,7 @@ export function ThemeSwitcher() {
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-gray-700"
+          className="h-5 w-5 text-purple-600"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

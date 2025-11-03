@@ -35,15 +35,23 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, children }) => {
         <div className="relative" ref={dropdownRef}>
             <button
                 onClick={toggleDropdown}
-                className="flex items-center text-sm font-semibold p-2 rounded-lg transition duration-150 text-gray-300 hover:bg-gray-700 hover:text-white"
+                className="flex items-center text-sm font-semibold px-3 py-2 rounded-lg transition-all duration-300
+                    text-dark-900 dark:text-light-100
+                    hover:bg-light-200 dark:hover:bg-dark-700
+                    focus:outline-none focus:ring-2 focus:ring-purple-500"
             >
-                {/* {IconComponent && <IconComponent className="w-4 h-4 mr-1" />} */}
                 <span className="hidden sm:inline">{title}</span>
-                <ChevronDown className={`w-4 h-4 ml-1 transition-transform ${isOpen ? 'rotate-180' : 'rotate-0'}`} />
+                <ChevronDown
+                    className={`w-4 h-4 ml-1 transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}
+                    text-purple-600 dark:text-purple-400`}
+                />
             </button>
 
             {isOpen && (
-                <div className="absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-20">
+                <div className="absolute left-0 mt-2 w-48 bg-light-50 dark:bg-dark-800
+                    rounded-lg border border-light-300 dark:border-dark-600
+                    shadow-custom dark:shadow-custom-dark backdrop-blur-lg
+                    py-2 z-20 transform origin-top-left transition-all duration-200">
                     {children}
                 </div>
             )}

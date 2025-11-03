@@ -3,10 +3,15 @@ import { BarChart3 } from 'lucide-react';
 
 const Cta = () => {
     return (
-        <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl border border-dashed border-gray-200 dark:border-gray-700 text-center mb-12">
-            <p className="text-lg font-semibold text-gray-700 dark:text-gray-300">
-                <BarChart3 className="inline w-5 h-5 text-green-500 mr-2" />
-                Mais de 100 mil apostadores confiam em nossas análises diariamente. Junte-se à comunidade vencedora!
+        <div className="bg-light-100/50 dark:bg-dark-800/50 p-8 rounded-xl
+            border-2 border-dashed border-purple-500/30 dark:border-purple-400/30
+            text-center mb-12 backdrop-blur-sm
+            hover:border-purple-500 dark:hover:border-purple-400
+            transition-all duration-300">
+            <p className="text-lg font-semibold text-dark-900 dark:text-light-100 flex items-center justify-center">
+                <BarChart3 className="w-6 h-6 text-purple-600 dark:text-purple-400 mr-3" />
+                Mais de 100 mil apostadores confiam em nossas análises diariamente.
+                <span className="ml-2 text-purple-600 dark:text-purple-400">Junte-se à comunidade vencedora!</span>
             </p>
         </div>
     );

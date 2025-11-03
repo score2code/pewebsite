@@ -48,18 +48,18 @@ export default async function CompetitionPage({ params }: { params: { slug: stri
     const { standing, picks } = data;
 
     return (
-        <div className="bg-gray-900 text-white min-h-screen pt-8">
+        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen pt-8">
             <div className="max-w-6xl mx-auto">
                 {/* League Header */}
-                <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8 border-l-4 border-green-500">
-                    <h1 className="text-4xl font-bold">{standing.leagueName}</h1>
-                    <p className="text-lg text-gray-300 mt-2">Tudo sobre o {standing.country}</p>
+                <div className="bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8 border-l-4 border-green-500 dark:border-green-500">
+                    <h1 className="text-4xl font-bold text-gray-900 dark:text-white">{standing.leagueName}</h1>
+                    <p className="text-lg text-gray-700 dark:text-gray-300 mt-2">Tudo sobre o {standing.country}</p>
                 </div>
 
                 <div className="grid lg:grid-cols-3 gap-8">
                     {/* Main content: Picks */}
                     <div className="lg:col-span-2 space-y-8">
-                        <h2 className="text-3xl font-bold text-white">Últimos Palpites</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Últimos Palpites</h2>
                         {picks.length > 0 ? (
                             <div className="grid md:grid-cols-2 gap-6">
                                 {picks.map(pick => (
@@ -67,13 +67,13 @@ export default async function CompetitionPage({ params }: { params: { slug: stri
                                 ))}
                             </div>
                         ) : (
-                            <p className="text-gray-400">Nenhum palpite recente para este campeonato.</p>
+                            <p className="text-gray-700 dark:text-gray-400">Nenhum palpite recente para este campeonato.</p>
                         )}
                     </div>
 
                     {/* Sidebar: Standings */}
                     <div className="lg:col-span-1">
-                        <h2 className="text-3xl font-bold text-white mb-4">Classificação</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Classificação</h2>
                         <StandingsTable leagueStanding={standing} />
                     </div>
                 </div>

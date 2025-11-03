@@ -4,26 +4,14 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Zap, Calendar, AlertTriangle, Loader2 } from 'lucide-react';
 // IMPORTADO: useRouter para navegação programática
 import { useRouter } from 'next/navigation';
+import { Pick } from '@/app/types';
+import SportPickCard from '@/app/components/sports/pick-card';
 
 // --- Configuração e Tipagem ---
 
-/**
- * @typedef {object} Pick
- * @property {string} id
- * @property {string} league
- * @property {string} homeTeam
- * @property {string} awayTeam
- * @property {string} dateTime
- * @property {string} tip
- * @property {number} odds
- * @property {number} confidence
- * @property {string} result
- * @property {string} analysis
- */
-
 const API_BASE_URL = '/api/picks';
 
-const formatDateDisplay = (dateString) => {
+const formatDateDisplay = (dateString: string) => {
     const date = new Date(dateString + 'T03:00:00');
     return date.toLocaleDateString('pt-BR', {
         day: '2-digit',
@@ -32,7 +20,7 @@ const formatDateDisplay = (dateString) => {
     });
 };
 
-const changeDate = (currentDate, days) => {
+const changeDate = (currentDate: string, days: number) => {
     const date = new Date(currentDate + 'T00:00:00');
     date.setDate(date.getDate() + days);
     return date.toISOString().split('T')[0];
@@ -40,10 +28,12 @@ const changeDate = (currentDate, days) => {
 
 // --- Componentes de UI ---
 
-/**
- * @param {{ pick: Pick }} props
- */
-const PickCard = ({ pick, date }) => {
+interface LocalPickCardProps {
+    pick: Pick;
+    date: string;
+}
+
+const PickCard: React.FC<LocalPickCardProps> = ({ pick, date }) => {
     const router = useRouter(); // Inicializa o hook de roteamento
     const confidenceColor = pick.confidence >= 80 ? 'bg-green-600' :
                             pick.confidence >= 70 ? 'bg-yellow-600' : 'bg-red-600';
@@ -55,31 +45,34 @@ const PickCard = ({ pick, date }) => {
 
     return (
         <div
-            className="bg-gray-800 p-4 rounded-xl shadow-lg border border-gray-700 transition hover:border-green-500 cursor-pointer"
+            className="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 transition hover:border-green-500 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
             onClick={handleNavigation}
+            tabIndex={0} // Make the div focusable
+            role="link" // Indicate it acts as a link
+            aria-label={`Ver análise para ${pick.homeTeam} vs ${pick.awayTeam}`}
         >
             <div className="flex justify-between items-start mb-3">
-                <span className="text-sm font-semibold text-green-400 flex items-center">
+                <span className="text-sm font-semibold text-green-600 dark:text-green-400 flex items-center">
                     <Zap className="w-4 h-4 mr-1" />
                     {pick.league}
                 </span>
-                <span className="text-xs text-gray-400 flex items-center">
+                <span className="text-xs text-gray-700 dark:text-gray-400 flex items-center">
                     <Calendar className="w-3 h-3 mr-1" />
                     {pick.dateTime}
                 </span>
             </div>
 
             <div className="text-center mb-4">
-                <h3 className="text-xl font-bold text-white mb-1">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
                     {pick.homeTeam} vs {pick.awayTeam}
                 </h3>
             </div>
 
             <div className="grid grid-cols-3 gap-3 items-center text-center">
                 {/* Dica de Aposta */}
-                <div className="col-span-2 p-2 bg-gray-700 rounded-lg">
-                    <p className="text-xs text-gray-400">Palpite</p>
-                    <p className="text-lg font-extrabold text-white">{pick.tip}</p>
+                <div className="col-span-2 p-2 bg-gray-200 dark:bg-gray-700 rounded-lg">
+                    <p className="text-xs text-gray-700 dark:text-gray-400">Palpite</p>
+                    <p className="text-lg font-extrabold text-gray-900 dark:text-white">{pick.tip}</p>
                 </div>
 
                 {/* Odds */}
@@ -89,7 +82,7 @@ const PickCard = ({ pick, date }) => {
                 </div>
             </div>
 
-            <div className="mt-3 flex justify-end items-center pt-2 border-t border-gray-700/50">
+            <div className="mt-3 flex justify-end items-center pt-2 border-t border-gray-300 dark:border-gray-700/50">
                  <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${confidenceColor} text-white mr-auto`}>
                     Confiança: {pick.confidence}%
                 </span>
@@ -97,7 +90,7 @@ const PickCard = ({ pick, date }) => {
                 {/* Botão de Análise */}
                 <button
                     onClick={(e) => { e.stopPropagation(); handleNavigation(); }}
-                    className="px-3 py-1 text-sm font-semibold text-white bg-green-700 rounded-full hover:bg-green-600 transition duration-150 shadow-md"
+                    className="px-3 py-1 text-sm font-semibold text-white bg-green-700 rounded-full hover:bg-green-600 transition duration-150 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
                 >
                     Ver Análise
                 </button>
@@ -120,13 +113,12 @@ const Football = () => {
     const pickDate = getFormattedDate();
 
     const [selectedDate, setSelectedDate] = useState(pickDate);
-    /** @type {[Pick[], React.Dispatch<React.SetStateAction<Pick[]>>]} */
-    const [picksData, setPicksData] = useState([]);
+    const [picksData, setPicksData] = useState<Pick[]>([]);
     const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState<string | null>(null);
 
     // Função para buscar os dados da API
-    const fetchPicks = useCallback(async (date) => {
+    const fetchPicks = useCallback(async (date: string) => {
         setIsLoading(true);
         setError(null);
 
@@ -166,42 +158,49 @@ const Football = () => {
     }, [selectedDate, fetchPicks]);
 
     // Lida com a navegação de data
-    const handleDateChange = (days) => {
+    const handleDateChange = (days: number) => {
         const newDate = changeDate(selectedDate, days);
         setSelectedDate(newDate);
         fetchPicks(newDate);
     };
 
     return (
-        <div className="min-h-screen bg-gray-900 text-white font-sans p-4 sm:p-8">
+        <div className="min-h-screen font-sans p-4 sm:p-8">
             <div className="max-w-4xl mx-auto">
                 {/* Título Principal */}
                 <header className="text-center mb-8">
-                    <h1 className="text-3xl sm:text-4xl font-extrabold text-green-500 tracking-tight flex items-center justify-center">
+                    <h1 className="text-3xl sm:text-4xl font-extrabold text-purple-600 dark:text-purple-400 tracking-tight flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-trophy mr-3"><path d="M6 9H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2"/><path d="M6 10v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7"/><path d="M5 19v2"/><path d="M19 19v2"/><path d="M12 10l.75 3.5l1.5-2.5l1.5 2.5L17 10"/><path d="M12 17h0"/></svg>
                         Palpites do Dia
                     </h1>
-                    <p className="text-gray-400 mt-2">Análises e Odds Diárias para Apostas Esportivas</p>
+                    <p className="text-dark-900/70 dark:text-light-100/70 mt-2">Análises e Odds Diárias para Apostas Esportivas</p>
                 </header>
 
                 {/* Seletor de Data */}
-                <div className="flex justify-center items-center bg-gray-800 p-3 rounded-xl shadow-lg mb-8">
+                <div className="flex justify-center items-center bg-light-100/50 dark:bg-dark-800/50 p-4 rounded-xl
+                    shadow-custom dark:shadow-custom-dark border border-light-300 dark:border-dark-600 mb-8 backdrop-blur-sm">
                     <button
                         onClick={() => handleDateChange(-1)}
-                        className="p-2 rounded-full text-gray-400 hover:bg-gray-700 hover:text-white transition"
+                        className="p-2 rounded-lg text-dark-900/70 dark:text-light-100/70
+                            hover:bg-light-200 dark:hover:bg-dark-700
+                            hover:text-purple-600 dark:hover:text-purple-400
+                            transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
                         aria-label="Dia Anterior"
                     >
                         <ChevronLeft className="w-6 h-6" />
                     </button>
                     <div className="mx-4 text-center">
-                        <p className="text-sm text-gray-400 font-medium">Data Selecionada</p>
-                        <h2 className="text-xl font-bold text-white">
+                        <p className="text-sm text-dark-900/70 dark:text-light-100/70 font-medium">Data Selecionada</p>
+                        <h2 className="text-xl font-bold text-dark-900 dark:text-light-100">
                             {formatDateDisplay(selectedDate)}
                         </h2>
                     </div>
                     <button
                         onClick={() => handleDateChange(1)}
-                        className="p-2 rounded-full text-gray-400 hover:bg-gray-700 hover:text-white transition"
+                        className="p-2 rounded-lg text-dark-900/70 dark:text-light-100/70
+                            hover:bg-light-200 dark:hover:bg-dark-700
+                            hover:text-purple-600 dark:hover:text-purple-400
+                            transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
                         aria-label="Próximo Dia"
                     >
                         <ChevronRight className="w-6 h-6" />
@@ -212,13 +211,16 @@ const Football = () => {
                 <div className="min-h-[200px]">
                     {isLoading && (
                         <div className="flex justify-center items-center py-12">
-                            <Loader2 className="w-8 h-8 animate-spin text-green-500 mr-3" />
-                            <p className="text-lg text-gray-400">Carregando palpites...</p>
+                            <Loader2 className="w-8 h-8 animate-spin text-purple-600 dark:text-purple-400 mr-3" />
+                            <p className="text-lg text-dark-900/70 dark:text-light-100/70">Carregando palpites...</p>
                         </div>
                     )}
 
                     {error && !isLoading && (
-                        <div className="bg-red-900/30 p-4 rounded-lg flex items-center justify-center text-red-400 border border-red-700 shadow-md">
+                        <div className="bg-red-500/10 dark:bg-red-400/10 p-6 rounded-xl
+                            flex items-center justify-center text-red-600 dark:text-red-400
+                            border border-red-500/30 dark:border-red-400/30
+                            shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
                             <AlertTriangle className="w-5 h-5 mr-2" />
                             <p className="font-medium">{error}</p>
                         </div>
@@ -227,20 +229,23 @@ const Football = () => {
                     {!isLoading && !error && picksData.length > 0 && (
                         <div className="grid gap-6 md:grid-cols-2">
                             {picksData.map(pick => (
-                                <PickCard
+                                <SportPickCard
                                     key={pick.id}
                                     pick={pick}
                                     date={selectedDate}
+                                    sport="futebol-americano"
                                 />
                             ))}
                         </div>
                     )}
 
                     {!isLoading && !error && picksData.length === 0 && selectedDate && (
-                         <div className="bg-gray-800 p-6 rounded-lg text-center text-gray-400">
-                            <Calendar className="w-8 h-8 mx-auto mb-3 text-green-500" />
-                            <p className="text-lg font-semibold">Sem palpites agendados.</p>
-                            <p className="text-sm">Tente selecionar uma data diferente.</p>
+                        <div className="bg-light-100/50 dark:bg-dark-800/50 p-8 rounded-xl
+                            text-center border border-light-300 dark:border-dark-600
+                            shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+                            <Calendar className="w-8 h-8 mx-auto mb-3 text-purple-600 dark:text-purple-400" />
+                            <p className="text-lg font-semibold text-dark-900 dark:text-light-100">Sem palpites agendados.</p>
+                            <p className="text-sm text-dark-900/70 dark:text-light-100/70">Tente selecionar uma data diferente.</p>
                         </div>
                     )}
                 </div>

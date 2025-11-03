@@ -3,9 +3,11 @@
 import React from 'react';
 import { ChevronLeft, Loader, AlertTriangle, Trophy, TrendingUp } from 'lucide-react';
 
+import { Pick } from '@/app/types';
+
 const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string, date: string, type?: string }) => {
     // Hooks de Estado
-    const [pick, setPick] = React.useState(null);
+    const [pick, setPick] = React.useState<Pick | null>(null);
     const [loading, setLoading] = React.useState(true);
 
     console.log("PickAnalysisClient Props:", { pickId, date, type });

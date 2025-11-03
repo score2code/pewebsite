@@ -4,9 +4,30 @@ import Link from 'next/link';
 import DropdownMenu from '@/app/components/ui/dropdown-menu';
 import { ThemeSwitcher } from '@/app/components/theme-switcher';
 
+interface DropdownItem {
+    name: string;
+    path: string;
+}
+
+interface LinkNavItem {
+    name: string;
+    path: string;
+    icon: string;
+    type: 'link';
+}
+
+interface DropdownNavItem {
+    name: string;
+    icon: string;
+    type: 'dropdown';
+    items: DropdownItem[];
+}
+
+type NavItem = LinkNavItem | DropdownNavItem;
+
 const Header = ({ currentPath = '/' }) => {
     // Define os itens do menu e as rotas
-    const navItems = [
+    const navItems: NavItem[] = [
         { name: 'Início', path: '/', icon: 'Home', type: 'link' },
         {
             name: 'Palpites', icon: 'Goal', type: 'dropdown', items: [
@@ -43,30 +64,29 @@ const Header = ({ currentPath = '/' }) => {
     };
 
     return (
-        <nav className="bg-white dark:bg-gray-800 p-4 shadow-xl sticky top-0 z-10">
-            <div className="max-w-6xl mx-auto flex justify-between items-center">
-
+        <nav className="bg-light-50/80 dark:bg-dark-800/80 backdrop-blur-lg border-b border-light-300 dark:border-dark-600 sticky top-0 z-10">
+            <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
                 {/* Logo/Título Principal */}
                 <Link
                     href="/"
-                    className="text-2xl font-black text-green-500 cursor-pointer hover:text-green-400 transition"
+                    className="text-2xl font-black text-purple-600 dark:text-purple-400 cursor-pointer hover:text-purple-700 dark:hover:text-purple-300 transition-colors duration-300"
                 >
-                    Palpite Esportivo
+                    Palpites do dia
                 </Link>
 
                 {/* Menu de Navegação */}
-                <div className="flex space-x-4">
+                <div className="flex items-center space-x-2 md:space-x-4">
                     {navItems.map((item, index) => {
                         if (item.type === 'link') {
-                            const isActive = currentPath === item.path; // Verifica se a rota é a atual
+                            const isActive = currentPath === item.path;
                             return (
                                 <Link
                                     key={item.path}
                                     href={item.path}
-                                    className={`flex items-center text-sm font-semibold p-2 rounded-lg transition duration-150
+                                    className={`flex items-center text-sm font-semibold px-3 py-2 rounded-lg transition-all duration-300
                                         ${isActive
-                                            ? 'bg-green-600 text-white shadow-md'
-                                            : 'text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white'}`
+                                            ? 'bg-purple-600 text-white dark:bg-purple-500 dark:text-white shadow-lg'
+                                            : 'text-dark-900 dark:text-light-100 hover:bg-light-200 dark:hover:bg-dark-700'}`
                                     }
                                 >
                                     {renderIcon(item.icon)}
@@ -78,7 +98,7 @@ const Header = ({ currentPath = '/' }) => {
                                 <DropdownMenu key={item.name} title={item.name}>
                                     {item.items?.map(subItem => (
                                         <Link key={subItem.path} href={subItem.path}>
-                                            <span className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white">
+                                            <span className="block px-4 py-2 text-sm text-dark-900 dark:text-light-100 hover:bg-light-200 dark:hover:bg-dark-700 transition-colors duration-300">
                                                 {subItem.name}
                                             </span>
                                         </Link>
@@ -88,7 +108,9 @@ const Header = ({ currentPath = '/' }) => {
                         }
                         return null;
                     })}
-                    <ThemeSwitcher />
+                    <div className="border-l border-light-300 dark:border-dark-600 pl-2 md:pl-4">
+                        <ThemeSwitcher />
+                    </div>
                 </div>
             </div>
         </nav>

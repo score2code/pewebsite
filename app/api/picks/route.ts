@@ -2,6 +2,9 @@ import { NextResponse, NextRequest } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 /**
  * Rota GET para buscar palpites com base na data, com filtro opcional por ID.
  * Acessa um arquivo JSON local: /app/data/{ano}/{mes}/{dia}.json
