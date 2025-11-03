@@ -1,17 +1,10 @@
+
 import React from 'react';
 import PickAnalysisClient from '@/app/components/pick';
-
 import { promises as fs } from 'fs';
 import path from 'path';
 
-// --- Funções do SERVIDOR/BUILD (Obrigatórias) ---
-
-/**
- * Lê o sistema de ficheiros para gerar dinamicamente todos os IDs para o build estático.
- * @returns {Promise<{id: string}[]>}
- */
 export async function generateStaticParams() {
-    // Tenta ler o diretório onde os JSONs estão.
     const dataDir = path.join(process.cwd(), 'app', 'data', 'soccer');
     let allPicks = [];
 
@@ -29,14 +22,12 @@ export async function generateStaticParams() {
                 for (const dayFile of dayFiles) {
                     if (path.extname(dayFile) === '.json') {
                         const filePath = path.join(monthPath, dayFile);
-
                         try {
                             const fileContent = await fs.readFile(filePath, 'utf-8');
                             const picksForDay = JSON.parse(fileContent);
-
                             if (Array.isArray(picksForDay)) {
                                 const dayPicks = picksForDay.map(pick => ({
-                                  date: `${year}-${month}-${dayFile.split('.')[0]}`, // <--- A CHAVETA '}' EXTRA ESTÁ AQUI
+                                  date: `${year}-${month}-${dayFile.split('.')[0]}`,
                                   id: pick.id
                                 }));
                                 allPicks.push(...dayPicks);
@@ -49,31 +40,19 @@ export async function generateStaticParams() {
             }
         }
     } catch (error) {
-        console.error("[Build Error] Não foi possível ler o diretório base 'app/data'. Recorrendo a IDs simulados.", error);
-        // Fallback: Retorna IDs de mock para garantir que o build estático não falha totalmente.
+        console.error("[Build Error] Não foi possível ler o diretório base 'app/data'.", error);
         return [
-            { date: '2025-11-04', id: 'futebol-001' },
-            { date: '2025-11-04', id: 'futebol-002' },
+            { date: '2025-11-03', id: 'futebol-001' },
+            { date: '2025-11-03', id: 'futebol-002' },
         ];
     }
 
-    // Devolve a lista final de IDs únicos para o Next.js build
     return allPicks;
 }
 
+export default function PickAnalysisPage({ params }: { params: { id: string, date: string} }) {
+    const pickId = params.id;
+    const pickDate = params.date;
 
-// --- Componente Principal da Rota /futebol/[id] (SERVER COMPONENT) ---
-
-/**
- * Componente da Página de Análise (Server Side).
- * Recebe o ID da rota e passa-o para o componente Cliente.
- * @param {{ params: { id: string } date: string } }} props
- */
-export default function PickAnalysisPage({ params = { id: 'futebol-002', date: new Date().toISOString().split('T')[0]} }: { params: { id: string, date: string} }) {
-    // Garante que usamos o ID necessário
-    const pickId = params.id || 'futebol-002';
-    const pickDate = params.date || new Date().toISOString().split('T')[0];
-
-    // Renderiza o Cliente Component, passando o ID necessário.
-    return <PickAnalysisClient pickId={pickId} date={pickDate} />;
+    return <PickAnalysisClient pickId={pickId} type="soccer" date={pickDate} />;
 }

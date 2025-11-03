@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React from 'react';
 import { ChevronLeft, Loader, AlertTriangle, Trophy, TrendingUp } from 'lucide-react';
@@ -100,7 +100,7 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
                     </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {/* Odds e Dica */}
                     <div className="bg-gray-700 p-4 rounded-lg">
                         <p className="text-sm text-gray-400">Palpite Principal</p>

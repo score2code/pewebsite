@@ -1,0 +1,80 @@
+[
+    {
+        "matchId": "match-001",
+        "league": "BRASILEIRÃO SÉRIE A",
+        "homeTeam": "Palmeiras",
+        "awayTeam": "Internacional",
+        "dateTime": "HOJE, 19:00 BRT",
+        "bookmakers": [
+            {
+                "name": "BetExemplo",
+                "logoUrl": "/brand-512.png",
+                "affiliateLink": "#",
+                "odds": {
+                    "home": 2.10,
+                    "draw": 3.40,
+                    "away": 3.80
+                }
+            },
+            {
+                "name": "Super Aposta",
+                "logoUrl": "/brand-512.png",
+                "affiliateLink": "#",
+                "odds": {
+                    "home": 2.15,
+                    "draw": 3.30,
+                    "away": 3.75
+                }
+            },
+            {
+                "name": "Aposta Certa",
+                "logoUrl": "/brand-512.png",
+                "affiliateLink": "#",
+                "odds": {
+                    "home": 2.05,
+                    "draw": 3.50,
+                    "away": 3.90
+                }
+            }
+        ]
+    },
+    {
+        "matchId": "match-002",
+        "league": "PREMIER LEAGUE",
+        "homeTeam": "Arsenal",
+        "awayTeam": "Tottenham",
+        "dateTime": "AMANHÃ, 17:00 GMT",
+        "bookmakers": [
+            {
+                "name": "BetExemplo",
+                "logoUrl": "/brand-512.png",
+                "affiliateLink": "#",
+                "odds": {
+                    "home": 1.90,
+                    "draw": 3.60,
+                    "away": 4.20
+                }
+            },
+            {
+                "name": "Super Aposta",
+                "logoUrl": "/brand-512.png",
+                "affiliateLink": "#",
+                "odds": {
+                    "home": 1.95,
+                    "draw": 3.50,
+                    "away": 4.10
+                }
+            },
+            {
+                "name": "Aposta Certa",
+                "logoUrl": "/brand-512.png",
+                "affiliateLink": "#",
+                "odds": {
+                    "home": 1.88,
+                    "draw": 3.65,
+                    "away": 4.30
+                }
+            }
+        ]
+    }
+]
