@@ -128,7 +128,9 @@ const Football = () => {
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), 2000);
 
-            const response = await fetch(`${API_BASE_URL}?type=football&date=${date}`, { signal: controller.signal });
+            // Buscar o arquivo JSON estático correspondente (tipo 'football')
+            const fileName = `football-${date}.json`;
+            const response = await fetch(`${API_BASE_URL}/${fileName}`, { signal: controller.signal });
             clearTimeout(timeoutId);
 
             if (!response.ok) {

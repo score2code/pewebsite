@@ -20,9 +20,10 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
             try {
                 // 🛑 CORREÇÃO: Usar um URL absoluto (incluindo window.location.origin)
                 // para evitar o erro 'Failed to parse URL' em ambientes restritos.
-                const relativePath = `/api/picks?&type=${type}&date=${date}&id=${pickId}`;
-                // Garantir que a chamada fetch usa um URL que pode ser parseado corretamente.
-                const apiUrl = new URL(relativePath, window.location.origin).toString();
+                // Em hospedagem estática (GitHub Pages) a rota dinâmica não existe.
+                // Buscar diretamente o arquivo JSON estático gerado em out/api/picks
+                const fileName = pickId ? `${type}-${date}-${pickId}.json` : `${type}-${date}.json`;
+                const apiUrl = new URL(`/api/picks/${fileName}`, window.location.origin).toString();
 
                 const response = await fetch(apiUrl);
                 const result = await response.json();

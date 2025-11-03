@@ -31,6 +31,11 @@ jobs:
       - name: Generate API data (ensure out/api files)
         run: npm run generate-api
 
+      - name: Debug: list generated API files
+        run: |
+          echo "-- Listing out/api/picks --"
+          ls -la out/api/picks || true
+
       - name: Add .nojekyll
         run: |
           mkdir -p out
