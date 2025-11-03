@@ -1,3 +1,12 @@
+import { generateGuideMetadata } from '@/app/utils/metadata';
+import RelatedGuides from '@/app/components/related-guides';
+
+export const metadata = generateGuideMetadata({
+  title: 'Peculiaridades do Brasileirão: O Guia Definitivo',
+  description: 'Conheça as características únicas do Campeonato Brasileiro e como elas afetam suas análises. Guia completo sobre calendário, viagens, rotações e fatores climáticos no Brasileirão.',
+  path: 'peculiaridades-brasileirao',
+});
+
 export default function PeculiaridadesBrasileiraoPage() {
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -32,6 +41,26 @@ export default function PeculiaridadesBrasileiraoPage() {
               <li>Monitore mudanças de treinador e rendimento após contratações</li>
             </ul>
           </section>
+
+          <RelatedGuides
+            guides={[
+              {
+                title: 'Características da Premier League',
+                slug: 'caracteristicas-premier-league',
+                description: 'O futebol inglês e suas particularidades que influenciam probabilidades.',
+              },
+              {
+                title: 'Entendendo a Copa Libertadores',
+                slug: 'entendendo-libertadores',
+                description: 'Como analisar jogos da principal competição sul-americana.',
+              },
+              {
+                title: 'Impacto de Lesões e Suspensões',
+                slug: 'impacto-de-lesoes-e-suspensoes',
+                description: 'Como avaliar o impacto real de desfalques no desempenho das equipes.',
+              },
+            ]}
+          />
         </div>
       </article>
     </div>

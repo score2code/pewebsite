@@ -1,0 +1,5 @@
+pages:
+  branch: deploy
+  source:
+    branch: deploy
+    path: /

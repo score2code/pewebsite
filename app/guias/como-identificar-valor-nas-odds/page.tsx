@@ -1,3 +1,12 @@
+import { generateGuideMetadata } from '@/app/utils/metadata';
+import RelatedGuides from '@/app/components/related-guides';
+
+export const metadata = generateGuideMetadata({
+  title: 'Como Identificar Valor nas Odds: Guia Prático',
+  description: 'Aprenda métodos práticos para encontrar valor real nas odds. Guia completo sobre análise de probabilidades, comparação com odds do mercado e identificação de oportunidades de valor.',
+  path: 'como-identificar-valor-nas-odds',
+});
+
 export default function IdentificarValorOddsPage() {
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -37,6 +46,26 @@ export default function IdentificarValorOddsPage() {
             <h2 className="text-2xl font-bold mb-4">Gestão do valor encontrado</h2>
             <p className="text-dark-900/70 dark:text-light-100/70">Não é porque encontrou valor em uma ocorrência isolada que deve arriscar muito. Integre o valor na estratégia de staking e considere a consistência do sinal.</p>
           </section>
+
+          <RelatedGuides
+            guides={[
+              {
+                title: 'Análise de Confrontos Diretos',
+                slug: 'analise-de-confrontos-diretos',
+                description: 'Como interpretar o histórico entre equipes e usar isso nas suas previsões.',
+              },
+              {
+                title: 'Impacto de Lesões e Suspensões',
+                slug: 'impacto-de-lesoes-e-suspensoes',
+                description: 'Como avaliar o impacto real de desfalques no desempenho das equipes.',
+              },
+              {
+                title: 'Apostas por Período',
+                slug: 'apostas-primeiro-segundo-tempo',
+                description: 'Como analisar e apostar considerando o comportamento por tempos de jogo.',
+              },
+            ]}
+          />
         </div>
       </article>
     </div>

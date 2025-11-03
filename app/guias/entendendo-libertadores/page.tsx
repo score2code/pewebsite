@@ -1,3 +1,12 @@
+import { generateGuideMetadata } from '@/app/utils/metadata';
+import RelatedGuides from '@/app/components/related-guides';
+
+export const metadata = generateGuideMetadata({
+  title: 'Entendendo a Copa Libertadores: Guia de Análise',
+  description: 'Aprenda as características únicas da principal competição sul-americana. Guia completo sobre fatores ambientais, viagens, estilos de jogo e aspectos táticos na Libertadores.',
+  path: 'entendendo-libertadores',
+});
+
 export default function EntendendoLibertadoresPage() {
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -36,6 +45,26 @@ export default function EntendendoLibertadoresPage() {
               <li>Monitore escalações locais e estratégias táticas</li>
             </ul>
           </section>
+
+          <RelatedGuides
+            guides={[
+              {
+                title: 'Peculiaridades do Brasileirão',
+                slug: 'peculiaridades-brasileirao',
+                description: 'Entenda os fatores que tornam o Campeonato Brasileiro diferente.',
+              },
+              {
+                title: 'Impacto de Lesões e Suspensões',
+                slug: 'impacto-de-lesoes-e-suspensoes',
+                description: 'Como avaliar o impacto real de desfalques no desempenho das equipes.',
+              },
+              {
+                title: 'Análise de Confrontos Diretos',
+                slug: 'analise-de-confrontos-diretos',
+                description: 'Como interpretar o histórico entre equipes e usar isso nas suas previsões.',
+              },
+            ]}
+          />
         </div>
       </article>
     </div>

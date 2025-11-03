@@ -1,5 +1,5 @@
 module.exports = {
-  // output: 'export', // Comentado porque precisamos de API Routes
+  output: 'export',
   images: { unoptimized: true },
   trailingSlash: true
 };

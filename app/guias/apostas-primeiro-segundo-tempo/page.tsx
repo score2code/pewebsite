@@ -1,3 +1,12 @@
+import { generateGuideMetadata } from '@/app/utils/metadata';
+import RelatedGuides from '@/app/components/related-guides';
+
+export const metadata = generateGuideMetadata({
+  title: 'Análise por Tempo de Jogo: 1º e 2º Tempo',
+  description: 'Guia completo sobre análise de padrões de gols e eventos por período de jogo. Aprenda estratégias para apostas no primeiro e segundo tempo, considerando comportamentos e tendências.',
+  path: 'apostas-primeiro-segundo-tempo',
+});
+
 export default function ApostasPorTempoPage() {
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -37,6 +46,26 @@ export default function ApostasPorTempoPage() {
             <h2 className="text-2xl font-bold mb-4">Dicas práticas</h2>
             <p className="text-dark-900/70 dark:text-light-100/70">Use dados segmentados por intervalos, observe a média dos últimos 6 jogos por período e combine com contexto (árbitro, clima, desfalques).</p>
           </section>
+
+          <RelatedGuides
+            guides={[
+              {
+                title: 'Como Identificar Valor nas Odds',
+                slug: 'como-identificar-valor-nas-odds',
+                description: 'Técnicas práticas para encontrar oportunidades de valor nas odds.',
+              },
+              {
+                title: 'Peculiaridades do Brasileirão',
+                slug: 'peculiaridades-brasileirao',
+                description: 'Entenda os fatores que tornam o Campeonato Brasileiro diferente.',
+              },
+              {
+                title: 'Características da Premier League',
+                slug: 'caracteristicas-premier-league',
+                description: 'O futebol inglês e suas particularidades que influenciam probabilidades.',
+              },
+            ]}
+          />
         </div>
       </article>
     </div>

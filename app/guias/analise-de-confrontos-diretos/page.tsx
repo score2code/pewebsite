@@ -1,3 +1,12 @@
+import { generateGuideMetadata } from '@/app/utils/metadata';
+import RelatedGuides from '@/app/components/related-guides';
+
+export const metadata = generateGuideMetadata({
+  title: 'Análise de Confrontos Diretos: Guia Completo para Avaliação',
+  description: 'Aprenda a interpretar o histórico entre equipes de forma eficaz. Guia completo sobre análise de confrontos diretos, tendências e padrões táticos para previsões mais precisas.',
+  path: 'analise-de-confrontos-diretos',
+});
+
 export default function AnaliseConfrontosDiretosPage() {
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -44,6 +53,21 @@ export default function AnaliseConfrontosDiretosPage() {
             <h2 className="text-2xl font-bold mb-4">Conclusão</h2>
             <p className="text-dark-900/70 dark:text-light-100/70">Confrontos diretos são uma ferramenta valiosa quando usados com critério. Integre esse olhar à análise estatística e ao contexto atual das equipes para decisões mais informadas.</p>
           </section>
+
+          <RelatedGuides
+            guides={[
+              {
+                title: 'Impacto de Lesões e Suspensões',
+                slug: 'impacto-de-lesoes-e-suspensoes',
+                description: 'Como avaliar o impacto real de desfalques no desempenho das equipes.',
+              },
+              {
+                title: 'Como Identificar Valor nas Odds',
+                slug: 'como-identificar-valor-nas-odds',
+                description: 'Técnicas práticas para encontrar oportunidades de valor nas odds.',
+              },
+            ]}
+          />
         </div>
       </article>
     </div>

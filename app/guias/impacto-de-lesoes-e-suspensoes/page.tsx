@@ -1,3 +1,12 @@
+import { generateGuideMetadata } from '@/app/utils/metadata';
+import RelatedGuides from '@/app/components/related-guides';
+
+export const metadata = generateGuideMetadata({
+  title: 'Impacto de Lesões e Suspensões: Guia de Análise',
+  description: 'Aprenda a avaliar o impacto real de desfalques em equipes. Metodologia completa para análise de lesões, suspensões e seus efeitos nas probabilidades de jogos.',
+  path: 'impacto-de-lesoes-e-suspensoes',
+});
+
 export default function ImpactoLesoesSuspensoesPage() {
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -38,6 +47,26 @@ export default function ImpactoLesoesSuspensoesPage() {
             <h2 className="text-2xl font-bold mb-4">Resumo</h2>
             <p className="text-dark-900/70 dark:text-light-100/70">Lesões e suspensões são determinantes em várias partidas. Quantifique o impacto, combine com dados e ajuste suas decisões com base na profundidade do elenco e mudanças táticas.</p>
           </section>
+
+          <RelatedGuides
+            guides={[
+              {
+                title: 'Análise de Confrontos Diretos',
+                slug: 'analise-de-confrontos-diretos',
+                description: 'Como interpretar o histórico entre equipes e usar isso nas suas previsões.',
+              },
+              {
+                title: 'Peculiaridades do Brasileirão',
+                slug: 'peculiaridades-brasileirao',
+                description: 'Entenda os fatores que tornam o Campeonato Brasileiro diferente.',
+              },
+              {
+                title: 'Características da Premier League',
+                slug: 'caracteristicas-premier-league',
+                description: 'O futebol inglês e suas particularidades que influenciam probabilidades.',
+              },
+            ]}
+          />
         </div>
       </article>
     </div>

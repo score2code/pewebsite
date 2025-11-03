@@ -1,3 +1,12 @@
+import { generateGuideMetadata } from '@/app/utils/metadata';
+import RelatedGuides from '@/app/components/related-guides';
+
+export const metadata = generateGuideMetadata({
+  title: 'Características da Premier League: Guia de Análise',
+  description: 'Descubra os padrões únicos do futebol inglês e como eles afetam suas análises. Guia completo sobre ritmo de jogo, competitividade e fatores táticos da Premier League.',
+  path: 'caracteristicas-premier-league',
+});
+
 export default function PremierLeaguePage() {
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -35,6 +44,26 @@ export default function PremierLeaguePage() {
               <li>Observe ritmo de jogo e histórico de confrontos</li>
             </ul>
           </section>
+
+          <RelatedGuides
+            guides={[
+              {
+                title: 'Peculiaridades do Brasileirão',
+                slug: 'peculiaridades-brasileirao',
+                description: 'Entenda os fatores que tornam o Campeonato Brasileiro diferente.',
+              },
+              {
+                title: 'Apostas por Período',
+                slug: 'apostas-primeiro-segundo-tempo',
+                description: 'Como analisar e apostar considerando o comportamento por tempos de jogo.',
+              },
+              {
+                title: 'Impacto de Lesões e Suspensões',
+                slug: 'impacto-de-lesoes-e-suspensoes',
+                description: 'Como avaliar o impacto real de desfalques no desempenho das equipes.',
+              },
+            ]}
+          />
         </div>
       </article>
     </div>
