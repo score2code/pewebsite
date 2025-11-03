@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fcampeonatos\u002F[slug]","\u002Ffutebol-americano\u002F[date]\u002F[id]","\u002Ffutebol\u002F[date]\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
