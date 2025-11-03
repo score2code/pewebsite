@@ -1,0 +1,50 @@
+/* * -----------------------------------------------------------
+ * Tailwind Directives
+ * -----------------------------------------------------------
+ * Estas linhas são essenciais para o funcionamento do Tailwind.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * -----------------------------------------------------------
+ * Custom Global Styles
+ * -----------------------------------------------------------
+ * Define estilos de reset e globais para o tema escuro.
+ */
+
+/* Garante que a transição de cor seja suave ao usar o modo escuro (embora não esteja sendo usado ativamente, é uma boa prática) */
+:root {
+  color-scheme: dark;
+}
+
+/* Configura o background e o texto padrão para o tema escuro */
+body {
+  /* O bg-gray-900 é definido no layout.tsx, mas reforçamos aqui */
+  background-color: #111827; 
+  color: #f3f4f6; /* Texto claro */
+}
+
+/* Remove a borda de foco padrão do navegador e usa a borda do Tailwind */
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px theme('colors.cyan.500'); /* Exemplo de foco suave */
+}
+
+/* Scrollbar Style (Opcional, para um visual mais limpo em navegadores compatíveis) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937; /* Fundo do track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563; /* Cor do scrollbar */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
