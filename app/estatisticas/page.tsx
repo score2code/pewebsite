@@ -12,16 +12,22 @@ export default async function StatisticsPage() {
     const standings = await getStandingsData();
 
     return (
-        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen pt-8">
+        <div className="min-h-screen pt-8 px-4">
             <div className="max-w-4xl mx-auto">
-                <div className="bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8 border-l-4 border-red-500 dark:border-red-500">
-                    <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Estatísticas</h1>
-                    <p className="text-lg text-gray-700 dark:text-gray-300 mt-2">Tabelas de classificação, dados de equipes e muito mais.</p>
+                <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8
+                    border border-light-300 dark:border-dark-600
+                    shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+                    <h1 className="text-4xl font-bold text-dark-900 dark:text-light-100 mb-3">
+                        Análise de Desempenho
+                    </h1>
+                    <p className="text-lg text-dark-900/70 dark:text-light-100/70">
+                        Dados estatísticos detalhados, classificações e métricas de performance das equipes.
+                    </p>
                 </div>
 
-                <div className="space-y-8">
+                <div className="space-y-6">
                     <StandingsTable leagueStanding={standings} />
-                    {/* More statistics components can be added here in the future */}
+                    {/* Mais componentes estatísticos serão adicionados aqui */}
                 </div>
             </div>
         </div>

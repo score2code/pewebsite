@@ -2,44 +2,52 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Guia: Como Gerenciar sua Banca de Apostas',
-    description: 'Aprenda a proteger seu capital e a garantir a sustentabilidade nas suas apostas a longo prazo com nosso guia completo de gestão de banca.',
+    title: 'Gestão Inteligente de Recursos em Trading Esportivo',
+    description: 'Aprenda técnicas avançadas de gestão financeira para maximizar seus resultados com análises esportivas de forma consistente e profissional.',
 };
 
 export default function BankrollGuidePage() {
     return (
-        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen pt-8">
+        <div className="min-h-screen pt-8 px-4">
             <div className="max-w-4xl mx-auto">
-                <div className="bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8">
-                    <h1 className="text-4xl font-bold text-yellow-500 mb-6">Guia Completo: Como Gerenciar sua Banca de Apostas</h1>
-                    
-                    <div className="prose prose-invert max-w-none text-gray-700 dark:text-gray-300 space-y-6">
-                        <p className="text-xl">A gestão de banca é, sem dúvida, um dos pilares mais importantes para ser um apostador lucrativo a longo prazo. Não importa quão bons sejam seus palpites, uma má gestão de banca levará à falência.</p>
+                <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
+                    border border-light-300 dark:border-dark-600
+                    shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+                    <h1 className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-6">
+                        Gestão Inteligente de Recursos em Trading Esportivo
+                    </h1>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">O que é Gestão de Banca?</h2>
-                        <p>Gestão de banca (ou bankroll management) é o processo de administrar o dinheiro que você separou exclusivamente para apostas. O objetivo é simples: proteger seu capital de perdas inevitáveis e garantir que você possa continuar apostando de forma sustentável.</p>
+                                        <div className="prose prose-purple dark:prose-invert max-w-none text-dark-900/70 dark:text-light-100/70 space-y-6">
+                        <p className="text-xl">A gestão de recursos é um dos pilares mais importantes para o sucesso em trading esportivo. Uma gestão eficiente protege seu capital e maximiza suas chances de resultados consistentes a longo prazo.</p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Passo 1: Defina o Tamanho da sua Banca</h2>
-                        <p>O primeiro passo é decidir quanto dinheiro você pode se dar ao luxo de perder. Este valor é a sua banca inicial. Seja honesto consigo mesmo. Este deve ser um dinheiro que não fará falta para suas despesas essenciais.</p>
-                        
-                        <blockquote className="border-l-4 border-yellow-500 dark:border-yellow-500 pl-4 italic">
-                            <strong>Regra de Ouro:</strong> Nunca aposte mais do que você pode perder.
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">O que é Gestão de Capital?</h2>
+                        <p>A gestão de capital (ou money management) é a estratégia de administrar seus recursos de forma profissional. O objetivo é otimizar seus investimentos e proteger seu capital, garantindo sustentabilidade e crescimento consistente.</p>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Passo 1: Definição do Capital Inicial</h2>
+                        <p>O primeiro passo é determinar o capital que será dedicado exclusivamente para suas operações. Este valor deve ser consistente com seus objetivos financeiros e tolerância a risco.</p>
+
+                        <blockquote className="border-l-4 border-purple-500 dark:border-purple-400 pl-4 italic bg-light-200/30 dark:bg-dark-700/30 p-4 rounded-r-lg">
+                            <strong>Princípio Fundamental:</strong> Nunca opere com recursos essenciais para suas despesas básicas.
                         </blockquote>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Passo 2: Use um Modelo de Stake</h2>
-                        <p>Stake é o valor que você aposta em um único evento. Em vez de apostar valores aleatórios, você deve usar um modelo consistente. O mais comum para iniciantes é o modelo de **stake fixa**.</p>
-                        <p>Neste modelo, você define uma porcentagem fixa da sua banca para cada aposta, geralmente entre 1% e 3%. Por exemplo, se sua banca é de R$1.000 e você define uma stake de 2%, cada aposta sua será de R$20,00.</p>
-                        
-                        <div className="bg-gray-200 dark:bg-gray-900 rounded-lg p-4 border border-gray-300 dark:border-gray-700">
-                            <h3 className="font-bold text-lg text-gray-900 dark:text-white">Exemplo Prático:</h3>
-                            <p>Banca Total: R$ 1.000,00</p>
-                            <p>Stake Fixa: 2%</p>
-                            <p>Valor da Aposta (Unidade): R$ 20,00</p>
-                            <p>Isso significa que você precisaria perder 50 apostas seguidas para quebrar sua banca, o que é altamente improvável se você seguir boas análises.</p>
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Passo 2: Estratégia de Posicionamento</h2>
+                        <p>O posicionamento refere-se ao tamanho de cada operação em relação ao seu capital total. Uma abordagem sistemática e consistente é essencial. Para iniciantes, recomenda-se o modelo de posição fixa.</p>
+                        <p>Neste modelo, define-se uma porcentagem fixa do capital para cada operação, tipicamente entre 1% e 3%. Por exemplo, com um capital de R$10.000 e posição de 2%, cada operação seria de R$200.</p>
+
+                        <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-6
+                            border border-light-300 dark:border-dark-600">
+                            <h3 className="font-bold text-lg text-dark-900 dark:text-light-100 mb-3">Exemplo de Gestão:</h3>
+                            <div className="space-y-2 text-dark-900/70 dark:text-light-100/70">
+                                <p>Capital Total: R$ 10.000,00</p>
+                                <p>Posição por Operação: 2%</p>
+                                <p>Valor por Operação: R$ 200,00</p>
+                                <p className="mt-4 text-sm">Esta estrutura proporciona uma margem de segurança significativa, permitindo absorver flutuações naturais do mercado enquanto mantém o capital protegido.</p>
+                            </div>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Conclusão</h2>
-                        <p>A disciplina é a chave para a gestão de banca. Siga seu modelo de stake rigorosamente, não tente recuperar perdas com apostas maiores e sempre reavalie sua banca periodicamente. Fazendo isso, você estará no caminho certo para o sucesso a longo prazo nas apostas esportivas.</p>
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Conclusão</h2>
+                        <p>A disciplina na gestão de capital é fundamental para o sucesso em trading esportivo. Mantenha-se fiel à sua estratégia de posicionamento, evite aumentar posições para recuperar perdas e faça avaliações periódicas do seu desempenho. Com uma abordagem profissional e sistemática, você estará no caminho certo para resultados consistentes.</p>                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Conclusão</h2>
+                        <p>A disciplina na gestão de capital é fundamental para o sucesso em trading esportivo. Mantenha-se fiel à sua estratégia de posicionamento, evite aumentar posições para recuperar perdas e faça avaliações periódicas do seu desempenho. Com uma abordagem profissional e sistemática, você estará no caminho certo para resultados consistentes.</p>
                     </div>
                 </div>
             </div>

@@ -47,7 +47,23 @@ const Header = ({ currentPath = '/' }) => {
                 { name: 'Estatísticas', path: '/estatisticas' },
             ]
         },
-        { name: 'Campeonatos', path: '/campeonatos/brasileirao-serie-a', icon: 'Trophy', type: 'link' }, // Example for a specific league
+        {
+            name: 'Campeonatos', icon: 'Trophy', type: 'dropdown', items: [
+                // Brasil
+                { name: 'Brasileirão Série A', path: '/campeonatos/brasileirao-serie-a' },
+                { name: 'Brasileirão Série B', path: '/campeonatos/brasileirao-serie-b' },
+                { name: 'Copa do Brasil', path: '/campeonatos/copa-do-brasil' },
+                // Europa
+                { name: 'Champions League', path: '/campeonatos/champions-league' },
+                { name: 'Premier League', path: '/campeonatos/premier-league' },
+                { name: 'La Liga', path: '/campeonatos/la-liga' },
+                { name: 'Bundesliga', path: '/campeonatos/bundesliga' },
+                { name: 'Serie A', path: '/campeonatos/serie-a' },
+                // América do Sul
+                { name: 'Copa Libertadores', path: '/campeonatos/libertadores' },
+                { name: 'Copa Sul-Americana', path: '/campeonatos/sul-americana' },
+            ]
+        }
     ];
 
     const renderIcon = (iconName: string) => {

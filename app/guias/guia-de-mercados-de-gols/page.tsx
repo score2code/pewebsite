@@ -2,52 +2,62 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Guia de Mercados de Gols (Over/Under)',
-    description: 'Aprenda a apostar no total de gols de uma partida com nosso guia completo sobre o mercado de Mais/Menos Gols (Over/Under).',
+    title: 'Análise de Mercados de Gols | Guia Completo',
+    description: 'Domine as técnicas de análise estatística para prever tendências de gols em partidas de futebol com nosso guia especializado.',
 };
 
 export default function GoalMarketsGuidePage() {
     return (
-        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen pt-8">
+        <div className="min-h-screen pt-8 px-4">
             <div className="max-w-4xl mx-auto">
-                <div className="bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8">
-                    <h1 className="text-4xl font-bold text-yellow-500 mb-6">Guia de Mercados de Gols (Over/Under)</h1>
-                    
-                    <div className="prose prose-invert max-w-none text-gray-700 dark:text-gray-300 space-y-6">
-                        <p className="text-xl">O mercado de "Mais/Menos Gols" (ou Over/Under) é um dos mais populares nas apostas de futebol. Em vez de prever o vencedor, você aposta no número total de gols que serão marcados na partida, somando os gols de ambas as equipes.</p>
+                <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
+                    border border-light-300 dark:border-dark-600
+                    shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+                    <h1 className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-6">
+                        Análise Estatística de Gols no Futebol
+                    </h1>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Como Funciona o Mercado Over/Under</h2>
-                        <p>A casa de apostas define uma linha, e você aposta se o número total de gols no jogo será maior (Over) ou menor (Under) que essa linha. A linha mais comum é a de 2.5 gols.</p>
-                        
-                        <blockquote className="border-l-4 border-yellow-500 dark:border-yellow-500 pl-4 italic">
-                            <strong>Ponto Chave:</strong> A linha decimal (como 2.5) é usada para garantir que haja sempre um resultado vencedor ou perdedor, sem a possibilidade de empate (aposta devolvida).
-                        </blockquote>
+                    <div className="prose prose-purple dark:prose-invert max-w-none text-dark-900/70 dark:text-light-100/70 space-y-6">
+                        <p className="text-xl">A análise de probabilidade de gols é uma das ferramentas mais valiosas para previsões esportivas. Este método se concentra na análise estatística do total de gols em uma partida, considerando o histórico e padrões de ambas as equipes.</p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Exemplos com a Linha 2.5</h2>
-                        
-                        <div className="bg-gray-200 dark:bg-gray-900 rounded-lg p-4 border border-gray-300 dark:border-gray-700">
-                            <h3 className="font-bold text-lg text-gray-900 dark:text-white">Aposta em "Mais de 2.5 Gols" (Over 2.5)</h3>
-                            <p>Você ganha se o jogo tiver 3 ou mais gols no total (ex: 2-1, 3-0, 2-2).</p>
-                            <p>Você perde se o jogo tiver 2 ou menos gols (ex: 1-1, 1-0, 0-0).</p>
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Como Funciona a Análise de Gols</h2>
+                        <p>Na análise estatística de gols, estabelecemos uma linha base e avaliamos a probabilidade do número total de gols ultrapassar (Over) ou ficar abaixo (Under) dessa linha. A referência mais comum é 2.5 gols.</p>
+
+                        <blockquote className="border-l-4 border-purple-500 dark:border-purple-400 pl-4 italic bg-light-200/30 dark:bg-dark-700/30 p-4 rounded-r-lg">
+                            <strong>Conceito Fundamental:</strong> A linha decimal (2.5) garante uma análise binária clara, eliminando a possibilidade de resultados indefinidos.
+                        </blockquote>                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Exemplos com a Linha 2.5</h2>
+
+                        <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-6
+                            border border-light-300 dark:border-dark-600">
+                            <h3 className="font-bold text-lg text-dark-900 dark:text-light-100 mb-3">Cenário: Mais de 2.5 Gols</h3>
+                            <p className="text-dark-900/70 dark:text-light-100/70">Previsão confirmada quando o total de gols é 3 ou superior:</p>
+                            <ul className="list-disc list-inside mt-2 text-dark-900/70 dark:text-light-100/70">
+                                <li>Resultados como 2-1, 3-0, 2-2</li>
+                                <li>Padrão típico de jogos mais ofensivos</li>
+                            </ul>
                         </div>
 
-                        <div className="bg-gray-200 dark:bg-gray-900 rounded-lg p-4 border border-gray-300 dark:border-gray-700">
-                            <h3 className="font-bold text-lg text-gray-900 dark:text-white">Aposta em "Menos de 2.5 Gols" (Under 2.5)</h3>
-                            <p>Você ganha se o jogo tiver 2 ou menos gols (ex: 1-1, 1-0, 0-0).</p>
-                            <p>Você perde se o jogo tiver 3 ou mais gols (ex: 2-1, 3-0, 2-2).</p>
+                        <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-6
+                            border border-light-300 dark:border-dark-600">
+                            <h3 className="font-bold text-lg text-dark-900 dark:text-light-100 mb-3">Cenário: Menos de 2.5 Gols</h3>
+                            <p className="text-dark-900/70 dark:text-light-100/70">Previsão confirmada quando o total de gols é 2 ou inferior:</p>
+                            <ul className="list-disc list-inside mt-2 text-dark-900/70 dark:text-light-100/70">
+                                <li>Resultados como 1-1, 1-0, 0-0</li>
+                                <li>Padrão típico de jogos mais defensivos</li>
+                            </ul>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Analisando um Jogo para o Mercado de Gols</h2>
-                        <p>Para ter sucesso neste mercado, analise fatores como:</p>
-                        <ul className="list-disc list-inside">
-                            <li><strong>Média de Gols:</strong> Qual a média de gols marcados e sofridos das equipes?</li>
-                            <li><strong>Estilo de Jogo:</strong> As equipes são ofensivas ou defensivas?</li>
-                            <li><strong>Confrontos Diretos (H2H):</strong> Os jogos entre elas costumam ter muitos ou poucos gols?</li>
-                            <li><strong>Desfalques:</strong> Algum jogador chave, especialmente um artilheiro ou um zagueiro importante, está fora da partida?</li>
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Metodologia de Análise</h2>
+                        <p>Para uma análise efetiva, considere os seguintes indicadores estatísticos:</p>
+                        <ul className="list-disc list-inside text-dark-900/70 dark:text-light-100/70 space-y-2">
+                            <li><strong className="text-dark-900 dark:text-light-100">Média de Gols:</strong> Análise histórica de gols marcados e sofridos</li>
+                            <li><strong className="text-dark-900 dark:text-light-100">Padrão Tático:</strong> Tendências ofensivas ou defensivas das equipes</li>
+                            <li><strong className="text-dark-900 dark:text-light-100">Histórico de Confrontos:</strong> Padrões estatísticos dos jogos anteriores</li>
+                            <li><strong className="text-dark-900 dark:text-light-100">Fatores de Impacto:</strong> Ausências de jogadores-chave e suas implicações táticas</li>
                         </ul>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Conclusão</h2>
-                        <p>O mercado de Over/Under é uma excelente alternativa quando você não tem certeza sobre qual time vencerá a partida, mas tem uma boa leitura sobre se o jogo será aberto e com muitos gols, ou fechado e com poucas chances. É um mercado que recompensa a análise estatística.</p>
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Conclusão</h2>
+                        <p>A análise de tendências de gols é uma metodologia estatística poderosa que permite fazer previsões baseadas em dados concretos, independentemente do resultado final da partida. É uma abordagem que privilegia a análise objetiva e quantitativa do futebol.</p>
                     </div>
                 </div>
             </div>

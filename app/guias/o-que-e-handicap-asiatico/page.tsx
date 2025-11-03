@@ -2,46 +2,51 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Guia Definitivo: O que é Handicap Asiático?',
-    description: 'Aprenda o que é Handicap Asiático, como funciona e como usar este mercado avançado para encontrar mais valor nas suas apostas.',
+    title: 'Análise Avançada: Handicap Asiático no Futebol',
+    description: 'Compreenda a metodologia do Handicap Asiático, uma ferramenta sofisticada para análise e previsão de resultados no futebol.',
 };
 
 export default function AsianHandicapGuidePage() {
     return (
-        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen pt-8">
+        <div className="min-h-screen pt-8 px-4">
             <div className="max-w-4xl mx-auto">
-                <div className="bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8">
-                    <h1 className="text-4xl font-bold text-yellow-500 mb-6">Guia Definitivo: O que é Handicap Asiático?</h1>
-                    
-                    <div className="prose prose-invert max-w-none text-gray-700 dark:text-gray-300 space-y-6">
-                        <p className="text-xl">O Handicap Asiático é um dos mercados mais populares e, ao mesmo tempo, um dos que mais causam confusão entre apostadores iniciantes. No entanto, entendê-lo pode abrir um leque de oportunidades lucrativas, pois ele elimina a possibilidade do empate.</p>
+                <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
+                    border border-light-300 dark:border-dark-600
+                    shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+                    <h1 className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-6">
+                        Análise Avançada: Handicap Asiático no Futebol
+                    </h1>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">O Conceito Básico</h2>
-                        <p>O Handicap Asiático atribui uma vantagem ou desvantagem de gols a uma das equipes antes mesmo de o jogo começar. O objetivo é equilibrar o confronto, oferecendo odds mais próximas de 2.00 para ambos os lados.</p>
-                        
-                        <blockquote className="border-l-4 border-yellow-500 dark:border-yellow-500 pl-4 italic">
-                            <strong>Diferença Chave:</strong> Ao contrário do Handicap Europeu, o Handicap Asiático pode resultar em uma aposta devolvida (push) ou metade ganha/perdida.
-                        </blockquote>
+                    <div className="prose prose-purple dark:prose-invert max-w-none text-dark-900/70 dark:text-light-100/70 space-y-6">
+                        <p className="text-xl">O Handicap Asiático é uma metodologia avançada de análise esportiva que introduz um fator de equalização entre equipes de diferentes níveis técnicos. Esta abordagem permite uma análise mais precisa das probabilidades reais em confrontos desequilibrados.</p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Exemplos Práticos de Linhas Comuns</h2>
-                        
-                        <div className="bg-gray-200 dark:bg-gray-900 rounded-lg p-4 border border-gray-300 dark:border-gray-700">
-                            <h3 className="font-bold text-lg text-gray-900 dark:text-white">Handicap 0.0 (ou DNB - Draw No Bet)</h3>
-                            <p>Você aposta na vitória de um time. Se o jogo empatar, sua aposta é devolvida. É uma aposta mais segura do que a simples vitória.</p>
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Fundamentos da Metodologia</h2>
+                        <p>O sistema aplica um ajuste matemático ao placar final, atribuindo uma vantagem ou desvantagem virtual a uma das equipes. Isso permite uma análise mais equilibrada, especialmente em confrontos com grande disparidade técnica.</p>
+
+                        <blockquote className="border-l-4 border-purple-500 dark:border-purple-400 pl-4 italic bg-light-200/30 dark:bg-dark-700/30 p-4 rounded-r-lg">
+                            <strong>Conceito Fundamental:</strong> Diferentemente do handicap tradicional, este método permite análises parciais e ajustes dinâmicos baseados no desenvolvimento da partida.
+                        </blockquote>                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Exemplos Práticos de Linhas Comuns</h2>
+
+                        <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-6
+                            border border-light-300 dark:border-dark-600">
+                            <h3 className="font-bold text-lg text-dark-900 dark:text-light-100 mb-3">Linha Base (0.0)</h3>
+                            <p className="text-dark-900/70 dark:text-light-100/70">Análise neutra sem ajustes. Em caso de empate, os dados são desconsiderados para manter a integridade estatística da análise.</p>
                         </div>
 
-                        <div className="bg-gray-200 dark:bg-gray-900 rounded-lg p-4 border border-gray-300 dark:border-gray-700">
-                            <h3 className="font-bold text-lg text-gray-900 dark:text-white">Handicap -0.5</h3>
-                            <p>É exatamente o mesmo que apostar na vitória do time (mercado de Resultado Final). Se o time em que você apostou vencer, você ganha. Se empatar ou perder, você perde.</p>
+                        <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-6
+                            border border-light-300 dark:border-dark-600">
+                            <h3 className="font-bold text-lg text-dark-900 dark:text-light-100 mb-3">Ajuste -0.5</h3>
+                            <p className="text-dark-900/70 dark:text-light-100/70">Equivalente à análise de vitória simples. A equipe precisa vencer para validar a previsão, sem considerar margens específicas.</p>
                         </div>
 
-                        <div className="bg-gray-200 dark:bg-gray-900 rounded-lg p-4 border border-gray-300 dark:border-gray-700">
-                            <h3 className="font-bold text-lg text-gray-900 dark:text-white">Handicap -1.0</h3>
-                            <p>O time em que você apostou precisa vencer por 2 ou mais gols de diferença para você ganhar a aposta. Se vencer por apenas 1 gol, a aposta é devolvida.</p>
+                        <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-6
+                            border border-light-300 dark:border-dark-600">
+                            <h3 className="font-bold text-lg text-dark-900 dark:text-light-100 mb-3">Ajuste -1.0</h3>
+                            <p className="text-dark-900/70 dark:text-light-100/70">Análise de superioridade clara. Requer vitória por 2+ gols para validação completa. Vitória por 1 gol resulta em análise parcial.</p>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Conclusão</h2>
-                        <p>Dominar o Handicap Asiático é um passo fundamental para se tornar um apostador mais sofisticado. Ele oferece mais controle sobre o risco e permite encontrar valor em jogos onde o favoritismo é muito grande. Comece com as linhas inteiras e de meio gol (0.0, -0.5, -1.0) e, aos poucos, explore as linhas de quartos de gol (-0.25, -0.75).</p>
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Conclusão</h2>
+                        <p>O domínio da metodologia de Handicap Asiático é essencial para análises esportivas avançadas. Esta ferramenta permite uma avaliação mais precisa de confrontos desequilibrados e oferece flexibilidade na análise de diferentes cenários. Recomenda-se começar com ajustes básicos (0.0, -0.5, -1.0) antes de explorar variações mais complexas como quartos (-0.25, -0.75).</p>
                     </div>
                 </div>
             </div>

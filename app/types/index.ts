@@ -61,3 +61,45 @@ export interface LeagueStanding {
   country: string;
   standings: TeamStanding[];
 }
+
+export interface ChampionshipStats {
+  totalMatches: number;
+  matchesPlayed: number;
+  goalsScored: number;
+  averageGoalsPerMatch: number;
+  cardsByType: {
+    yellow: number;
+    red: number;
+  };
+  winPercentages: {
+    home: number;
+    draw: number;
+    away: number;
+  };
+  topScorers: Array<{
+    name: string;
+    goals: number;
+    team: string;
+  }>;
+}
+
+export interface Championship {
+  name: string;
+  slug: string;
+  country: string;
+  type: 'national' | 'international';
+  region: 'brazil' | 'europe' | 'south-america';
+  logoUrl?: string;
+  description?: string;
+  season?: string;
+  startDate?: string;
+  endDate?: string;
+  status: 'active' | 'upcoming' | 'finished';
+}
+
+export interface ChampionshipData {
+  championship: Championship;
+  standing: LeagueStanding;
+  picks: Pick[];
+  stats?: ChampionshipStats;
+}

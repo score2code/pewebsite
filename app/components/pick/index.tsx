@@ -58,22 +58,35 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
     // Estado de carregamento
     if (loading) {
         return (
-            <div className="flex flex-col items-center justify-center min-h-screen text-center p-6 bg-gray-900 text-white">
-                <Loader className="w-10 h-10 animate-spin text-green-500 mb-4" />
-                <p className="text-xl">A carregar análise...</p>
+            <div className="flex flex-col items-center justify-center min-h-[50vh] text-center p-6">
+                <Loader className="w-10 h-10 animate-spin text-purple-600 dark:text-purple-400 mb-4" />
+                <p className="text-xl text-dark-900 dark:text-light-100">Carregando análise...</p>
             </div>
         );
     }
 
     if (!pick) {
-        // Renderiza um 404 estilizado
         return (
             <div className="flex flex-col items-center justify-center min-h-[50vh] text-center p-6">
-                 <div className="bg-gray-800 p-10 rounded-xl shadow-2xl border-t-4 border-red-600 max-w-lg w-full">
-                    <AlertTriangle className="w-16 h-16 mx-auto mb-6 text-red-500" />
-                    <h2 className="text-2xl font-semibold text-gray-200 mb-4">Análise Não Encontrada</h2>
-                    <p className="text-gray-400 mb-8">O palpite com ID "{pickId}" não foi encontrado para a data simulada (2025-11-04).</p>
-                    <GoBackButton />
+                <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
+                    border border-light-300 dark:border-dark-600
+                    shadow-custom dark:shadow-custom-dark backdrop-blur-sm
+                    max-w-lg w-full">
+                    <AlertTriangle className="w-16 h-16 mx-auto mb-6 text-purple-600 dark:text-purple-400" />
+                    <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
+                        Análise Não Encontrada
+                    </h2>
+                    <p className="text-dark-900/70 dark:text-light-100/70 mb-8">
+                        A análise solicitada não está disponível para a data informada.
+                    </p>
+                    <button
+                        onClick={() => window.history.back()}
+                        className="inline-flex items-center text-purple-600 dark:text-purple-400
+                            hover:text-purple-700 dark:hover:text-purple-300 transition-colors duration-300"
+                    >
+                        <ChevronLeft className="w-5 h-5 mr-1.5" />
+                        Voltar para Análises
+                    </button>
                 </div>
             </div>
         );
@@ -85,54 +98,81 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
 
     // Conteúdo Principal
     return (
-        <div className="max-w-4xl mx-auto p-4 sm:p-0 pt-8 text-white font-sans">
-
+        <div className="max-w-4xl mx-auto p-4 sm:px-0 pt-10 pb-16">
             {/* Botão Voltar */}
-            <GoBackButton />
+            <button
+                onClick={() => window.history.back()}
+                className="flex items-center text-purple-600 dark:text-purple-400 mb-8
+                    hover:text-purple-700 dark:hover:text-purple-300 transition-colors duration-300"
+            >
+                <ChevronLeft className="w-5 h-5 mr-1.5" />
+                Voltar para Análises
+            </button>
 
             {/* Cabeçalho do Jogo */}
-            <header className="bg-gray-800 p-6 rounded-xl shadow-lg border-t-4 border-green-500 mb-8">
-                <div className="flex justify-between items-start mb-4">
-                    <h1 className="text-3xl font-extrabold text-white">
+            <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-10
+                border border-light-300 dark:border-dark-600
+                shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
+                    <h1 className="text-3xl font-bold text-dark-900 dark:text-light-100">
                         {pick.homeTeam} vs {pick.awayTeam}
                     </h1>
-                    <span className="text-sm font-semibold text-gray-400">
-                        <Trophy className="w-4 h-4 inline mr-1 text-yellow-500" />
+                    <span className="text-sm font-medium text-dark-900/70 dark:text-light-100/70
+                        bg-light-200/50 dark:bg-dark-700/50 px-4 py-2 rounded-full
+                        flex items-center">
+                        <Trophy className="w-4 h-4 mr-2 text-purple-600 dark:text-purple-400" />
                         {pick.league}
                     </span>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {/* Odds e Dica */}
-                    <div className="bg-gray-700 p-4 rounded-lg">
-                        <p className="text-sm text-gray-400">Palpite Principal</p>
-                        <p className="text-xl font-bold text-green-400">{pick.tip}</p>
-                        <p className="text-lg text-white mt-1">Odds: <span className="font-bold">{pick.odds?.toFixed(2) || 'N/A'}</span></p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {/* Probabilidades e Previsão */}
+                    <div className="bg-light-200/50 dark:bg-dark-700/50 p-6 rounded-xl
+                        border border-light-300 dark:border-dark-600">
+                        <p className="text-sm font-medium text-dark-900/70 dark:text-light-100/70 mb-2">
+                            Análise Principal
+                        </p>
+                        <p className="text-xl font-bold text-purple-600 dark:text-purple-400 mb-3">{pick.tip}</p>
+                        <p className="text-dark-900 dark:text-light-100">
+                            Probabilidade: <span className="font-bold">{pick.odds?.toFixed(2) || 'N/A'}%</span>
+                        </p>
                     </div>
 
                     {/* Confiança */}
-                    <div className={`p-4 rounded-lg flex flex-col justify-center items-center ${confidenceColor} shadow-md`}>
-                        <p className="text-sm font-medium text-white/80">Nível de Confiança</p>
-                        <p className="text-3xl font-extrabold text-white">{pick.confidence}%</p>
+                    <div className="bg-purple-600/10 dark:bg-purple-400/10 p-6 rounded-xl
+                        border border-purple-600/20 dark:border-purple-400/20
+                        flex flex-col justify-center items-center">
+                        <p className="text-sm font-medium text-purple-600 dark:text-purple-400 mb-2">
+                            Índice de Confiança
+                        </p>
+                        <p className="text-3xl font-bold text-purple-600 dark:text-purple-400">
+                            {pick.confidence}%
+                        </p>
                     </div>
                 </div>
             </header>
 
             {/* Análise Detalhada */}
-            <section className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-bold text-green-500 mb-4 border-b border-gray-700 pb-2">
-                    Análise Profissional Completa
+            <section className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
+                border border-light-300 dark:border-dark-600
+                shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+                <h3 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-6
+                    pb-4 border-b border-light-300 dark:border-dark-600">
+                    Análise Técnica Detalhada
                 </h3>
 
-                <div className="text-gray-300 space-y-4 whitespace-pre-wrap leading-relaxed">
+                <div className="text-dark-900/70 dark:text-light-100/70 space-y-4
+                    whitespace-pre-wrap leading-relaxed prose prose-purple dark:prose-invert">
                     <p>{pick.analysis}</p>
                 </div>
 
-                {/* Destaque de Risco */}
-                <div className="mt-8 p-4 bg-gray-700 rounded-lg flex items-center border border-gray-600">
-                    <TrendingUp className="w-6 h-6 mr-3 text-yellow-500" />
-                    <p className="text-sm text-gray-400">
-                        Lembre-se: Aposte com responsabilidade. Esta análise é uma opinião e não garante resultados.
+                {/* Nota de Esclarecimento */}
+                <div className="mt-8 p-6 bg-light-200/50 dark:bg-dark-700/50 rounded-xl
+                    border border-light-300 dark:border-dark-600 flex items-center gap-4">
+                    <TrendingUp className="w-6 h-6 text-purple-600 dark:text-purple-400 flex-shrink-0" />
+                    <p className="text-sm text-dark-900/70 dark:text-light-100/70">
+                        Nota: Esta é uma análise técnica baseada em dados estatísticos. Os resultados reais podem variar.
+                        Recomenda-se usar esta informação como parte de uma estratégia mais ampla de análise esportiva.
                     </p>
                 </div>
             </section>
