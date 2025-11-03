@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "generate-api": "node scripts/generate-api-data.js",
+    "build": "next build && node scripts/generate-api-data.js",
     "start": "next start"
   },
   "dependencies": {
