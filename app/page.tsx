@@ -46,7 +46,7 @@ export default function HomePage() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-gray-900 font-sans pt-12">
+        <div className="min-h-screen font-sans pt-12">
             <div className="max-w-6xl mx-auto p-4 sm:p-0">
                 <Hero />
                 <MainSections />
@@ -55,7 +55,7 @@ export default function HomePage() {
                 <div className="mb-12">
                     <h2 className="text-3xl font-bold text-white text-center mb-8">Últimos Palpites</h2>
                     {loading ? (
-                        <div className="flex justify-center items-center p-8">
+                        <div className="flex justify-center items-center p-8" role="status" aria-label="Carregando últimos palpites...">
                             <Loader className="w-8 h-8 animate-spin text-green-500" />
                         </div>
                     ) : latestPicks.length > 0 ? (

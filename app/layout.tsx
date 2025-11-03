@@ -6,6 +6,7 @@ import SWRegister from './sw-register';
 import Header from '@/app/components/header';
 import Script from 'next/script';
 import Analytics from '@/app/components/analytics';
+import { ThemeProvider } from './components/theme-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,24 +23,26 @@ export default function RootLayout({
     const currentPathSimulated = '/';
 
   return (
-    <html lang="pt-BR">
-      <body className={`${inter.className} bg-gray-900`}>
-        <Analytics />
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body className={`${inter.className}`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Analytics />
 
-        <Header currentPath={currentPathSimulated} />
+          <Header currentPath={currentPathSimulated} />
 
-        <main className="pb-12 px-4 max-w-6xl mx-auto">
-            {children}
-        </main>
+          <main className="pb-12 px-4 max-w-6xl mx-auto">
+              {children}
+          </main>
 
-        <SWRegister />
+          <SWRegister />
 
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+          <Script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        </ThemeProvider>
       </body>
     </html>
   );

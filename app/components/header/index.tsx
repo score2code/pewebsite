@@ -2,6 +2,7 @@ import React from 'react';
 import { Home, BarChart3, BookOpen, Goal, Star, TrendingUp, Trophy } from 'lucide-react';
 import Link from 'next/link';
 import DropdownMenu from '@/app/components/ui/dropdown-menu';
+import { ThemeSwitcher } from '@/app/components/theme-switcher';
 
 const Header = ({ currentPath = '/' }) => {
     // Define os itens do menu e as rotas
@@ -42,7 +43,7 @@ const Header = ({ currentPath = '/' }) => {
     };
 
     return (
-        <nav className="bg-gray-800 p-4 shadow-xl sticky top-0 z-10">
+        <nav className="bg-white dark:bg-gray-800 p-4 shadow-xl sticky top-0 z-10">
             <div className="max-w-6xl mx-auto flex justify-between items-center">
 
                 {/* Logo/Título Principal */}
@@ -65,7 +66,7 @@ const Header = ({ currentPath = '/' }) => {
                                     className={`flex items-center text-sm font-semibold p-2 rounded-lg transition duration-150
                                         ${isActive
                                             ? 'bg-green-600 text-white shadow-md'
-                                            : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`
+                                            : 'text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white'}`
                                     }
                                 >
                                     {renderIcon(item.icon)}
@@ -77,7 +78,7 @@ const Header = ({ currentPath = '/' }) => {
                                 <DropdownMenu key={item.name} title={item.name}>
                                     {item.items?.map(subItem => (
                                         <Link key={subItem.path} href={subItem.path}>
-                                            <span className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">
+                                            <span className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white">
                                                 {subItem.name}
                                             </span>
                                         </Link>
@@ -87,6 +88,7 @@ const Header = ({ currentPath = '/' }) => {
                         }
                         return null;
                     })}
+                    <ThemeSwitcher />
                 </div>
             </div>
         </nav>

@@ -15,14 +15,20 @@
 
 /* Garante que a transição de cor seja suave ao usar o modo escuro (embora não esteja sendo usado ativamente, é uma boa prática) */
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
-/* Configura o background e o texto padrão para o tema escuro */
+/* Configura o background e o texto padrão para o tema claro */
 body {
-  /* O bg-gray-900 é definido no layout.tsx, mas reforçamos aqui */
-  background-color: #111827; 
-  color: #f3f4f6; /* Texto claro */
+  background-color: #ffffff; 
+  color: #1f2937; /* Texto escuro */
+}
+
+/* Dark mode styles */
+.dark {
+  color-scheme: dark;
+  background-color: #111827;
+  color: #f3f4f6;
 }
 
 /* Remove a borda de foco padrão do navegador e usa a borda do Tailwind */
@@ -37,12 +43,20 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1f2937; /* Fundo do track */
+  background: #e5e7eb; /* Fundo do track para light mode */
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937; /* Fundo do track para dark mode */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4b5563; /* Cor do scrollbar */
+  background: #9ca3af; /* Cor do scrollbar para light mode */
   border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563; /* Cor do scrollbar para dark mode */
 }
 
 ::-webkit-scrollbar-thumb:hover {

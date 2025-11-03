@@ -1,11 +1,12 @@
 
 import { LeagueStanding, Pick } from '@/app/types';
 import standingsData from '@/app/data/standings.json';
-import soccerPicks from '@/app/data/soccer/2025/11/03.json';
+import soccerPicksData from '@/app/data/soccer/2025/11/03.json';
 import StandingsTable from '@/app/components/statistics/standings-table';
 import PickCard from '@/app/components/pick/card';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { parsePicks } from '@/app/lib/data-parser';
 
 // In a real app, you'd fetch this data based on the slug
 async function getCompetitionData(slug: string): Promise<{ standing: LeagueStanding; picks: Pick[] } | null> {
@@ -15,6 +16,7 @@ async function getCompetitionData(slug: string): Promise<{ standing: LeagueStand
     }
 
     const standing: LeagueStanding = standingsData;
+    const soccerPicks: Pick[] = parsePicks(soccerPicksData);
     const picks: Pick[] = soccerPicks.filter(p => p.league.toUpperCase().includes('BRASILEIRÃO'));
 
     return { standing, picks };

@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
@@ -12,11 +13,6 @@ const config: Config = {
           500: '#06b6d4',
           600: '#0891b2',
           700: '#0e7490',
-        },
-        // Cor de fundo mais escura para o tema
-        gray: {
-          800: '#1f2937', // Para cards e header
-          900: '#111827', // Para o background principal
         },
       },
       fontFamily: {
