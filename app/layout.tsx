@@ -3,13 +3,10 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import SWRegister from './sw-register';
-// IMPORTADO: O novo componente de cabeçalho
 import Header from '@/app/components/header';
-// IMPORTADO: Hook para obter o caminho da rota atual (requer o uso do 'use client' ou de um wrapper)
-// Importações de Next.js como usePathname são tipicamente adicionadas, mas vou manter a simulação simples.
-// Para fins de demonstração neste contexto:
+import Script from 'next/script';
+import Analytics from '@/app/components/analytics';
 
-// Configura a fonte Inter, otimizada pelo Next.js
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -22,24 +19,27 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-    // Nota: Em um projeto Next.js real, usaria usePathname() aqui para passar a rota atual.
-    const currentPathSimulated = '/'; // A rota real seria obtida dinamicamente.
+    const currentPathSimulated = '/';
 
   return (
     <html lang="pt-BR">
       <body className={`${inter.className} bg-gray-900`}>
+        <Analytics />
 
-        {/* 1. O CABEÇALHO/MENU É ADICIONADO AQUI */}
         <Header currentPath={currentPathSimulated} />
 
-        {/* 2. O CONTEÚDO DA ROTA ATUAL VEM A SEGUIR */}
         <main className="pb-12 px-4 max-w-6xl mx-auto">
             {children}
         </main>
 
-        {/* O rodapé do site seria adicionado aqui */}
-
         <SWRegister />
+
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
