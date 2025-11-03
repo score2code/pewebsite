@@ -2,7 +2,7 @@
 
 import Script from 'next/script'
 import { usePathname, useSearchParams } from 'next/navigation'
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 
 const pageview = (url: string) => {
     if (typeof window.gtag !== 'undefined') {
@@ -12,7 +12,7 @@ const pageview = (url: string) => {
     }
 }
 
-export default function Analytics() {
+function AnalyticsContent() {
     const pathname = usePathname()
     const searchParams = useSearchParams()
 
@@ -39,5 +39,13 @@ export default function Analytics() {
                 }}
             />
         </>
+    )
+}
+
+export default function Analytics() {
+    return (
+        <Suspense fallback={null}>
+            <AnalyticsContent />
+        </Suspense>
     )
 }

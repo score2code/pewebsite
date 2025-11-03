@@ -76,7 +76,7 @@ export default function ProbabilidadesOddsPage() {
                             <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
                                 <li>Calcule sua probabilidade estimada do evento</li>
                                 <li>Compare com a probabilidade implícita na odd</li>
-                                <li>Se sua probabilidade > probabilidade da odd = Valor positivo</li>
+                                <li>Se sua probabilidade maior que probabilidade da odd = Valor positivo</li>
                                 <li>Considere a margem da casa de apostas</li>
                             </ul>
                         </div>
