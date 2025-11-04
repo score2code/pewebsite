@@ -10,8 +10,8 @@ const Cta = () => {
             transition-all duration-300">
             <p className="text-lg font-semibold text-dark-900 dark:text-light-100 flex items-center justify-center">
                 <BarChart3 className="w-6 h-6 text-purple-600 dark:text-purple-400 mr-3" />
-                Mais de 100 mil apostadores confiam em nossas análises diariamente.
-                <span className="ml-2 text-purple-600 dark:text-purple-400">Junte-se à comunidade vencedora!</span>
+                Análises precisas e confiáveis para você.
+                <span className="ml-2 text-purple-600 dark:text-purple-400">Confira nosso conteúdo!</span>
             </p>
         </div>
     );

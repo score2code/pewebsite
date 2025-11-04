@@ -16,8 +16,8 @@
         "affiliateLink": "#"
     },
     {
-        "id": "super-aposta",
-        "name": "Super Aposta",
+        "id": "super-analise",
+        "name": "Super Análise",
         "logoUrl": "/brand-512.png",
         "rating": 4.5,
         "pros": [
@@ -29,7 +29,7 @@
             "Interface um pouco complexa para iniciantes",
             "Saques podem levar até 48h"
         ],
-        "bonus": "Aposta grátis de R$50 no primeiro depósito",
+        "bonus": "Análise grátis por 7 dias",
         "affiliateLink": "#"
     }
 ]

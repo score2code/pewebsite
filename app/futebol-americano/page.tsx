@@ -69,7 +69,7 @@ const PickCard: React.FC<LocalPickCardProps> = ({ pick, date }) => {
             </div>
 
             <div className="grid grid-cols-3 gap-3 items-center text-center">
-                {/* Dica de Aposta */}
+                {/* Dica do Dia */}
                 <div className="col-span-2 p-2 bg-gray-200 dark:bg-gray-700 rounded-lg">
                     <p className="text-xs text-gray-700 dark:text-gray-400">Palpite</p>
                     <p className="text-lg font-extrabold text-gray-900 dark:text-white">{pick.tip}</p>

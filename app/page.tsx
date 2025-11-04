@@ -24,9 +24,10 @@ export default function HomePage() {
                 // In a real app, you might have a dedicated endpoint for "latest"
                 // For now, we fetch for the current day.
                 const today = getFormattedDate(new Date());
-                // Em ambiente estático servimos o JSON gerado em /api/picks
-                const fileName = `soccer-${today}.json`;
-                const response = await fetch(`/api/picks/${fileName}`);
+                const year = today.substring(0, 4);
+                const month = today.substring(5, 7);
+                const day = today.substring(8, 10);
+                const response = await fetch(`/data/soccer/${year}/${month}/${day}.json`);
                 const result = await response.json();
 
                 if (response.ok && Array.isArray(result.data)) {
