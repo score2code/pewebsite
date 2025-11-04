@@ -1,30 +1,11 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, Zap, Calendar, AlertTriangle, Loader2 } from 'lucide-react';
-// IMPORTADO: useRouter para navegação programática
-import { useRouter } from 'next/navigation';
 import { Pick } from '@/app/types';
-import SportPickCard from '@/app/components/sports/pick-card';
-
-// --- Configuração e Tipagem ---
-
-const API_BASE_URL = '/api/picks';
-
-const formatDateDisplay = (dateString: string) => {
-    const date = new Date(dateString + 'T03:00:00');
-    return date.toLocaleDateString('pt-BR', {
-        day: '2-digit',
-        month: 'long',
-        year: 'numeric'
-    });
-};
-
-const changeDate = (currentDate: string, days: number) => {
-    const date = new Date(currentDate + 'T00:00:00');
-    date.setDate(date.getDate() + days);
-    return date.toISOString().split('T')[0];
-};
+import MemoizedPickCard from '@/app/components/pick/memoized-card';
+import FilterSort from '@/app/components/filters/filter-sort';
+import { getFormattedDate, formatDateDisplay, changeDate, loadPicksData } from '@/app/lib/data-loader';
 
 // --- Componente Principal da Rota /futebol ---
 
@@ -43,40 +24,29 @@ const Soccer = () => {
     const [picksData, setPicksData] = useState<Pick[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [selectedLeague, setSelectedLeague] = useState('');
+    const [selectedConfidence, setSelectedConfidence] = useState('');
+    const [sortBy, setSortBy] = useState('date');
 
-    // Função para buscar os dados da API
+    // Função para buscar os dados
     const fetchPicks = useCallback(async (date: string) => {
         setIsLoading(true);
         setError(null);
 
         try {
-            // Tenta buscar da API primeiro (com timeout)
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 2000);
-
-            // Buscar o arquivo JSON estático correspondente (tipo 'soccer')
-            const fileName = `soccer-${date}.json`;
-            const response = await fetch(`${API_BASE_URL}/${fileName}`, { signal: controller.signal });
-            clearTimeout(timeoutId);
-
-            if (!response.ok) {
-                throw new Error(`Erro HTTP: ${response.status}`);
-            }
-
-            const data = await response.json();
-
-            if (data.data && data.data.length > 0) {
-                setPicksData(data.data);
-            } else {
-              setPicksData([]);
+            // Load picks from static JSON files for soccer
+            const picks = await loadPicksData(date, 'soccer');
+            setPicksData(picks);
+            
+            if (picks.length === 0) {
+                setError(`Nenhum palpite encontrado para ${formatDateDisplay(date)}.`);
             }
         } catch (err) {
-          // Se falhar a API (ou timeout), usa o mock
-          console.error("Erro ao buscar dados da API. Usando Mock Data:", err);
-          setError(`Não foi possível conectar à API. (Usando mock data, mas não há dados para ${date}).`);
-          setPicksData([]);
+            console.error("Erro ao buscar dados:", err);
+            setError(`Não foi possível carregar os palpites para ${formatDateDisplay(date)}.`);
+            setPicksData([]);
         } finally {
-          setIsLoading(false);
+            setIsLoading(false);
         }
     }, []);
 
@@ -91,6 +61,60 @@ const Soccer = () => {
         setSelectedDate(newDate);
         fetchPicks(newDate);
     };
+
+    // Processar ligas únicas para o filtro
+    const leagues = useMemo(() => {
+        const leagueCounts = picksData.reduce((acc, pick) => {
+            acc[pick.league] = (acc[pick.league] || 0) + 1;
+            return acc;
+        }, {} as Record<string, number>);
+
+        return Object.entries(leagueCounts)
+            .map(([league, count]) => ({ value: league, label: league, count }))
+            .sort((a, b) => b.count - a.count);
+    }, [picksData]);
+
+    // Filtrar e ordenar palpites
+    const filteredAndSortedPicks = useMemo(() => {
+        let filtered = [...picksData];
+
+        // Filtrar por liga
+        if (selectedLeague) {
+            filtered = filtered.filter(pick => pick.league === selectedLeague);
+        }
+
+        // Filtrar por confiança
+        if (selectedConfidence) {
+            const confidenceMap = {
+                high: (conf: number) => conf >= 80,
+                medium: (conf: number) => conf >= 60 && conf < 80,
+                low: (conf: number) => conf < 60
+            };
+            
+            if (confidenceMap[selectedConfidence as keyof typeof confidenceMap]) {
+                filtered = filtered.filter(pick => 
+                    confidenceMap[selectedConfidence as keyof typeof confidenceMap](pick.confidence)
+                );
+            }
+        }
+
+        // Ordenar
+        switch (sortBy) {
+            case 'confidence':
+                filtered.sort((a, b) => b.confidence - a.confidence);
+                break;
+            case 'league':
+                filtered.sort((a, b) => a.league.localeCompare(b.league));
+                break;
+            case 'probability':
+                filtered.sort((a, b) => b.probability - a.probability);
+                break;
+            default: // date
+                filtered.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+        }
+
+        return filtered;
+    }, [picksData, selectedLeague, selectedConfidence, sortBy]);
 
     return (
         <div className="min-h-screen font-sans p-4 sm:p-8">
@@ -135,6 +159,20 @@ const Soccer = () => {
                     </button>
                 </div>
 
+                {/* Filters */}
+                <FilterSort
+                  selectedLeague={selectedLeague}
+                  onLeagueChange={setSelectedLeague}
+                  selectedConfidence={selectedConfidence}
+                  onConfidenceChange={setSelectedConfidence}
+                  selectedDate={selectedDate}
+                  onDateChange={setSelectedDate}
+                  sortBy={sortBy}
+                  onSortChange={setSortBy}
+                  leagues={leagues}
+                  showDateFilter={false} // Já temos navegação de data separada
+                />
+
                 {/* Conteúdo Principal */}
                 <div className="min-h-[200px]">
                     {isLoading && (
@@ -154,26 +192,34 @@ const Soccer = () => {
                         </div>
                     )}
 
-                    {!isLoading && !error && picksData.length > 0 && (
+                    {!isLoading && !error && filteredAndSortedPicks.length > 0 && (
                         <div className="grid gap-6 md:grid-cols-2">
-                            {picksData.map(pick => (
-                                <SportPickCard
+                            {filteredAndSortedPicks.map(pick => (
+                                <MemoizedPickCard
                                     key={pick.id}
                                     pick={pick}
                                     date={selectedDate}
-                                    sport="futebol"
+                                    showStatus={true}
+                                    compact={false}
                                 />
                             ))}
                         </div>
                     )}
 
-                    {!isLoading && !error && picksData.length === 0 && selectedDate && (
+                    {!isLoading && !error && filteredAndSortedPicks.length === 0 && selectedDate && (
                         <div className="bg-light-100/50 dark:bg-dark-800/50 p-8 rounded-xl
                             text-center border border-light-300 dark:border-dark-600
                             shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
-                            <Calendar className="w-8 h-8 mx-auto mb-3 text-purple-600 dark:text-purple-400" />
-                            <p className="text-lg font-semibold text-dark-900 dark:text-light-100">Sem palpites agendados.</p>
-                            <p className="text-sm text-dark-900/70 dark:text-light-100/70">Tente selecionar uma data diferente.</p>
+                            <AlertTriangle className="w-12 h-12 mx-auto mb-4 text-yellow-500" />
+                            <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100 mb-2">
+                                Nenhum palpite encontrado
+                            </h3>
+                            <p className="text-dark-900/70 dark:text-light-100/70">
+                                {selectedLeague || selectedConfidence 
+                                    ? 'Nenhum palpite atende aos filtros selecionados.'
+                                    : `Não há palpites disponíveis para ${formatDateDisplay(selectedDate)}.`
+                                }
+                            </p>
                         </div>
                     )}
                 </div>

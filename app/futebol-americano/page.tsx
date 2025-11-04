@@ -2,29 +2,9 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Zap, Calendar, AlertTriangle, Loader2 } from 'lucide-react';
-// IMPORTADO: useRouter para navegação programática
-import { useRouter } from 'next/navigation';
 import { Pick } from '@/app/types';
-import SportPickCard from '@/app/components/sports/pick-card';
-
-// --- Configuração e Tipagem ---
-
-const API_BASE_URL = '/api/picks';
-
-const formatDateDisplay = (dateString: string) => {
-    const date = new Date(dateString + 'T03:00:00');
-    return date.toLocaleDateString('pt-BR', {
-        day: '2-digit',
-        month: 'long',
-        year: 'numeric'
-    });
-};
-
-const changeDate = (currentDate: string, days: number) => {
-    const date = new Date(currentDate + 'T00:00:00');
-    date.setDate(date.getDate() + days);
-    return date.toISOString().split('T')[0];
-};
+import MemoizedPickCard from '@/app/components/pick/memoized-card';
+import { getFormattedDate, formatDateDisplay, changeDate, loadPicksData } from '@/app/lib/data-loader';
 
 // --- Componentes de UI ---
 
@@ -33,23 +13,16 @@ interface LocalPickCardProps {
     date: string;
 }
 
-const PickCard: React.FC<LocalPickCardProps> = ({ pick, date }) => {
-    const router = useRouter(); // Inicializa o hook de roteamento
+const LocalPickCard: React.FC<LocalPickCardProps> = ({ pick, date }) => {
     const confidenceColor = pick.confidence >= 80 ? 'bg-green-600' :
                             pick.confidence >= 70 ? 'bg-yellow-600' : 'bg-red-600';
 
-    // CORRIGIDO: Agora usa o router.push para navegar
-    const handleNavigation = () => {
-        router.push(`/futebol-americano/${date}/${pick.id}`);
-    };
-
     return (
         <div
-            className="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 transition hover:border-green-500 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
-            onClick={handleNavigation}
-            tabIndex={0} // Make the div focusable
-            role="link" // Indicate it acts as a link
-            aria-label={`Ver análise para ${pick.homeTeam} vs ${pick.awayTeam}`}
+            className="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 transition hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+            tabIndex={0}
+            role="article"
+            aria-label={`Análise para ${pick.homeTeam} vs ${pick.awayTeam}`}
         >
             <div className="flex justify-between items-start mb-3">
                 <span className="text-sm font-semibold text-green-600 dark:text-green-400 flex items-center">
@@ -86,68 +59,37 @@ const PickCard: React.FC<LocalPickCardProps> = ({ pick, date }) => {
                  <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${confidenceColor} text-white mr-auto`}>
                     Confiança: {pick.confidence}%
                 </span>
-
-                {/* Botão de Análise */}
-                <button
-                    onClick={(e) => { e.stopPropagation(); handleNavigation(); }}
-                    className="px-3 py-1 text-sm font-semibold text-white bg-green-700 rounded-full hover:bg-green-600 transition duration-150 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
-                >
-                    Ver Análise
-                </button>
             </div>
         </div>
     );
 };
 
-// --- Componente Principal da Rota /futebol ---
+// --- Componente Principal da Rota /futebol-americano ---
 
-const Football = () => {
-    const getFormattedDate = () => {
-      const date = new Date();
-      const year = date.getFullYear();
-      // Os meses são base 0, por isso adicionamos 1
-      const month = String(date.getMonth() + 1).padStart(2, '0');
-      const day = String(date.getDate()).padStart(2, '0');
-      return `${year}-${month}-${day}`;
-    };
-    const pickDate = getFormattedDate();
+const AmericanFootball = () => {
+    const pickDate = getFormattedDate(new Date());
 
     const [selectedDate, setSelectedDate] = useState(pickDate);
     const [picksData, setPicksData] = useState<Pick[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
-    // Função para buscar os dados da API
+    // Função para buscar os dados
     const fetchPicks = useCallback(async (date: string) => {
         setIsLoading(true);
         setError(null);
 
-
         try {
-            // Tenta buscar da API primeiro (com timeout)
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 2000);
-
-            // Buscar o arquivo JSON estático correspondente (tipo 'football')
-            const fileName = `football-${date}.json`;
-            const response = await fetch(`${API_BASE_URL}/${fileName}`, { signal: controller.signal });
-            clearTimeout(timeoutId);
-
-            if (!response.ok) {
-                throw new Error(`Erro HTTP: ${response.status}`);
-            }
-
-            const data = await response.json();
-
-            if (data.data && data.data.length > 0) {
-              setPicksData(data.data);
-            } else {
-              setPicksData([]);
+            // Load picks from static JSON files for football (american football)
+            const picks = await loadPicksData(date, 'football');
+            setPicksData(picks);
+            
+            if (picks.length === 0) {
+                setError(`Nenhum palpite encontrado para ${formatDateDisplay(date)}.`);
             }
         } catch (err) {
-            // Se falhar a API (ou timeout), usa o mock
-            console.error("Erro ao buscar dados da API. Usando Mock Data:", err);
-            setError(`Não foi possível conectar à API. (Usando mock data, mas não há dados para ${date}).`);
+            console.error("Erro ao buscar dados:", err);
+            setError(`Não foi possível carregar os palpites para ${formatDateDisplay(date)}.`);
             setPicksData([]);
         } finally {
             setIsLoading(false);
@@ -231,11 +173,12 @@ const Football = () => {
                     {!isLoading && !error && picksData.length > 0 && (
                         <div className="grid gap-6 md:grid-cols-2">
                             {picksData.map(pick => (
-                                <SportPickCard
+                                <MemoizedPickCard
                                     key={pick.id}
                                     pick={pick}
                                     date={selectedDate}
-                                    sport="futebol-americano"
+                                    showStatus={true}
+                                    compact={false}
                                 />
                             ))}
                         </div>
@@ -256,4 +199,4 @@ const Football = () => {
     );
 };
 
-export default Football;
+export default AmericanFootball;

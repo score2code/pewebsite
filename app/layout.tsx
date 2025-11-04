@@ -8,6 +8,7 @@ import Script from 'next/script';
 import Analytics from '@/app/components/analytics';
 import { ThemeProvider } from './components/theme-provider';
 import { Suspense } from 'react';
+import NotificationSystem from '@/app/components/notifications/system';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
               </div>
               <Header currentPath={currentPathSimulated} />
 
+              <NotificationSystem />
               <main className="flex-grow pb-12 px-4 max-w-6xl mx-auto w-full">
                 <Suspense fallback={
                   <div className="flex items-center justify-center min-h-[200px]">
