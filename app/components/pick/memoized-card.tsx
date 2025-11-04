@@ -18,8 +18,8 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
   compact = false,
   className = ''
 }) => {
-  const formattedDate = useFormattedDate(pick.date);
-  const formattedTime = useFormattedTime(pick.date);
+  const formattedDate = useFormattedDate(pick.date || new Date().toISOString());
+  const formattedTime = useFormattedTime(pick.date || new Date().toISOString());
   
   const getConfidenceColor = (confidence: number) => {
     if (confidence >= 80) return 'text-green-600 dark:text-green-400';
@@ -115,7 +115,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
             <span className="text-xs text-dark-900/70 dark:text-light-100/70">Prob.</span>
           </div>
           <span className="text-lg font-bold text-purple-600 dark:text-purple-400">
-            {pick.probability}%
+            {pick.probability || Math.round(pick.confidence * 0.8)}%
           </span>
         </div>
       </div>

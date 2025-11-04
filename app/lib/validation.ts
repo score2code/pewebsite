@@ -4,13 +4,13 @@ import { z } from 'zod';
 export const PickSchema = z.object({
   id: z.string().min(1, 'ID é obrigatório'),
   league: z.string().min(1, 'Liga é obrigatória'),
-  country: z.string().min(1, 'País é obrigatório'),
-  date: z.string().datetime('Data deve estar em formato ISO'),
+  country: z.string().min(1, 'País é obrigatório').optional().default('Brasil'),
+  date: z.string().datetime('Data deve estar em formato ISO').optional().default(''),
   homeTeam: z.string().min(1, 'Time da casa é obrigatório'),
   awayTeam: z.string().min(1, 'Time visitante é obrigatório'),
   prediction: z.string().min(1, 'Palpite é obrigatório'),
   odds: z.number().positive('Odds deve ser um número positivo'),
-  probability: z.number().min(0).max(100, 'Probabilidade deve estar entre 0 e 100'),
+  probability: z.number().min(0).max(100, 'Probabilidade deve estar entre 0 e 100').optional().default(0),
   confidence: z.number().min(0).max(100, 'Confiança deve estar entre 0 e 100'),
   status: z.enum(['pending', 'won', 'lost', 'void']).default('pending'),
   result: z.string().optional(),
@@ -36,7 +36,12 @@ export const PickSchema = z.object({
   referee: z.string().optional(),
   weather: z.string().optional(),
   createdAt: z.string().datetime('Data de criação deve estar em formato ISO').optional(),
-  updatedAt: z.string().datetime('Data de atualização deve estar em formato ISO').optional()
+  updatedAt: z.string().datetime('Data de atualização deve estar em formato ISO').optional(),
+  
+  // Campos legados para compatibilidade com dados antigos
+  dateTime: z.string().optional(), // Campo legado - será mapeado para date
+  tip: z.string().optional(), // Campo legado - será mapeado para prediction
+  result: z.enum(['Pending', 'Win', 'Loss']).optional() // Campo legado - será mapeado para status
 });
 
 // Esquema para estatísticas de palpites
@@ -124,10 +129,43 @@ export type PickStats = z.infer<typeof PickStatsSchema>;
 export type Championship = z.infer<typeof ChampionshipSchema>;
 export type Settings = z.infer<typeof SettingsSchema>;
 
+// Função para mapear dados legados para o novo formato
+const mapLegacyPickData = (data: any): any => {
+  const mapped = { ...data };
+  
+  // Mapear campos legados para novos nomes
+  if (mapped.dateTime && !mapped.date) {
+    mapped.date = new Date().toISOString(); // Usar data atual se não houver
+  }
+  
+  if (mapped.tip && !mapped.prediction) {
+    mapped.prediction = mapped.tip;
+  }
+  
+  if (mapped.result && !mapped.status) {
+    const resultMap = {
+      'Pending': 'pending',
+      'Win': 'won',
+      'Loss': 'lost',
+      'Void': 'void'
+    };
+    mapped.status = resultMap[mapped.result as keyof typeof resultMap] || 'pending';
+  }
+  
+  // Remover campos legados que não são mais necessários
+  delete mapped.dateTime;
+  delete mapped.tip;
+  delete mapped.result;
+  
+  return mapped;
+};
+
 // Funções de validação úteis
 export const validatePick = (data: unknown) => {
   try {
-    return PickSchema.parse(data);
+    // Mapear dados legados antes da validação
+    const mappedData = typeof data === 'object' && data !== null ? mapLegacyPickData(data) : data;
+    return PickSchema.parse(mappedData);
   } catch (error) {
     console.error('Erro na validação do palpite:', error);
     return null;
@@ -140,7 +178,9 @@ export const validatePickArray = (data: unknown): Pick[] => {
       throw new Error('Dados devem ser um array');
     }
     return data.map((item, index) => {
-      const validated = PickSchema.safeParse(item);
+      // Mapear dados legados antes da validação
+      const mappedItem = typeof item === 'object' && item !== null ? mapLegacyPickData(item) : item;
+      const validated = PickSchema.safeParse(mappedItem);
       if (!validated.success) {
         console.warn(`Erro na validação do palpite ${index}:`, validated.error.errors);
         return null;

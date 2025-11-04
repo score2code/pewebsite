@@ -171,7 +171,7 @@ const FilterSort: React.FC<FilterSortProps> = ({
           )}
           {selectedDate && (
             <span className="inline-flex items-center gap-1 px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full text-xs">
-              {new Date(selectedDate).toLocaleDateString('pt-BR')}
+              {new Date(selectedDate + 'T03:00:00').toLocaleDateString('pt-BR')}
               <button
                 onClick={() => onDateChange('')}
                 className="ml-1 text-green-500 hover:text-green-700"

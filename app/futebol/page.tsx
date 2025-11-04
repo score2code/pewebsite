@@ -160,18 +160,20 @@ const Soccer = () => {
                 </div>
 
                 {/* Filters */}
-                <FilterSort
-                  selectedLeague={selectedLeague}
-                  onLeagueChange={setSelectedLeague}
-                  selectedConfidence={selectedConfidence}
-                  onConfidenceChange={setSelectedConfidence}
-                  selectedDate={selectedDate}
-                  onDateChange={setSelectedDate}
-                  sortBy={sortBy}
-                  onSortChange={setSortBy}
-                  leagues={leagues}
-                  showDateFilter={false} // Já temos navegação de data separada
-                />
+                <div className="mb-8">
+                  <FilterSort
+                    selectedLeague={selectedLeague}
+                    onLeagueChange={setSelectedLeague}
+                    selectedConfidence={selectedConfidence}
+                    onConfidenceChange={setSelectedConfidence}
+                    selectedDate={selectedDate}
+                    onDateChange={setSelectedDate}
+                    sortBy={sortBy}
+                    onSortChange={setSortBy}
+                    leagues={leagues}
+                    showDateFilter={false} // Já temos navegação de data separada
+                  />
+                </div>
 
                 {/* Conteúdo Principal */}
                 <div className="min-h-[200px]">

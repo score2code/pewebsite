@@ -1,14 +1,24 @@
 export interface Pick {
   id: string;
   league: string;
-  dateTime: string;
   homeTeam: string;
   awayTeam: string;
-  tip: string;
+  prediction: string;
   odds: number;
   confidence: number;
-  analysis: string;
-  result: 'Win' | 'Loss' | 'Pending'; // Status do palpite
+  analysis?: string;
+  status: 'pending' | 'won' | 'lost' | 'void';
+  country?: string;
+  date?: string;
+  probability?: number;
+  result?: string;
+  stake?: number;
+  roi?: number;
+  
+  // Campos legados (mantidos para compatibilidade)
+  dateTime?: string;
+  tip?: string;
+  result?: 'Win' | 'Loss' | 'Pending';
 }
 
 export interface Review {
