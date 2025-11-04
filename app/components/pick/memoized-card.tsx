@@ -4,22 +4,30 @@ import StatusBadge, { PickStatus } from '@/app/components/ui/status-badge';
 import { useFormattedDate, useFormattedTime } from '@/app/hooks/use-picks';
 import { TrendingUp, Calendar, Clock, Trophy, Target } from 'lucide-react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface MemoizedPickCardProps {
   pick: Pick;
   showStatus?: boolean;
   compact?: boolean;
   className?: string;
+  date?: string; // optional date to use for route building
 }
 
-const MemoizedPickCard = memo<MemoizedPickCardProps>(({
+const MemoizedPickCard = memo<MemoizedPickCardProps>(({ 
   pick,
   showStatus = true,
   compact = false,
-  className = ''
+  className = '',
+  date
 }) => {
+  const pathname = usePathname();
+  const sportSegment = pathname?.startsWith('/futebol-americano') ? 'futebol-americano' : 'futebol';
   const formattedDate = useFormattedDate(pick.date || new Date().toISOString());
   const formattedTime = useFormattedTime(pick.date || new Date().toISOString());
+  // Normalize route date to YYYY-MM-DD, prefer provided prop, then pick.date, then today
+  const rawDateForRoute = date || pick.date || new Date().toISOString();
+  const pickDateForRoute = rawDateForRoute.split('T')[0];
   
   const getBadgeStatus = (): PickStatus => {
     if (pick.result === 'won') return 'won';
@@ -144,7 +152,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
 
       {/* Analysis Link */}
       <Link
-        href={`/analise/${pick.id}`}
+        href={`/${sportSegment}/${pickDateForRoute}/${pick.id}`}
         className="block w-full text-center bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium"
       >
         Ver Análise Completa

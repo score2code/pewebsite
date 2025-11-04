@@ -61,6 +61,7 @@ export default function HomePage() {
                                     pick={pick} 
                                     showStatus={true}
                                     compact={false}
+                                    date={getFormattedDate(new Date())}
                                 />
                             ))}
                         </div>

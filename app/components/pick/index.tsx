@@ -18,32 +18,41 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
             setLoading(true);
 
             try {
-                // 🛑 CORREÇÃO: Usar um URL absoluto (incluindo window.location.origin)
-                // para evitar o erro 'Failed to parse URL' em ambientes restritos.
-                // Em hospedagem estática (GitHub Pages) a rota dinâmica não existe.
-                // Buscar diretamente o arquivo JSON estático gerado em out/api/picks
                 const fileName = pickId ? `${type}-${date}-${pickId}.json` : `${type}-${date}.json`;
                 const apiUrl = new URL(`/api/picks/${fileName}`, window.location.origin).toString();
 
-                const response = await fetch(apiUrl);
-                const result = await response.json();
+                const response = await fetch(apiUrl, { headers: { Accept: 'application/json' } });
+                const contentType = response.headers.get('content-type') || '';
 
-                if (response.ok && result.data) {
-                    // O resultado.data deve ser o objeto único do palpite
-                    setPick(result.data);
+                if (response.ok && contentType.includes('application/json')) {
+                    const result = await response.json();
+                    if (result && result.data) {
+                        setPick(result.data);
+                        return;
+                    }
+                }
+
+                // Fallback: ler arquivo estático do dia e encontrar o palpite pelo id
+                const datePath = `${date.substring(0,4)}/${date.substring(5,7)}/${date.substring(8,10)}`;
+                const staticUrl = new URL(`/data/${type}/${datePath}.json`, window.location.origin).toString();
+                const staticResp = await fetch(staticUrl, { headers: { Accept: 'application/json' } });
+                if (staticResp.ok) {
+                    const list = await staticResp.json();
+                    const arr = Array.isArray(list) ? list : Array.isArray(list?.data) ? list.data : [];
+                    const found = pickId ? arr.find((p: any) => p.id === pickId) : arr[0] || null;
+                    setPick(found || null);
                 } else {
-                    console.error("API Error or Pick not found:", result.message);
                     setPick(null);
                 }
             } catch (error) {
-                console.error("Fetch failed:", error);
+                console.error('Fetch failed:', error);
                 setPick(null);
             } finally {
                 setLoading(false);
             }
         };
         fetchAnalysis();
-    }, [pickId]);
+    }, [pickId, date, type]);
 
     // Componente de botão de volta
     const GoBackButton = () => (

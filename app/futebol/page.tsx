@@ -203,6 +203,7 @@ const Soccer = () => {
                                     pick={pick}
                                     showStatus={true}
                                     compact={false}
+                                    date={selectedDate}
                                 />
                             ))}
                         </div>
