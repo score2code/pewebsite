@@ -80,7 +80,7 @@ const SportPickCard: React.FC<SportPickCardProps> = ({ pick, date, sport, showSt
             </div>
 
             <div className={`grid gap-4 items-center ${compact ? 'grid-cols-1' : 'grid-cols-3'}`}>
-                {/* Dica de Aposta */}
+                {/* Palpite Esportivo */}
                 <div className={`${compact ? '' : 'col-span-2'} p-3 bg-light-200/50 dark:bg-dark-700/50 rounded-lg`}>
                     <p className={`text-dark-900/70 dark:text-light-100/70 ${compact ? 'text-xs' : 'text-xs'}`}>Palpite</p>
                     <p className={`font-extrabold text-dark-900 dark:text-light-100 ${compact ? 'text-base' : 'text-lg'}`}>{pick.tip}</p>

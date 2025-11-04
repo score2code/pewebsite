@@ -53,9 +53,9 @@ export default function PremierLeaguePage() {
                 description: 'Entenda os fatores que tornam o Campeonato Brasileiro diferente.',
               },
               {
-                title: 'Apostas por Período',
-                slug: 'apostas-primeiro-segundo-tempo',
-                description: 'Como analisar e apostar considerando o comportamento por tempos de jogo.',
+                title: 'Análise por Período',
+                slug: 'analise-por-periodo',
+                description: 'Como analisar e explorar considerando o comportamento por tempos de jogo.',
               },
               {
                 title: 'Impacto de Lesões e Suspensões',

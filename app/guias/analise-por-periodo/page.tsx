@@ -3,8 +3,8 @@ import RelatedGuides from '@/app/components/related-guides';
 
 export const metadata = generateGuideMetadata({
   title: 'Análise por Tempo de Jogo: 1º e 2º Tempo',
-  description: 'Guia completo sobre análise de padrões de gols e eventos por período de jogo. Aprenda estratégias para apostas no primeiro e segundo tempo, considerando comportamentos e tendências.',
-  path: 'apostas-primeiro-segundo-tempo',
+  description: 'Guia completo sobre análise de padrões de gols e eventos por período de jogo. Aprenda estratégias para análise no primeiro e segundo tempo, considerando comportamentos e tendências.',
+  path: 'analise-por-periodo',
 });
 
 export default function ApostasPorTempoPage() {
@@ -12,14 +12,14 @@ export default function ApostasPorTempoPage() {
     <div className="min-h-screen pt-8 pb-16 px-4">
       <article className="max-w-4xl mx-auto">
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
-          <h1 className="text-4xl font-bold text-dark-900 dark:text-light-100 mb-4">Apostas por Período (1º / 2º Tempo)</h1>
-          <p className="text-lg text-dark-900/70 dark:text-light-100/70">Como analisar e apostar considerando o comportamento por tempos de jogo.</p>
+          <h1 className="text-4xl font-bold text-dark-900 dark:text-light-100 mb-4">Análise por Período (1º / 2º Tempo)</h1>
+          <p className="text-lg text-dark-900/70 dark:text-light-100/70">Como analisar e explorar considerando o comportamento por tempos de jogo.</p>
         </header>
 
         <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Por que dividir por períodos</h2>
-            <p className="text-dark-900/70 dark:text-light-100/70 mb-4">Equipes apresentam comportamentos distintos entre primeiro e segundo tempo (ritmo, substituições, desgaste). Apostar por períodos permite explorar essas diferenças.</p>
+            <p className="text-dark-900/70 dark:text-light-100/70 mb-4">Equipes apresentam comportamentos distintos entre primeiro e segundo tempo (ritmo, substituições, desgaste). Analisar por períodos permite explorar essas diferenças.</p>
           </section>
 
           <section className="mb-8">
@@ -37,7 +37,7 @@ export default function ApostasPorTempoPage() {
             <h2 className="text-2xl font-bold mb-4">Estratégias comuns</h2>
             <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
               <li>Buscar gols no final do 2º tempo (times que atacam após substituir)</li>
-              <li>Apostar em under no 1º tempo quando equipes são cautelosas</li>
+              <li>Explorar under no 1º tempo quando equipes são cautelosas</li>
               <li>Explorar mercados de intervalo/resultado</li>
             </ul>
           </section>

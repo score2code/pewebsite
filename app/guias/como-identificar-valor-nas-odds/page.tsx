@@ -60,9 +60,9 @@ export default function IdentificarValorOddsPage() {
                 description: 'Como avaliar o impacto real de desfalques no desempenho das equipes.',
               },
               {
-                title: 'Apostas por Período',
-                slug: 'apostas-primeiro-segundo-tempo',
-                description: 'Como analisar e apostar considerando o comportamento por tempos de jogo.',
+                title: 'Análise por Período',
+                slug: 'analise-por-periodo',
+                description: 'Como analisar e explorar considerando o comportamento por tempos de jogo.',
               },
             ]}
           />

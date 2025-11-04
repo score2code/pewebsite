@@ -20,7 +20,7 @@ const MainSections = () => {
         },
         {
             title: "Guias e Tutoriais",
-            description: "Aprenda as melhores estratégias de apostas, gestão de banca e análise de estatísticas avançadas.",
+            description: "Aprenda as melhores estratégias esportivas, gestão de banca e análise de estatísticas avançadas.",
             icon: BookOpen,
             href: "/guias",
             color: 'text-purple-700 dark:text-purple-500'
