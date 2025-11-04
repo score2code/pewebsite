@@ -5,7 +5,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 export async function generateStaticParams() {
-    const dataDir = path.join(process.cwd(), 'app', 'data', 'soccer');
+    const dataDir = path.join(process.cwd(), 'public', 'data', 'soccer');
     let allPicks = [];
 
     try {
@@ -40,11 +40,8 @@ export async function generateStaticParams() {
             }
         }
     } catch (error) {
-        console.error("[Build Error] Não foi possível ler o diretório base 'app/data'.", error);
-        return [
-            { date: '2025-11-03', id: 'futebol-001' },
-            { date: '2025-11-03', id: 'futebol-002' },
-        ];
+        console.error("[Build Error] Não foi possível ler o diretório base 'public/data'.", error);
+        return [];
     }
 
     return allPicks;

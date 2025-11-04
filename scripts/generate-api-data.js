@@ -4,7 +4,7 @@ const path = require('path');
 async function generateStaticApiData() {
   try {
     // Diretórios de origem e destino
-    const srcDir = path.join(process.cwd(), 'app', 'data');
+    const srcDir = path.join(process.cwd(), 'public', 'data');
     const outDir = path.join(process.cwd(), 'out', 'api', 'picks');
 
     // Criar diretório de saída recursivamente

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "futebol-001",
+    "league": "BRASILEIRÃO SÉRIE AAAAA",
+    "homeTeam": "Corinthians",
+    "awayTeam": "Flamengo",
+    "dateTime": "HOJE, 21:30 BRT",
+    "tip": "Mais de 2.5 Gols",
+    "odds": 1.85,
+    "confidence": 85,
+    "result": "Pending",
+    "analysis": "O Corinthians tem demonstrado fragilidade defensiva nas últimas três partidas em casa..."
+  },
+  {
+    "id": "futebol-002",
+    "league": "PREMIER LEAGUE",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Manchester City",
+    "dateTime": "HOJE, 16:00 GMT",
+    "tip": "Ambos Marcam",
+    "odds": 1.60,
+    "confidence": 78,
+    "result": "Pending",
+    "analysis": "Clássico com duas das melhores linhas ofensivas da Europa..."
+  }
+]

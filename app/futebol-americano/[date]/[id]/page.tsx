@@ -12,7 +12,7 @@ import path from 'path';
  */
 export async function generateStaticParams() {
     // Tenta ler o diretório onde os JSONs estão.
-    const dataDir = path.join(process.cwd(), 'app', 'data', 'football');
+    const dataDir = path.join(process.cwd(), 'public', 'data', 'football');
     let allPicks = [];
 
     try {
@@ -49,12 +49,8 @@ export async function generateStaticParams() {
             }
         }
     } catch (error) {
-        console.error("[Build Error] Não foi possível ler o diretório base 'app/data'. Recorrendo a IDs simulados.", error);
-        // Fallback: Retorna IDs de mock para garantir que o build estático não falha totalmente.
-        return [
-            { date: '2025-11-04', id: 'futebol-001' },
-            { date: '2025-11-04', id: 'futebol-002' },
-        ];
+        console.error("[Build Error] Não foi possível ler o diretório base 'public/data'. Recorrendo a IDs simulados.", error);
+        return [];
     }
 
     // Devolve a lista final de IDs únicos para o Next.js build

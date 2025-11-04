@@ -155,7 +155,12 @@ async function getCompetitionData(slug: string): Promise<ChampionshipData | null
     }
 
     try {
-        const picksFilePath = path.join(process.cwd(), 'public', 'data', 'soccer', '2025', '11', '03.json');
+        const today = new Date();
+        const year = today.getFullYear().toString();
+        const month = (today.getMonth() + 1).toString().padStart(2, '0'); // Months are 0-indexed
+        const day = today.getDate().toString().padStart(2, '0');
+
+        const picksFilePath = path.join(process.cwd(), 'public', 'data', 'soccer', year, month, `${day}.json`);
         const picksFileContents = await fs.readFile(picksFilePath, 'utf8');
         soccerPicksData = JSON.parse(picksFileContents);
     } catch (error) {
