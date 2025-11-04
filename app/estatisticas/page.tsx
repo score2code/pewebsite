@@ -1,9 +1,16 @@
 
 import { LeagueStanding } from '@/app/types';
+import fs from 'fs/promises';
+import path from 'path';
 async function getStandingsData(): Promise<LeagueStanding> {
-    const response = await fetch('/data/standings.json');
-    if (!response.ok) return {} as LeagueStanding;
-    return await response.json();
+    try {
+        const filePath = path.join(process.cwd(), 'public', 'data', 'standings.json');
+        const fileContents = await fs.readFile(filePath, 'utf8');
+        return JSON.parse(fileContents);
+    } catch (error) {
+        console.error("Error reading standings.json from filesystem:", error);
+        return {} as LeagueStanding;
+    }
 }
 import StandingsTable from '@/app/components/statistics/standings-table';
 

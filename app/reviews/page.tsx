@@ -1,9 +1,16 @@
 
 import { Review } from '@/app/types';
+import fs from 'fs/promises';
+import path from 'path';
 async function getReviews(): Promise<Review[]> {
-    const response = await fetch('/data/reviews.json');
-    if (!response.ok) return [];
-    return await response.json();
+    try {
+        const filePath = path.join(process.cwd(), 'public', 'data', 'reviews.json');
+        const fileContents = await fs.readFile(filePath, 'utf8');
+        return JSON.parse(fileContents);
+    } catch (error) {
+        console.error("Error reading reviews.json from filesystem:", error);
+        return [];
+    }
 }
 import ReviewCard from '@/app/components/review/card';
 

@@ -1,14 +1,13 @@
 
 import { Championship, ChampionshipData, LeagueStanding, Pick } from '@/app/types';
-import standingsData from '@/app/data/standings.json';
-import soccerPicksData from '@/app/data/soccer/2025/11/03.json';
+import fs from 'fs/promises';
+import path from 'path';
 import StandingsTable from '@/app/components/statistics/standings-table';
 import PickCard from '@/app/components/pick/card';
 import ChampionshipStats from '@/app/components/championship/stats';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { parsePicks } from '@/app/lib/data-parser';
-import championshipsStats from '@/app/data/championships-stats.json';
 
 const championships: Championship[] = [
     // Brasil
@@ -143,16 +142,36 @@ async function getCompetitionData(slug: string): Promise<ChampionshipData | null
         return null;
     }
 
-    // Busca dados via fetch
-    const standingsRes = await fetch('/data/standings.json');
-    const standingsData = standingsRes.ok ? await standingsRes.json() : {};
-    const picksRes = await fetch('/data/soccer/2025/11/03.json');
-    const soccerPicksData = picksRes.ok ? await picksRes.json() : [];
-    const statsRes = await fetch('/data/championships-stats.json');
-    const championshipsStats = statsRes.ok ? await statsRes.json() : {};
+    let standingsData = {};
+    let soccerPicksData = [];
+    let championshipsStats = {};
 
-    const standing: LeagueStanding = standingsData;
-    const soccerPicks: Pick[] = parsePicks(soccerPicksData);
+    try {
+        const standingsFilePath = path.join(process.cwd(), 'public', 'data', 'standings.json');
+        const standingsFileContents = await fs.readFile(standingsFilePath, 'utf8');
+        standingsData = JSON.parse(standingsFileContents);
+    } catch (error) {
+        console.error("Error reading standings.json:", error);
+    }
+
+    try {
+        const picksFilePath = path.join(process.cwd(), 'public', 'data', 'soccer', '2025', '11', '03.json');
+        const picksFileContents = await fs.readFile(picksFilePath, 'utf8');
+        soccerPicksData = JSON.parse(picksFileContents);
+    } catch (error) {
+        console.error("Error reading soccer picks data:", error);
+    }
+
+    try {
+        const statsFilePath = path.join(process.cwd(), 'public', 'data', 'championships-stats.json');
+        const statsFileContents = await fs.readFile(statsFilePath, 'utf8');
+        championshipsStats = JSON.parse(statsFileContents);
+    } catch (error) {
+        console.error("Error reading championships-stats.json:", error);
+    }
+
+    const standing: LeagueStanding = standingsData as LeagueStanding;
+    const soccerPicks: Pick[] = parsePicks(soccerPicksData as any[]);
     const picks: Pick[] = soccerPicks.filter(p => p.league.toUpperCase().includes(championship.name.toUpperCase()));
     const stats = championshipsStats[slug as keyof typeof championshipsStats];
 

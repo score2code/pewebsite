@@ -1,9 +1,16 @@
 
 import { OddsComparison } from '@/app/types';
+import fs from 'fs/promises';
+import path from 'path';
 async function getOddsComparisonData(): Promise<OddsComparison[]> {
-    const response = await fetch('/data/odds.json');
-    if (!response.ok) return [];
-    return await response.json();
+    try {
+        const filePath = path.join(process.cwd(), 'public', 'data', 'odds.json');
+        const fileContents = await fs.readFile(filePath, 'utf8');
+        return JSON.parse(fileContents);
+    } catch (error) {
+        console.error("Error reading odds.json from filesystem:", error);
+        return [];
+    }
 }
 import OddsTable from '@/app/components/odds/table';
 
