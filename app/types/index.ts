@@ -14,11 +14,10 @@ export interface Pick {
   result?: string;
   stake?: number;
   roi?: number;
-  
+
   // Campos legados (mantidos para compatibilidade)
   dateTime?: string;
   tip?: string;
-  result?: 'Win' | 'Loss' | 'Pending';
 }
 
 export interface Review {

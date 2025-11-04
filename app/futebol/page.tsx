@@ -99,6 +99,7 @@ const Soccer = () => {
         }
 
         // Ordenar
+        const safeTime = (d?: string) => (d ? new Date(d).getTime() : 0);
         switch (sortBy) {
             case 'confidence':
                 filtered.sort((a, b) => b.confidence - a.confidence);
@@ -107,10 +108,10 @@ const Soccer = () => {
                 filtered.sort((a, b) => a.league.localeCompare(b.league));
                 break;
             case 'probability':
-                filtered.sort((a, b) => b.probability - a.probability);
+                filtered.sort((a, b) => (b.probability ?? 0) - (a.probability ?? 0));
                 break;
             default: // date
-                filtered.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+                filtered.sort((a, b) => safeTime(b.date) - safeTime(a.date));
         }
 
         return filtered;
@@ -200,7 +201,6 @@ const Soccer = () => {
                                 <MemoizedPickCard
                                     key={pick.id}
                                     pick={pick}
-                                    date={selectedDate}
                                     showStatus={true}
                                     compact={false}
                                 />

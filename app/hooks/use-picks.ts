@@ -57,8 +57,15 @@ export const useFilteredPicks = (
         if (pick.confidence < confidenceNum) return false;
       }
 
-      if (filters.dateFrom && new Date(pick.date) < new Date(filters.dateFrom)) return false;
-      if (filters.dateTo && new Date(pick.date) > new Date(filters.dateTo)) return false;
+      const pickTime = pick.date ? new Date(pick.date).getTime() : 0;
+      if (filters.dateFrom) {
+        const fromTime = new Date(filters.dateFrom).getTime();
+        if (pickTime < fromTime) return false;
+      }
+      if (filters.dateTo) {
+        const toTime = new Date(filters.dateTo).getTime();
+        if (pickTime > toTime) return false;
+      }
 
       return true;
     });
@@ -75,7 +82,7 @@ export const useSortedPicks = (picks: Pick[], sortBy: string, sortOrder: 'asc' |
       
       switch (sortBy) {
         case 'date':
-          comparison = new Date(a.date).getTime() - new Date(b.date).getTime();
+          comparison = (a.date ? new Date(a.date).getTime() : 0) - (b.date ? new Date(b.date).getTime() : 0);
           break;
         case 'confidence':
           comparison = a.confidence - b.confidence;
@@ -84,7 +91,7 @@ export const useSortedPicks = (picks: Pick[], sortBy: string, sortOrder: 'asc' |
           comparison = a.odds - b.odds;
           break;
         case 'probability':
-          comparison = a.probability - b.probability;
+          comparison = (a.probability ?? 0) - (b.probability ?? 0);
           break;
         case 'league':
           comparison = a.league.localeCompare(b.league);

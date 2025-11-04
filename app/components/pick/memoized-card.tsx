@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { Pick } from '@/app/types';
-import StatusBadge from '@/app/components/ui/status-badge';
+import StatusBadge, { PickStatus } from '@/app/components/ui/status-badge';
 import { useFormattedDate, useFormattedTime } from '@/app/hooks/use-picks';
 import { TrendingUp, Calendar, Clock, Trophy, Target } from 'lucide-react';
 import Link from 'next/link';
@@ -20,6 +20,16 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
 }) => {
   const formattedDate = useFormattedDate(pick.date || new Date().toISOString());
   const formattedTime = useFormattedTime(pick.date || new Date().toISOString());
+  
+  const getBadgeStatus = (): PickStatus => {
+    if (pick.result === 'won') return 'won';
+    if (pick.result === 'lost') return 'lost';
+    // Heurísticas visuais adicionais
+    if (pick.confidence >= 80) return 'high-confidence';
+    if (pick.odds <= 1.5) return 'low-odds';
+    // Mapear 'void' para um estado suportado
+    return pick.status === 'void' ? 'pending' : (pick.status as PickStatus);
+  };
   
   const getConfidenceColor = (confidence: number) => {
     if (confidence >= 80) return 'text-green-600 dark:text-green-400';
@@ -42,7 +52,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
               <span className="text-xs font-medium text-purple-600 dark:text-purple-400 truncate">
                 {pick.league}
               </span>
-              {showStatus && <StatusBadge status={pick.status} size="sm" />}
+              {showStatus && <StatusBadge status={getBadgeStatus()} />}
             </div>
             <p className="text-sm font-semibold text-dark-900 dark:text-light-100 truncate">
               {pick.homeTeam} vs {pick.awayTeam}
@@ -74,7 +84,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
             {pick.league}
           </span>
         </div>
-        {showStatus && <StatusBadge status={pick.status} />}
+        {showStatus && <StatusBadge status={getBadgeStatus()} />}
       </div>
 
       {/* Teams */}

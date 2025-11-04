@@ -41,7 +41,7 @@ export const PickSchema = z.object({
   // Campos legados para compatibilidade com dados antigos
   dateTime: z.string().optional(), // Campo legado - será mapeado para date
   tip: z.string().optional(), // Campo legado - será mapeado para prediction
-  result: z.enum(['Pending', 'Win', 'Loss']).optional() // Campo legado - será mapeado para status
+  // 'result' legado é tratado em mapLegacyPickData; não precisa entrar no schema
 });
 
 // Esquema para estatísticas de palpites
@@ -182,7 +182,7 @@ export const validatePickArray = (data: unknown): Pick[] => {
       const mappedItem = typeof item === 'object' && item !== null ? mapLegacyPickData(item) : item;
       const validated = PickSchema.safeParse(mappedItem);
       if (!validated.success) {
-        console.warn(`Erro na validação do palpite ${index}:`, validated.error.errors);
+        console.warn(`Erro na validação do palpite ${index}:`, validated.error.issues);
         return null;
       }
       return validated.data;

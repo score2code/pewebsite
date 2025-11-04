@@ -43,10 +43,10 @@ const StatsCard: React.FC<StatsCardProps> = ({ title, value, change, icon, color
 };
 
 interface StatsDashboardProps {
-  hitRate: number;
-  totalPicks: number;
-  activeStreak: number;
-  monthlyROI: number;
+  hitRate?: number;
+  totalPicks?: number;
+  activeStreak?: number;
+  monthlyROI?: number;
 }
 
 const StatsDashboard: React.FC<StatsDashboardProps> = ({

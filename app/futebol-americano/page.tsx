@@ -176,7 +176,6 @@ const AmericanFootball = () => {
                                 <MemoizedPickCard
                                     key={pick.id}
                                     pick={pick}
-                                    date={selectedDate}
                                     showStatus={true}
                                     compact={false}
                                 />
