@@ -1,0 +1,35 @@
+[
+    {
+        "id": "bet-exemplo-1",
+        "name": "BetExemplo",
+        "logoUrl": "/brand-512.png",
+        "rating": 4.8,
+        "pros": [
+            "Odds competitivas",
+            "Plataforma rápida e intuitiva",
+            "Excelente suporte ao cliente 24/7"
+        ],
+        "cons": [
+            "Poucas opções de mercados alternativos"
+        ],
+        "bonus": "Bônus de 100% até R$200",
+        "affiliateLink": "#"
+    },
+    {
+        "id": "super-analise",
+        "name": "Super Análise",
+        "logoUrl": "/brand-512.png",
+        "rating": 4.5,
+        "pros": [
+            "Grande variedade de mercados",
+            "Transmissão de jogos ao vivo (streaming)",
+            "Promoções semanais"
+        ],
+        "cons": [
+            "Interface um pouco complexa para iniciantes",
+            "Saques podem levar até 48h"
+        ],
+        "bonus": "Análise grátis por 7 dias",
+        "affiliateLink": "#"
+    }
+]

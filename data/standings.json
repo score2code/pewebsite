@@ -1,0 +1,58 @@
+{
+    "leagueName": "BRASILEIRÃO SÉRIE A - 2025",
+    "country": "Brasil",
+    "standings": [
+        {
+            "rank": 1,
+            "team": {
+                "name": "Atlético-MG",
+                "logoUrl": "/brand-512.png"
+            },
+            "points": 45,
+            "played": 22,
+            "wins": 14,
+            "draws": 3,
+            "losses": 5,
+            "goalDifference": 18
+        },
+        {
+            "rank": 2,
+            "team": {
+                "name": "Palmeiras",
+                "logoUrl": "/brand-512.png"
+            },
+            "points": 43,
+            "played": 22,
+            "wins": 13,
+            "draws": 4,
+            "losses": 5,
+            "goalDifference": 15
+        },
+        {
+            "rank": 3,
+            "team": {
+                "name": "Flamengo",
+                "logoUrl": "/brand-512.png"
+            },
+            "points": 42,
+            "played": 22,
+            "wins": 12,
+            "draws": 6,
+            "losses": 4,
+            "goalDifference": 20
+        },
+        {
+            "rank": 4,
+            "team": {
+                "name": "Corinthians",
+                "logoUrl": "/brand-512.png"
+            },
+            "points": 38,
+            "played": 22,
+            "wins": 10,
+            "draws": 8,
+            "losses": 4,
+            "goalDifference": 9
+        }
+    ]
+}
