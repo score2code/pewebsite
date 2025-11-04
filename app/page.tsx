@@ -50,7 +50,7 @@ export default function HomePage() {
 
     return (
         <div className="min-h-screen font-sans pt-12">
-            <div className="max-w-6xl mx-auto p-4 sm:p-0">
+            <div className="max-w-6xl mx-auto px-4 py-4">
                 <Hero />
                 <MainSections />
 
