@@ -1,12 +1,13 @@
 
 import { OddsComparison } from '@/app/types';
-import oddsData from '@/app/data/odds.json';
+async function getOddsComparisonData(): Promise<OddsComparison[]> {
+    const response = await fetch('/data/odds.json');
+    if (!response.ok) return [];
+    return await response.json();
+}
 import OddsTable from '@/app/components/odds/table';
 
-async function getOddsComparisonData(): Promise<OddsComparison[]> {
-    // In a real app, this would fetch fresh data from one or more APIs.
-    return oddsData;
-}
+// ...existing code...
 
 export default async function OddsPage() {
     const comparisons = await getOddsComparisonData();

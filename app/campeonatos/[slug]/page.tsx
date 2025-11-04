@@ -143,7 +143,14 @@ async function getCompetitionData(slug: string): Promise<ChampionshipData | null
         return null;
     }
 
-    // Em um app real, você buscaria dados específicos do campeonato
+    // Busca dados via fetch
+    const standingsRes = await fetch('/data/standings.json');
+    const standingsData = standingsRes.ok ? await standingsRes.json() : {};
+    const picksRes = await fetch('/data/soccer/2025/11/03.json');
+    const soccerPicksData = picksRes.ok ? await picksRes.json() : [];
+    const statsRes = await fetch('/data/championships-stats.json');
+    const championshipsStats = statsRes.ok ? await statsRes.json() : {};
+
     const standing: LeagueStanding = standingsData;
     const soccerPicks: Pick[] = parsePicks(soccerPicksData);
     const picks: Pick[] = soccerPicks.filter(p => p.league.toUpperCase().includes(championship.name.toUpperCase()));

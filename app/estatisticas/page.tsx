@@ -1,12 +1,13 @@
 
 import { LeagueStanding } from '@/app/types';
-import standingsData from '@/app/data/standings.json';
+async function getStandingsData(): Promise<LeagueStanding> {
+    const response = await fetch('/data/standings.json');
+    if (!response.ok) return {} as LeagueStanding;
+    return await response.json();
+}
 import StandingsTable from '@/app/components/statistics/standings-table';
 
-async function getStandingsData(): Promise<LeagueStanding> {
-    // In a real app, this would fetch fresh data from an API.
-    return standingsData;
-}
+// ...existing code...
 
 export default async function StatisticsPage() {
     const standings = await getStandingsData();

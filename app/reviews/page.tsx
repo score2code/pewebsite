@@ -1,12 +1,13 @@
 
 import { Review } from '@/app/types';
-import reviewsData from '@/app/data/reviews.json';
+async function getReviews(): Promise<Review[]> {
+    const response = await fetch('/data/reviews.json');
+    if (!response.ok) return [];
+    return await response.json();
+}
 import ReviewCard from '@/app/components/review/card';
 
-async function getReviews(): Promise<Review[]> {
-    // In a real app, this could be a database call or an API fetch.
-    return reviewsData;
-}
+// ...existing code...
 
 export default async function ReviewsPage() {
     const reviews = await getReviews();
