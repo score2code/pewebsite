@@ -25,7 +25,7 @@ export default function ProbabilidadesOddsPage() {
                         </h2>
                         <p className="text-dark-900/70 dark:text-light-100/70 mb-4">
                             As odds representam a probabilidade implícita de um evento acontecer, mas também incluem
-                            a margem de lucro das casas de apostas. Saber interpretar essas informações é fundamental
+                            a margem dos eventos esportivos. Saber interpretar essas informações é fundamental
                             para encontrar valor real.
                         </p>
                     </section>
@@ -77,14 +77,14 @@ export default function ProbabilidadesOddsPage() {
                                 <li>Calcule sua probabilidade estimada do evento</li>
                                 <li>Compare com a probabilidade implícita na odd</li>
                                 <li>Se sua probabilidade maior que probabilidade da odd = Valor positivo</li>
-                                <li>Considere a margem da casa de apostas</li>
+                                <li>Considere a margem do evento</li>
                             </ul>
                         </div>
                     </section>
 
                     <section className="mb-8">
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
-                            Margem das Casas de Apostas
+                            Margem dos Eventos Esportivos
                         </h2>
                         <div className="space-y-4">
                             <p className="text-dark-900/70 dark:text-light-100/70 mb-4">
@@ -107,7 +107,7 @@ export default function ProbabilidadesOddsPage() {
                             Dicas Práticas
                         </h2>
                         <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-                            <li>Compare odds entre diferentes casas de apostas</li>
+                            <li>Compare odds entre diferentes eventos</li>
                             <li>Acompanhe as movimentações das odds</li>
                             <li>Considere o momento de entrada</li>
                             <li>Use calculadoras de odds e probabilidades</li>

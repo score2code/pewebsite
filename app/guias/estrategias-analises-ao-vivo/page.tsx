@@ -1,4 +1,4 @@
-export default function EscanteiosPage() {
+export default function AnalisesAoVivoPage() {
     return (
         <div className="min-h-screen pt-8 pb-16 px-4">
             <article className="max-w-4xl mx-auto">
@@ -7,10 +7,10 @@ export default function EscanteiosPage() {
                     border border-light-300 dark:border-dark-600
                     shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
                     <h1 className="text-4xl font-bold text-dark-900 dark:text-light-100 mb-4">
-                        Guia de Apostas em Escanteios
+                        Estratégias para Análises ao Vivo
                     </h1>
                     <p className="text-lg text-dark-900/70 dark:text-light-100/70">
-                        Estratégias e análises para o mercado de escanteios no futebol.
+                        Como analisar partidas em tempo real e identificar oportunidades durante os jogos.
                     </p>
                 </header>
 
@@ -21,116 +21,114 @@ export default function EscanteiosPage() {
 
                     <section className="mb-8">
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
-                            Fundamentos do Mercado
+                            Preparação
                         </h2>
                         <div className="space-y-4">
                             <p className="text-dark-900/70 dark:text-light-100/70 mb-4">
-                                O mercado de escanteios é baseado em diversos fatores táticos e estatísticos que
-                                influenciam a frequência de escanteios em uma partida.
+                                Antes de começar a analisar jogos ao vivo:
                             </p>
-                            <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100">
-                                Tipos de Mercado
-                            </h3>
                             <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-                                <li>Total de escanteios na partida</li>
-                                <li>Escanteios por time</li>
-                                <li>Handicap de escanteios</li>
-                                <li>Race to X corners</li>
-                                <li>Escanteios por período</li>
+                                <li>Estude as equipes previamente</li>
+                                <li>Prepare um plano de ação</li>
+                                <li>Defina limites claros</li>
+                                <li>Tenha acesso a estatísticas em tempo real</li>
+                                <li>Se possível, assista ao jogo</li>
                             </ul>
                         </div>
                     </section>
 
                     <section className="mb-8">
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
-                            Fatores de Análise
+                            Indicadores Importantes
                         </h2>
                         <div className="space-y-4">
                             <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100">
-                                Estilo de Jogo
+                                Estatísticas em Tempo Real
                             </h3>
                             <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-                                <li>Posse de bola e domínio territorial</li>
-                                <li>Jogo pelos lados do campo</li>
-                                <li>Intensidade ofensiva</li>
-                                <li>Propensão a cruzamentos</li>
+                                <li>Posse de bola e sua evolução</li>
+                                <li>Finalizações no alvo</li>
+                                <li>Pressão territorial</li>
+                                <li>Cartões e faltas</li>
+                                <li>Substituições realizadas</li>
                             </ul>
 
                             <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100 mt-6">
-                                Estatísticas Relevantes
+                                Fatores Qualitativos
                             </h3>
                             <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-                                <li>Média de escanteios por jogo</li>
-                                <li>Escanteios a favor/contra</li>
-                                <li>Desempenho em casa/fora</li>
-                                <li>Tendências por competição</li>
+                                <li>Linguagem corporal dos times</li>
+                                <li>Mudanças táticas</li>
+                                <li>Ritmo do jogo</li>
+                                <li>Condições climáticas</li>
+                                <li>Comportamento dos técnicos</li>
                             </ul>
                         </div>
                     </section>
 
                     <section className="mb-8">
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
-                            Situações Favoráveis
+                            Mercados Populares
                         </h2>
                         <div className="space-y-4">
-                            <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100">
-                                Alto Número de Escanteios
-                            </h3>
+                            <p className="text-dark-900/70 dark:text-light-100/70 mb-4">
+                                Principais mercados para análises ao vivo:
+                            </p>
                             <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-                                <li>Times ofensivos se enfrentando</li>
-                                <li>Necessidade de resultado</li>
-                                <li>Diferença técnica significativa</li>
-                                <li>Times que jogam pelas laterais</li>
-                            </ul>
-
-                            <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100 mt-6">
-                                Baixo Número de Escanteios
-                            </h3>
-                            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-                                <li>Jogos equilibrados</li>
-                                <li>Times que jogam pelo meio</li>
-                                <li>Partidas decisivas</li>
-                                <li>Condições climáticas adversas</li>
+                                <li>Próximo gol</li>
+                                <li>Total de gols</li>
+                                <li>Handicap asiático ao vivo</li>
+                                <li>Intervalo/Final</li>
+                                <li>Minutos específicos</li>
                             </ul>
                         </div>
                     </section>
 
                     <section className="mb-8">
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
-                            Análise por Período
+                            Momento do Jogo
                         </h2>
                         <div className="space-y-4">
                             <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100">
-                                Primeiro Tempo
+                                Primeiros 15 Minutos
                             </h3>
                             <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-                                <li>Intensidade inicial</li>
-                                <li>Estratégia das equipes</li>
-                                <li>Pressão alta</li>
+                                <li>Observe o padrão tático</li>
+                                <li>Analise a intensidade</li>
+                                <li>Identifique pontos fracos</li>
                             </ul>
 
                             <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100 mt-6">
-                                Segundo Tempo
+                                Final do Primeiro Tempo
                             </h3>
                             <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-                                <li>Resultado parcial</li>
+                                <li>Possíveis substituições</li>
+                                <li>Ajustes táticos</li>
+                                <li>Fadiga das equipes</li>
+                            </ul>
+
+                            <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100 mt-6">
+                                Últimos 15 Minutos
+                            </h3>
+                            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                                <li>Necessidade de gols</li>
                                 <li>Cansaço físico</li>
-                                <li>Substituições</li>
+                                <li>Gestão de resultado</li>
                             </ul>
                         </div>
                     </section>
 
                     <section>
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
-                            Dicas de Análise
+                            Dicas Essenciais
                         </h2>
                         <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-                            <li>Compare médias das equipes</li>
-                            <li>Analise confrontos diretos</li>
-                            <li>Considere o contexto do jogo</li>
-                            <li>Avalie as condições do campo</li>
-                            <li>Monitore mudanças táticas</li>
-                            <li>Acompanhe tendências da competição</li>
+                            <li>Não aposte por impulso</li>
+                            <li>Mantenha registro das análises</li>
+                            <li>Use odds mínimas pré-definidas</li>
+                            <li>Considere o delay das transmissões</li>
+                            <li>Tenha paciência para encontrar valor</li>
+                            <li>Evite perseguir prejuízos</li>
                         </ul>
                     </section>
                 </div>

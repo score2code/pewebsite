@@ -13,7 +13,7 @@ const MainSections = () => {
         },
         {
             title: "Análise de Odds",
-            description: "Ferramenta de comparação de odds em tempo real das principais casas de apostas do mercado.",
+            description: "Ferramenta de comparação de odds em tempo real dos principais eventos esportivos do mercado.",
             icon: TrendingUp,
             href: "/odds",
             color: 'text-purple-500 dark:text-purple-300'

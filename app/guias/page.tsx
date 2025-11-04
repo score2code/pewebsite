@@ -36,21 +36,21 @@ const guides = [
     // Mercados Específicos
     {
         title: 'Mercado de Cartões',
-        slug: 'guia-de-apostas-em-cartoes',
+        slug: 'guia-de-analise-de-cartoes',
         description: 'Análise completa do mercado de cartões: fatores, estatísticas e padrões a observar.',
         icon: BookOpen,
         category: 'Mercados Específicos'
     },
     {
         title: 'Mercado de Escanteios',
-        slug: 'guia-de-apostas-em-escanteios',
+        slug: 'guia-de-analise-de-escanteios',
         description: 'Estratégias e análises para o mercado de escanteios em diferentes competições.',
         icon: BookOpen,
         category: 'Mercados Específicos'
     },
     {
         title: 'Análise por Tempo de Jogo',
-        slug: 'apostas-primeiro-segundo-tempo',
+        slug: 'analise-primeiro-segundo-tempo',
         description: 'Como analisar padrões de gols e eventos por período de jogo.',
         icon: BookOpen,
         category: 'Mercados Específicos'
@@ -72,8 +72,8 @@ const guides = [
         category: 'Estratégias'
     },
     {
-        title: 'Apostas ao Vivo',
-        slug: 'estrategias-apostas-ao-vivo',
+        title: 'Análises ao Vivo',
+        slug: 'estrategias-analises-ao-vivo',
         description: 'Estratégias específicas para análise e tomada de decisão durante as partidas.',
         icon: ShieldCheck,
         category: 'Estratégias'

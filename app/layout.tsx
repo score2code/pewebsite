@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Palpites do dia | Previsões e Estatísticas',
-  description: 'Análises e palpites diários para apostas esportivas, com foco em alta taxa de acerto e transparência.',
+  description: 'Análises e palpites diários para eventos esportivos, com foco em alta taxa de acerto e transparência.',
 };
 
 export default function RootLayout({
