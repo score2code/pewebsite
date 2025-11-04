@@ -7,7 +7,6 @@ const CORE = [
   `${SCOPE_PATH}/`,
   `${SCOPE_PATH}/index.html`,
   `${SCOPE_PATH}/manifest.webmanifest`,
-  `${SCOPE_PATH}/knives.json`,
 ];
 
 self.addEventListener('install', (event) => {
