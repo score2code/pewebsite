@@ -30,8 +30,8 @@ export default function HomePage() {
                 const response = await fetch(`/data/soccer/${year}/${month}/${day}.json`);
                 const result = await response.json();
 
-                if (response.ok && Array.isArray(result.data)) {
-                    setLatestPicks(result.data);
+                if (response.ok && Array.isArray(result)) {
+                    setLatestPicks(result);
                 } else {
                     // Handle case where there are no picks for today, maybe try yesterday?
                     // For now, we just clear the list.
@@ -57,10 +57,10 @@ export default function HomePage() {
                 {/* Seção de Últimos Palpites */}
                 <div className="mb-12">
                     <h2 className="text-3xl font-bold text-dark-900 dark:text-light-100 text-center mb-8">
-                        Últimos <span className="text-purple-600 dark:text-purple-400">Palpites</span>
+                        Últimas <span className="text-purple-600 dark:text-purple-400">Análises</span>
                     </h2>
                     {loading ? (
-                        <div className="flex justify-center items-center p-8" role="status" aria-label="Carregando últimos palpites...">
+                        <div className="flex justify-center items-center p-8" role="status" aria-label="Carregando últimas análises...">
                             <Loader className="w-8 h-8 animate-spin text-purple-600 dark:text-purple-400" />
                         </div>
                     ) : latestPicks.length > 0 ? (
@@ -71,7 +71,7 @@ export default function HomePage() {
                         </div>
                     ) : (
                         <p className="text-center text-dark-900/70 dark:text-light-100/70">
-                            Nenhum palpite encontrado para hoje.
+                            Nenhuma análise encontrada para hoje.
                         </p>
                     )}
                 </div>
