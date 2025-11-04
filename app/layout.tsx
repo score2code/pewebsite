@@ -32,6 +32,10 @@ export default function RootLayout({
             <Analytics />
 
             <div className="min-h-screen flex flex-col">
+              {/* Development Banner */}
+              <div className="bg-yellow-500 text-white text-center text-sm py-1.5 font-semibold">
+                Este site está em desenvolvimento. Dados e funcionalidades podem ser alterados.
+              </div>
               <Header currentPath={currentPathSimulated} />
 
               <main className="flex-grow pb-12 px-4 max-w-6xl mx-auto w-full">

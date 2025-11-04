@@ -10,7 +10,10 @@ import { Loader } from 'lucide-react';
 
 // Helper to get date in YYYY-MM-DD format
 const getFormattedDate = (date: Date) => {
-    return date.toISOString().split('T')[0];
+    const year = date.getFullYear();
+    const month = (date.getMonth() + 1).toString().padStart(2, '0'); // Mês é 0-indexado
+    const day = date.getDate().toString().padStart(2, '0');
+    return `${year}-${month}-${day}`;
 }
 
 export default function HomePage() {
@@ -24,20 +27,17 @@ export default function HomePage() {
                 // In a real app, you might have a dedicated endpoint for "latest"
                 // For now, we fetch for the current day.
                 const today = getFormattedDate(new Date());
-                const year = today.substring(0, 4);
-                const month = today.substring(5, 7);
-                const day = today.substring(8, 10);
-                const response = await fetch(`/data/soccer/${year}/${month}/${day}.json`);
-                const result = await response.json();
-
-                if (response.ok && Array.isArray(result)) {
-                    setLatestPicks(result);
+                const url = `/data/soccer/${today.substring(0, 4)}/${today.substring(5, 7)}/${today.substring(8, 10)}.json`;
+                console.log("Fetching from URL:", url); // Adicione esta linha
+                const response = await fetch(url);
+                console.log("Response status:", response.status); // Adicione esta linha
+                                    const result = await response.json();
+                                    console.log("Fetched data:", result); // Adicione esta linha
+                                    if (Array.isArray(result)) {                    setLatestPicks(result);
                 } else {
-                    // Handle case where there are no picks for today, maybe try yesterday?
-                    // For now, we just clear the list.
+                    console.error("Failed to fetch picks, response not OK:", response.status, response.statusText);
                     setLatestPicks([]);
-                }
-            } catch (error) {
+                }            } catch (error) {
                 console.error("Failed to fetch latest picks:", error);
                 setLatestPicks([]);
             } finally {

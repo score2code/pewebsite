@@ -1,5 +1,7 @@
-import React from 'react';
-import { Home, BarChart3, BookOpen, Goal, Star, TrendingUp, Trophy } from 'lucide-react';
+'use client';
+
+import React, { useState } from 'react';
+import { Home, BarChart3, BookOpen, Goal, Star, TrendingUp, Trophy, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import DropdownMenu from '@/app/components/ui/dropdown-menu';
 import { ThemeSwitcher } from '@/app/components/theme-switcher';
@@ -26,6 +28,7 @@ interface DropdownNavItem {
 type NavItem = LinkNavItem | DropdownNavItem;
 
 const Header = ({ currentPath = '/' }) => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     // Define os itens do menu e as rotas
     const navItems: NavItem[] = [
         { name: 'Início', path: '/', icon: 'Home', type: 'link' },
@@ -90,8 +93,8 @@ const Header = ({ currentPath = '/' }) => {
                     Palpites do dia
                 </Link>
 
-                {/* Menu de Navegação */}
-                <div className="flex items-center space-x-2 md:space-x-4">
+                {/* Menu de Navegação Desktop */}
+                <div className="hidden md:flex items-center space-x-2 md:space-x-4">
                     {navItems.map((item, index) => {
                         if (item.type === 'link') {
                             const isActive = currentPath === item.path;
@@ -128,7 +131,64 @@ const Header = ({ currentPath = '/' }) => {
                         <ThemeSwitcher />
                     </div>
                 </div>
+
+                {/* Botão do Menu Mobile */}
+                <div className="md:hidden flex items-center">
+                    <ThemeSwitcher />
+                    <button
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="ml-2 p-2 rounded-md text-dark-900 dark:text-light-100 hover:bg-light-200 dark:hover:bg-dark-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    >
+                        {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                    </button>
+                </div>
             </div>
+
+            {/* Menu Mobile Overlay */}
+            {isMobileMenuOpen && (
+                <div className="md:hidden absolute top-[64px] left-0 w-full bg-light-50/95 dark:bg-dark-800/95 backdrop-blur-lg border-b border-light-300 dark:border-dark-600 pb-4 shadow-lg">
+                    <div className="flex flex-col items-start px-4 py-2 space-y-2">
+                        {navItems.map((item) => {
+                            if (item.type === 'link') {
+                                const isActive = currentPath === item.path;
+                                return (
+                                    <Link
+                                        key={item.path}
+                                        href={item.path}
+                                        className={`flex items-center w-full text-base font-semibold px-3 py-2 rounded-lg transition-all duration-300
+                                            ${isActive
+                                                ? 'bg-purple-600 text-white dark:bg-purple-500 dark:text-white shadow-lg'
+                                                : 'text-dark-900 dark:text-light-100 hover:bg-light-200 dark:hover:bg-dark-700'}`
+                                        }
+                                        onClick={() => setIsMobileMenuOpen(false)} // Fecha o menu ao clicar
+                                    >
+                                        {renderIcon(item.icon)}
+                                        <span>{item.name}</span>
+                                    </Link>
+                                );
+                            } else if (item.type === 'dropdown') {
+                                return (
+                                    <div key={item.name} className="w-full">
+                                        <DropdownMenu title={item.name} isMobile={true} closeMobileMenu={() => setIsMobileMenuOpen(false)}>
+                                            {item.items?.map(subItem => (
+                                                <Link key={subItem.path} href={subItem.path}>
+                                                    <span
+                                                        className="block px-4 py-2 text-sm text-dark-900 dark:text-light-100 hover:bg-light-200 dark:hover:bg-dark-700 transition-colors duration-300"
+                                                        onClick={() => setIsMobileMenuOpen(false)} // Fecha o menu ao clicar
+                                                    >
+                                                        {subItem.name}
+                                                    </span>
+                                                </Link>
+                                            ))}
+                                        </DropdownMenu>
+                                    </div>
+                                );
+                            }
+                            return null;
+                        })}
+                    </div>
+                </div>
+            )}
         </nav>
     );
 };
