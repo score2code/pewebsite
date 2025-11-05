@@ -4,6 +4,7 @@ import React from 'react';
 import { ChevronLeft, Loader, AlertTriangle, Trophy, TrendingUp } from 'lucide-react';
 
 import { Pick } from '@/app/types';
+import DisqusComments from '@/app/components/comments/disqus';
 
 const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string, date: string, type?: string }) => {
     // Hooks de Estado
@@ -168,6 +169,15 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
                         Recomenda-se usar esta informação como parte de uma estratégia mais ampla de análise esportiva.
                     </p>
                 </div>
+            </section>
+
+            {/* Comentários (Disqus) */}
+            <section className="mt-8">
+                <DisqusComments
+                    url={typeof window !== 'undefined' ? window.location.href : ''}
+                    identifier={`palpites-${type}-${date}-${pickId}`}
+                    title={`Palpite: ${pick.homeTeam} vs ${pick.awayTeam} (${pick.league})`}
+                />
             </section>
         </div>
     );

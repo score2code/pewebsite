@@ -10,7 +10,7 @@ interface DisqusCommentsProps {
 }
 
 const DisqusComments: React.FC<DisqusCommentsProps> = ({ url, identifier, title }) => {
-    const disqus_shortname = 'your-disqus-shortname'; // TODO: Replace with your Disqus shortname
+    const disqus_shortname = process.env.NEXT_PUBLIC_DISQUS_SHORTNAME || 'palpites';
 
     useEffect(() => {
         const disqus_config = function (this: any) {
