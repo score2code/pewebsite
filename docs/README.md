@@ -1,84 +1,101 @@
-# Documentação do Projeto
+# Palpites do Dia — Documentação
 
-Este documento descreve a estrutura, configuração e principais funcionalidades do projeto.
+Este documento cobre visão geral, funcionalidades, fluxo de dados, decisões de arquitetura e instruções de desenvolvimento, com foco no uso de páginas estáticas alimentadas por arquivos JSON.
 
-## 1. Configuração e Execução Local
+## Visão Geral
 
-Para configurar e executar o projeto localmente, siga os passos abaixo:
+- Aplicação Next.js (App Router) com export estático orientado a dados.
+- Conteúdo principal em páginas de esportes: `futebol` e `futebol-americano`.
+- Dados armazenados em `public/data` por tipo e data, garantindo builds determinísticos e deploy simples.
+- Renderização resiliente: busca por API opcional e fallback automático para arquivos JSON locais.
 
-1.  **Instalar Dependências:**
-    ```bash
-    npm install
-    ```
+## Funcionalidades
 
-2.  **Executar em Modo de Desenvolvimento:**
-    ```bash
-    npm run dev
-    ```
-    O aplicativo estará disponível em `http://localhost:3000` (ou outra porta disponível).
+- Listas e análises de palpites por data (`/futebol/[date]/` e `/futebol-americano/[date]/`).
+- Página de análise detalhada por ID de palpite (`/futebol/[date]/[id]/`).
+- Estatísticas de campeonatos e classificações (`/campeonatos/[slug]/`).
+- Guias e artigos temáticos (`/guias/...`).
+- Tema claro/escuro com persistência de preferência do usuário.
+- Sistema de notificações e banner de ambiente de desenvolvimento.
+- Página 404 consistente com o tema.
 
-3.  **Gerar Build de Produção:**
-    ```bash
-    npm run build
-    ```
-    Este comando compila o projeto para produção e gera os dados da API estática.
+## Estrutura do Projeto
 
-4.  **Iniciar em Modo de Produção:**
-    ```bash
-    npm run start
-    ```
+- `app/`: páginas, rotas e componentes.
+  - `futebol/`, `futebol-americano/`: rotas dinâmicas por data e ID.
+  - `campeonatos/`: rotas com `slug` para campeonatos.
+  - `components/`: UI, análise de palpites, cabeçalho, notificações, etc.
+  - `lib/`: carregamento e validação de dados (`data-loader.ts`, `picks.ts`).
+  - `not-found.tsx`: página 404 tematizada.
+- `public/`: assets e dados estáticos.
+  - `data/`: `soccer/YYYY/MM/DD.json`, `football/YYYY/MM/DD.json`.
+  - `reviews.json`, `odds.json`, `standings.json`, `championships-stats.json`.
+- `scripts/`: automações.
+  - `generate-api-data.js`: geração de arquivos de apoio para “API” estática.
 
-## 2. Estrutura do Projeto
+## Fluxo de Dados
 
-O projeto segue a estrutura de um aplicativo Next.js, com as seguintes pastas principais:
+- Origem dos dados: `public/data/<type>/<YYYY>/<MM>/<DD>.json`.
+- Cada arquivo de data contém uma lista de palpites com campos que incluem `id`, metadados do evento e análise.
+- Carregamento:
+  - Preferência por leitura de arquivo local via `loadPicksData`.
+  - Fallback para endpoint “API” caso esteja disponível.
+- Cliente (`PickAnalysisClient`):
+  - Tenta `GET /api/picks/<type>-<YYYY-MM-DD>-<id>.json`.
+  - Valida `content-type`; se não for JSON ou houver erro, faz fallback para `public/data` e filtra pelo `id`.
 
--   `app/`: Contém os componentes da aplicação, páginas e rotas.
-    -   `api/`: Rotas de API.
-    -   `campeonatos/`: Páginas para exibição de campeonatos e suas estatísticas.
-    -   `components/`: Componentes React reutilizáveis.
-    -   `futebol/`: Páginas para análises de futebol.
-    -   `futebol-americano/`: Páginas para análises de futebol americano.
-    -   `guias/`: Páginas para guias e artigos.
-    -   `lib/`: Funções utilitárias e lógicas de negócio.
-    -   `types/`: Definições de tipos TypeScript.
-    -   `utils/`: Utilitários diversos.
--   `public/`: Ativos estáticos (imagens, dados JSON, etc.).
-    -   `data/`: Contém os arquivos JSON com os dados da aplicação (ex: `soccer/2025/11/04.json`).
--   `scripts/`: Scripts auxiliares para o projeto.
-    -   `generate-api-data.js`: Script para gerar dados estáticos da API.
+## Páginas Estáticas com JSON — Processo e Motivos
 
-## 3. Geração de Dados da API Estática (`scripts/generate-api-data.js`)
+- Motivos:
+  - Performance: páginas pré-renderizadas são rápidas e previsíveis.
+  - Confiabilidade: sem dependência de banco de dados ou serviços externos para renderização.
+  - Deploy simples: apenas arquivos estáticos (HTML/JSON/CSS/JS), ideal para GitHub Pages/Netlify.
+  - Versionamento: dados versionados por data facilitam auditoria e reprodutibilidade.
+  - SEO: conteúdo disponível em build time, sem atrasos de hidratação de dados.
+- Processo:
+  - Organize dados por tipo e data em `public/data`.
+  - As páginas com `[date]` e `[id]` usam `generateStaticParams` para enumerar todas as rotas com base nos arquivos existentes.
+  - Durante o build (`npm run build`), o Next.js gera HTML estático para cada rota encontrada.
+  - No cliente, caso uma “API” não esteja disponível, os componentes leem diretamente os JSON locais.
+- Considerações de compatibilidade:
+  - Rotas de API dinâmicas não são compatíveis com `output: 'export'` sem `generateStaticParams()` (não suportado em handlers de API). Assim, a abordagem preferida é servir JSONs diretamente via `public/` ou gerar “APIs estáticas”.
 
-O script `scripts/generate-api-data.js` é responsável por ler os arquivos JSON de dados brutos localizados em `public/data/{type}/{year}/{month}/{day}.json` e gerar arquivos JSON otimizados para consumo da API em `out/api/picks/`.
+## API Estática Opcional
 
--   **Localização dos Dados de Origem:** `public/data/soccer` e `public/data/football`.
--   **Localização dos Dados Gerados:** `out/api/picks/`.
+- Estratégia recomendada para disponibilizar endpoints sem rotas dinâmicas:
+  - Gerar arquivos em `public/api/picks/` (ex.: `soccer-2025-11-04-futebol-001.json`).
+  - Ajustar o script `scripts/generate-api-data.js` para escrever em `public/api/picks/` quando necessário.
+  - O cliente pode continuar consumindo `/api/picks/...` que será servido como arquivo estático.
 
-Este script é executado automaticamente durante o comando `npm run build`.
+## Desenvolvimento
 
-## 4. Rotas Dinâmicas e Busca de Dados
+- Instalação:
+  - `npm install`
+- Desenvolvimento:
+  - `npm run dev`
+  - Servidor em `http://localhost:3000` ou `http://localhost:3001`.
+- Build e Export:
+  - `npm run build`
+  - `npm run export` (se aplicável para publicação estática)
+- Estrutura de dados:
+  - `public/data/soccer/YYYY/MM/DD.json` e `public/data/football/YYYY/MM/DD.json`.
+  - Verifique se IDs de palpites (ex.: `futebol-001`) existem no arquivo de data correspondente.
 
-### `app/futebol/[date]/[id]/page.tsx` e `app/futebol-americano/[date]/[id]/page.tsx`
+## Boas Práticas e Observações
 
-Estas páginas utilizam rotas dinâmicas para exibir análises de jogos específicas por data e ID.
+- Manter consistência de nomes de tipos (`soccer`, `football`) e datas ISO (`YYYY-MM-DD`).
+- Evitar rotas de API dinâmicas quando exportando estático; preferir JSONs em `public/`.
+- Garantir que componentes validem `content-type` antes de `response.json()` para evitar parsing de HTML em erros.
+- Atualizar a página 404 para manter a identidade visual e orientar a navegação.
 
--   A função `generateStaticParams` lê os diretórios `public/data/soccer` e `public/data/football` para identificar todas as datas e IDs de jogos disponíveis, gerando assim as páginas estáticas correspondentes durante o build.
--   A busca de dados é feita diretamente do sistema de arquivos, garantindo que apenas dados existentes sejam processados.
+## Referências Internas
 
-### `app/campeonatos/[slug]/page.tsx`
-
-Esta página exibe informações detalhadas sobre um campeonato específico, incluindo classificações, estatísticas e análises recentes.
-
--   A função `getCompetitionData` busca dados de `public/data/standings.json`, `public/data/championships-stats.json` e, dinamicamente, os palpites de futebol do dia atual em `public/data/soccer/{year}/{month}/{day}.json`.
--   A data para a busca dos palpites é determinada em tempo de execução (durante o build) para garantir que os dados mais recentes sejam utilizados.
-
-## 5. Componentes Importantes
-
--   `app/components/ui/dropdown-menu.tsx`: Um componente de menu dropdown reutilizável. Foi ajustado para lidar corretamente com a tipagem do `onClick` em elementos filhos.
--   `app/components/pick/card.tsx`: Componente para exibir um cartão de análise de jogo.
--   `app/components/championship/stats.tsx`: Componente para exibir estatísticas de campeonatos.
--   `app/components/statistics/standings-table.tsx`: Componente para exibir a tabela de classificação.
+- `app/lib/data-loader.ts`: carregamento de dados e fallback.
+- `app/components/pick/index.tsx`: cliente de análise com validação e fallback.
+- `scripts/generate-api-data.js`: geração de JSONs “API-like”.
+- `app/layout.tsx`: tema, header, footer, banner de desenvolvimento.
+- `docs/picks-schema.md`: schema de palpites em JSON e exemplo real.
 
 ---
 
-**Nota:** Este documento será atualizado conforme o projeto evolui.
+Este documento reflete o estado atual do projeto e será atualizado conforme novas funcionalidades e ajustes de arquitetura forem adicionados.
