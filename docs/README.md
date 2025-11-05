@@ -31,18 +31,18 @@ Este documento cobre visão geral, funcionalidades, fluxo de dados, decisões de
   - `data/`: `soccer/YYYY/MM/DD.json`, `football/YYYY/MM/DD.json`.
   - `reviews.json`, `odds.json`, `standings.json`, `championships-stats.json`.
 - `scripts/`: automações.
-  - `generate-api-data.js`: depreciado; a API é dinâmica via `/api/picks`.
+  - `generate-api-data.js`: depreciado; não há geração de JSONs em `public/api`.
 
 ## Fluxo de Dados
 
 - Origem dos dados: `public/data/<type>/<YYYY>/<MM>/<DD>.json`.
 - Cada arquivo de data contém uma lista de palpites com campos que incluem `id`, metadados do evento e análise.
 - Carregamento:
-  - Preferência por leitura de arquivo local via `loadPicksData`.
-  - Fallback para endpoint de API dinâmica (`/api/picks?type=<>&date=<>`).
+  - Os componentes leem diretamente os JSONs estáticos via `loadPicksData`.
+  - Não há uso de rotas de API; o site é 100% estático.
 - Cliente (`PickAnalysisClient`):
-  - Tenta `GET /api/picks?type=<type>&date=<YYYY-MM-DD>&id=<id>`.
-  - Valida `content-type`; se não for JSON ou houver erro, faz fallback para `public/data` e filtra pelo `id`.
+  - Lê `public/data/<type>/<YYYY>/<MM>/<DD>.json` e filtra pelo `id` do palpite.
+  - Valida `content-type` e trata erros de leitura.
 
 ## Páginas Estáticas com JSON — Processo e Motivos
 
@@ -84,7 +84,7 @@ Este documento cobre visão geral, funcionalidades, fluxo de dados, decisões de
 ## Boas Práticas e Observações
 
 - Manter consistência de nomes de tipos (`soccer`, `football`) e datas ISO (`YYYY-MM-DD`).
-- Evitar geração de JSONs duplicados em `public/api/picks`; usar a rota dinâmica.
+- Não gerar JSONs em `public/api/picks`; usar apenas `public/data` e páginas estáticas.
 - Garantir que componentes validem `content-type` antes de `response.json()` para evitar parsing de HTML em erros.
 - Atualizar a página 404 para manter a identidade visual e orientar a navegação.
 

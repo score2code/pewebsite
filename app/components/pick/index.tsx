@@ -18,26 +18,7 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
             setLoading(true);
 
             try {
-                // Preferir API dinâmica com query params (sem arquivos por pick)
-                const apiUrl = new URL('/api/picks', window.location.origin);
-                apiUrl.searchParams.set('type', type);
-                apiUrl.searchParams.set('date', date);
-                if (pickId) apiUrl.searchParams.set('id', pickId);
-
-                const response = await fetch(apiUrl.toString(), { headers: { Accept: 'application/json' } });
-                const contentType = response.headers.get('content-type') || '';
-
-                if (response.ok && contentType.includes('application/json')) {
-                    const result = await response.json();
-                    if (result && result.data) {
-                        const arr = Array.isArray(result.data) ? result.data : [];
-                        const found = pickId ? arr.find((p: any) => p.id === pickId) : arr[0] || null;
-                        setPick(found || null);
-                        return;
-                    }
-                }
-
-                // Fallback: ler arquivo estático do dia e encontrar o palpite pelo id
+                // Ler arquivo estático do dia e encontrar o palpite pelo id
                 const datePath = `${date.substring(0,4)}/${date.substring(5,7)}/${date.substring(8,10)}`;
                 const staticUrl = new URL(`/data/${type}/${datePath}.json`, window.location.origin).toString();
                 const staticResp = await fetch(staticUrl, { headers: { Accept: 'application/json' } });
