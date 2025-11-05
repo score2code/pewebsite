@@ -38,60 +38,36 @@ export const changeDate = (currentDate: string, days: number): string => {
  * Load picks data from static JSON files
  */
 export const loadPicksData = async (date: string, sport: SportType): Promise<Pick[]> => {
-  try {
-    const url = `/data/${sport}/${date.substring(0, 4)}/${date.substring(5, 7)}/${date.substring(8, 10)}.json`;
-    console.log(`Fetching from URL: ${url}`);
-    
-    const response = await fetch(url);
-    console.log(`Response status: ${response.status}`);
-    
-    if (!response.ok) {
-      console.error(`Failed to fetch picks, response not OK: ${response.status} ${response.statusText}`);
+  // No servidor, leia diretamente de app/data
+  if (typeof window === 'undefined') {
+    try {
+      const year = date.substring(0, 4);
+      const month = date.substring(5, 7);
+      const day = date.substring(8, 10);
+      const pathMod = await import('path');
+      const { readFile } = await import('fs/promises');
+      const filePath = pathMod.join(process.cwd(), 'app', 'data', sport, year, month, `${day}.json`);
+      const file = await readFile(filePath, 'utf-8').catch(() => null);
+      if (!file) return [];
+      const raw = JSON.parse(file);
+      const picks = Array.isArray(raw) ? raw : Array.isArray(raw?.data) ? raw.data : [];
+      const validated = validatePickArray(picks);
+      return validated.map(p => ({ ...p, date: p.date && p.date.length === 10 ? p.date : date }));
+    } catch (error) {
+      console.error(`[fs] Failed to read ${sport} picks for ${date}:`, error);
       return [];
     }
-    const contentType = response.headers.get('content-type') || '';
-    if (!contentType.includes('application/json')) {
-      console.error(`Unexpected content-type for picks: ${contentType}`);
-      return [];
-    }
-    
-    const result = await response.json();
-    console.log(`Fetched data:`, result);
-    
-    const picks = Array.isArray(result) ? result : [];
-    return validatePickArray(picks);
-  } catch (error) {
-    console.error(`Failed to fetch ${sport} picks for date ${date}:`, error);
-    return [];
   }
+
+  // No cliente, não há acesso ao filesystem e removemos a API.
+  // Esta função deve ser chamada apenas em Server Components.
+  console.warn(`[client] loadPicksData(${sport}, ${date}) chamado no cliente; retornando [] para site 100% estático.`);
+  return [];
 };
 
 /**
  * Load picks data with fallback to API (for compatibility with existing code)
  */
 export const loadPicksDataWithFallback = async (date: string, sport: SportType): Promise<Pick[]> => {
-  // First try to load from static files
-  const staticData = await loadPicksData(date, sport);
-  
-  if (staticData.length > 0) {
-    return staticData;
-  }
-  
-  // Fallback: try API endpoint (for backward compatibility)
-  try {
-    const apiUrl = new URL('/api/picks', typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000');
-    apiUrl.searchParams.set('type', sport);
-    apiUrl.searchParams.set('date', date);
-    const response = await fetch(apiUrl.toString());
-    
-    if (response.ok) {
-      const data = await response.json();
-      const picks = Array.isArray(data?.data) ? data.data : [];
-      return validatePickArray(picks);
-    }
-  } catch (error) {
-    console.warn(`API fallback failed for ${sport} picks on ${date}:`, error);
-  }
-  
-  return [];
+  return loadPicksData(date, sport);
 };

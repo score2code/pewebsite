@@ -9,7 +9,7 @@ interface StatusBadgeProps {
   result?: 'won' | 'lost' | 'pending';
 }
 
-const StatusBadge: React.FC<StatusBadgeProps> = ({ status, confidence, odds, result }) => {
+const StatusBadge: React.FC<StatusBadgeProps> = ({ status, confidence }) => {
   const getStatusConfig = () => {
     switch (status) {
       case 'won':

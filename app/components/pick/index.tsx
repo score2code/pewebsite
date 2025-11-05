@@ -4,42 +4,13 @@ import React from 'react';
 import { ChevronLeft, Loader, AlertTriangle, Trophy, TrendingUp } from 'lucide-react';
 
 import { Pick } from '@/app/types';
+import { validatePickArray } from '@/app/lib/validation';
 import DisqusComments from '@/app/components/comments/disqus';
 
-const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string, date: string, type?: string }) => {
+const PickAnalysisClient = ({ initialPick }: { initialPick: Pick }) => {
     // Hooks de Estado
-    const [pick, setPick] = React.useState<Pick | null>(null);
-    const [loading, setLoading] = React.useState(true);
-
-    console.log("PickAnalysisClient Props:", { pickId, date, type });
-
-    // Efeito para buscar os dados da API
-    React.useEffect(() => {
-        const fetchAnalysis = async () => {
-            setLoading(true);
-
-            try {
-                // Ler arquivo estático do dia e encontrar o palpite pelo id
-                const datePath = `${date.substring(0,4)}/${date.substring(5,7)}/${date.substring(8,10)}`;
-                const staticUrl = new URL(`/data/${type}/${datePath}.json`, window.location.origin).toString();
-                const staticResp = await fetch(staticUrl, { headers: { Accept: 'application/json' } });
-                if (staticResp.ok) {
-                    const list = await staticResp.json();
-                    const arr = Array.isArray(list) ? list : Array.isArray(list?.data) ? list.data : [];
-                    const found = pickId ? arr.find((p: any) => p.id === pickId) : arr[0] || null;
-                    setPick(found || null);
-                } else {
-                    setPick(null);
-                }
-            } catch (error) {
-                console.error('Fetch failed:', error);
-                setPick(null);
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchAnalysis();
-    }, [pickId, date, type]);
+    const [pick] = React.useState<Pick | null>(initialPick || null);
+    const [loading] = React.useState(false);
 
     // Componente de botão de volta
     const GoBackButton = () => (
@@ -129,7 +100,7 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
                         <p className="text-sm font-medium text-dark-900/70 dark:text-light-100/70 mb-2">
                             Análise Principal
                         </p>
-                        <p className="text-xl font-bold text-purple-600 dark:text-purple-400 mb-0">{pick.tip}</p>
+                        <p className="text-xl font-bold text-purple-600 dark:text-purple-400 mb-0">{(pick as any).prediction || (pick as any).tip}</p>
                     </div>
 
                     {/* Confiança */}
@@ -173,9 +144,9 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
 
             {/* Comentários (Disqus) */}
             <section className="mt-8">
-                <DisqusComments
+                    <DisqusComments
                     url={typeof window !== 'undefined' ? window.location.href : ''}
-                    identifier={`palpites-${type}-${date}-${pickId}`}
+                    identifier={`palpites-${pick?.league}-${pick?.date}-${pick?.id}`}
                     title={`Palpite: ${pick.homeTeam} vs ${pick.awayTeam} (${pick.league})`}
                 />
             </section>

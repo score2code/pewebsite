@@ -6,12 +6,14 @@ Este documento descreve o formato dos arquivos JSON de palpites usados em `publi
 
 Cada arquivo por data contém uma lista (array) de objetos de palpite com o seguinte schema:
 
-- `id` (string): identificador único do palpite para navegação.
+- `id` (string): slug no formato `home-x-away` baseado nos times.
 - `league` (string): nome da liga/competição.
 - `homeTeam` (string): time mandante.
 - `awayTeam` (string): time visitante.
-- `dateTime` (string): horário amigável do evento (com timezone/label).
-- `tip` (string): recomendação/mercado sugerido.
+- `date` (string): data do evento no formato `YYYY-MM-DD`.
+- `time` (string): hora do evento no formato `HH:mm`.
+- `timezone` (string, opcional): sigla do fuso horário, ex.: `BRT`.
+- `prediction` (string): recomendação/mercado sugerido.
 - `confidence` (number): nível de confiança percentual (0–100).
 - `result` (string): estado do resultado (`Pending`, `Won`, `Lost`, etc.).
 - `analysis` (string): resumo textual da análise principal.
@@ -27,23 +29,27 @@ Arquivo: `public/data/soccer/2025/11/04.json`
 ```json
 [
   {
-    "id": "futebol-001",
-    "league": "BRASILEIRÃO SÉRIE AAAAA",
+    "id": "corinthians-x-flamengo",
+    "league": "BRASILEIRÃO SÉRIE A",
     "homeTeam": "Corinthians",
     "awayTeam": "Flamengo",
-    "dateTime": "HOJE, 21:30 BRT",
-    "tip": "Mais de 2.5 Gols",
+    "date": "2025-11-04",
+    "time": "21:30",
+    "timezone": "BRT",
+    "prediction": "Mais de 2.5 Gols",
     "confidence": 85,
     "result": "Pending",
     "analysis": "O Corinthians tem demonstrado fragilidade defensiva nas últimas três partidas em casa..."
   },
   {
-    "id": "futebol-002",
+    "id": "liverpool-x-manchester-city",
     "league": "PREMIER LEAGUE",
     "homeTeam": "Liverpool",
     "awayTeam": "Manchester City",
-    "dateTime": "HOJE, 16:00 GMT",
-    "tip": "Ambos Marcam",
+    "date": "2025-11-04",
+    "time": "16:00",
+    "timezone": "GMT",
+    "prediction": "Ambos Marcam",
     "confidence": 78,
     "result": "Pending",
     "analysis": "Clássico com duas das melhores linhas ofensivas da Europa..."
@@ -55,9 +61,9 @@ Arquivo: `public/data/soccer/2025/11/04.json`
 
 - Tipos: `soccer` e `football` (use minúsculas constantes).
 - Datas: formato de diretório `YYYY/MM/DD` e slug de rota `YYYY-MM-DD`.
-- IDs: curtos e únicos por data (ex.: `futebol-001`).
+- IDs: baseados nos times (`home-x-away`), sem dependência de contadores.
 
 ## Consumo
 
 - Páginas estáticas usam `generateStaticParams` baseado na presença dos arquivos em `public/data`.
-- O cliente (`PickAnalysisClient`) lê o arquivo de data e filtra pelo `id` quando necessário, com fallback automático caso um endpoint “API-like” não esteja disponível.
+- O cliente (`PickAnalysisClient`) lê o arquivo de data e filtra pelo `id` quando necessário. Campos legados como `dateTime` e `tip` são mapeados automaticamente.

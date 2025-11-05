@@ -4,7 +4,7 @@ import fs from 'fs/promises';
 import path from 'path';
 async function getStandingsData(): Promise<LeagueStanding> {
     try {
-        const filePath = path.join(process.cwd(), 'public', 'data', 'standings.json');
+        const filePath = path.join(process.cwd(), 'app', 'data', 'standings.json');
         const fileContents = await fs.readFile(filePath, 'utf8');
         return JSON.parse(fileContents);
     } catch (error) {

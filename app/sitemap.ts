@@ -5,7 +5,7 @@ import path from 'path';
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
 function listPickRoutes() {
-  const base = path.join(process.cwd(), 'public', 'data');
+  const base = path.join(process.cwd(), 'app', 'data');
   const dirToSlug: Record<string, string> = {
     soccer: 'futebol',
     football: 'futebol-americano',

@@ -5,7 +5,8 @@ export const PickSchema = z.object({
   id: z.string().min(1, 'ID é obrigatório'),
   league: z.string().min(1, 'Liga é obrigatória'),
   country: z.string().min(1, 'País é obrigatório').optional().default('Brasil'),
-  date: z.string().datetime('Data deve estar em formato ISO').optional().default(''),
+  // Data do evento em YYYY-MM-DD (não ISO completo)
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/,'Data deve estar no formato YYYY-MM-DD').optional().default(''),
   homeTeam: z.string().min(1, 'Time da casa é obrigatório'),
   awayTeam: z.string().min(1, 'Time visitante é obrigatório'),
   prediction: z.string().min(1, 'Palpite é obrigatório'),
@@ -18,6 +19,9 @@ export const PickSchema = z.object({
   stake: z.number().positive('Stake deve ser positivo').optional().default(1),
   roi: z.number().optional().default(0),
   analysis: z.string().optional(),
+  // Hora do evento em HH:mm e timezone informativo
+  time: z.string().regex(/^\d{2}:\d{2}$/,'Hora deve estar no formato HH:mm').optional(),
+  timezone: z.string().optional(),
   headToHead: z.string().optional(),
   recentForm: z.object({
     home: z.string().regex(/^\d+-\d+-\d+$/, 'Formato inválido para forma recente do mandante'),
@@ -40,7 +44,7 @@ export const PickSchema = z.object({
   updatedAt: z.string().datetime('Data de atualização deve estar em formato ISO').optional(),
   
   // Campos legados para compatibilidade com dados antigos
-  dateTime: z.string().optional(), // Campo legado - será mapeado para date
+  dateTime: z.string().optional(), // Campo legado - será mapeado para time/timezone e date pelo loader
   tip: z.string().optional(), // Campo legado - será mapeado para prediction
   // 'result' legado é tratado em mapLegacyPickData; não precisa entrar no schema
 });
@@ -130,14 +134,25 @@ export type Championship = z.infer<typeof ChampionshipSchema>;
 export type Settings = z.infer<typeof SettingsSchema>;
 
 // Função para mapear dados legados para o novo formato
+const slugify = (text: string): string => {
+  return text
+    .normalize('NFD').replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+};
+
 const mapLegacyPickData = (data: any): any => {
   const mapped = { ...data };
   
   // Mapear campos legados para novos nomes
-  if (mapped.dateTime && !mapped.date) {
-    // Tentar converter dateTime legado para ISO; fallback para atual se inválido
-    const parsed = new Date(mapped.dateTime);
-    mapped.date = isNaN(parsed.getTime()) ? new Date().toISOString() : parsed.toISOString();
+  if (mapped.dateTime) {
+    // Extrair hora e timezone de strings amigáveis (ex: "HOJE, 14:45 BRT")
+    const match = String(mapped.dateTime).match(/(\d{2}:\d{2})(?:\s+([A-Z]{2,4}))?$/);
+    if (match) {
+      mapped.time = match[1];
+      if (match[2]) mapped.timezone = match[2];
+    }
   }
   
   if (mapped.tip && !mapped.prediction) {
@@ -158,6 +173,11 @@ const mapLegacyPickData = (data: any): any => {
   delete mapped.dateTime;
   delete mapped.tip;
   delete mapped.result;
+
+  // Garantir ID consistente: se o JSON já traz id, preserva; senão gera slug
+  if (!mapped.id && mapped.homeTeam && mapped.awayTeam) {
+    mapped.id = `${slugify(String(mapped.homeTeam))}-x-${slugify(String(mapped.awayTeam))}`;
+  }
   
   return mapped;
 };

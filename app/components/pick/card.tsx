@@ -11,11 +11,12 @@ interface PickCardProps {
 }
 
 const PickCard: React.FC<PickCardProps> = ({ pick }) => {
-    const hardcodedDate = '2025-11-03'; // This should be dynamic in a real app
+    const dateForRoute = (pick.date && pick.date.length === 10) ? pick.date : new Date().toISOString().split('T')[0];
+    const timeDisplay = pick.time ? (pick.time + (pick as any).timezone ? ` ${(pick as any).timezone}` : '') : (pick as any).dateTime || '';
 
     return (
         <Link
-            href={`/futebol/${hardcodedDate}/${pick.id}`}
+            href={`/futebol/${dateForRoute}/${pick.id}`}
             className="block focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-xl group"
         >
             <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl border border-light-300 dark:border-dark-600
@@ -27,7 +28,7 @@ const PickCard: React.FC<PickCardProps> = ({ pick }) => {
                     <div className="flex justify-between items-center">
                         <span className="font-medium text-purple-600 dark:text-purple-400">{pick.league}</span>
                         <span className="text-sm text-dark-900/70 dark:text-light-100/70 flex items-center">
-                            <Clock size={14} className="mr-1.5" /> {pick.dateTime}
+                            <Clock size={14} className="mr-1.5" /> {timeDisplay}
                         </span>
                     </div>
                 </div>
@@ -43,7 +44,7 @@ const PickCard: React.FC<PickCardProps> = ({ pick }) => {
                     </div>
                     <div className="text-center my-6 p-5 bg-light-200/50 dark:bg-dark-600/50 rounded-xl border border-light-300/50 dark:border-dark-500/50">
                         <p className="text-dark-900/70 dark:text-light-100/70 text-sm mb-2">Previsão:</p>
-                        <p className="text-xl font-bold text-purple-600 dark:text-purple-400">{pick.tip}</p>
+                        <p className="text-xl font-bold text-purple-600 dark:text-purple-400">{(pick as any).prediction || pick.tip}</p>
                     </div>
                 </div>
                 <div className="px-6 py-5 bg-light-200/50 dark:bg-dark-700/50 border-t border-light-300 dark:border-dark-600">

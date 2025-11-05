@@ -28,8 +28,8 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
   const rawDateForRoute = date || pick.date || new Date().toISOString();
   const pickDateForRoute = rawDateForRoute.split('T')[0];
   const formattedDate = useFormattedDate(pickDateForRoute);
-  // Usa horário legado se disponível; caso contrário, formata a partir da data
-  const formattedTime = pick.dateTime || useFormattedTime(pick.date || new Date().toISOString());
+  // Exibe a hora a partir do campo dedicado
+  const formattedTime = pick.time ? (pick.time + (pick.timezone ? ` ${pick.timezone}` : '')) : useFormattedTime(pick.date || new Date().toISOString());
   // Normalize route date to YYYY-MM-DD, prefer provided prop, then pick.date, then today
   // (já calculado acima)
   

@@ -147,7 +147,7 @@ async function getCompetitionData(slug: string): Promise<ChampionshipData | null
     let championshipsStats = {};
 
     try {
-        const standingsFilePath = path.join(process.cwd(), 'public', 'data', 'standings.json');
+        const standingsFilePath = path.join(process.cwd(), 'app', 'data', 'standings.json');
         const standingsFileContents = await fs.readFile(standingsFilePath, 'utf8');
         standingsData = JSON.parse(standingsFileContents);
     } catch (error) {
@@ -160,7 +160,7 @@ async function getCompetitionData(slug: string): Promise<ChampionshipData | null
         const month = (today.getMonth() + 1).toString().padStart(2, '0'); // Months are 0-indexed
         const day = today.getDate().toString().padStart(2, '0');
 
-        const picksFilePath = path.join(process.cwd(), 'public', 'data', 'soccer', year, month, `${day}.json`);
+        const picksFilePath = path.join(process.cwd(), 'app', 'data', 'soccer', year, month, `${day}.json`);
         const picksFileContents = await fs.readFile(picksFilePath, 'utf8');
         soccerPicksData = JSON.parse(picksFileContents);
     } catch (error) {
@@ -168,7 +168,7 @@ async function getCompetitionData(slug: string): Promise<ChampionshipData | null
     }
 
     try {
-        const statsFilePath = path.join(process.cwd(), 'public', 'data', 'championships-stats.json');
+        const statsFilePath = path.join(process.cwd(), 'app', 'data', 'championships-stats.json');
         const statsFileContents = await fs.readFile(statsFilePath, 'utf8');
         championshipsStats = JSON.parse(statsFileContents);
     } catch (error) {

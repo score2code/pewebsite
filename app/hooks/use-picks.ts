@@ -12,14 +12,16 @@ export const usePickStats = (picks: Pick[]) => {
     const pending = picks.filter(p => p.status === 'pending').length;
     
     const hitRate = total > 0 ? Math.round((won / (won + lost)) * 100) : 0;
-    const averageOdds = picks.reduce((sum, p) => sum + p.odds, 0) / total;
+    const averageOdds = total > 0
+      ? picks.reduce((sum, p) => sum + (p.odds ?? 0), 0) / total
+      : 0;
     const totalProfit = picks.reduce((sum, p) => {
-      if (p.status === 'won') return sum + (p.odds - 1) * (p.stake || 1);
-      if (p.status === 'lost') return sum - (p.stake || 1);
+      if (p.status === 'won') return sum + ((p.odds ?? 2) - 1) * (p.stake ?? 1);
+      if (p.status === 'lost') return sum - (p.stake ?? 1);
       return sum;
     }, 0);
     
-    const roi = total > 0 ? (totalProfit / (total * (picks[0]?.stake || 1))) * 100 : 0;
+    const roi = total > 0 ? (totalProfit / (total * (picks[0]?.stake ?? 1))) * 100 : 0;
 
     return {
       total,
