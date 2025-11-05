@@ -5,7 +5,10 @@ async function generateStaticApiData() {
   try {
     // Diretórios de origem e destino
     const srcDir = path.join(process.cwd(), 'public', 'data');
-    const outDir = path.join(process.cwd(), 'out', 'api', 'picks');
+    // Permitir configurar diretório de saída via env ou CLI
+    const cliArg = process.argv.find(a => a.startsWith('--out-dir='));
+    const outBase = cliArg ? cliArg.split('=')[1] : (process.env.OUTPUT_DIR || path.join('public', 'api', 'picks'));
+    const outDir = path.join(process.cwd(), outBase);
 
     // Criar diretório de saída recursivamente
     await fs.mkdir(outDir, { recursive: true });
@@ -58,7 +61,7 @@ async function generateStaticApiData() {
       }
     }
 
-    console.log('Dados da API gerados com sucesso!');
+    console.log(`Dados da API gerados com sucesso em: ${outDir}`);
   } catch (error) {
     console.error('Erro ao gerar dados da API:', error);
     process.exit(1);

@@ -1,5 +1,6 @@
 import { generateGuideMetadata } from '@/app/utils/metadata';
 import RelatedGuides from '@/app/components/related-guides';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateGuideMetadata({
   title: 'Análise por Tempo de Jogo: 1º e 2º Tempo',
@@ -8,9 +9,16 @@ export const metadata = generateGuideMetadata({
 });
 
 export default function ApostasPorTempoPage() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  const jsonLd = buildArticleJsonLd({
+    url: `${siteUrl}/guias/analise-por-periodo`,
+    title: 'Análise por Período (1º / 2º Tempo)',
+    description: 'Guia completo sobre análise de padrões de gols e eventos por período de jogo.',
+  });
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
       <article className="max-w-4xl mx-auto">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
           <h1 className="text-4xl font-bold text-dark-900 dark:text-light-100 mb-4">Análise por Período (1º / 2º Tempo)</h1>
           <p className="text-lg text-dark-900/70 dark:text-light-100/70">Como analisar e explorar considerando o comportamento por tempos de jogo.</p>

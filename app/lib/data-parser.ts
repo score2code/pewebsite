@@ -1,14 +1,9 @@
-import { Pick } from '@/app/types';
+import type { Pick as UIPick } from '@/app/types';
+import { validatePickArray } from './validation';
 
-export function parsePicks(data: any[]): Pick[] {
-  return data.map(item => {
-    // Basic validation and type assertion
-    if (!('id' in item && 'league' in item && 'dateTime' in item && 'homeTeam' in item && 'awayTeam' in item && 'tip' in item && 'odds' in item && 'confidence' in item && 'analysis' in item && 'result' in item)) {
-      throw new Error("Invalid pick data structure");
-    }
-    if (!['Win', 'Loss', 'Pending'].includes(item.result)) {
-      throw new Error(`Invalid result value: ${item.result}`);
-    }
-    return item as Pick;
-  });
+// Refatorado para usar validação Zod e mapeamento legado
+export function parsePicks(data: any[]): UIPick[] {
+  const validated = validatePickArray(Array.isArray(data) ? data : []);
+  // Converte o tipo inferido pelo Zod para o tipo de UI, se necessário
+  return validated as unknown as UIPick[];
 }

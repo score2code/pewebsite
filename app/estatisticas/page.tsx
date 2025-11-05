@@ -13,6 +13,7 @@ async function getStandingsData(): Promise<LeagueStanding> {
     }
 }
 import StandingsTable from '@/app/components/statistics/standings-table';
+import PoissonTool from '@/app/components/statistics/poisson-tool';
 
 // ...existing code...
 
@@ -34,8 +35,17 @@ export default async function StatisticsPage() {
                 </div>
 
                 <div className="space-y-6">
+                    <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600">
+                        <h2 className="text-2xl font-semibold mb-2">Modelagem rápida</h2>
+                        <p className="text-dark-900/70 dark:text-light-100/70">
+                            Use a ferramenta Poisson para estimar probabilidades de resultados,
+                            linhas de gols e distribuição de placares com base em médias de gols
+                            esperadas das equipes.
+                        </p>
+                    </div>
+
+                    <PoissonTool />
                     <StandingsTable leagueStanding={standings} />
-                    {/* Mais componentes estatísticos serão adicionados aqui */}
                 </div>
             </div>
         </div>

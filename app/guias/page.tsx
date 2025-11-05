@@ -1,5 +1,6 @@
 
 import Link from 'next/link';
+import { buildItemListJsonLd } from '@/app/lib/jsonld';
 import { BookOpen, TrendingUp, ShieldCheck } from 'lucide-react';
 
 const guides = [
@@ -125,9 +126,24 @@ const guides = [
 ];
 
 export default function GuidesPage() {
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+    const itemListJsonLd = buildItemListJsonLd(
+        `${baseUrl}/guias`,
+        'Guias e Análises Esportivas',
+        guides.map(g => ({
+            url: `${baseUrl}/guias/${g.slug}`,
+            name: g.title,
+            description: g.description,
+        })),
+        'Coleção de guias e análises para aprimorar estudos e previsões no futebol.'
+    );
     return (
         <div className="min-h-screen pt-8 px-4">
             <div className="max-w-4xl mx-auto">
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+                />
                 <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl shadow-custom dark:shadow-custom-dark
                     p-8 mb-8 border border-light-300 dark:border-dark-600 backdrop-blur-sm">
                     <h1 className="text-4xl font-bold text-dark-900 dark:text-light-100 mb-3">

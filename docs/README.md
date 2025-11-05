@@ -95,6 +95,8 @@ Este documento cobre visão geral, funcionalidades, fluxo de dados, decisões de
 - `scripts/generate-api-data.js`: geração de JSONs “API-like”.
 - `app/layout.tsx`: tema, header, footer, banner de desenvolvimento.
 - `docs/picks-schema.md`: schema de palpites em JSON e exemplo real.
+ - `app/sitemap.ts` e `app/robots.ts`: sitemap dinâmico e robots para SEO.
+ - `app/lib/jsonld.ts`: helper para JSON-LD; integrado em guias.
 
 ---
 

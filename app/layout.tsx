@@ -23,6 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const currentPathSimulated = '/';
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
     <html lang="pt-BR" suppressHydrationWarning>
@@ -31,6 +32,23 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="min-h-screen bg-gradient-to-b from-light-50 to-light-200 dark:from-dark-900 dark:to-dark-950 text-dark-900 dark:text-light-100 transition-colors duration-300">
             <Analytics />
+
+            {GA_ID && (
+              <>
+                <Script
+                  src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+                  strategy="afterInteractive"
+                />
+                <Script id="ga4-init" strategy="afterInteractive">
+                  {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);} 
+                    gtag('js', new Date());
+                    gtag('config', '${GA_ID}', { anonymize_ip: true });
+                  `}
+                </Script>
+              </>
+            )}
 
             <div className="min-h-screen flex flex-col">
               {/* Development Banner */}

@@ -135,7 +135,9 @@ const mapLegacyPickData = (data: any): any => {
   
   // Mapear campos legados para novos nomes
   if (mapped.dateTime && !mapped.date) {
-    mapped.date = new Date().toISOString(); // Usar data atual se não houver
+    // Tentar converter dateTime legado para ISO; fallback para atual se inválido
+    const parsed = new Date(mapped.dateTime);
+    mapped.date = isNaN(parsed.getTime()) ? new Date().toISOString() : parsed.toISOString();
   }
   
   if (mapped.tip && !mapped.prediction) {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Filter, SortAsc, Calendar, Trophy, Target } from 'lucide-react';
+import { trackEvent } from '@/app/lib/analytics';
 
 interface FilterOption {
   value: string;
@@ -68,7 +69,13 @@ const FilterSort: React.FC<FilterSortProps> = ({
           </label>
           <select
             value={selectedLeague}
-            onChange={(e) => onLeagueChange(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              try {
+                trackEvent('filter_change', { filter: 'league', value });
+              } catch {}
+              onLeagueChange(value);
+            }}
             className="w-full p-2 rounded-lg border border-light-300 dark:border-dark-600 bg-white dark:bg-dark-700 text-dark-900 dark:text-light-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           >
             <option value="">Todas as Ligas</option>
@@ -89,7 +96,11 @@ const FilterSort: React.FC<FilterSortProps> = ({
             </label>
             <select
               value={selectedConfidence}
-              onChange={(e) => onConfidenceChange(e.target.value)}
+              onChange={(e) => {
+                const value = e.target.value;
+                try { trackEvent('filter_change', { filter: 'confidence', value }); } catch {}
+                onConfidenceChange(value);
+              }}
               className="w-full p-2 rounded-lg border border-light-300 dark:border-dark-600 bg-white dark:bg-dark-700 text-dark-900 dark:text-light-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
             >
               {confidenceOptions.map((option) => (
@@ -111,7 +122,11 @@ const FilterSort: React.FC<FilterSortProps> = ({
             <input
               type="date"
               value={selectedDate}
-              onChange={(e) => onDateChange(e.target.value)}
+              onChange={(e) => {
+                const value = e.target.value;
+                try { trackEvent('filter_change', { filter: 'date', value }); } catch {}
+                onDateChange(value);
+              }}
               className="w-full p-2 rounded-lg border border-light-300 dark:border-dark-600 bg-white dark:bg-dark-700 text-dark-900 dark:text-light-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
             />
           </div>
@@ -126,7 +141,11 @@ const FilterSort: React.FC<FilterSortProps> = ({
             </label>
             <select
               value={sortBy}
-              onChange={(e) => onSortChange(e.target.value)}
+              onChange={(e) => {
+                const value = e.target.value;
+                try { trackEvent('filter_change', { filter: 'sort', value }); } catch {}
+                onSortChange(value);
+              }}
               className="w-full p-2 rounded-lg border border-light-300 dark:border-dark-600 bg-white dark:bg-dark-700 text-dark-900 dark:text-light-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
             >
               {sortOptions.map((option) => (

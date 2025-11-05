@@ -5,6 +5,7 @@ import { useFormattedDate, useFormattedTime } from '@/app/hooks/use-picks';
 import { TrendingUp, Calendar, Clock, Trophy, Target } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { trackClick } from '@/app/lib/analytics';
 
 interface MemoizedPickCardProps {
   pick: Pick;
@@ -153,6 +154,16 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
       {/* Analysis Link */}
       <Link
         href={`/${sportSegment}/${pickDateForRoute}/${pick.id}`}
+        onClick={() => {
+          try {
+            trackClick('pick', 'open_analysis', {
+              sport: sportSegment,
+              date: pickDateForRoute,
+              pick_id: pick.id,
+              league: pick.league,
+            });
+          } catch {}
+        }}
         className="block w-full text-center bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium"
       >
         Ver Análise Completa

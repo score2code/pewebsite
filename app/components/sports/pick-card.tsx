@@ -1,8 +1,10 @@
+"use client";
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Zap, Calendar, TrendingUp, Shield, BarChart3 } from 'lucide-react';
 import { Pick } from '@/app/types';
 import StatusBadge from '@/app/components/ui/status-badge';
+import { trackClick } from '@/app/lib/analytics';
 
 interface SportPickCardProps {
     pick: Pick;
@@ -16,6 +18,16 @@ const SportPickCard: React.FC<SportPickCardProps> = ({ pick, date, sport, showSt
     const router = useRouter();
 
     const handleNavigation = () => {
+        try {
+            trackClick('pick', 'open_analysis', {
+                sport,
+                date,
+                pick_id: pick.id,
+                league: pick.league,
+            });
+        } catch (e) {
+            // avoid blocking navigation on analytics errors
+        }
         router.push(`/${sport}/${date}/${pick.id}`);
     };
 

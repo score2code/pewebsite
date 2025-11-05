@@ -49,6 +49,11 @@ export const loadPicksData = async (date: string, sport: SportType): Promise<Pic
       console.error(`Failed to fetch picks, response not OK: ${response.status} ${response.statusText}`);
       return [];
     }
+    const contentType = response.headers.get('content-type') || '';
+    if (!contentType.includes('application/json')) {
+      console.error(`Unexpected content-type for picks: ${contentType}`);
+      return [];
+    }
     
     const result = await response.json();
     console.log(`Fetched data:`, result);

@@ -13,6 +13,7 @@ async function getOddsComparisonData(): Promise<OddsComparison[]> {
     }
 }
 import OddsTable from '@/app/components/odds/table';
+import OddsCalculator from '@/app/components/odds/calculator';
 
 // ...existing code...
 
@@ -34,6 +35,18 @@ export default async function OddsPage() {
                 </div>
 
                 <div className="space-y-6">
+                    <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600">
+                        <h2 className="text-2xl font-semibold mb-2">Como interpretar odds</h2>
+                        <p className="text-dark-900/70 dark:text-light-100/70">
+                            Odds representam o retorno potencial sobre uma aposta e embutem uma
+                            probabilidade implícita. Compare sua estimativa com a do mercado para
+                            identificar valor. Utilize a calculadora abaixo para converter formatos,
+                            calcular retorno e entender a probabilidade implícita.
+                        </p>
+                    </div>
+
+                    <OddsCalculator />
+
                     {comparisons.map((comparison) => (
                         <OddsTable key={comparison.matchId} comparison={comparison} />
                     ))}
