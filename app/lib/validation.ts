@@ -9,7 +9,8 @@ export const PickSchema = z.object({
   homeTeam: z.string().min(1, 'Time da casa é obrigatório'),
   awayTeam: z.string().min(1, 'Time visitante é obrigatório'),
   prediction: z.string().min(1, 'Palpite é obrigatório'),
-  odds: z.number().positive('Odds deve ser um número positivo'),
+  // odds agora opcional, com default para suportar dados legados
+  odds: z.number().positive('Odds deve ser um número positivo').optional().default(2),
   probability: z.number().min(0).max(100, 'Probabilidade deve estar entre 0 e 100').optional().default(0),
   confidence: z.number().min(0).max(100, 'Confiança deve estar entre 0 e 100'),
   status: z.enum(['pending', 'won', 'lost', 'void']).default('pending'),

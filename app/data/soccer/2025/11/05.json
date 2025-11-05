@@ -1,0 +1,57 @@
+[
+  {
+    "id": "futebol-001",
+    "league": "Brasileirão Série A",
+    "homeTeam": "São Paulo",
+    "awayTeam": "Flamengo",
+    "dateTime": "HOJE, 21:30 BRT",
+    "tip": "Dupla Chance: X2",
+    "confidence": 78,
+    "result": "Pending",
+    "analysis": "Flamengo em sequência positiva e elenco com maior profundidade; São Paulo oscila em jogos grandes. X2 cobre empate ou vitória do Flamengo."
+  },
+  {
+    "id": "futebol-002",
+    "league": "Brasileirão Série A",
+    "homeTeam": "Botafogo RJ",
+    "awayTeam": "Vasco da Gama",
+    "dateTime": "HOJE, 19:30 BRT",
+    "tip": "Total de Gols: Mais de 1.5",
+    "confidence": 82,
+    "result": "Pending",
+    "analysis": "Clássico com tendência a pelo menos dois gols; Botafogo agressivo em casa e Vasco melhorou produção ofensiva recente."
+  },
+  {
+    "id": "futebol-003",
+    "league": "UEFA Champions League",
+    "homeTeam": "Club Brugge",
+    "awayTeam": "Barcelona",
+    "dateTime": "HOJE, 17:00 BRT",
+    "tip": "Barcelona vence",
+    "confidence": 76,
+    "result": "Pending",
+    "analysis": "Barcelona superior tecnicamente e com bom momento na competição; Brugge é competitivo, mas desfavorável contra linhas ofensivas de elite."
+  },
+  {
+    "id": "futebol-004",
+    "league": "UEFA Champions League",
+    "homeTeam": "Qarabag",
+    "awayTeam": "Chelsea",
+    "dateTime": "HOJE, 14:45 BRT",
+    "tip": "Chelsea vence",
+    "confidence": 74,
+    "result": "Pending",
+    "analysis": "Chelsea com maior profundidade e experiência; Qarabag tem dificuldades contra pressão alta e bolas paradas."
+  },
+  {
+    "id": "futebol-005",
+    "league": "UEFA Europa League",
+    "homeTeam": "Pafos",
+    "awayTeam": "Villarreal",
+    "dateTime": "HOJE, 14:45 BRT",
+    "tip": "Villarreal vence",
+    "confidence": 70,
+    "result": "Pending",
+    "analysis": "Villarreal superior tecnicamente e com melhor fase ofensiva; Pafos tende a ceder espaços em transições."
+  }
+]
