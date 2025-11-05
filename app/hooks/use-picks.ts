@@ -87,9 +87,6 @@ export const useSortedPicks = (picks: Pick[], sortBy: string, sortOrder: 'asc' |
         case 'confidence':
           comparison = a.confidence - b.confidence;
           break;
-        case 'odds':
-          comparison = a.odds - b.odds;
-          break;
         case 'probability':
           comparison = (a.probability ?? 0) - (b.probability ?? 0);
           break;

@@ -79,13 +79,14 @@ export const loadPicksDataWithFallback = async (date: string, sport: SportType):
   
   // Fallback: try API endpoint (for backward compatibility)
   try {
-    const API_BASE_URL = '/api/picks';
-    const fileName = `${sport}-${date}.json`;
-    const response = await fetch(`${API_BASE_URL}/${fileName}`);
+    const apiUrl = new URL('/api/picks', typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000');
+    apiUrl.searchParams.set('type', sport);
+    apiUrl.searchParams.set('date', date);
+    const response = await fetch(apiUrl.toString());
     
     if (response.ok) {
       const data = await response.json();
-      const picks = data.data && Array.isArray(data.data) ? data.data : [];
+      const picks = Array.isArray(data?.data) ? data.data : [];
       return validatePickArray(picks);
     }
   } catch (error) {
