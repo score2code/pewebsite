@@ -41,7 +41,7 @@ const Header = ({ currentPath = '/' }) => {
         {
             name: 'Conteúdo', icon: 'BookOpen', type: 'dropdown', items: [
                 { name: 'Guias', path: '/guias' },
-                { name: 'Reviews', path: '/reviews' },
+                { name: 'Bilhete do dia', path: '/bilhete-do-dia' },
             ]
         },
         {
