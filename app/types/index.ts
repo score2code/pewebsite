@@ -9,7 +9,10 @@ export interface Pick {
   status: 'pending' | 'won' | 'lost' | 'void';
   country?: string;
   date?: string;
+  time?: string; // HH:mm
+  timezone?: string; // e.g., BRT
   probability?: number;
+  odds?: number;
   result?: string;
   stake?: number;
   roi?: number;

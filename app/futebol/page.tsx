@@ -18,7 +18,7 @@ const Soccer = () => {
       const day = String(date.getDate()).padStart(2, '0');
       return `${year}-${month}-${day}`;
     };
-    const pickDate = getFormattedDate();
+    const pickDate = getFormattedDate(new Date());
 
     const [selectedDate, setSelectedDate] = useState(pickDate);
     const [picksData, setPicksData] = useState<Pick[]>([]);

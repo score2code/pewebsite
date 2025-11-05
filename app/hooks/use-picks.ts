@@ -147,7 +147,10 @@ export const useLeagueStats = (picks: Pick[]) => {
 // Função memoizada para formatar data
 export const useFormattedDate = (dateString: string) => {
   return useMemo(() => {
-    const date = new Date(dateString + 'T03:00:00');
+    // Aceita tanto 'YYYY-MM-DD' quanto ISO completo 'YYYY-MM-DDTHH:mm:ssZ'
+    const raw = dateString || '';
+    const datePart = raw.includes('T') ? raw.split('T')[0] : raw;
+    const date = new Date(datePart + 'T03:00:00');
     return date.toLocaleDateString('pt-BR', {
       day: '2-digit',
       month: 'short',
