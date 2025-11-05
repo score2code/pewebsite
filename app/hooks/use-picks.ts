@@ -131,12 +131,8 @@ export const useLeagueStats = (picks: Pick[]) => {
       stats[pick.league].total++;
       if (pick.status === 'won') stats[pick.league].won++;
       if (pick.status === 'lost') stats[pick.league].lost++;
-      
-      if (pick.status === 'won') {
-        stats[pick.league].profit += (pick.odds - 1) * (pick.stake || 1);
-      } else if (pick.status === 'lost') {
-        stats[pick.league].profit -= (pick.stake || 1);
-      }
+      // Removido: cálculo de lucro baseado em odds
+      // Mantemos profit neutro enquanto o campo odds não existe mais
     });
 
     // Calcular taxas de acerto
@@ -206,11 +202,8 @@ export const useROI = (picks: Pick[]) => {
     if (!picks.length) return { total: 0, percentage: 0 };
 
     const totalStake = picks.reduce((sum, pick) => sum + (pick.stake || 1), 0);
-    const totalProfit = picks.reduce((sum, pick) => {
-      if (pick.status === 'won') return sum + (pick.odds - 1) * (pick.stake || 1);
-      if (pick.status === 'lost') return sum - (pick.stake || 1);
-      return sum;
-    }, 0);
+    // Removido: cálculo de lucro e ROI baseado em odds
+    const totalProfit = 0;
 
     const percentage = totalStake > 0 ? (totalProfit / totalStake) * 100 : 0;
 

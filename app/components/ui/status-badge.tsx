@@ -1,12 +1,11 @@
 import React from 'react';
 import { CheckCircle, XCircle, Clock, TrendingUp, TrendingDown } from 'lucide-react';
 
-export type PickStatus = 'pending' | 'won' | 'lost' | 'high-confidence' | 'low-odds';
+export type PickStatus = 'pending' | 'won' | 'lost' | 'high-confidence';
 
 interface StatusBadgeProps {
   status: PickStatus;
   confidence?: number;
-  odds?: number;
   result?: 'won' | 'lost' | 'pending';
 }
 
@@ -36,14 +35,6 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({ status, confidence, odds, res
           bgColor: 'bg-purple-100 dark:bg-purple-900/30',
           textColor: 'text-purple-700 dark:text-purple-400',
           borderColor: 'border-purple-300 dark:border-purple-700'
-        };
-      case 'low-odds':
-        return {
-          icon: TrendingDown,
-          text: 'Odd Baixa',
-          bgColor: 'bg-orange-100 dark:bg-orange-900/30',
-          textColor: 'text-orange-700 dark:text-orange-400',
-          borderColor: 'border-orange-300 dark:border-orange-700'
         };
       default:
         return {

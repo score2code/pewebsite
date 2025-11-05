@@ -47,14 +47,7 @@ const PickCard: React.FC<PickCardProps> = ({ pick }) => {
                     </div>
                 </div>
                 <div className="px-6 py-5 bg-light-200/50 dark:bg-dark-700/50 border-t border-light-300 dark:border-dark-600">
-                    <div className="grid grid-cols-2 gap-4 text-center text-sm">
-                        <div className="flex items-center bg-light-100/70 dark:bg-dark-600/70 px-4 py-3 rounded-lg">
-                            <BarChart2 size={18} className="mr-3 text-purple-600 dark:text-purple-400" />
-                            <div>
-                                <p className="font-medium text-dark-900/70 dark:text-light-100/70">Probabilidade</p>
-                                <p className="text-dark-900 dark:text-light-100 font-bold mt-1">{pick.odds.toFixed(2)}%</p>
-                            </div>
-                        </div>
+                    <div className="grid grid-cols-1 gap-4 text-center text-sm">
                         <div className="flex items-center bg-light-100/70 dark:bg-dark-600/70 px-4 py-3 rounded-lg">
                             <ShieldCheck size={18} className="mr-3 text-purple-600 dark:text-purple-400" />
                             <div>

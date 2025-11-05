@@ -142,10 +142,7 @@ const PickAnalysisClient = ({ pickId, date, type = 'soccer' }: { pickId: string,
                         <p className="text-sm font-medium text-dark-900/70 dark:text-light-100/70 mb-2">
                             Análise Principal
                         </p>
-                        <p className="text-xl font-bold text-purple-600 dark:text-purple-400 mb-3">{pick.tip}</p>
-                        <p className="text-dark-900 dark:text-light-100">
-                            Probabilidade: <span className="font-bold">{pick.odds?.toFixed(2) || 'N/A'}%</span>
-                        </p>
+                        <p className="text-xl font-bold text-purple-600 dark:text-purple-400 mb-0">{pick.tip}</p>
                     </div>
 
                     {/* Confiança */}

@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { Pick } from '@/app/types';
 import StatusBadge, { PickStatus } from '@/app/components/ui/status-badge';
 import { useFormattedDate, useFormattedTime } from '@/app/hooks/use-picks';
-import { TrendingUp, Calendar, Clock, Trophy, Target } from 'lucide-react';
+import { Calendar, Clock, Trophy, Target } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { trackClick } from '@/app/lib/analytics';
@@ -35,7 +35,6 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
     if (pick.result === 'lost') return 'lost';
     // Heurísticas visuais adicionais
     if (pick.confidence >= 80) return 'high-confidence';
-    if (pick.odds <= 1.5) return 'low-odds';
     // Mapear 'void' para um estado suportado
     return pick.status === 'void' ? 'pending' : (pick.status as PickStatus);
   };
@@ -46,11 +45,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
     return 'text-red-600 dark:text-red-400';
   };
 
-  const getOddsColor = (odds: number) => {
-    if (odds >= 2.0) return 'text-purple-600 dark:text-purple-400';
-    if (odds >= 1.5) return 'text-blue-600 dark:text-blue-400';
-    return 'text-gray-600 dark:text-gray-400';
-  };
+  // Removido: exibição e cores de odds
 
   if (compact) {
     return (
@@ -73,9 +68,6 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
           <div className="flex flex-col items-end gap-1 ml-2">
             <span className={`text-sm font-bold ${getConfidenceColor(pick.confidence)}`}>
               {pick.confidence}%
-            </span>
-            <span className={`text-xs ${getOddsColor(pick.odds)}`}>
-              @{pick.odds}
             </span>
           </div>
         </div>
@@ -107,7 +99,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-3 gap-4 mb-4">
+      <div className="grid grid-cols-2 gap-4 mb-4">
         <div className="text-center">
           <div className="flex items-center justify-center gap-1 mb-1">
             <Target className="w-3 h-3 text-blue-600 dark:text-blue-400" />
@@ -115,16 +107,6 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
           </div>
           <span className={`text-lg font-bold ${getConfidenceColor(pick.confidence)}`}>
             {pick.confidence}%
-          </span>
-        </div>
-        
-        <div className="text-center">
-          <div className="flex items-center justify-center gap-1 mb-1">
-            <TrendingUp className="w-3 h-3 text-green-600 dark:text-green-400" />
-            <span className="text-xs text-dark-900/70 dark:text-light-100/70">Odds</span>
-          </div>
-          <span className={`text-lg font-bold ${getOddsColor(pick.odds)}`}>
-            @{pick.odds}
           </span>
         </div>
         

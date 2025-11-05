@@ -9,10 +9,13 @@ const WhackAMole = dynamic(() => import('../components/whack-a-mole'), { ssr: fa
 
 export default function GamePage({ params }: { params: { slug: string } }) {
   const game = games.find((g) => g.slug === params.slug);
-  if (!game) return notFound();
+  if (!game) {
+    notFound();
+    return null;
+  }
 
-  function renderGame() {
-    switch (game.slug) {
+  function renderGame(slug: string) {
+    switch (slug) {
       case 'tic-tac-toe':
         return <TicTacToe />;
       case 'memory-match':
@@ -32,7 +35,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
         <p className="text-dark-900/70 dark:text-light-100/70">{game.description}</p>
       </header>
       <section className="max-w-2xl mx-auto w-full p-4 rounded-xl border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 shadow-custom dark:shadow-custom-dark">
-        {renderGame()}
+        {renderGame(game.slug)}
       </section>
     </div>
   );

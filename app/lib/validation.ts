@@ -114,7 +114,6 @@ export const SettingsSchema = z.object({
   enableNotifications: z.boolean().default(true),
   enableEmailAlerts: z.boolean().default(false),
   minConfidence: z.number().min(0).max(100, 'Confiança mínima deve estar entre 0 e 100').default(60),
-  maxOdds: z.number().positive('Odds máximas devem ser positivas').default(5.0),
   socialMedia: z.object({
     twitter: z.string().url('URL do Twitter deve ser válida').optional(),
     facebook: z.string().url('URL do Facebook deve ser válida').optional(),

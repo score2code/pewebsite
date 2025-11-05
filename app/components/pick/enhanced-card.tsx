@@ -20,24 +20,18 @@ const EnhancedPickCard: React.FC<EnhancedPickCardProps> = ({
     compact = false 
 }) => {
     // Determinar status baseado nos dados
-    const getPickStatus = (): 'won' | 'lost' | 'pending' | 'high-confidence' | 'low-odds' => {
+    const getPickStatus = (): 'won' | 'lost' | 'pending' | 'high-confidence' => {
         if (pick.result) {
             return pick.result === 'won' ? 'won' : 'lost';
         }
         if (pick.confidence >= 8) return 'high-confidence';
-        if (pick.odds <= 30) return 'low-odds';
         return 'pending';
     };
 
     const status = getPickStatus();
     const isCompact = compact;
 
-    const getOddsColor = (odds: number) => {
-        if (odds >= 70) return 'text-green-600 dark:text-green-400';
-        if (odds >= 50) return 'text-yellow-600 dark:text-yellow-400';
-        if (odds >= 30) return 'text-orange-600 dark:text-orange-400';
-        return 'text-red-600 dark:text-red-400';
-    };
+    // Removido: cores/exibição de odds
 
     const getConfidenceColor = (confidence: number) => {
         if (confidence >= 8) return 'text-purple-600 dark:text-purple-400';
@@ -62,7 +56,7 @@ const EnhancedPickCard: React.FC<EnhancedPickCardProps> = ({
                         <span className={`font-semibold text-purple-600 dark:text-purple-400 ${isCompact ? 'text-xs' : ''}`}>
                             {pick.league}
                         </span>
-                        {showStatus && <StatusBadge status={status} confidence={pick.confidence} odds={pick.odds} />}
+                        {showStatus && <StatusBadge status={status} confidence={pick.confidence} />}
                     </div>
                     <div className="flex items-center text-xs text-dark-900/60 dark:text-light-100/60">
                         <Calendar size={12} className="mr-1" />
@@ -101,18 +95,7 @@ const EnhancedPickCard: React.FC<EnhancedPickCardProps> = ({
 
                 {/* Estatísticas */}
                 <div className={`px-5 py-4 bg-light-200/50 dark:bg-dark-700/50 border-t border-light-300 dark:border-dark-600 ${isCompact ? 'px-4 py-3' : ''}`}>
-                    <div className={`grid gap-3 text-center text-sm ${isCompact ? 'grid-cols-2' : 'grid-cols-2'}`}>
-                        <div className="flex items-center bg-light-100/70 dark:bg-dark-600/70 px-3 py-2 rounded-lg">
-                            <BarChart2 size={isCompact ? 14 : 16} className="mr-2 text-purple-600 dark:text-purple-400" />
-                            <div className="text-left">
-                                <p className={`font-medium text-dark-900/70 dark:text-light-100/70 ${isCompact ? 'text-xs' : 'text-xs'}`}>
-                                    Probabilidade
-                                </p>
-                                <p className={`font-bold ${getOddsColor(pick.odds)} ${isCompact ? 'text-sm' : ''}`}>
-                                    {pick.odds.toFixed(1)}%
-                                </p>
-                            </div>
-                        </div>
+                    <div className={`grid gap-3 text-center text-sm ${isCompact ? 'grid-cols-1' : 'grid-cols-1'}`}>
                         <div className="flex items-center bg-light-100/70 dark:bg-dark-600/70 px-3 py-2 rounded-lg">
                             <ShieldCheck size={isCompact ? 14 : 16} className="mr-2 text-purple-600 dark:text-purple-400" />
                             <div className="text-left">

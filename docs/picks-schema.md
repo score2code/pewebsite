@@ -12,7 +12,6 @@ Cada arquivo por data contém uma lista (array) de objetos de palpite com o segu
 - `awayTeam` (string): time visitante.
 - `dateTime` (string): horário amigável do evento (com timezone/label).
 - `tip` (string): recomendação/mercado sugerido.
-- `odds` (number): odd associada à recomendação.
 - `confidence` (number): nível de confiança percentual (0–100).
 - `result` (string): estado do resultado (`Pending`, `Won`, `Lost`, etc.).
 - `analysis` (string): resumo textual da análise principal.
@@ -34,7 +33,6 @@ Arquivo: `public/data/soccer/2025/11/04.json`
     "awayTeam": "Flamengo",
     "dateTime": "HOJE, 21:30 BRT",
     "tip": "Mais de 2.5 Gols",
-    "odds": 1.85,
     "confidence": 85,
     "result": "Pending",
     "analysis": "O Corinthians tem demonstrado fragilidade defensiva nas últimas três partidas em casa..."
@@ -46,7 +44,6 @@ Arquivo: `public/data/soccer/2025/11/04.json`
     "awayTeam": "Manchester City",
     "dateTime": "HOJE, 16:00 GMT",
     "tip": "Ambos Marcam",
-    "odds": 1.60,
     "confidence": 78,
     "result": "Pending",
     "analysis": "Clássico com duas das melhores linhas ofensivas da Europa..."

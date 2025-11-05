@@ -37,16 +37,10 @@ const SportPickCard: React.FC<SportPickCardProps> = ({ pick, date, sport, showSt
             return pick.result === 'won' ? 'won' : 'lost';
         }
         if (pick.confidence >= 8) return 'high-confidence';
-        if (pick.odds <= 30) return 'low-odds';
         return 'pending';
     };
 
-    const getOddsColor = (odds: number) => {
-        if (odds >= 70) return 'text-green-600 dark:text-green-400';
-        if (odds >= 50) return 'text-yellow-600 dark:text-yellow-400';
-        if (odds >= 30) return 'text-orange-600 dark:text-orange-400';
-        return 'text-red-600 dark:text-red-400';
-    };
+    // Removido: cores e exibição de odds
 
     const getConfidenceColor = (confidence: number) => {
         if (confidence >= 8) return 'bg-green-600 dark:bg-green-500';
@@ -77,7 +71,7 @@ const SportPickCard: React.FC<SportPickCardProps> = ({ pick, date, sport, showSt
                         <Zap className={`${compact ? 'w-3 h-3' : 'w-4 h-4'} mr-1`} />
                         {pick.league}
                     </span>
-                    {showStatus && <StatusBadge status={status} confidence={pick.confidence} odds={pick.odds} />}
+                    {showStatus && <StatusBadge status={status} confidence={pick.confidence} />}
                 </div>
                 <span className={`text-dark-900/70 dark:text-light-100/70 flex items-center ${compact ? 'text-xs' : 'text-xs'}`}>
                     <Calendar className={`${compact ? 'w-3 h-3' : 'w-3 h-3'} mr-1`} />
@@ -91,20 +85,13 @@ const SportPickCard: React.FC<SportPickCardProps> = ({ pick, date, sport, showSt
                 </h3>
             </div>
 
-            <div className={`grid gap-4 items-center ${compact ? 'grid-cols-1' : 'grid-cols-3'}`}>
+            <div className={`grid gap-4 items-center ${compact ? 'grid-cols-1' : 'grid-cols-2'}`}>
                 {/* Palpite Esportivo */}
                 <div className={`${compact ? '' : 'col-span-2'} p-3 bg-light-200/50 dark:bg-dark-700/50 rounded-lg`}>
                     <p className={`text-dark-900/70 dark:text-light-100/70 ${compact ? 'text-xs' : 'text-xs'}`}>Palpite</p>
                     <p className={`font-extrabold text-dark-900 dark:text-light-100 ${compact ? 'text-base' : 'text-lg'}`}>{pick.tip}</p>
                 </div>
-
-                {/* Odds com cor dinâmica */}
-                <div className={`p-3 bg-purple-600/10 dark:bg-purple-400/10 rounded-lg ${compact ? 'flex justify-between items-center' : ''}`}>
-                    <p className={`font-medium text-purple-600/90 dark:text-purple-400/90 ${compact ? 'text-xs' : 'text-xs'}`}>Probabilidade</p>
-                    <p className={`font-bold ${getOddsColor(pick.odds)} ${compact ? 'text-base' : 'text-xl'}`}>
-                        {pick.odds.toFixed(1)}%
-                    </p>
-                </div>
+                {/* Removido: bloco de probabilidade baseado em odds */}
             </div>
 
             <div className={`mt-4 flex justify-between items-center pt-3 border-t border-light-300 dark:border-dark-600 ${compact ? 'mt-3' : ''}`}>

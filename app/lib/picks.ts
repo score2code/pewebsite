@@ -8,7 +8,6 @@ export interface PickData {
     awayTeam: string;
     dateTime: string;
     tip: string;
-    odds: number;
     confidence: number;
     result?: 'Win' | 'Loss' | 'Pending';
     analysis?: string;

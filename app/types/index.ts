@@ -4,7 +4,6 @@ export interface Pick {
   homeTeam: string;
   awayTeam: string;
   prediction: string;
-  odds: number;
   confidence: number;
   analysis?: string;
   status: 'pending' | 'won' | 'lost' | 'void';
