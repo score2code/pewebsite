@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2021",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 940,
+  "averageGoalsPerMatch": 2.47,
+  "cardsByType": { "yellow": 1310, "red": 88 },
+  "winCounts": { "home": 185, "draw": 118, "away": 77 },
+  "topScorers": [
+    { "name": "Edu", "team": "Brusque", "goals": 17 },
+    { "name": "Felipe Azevedo", "team": "América-MG", "goals": 12 },
+    { "name": "Nicolas", "team": "Goiás", "goals": 12 }
+  ]
+}

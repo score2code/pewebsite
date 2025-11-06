@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2020",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 1019,
+  "averageGoalsPerMatch": 2.68,
+  "cardsByType": { "yellow": 2135, "red": 88 },
+  "winCounts": { "home": 176, "draw": 97, "away": 107 },
+  "topScorers": [
+    { "name": "Claudinho", "team": "RB Bragantino", "goals": 18 },
+    { "name": "Marinho", "team": "Santos", "goals": 17 },
+    { "name": "Luciano", "team": "São Paulo", "goals": 17 }
+  ]
+}

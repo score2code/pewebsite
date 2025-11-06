@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2023",
+  "totalMatches": 157,
+  "matchesPlayed": 157,
+  "goalsScored": 405,
+  "averageGoalsPerMatch": 2.58,
+  "cardsByType": { "yellow": 680, "red": 48 },
+  "winCounts": { "home": 79, "draw": 35, "away": 43 },
+  "topScorers": [
+    { "name": "Germán Cano", "team": "Fluminense", "goals": 8 },
+    { "name": "Luiz Adriano", "team": "Internacional", "goals": 6 },
+    { "name": "Adam Bareiro", "team": "San Lorenzo", "goals": 6 }
+  ]
+}

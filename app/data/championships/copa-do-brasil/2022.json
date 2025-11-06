@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 124,
+  "matchesPlayed": 124,
+  "goalsScored": 310,
+  "averageGoalsPerMatch": 2.50,
+  "cardsByType": { "yellow": 580, "red": 40 },
+  "winCounts": { "home": 61, "draw": 31, "away": 32 },
+  "topScorers": [
+    { "name": "Pedro", "team": "Flamengo", "goals": 12 },
+    { "name": "Germán Cano", "team": "Fluminense", "goals": 7 },
+    { "name": "Yuri Alberto", "team": "Corinthians", "goals": 6 }
+  ]
+}

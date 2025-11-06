@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2021",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 1089,
+  "averageGoalsPerMatch": 2.87,
+  "cardsByType": { "yellow": 1580, "red": 68 },
+  "winCounts": { "home": 170, "draw": 101, "away": 109 },
+  "topScorers": [
+    { "name": "Ciro Immobile", "team": "Lazio", "goals": 27 },
+    { "name": "Dusan Vlahovic", "team": "Fiorentina", "goals": 24 },
+    { "name": "Giovanni Simeone", "team": "Verona", "goals": 17 }
+  ]
+}

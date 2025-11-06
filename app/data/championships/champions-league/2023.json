@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2023",
+  "totalMatches": 125,
+  "matchesPlayed": 125,
+  "goalsScored": 373,
+  "averageGoalsPerMatch": 2.98,
+  "cardsByType": { "yellow": 420, "red": 14 },
+  "winCounts": { "home": 60, "draw": 28, "away": 37 },
+  "topScorers": [
+    { "name": "Harry Kane", "team": "Bayern", "goals": 8 },
+    { "name": "Kylian Mbappé", "team": "PSG", "goals": 8 },
+    { "name": "Erling Haaland", "team": "Man City", "goals": 7 }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2020",
+  "totalMatches": 155,
+  "matchesPlayed": 155,
+  "goalsScored": 376,
+  "averageGoalsPerMatch": 2.43,
+  "cardsByType": { "yellow": 620, "red": 40 },
+  "winCounts": { "home": 74, "draw": 39, "away": 42 },
+  "topScorers": [
+    { "name": "Santos Borré", "team": "River Plate", "goals": 7 },
+    { "name": "Gabigol", "team": "Flamengo", "goals": 6 },
+    { "name": "Luiz Adriano", "team": "Palmeiras", "goals": 5 }
+  ]
+}

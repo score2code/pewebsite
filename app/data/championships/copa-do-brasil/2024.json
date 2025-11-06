@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2024",
+  "totalMatches": 126,
+  "matchesPlayed": 90,
+  "goalsScored": 230,
+  "averageGoalsPerMatch": 2.56,
+  "cardsByType": { "yellow": 430, "red": 28 },
+  "winCounts": { "home": 45, "draw": 22, "away": 23 },
+  "topScorers": [
+    { "name": "Pedro", "team": "Flamengo", "goals": 7 },
+    { "name": "Cano", "team": "Fluminense", "goals": 6 },
+    { "name": "Hulk", "team": "Atlético-MG", "goals": 5 }
+  ]
+}

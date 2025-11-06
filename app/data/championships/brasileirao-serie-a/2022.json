@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 931,
+  "averageGoalsPerMatch": 2.45,
+  "cardsByType": { "yellow": 2142, "red": 102 },
+  "winCounts": { "home": 167, "draw": 106, "away": 107 },
+  "topScorers": [
+    { "name": "Germán Cano", "team": "Fluminense", "goals": 26 },
+    { "name": "Pedro", "team": "Flamengo", "goals": 12 },
+    { "name": "Rony", "team": "Palmeiras", "goals": 12 }
+  ]
+}

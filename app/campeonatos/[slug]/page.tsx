@@ -1,10 +1,9 @@
 
-import { Championship, ChampionshipData, LeagueStanding, Pick } from '@/app/types';
+import { Championship, ChampionshipData, LeagueStanding, Pick, type ChampionshipStats as ChampionshipStatsType } from '@/app/types';
 import fs from 'fs/promises';
 import path from 'path';
-import StandingsTable from '@/app/components/statistics/standings-table';
 import PickCard from '@/app/components/pick/card';
-import ChampionshipStats from '@/app/components/championship/stats';
+import ChampionshipStatsBlock from '@/app/components/championship/stats';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { parsePicks } from '@/app/lib/data-parser';
@@ -135,6 +134,81 @@ const championships: Championship[] = [
     }
 ];
 
+async function listAvailableDatesForSport(sportDir: 'soccer' | 'football'): Promise<string[]> {
+    const dates: string[] = [];
+    try {
+        const baseDir = path.join(process.cwd(), 'app', 'data', sportDir);
+        const years = await fs.readdir(baseDir).catch(() => []);
+        for (const y of years) {
+            const yearDir = path.join(baseDir, y);
+            const months = await fs.readdir(yearDir).catch(() => []);
+            for (const m of months) {
+                const monthDir = path.join(yearDir, m);
+                const files = await fs.readdir(monthDir).catch(() => []);
+                for (const f of files) {
+                    if (f.endsWith('.json')) {
+                        const day = f.replace('.json', '');
+                        dates.push(`${y}-${m}-${day}`);
+                    }
+                }
+            }
+        }
+    } catch {}
+    return dates.sort();
+}
+
+async function loadSeasonStats(slug: string): Promise<Array<{ season: string; stats: ChampionshipStatsType }>> {
+    try {
+        const baseDir = path.join(process.cwd(), 'app', 'data', 'championships', slug);
+        const seasons = await fs.readdir(baseDir).catch(() => []);
+        if (!seasons.length) return [];
+
+        const result: Array<{ season: string; stats: ChampionshipStatsType }> = [];
+
+        for (const seasonFile of seasons) {
+            if (!seasonFile.endsWith('.json')) continue;
+            const filePath = path.join(baseDir, seasonFile);
+            const contents = await fs.readFile(filePath, 'utf8');
+            const data = JSON.parse(contents);
+
+            const totalMatches = data.totalMatches || 0;
+            const matchesPlayed = data.matchesPlayed || 0;
+            const goalsScored = data.goalsScored || 0;
+            const yellow = data.cardsByType?.yellow || 0;
+            const red = data.cardsByType?.red || 0;
+            const homeWins = data.winCounts?.home || 0;
+            const draws = data.winCounts?.draw || 0;
+            const awayWins = data.winCounts?.away || 0;
+
+            const played = matchesPlayed || totalMatches;
+            const averageGoalsPerMatch = played > 0 ? Number((goalsScored / played).toFixed(2)) : (data.averageGoalsPerMatch || 0);
+            const totalOutcomes = homeWins + draws + awayWins;
+            const toPercent = (n: number) => totalOutcomes > 0 ? Number(((n / totalOutcomes) * 100).toFixed(1)) : 0;
+
+            const stats: ChampionshipStatsType = {
+                totalMatches,
+                matchesPlayed: played,
+                goalsScored,
+                averageGoalsPerMatch,
+                cardsByType: { yellow, red },
+                winPercentages: data.winPercentages || {
+                    home: toPercent(homeWins),
+                    draw: toPercent(draws),
+                    away: toPercent(awayWins)
+                },
+                topScorers: data.topScorers || []
+            };
+
+            result.push({ season: seasonFile.replace('.json', ''), stats });
+        }
+
+        result.sort((a, b) => b.season.localeCompare(a.season));
+        return result;
+    } catch {
+        return [];
+    }
+}
+
 async function getCompetitionData(slug: string): Promise<ChampionshipData | null> {
     const championship = championships.find(c => c.slug === slug);
 
@@ -142,49 +216,44 @@ async function getCompetitionData(slug: string): Promise<ChampionshipData | null
         return null;
     }
 
-    let standingsData = {};
     let soccerPicksData = [];
-    let championshipsStats = {};
+    let championshipsStats: Record<string, any> = {};
 
     try {
-        const standingsFilePath = path.join(process.cwd(), 'app', 'data', 'standings.json');
-        const standingsFileContents = await fs.readFile(standingsFilePath, 'utf8');
-        standingsData = JSON.parse(standingsFileContents);
-    } catch (error) {
-        console.error("Error reading standings.json:", error);
-    }
-
-    try {
-        const today = new Date();
-        const year = today.getFullYear().toString();
-        const month = (today.getMonth() + 1).toString().padStart(2, '0'); // Months are 0-indexed
-        const day = today.getDate().toString().padStart(2, '0');
-
-        const picksFilePath = path.join(process.cwd(), 'app', 'data', 'soccer', year, month, `${day}.json`);
+        // Usar a última data disponível ao invés de apenas hoje
+        const soccerDates = await listAvailableDatesForSport('soccer');
+        const latestDate = soccerDates[soccerDates.length - 1];
+        const [y, m, d] = latestDate ? latestDate.split('-') : [];
+        const picksFilePath = path.join(process.cwd(), 'app', 'data', 'soccer', y || '1970', m || '01', `${d || '01'}.json`);
         const picksFileContents = await fs.readFile(picksFilePath, 'utf8');
         soccerPicksData = JSON.parse(picksFileContents);
     } catch (error) {
         console.error("Error reading soccer picks data:", error);
     }
 
-    try {
-        const statsFilePath = path.join(process.cwd(), 'app', 'data', 'championships-stats.json');
-        const statsFileContents = await fs.readFile(statsFilePath, 'utf8');
-        championshipsStats = JSON.parse(statsFileContents);
-    } catch (error) {
-        console.error("Error reading championships-stats.json:", error);
+    // Carregar estatísticas históricas por temporada (se disponível); caso contrário, fallback agregado
+    const seasonStatsFromDir = await loadSeasonStats(slug);
+    let aggregatedStats: ChampionshipStatsType | undefined = undefined;
+    if (!seasonStatsFromDir.length) {
+        try {
+            const statsFilePath = path.join(process.cwd(), 'app', 'data', 'championships-stats.json');
+            const statsFileContents = await fs.readFile(statsFilePath, 'utf8');
+            championshipsStats = JSON.parse(statsFileContents);
+            aggregatedStats = championshipsStats[slug as keyof typeof championshipsStats] as ChampionshipStatsType;
+        } catch (error) {
+            console.error("Error reading championships-stats.json:", error);
+        }
     }
 
-    const standing: LeagueStanding = standingsData as LeagueStanding;
     const soccerPicks: Pick[] = parsePicks(soccerPicksData as any[]);
-    const picks: Pick[] = soccerPicks.filter(p => p.league.toUpperCase().includes(championship.name.toUpperCase()));
-    const stats = championshipsStats[slug as keyof typeof championshipsStats];
+    const picks: Pick[] = soccerPicks.filter(p => (p.league || '').toUpperCase().includes(championship.name.toUpperCase()));
+    const stats = aggregatedStats;
 
     return {
         championship,
-        standing,
         picks,
-        stats: stats || undefined
+        stats: stats || undefined,
+        seasonStats: seasonStatsFromDir
     };
 }
 
@@ -217,7 +286,7 @@ export default async function CompetitionPage({ params }: { params: { slug: stri
         notFound();
     }
 
-    const { championship, standing, picks } = data;
+    const { championship, picks } = data;
 
     return (
         <div className="min-h-screen pt-10 pb-16 px-4">
@@ -241,18 +310,6 @@ export default async function CompetitionPage({ params }: { params: { slug: stri
                                 <span className="px-3 py-1 bg-light-200 dark:bg-dark-700 rounded-full text-sm">
                                     Temporada {championship.season}
                                 </span>
-                                <span className={`px-3 py-1 rounded-full text-sm ${
-                                    championship.status === 'active'
-                                        ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100'
-                                        : championship.status === 'upcoming'
-                                        ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-100'
-                                        : 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100'
-                                }`}>
-                                    {championship.status === 'active' ? 'Em andamento'
-                                        : championship.status === 'upcoming' ? 'Em breve'
-                                        : 'Finalizado'
-                                    }
-                                </span>
                             </div>
                         </div>
                         {championship.logoUrl && (
@@ -265,9 +322,28 @@ export default async function CompetitionPage({ params }: { params: { slug: stri
                     </div>
                 </div>
 
-                <div className="grid lg:grid-cols-3 gap-10">
-                    {/* Main content: Stats and Picks */}
-                    <div className="lg:col-span-2 space-y-8">
+                <div className="space-y-8">
+                    {/* Conteúdo principal: Estatísticas e Palpites */}
+                        {data.seasonStats && data.seasonStats.length > 0 && (
+                            <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
+                                border border-light-300 dark:border-dark-600
+                                shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+                                <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-6">
+                                    Estatísticas por Temporada
+                                </h2>
+                                <div className="space-y-8">
+                                    {data.seasonStats.map(({ season, stats }) => (
+                                        <div key={season}>
+                                            <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100 mb-4">
+                                                Temporada {season}
+                                            </h3>
+                                            <ChampionshipStatsBlock stats={stats} />
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
                         {data.stats && (
                             <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
                                 border border-light-300 dark:border-dark-600
@@ -275,7 +351,7 @@ export default async function CompetitionPage({ params }: { params: { slug: stri
                                 <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-6">
                                     Estatísticas da Competição
                                 </h2>
-                                <ChampionshipStats stats={data.stats} />
+                                <ChampionshipStatsBlock stats={data.stats} />
                             </div>
                         )}
 
@@ -297,21 +373,6 @@ export default async function CompetitionPage({ params }: { params: { slug: stri
                                 </p>
                             )}
                         </div>
-                    </div>
-
-                    {/* Sidebar: Standings */}
-                    <div className="lg:col-span-1">
-                        <div className="sticky top-24">
-                            <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
-                                border border-light-300 dark:border-dark-600
-                                shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
-                                <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-6">
-                                    Classificação
-                                </h2>
-                                <StandingsTable leagueStanding={standing} />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2021",
+  "totalMatches": 306,
+  "matchesPlayed": 306,
+  "goalsScored": 954,
+  "averageGoalsPerMatch": 3.12,
+  "cardsByType": { "yellow": 960, "red": 28 },
+  "winCounts": { "home": 150, "draw": 62, "away": 94 },
+  "topScorers": [
+    { "name": "Robert Lewandowski", "team": "Bayern", "goals": 35 },
+    { "name": "Patrik Schick", "team": "Leverkusen", "goals": 24 },
+    { "name": "Christopher Nkunku", "team": "Leipzig", "goals": 20 }
+  ]
+}

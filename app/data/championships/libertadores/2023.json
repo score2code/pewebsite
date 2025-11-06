@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2023",
+  "totalMatches": 155,
+  "matchesPlayed": 155,
+  "goalsScored": 438,
+  "averageGoalsPerMatch": 2.83,
+  "cardsByType": { "yellow": 670, "red": 48 },
+  "winCounts": { "home": 79, "draw": 36, "away": 40 },
+  "topScorers": [
+    { "name": "Germán Cano", "team": "Fluminense", "goals": 13 },
+    { "name": "Pedro", "team": "Flamengo", "goals": 7 },
+    { "name": "Paulinho", "team": "Atlético-MG", "goals": 6 }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 157,
+  "matchesPlayed": 157,
+  "goalsScored": 410,
+  "averageGoalsPerMatch": 2.61,
+  "cardsByType": { "yellow": 660, "red": 46 },
+  "winCounts": { "home": 78, "draw": 36, "away": 43 },
+  "topScorers": [
+    { "name": "Germán Cano", "team": "Fluminense", "goals": 7 },
+    { "name": "Pedro", "team": "Flamengo", "goals": 6 },
+    { "name": "Enner Valencia", "team": "Fenerbahçe", "goals": 6 }
+  ]
+}

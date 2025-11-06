@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 1084,
+  "averageGoalsPerMatch": 2.85,
+  "cardsByType": { "yellow": 1402, "red": 30 },
+  "winCounts": { "home": 182, "draw": 88, "away": 110 },
+  "topScorers": [
+    { "name": "Erling Haaland", "team": "Manchester City", "goals": 36 },
+    { "name": "Harry Kane", "team": "Tottenham", "goals": 30 },
+    { "name": "Ivan Toney", "team": "Brentford", "goals": 20 }
+  ]
+}

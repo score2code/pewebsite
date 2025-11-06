@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2020",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 912,
+  "averageGoalsPerMatch": 2.40,
+  "cardsByType": { "yellow": 1280, "red": 85 },
+  "winCounts": { "home": 180, "draw": 120, "away": 80 },
+  "topScorers": [
+    { "name": "Caio Dantas", "team": "Sampaio Corrêa", "goals": 17 },
+    { "name": "Eduardo", "team": "Chapecoense", "goals": 12 },
+    { "name": "Marcelo Toscano", "team": "América-MG", "goals": 10 }
+  ]
+}

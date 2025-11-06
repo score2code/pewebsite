@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2020",
+  "totalMatches": 306,
+  "matchesPlayed": 306,
+  "goalsScored": 981,
+  "averageGoalsPerMatch": 3.21,
+  "cardsByType": { "yellow": 943, "red": 35 },
+  "winCounts": { "home": 142, "draw": 72, "away": 92 },
+  "topScorers": [
+    { "name": "Robert Lewandowski", "team": "Bayern", "goals": 41 },
+    { "name": "Erling Haaland", "team": "Dortmund", "goals": 27 },
+    { "name": "André Silva", "team": "Frankfurt", "goals": 28 }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 125,
+  "matchesPlayed": 125,
+  "goalsScored": 366,
+  "averageGoalsPerMatch": 2.93,
+  "cardsByType": { "yellow": 415, "red": 16 },
+  "winCounts": { "home": 55, "draw": 32, "away": 38 },
+  "topScorers": [
+    { "name": "Erling Haaland", "team": "Man City", "goals": 12 },
+    { "name": "Kylian Mbappé", "team": "PSG", "goals": 7 },
+    { "name": "Vinícius Júnior", "team": "Real Madrid", "goals": 7 }
+  ]
+}

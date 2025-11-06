@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 974,
+  "averageGoalsPerMatch": 2.56,
+  "cardsByType": { "yellow": 1555, "red": 60 },
+  "winCounts": { "home": 162, "draw": 112, "away": 106 },
+  "topScorers": [
+    { "name": "Victor Osimhen", "team": "Napoli", "goals": 26 },
+    { "name": "Lautaro Martínez", "team": "Inter", "goals": 21 },
+    { "name": "Ademola Lookman", "team": "Atalanta", "goals": 13 }
+  ]
+}

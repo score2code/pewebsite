@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2023",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 1000,
+  "averageGoalsPerMatch": 2.63,
+  "cardsByType": { "yellow": 2650, "red": 75 },
+  "winCounts": { "home": 176, "draw": 96, "away": 108 },
+  "topScorers": [
+    { "name": "Jude Bellingham", "team": "Real Madrid", "goals": 19 },
+    { "name": "Artem Dovbyk", "team": "Girona", "goals": 18 },
+    { "name": "Robert Lewandowski", "team": "Barcelona", "goals": 17 }
+  ]
+}

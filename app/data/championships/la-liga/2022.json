@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 955,
+  "averageGoalsPerMatch": 2.51,
+  "cardsByType": { "yellow": 2760, "red": 85 },
+  "winCounts": { "home": 173, "draw": 100, "away": 107 },
+  "topScorers": [
+    { "name": "Robert Lewandowski", "team": "Barcelona", "goals": 23 },
+    { "name": "Karim Benzema", "team": "Real Madrid", "goals": 19 },
+    { "name": "Antoine Griezmann", "team": "Atlético de Madrid", "goals": 15 }
+  ]
+}

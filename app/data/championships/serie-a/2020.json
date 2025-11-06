@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2020",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 1153,
+  "averageGoalsPerMatch": 3.03,
+  "cardsByType": { "yellow": 1600, "red": 70 },
+  "winCounts": { "home": 179, "draw": 89, "away": 112 },
+  "topScorers": [
+    { "name": "Cristiano Ronaldo", "team": "Juventus", "goals": 29 },
+    { "name": "Romelu Lukaku", "team": "Inter", "goals": 24 },
+    { "name": "Luis Muriel", "team": "Atalanta", "goals": 22 }
+  ]
+}

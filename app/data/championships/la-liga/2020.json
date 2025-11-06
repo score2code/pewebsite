@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2020",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 953,
+  "averageGoalsPerMatch": 2.51,
+  "cardsByType": { "yellow": 2789, "red": 78 },
+  "winCounts": { "home": 171, "draw": 104, "away": 105 },
+  "topScorers": [
+    { "name": "Lionel Messi", "team": "Barcelona", "goals": 30 },
+    { "name": "Karim Benzema", "team": "Real Madrid", "goals": 23 },
+    { "name": "Gerard Moreno", "team": "Villarreal", "goals": 18 }
+  ]
+}

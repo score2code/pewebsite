@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2021",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 951,
+  "averageGoalsPerMatch": 2.50,
+  "cardsByType": { "yellow": 1320, "red": 40 },
+  "winCounts": { "home": 166, "draw": 104, "away": 110 },
+  "topScorers": [
+    { "name": "Mohamed Salah", "team": "Liverpool", "goals": 23 },
+    { "name": "Heung-min Son", "team": "Tottenham", "goals": 23 },
+    { "name": "Cristiano Ronaldo", "team": "Manchester United", "goals": 18 }
+  ]
+}

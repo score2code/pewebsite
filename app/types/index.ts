@@ -111,7 +111,11 @@ export interface Championship {
 
 export interface ChampionshipData {
   championship: Championship;
-  standing: LeagueStanding;
+  standing?: LeagueStanding;
   picks: Pick[];
-  stats?: ChampionshipStats;
+  stats?: ChampionshipStats; // agregado (fallback)
+  seasonStats?: Array<{
+    season: string;
+    stats: ChampionshipStats;
+  }>;
 }

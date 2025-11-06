@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2020",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 1024,
+  "averageGoalsPerMatch": 2.69,
+  "cardsByType": { "yellow": 1245, "red": 45 },
+  "winCounts": { "home": 172, "draw": 92, "away": 116 },
+  "topScorers": [
+    { "name": "Harry Kane", "team": "Tottenham", "goals": 23 },
+    { "name": "Mohamed Salah", "team": "Liverpool", "goals": 22 },
+    { "name": "Bruno Fernandes", "team": "Manchester United", "goals": 18 }
+  ]
+}

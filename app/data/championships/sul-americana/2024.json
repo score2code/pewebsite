@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2024",
+  "totalMatches": 157,
+  "matchesPlayed": 120,
+  "goalsScored": 300,
+  "averageGoalsPerMatch": 2.50,
+  "cardsByType": { "yellow": 520, "red": 34 },
+  "winCounts": { "home": 58, "draw": 30, "away": 32 },
+  "topScorers": [
+    { "name": "Germán Cano", "team": "Fluminense", "goals": 7 },
+    { "name": "Thiago Borbas", "team": "Athletico-PR", "goals": 6 },
+    { "name": "Nicolás De La Cruz", "team": "River Plate", "goals": 6 }
+  ]
+}

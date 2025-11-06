@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2024",
+  "totalMatches": 380,
+  "matchesPlayed": 320,
+  "goalsScored": 880,
+  "averageGoalsPerMatch": 2.75,
+  "cardsByType": { "yellow": 1300, "red": 50 },
+  "winCounts": { "home": 150, "draw": 90, "away": 80 },
+  "topScorers": [
+    { "name": "Lautaro Martínez", "team": "Inter", "goals": 21 },
+    { "name": "Victor Osimhen", "team": "Napoli", "goals": 19 },
+    { "name": "Joshua Zirkzee", "team": "Bologna", "goals": 15 }
+  ]
+}

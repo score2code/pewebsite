@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2024",
+  "totalMatches": 306,
+  "matchesPlayed": 250,
+  "goalsScored": 830,
+  "averageGoalsPerMatch": 3.32,
+  "cardsByType": { "yellow": 820, "red": 20 },
+  "winCounts": { "home": 132, "draw": 56, "away": 62 },
+  "topScorers": [
+    { "name": "Harry Kane", "team": "Bayern", "goals": 27 },
+    { "name": "Serhou Guirassy", "team": "Stuttgart", "goals": 22 },
+    { "name": "Loïs Openda", "team": "Leipzig", "goals": 19 }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2023",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 1048,
+  "averageGoalsPerMatch": 2.76,
+  "cardsByType": { "yellow": 1502, "red": 58 },
+  "winCounts": { "home": 168, "draw": 106, "away": 106 },
+  "topScorers": [
+    { "name": "Lautaro Martínez", "team": "Inter", "goals": 24 },
+    { "name": "Dusan Vlahovic", "team": "Juventus", "goals": 16 },
+    { "name": "Olivier Giroud", "team": "Milan", "goals": 15 }
+  ]
+}

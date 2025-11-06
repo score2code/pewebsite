@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2024",
+  "totalMatches": 380,
+  "matchesPlayed": 300,
+  "goalsScored": 760,
+  "averageGoalsPerMatch": 2.53,
+  "cardsByType": { "yellow": 1720, "red": 85 },
+  "winCounts": { "home": 140, "draw": 80, "away": 80 },
+  "topScorers": [
+    { "name": "Pedro", "team": "Flamengo", "goals": 17 },
+    { "name": "Endrick", "team": "Palmeiras", "goals": 12 },
+    { "name": "Paulinho", "team": "Atlético-MG", "goals": 11 }
+  ]
+}

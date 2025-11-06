@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 306,
+  "matchesPlayed": 306,
+  "goalsScored": 971,
+  "averageGoalsPerMatch": 3.18,
+  "cardsByType": { "yellow": 980, "red": 25 },
+  "winCounts": { "home": 148, "draw": 70, "away": 88 },
+  "topScorers": [
+    { "name": "Niclas Füllkrug", "team": "Werder Bremen", "goals": 16 },
+    { "name": "Christopher Nkunku", "team": "Leipzig", "goals": 16 },
+    { "name": "Randal Kolo Muani", "team": "Frankfurt", "goals": 15 }
+  ]
+}

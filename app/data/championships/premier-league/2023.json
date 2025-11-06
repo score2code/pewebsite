@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2023",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 1154,
+  "averageGoalsPerMatch": 3.04,
+  "cardsByType": { "yellow": 1420, "red": 34 },
+  "winCounts": { "home": 190, "draw": 82, "away": 108 },
+  "topScorers": [
+    { "name": "Erling Haaland", "team": "Manchester City", "goals": 27 },
+    { "name": "Cole Palmer", "team": "Chelsea", "goals": 22 },
+    { "name": "Ollie Watkins", "team": "Aston Villa", "goals": 19 }
+  ]
+}

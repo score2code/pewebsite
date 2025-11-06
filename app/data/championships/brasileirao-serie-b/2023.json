@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2023",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 950,
+  "averageGoalsPerMatch": 2.50,
+  "cardsByType": { "yellow": 1380, "red": 92 },
+  "winCounts": { "home": 190, "draw": 114, "away": 76 },
+  "topScorers": [
+    { "name": "Gustavo Coutinho", "team": "Atlético-GO", "goals": 20 },
+    { "name": "Vagner Love", "team": "Sport", "goals": 17 },
+    { "name": "Anselmo Ramon", "team": "CRB", "goals": 15 }
+  ]
+}

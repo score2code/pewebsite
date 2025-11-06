@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2021",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 884,
+  "averageGoalsPerMatch": 2.33,
+  "cardsByType": { "yellow": 2078, "red": 95 },
+  "winCounts": { "home": 162, "draw": 115, "away": 103 },
+  "topScorers": [
+    { "name": "Hulk", "team": "Atlético-MG", "goals": 19 },
+    { "name": "Ytalo", "team": "RB Bragantino", "goals": 12 },
+    { "name": "Arthur", "team": "RB Bragantino", "goals": 10 }
+  ]
+}

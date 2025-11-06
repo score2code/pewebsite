@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 930,
+  "averageGoalsPerMatch": 2.45,
+  "cardsByType": { "yellow": 1350, "red": 90 },
+  "winCounts": { "home": 187, "draw": 116, "away": 77 },
+  "topScorers": [
+    { "name": "Gabriel Poveda", "team": "Sampaio Corrêa", "goals": 19 },
+    { "name": "Alex Muriqui", "team": "Vila Nova", "goals": 12 },
+    { "name": "Luciano", "team": "Sport", "goals": 11 }
+  ]
+}

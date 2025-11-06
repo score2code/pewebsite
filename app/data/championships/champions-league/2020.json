@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2020",
+  "totalMatches": 125,
+  "matchesPlayed": 125,
+  "goalsScored": 386,
+  "averageGoalsPerMatch": 3.09,
+  "cardsByType": { "yellow": 460, "red": 20 },
+  "winCounts": { "home": 60, "draw": 25, "away": 40 },
+  "topScorers": [
+    { "name": "Robert Lewandowski", "team": "Bayern", "goals": 15 },
+    { "name": "Erling Haaland", "team": "Dortmund", "goals": 10 },
+    { "name": "Kylian Mbappé", "team": "PSG", "goals": 8 }
+  ]
+}

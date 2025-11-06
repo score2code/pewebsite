@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2020",
+  "totalMatches": 126,
+  "matchesPlayed": 126,
+  "goalsScored": 330,
+  "averageGoalsPerMatch": 2.62,
+  "cardsByType": { "yellow": 540, "red": 36 },
+  "winCounts": { "home": 62, "draw": 34, "away": 30 },
+  "topScorers": [
+    { "name": "Pedro", "team": "Flamengo", "goals": 8 },
+    { "name": "Luiz Adriano", "team": "Palmeiras", "goals": 6 },
+    { "name": "Diego Souza", "team": "Grêmio", "goals": 5 }
+  ]
+}

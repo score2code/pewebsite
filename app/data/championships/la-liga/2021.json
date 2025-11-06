@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2021",
+  "totalMatches": 380,
+  "matchesPlayed": 380,
+  "goalsScored": 951,
+  "averageGoalsPerMatch": 2.50,
+  "cardsByType": { "yellow": 2690, "red": 80 },
+  "winCounts": { "home": 168, "draw": 108, "away": 104 },
+  "topScorers": [
+    { "name": "Karim Benzema", "team": "Real Madrid", "goals": 27 },
+    { "name": "Iago Aspas", "team": "Celta Vigo", "goals": 18 },
+    { "name": "Vinícius Júnior", "team": "Real Madrid", "goals": 17 }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2022",
+  "totalMatches": 155,
+  "matchesPlayed": 155,
+  "goalsScored": 445,
+  "averageGoalsPerMatch": 2.87,
+  "cardsByType": { "yellow": 660, "red": 50 },
+  "winCounts": { "home": 78, "draw": 38, "away": 39 },
+  "topScorers": [
+    { "name": "Pedro", "team": "Flamengo", "goals": 12 },
+    { "name": "Julián Álvarez", "team": "River Plate", "goals": 6 },
+    { "name": "Germán Cano", "team": "Fluminense", "goals": 6 }
+  ]
+}

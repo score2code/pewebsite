@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2024",
+  "totalMatches": 380,
+  "matchesPlayed": 320,
+  "goalsScored": 860,
+  "averageGoalsPerMatch": 2.69,
+  "cardsByType": { "yellow": 2300, "red": 68 },
+  "winCounts": { "home": 152, "draw": 86, "away": 82 },
+  "topScorers": [
+    { "name": "Jude Bellingham", "team": "Real Madrid", "goals": 18 },
+    { "name": "Artem Dovbyk", "team": "Girona", "goals": 17 },
+    { "name": "Robert Lewandowski", "team": "Barcelona", "goals": 16 }
+  ]
+}

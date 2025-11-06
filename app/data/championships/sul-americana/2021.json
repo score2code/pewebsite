@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2021",
+  "totalMatches": 157,
+  "matchesPlayed": 157,
+  "goalsScored": 390,
+  "averageGoalsPerMatch": 2.48,
+  "cardsByType": { "yellow": 640, "red": 44 },
+  "winCounts": { "home": 75, "draw": 40, "away": 42 },
+  "topScorers": [
+    { "name": "Jonathan Calleri", "team": "São Paulo", "goals": 9 },
+    { "name": "Hulk", "team": "Atlético-MG", "goals": 7 },
+    { "name": "Nicolás De La Cruz", "team": "River Plate", "goals": 6 }
+  ]
+}

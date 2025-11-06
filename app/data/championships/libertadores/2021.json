@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2021",
+  "totalMatches": 155,
+  "matchesPlayed": 155,
+  "goalsScored": 430,
+  "averageGoalsPerMatch": 2.77,
+  "cardsByType": { "yellow": 640, "red": 46 },
+  "winCounts": { "home": 80, "draw": 34, "away": 41 },
+  "topScorers": [
+    { "name": "Gabigol", "team": "Flamengo", "goals": 11 },
+    { "name": "Hulk", "team": "Atlético-MG", "goals": 8 },
+    { "name": "Rony", "team": "Palmeiras", "goals": 6 }
+  ]
+}

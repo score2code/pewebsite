@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2023",
+  "totalMatches": 306,
+  "matchesPlayed": 306,
+  "goalsScored": 1018,
+  "averageGoalsPerMatch": 3.33,
+  "cardsByType": { "yellow": 1005, "red": 27 },
+  "winCounts": { "home": 156, "draw": 64, "away": 86 },
+  "topScorers": [
+    { "name": "Harry Kane", "team": "Bayern", "goals": 36 },
+    { "name": "Serhou Guirassy", "team": "Stuttgart", "goals": 28 },
+    { "name": "Deniz Undav", "team": "Stuttgart", "goals": 18 }
+  ]
+}

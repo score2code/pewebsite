@@ -1,0 +1,14 @@
+{
+  "seasonLabel": "2021",
+  "totalMatches": 125,
+  "matchesPlayed": 125,
+  "goalsScored": 380,
+  "averageGoalsPerMatch": 3.04,
+  "cardsByType": { "yellow": 430, "red": 18 },
+  "winCounts": { "home": 58, "draw": 30, "away": 37 },
+  "topScorers": [
+    { "name": "Karim Benzema", "team": "Real Madrid", "goals": 15 },
+    { "name": "Robert Lewandowski", "team": "Bayern", "goals": 13 },
+    { "name": "Mohamed Salah", "team": "Liverpool", "goals": 8 }
+  ]
+}
