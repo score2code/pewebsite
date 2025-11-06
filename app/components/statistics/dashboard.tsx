@@ -57,7 +57,7 @@ const StatsDashboard: React.FC<StatsDashboardProps> = ({
 }) => {
   return (
     <div className="w-full max-w-6xl mx-auto p-4">
-      <div className="mb-8 text-center">
+      <div className="mb-6 text-center">
         <h2 className="text-3xl font-bold text-dark-900 dark:text-light-100 mb-2">
           Nossas Estatísticas
         </h2>

@@ -23,7 +23,7 @@
     "prediction": "Total de Gols: Mais de 1.5",
     "confidence": 82,
     "analysis": "Clássico com tendência a pelo menos dois gols; Botafogo agressivo em casa e Vasco melhorou produção ofensiva recente.",
-    "hit": false
+    "hit": true
   },
   {
     "id": "club-brugge-x-barcelona",
@@ -35,7 +35,8 @@
     "timezone": "BRT",
     "prediction": "Barcelona vence",
     "confidence": 76,
-    "analysis": "Barcelona superior tecnicamente e com bom momento na competição; Brugge é competitivo, mas desfavorável contra linhas ofensivas de elite."
+    "analysis": "Barcelona superior tecnicamente e com bom momento na competição; Brugge é competitivo, mas desfavorável contra linhas ofensivas de elite.",
+    "hit": false
   },
   {
     "id": "qarabag-x-chelsea",
@@ -47,7 +48,8 @@
     "timezone": "BRT",
     "prediction": "Chelsea vence",
     "confidence": 74,
-    "analysis": "Chelsea com maior profundidade e experiência; Qarabag tem dificuldades contra pressão alta e bolas paradas."
+    "analysis": "Chelsea com maior profundidade e experiência; Qarabag tem dificuldades contra pressão alta e bolas paradas.",
+    "hit": false
   },
   {
     "id": "pafos-x-villarreal",
@@ -59,6 +61,7 @@
     "timezone": "BRT",
     "prediction": "Villarreal vence",
     "confidence": 70,
-    "analysis": "Villarreal superior tecnicamente e com melhor fase ofensiva; Pafos tende a ceder espaços em transições."
+    "analysis": "Villarreal superior tecnicamente e com melhor fase ofensiva; Pafos tende a ceder espaços em transições.",
+    "hit": false
   }
 ]

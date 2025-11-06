@@ -55,7 +55,7 @@ export default async function HomePage() {
                 <MainSections />
 
                 {/* Destaque: Bilhete do Dia */}
-                <section className="mt-8 mb-12">
+                <section className="mt-6 mb-6">
                     <div className="bg-purple-100/70 dark:bg-purple-900/30 rounded-xl p-6 border border-purple-300 dark:border-purple-700 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                             <div>
@@ -76,7 +76,7 @@ export default async function HomePage() {
                 </section>
 
                 {/* Statistics Dashboard */}
-                <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                <section className="py-8 max-w-6xl mx-auto">
                     <StatsDashboard hitRate={hitRate} totalPicks={totalPicks} />
                 </section>
 
