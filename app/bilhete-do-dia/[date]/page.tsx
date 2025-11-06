@@ -55,9 +55,10 @@ async function resolvePickHref(id: string, date: string): Promise<string | null>
   return null;
 }
 
-export const dynamicParams = false;
+// Permitir parâmetros dinâmicos; serão restritos pelos valores gerados em build
+export const dynamicParams = true;
 
-export async function generateStaticParams() {
+export const generateStaticParams = async () => {
   const params: { date: string }[] = [];
   try {
     const baseDir = path.join(process.cwd(), 'app', 'data', 'ticket');
@@ -77,7 +78,28 @@ export async function generateStaticParams() {
       }
     }
   } catch {}
-  // Garante pelo menos a data de exemplo
+  // Garante pelo menos algumas datas para não quebrar em produção estática
+  const today = new Date();
+  const yyyy = String(today.getFullYear());
+  const mm = String(today.getMonth() + 1).padStart(2, '0');
+  const dd = String(today.getDate()).padStart(2, '0');
+  const todayStr = `${yyyy}-${mm}-${dd}`;
+
+  // Inclui uma janela de datas em torno de hoje (±7 dias)
+  const rangeDays = 7;
+  for (let offset = -rangeDays; offset <= rangeDays; offset++) {
+    const base = new Date(yyyy + '-' + mm + '-' + dd + 'T00:00:00');
+    base.setDate(base.getDate() + offset);
+    const y = String(base.getFullYear());
+    const m = String(base.getMonth() + 1).padStart(2, '0');
+    const d = String(base.getDate()).padStart(2, '0');
+    const dateStr = `${y}-${m}-${d}`;
+    if (!params.find(p => p.date === dateStr)) {
+      params.push({ date: dateStr });
+    }
+  }
+
+  // Inclui uma data de exemplo se ainda não estiver
   if (!params.find(p => p.date === '2025-11-05')) {
     params.push({ date: '2025-11-05' });
   }

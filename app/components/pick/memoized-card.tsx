@@ -1,10 +1,10 @@
+'use client';
 import React, { memo } from 'react';
 import { Pick } from '@/app/types';
 import StatusBadge, { PickStatus } from '@/app/components/ui/status-badge';
 import { useFormattedDate, useFormattedTime } from '@/app/hooks/use-picks';
 import { Calendar, Clock, Trophy, Target } from 'lucide-react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { trackClick } from '@/app/lib/analytics';
 
 interface MemoizedPickCardProps {
@@ -13,6 +13,7 @@ interface MemoizedPickCardProps {
   compact?: boolean;
   className?: string;
   date?: string; // optional date to use for route building
+  sportSegment?: 'futebol' | 'futebol-americano';
 }
 
 const MemoizedPickCard = memo<MemoizedPickCardProps>(({ 
@@ -20,10 +21,9 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
   showStatus = true,
   compact = false,
   className = '',
-  date
+  date,
+  sportSegment = 'futebol'
 }) => {
-  const pathname = usePathname();
-  const sportSegment = pathname?.startsWith('/futebol-americano') ? 'futebol-americano' : 'futebol';
   // Normaliza data para exibição e rota
   const rawDateForRoute = date || pick.date || new Date().toISOString();
   const pickDateForRoute = rawDateForRoute.split('T')[0];
@@ -139,16 +139,6 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
       {/* Analysis Link */}
       <Link
         href={`/${sportSegment}/${pickDateForRoute}/${pick.id}`}
-        onClick={() => {
-          try {
-            trackClick('pick', 'open_analysis', {
-              sport: sportSegment,
-              date: pickDateForRoute,
-              pick_id: pick.id,
-              league: pick.league,
-            });
-          } catch {}
-        }}
         className="block w-full text-center bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium"
       >
         Ver Análise Completa

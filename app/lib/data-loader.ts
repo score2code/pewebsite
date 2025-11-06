@@ -6,7 +6,7 @@ export type SportType = 'soccer' | 'football';
 /**
  * Helper function to get formatted date in YYYY-MM-DD format
  */
-export const getFormattedDate = (date: Date): string => {
+export const getFormattedDate = (date: Date = new Date()): string => {
   const year = date.getFullYear();
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
   const day = date.getDate().toString().padStart(2, '0');
@@ -59,10 +59,30 @@ export const loadPicksData = async (date: string, sport: SportType): Promise<Pic
     }
   }
 
-  // No cliente, não há acesso ao filesystem e removemos a API.
-  // Esta função deve ser chamada apenas em Server Components.
-  console.warn(`[client] loadPicksData(${sport}, ${date}) chamado no cliente; retornando [] para site 100% estático.`);
-  return [];
+  // No cliente, buscar JSON estático servido de public/data
+  try {
+    const year = date.substring(0, 4);
+    const month = date.substring(5, 7);
+    const day = date.substring(8, 10);
+    const url = `/data/${sport}/${year}/${month}/${day}.json`;
+    const res = await fetch(url, { headers: { Accept: 'application/json' } });
+    if (!res.ok) {
+      console.warn(`[client] ${res.status} ao buscar ${url}`);
+      return [];
+    }
+    const contentType = res.headers.get('content-type') || '';
+    if (!contentType.includes('application/json')) {
+      console.warn(`[client] Content-Type inválido para ${url}: ${contentType}`);
+      return [];
+    }
+    const raw = await res.json();
+    const picks = Array.isArray(raw) ? raw : Array.isArray(raw?.data) ? raw.data : [];
+    const validated = validatePickArray(picks);
+    return validated.map(p => ({ ...p, date: p.date && p.date.length === 10 ? p.date : date }));
+  } catch (error) {
+    console.error(`[client] Erro ao ler ${sport} picks para ${date}:`, error);
+    return [];
+  }
 };
 
 /**
