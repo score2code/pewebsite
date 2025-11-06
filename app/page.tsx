@@ -48,6 +48,20 @@ export default async function HomePage() {
     const totalPicks = combinedPicks.length;
     const hitRate = completed > 0 ? Math.round((wonCount / completed) * 100) : 0;
 
+    // Série de desempenho diária dos últimos 10 dias disponíveis (soma soccer+football)
+    const unionDates = Array.from(new Set([...soccerDates, ...footballDates])).sort();
+    const lastDates = unionDates.slice(Math.max(0, unionDates.length - 10));
+    const performanceSeries: { label: string; value: number }[] = [];
+    for (const d of lastDates) {
+        const sPicks: Pick[] = await loadPicksData(d, 'soccer');
+        const fPicks: Pick[] = await loadPicksData(d, 'football');
+        const dayPicks = [...sPicks, ...fPicks];
+        const dayCompleted = dayPicks.filter(p => typeof p.hit === 'boolean' || ['won', 'lost'].includes(p.status)).length;
+        const dayWon = dayPicks.filter(p => (p.hit === true) || p.status === 'won').length;
+        const dayRate = dayCompleted > 0 ? Math.round((dayWon / dayCompleted) * 100) : 0;
+        performanceSeries.push({ label: new Date(d + 'T00:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }), value: dayRate });
+    }
+
     return (
         <div className="min-h-screen font-sans pt-12">
             <div className="max-w-6xl mx-auto px-4 py-4">
@@ -77,7 +91,7 @@ export default async function HomePage() {
 
                 {/* Statistics Dashboard */}
                 <section className="py-8 max-w-6xl mx-auto">
-                    <StatsDashboard hitRate={hitRate} totalPicks={totalPicks} />
+                    <StatsDashboard hitRate={hitRate} totalPicks={totalPicks} series={performanceSeries} />
                 </section>
 
                 {/* Seção de Últimos Palpites (Futebol e Futebol Americano) */}

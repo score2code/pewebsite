@@ -31,13 +31,10 @@ export function ThemeSwitcher() {
 
   const palettes = [
     { label: 'Padrão', value: '' },
-    { label: 'Vermelho/Preto', value: 'theme-red-black' },
-    { label: 'Preto/Branco', value: 'theme-black-white' },
-    { label: 'Azul/Amarelo', value: 'theme-blue-yellow' },
-    { label: 'Amarelo/Verde', value: 'theme-yellow-green' },
-    { label: 'Azul/Branco', value: 'theme-blue-white' },
-    { label: 'Verde/Branco', value: 'theme-green-white' },
-    { label: 'Branco/Dourado', value: 'theme-white-gold' },
+    { label: 'Vermelho', value: 'theme-red' },
+    { label: 'Azul', value: 'theme-blue' },
+    { label: 'Verde', value: 'theme-green' },
+    { label: 'Amarelo', value: 'theme-yellow' },
   ];
 
   if (!mounted) return null;

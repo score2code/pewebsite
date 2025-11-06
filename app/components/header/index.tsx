@@ -31,7 +31,7 @@ const Header = ({ currentPath = '/' }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     // Define os itens do menu e as rotas
     const navItems: NavItem[] = [
-        { name: 'Início', path: '/', icon: 'Home', type: 'link' },
+        // { name: 'Início', path: '/', icon: 'Home', type: 'link' },
         {
             name: 'Palpites', icon: 'Goal', type: 'dropdown', items: [
                 { name: 'Futebol', path: '/futebol' },

@@ -1,4 +1,5 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 import { TrendingUp, TrendingDown, Target, Award, BarChart3, Users } from 'lucide-react';
 
 interface StatsCardProps {
@@ -47,13 +48,17 @@ interface StatsDashboardProps {
   totalPicks?: number;
   activeStreak?: number;
   monthlyROI?: number;
+  series?: { label: string; value: number }[];
 }
+
+const PerformanceChart = dynamic(() => import('./performance-chart'), { ssr: false });
 
 const StatsDashboard: React.FC<StatsDashboardProps> = ({
   hitRate = 78,
   totalPicks = 156,
   activeStreak = 5,
-  monthlyROI = 24.5
+  monthlyROI = 24.5,
+  series = []
 }) => {
   return (
     <div className="w-full max-w-6xl mx-auto p-4">
@@ -96,17 +101,21 @@ const StatsDashboard: React.FC<StatsDashboardProps> = ({
         />
       </div>
 
-      {/* Performance Chart Placeholder */}
+      {/* Performance Chart */}
       <div className="bg-light-100/50 dark:bg-dark-800/50 p-6 rounded-xl border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
         <h3 className="text-xl font-bold text-dark-900 dark:text-light-100 mb-4">
-          Desempenho por Mês
+          Desempenho Recente
         </h3>
-        <div className="h-64 flex items-center justify-center text-dark-900/50 dark:text-light-100/50">
-          <div className="text-center">
-            <BarChart3 className="w-12 h-12 mx-auto mb-2 opacity-50" />
-            <p>Gráfico de desempenho será implementado em breve</p>
+        {series && series.length > 0 ? (
+          <PerformanceChart series={series} height={220} />
+        ) : (
+          <div className="h-64 flex items-center justify-center text-dark-900/50 dark:text-light-100/50">
+            <div className="text-center">
+              <BarChart3 className="w-12 h-12 mx-auto mb-2 opacity-50" />
+              <p>Sem dados suficientes para exibir desempenho.</p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
