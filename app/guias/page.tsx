@@ -162,7 +162,7 @@ export default function GuidesPage() {
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-6 px-2">
                             {category}
                         </h2>
-                        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
                             {guides.filter(guide => guide.category === category).map((guide) => {
                                 const Icon = guide.icon;
                                 return (
