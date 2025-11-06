@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Home, BarChart3, BookOpen, Goal, Star, TrendingUp, Trophy, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import DropdownMenu from '@/app/components/ui/dropdown-menu';
-import { ThemeSwitcher } from '@/app/components/theme-switcher';
+import { ThemeSwitcher } from '../theme-switcher';
 
 interface DropdownItem {
     name: string;
@@ -88,7 +88,7 @@ const Header = ({ currentPath = '/' }) => {
                 {/* Logo/Título Principal */}
                 <Link
                     href="/"
-                    className="flex items-center text-2xl font-black text-purple-600 dark:text-purple-400 cursor-pointer hover:text-purple-700 dark:hover:text-purple-300 transition-colors duration-300"
+                    className="flex items-center text-2xl font-black accent-text cursor-pointer transition-colors duration-300"
                 >
                     <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>

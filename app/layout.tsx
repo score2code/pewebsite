@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="pt-BR" suppressHydrationWarning>
       <head />
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} storageKey="theme">
           <div className="min-h-screen bg-gradient-to-b from-light-50 to-light-200 dark:from-dark-900 dark:to-dark-950 text-dark-900 dark:text-light-100 transition-colors duration-300">
             <Analytics />
 

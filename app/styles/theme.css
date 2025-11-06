@@ -102,3 +102,147 @@
   outline: none;
   ring: 2px var(--primary);
 }
+
+/* Accent Utilities (use CSS variables for theme palettes) */
+.accent-text { color: var(--primary); }
+.accent-bg { background-color: var(--primary); color: #fff; }
+.accent-border { border-color: var(--primary); }
+.accent-ring { outline: none; box-shadow: 0 0 0 2px var(--primary); }
+.accent-soft-bg { background-color: var(--accent-soft-bg, var(--primary)); }
+
+/* Team-Color Palettes (light-based palettes) */
+.theme-red-black {
+  --background: var(--color-light-50);
+  --foreground: var(--color-dark-900);
+  --primary: #d7263d; /* Flamengo-style red */
+  --primary-hover: #b31f31;
+  --border-color: var(--color-light-300);
+  --card-bg: var(--color-light-100);
+  --accent-soft-bg: #d7263d1a; /* 10% opacity */
+}
+
+.theme-black-white {
+  --background: var(--color-light-50);
+  --foreground: var(--color-dark-900);
+  --primary: #111111; /* Corinthians-style black */
+  --primary-hover: #000000;
+  --border-color: var(--color-light-300);
+  --card-bg: var(--color-light-100);
+  --accent-soft-bg: #11111114;
+}
+
+.theme-blue-yellow {
+  --background: var(--color-light-50);
+  --foreground: var(--color-dark-900);
+  --primary: #0b63ce; /* Boca-style blue */
+  --primary-hover: #094fa4;
+  --border-color: var(--color-light-300);
+  --card-bg: var(--color-light-100);
+  --accent-soft-bg: #0b63ce1a;
+}
+
+.theme-yellow-green {
+  --background: var(--color-light-50);
+  --foreground: var(--color-dark-900);
+  --primary: #2cab16; /* Brazil-style green */
+  --primary-hover: #228b12;
+  --border-color: var(--color-light-300);
+  --card-bg: var(--color-light-100);
+  --accent-soft-bg: #2cab161a;
+}
+
+.theme-blue-white {
+  --background: var(--color-light-50);
+  --foreground: var(--color-dark-900);
+  --primary: #0077c8; /* Grêmio/Cruzeiro-style blue */
+  --primary-hover: #0063a4;
+  --border-color: var(--color-light-300);
+  --card-bg: var(--color-light-100);
+  --accent-soft-bg: #0077c81a;
+}
+
+/* Extras: mais paletas de times */
+.theme-green-white {
+  --background: var(--color-light-50);
+  --foreground: var(--color-dark-900);
+  --primary: #1B5E20; /* Palmeiras-style green */
+  --primary-hover: #144a19;
+  --border-color: var(--color-light-300);
+  --card-bg: var(--color-light-100);
+  --accent-soft-bg: #1B5E201a;
+}
+
+.theme-white-gold {
+  --background: var(--color-light-50);
+  --foreground: var(--color-dark-900);
+  --primary: #D4AF37; /* Real Madrid-style gold */
+  --primary-hover: #B38F2D;
+  --border-color: var(--color-light-300);
+  --card-bg: var(--color-light-100);
+  --accent-soft-bg: #D4AF371a;
+}
+
+/* Optional: remap common purple utility classes to the current palette
+   Note: uses !important to override Tailwind defaults where applicable. */
+.theme-red-black .text-purple-600 { color: var(--primary) !important; }
+.theme-red-black .dark .text-purple-400 { color: var(--primary) !important; }
+.theme-red-black .bg-purple-600 { background-color: var(--primary) !important; }
+.theme-red-black .dark .bg-purple-500 { background-color: var(--primary) !important; }
+.theme-red-black .border-purple-500 { border-color: var(--primary) !important; }
+.theme-red-black .dark .border-purple-400 { border-color: var(--primary) !important; }
+.theme-red-black .bg-purple-600\/10 { background-color: var(--accent-soft-bg) !important; }
+.theme-red-black .dark .bg-purple-400\/10 { background-color: var(--accent-soft-bg) !important; }
+
+.theme-black-white .text-purple-600 { color: var(--primary) !important; }
+.theme-black-white .dark .text-purple-400 { color: var(--primary) !important; }
+.theme-black-white .bg-purple-600 { background-color: var(--primary) !important; }
+.theme-black-white .dark .bg-purple-500 { background-color: var(--primary) !important; }
+.theme-black-white .border-purple-500 { border-color: var(--primary) !important; }
+.theme-black-white .dark .border-purple-400 { border-color: var(--primary) !important; }
+.theme-black-white .bg-purple-600\/10 { background-color: var(--accent-soft-bg) !important; }
+.theme-black-white .dark .bg-purple-400\/10 { background-color: var(--accent-soft-bg) !important; }
+
+.theme-blue-yellow .text-purple-600 { color: var(--primary) !important; }
+.theme-blue-yellow .dark .text-purple-400 { color: var(--primary) !important; }
+.theme-blue-yellow .bg-purple-600 { background-color: var(--primary) !important; }
+.theme-blue-yellow .dark .bg-purple-500 { background-color: var(--primary) !important; }
+.theme-blue-yellow .border-purple-500 { border-color: var(--primary) !important; }
+.theme-blue-yellow .dark .border-purple-400 { border-color: var(--primary) !important; }
+.theme-blue-yellow .bg-purple-600\/10 { background-color: var(--accent-soft-bg) !important; }
+.theme-blue-yellow .dark .bg-purple-400\/10 { background-color: var(--accent-soft-bg) !important; }
+
+.theme-yellow-green .text-purple-600 { color: var(--primary) !important; }
+.theme-yellow-green .dark .text-purple-400 { color: var(--primary) !important; }
+.theme-yellow-green .bg-purple-600 { background-color: var(--primary) !important; }
+.theme-yellow-green .dark .bg-purple-500 { background-color: var(--primary) !important; }
+.theme-yellow-green .border-purple-500 { border-color: var(--primary) !important; }
+.theme-yellow-green .dark .border-purple-400 { border-color: var(--primary) !important; }
+.theme-yellow-green .bg-purple-600\/10 { background-color: var(--accent-soft-bg) !important; }
+.theme-yellow-green .dark .bg-purple-400\/10 { background-color: var(--accent-soft-bg) !important; }
+
+.theme-blue-white .text-purple-600 { color: var(--primary) !important; }
+.theme-blue-white .dark .text-purple-400 { color: var(--primary) !important; }
+.theme-blue-white .bg-purple-600 { background-color: var(--primary) !important; }
+.theme-blue-white .dark .bg-purple-500 { background-color: var(--primary) !important; }
+.theme-blue-white .border-purple-500 { border-color: var(--primary) !important; }
+.theme-blue-white .dark .border-purple-400 { border-color: var(--primary) !important; }
+.theme-blue-white .bg-purple-600\/10 { background-color: var(--accent-soft-bg) !important; }
+.theme-blue-white .dark .bg-purple-400\/10 { background-color: var(--accent-soft-bg) !important; }
+
+.theme-green-white .text-purple-600 { color: var(--primary) !important; }
+.theme-green-white .dark .text-purple-400 { color: var(--primary) !important; }
+.theme-green-white .bg-purple-600 { background-color: var(--primary) !important; }
+.theme-green-white .dark .bg-purple-500 { background-color: var(--primary) !important; }
+.theme-green-white .border-purple-500 { border-color: var(--primary) !important; }
+.theme-green-white .dark .border-purple-400 { border-color: var(--primary) !important; }
+.theme-green-white .bg-purple-600\/10 { background-color: var(--accent-soft-bg) !important; }
+.theme-green-white .dark .bg-purple-400\/10 { background-color: var(--accent-soft-bg) !important; }
+
+.theme-white-gold .text-purple-600 { color: var(--primary) !important; }
+.theme-white-gold .dark .text-purple-400 { color: var(--primary) !important; }
+.theme-white-gold .bg-purple-600 { background-color: var(--primary) !important; }
+.theme-white-gold .dark .bg-purple-500 { background-color: var(--primary) !important; }
+.theme-white-gold .border-purple-500 { border-color: var(--primary) !important; }
+.theme-white-gold .dark .border-purple-400 { border-color: var(--primary) !important; }
+.theme-white-gold .bg-purple-600\/10 { background-color: var(--accent-soft-bg) !important; }
+.theme-white-gold .dark .bg-purple-400\/10 { background-color: var(--accent-soft-bg) !important; }
