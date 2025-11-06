@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { games } from '../games';
 import dynamic from 'next/dynamic';
 import EngagementTracker from '../components/engagement-tracker';
+import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 const TicTacToe = dynamic(() => import('../components/tic-tac-toe'), { ssr: false });
 const MemoryMatch = dynamic(() => import('../components/memory-match'), { ssr: false });
@@ -29,6 +30,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="space-y-6">
+      <Breadcrumb className="mb-2" />
       <EngagementTracker slug={params.slug} />
       <header className="text-center">
         <h1 className="text-2xl font-bold text-dark-900 dark:text-light-100">{game.title}</h1>

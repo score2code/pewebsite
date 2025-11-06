@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { buildItemListJsonLd } from '@/app/lib/jsonld';
 import { BookOpen, TrendingUp, ShieldCheck } from 'lucide-react';
+import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 const guides = [
     // Análise Estatística
@@ -140,6 +141,7 @@ export default function GuidesPage() {
     return (
         <div className="min-h-screen pt-8 px-4">
             <div className="max-w-4xl mx-auto">
+                <Breadcrumb className="mb-4" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}

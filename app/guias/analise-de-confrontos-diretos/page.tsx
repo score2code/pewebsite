@@ -1,5 +1,6 @@
 import { generateGuideMetadata } from '@/app/utils/metadata';
 import RelatedGuides from '@/app/components/related-guides';
+import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 export const metadata = generateGuideMetadata({
   title: 'Análise de Confrontos Diretos: Guia Completo para Avaliação',
@@ -11,6 +12,7 @@ export default function AnaliseConfrontosDiretosPage() {
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
       <article className="max-w-4xl mx-auto">
+        <Breadcrumb className="mb-4" />
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
           <h1 className="text-4xl font-bold text-dark-900 dark:text-light-100 mb-4">Análise de Confrontos Diretos</h1>
           <p className="text-lg text-dark-900/70 dark:text-light-100/70">Como interpretar o histórico entre equipes e usar isso nas suas previsões.</p>

@@ -2,6 +2,7 @@ import * as path from 'path';
 import * as fs from 'fs/promises';
 import MemoizedPickCard from '@/app/components/pick/memoized-card';
 import { formatDateDisplay, changeDate, loadPicksData } from '@/app/lib/data-loader';
+import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 export const dynamicParams = true;
 
@@ -58,6 +59,7 @@ export default async function AmericanFootballByDatePage({ params }: { params: {
   return (
     <div className="min-h-screen pt-8 px-4">
       <div className="max-w-4xl mx-auto">
+        <Breadcrumb className="mb-4" />
         <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm flex items-center justify-between">
           <a href={`/futebol-americano/${prevDate}`} aria-label="Dia Anterior" className="p-2 rounded-lg text-dark-900/70 dark:text-light-100/70 hover:bg-light-200 dark:hover:bg-dark-700 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500">◀</a>
           <div className="text-center">

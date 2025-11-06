@@ -1,7 +1,9 @@
+import Breadcrumb from '@/app/components/ui/breadcrumb';
 export default function ProbabilidadesOddsPage() {
     return (
         <div className="min-h-screen pt-8 pb-16 px-4">
             <article className="max-w-4xl mx-auto">
+                <Breadcrumb className="mb-4" />
                 {/* Header */}
                 <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8
                     border border-light-300 dark:border-dark-600

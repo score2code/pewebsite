@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { games } from './games';
+import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 export default function EntertainmentPage() {
   return (
     <div className="space-y-6">
+      <Breadcrumb className="mb-4" />
       <header className="text-center">
         <h1 className="text-3xl font-bold text-dark-900 dark:text-light-100">Entretenimento</h1>
         <p className="text-dark-900/70 dark:text-light-100/70">Área de jogos</p>

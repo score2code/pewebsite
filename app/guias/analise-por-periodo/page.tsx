@@ -1,6 +1,7 @@
 import { generateGuideMetadata } from '@/app/utils/metadata';
 import RelatedGuides from '@/app/components/related-guides';
 import { buildArticleJsonLd } from '@/app/lib/jsonld';
+import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 export const metadata = generateGuideMetadata({
   title: 'Análise por Tempo de Jogo: 1º e 2º Tempo',
@@ -18,6 +19,7 @@ export default function ApostasPorTempoPage() {
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
       <article className="max-w-4xl mx-auto">
+        <Breadcrumb className="mb-4" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
           <h1 className="text-4xl font-bold text-dark-900 dark:text-light-100 mb-4">Análise por Período (1º / 2º Tempo)</h1>

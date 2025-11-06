@@ -7,6 +7,7 @@ import ChampionshipStatsBlock from '@/app/components/championship/stats';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { parsePicks } from '@/app/lib/data-parser';
+import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 const championships: Championship[] = [
     // Brasil
@@ -291,6 +292,7 @@ export default async function CompetitionPage({ params }: { params: { slug: stri
     return (
         <div className="min-h-screen pt-10 pb-16 px-4">
             <div className="max-w-6xl mx-auto">
+                <Breadcrumb className="mb-4" />
                 {/* League Header */}
                 <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-10
                     border border-light-300 dark:border-dark-600

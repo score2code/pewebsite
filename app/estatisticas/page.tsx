@@ -14,6 +14,7 @@ async function getStandingsData(): Promise<LeagueStanding> {
 }
 import StandingsTable from '@/app/components/statistics/standings-table';
 import PoissonTool from '@/app/components/statistics/poisson-tool';
+import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 // ...existing code...
 
@@ -23,6 +24,7 @@ export default async function StatisticsPage() {
     return (
         <div className="min-h-screen pt-8 px-4">
             <div className="max-w-4xl mx-auto">
+                <Breadcrumb className="mb-4" />
                 <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8
                     border border-light-300 dark:border-dark-600
                     shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
