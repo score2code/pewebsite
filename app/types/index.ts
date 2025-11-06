@@ -7,6 +7,7 @@ export interface Pick {
   confidence: number;
   analysis?: string;
   status: 'pending' | 'won' | 'lost' | 'void';
+  hit?: boolean;
   country?: string;
   date?: string;
   time?: string; // HH:mm

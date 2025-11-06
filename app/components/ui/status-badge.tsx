@@ -15,7 +15,7 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({ status, confidence }) => {
       case 'won':
         return {
           icon: CheckCircle,
-          text: 'Vitória',
+          text: 'Ganhou',
           bgColor: 'bg-green-100 dark:bg-green-900/30',
           textColor: 'text-green-700 dark:text-green-400',
           borderColor: 'border-green-300 dark:border-green-700'
@@ -23,7 +23,7 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({ status, confidence }) => {
       case 'lost':
         return {
           icon: XCircle,
-          text: 'Derrota',
+          text: 'Perdeu',
           bgColor: 'bg-red-100 dark:bg-red-900/30',
           textColor: 'text-red-700 dark:text-red-400',
           borderColor: 'border-red-300 dark:border-red-700'

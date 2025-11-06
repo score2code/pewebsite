@@ -34,12 +34,14 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
   // (já calculado acima)
   
   const getBadgeStatus = (): PickStatus => {
+    if (pick.hit === true) return 'won';
+    if (pick.hit === false) return 'lost';
     if (pick.result === 'won') return 'won';
     if (pick.result === 'lost') return 'lost';
-    // Heurísticas visuais adicionais
-    if (pick.confidence >= 80) return 'high-confidence';
     // Mapear 'void' para um estado suportado
-    return pick.status === 'void' ? 'pending' : (pick.status as PickStatus);
+    if (pick.status === 'void') return 'pending';
+    if (pick.status === 'won' || pick.status === 'lost') return pick.status as PickStatus;
+    return 'pending';
   };
   
   const getConfidenceColor = (confidence: number) => {
@@ -47,6 +49,15 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
     if (confidence >= 60) return 'text-yellow-600 dark:text-yellow-400';
     return 'text-red-600 dark:text-red-400';
   };
+
+  const hasFinalOutcome =
+    pick.hit !== undefined ||
+    pick.result === 'won' ||
+    pick.result === 'lost' ||
+    pick.status === 'won' ||
+    pick.status === 'lost';
+
+  const showConfidenceTag = pick.confidence >= 80 && !hasFinalOutcome;
 
   // Removido: exibição e cores de odds
 
@@ -59,7 +70,16 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
               <span className="text-xs font-medium text-purple-600 dark:text-purple-400 truncate">
                 {pick.league}
               </span>
-              {showStatus && <StatusBadge status={getBadgeStatus()} />}
+              {showStatus && (
+                <div className="flex items-center gap-2">
+                  <StatusBadge status={getBadgeStatus()} />
+                  {showConfidenceTag && (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold border bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 border-purple-300 dark:border-purple-700">
+                      Alta Confiança
+                    </span>
+                  )}
+                </div>
+              )}
             </div>
             <p className="text-sm font-semibold text-dark-900 dark:text-light-100 truncate">
               {pick.homeTeam} vs {pick.awayTeam}
@@ -88,7 +108,16 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
             {pick.league}
           </span>
         </div>
-        {showStatus && <StatusBadge status={getBadgeStatus()} />}
+        {showStatus && (
+          <div className="flex items-center gap-2">
+            <StatusBadge status={getBadgeStatus()} />
+            {showConfidenceTag && (
+              <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold border bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 border-purple-300 dark:border-purple-700">
+                Alta Confiança
+              </span>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Teams */}

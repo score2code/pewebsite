@@ -11,6 +11,7 @@ type TicketPick = {
   time: string;
   timezone?: string;
   prediction: string;
+  hit?: boolean; // indica se o palpite foi certo
 };
 
 async function getTicketPicks(date: string): Promise<TicketPick[]> {
@@ -112,6 +113,8 @@ export default async function TicketByDatePage({ params }: { params: { date: str
   const prevDate = changeDate(date, -1);
   const nextDate = changeDate(date, 1);
 
+  const allHit = picks.length > 0 && picks.every(p => p.hit === true);
+
   const picksWithHref = await Promise.all(
     picks.map(async (p) => ({ ...p, href: await resolvePickHref(p.id, date) }))
   );
@@ -136,6 +139,14 @@ export default async function TicketByDatePage({ params }: { params: { date: str
           </div>
         )}
 
+        {picks.length > 0 && allHit && (
+          <div className="bg-green-100/70 dark:bg-green-900/40 border border-green-400 dark:border-green-700 rounded-xl p-6 mb-8 shadow-custom dark:shadow-custom-dark">
+            <p className="text-dark-900/90 dark:text-light-100/90 font-extrabold">
+              🎉 Bilhete vencedor! Todos os palpites deste bilhete foram vencedores.
+            </p>
+          </div>
+        )}
+
         <div className="grid gap-6 md:grid-cols-2">
           {picksWithHref.map((p) => (
             <div key={p.id} className="h-full bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
@@ -153,6 +164,21 @@ export default async function TicketByDatePage({ params }: { params: { date: str
                 <span className="inline-block bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-md text-sm font-semibold">
                   {p.prediction}
                 </span>
+                {p.hit === true && (
+                  <span className="inline-block ml-2 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 px-2 py-1 rounded-md text-xs font-semibold">
+                    Ganhou
+                  </span>
+                )}
+                {p.hit === false && (
+                  <span className="inline-block ml-2 bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-300 px-2 py-1 rounded-md text-xs font-semibold">
+                    Perdeu
+                  </span>
+                )}
+                {p.hit === undefined && (
+                  <span className="inline-block ml-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-md text-xs font-semibold">
+                    Pendente
+                  </span>
+                )}
               </div>
               {p.href ? (
                 <a href={p.href} className="block bg-purple-600 dark:bg-purple-500 text-center py-3 font-bold text-white hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-md">

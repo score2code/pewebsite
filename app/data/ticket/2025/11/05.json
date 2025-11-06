@@ -7,7 +7,8 @@
     "date": "2025-11-05",
     "time": "21:30",
     "timezone": "BRT",
-    "prediction": "Dupla Chance: X2"
+    "prediction": "Dupla Chance: X2",
+    "hit": true
   },
   {
     "id": "club-brugge-x-barcelona",
@@ -17,6 +18,7 @@
     "date": "2025-11-05",
     "time": "17:00",
     "timezone": "BRT",
-    "prediction": "Barcelona vence"
+    "prediction": "Barcelona vence",
+    "hit": false
   }
 ]
