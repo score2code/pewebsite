@@ -1,0 +1,22 @@
+[
+  {
+    "id": "olympique-marseille-x-brest",
+    "league": "Ligue 1",
+    "homeTeam": "Olympique Marseille",
+    "awayTeam": "Brest",
+    "date": "2025-11-08",
+    "time": "13:00",
+    "timezone": "GMT",
+    "prediction": "Total de Gols: Mais de 1.5"
+  },
+  {
+    "id": "bayer-leverkusen-x-heidenheim",
+    "league": "Bundesliga",
+    "homeTeam": "Bayer Leverkusen",
+    "awayTeam": "Heidenheim",
+    "date": "2025-11-08",
+    "time": "11:30",
+    "timezone": "GMT",
+    "prediction": "Bayer Leverkusen - Total de Gols: Mais de 1.5"
+  }
+]
