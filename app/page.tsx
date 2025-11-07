@@ -75,7 +75,7 @@ export default async function HomePage() {
                             <div>
                                 <h2 className="text-2xl font-extrabold text-dark-900 dark:text-light-100">Bilhete do Dia</h2>
                                 <p className="text-dark-900/70 dark:text-light-100/70 mt-1">
-                                    {`Confira nossas melhores seleções de hoje (${formatDateDisplay(today)}) com análise pronta para apostar.`}
+                                    {`Confira nossas melhores seleções com análise pronta para apostar.`}
                                 </p>
                             </div>
                             <a
@@ -102,9 +102,9 @@ export default async function HomePage() {
                     {(latestPicksSoccer.length + latestPicksFootball.length) > 0 ? (
                         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                             {latestPicksSoccer.slice(0, 3).map((pick) => (
-                                <MemoizedPickCard 
-                                    key={`soccer-${pick.id}`} 
-                                    pick={pick} 
+                                <MemoizedPickCard
+                                    key={`soccer-${pick.id}`}
+                                    pick={pick}
                                     showStatus={true}
                                     compact={false}
                                     date={soccerDate}
@@ -112,9 +112,9 @@ export default async function HomePage() {
                                 />
                             ))}
                             {latestPicksFootball.slice(0, 3).map((pick) => (
-                                <MemoizedPickCard 
-                                    key={`football-${pick.id}`} 
-                                    pick={pick} 
+                                <MemoizedPickCard
+                                    key={`football-${pick.id}`}
+                                    pick={pick}
                                     showStatus={true}
                                     compact={false}
                                     date={footballDate}

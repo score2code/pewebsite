@@ -89,30 +89,57 @@ const NotificationSystem: React.FC<NotificationSystemProps> = ({
     return positions[position];
   };
 
-  // Sistema de notificações para novos palpites
+  // Notificar o palpite mais próximo no futuro (sem conteúdo fixo)
   useEffect(() => {
-    const checkForNewPicks = () => {
-      // Simular verificação de novos palpites (em produção, isso viria de uma API)
-      const shouldNotify = Math.random() > 0.95; // 5% de chance para demonstração
-      
-      if (shouldNotify) {
-        addNotification({
-          type: 'new-pick',
-          title: 'Novo Palpite Disponível!',
-          message: 'Confira a análise para o jogo entre Real Madrid x Barcelona',
-          action: {
-            label: 'Ver Palpite',
-            onClick: () => {
-              window.location.href = '/futebol';
-            }
+    const pad2 = (n: number) => String(n).padStart(2, '0');
+    const findNextAvailablePick = async () => {
+      try {
+        const today = new Date();
+        const windowDays = 7; // procurar até 7 dias à frente
+
+        for (let offset = 0; offset <= windowDays; offset++) {
+          const d = new Date(today);
+          d.setDate(d.getDate() + offset);
+          const yyyy = String(d.getFullYear());
+          const mm = pad2(d.getMonth() + 1);
+          const dd = pad2(d.getDate());
+          const dateStr = `${yyyy}-${mm}-${dd}`;
+
+          for (const sport of ['soccer', 'football'] as const) {
+            const url = `/data/${sport}/${yyyy}/${mm}/${dd}.json`;
+            try {
+              const res = await fetch(url, { headers: { Accept: 'application/json' } });
+              if (!res.ok) continue;
+              const raw = await res.json();
+              const picks = Array.isArray(raw) ? raw : Array.isArray(raw?.data) ? raw.data : [];
+              if (!Array.isArray(picks) || picks.length === 0) continue;
+
+              const sorted = [...picks].sort((a, b) => (b?.confidence ?? 0) - (a?.confidence ?? 0));
+              const pick = sorted[0];
+              if (!pick?.id || !pick?.homeTeam || !pick?.awayTeam) continue;
+
+              const segment = sport === 'soccer' ? 'futebol' : 'futebol-americano';
+              addNotification({
+                type: 'new-pick',
+                title: 'Próximo palpite disponível',
+                message: `${pick.homeTeam} x ${pick.awayTeam} — ${pick.prediction ?? ''}`.trim(),
+                action: {
+                  label: 'Ver Palpite',
+                  onClick: () => {
+                    window.location.href = `/${segment}/${dateStr}/${pick.id}`;
+                  }
+                }
+              });
+
+              return; // já encontramos o mais próximo
+            } catch {}
           }
-        });
-      }
+        }
+      } catch {}
     };
 
-    const interval = setInterval(checkForNewPicks, 30000); // Verificar a cada 30 segundos
-    return () => clearInterval(interval);
-  }, []);
+    findNextAvailablePick();
+  }, [addNotification]);
 
   if (!isClient) return null;
 
