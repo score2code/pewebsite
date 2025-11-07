@@ -162,22 +162,22 @@ export default async function TicketByDatePage({ params }: { params: { date: str
                   <p className="text-sm text-dark-900/60 dark:text-light-100/60">{p.date}</p>
                 </div>
               </div>
-              <div className="mb-4">
-                <span className="inline-block bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-md text-sm font-semibold">
+              <div className="mb-4 flex flex-wrap items-center gap-2">
+                <span className="inline-block bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-md text-sm font-semibold break-words">
                   {p.prediction}
                 </span>
                 {p.hit === true && (
-                  <span className="inline-block ml-2 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 px-2 py-1 rounded-md text-xs font-semibold">
+                  <span className="inline-flex bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
                     Ganhou
                   </span>
                 )}
                 {p.hit === false && (
-                  <span className="inline-block ml-2 bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-300 px-2 py-1 rounded-md text-xs font-semibold">
+                  <span className="inline-flex bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
                     Perdeu
                   </span>
                 )}
                 {p.hit === undefined && (
-                  <span className="inline-block ml-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-md text-xs font-semibold">
+                  <span className="inline-flex bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
                     Pendente
                   </span>
                 )}

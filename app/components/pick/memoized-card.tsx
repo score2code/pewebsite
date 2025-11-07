@@ -66,12 +66,12 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
       <div className={`bg-white/80 dark:bg-dark-800/80 backdrop-blur-sm rounded-lg border border-light-300 dark:border-dark-600 p-3 hover:shadow-md transition-all duration-200 ${className}`}>
         <div className="flex items-center justify-between">
           <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 mb-1">
+            <div className="flex items-center justify-between mb-2">
               <span className="text-xs font-medium text-purple-600 dark:text-purple-400 truncate">
                 {pick.league}
               </span>
               {showStatus && (
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-shrink-0">
                   <StatusBadge status={getBadgeStatus()} />
                   {showConfidenceTag && (
                     <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold border bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 border-purple-300 dark:border-purple-700">
@@ -84,7 +84,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
             <p className="text-sm font-semibold text-dark-900 dark:text-light-100 truncate">
               {pick.homeTeam} vs {pick.awayTeam}
             </p>
-            <p className="text-xs text-dark-900/70 dark:text-light-100/70 truncate">
+            <p className="mt-1 text-xs text-dark-900/70 dark:text-light-100/70 break-words">
               {pick.prediction}
             </p>
           </div>
@@ -101,15 +101,15 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
   return (
     <div className={`bg-white/80 dark:bg-dark-800/80 backdrop-blur-sm rounded-xl border border-light-300 dark:border-dark-600 p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] ${className}`}>
       {/* Header */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-y-2 mb-4">
+        <div className="flex items-center gap-2 min-w-0">
           <Trophy className="w-4 h-4 text-purple-600 dark:text-purple-400" />
           <span className="text-sm font-medium text-purple-600 dark:text-purple-400">
             {pick.league}
           </span>
         </div>
         {showStatus && (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-shrink-0">
             <StatusBadge status={getBadgeStatus()} />
             {showConfidenceTag && (
               <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold border bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 border-purple-300 dark:border-purple-700">
@@ -125,7 +125,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
         <h3 className="text-lg font-bold text-dark-900 dark:text-light-100 mb-2">
           {pick.homeTeam} vs {pick.awayTeam}
         </h3>
-        <p className="text-sm text-dark-900/80 dark:text-light-100/80">
+        <p className="text-sm text-dark-900/80 dark:text-light-100/80 break-words">
           {pick.prediction}
         </p>
       </div>

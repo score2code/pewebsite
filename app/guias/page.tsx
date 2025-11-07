@@ -97,6 +97,13 @@ const guides = [
 
     // Competições
     {
+        title: 'Probabilidade e Confiança: Metodologia',
+        slug: 'calculo-de-probabilidade-e-confianca',
+        description: 'Como estimamos probabilidade e confiança exibidas nos cards de palpites.',
+        icon: ShieldCheck,
+        category: 'Estratégias'
+    },
+    {
         title: 'Guia da Champions League',
         slug: 'analise-champions-league',
         description: 'Padrões e características específicas da principal competição europeia.',

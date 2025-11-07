@@ -36,12 +36,12 @@ const Header = ({ currentPath = '/' }) => {
             name: 'Palpites', icon: 'Goal', type: 'dropdown', items: [
                 { name: 'Futebol', path: '/futebol' },
                 { name: 'Futebol Americano', path: '/futebol-americano' },
+                { name: 'Bilhete do dia', path: '/bilhete-do-dia' },
             ]
         },
         {
             name: 'Conteúdo', icon: 'BookOpen', type: 'dropdown', items: [
                 { name: 'Guias', path: '/guias' },
-                { name: 'Bilhete do dia', path: '/bilhete-do-dia' },
             ]
         },
         {

@@ -51,9 +51,22 @@ export default function RootLayout({
             )}
 
             <div className="min-h-screen flex flex-col">
-              {/* Development Banner */}
-              <div className="bg-yellow-500 text-white text-center text-sm py-1.5 font-semibold">
-                Este site está em desenvolvimento. Dados e funcionalidades podem ser alterados.
+              {/* Beta Banner */}
+              <div className="bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-600 text-white">
+                <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2">
+                  <svg
+                    className="h-4 w-4 text-white/90"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-.75-11.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM9 9.5a1 1 0 011-1h.25a1 1 0 011 1v5a1 1 0 01-1 1H10a1 1 0 01-1-1v-5z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-sm md:text-base font-medium text-center">
+                    Projeto em fase beta — recursos e dados em constante evolução.
+                  </p>
+                </div>
               </div>
               <Header currentPath={currentPathSimulated} />
 

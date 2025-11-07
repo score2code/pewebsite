@@ -29,8 +29,12 @@ async function listAvailableFootballDates(): Promise<string[]> {
 export default async function AmericanFootballRedirect() {
   const today = getFormattedDate(new Date());
   const available = await listAvailableFootballDates();
-  const target = available.includes(today)
-    ? today
-    : (available.length ? available[available.length - 1] : '2025-11-05');
+  // Escolhe a data mais próxima no FUTURO; se não houver, cai para hoje (se existir) ou a última disponível (passado)
+  const futureDates = available.filter((d) => d > today);
+  const target = futureDates.length
+    ? futureDates[0]
+    : (available.includes(today)
+      ? today
+      : (available.length ? available[available.length - 1] : today));
   redirect(`/futebol-americano/${target}`);
 }
