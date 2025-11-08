@@ -14,7 +14,41 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Palpites do dia | Previsões e Estatísticas',
-  description: 'Análises e palpites diários para eventos esportivos, com foco em alta taxa de acerto e transparência.',
+  description:
+    'Análises e palpites diários para eventos esportivos, com foco em alta taxa de acerto e transparência.',
+  metadataBase: new URL('https://palpitesdodia.online'),
+  openGraph: {
+    title: 'Palpites do dia | Previsões e Estatísticas',
+    description:
+      'Análises e palpites diários para eventos esportivos, com foco em alta taxa de acerto e transparência.',
+    url: 'https://palpitesdodia.online/',
+    siteName: 'Palpites do dia',
+    locale: 'pt-BR',
+    type: 'website',
+    images: [
+      {
+        url: '/brand-512.png',
+        width: 512,
+        height: 512,
+        alt: 'Palpites do dia',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Palpites do dia | Previsões e Estatísticas',
+    description:
+      'Análises e palpites diários para eventos esportivos, com foco em alta taxa de acerto e transparência.',
+    images: ['/brand-512.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/icons/icon-192.png',
+    other: [
+      { rel: 'mask-icon', url: '/icons/maskable-512.png' },
+    ],
+  },
+  manifest: '/manifest.webmanifest',
 };
 
 export default function RootLayout({
@@ -42,7 +76,7 @@ export default function RootLayout({
                 <Script id="ga4-init" strategy="afterInteractive">
                   {`
                     window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);} 
+                    function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
                     gtag('config', '${GA_ID}', { anonymize_ip: true });
                   `}

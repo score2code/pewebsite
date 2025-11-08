@@ -25,9 +25,9 @@ export function generateGuideMetadata({
       type: 'article',
       images: [
         {
-          url: `${baseUrl}/og-image.jpg`, // Imagem padrão para compartilhamento
-          width: 1200,
-          height: 630,
+          url: `${baseUrl}/brand-512.png`, // Usa imagem existente no /public
+          width: 512,
+          height: 512,
           alt: title,
         },
       ],
@@ -36,7 +36,7 @@ export function generateGuideMetadata({
       card: 'summary_large_image',
       title: `${title} | ${siteName}`,
       description,
-      images: [`${baseUrl}/og-image.jpg`],
+      images: [`${baseUrl}/brand-512.png`],
     },
     alternates: {
       canonical: url,
