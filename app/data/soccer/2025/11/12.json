@@ -10,7 +10,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 62,
     "status": "pending",
-    "analysis": "A força do Atlético-MG jogando em casa é o principal driver. O Fortaleza enfrenta um momento crítico de calendário, com uma final continental prioritária no horizonte, o que sugere potencial rotação de elenco e menor foco/intensidade neste jogo. A recente melhora na forma do Galo e a instabilidade do Fortaleza como visitante (5 jogos sem vencer) reforçam a aposta no mandante. A confiança é alta devido ao contexto, apesar da ausência de dados aprofundados de xG/xGA para o confronto específico. A odd justa é 1.61."
+    "analysis": "A força do Atlético-MG jogando em casa é o principal driver. O Fortaleza enfrenta um momento crítico de calendário, com uma final continental prioritária no horizonte, o que sugere potencial rotação de elenco e menor foco/intensidade neste jogo. A recente melhora na forma do Galo e a instabilidade do Fortaleza como visitante (5 jogos sem vencer) reforçam a aposta no mandante. A confiança é alta devido ao contexto, apesar da ausência de dados aprofundados de xG/xGA para o confronto específico."
   },
   {
     "id": "junior-barranquilla-x-atletico-nacional",
@@ -49,8 +49,7 @@
     "prediction": "Total de Gols: Mais de 4.5",
     "confidence": 80,
     "status": "pending",
-    "analysis": "O Barcelona (F) é a força dominante do futebol europeu e tem uma média de 5.5 gols/jogo na UWCL, incluindo goleadas recentes (7-1 e 4-0). O Leuven (F) tem sofrido na UWCL, com uma diferença de gols negativa. A imensa diferença de qualidade entre os elencos, o mando de campo e a busca pela liderança do grupo garantem uma alta probabilidade de uma vitória por grande margem, superando a linha de 4.5 gols. A odd justa é 1.25, indicando valor em odds acima de 1.35. A principal alternativa é o Handicap Asiático: Barcelona -4.5.",
-    "oddMin": 1.35
+    "analysis": "O Barcelona (F) é a força dominante do futebol europeu e tem uma média de 5.5 gols/jogo na UWCL, incluindo goleadas recentes (7-1 e 4-0). O Leuven (F) tem sofrido na UWCL, com uma diferença de gols negativa. A imensa diferença de qualidade entre os elencos, o mando de campo e a busca pela liderança do grupo garantem uma alta probabilidade de uma vitória por grande margem, superando a linha de 4.5 gols. A principal alternativa é o Handicap Asiático: Barcelona -4.5."
   },
   {
     "id": "bayern-munich-f-x-arsenal-f",
@@ -81,15 +80,15 @@
   {
     "id": "manchester-united-f-x-psg-f",
     "league": "UEFA Women's Champions League Qualificação",
-    "homeTeam": "PSG (F)",
-    "awayTeam": "Manchester United (F)",
+    "homeTeam": "Manchester United (F)",
+    "awayTeam": "PSG (F)",
     "date": "2025-11-12",
     "time": "17:00",
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Ambas Marcam (BTTS): Sim",
     "confidence": 68,
     "status": "pending",
-    "analysis": "Jogo de volta eliminatório (ida 1-1) que força o Manchester United (F) a buscar o gol fora de casa, alinhado com seu alto índice de gols na liga (2.71 Gols/Jogo). O PSG (F) tem forte poder ofensivo em casa (2.17 Gols/Jogo na liga) e busca a classificação, sendo altamente provável que ambas as equipes marquem. A necessidade do MU neutraliza a vantagem do mando de campo na expectativa de gols, tornando o mercado BTTS (Sim) a melhor aposta de valor e alta confiança (68%), com odd mínima aceitável de 1.55."
+    "analysis": "Jogo de volta eliminatório (ida 1-1) que força o Manchester United (F) a buscar o gol **jogando em casa**, alinhado com seu alto índice de gols na liga (2.71 Gols/Jogo). O PSG (F) é um adversário com forte poder ofensivo (2.17 Gols/Jogo na liga) e busca a classificação. É altamente provável que ambas as equipes marquem. A necessidade de gols do MU aumenta a exposição defensiva de ambos, tornando o mercado BTTS (Sim) a melhor aposta de valor e alta confiança (68%)"
   },
   {
     "id": "zamora-cf-x-ourense-cf",
@@ -115,7 +114,7 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Confronto de Copa, onde o Zbrojovka Brno (2ª Divisão) recebe o Hradec Kralove (1ª Divisão). O Brno está em excelente forma recente, com 11 jogos de invencibilidade, e possui uma defesa altamente eficaz em casa (0.7 gols sofridos/jogo nos últimos 10). Apesar da diferença de divisão, a vantagem do mando e o bom momento nivelam o confronto. O Hradec Kralove não tem retrospecto dominante H2H em Brno. A necessidade do time da 1ª Divisão de não ser eliminado e a solidez do mandante indicam uma alta probabilidade (65%) de o Brno pontuar. A Odd Justa de 1.54 reflete um forte valor no mercado Dupla Chance 1X."
+    "analysis": "Confronto de Copa, onde o Zbrojovka Brno (2ª Divisão) recebe o Hradec Kralove (1ª Divisão). O Brno está em excelente forma recente, com 11 jogos de invencibilidade, e possui uma defesa altamente eficaz em casa (0.7 gols sofridos/jogo nos últimos 10). Apesar da diferença de divisão, a vantagem do mando e o bom momento nivelam o confronto. O Hradec Kralove não tem retrospecto dominante H2H em Brno. A necessidade do time da 1ª Divisão de não ser eliminado e a solidez do mandante indicam uma alta probabilidade (65%) de o Brno pontuar."
   },
   {
     "id": "russia-x-peru",
@@ -128,6 +127,6 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 68,
     "status": "pending",
-    "analysis": "A recomendação de Under 2.5 Gols se baseia na postura tática do Peru (bloco baixo, foco defensivo) e na natureza de 'teste' do amistoso, que historicamente favorece a cautela. O Peru tem um histórico recente de jogos de baixa pontuação nas Eliminatórias. Embora a Rússia tenha goleado adversários mais fracos em casa, a defesa sul-americana é mais organizada e resiliente. A falta de dados de árbitro, estádio e xG/xGA eleva a incerteza em mercados voláteis, mas a tendência de poucos gols é a mais robusta. Odd Justa estimada: 1.67."
+    "analysis": "A recomendação de Under 2.5 Gols se baseia na postura tática do Peru (bloco baixo, foco defensivo) e na natureza de 'teste' do amistoso, que historicamente favorece a cautela. O Peru tem um histórico recente de jogos de baixa pontuação nas Eliminatórias. Embora a Rússia tenha goleado adversários mais fracos em casa, a defesa sul-americana é mais organizada e resiliente. A falta de dados de árbitro, estádio e xG/xGA eleva a incerteza em mercados voláteis, mas a tendência de poucos gols é a mais robusta."
   }
 ]
