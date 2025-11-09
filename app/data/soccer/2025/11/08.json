@@ -10,7 +10,8 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 76,
     "status": "pending",
-    "analysis": "Spurs ofensivos e United vulnerável; padrão BTTS recorrente em jogos grandes."
+    "analysis": "Spurs ofensivos e United vulnerável; padrão BTTS recorrente em jogos grandes.",
+    "hit": true
   },
   {
     "id": "girona-x-alaves",
@@ -23,7 +24,8 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 74,
     "status": "pending",
-    "analysis": "Girona dominante em casa, Alavés reativo; 1X cobre empate com alta probabilidade."
+    "analysis": "Girona dominante em casa, Alavés reativo; 1X cobre empate com alta probabilidade.",
+    "hit": true
   },
   {
     "id": "hoffenheim-x-rb-leipzig",
@@ -36,7 +38,8 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 72,
     "status": "pending",
-    "analysis": "Perfis ofensivos e defesas concedendo; alta probabilidade de BTTS pela dinâmica das equipes."
+    "analysis": "Perfis ofensivos e defesas concedendo; alta probabilidade de BTTS pela dinâmica das equipes.",
+    "hit": true
   },
   {
     "id": "bayer-leverkusen-x-heidenheim",
@@ -49,7 +52,8 @@
     "prediction": "Bayer Leverkusen - Total de Gols: Mais de 1.5",
     "confidence": 78,
     "status": "pending",
-    "analysis": "Leverkusen com alta conversão e volume; 2+ gols do mandante são esperados."
+    "analysis": "Leverkusen com alta conversão e volume; 2+ gols do mandante são esperados.",
+    "hit": true
   },
   {
     "id": "union-berlin-x-bayern-munich",
@@ -62,7 +66,8 @@
     "prediction": "Handicap Asiático: Bayern Munich (-1.25)",
     "confidence": 75,
     "status": "pending",
-    "analysis": "Bayern dominante; -1.25 cobre vitória por dois gols com boa expectativa."
+    "analysis": "Bayern dominante; -1.25 cobre vitória por dois gols com boa expectativa.",
+    "hit": false
   },
   {
     "id": "sevilla-x-osasuna",
@@ -75,7 +80,8 @@
     "prediction": "Total de Gols: Menos de 3.5",
     "confidence": 77,
     "status": "pending",
-    "analysis": "Duas equipes de organização defensiva; baixa produção histórica neste confronto."
+    "analysis": "Duas equipes de organização defensiva; baixa produção histórica neste confronto.",
+    "hit": true
   },
   {
     "id": "olympique-marseille-x-brest",
@@ -88,7 +94,8 @@
     "prediction": "Total de Gols: Mais de 1.5",
     "confidence": 79,
     "status": "pending",
-    "analysis": "Marseille forte em casa e Brest competitivo; linha baixa com boa probabilidade de 2+ gols."
+    "analysis": "Marseille forte em casa e Brest competitivo; linha baixa com boa probabilidade de 2+ gols.",
+    "hit": true
   },
   {
     "id": "atletico-madrid-x-levante",
@@ -101,7 +108,8 @@
     "prediction": "Handicap Asiático: Atletico Madrid (-1)",
     "confidence": 74,
     "status": "pending",
-    "analysis": "Atlético dominante em casa; -1 protege vitória mínima e reflete superioridade técnica."
+    "analysis": "Atlético dominante em casa; -1 protege vitória mínima e reflete superioridade técnica.",
+    "hit": true
   },
   {
     "id": "borussia-monchengladbach-x-fc-koln",
@@ -114,7 +122,8 @@
     "prediction": "Total de Cartões: Mais de 3.5",
     "confidence": 73,
     "status": "pending",
-    "analysis": "Derby físico com histórico de cartões elevados; linha 3.5 tem boa cobertura."
+    "analysis": "Derby físico com histórico de cartões elevados; linha 3.5 tem boa cobertura.",
+    "hit": true
   },
   {
     "id": "monaco-x-lens",
@@ -127,6 +136,7 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 72,
     "status": "pending",
-    "analysis": "Mônaco ofensivo e Lens perigoso em transições; 3+ gols são plausíveis pela proposta das equipes."
+    "analysis": "Mônaco ofensivo e Lens perigoso em transições; 3+ gols são plausíveis pela proposta das equipes.",
+    "hit": true
   }
 ]

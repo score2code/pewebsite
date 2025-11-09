@@ -7,7 +7,8 @@
     "date": "2025-11-08",
     "time": "13:00",
     "timezone": "GMT",
-    "prediction": "Total de Gols: Mais de 1.5"
+    "prediction": "Total de Gols: Mais de 1.5",
+    "hit": true
   },
   {
     "id": "bayer-leverkusen-x-heidenheim",
@@ -17,6 +18,7 @@
     "date": "2025-11-08",
     "time": "11:30",
     "timezone": "GMT",
-    "prediction": "Bayer Leverkusen - Total de Gols: Mais de 1.5"
+    "prediction": "Bayer Leverkusen - Total de Gols: Mais de 1.5",
+    "hit": true
   }
 ]
