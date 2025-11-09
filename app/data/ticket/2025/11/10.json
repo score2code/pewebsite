@@ -1,0 +1,22 @@
+[
+  {
+    "id": "botafogo-sp-x-amazonas",
+    "league": "Brasileirão Série B",
+    "homeTeam": "Botafogo-SP",
+    "awayTeam": "Amazonas",
+    "date": "2025-11-10",
+    "time": "19:00",
+    "timezone": "BRT (Horário de Brasília)",
+    "prediction": "Dupla Chance: 1X"
+  },
+  {
+    "id": "gimnasia-lp-x-velez-sarsfield",
+    "league": "Liga Profissional Argentina, Clausura",
+    "homeTeam": "Gimnasia La Plata",
+    "awayTeam": "Vélez Sarsfield",
+    "date": "2025-11-10",
+    "time": "17:00",
+    "timezone": "BRT (Horário de Brasília)",
+    "prediction": "Total de Gols: Menos de 2.5"
+  }
+]
