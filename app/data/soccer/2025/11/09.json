@@ -10,7 +10,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 74,
     "status": "pending",
-    "analysis": "Clássico belga com altas linhas ofensivas; BTTS frequente nos últimos confrontos."
+    "analysis": "Clássico belga com altas linhas ofensivas; BTTS frequente nos últimos confrontos.",
+    "hit": false,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "rayo-vallecano-x-real-madrid",
@@ -23,7 +25,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 80,
     "status": "pending",
-    "analysis": "Superioridade técnica e profundidade do elenco do Real; alta consistência como visitante."
+    "analysis": "Superioridade técnica e profundidade do elenco do Real; alta consistência como visitante.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "az-alkmaar-x-psv-eindhoven",
@@ -36,7 +40,9 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 76,
     "status": "pending",
-    "analysis": "Eredivisie com ritmo alto e duas equipes muito produtivas; média de gols elevada."
+    "analysis": "Eredivisie com ritmo alto e duas equipes muito produtivas; média de gols elevada.",
+    "hit": true,
+    "reason": "Placar: 1 x 5"
   },
   {
     "id": "manchester-city-x-liverpool",
@@ -62,7 +68,8 @@
     "prediction": "Stuttgart - Total de Gols: Mais de 1.5",
     "confidence": 78,
     "status": "pending",
-    "analysis": "Stuttgart agressivo em casa, volume e conversão acima da média; linha 1.5 com valor."
+    "analysis": "Stuttgart agressivo em casa, volume e conversão acima da média; linha 1.5 com valor.",
+    "hit": true
   },
   {
     "id": "famalicao-x-porto",
@@ -101,7 +108,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 78,
     "status": "pending",
-    "analysis": "Dinamo com elenco e consistência superiores; histórico favorável mesmo fora de casa."
+    "analysis": "Dinamo com elenco e consistência superiores; histórico favorável mesmo fora de casa.",
+    "hit": false,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "ofi-crete-x-aek-atenas",
@@ -114,7 +123,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 75,
     "status": "pending",
-    "analysis": "AEK com melhor fase e estrutura tática; favoritismo claro frente ao OFI."
+    "analysis": "AEK com melhor fase e estrutura tática; favoritismo claro frente ao OFI.",
+    "hit": true,
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "brentford-x-newcastle",
@@ -127,6 +138,8 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 73,
     "status": "pending",
-    "analysis": "Equipas com boa criação e espaços; Brentford casa e Newcastle transições indicam BTTS."
+    "analysis": "Equipas com boa criação e espaços; Brentford casa e Newcastle transições indicam BTTS.",
+    "hit": true,
+    "reason": "Placar: 3 x 1"
   }
 ]

@@ -8,6 +8,7 @@ export interface Pick {
   analysis?: string;
   status: 'pending' | 'won' | 'lost' | 'void';
   hit?: boolean;
+  reason?: string;
   country?: string;
   date?: string;
   time?: string; // HH:mm

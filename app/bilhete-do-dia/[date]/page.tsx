@@ -13,6 +13,7 @@ type TicketPick = {
   timezone?: string;
   prediction: string;
   hit?: boolean; // indica se o palpite foi certo
+  reason?: string; // motivo do resultado (acerto/erro)
 };
 
 async function getTicketPicks(date: string): Promise<TicketPick[]> {
@@ -182,6 +183,11 @@ export default async function TicketByDatePage({ params }: { params: { date: str
                   </span>
                 )}
               </div>
+              {p.reason && (
+                <p className="mt-1 pb-1 text-xs text-dark-900/70 dark:text-light-100/70">
+                  Resultado: {p.reason}
+                </p>
+              )}
               {p.href ? (
                 <a href={p.href} className="block bg-purple-600 dark:bg-purple-500 text-center py-3 font-bold text-white hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-md">
                   Ver análise do palpite

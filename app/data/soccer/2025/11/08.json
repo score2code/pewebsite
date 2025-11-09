@@ -11,7 +11,8 @@
     "confidence": 76,
     "status": "pending",
     "analysis": "Spurs ofensivos e United vulnerável; padrão BTTS recorrente em jogos grandes.",
-    "hit": true
+    "hit": true,
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "girona-x-alaves",
@@ -25,7 +26,8 @@
     "confidence": 74,
     "status": "pending",
     "analysis": "Girona dominante em casa, Alavés reativo; 1X cobre empate com alta probabilidade.",
-    "hit": true
+    "hit": true,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "hoffenheim-x-rb-leipzig",
@@ -39,7 +41,8 @@
     "confidence": 72,
     "status": "pending",
     "analysis": "Perfis ofensivos e defesas concedendo; alta probabilidade de BTTS pela dinâmica das equipes.",
-    "hit": true
+    "hit": true,
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "bayer-leverkusen-x-heidenheim",
@@ -53,7 +56,8 @@
     "confidence": 78,
     "status": "pending",
     "analysis": "Leverkusen com alta conversão e volume; 2+ gols do mandante são esperados.",
-    "hit": true
+    "hit": true,
+    "reason": "Placar: 6 x 0"
   },
   {
     "id": "union-berlin-x-bayern-munich",
@@ -67,7 +71,8 @@
     "confidence": 75,
     "status": "pending",
     "analysis": "Bayern dominante; -1.25 cobre vitória por dois gols com boa expectativa.",
-    "hit": false
+    "hit": false,
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "sevilla-x-osasuna",
@@ -81,7 +86,8 @@
     "confidence": 77,
     "status": "pending",
     "analysis": "Duas equipes de organização defensiva; baixa produção histórica neste confronto.",
-    "hit": true
+    "hit": true,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "olympique-marseille-x-brest",
@@ -95,7 +101,8 @@
     "confidence": 79,
     "status": "pending",
     "analysis": "Marseille forte em casa e Brest competitivo; linha baixa com boa probabilidade de 2+ gols.",
-    "hit": true
+    "hit": true,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "atletico-madrid-x-levante",
@@ -109,7 +116,8 @@
     "confidence": 74,
     "status": "pending",
     "analysis": "Atlético dominante em casa; -1 protege vitória mínima e reflete superioridade técnica.",
-    "hit": true
+    "hit": true,
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "borussia-monchengladbach-x-fc-koln",
@@ -123,7 +131,8 @@
     "confidence": 73,
     "status": "pending",
     "analysis": "Derby físico com histórico de cartões elevados; linha 3.5 tem boa cobertura.",
-    "hit": true
+    "hit": true,
+    "reason": "5 cartões amarelos"
   },
   {
     "id": "monaco-x-lens",
@@ -137,6 +146,7 @@
     "confidence": 72,
     "status": "pending",
     "analysis": "Mônaco ofensivo e Lens perigoso em transições; 3+ gols são plausíveis pela proposta das equipes.",
-    "hit": true
+    "hit": true,
+    "reason": "Placar: 1 x 4"
   }
 ]

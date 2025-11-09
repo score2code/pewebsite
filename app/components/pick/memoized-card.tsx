@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import { Pick } from '@/app/types';
 import StatusBadge, { PickStatus } from '@/app/components/ui/status-badge';
 import { useFormattedDate, useFormattedTime } from '@/app/hooks/use-picks';
-import { Calendar, Clock, Trophy, Target } from 'lucide-react';
+import { Calendar, Clock, Trophy, Target, CheckCircle, XCircle, Info } from 'lucide-react';
 import Link from 'next/link';
 import { trackClick } from '@/app/lib/analytics';
 
@@ -16,7 +16,7 @@ interface MemoizedPickCardProps {
   sportSegment?: 'futebol' | 'futebol-americano';
 }
 
-const MemoizedPickCard = memo<MemoizedPickCardProps>(({ 
+const MemoizedPickCard = memo<MemoizedPickCardProps>(({
   pick,
   showStatus = true,
   compact = false,
@@ -32,7 +32,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
   const formattedTime = pick.time ? (pick.time + (pick.timezone ? ` ${pick.timezone}` : '')) : useFormattedTime(pick.date || new Date().toISOString());
   // Normalize route date to YYYY-MM-DD, prefer provided prop, then pick.date, then today
   // (já calculado acima)
-  
+
   const getBadgeStatus = (): PickStatus => {
     if (pick.hit === true) return 'won';
     if (pick.hit === false) return 'lost';
@@ -43,7 +43,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
     if (pick.status === 'won' || pick.status === 'lost') return pick.status as PickStatus;
     return 'pending';
   };
-  
+
   const getConfidenceColor = (confidence: number) => {
     if (confidence >= 80) return 'text-green-600 dark:text-green-400';
     if (confidence >= 60) return 'text-yellow-600 dark:text-yellow-400';
@@ -87,6 +87,11 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
             <p className="mt-1 text-xs text-dark-900/70 dark:text-light-100/70 break-words">
               {pick.prediction}
             </p>
+            {typeof pick.hit === 'boolean' && pick.reason && (
+              <p className="mt-1 text-[11px] text-dark-900/70 dark:text-light-100/70 break-words">
+                Resultado: {pick.reason}
+              </p>
+            )}
           </div>
           <div className="flex flex-col items-end gap-1 ml-2">
             <span className={`text-sm font-bold ${getConfidenceColor(pick.confidence)}`}>
@@ -141,7 +146,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
             {pick.confidence}%
           </span>
         </div>
-        
+
         <div className="text-center">
           <div className="flex items-center justify-center gap-1 mb-1">
             <Target className="w-3 h-3 text-purple-600 dark:text-purple-400" />
@@ -172,6 +177,11 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
       >
         Ver Análise Completa
       </Link>
+      {pick.reason && (
+        <div className={`mt-3 text-sm inline-flex items-center gap-2 ${pick.hit ? ' text-green-700 dark:text-green-400' : ' text-red-700 dark:text-red-400'}`}>
+          <span className="text-xs opacity-80">Resultado: {pick.reason}</span>
+        </div>
+      )}
     </div>
   );
 });

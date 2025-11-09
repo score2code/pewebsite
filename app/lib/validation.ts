@@ -16,6 +16,7 @@ export const PickSchema = z.object({
   confidence: z.number().min(0).max(100, 'Confiança deve estar entre 0 e 100'),
   status: z.enum(['pending', 'won', 'lost', 'void']).default('pending'),
   hit: z.boolean().optional(),
+  reason: z.string().optional(),
   result: z.string().optional(),
   stake: z.number().positive('Stake deve ser positivo').optional().default(1),
   roi: z.number().optional().default(0),

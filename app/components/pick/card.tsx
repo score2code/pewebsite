@@ -2,7 +2,7 @@
 "use client";
 
 import React from 'react';
-import { ShieldCheck, BarChart2, Clock } from 'lucide-react';
+import { ShieldCheck, BarChart2, Clock, CheckCircle, XCircle } from 'lucide-react';
 import { Pick } from '@/app/types';
 import Link from 'next/link';
 
@@ -45,6 +45,9 @@ const PickCard: React.FC<PickCardProps> = ({ pick }) => {
                     <div className="text-center my-6 p-5 bg-light-200/50 dark:bg-dark-600/50 rounded-xl border border-light-300/50 dark:border-dark-500/50">
                         <p className="text-dark-900/70 dark:text-light-100/70 text-sm mb-2">Previsão:</p>
                         <p className="text-xl font-bold text-purple-600 dark:text-purple-400">{(pick as any).prediction || pick.tip}</p>
+                        {pick.reason && (
+                            <p className="mt-2 text-xs text-dark-900/70 dark:text-light-100/70">Resultado: {pick.reason}</p>
+                        )}
                     </div>
                 </div>
                 <div className="px-6 py-5 bg-light-200/50 dark:bg-dark-700/50 border-t border-light-300 dark:border-dark-600">
