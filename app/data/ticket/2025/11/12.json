@@ -1,0 +1,22 @@
+[
+  {
+    "id": "barcelona-f-x-leuven-f",
+    "league": "UEFA Women's Champions League",
+    "homeTeam": "Barcelona (F)",
+    "awayTeam": "OH Leuven (F)",
+    "date": "2025-11-12",
+    "time": "14:45",
+    "timezone": "BRT (Horário de Brasília)",
+    "prediction": "Total de Gols: Mais de 4.5"
+   },
+  {
+    "id": "zamora-cf-x-ourense-cf",
+    "league": "Primera Federación - Grupo 1 (Espanha)",
+    "homeTeam": "Zamora CF",
+    "awayTeam": "Ourense CF",
+    "date": "2025-11-12",
+    "time": "16:30",
+    "timezone": "BRT (Horário de Brasília)",
+    "prediction": "Dupla Chance: 1X"
+  }
+]
