@@ -6,6 +6,7 @@ import Cta from '@/app/components/home/cta';
 import MemoizedPickCard from '@/app/components/pick/memoized-card';
 import StatsDashboard from '@/app/components/statistics/dashboard';
 import { getFormattedDate, loadPicksData, formatDateDisplay } from '@/app/lib/data-loader';
+import { getDashboardStats } from '@/app/lib/statistics';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 
@@ -40,27 +41,8 @@ export default async function HomePage() {
     const footballDate = footballDates.includes(today) ? today : (footballDates[footballDates.length - 1] || today);
     const latestPicksSoccer: Pick[] = await loadPicksData(soccerDate, 'soccer');
     const latestPicksFootball: Pick[] = await loadPicksData(footballDate, 'football');
-
-    // Métricas baseadas em hit/status para o dashboard
-    const combinedPicks = [...latestPicksSoccer, ...latestPicksFootball];
-    const completed = combinedPicks.filter(p => typeof p.hit === 'boolean' || ['won', 'lost'].includes(p.status)).length;
-    const wonCount = combinedPicks.filter(p => (p.hit === true) || p.status === 'won').length;
-    const totalPicks = combinedPicks.length;
-    const hitRate = completed > 0 ? Math.round((wonCount / completed) * 100) : 0;
-
-    // Série de desempenho diária dos últimos 10 dias disponíveis (soma soccer+football)
-    const unionDates = Array.from(new Set([...soccerDates, ...footballDates])).sort();
-    const lastDates = unionDates.slice(Math.max(0, unionDates.length - 10));
-    const performanceSeries: { label: string; value: number }[] = [];
-    for (const d of lastDates) {
-        const sPicks: Pick[] = await loadPicksData(d, 'soccer');
-        const fPicks: Pick[] = await loadPicksData(d, 'football');
-        const dayPicks = [...sPicks, ...fPicks];
-        const dayCompleted = dayPicks.filter(p => typeof p.hit === 'boolean' || ['won', 'lost'].includes(p.status)).length;
-        const dayWon = dayPicks.filter(p => (p.hit === true) || p.status === 'won').length;
-        const dayRate = dayCompleted > 0 ? Math.round((dayWon / dayCompleted) * 100) : 0;
-        performanceSeries.push({ label: new Date(d + 'T00:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }), value: dayRate });
-    }
+    // Estatísticas unificadas para o dashboard (soccer + football + ticket), com deduplicação e série diária
+    const dashboardStats = await getDashboardStats();
 
     return (
         <div className="min-h-screen font-sans pt-12">
@@ -91,7 +73,7 @@ export default async function HomePage() {
 
                 {/* Statistics Dashboard */}
                 <section className="py-8 max-w-6xl mx-auto">
-                    <StatsDashboard hitRate={hitRate} totalPicks={totalPicks} series={performanceSeries} />
+                    <StatsDashboard {...dashboardStats} />
                 </section>
 
                 {/* Seção de Últimos Palpites (Futebol e Futebol Americano) */}

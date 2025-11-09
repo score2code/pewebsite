@@ -46,18 +46,16 @@ const StatsCard: React.FC<StatsCardProps> = ({ title, value, change, icon, color
 interface StatsDashboardProps {
   hitRate?: number;
   totalPicks?: number;
-  activeStreak?: number;
-  monthlyROI?: number;
+  pendingCount?: number;
   series?: { label: string; value: number }[];
 }
 
 const PerformanceChart = dynamic(() => import('./performance-chart'), { ssr: false });
 
 const StatsDashboard: React.FC<StatsDashboardProps> = ({
-  hitRate = 78,
-  totalPicks = 156,
-  activeStreak = 5,
-  monthlyROI = 24.5,
+  hitRate = 0,
+  totalPicks = 0,
+  pendingCount = 0,
   series = []
 }) => {
   return (
@@ -71,33 +69,24 @@ const StatsDashboard: React.FC<StatsDashboardProps> = ({
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         <StatsCard
           title="Taxa de Acerto"
           value={`${hitRate}%`}
-          change={5.2}
           icon={<Target className="w-5 h-5" />}
           color="green"
         />
         <StatsCard
           title="Total de Palpites"
           value={totalPicks}
-          change={12.8}
           icon={<BarChart3 className="w-5 h-5" />}
           color="blue"
         />
         <StatsCard
-          title="Sequência Atual"
-          value={activeStreak}
-          icon={<Award className="w-5 h-5" />}
+          title="Pendentes"
+          value={pendingCount}
+          icon={<Users className="w-5 h-5" />}
           color="purple"
-        />
-        <StatsCard
-          title="ROI Mensal"
-          value={`${monthlyROI}%`}
-          change={-2.1}
-          icon={<TrendingUp className="w-5 h-5" />}
-          color="orange"
         />
       </div>
 
