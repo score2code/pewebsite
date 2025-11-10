@@ -55,7 +55,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 77,
     "status": "pending",
-    "analysis": "Duelos recentes com alta criação de chances; ambas têm ataque de elite."
+    "analysis": "Duelos recentes com alta criação de chances; ambas têm ataque de elite.",
+    "hit": false,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "stuttgart-x-augsburg",
@@ -69,7 +71,8 @@
     "confidence": 78,
     "status": "pending",
     "analysis": "Stuttgart agressivo em casa, volume e conversão acima da média; linha 1.5 com valor.",
-    "hit": true
+    "hit": true,
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "famalicao-x-porto",
@@ -82,7 +85,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 79,
     "status": "pending",
-    "analysis": "Porto superior técnica e fisicamente; confronto costuma favorecer o visitante."
+    "analysis": "Porto superior técnica e fisicamente; confronto costuma favorecer o visitante.",
+    "hit": true,
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "benfica-x-casa-pia",
@@ -95,7 +100,9 @@
     "prediction": "Handicap Asiático: Benfica (-1.25)",
     "confidence": 77,
     "status": "pending",
-    "analysis": "Benfica dominante na Luz; -1.25 cobre vantagem técnica e volume ofensivo esperado."
+    "analysis": "Benfica dominante na Luz; -1.25 cobre vantagem técnica e volume ofensivo esperado.",
+    "hit": false,
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "istra-1961-x-dinamo-zagreb",
