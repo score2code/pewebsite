@@ -62,7 +62,7 @@ const StatsDashboard: React.FC<StatsDashboardProps> = ({
     <div className="w-full max-w-6xl mx-auto p-4">
       <div className="mb-6 text-center">
         <h2 className="text-3xl font-bold text-dark-900 dark:text-light-100 mb-2">
-          Nossas Estatísticas
+          Estatísticas de Palpites
         </h2>
         <p className="text-dark-900/70 dark:text-light-100/70">
           Acompanhe nosso desempenho e resultados
@@ -93,7 +93,7 @@ const StatsDashboard: React.FC<StatsDashboardProps> = ({
       {/* Performance Chart */}
       <div className="bg-light-100/50 dark:bg-dark-800/50 p-6 rounded-xl border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
         <h3 className="text-xl font-bold text-dark-900 dark:text-light-100 mb-4">
-          Desempenho Recente
+          Desempenho Recente de Palpites
         </h3>
         {series && series.length > 0 ? (
           <PerformanceChart series={series} height={220} />

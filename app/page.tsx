@@ -5,8 +5,9 @@ import MainSections from '@/app/components/home/main-sections';
 import Cta from '@/app/components/home/cta';
 import MemoizedPickCard from '@/app/components/pick/memoized-card';
 import StatsDashboard from '@/app/components/statistics/dashboard';
+import TicketStatsDashboard from '@/app/components/statistics/ticket-dashboard';
 import { getFormattedDate, loadPicksData, formatDateDisplay } from '@/app/lib/data-loader';
-import { getDashboardStats } from '@/app/lib/statistics';
+import { getDashboardStats, getTicketStats } from '@/app/lib/statistics';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 
@@ -43,6 +44,7 @@ export default async function HomePage() {
     const latestPicksFootball: Pick[] = await loadPicksData(footballDate, 'football');
     // Estatísticas unificadas para o dashboard (soccer + football + ticket), com deduplicação e série diária
     const dashboardStats = await getDashboardStats();
+    const ticketStats = await getTicketStats();
 
     return (
         <div className="min-h-screen font-sans pt-12">
@@ -71,7 +73,12 @@ export default async function HomePage() {
                     </div>
                 </section>
 
-                {/* Statistics Dashboard */}
+                {/* Ticket Stats Dashboard */}
+                <section className="pt-8 max-w-6xl mx-auto">
+                    <TicketStatsDashboard {...ticketStats} />
+                </section>
+
+                {/* Statistics Dashboard (Geral) */}
                 <section className="py-8 max-w-6xl mx-auto">
                     <StatsDashboard {...dashboardStats} />
                 </section>

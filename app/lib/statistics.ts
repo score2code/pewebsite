@@ -124,3 +124,50 @@ export async function getDashboardStats() {
     series: performanceSeries,
   };
 }
+
+export async function getTicketStats() {
+  const ticketDir = path.join(process.cwd(), 'app', 'data', 'ticket');
+  const ticketDaily = await readDailyFiles(ticketDir);
+
+  const totalTickets = ticketDaily.length;
+
+  const classifyTicket = (picks: BasePick[]): 'win' | 'loss' | 'pending' => {
+    const hasFalse = picks.some(p => p.hit === false);
+    const allTrue = picks.length > 0 && picks.every(p => p.hit === true);
+    if (allTrue) return 'win';
+    if (hasFalse) return 'loss';
+    return 'pending';
+  };
+
+  let winners = 0;
+  let losers = 0;
+  let pending = 0;
+
+  for (const day of ticketDaily) {
+    const status = classifyTicket(day.picks);
+    if (status === 'win') winners++;
+    else if (status === 'loss') losers++;
+    else pending++;
+  }
+
+  const denom = winners + losers; // exclui pendentes
+  const winRate = denom > 0 ? Number(((winners / denom) * 100).toFixed(1)) : 0;
+
+  // Série dos últimos 30 dias: 100 para win, 0 para loss, 50 para pending
+  const series = ticketDaily.slice(-30).map(day => {
+    const [y, m, d] = day.date.split('-');
+    const label = `${d}/${m}`;
+    const status = classifyTicket(day.picks);
+    const value = status === 'win' ? 100 : (status === 'loss' ? 0 : 50);
+    return { label, value };
+  });
+
+  return {
+    winRate,
+    totalTickets,
+    winners,
+    losers,
+    pending,
+    series
+  };
+}
