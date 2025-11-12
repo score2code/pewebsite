@@ -13,6 +13,7 @@ const LABEL_MAP: Record<string, string> = {
   "futebol-americano": "Futebol Americano",
   "campeonatos": "Campeonatos",
   "guias": "Guias",
+  "conteudos": "Conteúdos",
   "entretenimento": "Entretenimento",
   "estatisticas": "Estatísticas",
   "odds": "Odds",

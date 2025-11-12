@@ -18,7 +18,7 @@ export default function RelatedGuides({ guides }: { guides: RelatedGuide[] }) {
         {guides.map((guide) => (
           <Link
             key={guide.slug}
-            href={`/guias/${guide.slug}`}
+            href={`/conteudos/guias/${guide.slug}`}
             className="group focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-xl"
           >
             <div className="h-full bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6

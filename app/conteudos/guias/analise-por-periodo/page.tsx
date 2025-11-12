@@ -12,7 +12,7 @@ export const metadata = generateGuideMetadata({
 export default function ApostasPorTempoPage() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
   const jsonLd = buildArticleJsonLd({
-    url: `${siteUrl}/guias/analise-por-periodo`,
+  url: `${siteUrl}/conteudos/guias/analise-por-periodo`,
     title: 'Análise por Período (1º / 2º Tempo)',
     description: 'Guia completo sobre análise de padrões de gols e eventos por período de jogo.',
   });

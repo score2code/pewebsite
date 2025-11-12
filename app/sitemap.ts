@@ -58,15 +58,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Include guides by scanning directory names under app/guias
   try {
-    const guidesDir = path.join(process.cwd(), 'app', 'guias');
+    const guidesDir = path.join(process.cwd(), 'app', 'conteudos', 'guias');
     const entries = fs.readdirSync(guidesDir, { withFileTypes: true });
     const guideSlugs = entries
       .filter((e) => e.isDirectory())
       .map((e) => e.name)
       .filter((name) => name !== 'page.tsx');
-    const guideRoutes = guideSlugs.map((slug) => ({ url: `${siteUrl}/guias/${slug}/`, lastModified: now }));
-    return [...baseRoutes, ...guideRoutes, ...listPickRoutes()];
+    // Agora os guias vivem sob /conteudos/guias/ no site
+    const guideRoutes = guideSlugs.map((slug) => ({ url: `${siteUrl}/conteudos/guias/${slug}/`, lastModified: now }));
+    // Include conteudos by scanning directory names under app/conteudos
+    const conteudosDir = path.join(process.cwd(), 'app', 'conteudos');
+    const conteudosEntries = fs.readdirSync(conteudosDir, { withFileTypes: true });
+    const conteudosDirs = conteudosEntries.filter((e) => e.isDirectory()).map((e) => e.name);
+    const conteudosRoutes: MetadataRoute.Sitemap = [];
+    conteudosDirs.forEach((dir) => {
+      conteudosRoutes.push({ url: `${siteUrl}/conteudos/${dir}/`, lastModified: now });
+      // scan subpages
+      const subDir = path.join(conteudosDir, dir);
+      try {
+        const subEntries = fs.readdirSync(subDir, { withFileTypes: true });
+        subEntries.forEach((se) => {
+          if (se.isDirectory()) {
+            conteudosRoutes.push({ url: `${siteUrl}/conteudos/${dir}/${se.name}/`, lastModified: now });
+          }
+        });
+      } catch {}
+    });
+    // Inclui o índice de conteúdo e de guias
+    const extraRoutes: MetadataRoute.Sitemap = [
+      { url: `${siteUrl}/conteudos/`, lastModified: now },
+      { url: `${siteUrl}/conteudos/guias/`, lastModified: now },
+    ];
+    return [...baseRoutes, ...extraRoutes, ...guideRoutes, ...conteudosRoutes, ...listPickRoutes()];
   } catch {
-    return [...baseRoutes, ...listPickRoutes()];
+    return [...baseRoutes, { url: `${siteUrl}/conteudos/`, lastModified: now }, { url: `${siteUrl}/conteudos/guias/`, lastModified: now }, ...listPickRoutes()];
   }
 }

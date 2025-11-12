@@ -41,7 +41,14 @@ const Header = ({ currentPath = '/' }) => {
         },
         {
             name: 'Conteúdo', icon: 'BookOpen', type: 'dropdown', items: [
-                { name: 'Guias', path: '/guias' },
+                { name: 'Guias', path: '/conteudos/guias' },
+                { name: 'Artigos', path: '/conteudos/artigos' },
+                { name: 'Estudos de Caso', path: '/conteudos/estudos-de-caso' },
+                { name: 'Insights de Dados', path: '/conteudos/insights' },
+                { name: 'Estratégias Avançadas', path: '/conteudos/estrategias-avancadas' },
+                { name: 'Metodologia e Modelagem', path: '/conteudos/metodologia-modelagem' },
+                { name: 'Glossário e Fundamentos', path: '/conteudos/glossario' },
+                { name: 'Conteúdos (Índice)', path: '/conteudos' },
             ]
         },
         {
