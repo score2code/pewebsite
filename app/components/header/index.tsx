@@ -47,8 +47,7 @@ const Header = ({ currentPath = '/' }) => {
                 { name: 'Insights de Dados', path: '/conteudos/insights' },
                 { name: 'Estratégias Avançadas', path: '/conteudos/estrategias-avancadas' },
                 { name: 'Metodologia e Modelagem', path: '/conteudos/metodologia-modelagem' },
-                { name: 'Glossário e Fundamentos', path: '/conteudos/glossario' },
-                { name: 'Conteúdos (Índice)', path: '/conteudos' },
+                { name: 'Glossário e Fundamentos', path: '/conteudos/glossario' }
             ]
         },
         {
