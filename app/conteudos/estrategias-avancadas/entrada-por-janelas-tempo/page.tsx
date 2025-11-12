@@ -14,13 +14,37 @@ export default function EntradaPorJanelasTempoPage() {
         <Breadcrumb className="mb-4" />
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
           <h1 className="text-3xl font-bold">Entrada por janelas de tempo</h1>
-          <p className="text-dark-900/70 dark:text-light-100/70">Use períodos com maior probabilidade de evento.</p>
+          <p className="text-dark-900/70 dark:text-light-100/70">Use períodos com maior probabilidade de evento e preço favorável.</p>
         </header>
         <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
-          <p className="text-dark-900/70 dark:text-light-100/70">Defina janelas por liga e adapte ao contexto de cada partida.</p>
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Mapeamento de janelas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Probabilidade de eventos por minuto e fase do jogo.</li>
+              <li>Comportamento por liga e estilo predominante.</li>
+              <li>Relação entre preço e tempo restante para decisão.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Procedimento</h2>
+            <ol className="list-decimal list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Defina janelas-alvo por competição (ex.: 30–45', 65–80').</li>
+              <li>Confirme sinais no início da janela antes de entrar.</li>
+              <li>Evite entradas fora de janela sem sinal excepcional.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4">Checklist</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Janelas mapeadas e documentadas por liga.</li>
+              <li>Critérios de confirmação de sinal claros.</li>
+              <li>Limites de preço e tempo definidos.</li>
+            </ul>
+          </section>
         </div>
       </article>
     </div>
   );
 }
-

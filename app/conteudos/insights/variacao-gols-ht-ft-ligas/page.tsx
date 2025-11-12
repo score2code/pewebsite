@@ -14,13 +14,37 @@ export default function VariacaoGolsHtFtLigasPage() {
         <Breadcrumb className="mb-4" />
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
           <h1 className="text-3xl font-bold">Variação de gols HT/FT por liga</h1>
-          <p className="text-dark-900/70 dark:text-light-100/70">Entenda padrões entre tempos em diferentes competições.</p>
+          <p className="text-dark-900/70 dark:text-light-100/70">Entenda padrões entre tempos e ajuste janelas por competição.</p>
         </header>
         <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
-          <p className="text-dark-900/70 dark:text-light-100/70">Compare médias e distribuições para identificar ligas com maior variação HT/FT.</p>
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Métricas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Médias de gols HT e FT por liga.</li>
+              <li>Diferença HT-FT e distribuição por competição.</li>
+              <li>Ritmo e substituições como fatores explicativos.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Procedimento</h2>
+            <ol className="list-decimal list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Calcule deltas HT-FT e identifique ligas com maior variação.</li>
+              <li>Ajuste janelas de entrada conforme padrão de cada liga.</li>
+              <li>Combine com sinais ao vivo para confirmar ritmo.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4">Checklist</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Métricas de variação HT-FT consolidadas.</li>
+              <li>Plano de janelas por liga definido.</li>
+              <li>Integração com gestão de risco por variância.</li>
+            </ul>
+          </section>
         </div>
       </article>
     </div>
   );
 }
-
