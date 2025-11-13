@@ -7,7 +7,9 @@
     "date": "2025-11-12",
     "time": "14:45",
     "timezone": "BRT (Horário de Brasília)",
-    "prediction": "Total de Gols: Mais de 4.5"
+    "prediction": "Total de Gols: Mais de 4.5",
+    "hit": false,
+    "reason": "Placar: 3 x 0"
    },
   {
     "id": "zamora-cf-x-ourense-cf",
@@ -17,6 +19,8 @@
     "date": "2025-11-12",
     "time": "16:30",
     "timezone": "BRT (Horário de Brasília)",
-    "prediction": "Dupla Chance: 1X"
+    "prediction": "Dupla Chance: 1X",
+    "hit": true,
+    "reason": "Placar: 0 x 0"
   }
 ]

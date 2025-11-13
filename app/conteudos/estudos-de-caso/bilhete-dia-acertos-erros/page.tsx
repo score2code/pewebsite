@@ -14,13 +14,60 @@ export default function BilheteDiaAcertosErrosPage() {
         <Breadcrumb className="mb-4" />
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
           <h1 className="text-3xl font-bold">Bilhete do Dia: acertos e erros</h1>
-          <p className="text-dark-900/70 dark:text-light-100/70">Revisão objetiva e melhoria contínua.</p>
+          <p className="text-dark-900/70 dark:text-light-100/70">Revisão objetiva com método, métricas e ajustes acionáveis.</p>
         </header>
         <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
-          <p className="text-dark-900/70 dark:text-light-100/70">Mapeie decisões, sinais utilizados e pontos de ajuste para evoluir seu processo.</p>
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Objetivo</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Registrar decisões, avaliar sinais e quantificar resultados para melhoria contínua.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Dados e contexto</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Mercados usados, odds, limites e janelas de entrada.</li>
+              <li>Sinais pré-jogo e ao vivo (pressão, ritmo, escalação).</li>
+              <li>Condições externas (clima, viagem, motivação).</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Método</h2>
+            <ol className="list-decimal list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Liste cada decisão com hipótese e critério de entrada.</li>
+              <li>Registre execução (preço, stake, timing) e saída.</li>
+              <li>Compare com plano e identifique desvios.</li>
+            </ol>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Resultados e métricas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>EV estimado vs. realizado por mercado.</li>
+              <li>Taxa de acerto por tipo de sinal e janela.</li>
+              <li>Impacto de parcialização/hedge no drawdown.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Lições e ajustes</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Critérios que funcionaram e devem ser reforçados.</li>
+              <li>Erros recorrentes e como evitá-los.</li>
+              <li>Atualizações de janelas, limites de preço e sizing.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4">Checklist</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Todas decisões registradas com hipótese, execução e resultado.</li>
+              <li>Métricas calculadas e comparadas ao plano.</li>
+              <li>Ajustes documentados para próxima sessão.</li>
+            </ul>
+          </section>
         </div>
       </article>
     </div>
   );
 }
-
