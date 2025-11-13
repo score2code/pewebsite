@@ -1,0 +1,22 @@
+[
+  {
+    "id": "goias-x-novorizontino-sp",
+    "league": "Brasileirão Série B",
+    "homeTeam": "Goiás",
+    "awayTeam": "Novorizontino SP",
+    "date": "2025-11-16",
+    "time": "16:30",
+    "timezone": "BRT (Horário de Brasília)",
+    "prediction": "Total de Gols: Menos de 2.5"
+  },
+  {
+    "id": "ferroviaria-sp-x-athletico-pr",
+    "league": "Brasileirão Série B",
+    "homeTeam": "Ferroviária SP",
+    "awayTeam": "Athletico PR",
+    "date": "2025-11-16",
+    "time": "16:30",
+    "timezone": "BRT (Horário de Brasília)",
+    "prediction": "Dupla Chance: X2"
+  }
+]

@@ -23,7 +23,9 @@
     "prediction": "Handicap Asiático: França -1.5",
     "confidence": 60,
     "status": "pending",
-    "analysis": "A França possui uma superioridade técnica esmagadora (xG/xGA favorável, média de 2.6 gols/jogo) e joga em casa, onde é historicamente dominante contra a Ucrânia. O retorno de N'Golo Kanté reforça o meio-campo. A Ucrânia, desfalcada e com foco defensivo (bloco baixo) devido à necessidade de não perder por muito em um grupo difícil, terá dificuldades extremas para evitar que a França vença por pelo menos 2 gols de diferença. O retrospecto recente (última vitória por 2 a 0) e a motivação francesa para encaminhar a classificação sustentam o -1.5 como mercado de maior valor, com probabilidade estimada de 60% (Odd Justa 1.67)."
+    "analysis": "A França possui uma superioridade técnica esmagadora (xG/xGA favorável, média de 2.6 gols/jogo) e joga em casa, onde é historicamente dominante contra a Ucrânia. O retorno de N'Golo Kanté reforça o meio-campo. A Ucrânia, desfalcada e com foco defensivo (bloco baixo) devido à necessidade de não perder por muito em um grupo difícil, terá dificuldades extremas para evitar que a França vença por pelo menos 2 gols de diferença. O retrospecto recente (última vitória por 2 a 0) e a motivação francesa para encaminhar a classificação sustentam o -1.5 como mercado de maior valor, com probabilidade estimada de 60% (Odd Justa 1.67).",
+    "hit": true,
+    "reason": "Placar: 4 x 0"
   },
   {
     "id": "irlanda-x-portugal",
@@ -36,7 +38,9 @@
     "prediction": "Ambos Marcam (BTTS): NÃO",
     "confidence": 68,
     "status": "pending",
-    "analysis": "Portugal é superior, mas enfrenta uma Irlanda desesperada por pontos e jogando em casa sob bloco baixo. A Irlanda possui baixo poder ofensivo (0.6 gols/jogo no grupo) e Portugal tem uma defesa forte (0.25 gols sofridos/jogo). A tensão da partida e o estilo de jogo defensivo da Irlanda (visto no 1-0 no jogo anterior) sugerem um placar apertado e com pouca chance de gol da equipe da casa. A recomendação principal 'Ambos Marcam - NÃO' tem alta confiança (68%), com a alternativa de valor sendo 'Over 4.5 Cartões' devido à rivalidade e ao histórico do árbitro."
+    "analysis": "Portugal é superior, mas enfrenta uma Irlanda desesperada por pontos e jogando em casa sob bloco baixo. A Irlanda possui baixo poder ofensivo (0.6 gols/jogo no grupo) e Portugal tem uma defesa forte (0.25 gols sofridos/jogo). A tensão da partida e o estilo de jogo defensivo da Irlanda (visto no 1-0 no jogo anterior) sugerem um placar apertado e com pouca chance de gol da equipe da casa. A recomendação principal 'Ambos Marcam - NÃO' tem alta confiança (68%), com a alternativa de valor sendo 'Over 4.5 Cartões' devido à rivalidade e ao histórico do árbitro.",
+    "hit": true,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "moldavia-x-italia",
@@ -49,7 +53,9 @@
     "prediction": "Total de Gols: Mais de 3.5",
     "confidence": 70,
     "status": "pending",
-    "analysis": "A Itália (2ª) é esmagadoramente superior à Moldávia (5ª), que possui a defesa mais vazada do grupo (média de 4.33 gols sofridos/jogo). O confronto direto histórico valida a expectativa de goleada (6-0 e 5-0 recentes). A Itália precisa de gols para melhorar seu saldo. Com a alta fragilidade defensiva do mandante, a probabilidade de a linha de 3.5 gols ser superada é de 68%. O mercado de Handicap Asiático Itália -2.5 é uma alternativa sólida de valor."
+    "analysis": "A Itália (2ª) é esmagadoramente superior à Moldávia (5ª), que possui a defesa mais vazada do grupo (média de 4.33 gols sofridos/jogo). O confronto direto histórico valida a expectativa de goleada (6-0 e 5-0 recentes). A Itália precisa de gols para melhorar seu saldo. Com a alta fragilidade defensiva do mandante, a probabilidade de a linha de 3.5 gols ser superada é de 68%. O mercado de Handicap Asiático Itália -2.5 é uma alternativa sólida de valor.",
+    "hit": false,
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "inglaterra-x-servia",
@@ -62,7 +68,9 @@
     "prediction": "Ambos Marcam (BTTS): NÃO",
     "confidence": 60,
     "status": "pending",
-    "analysis": "A Inglaterra é a favorita esmagadora (68% de chance de vitória) e demonstra excelente solidez defensiva, sem sofrer gols nos últimos dois H2H contra a Sérvia. A Sérvia (xG de 0.18 no último H2H) terá dificuldade extrema em furar o bloqueio inglês. O cenário mais provável é de vitória inglesa por 1-0 ou 2-0, controlando a posse e limitando as chances do adversário. O risco principal reside na atuação do árbitro Daniele Orsato, que pode influenciar o mercado de cartões."
+    "analysis": "A Inglaterra é a favorita esmagadora (68% de chance de vitória) e demonstra excelente solidez defensiva, sem sofrer gols nos últimos dois H2H contra a Sérvia. A Sérvia (xG de 0.18 no último H2H) terá dificuldade extrema em furar o bloqueio inglês. O cenário mais provável é de vitória inglesa por 1-0 ou 2-0, controlando a posse e limitando as chances do adversário. O risco principal reside na atuação do árbitro Daniele Orsato, que pode influenciar o mercado de cartões.",
+    "hit": true,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "llaneros-x-envigado",
