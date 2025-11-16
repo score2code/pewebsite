@@ -1,0 +1,22 @@
+[
+  {
+    "id": "internacional-rs-x-santos",
+    "league": "Brasil - Série A",
+    "homeTeam": "Internacional RS",
+    "awayTeam": "Santos",
+    "date": "2025-11-24",
+    "time": "21:00",
+    "timezone": "BRT (Horário de Brasília)",
+    "prediction": "Resultado Final: 1"
+  },
+  {
+    "id": "pogon-szczecin-x-zaglebie-lubin",
+    "league": "Polônia - Ekstraklasa",
+    "homeTeam": "Pogon Szczecin",
+    "awayTeam": "Zaglebie Lubin",
+    "date": "2025-11-24",
+    "time": "15:00",
+    "timezone": "GMT",
+    "prediction": "Resultado Final: 1"
+  }
+]
