@@ -14,6 +14,7 @@ type TicketPick = {
   prediction: string;
   hit?: boolean; // indica se o palpite foi certo
   reason?: string; // motivo do resultado (acerto/erro)
+  status?: 'pending' | 'won' | 'lost' | 'void' | 'postponed';
 };
 
 async function getTicketPicks(date: string): Promise<TicketPick[]> {
@@ -177,7 +178,12 @@ export default async function TicketByDatePage({ params }: { params: { date: str
                     Perdeu
                   </span>
                 )}
-                {p.hit === undefined && (
+                {(p.status === 'postponed' || p.status === 'void') && (
+                  <span className="inline-flex bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
+                    Adiado
+                  </span>
+                )}
+                {p.hit === undefined && !(p.status === 'postponed' || p.status === 'void') && (
                   <span className="inline-flex bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
                     Pendente
                   </span>
