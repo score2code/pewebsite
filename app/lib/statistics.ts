@@ -98,19 +98,22 @@ export async function getDashboardStats() {
   const allPicks = unifiedDaily.flatMap(d => d.picks);
 
   const totalPicks = allPicks.length;
-  const resolvedPicks = allPicks.filter(p => p.hit !== undefined);
-  const totalHits = resolvedPicks.filter(p => p.hit === true).length;
-  const hitRate = resolvedPicks.length > 0 ? (totalHits / resolvedPicks.length) * 100 : 0;
-  const pendingCount = totalPicks - resolvedPicks.length;
+  // Para taxa de acerto, consideramos apenas picks com hit definido
+  const settledPicks = allPicks.filter(p => p.hit !== undefined);
+  const totalHits = settledPicks.filter(p => p.hit === true).length;
+  const hitRate = settledPicks.length > 0 ? (totalHits / settledPicks.length) * 100 : 0;
+  // Para pendentes, exclui adiados/void
+  const resolvedForPending = allPicks.filter(p => p.hit !== undefined || p.status === 'postponed' || p.status === 'void');
+  const pendingCount = totalPicks - resolvedForPending.length;
 
   // Gera dados para o gráfico de desempenho (últimos 30 dias com atividade)
   const performanceSeries = unifiedDaily.slice(-30).map(day => {
     // Formatar label sem timezone para evitar dia desalinhado
     const [y, m, d] = day.date.split('-');
     const label = `${d}/${m}`;
-    const dayResolved = day.picks.filter(p => p.hit !== undefined);
-    const dayHits = dayResolved.filter(p => p.hit === true).length;
-    const pct = dayResolved.length > 0 ? (dayHits / dayResolved.length) * 100 : 0;
+    const daySettled = day.picks.filter(p => p.hit !== undefined);
+    const dayHits = daySettled.filter(p => p.hit === true).length;
+    const pct = daySettled.length > 0 ? (dayHits / daySettled.length) * 100 : 0;
     return {
       label,
       value: parseFloat(pct.toFixed(0)), // inteiro para o gráfico em %
@@ -131,34 +134,38 @@ export async function getTicketStats() {
 
   const totalTickets = ticketDaily.length;
 
-  const classifyTicket = (picks: BasePick[]): 'win' | 'loss' | 'pending' => {
+  const classifyTicket = (picks: BasePick[]): 'win' | 'loss' | 'pending' | 'void' => {
     const hasFalse = picks.some(p => p.hit === false);
     const allTrue = picks.length > 0 && picks.every(p => p.hit === true);
+    const allVoid = picks.length > 0 && picks.every(p => p.status === 'postponed' || p.status === 'void');
     if (allTrue) return 'win';
     if (hasFalse) return 'loss';
+    if (allVoid) return 'void';
     return 'pending';
   };
 
   let winners = 0;
   let losers = 0;
   let pending = 0;
+  let voids = 0;
 
   for (const day of ticketDaily) {
     const status = classifyTicket(day.picks);
     if (status === 'win') winners++;
     else if (status === 'loss') losers++;
+    else if (status === 'void') voids++;
     else pending++;
   }
 
   const denom = winners + losers; // exclui pendentes
   const winRate = denom > 0 ? Number(((winners / denom) * 100).toFixed(1)) : 0;
 
-  // Série dos últimos 30 dias: 100 para win, 0 para loss, 50 para pending
+  // Série dos últimos 30 dias: 100=win, 0=loss, 50=pending, 75=adiado/void
   const series = ticketDaily.slice(-30).map(day => {
     const [y, m, d] = day.date.split('-');
     const label = `${d}/${m}`;
     const status = classifyTicket(day.picks);
-    const value = status === 'win' ? 100 : (status === 'loss' ? 0 : 50);
+    const value = status === 'win' ? 100 : (status === 'loss' ? 0 : (status === 'void' ? 75 : 50));
     return { label, value };
   });
 
@@ -168,6 +175,7 @@ export async function getTicketStats() {
     winners,
     losers,
     pending,
+    voids,
     series
   };
 }

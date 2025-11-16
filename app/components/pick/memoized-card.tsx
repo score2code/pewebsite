@@ -38,8 +38,8 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
     if (pick.hit === false) return 'lost';
     if (pick.result === 'won') return 'won';
     if (pick.result === 'lost') return 'lost';
-    // Mapear 'void' para um estado suportado
-    if (pick.status === 'void') return 'pending';
+    // Mapear 'void' e 'postponed' para estado concluído "Adiado"
+    if (pick.status === 'void' || pick.status === 'postponed') return 'postponed';
     if (pick.status === 'won' || pick.status === 'lost') return pick.status as PickStatus;
     return 'pending';
   };
@@ -55,7 +55,9 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
     pick.result === 'won' ||
     pick.result === 'lost' ||
     pick.status === 'won' ||
-    pick.status === 'lost';
+    pick.status === 'lost' ||
+    pick.status === 'postponed' ||
+    pick.status === 'void';
 
   const showConfidenceTag = pick.confidence >= 80 && !hasFinalOutcome;
 

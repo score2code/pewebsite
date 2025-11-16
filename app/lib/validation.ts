@@ -14,7 +14,8 @@ export const PickSchema = z.object({
   odds: z.number().positive('Odds deve ser um número positivo').optional().default(2),
   probability: z.number().min(0).max(100, 'Probabilidade deve estar entre 0 e 100').optional().default(0),
   confidence: z.number().min(0).max(100, 'Confiança deve estar entre 0 e 100'),
-  status: z.enum(['pending', 'won', 'lost', 'void']).default('pending'),
+  // inclui 'postponed' para marcar jogos adiados como concluídos
+  status: z.enum(['pending', 'won', 'lost', 'void', 'postponed']).default('pending'),
   hit: z.boolean().optional(),
   reason: z.string().optional(),
   result: z.string().optional(),
@@ -166,7 +167,8 @@ const mapLegacyPickData = (data: any): any => {
       'Pending': 'pending',
       'Win': 'won',
       'Loss': 'lost',
-      'Void': 'void'
+      'Void': 'void',
+      'Postponed': 'postponed'
     };
     mapped.status = resultMap[mapped.result as keyof typeof resultMap] || 'pending';
   }
@@ -174,6 +176,14 @@ const mapLegacyPickData = (data: any): any => {
   // Se houver "hit" explícito, sincroniza status para garantir exibição correta
   if (typeof mapped.hit === 'boolean') {
     mapped.status = mapped.hit ? 'won' : 'lost';
+  }
+
+  // Se o motivo indicar adiamento, marca como 'postponed'
+  if (typeof mapped.reason === 'string') {
+    const reasonLower = mapped.reason.toLowerCase();
+    if (reasonLower.includes('adiado') || reasonLower.includes('postponed')) {
+      mapped.status = 'postponed';
+    }
   }
   
   // Remover campos legados que não são mais necessários

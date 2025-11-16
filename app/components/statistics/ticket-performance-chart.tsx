@@ -22,10 +22,11 @@ const TicketPerformanceChart: React.FC<TicketPerformanceChartProps> = ({ series,
 
   const centerY = paddingY + innerHeight / 2;
 
-  // value mapping: 100 = vencedor (verde), 0 = perdedor (vermelho), 50 = pendente (cinza)
+  // value mapping: 100=Vencedor (verde), 0=Perdedor (vermelho), 50=Pendente (cinza), 75=Adiado (azul)
   const colorFor = (v: number) => {
     if (v >= 100) return '#22c55e'; // green-500
     if (v <= 0) return '#ef4444';  // red-500
+    if (v === 75) return '#3b82f6'; // blue-500 (adiado)
     return '#9ca3af';              // gray-400 (pendente)
   };
 
@@ -61,7 +62,7 @@ const TicketPerformanceChart: React.FC<TicketPerformanceChartProps> = ({ series,
                 fill={fill}
               />
               {/* Tooltip simples via title */}
-              <title>{`${s.label} · ${s.value >= 100 ? 'Vencedor' : s.value <= 0 ? 'Perdedor' : 'Pendente'}`}</title>
+              <title>{`${s.label} · ${s.value >= 100 ? 'Vencedor' : s.value <= 0 ? 'Perdedor' : (s.value === 75 ? 'Adiado' : 'Pendente')}`}</title>
               {/* label do dia abaixo */}
               {(idx % showEvery === 0 || idx === 0 || idx === series.length - 1) && (
                 <text
@@ -87,6 +88,10 @@ const TicketPerformanceChart: React.FC<TicketPerformanceChartProps> = ({ series,
         <div className="flex items-center gap-2">
           <span className="inline-block w-3 h-3 rounded-sm" style={{ backgroundColor: '#ef4444' }} />
           <span className="text-dark-900/90 dark:text-light-100">Perdedor</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="inline-block w-3 h-3 rounded-sm" style={{ backgroundColor: '#3b82f6' }} />
+          <span className="text-dark-900/90 dark:text-light-100">Adiado</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="inline-block w-3 h-3 rounded-sm" style={{ backgroundColor: '#9ca3af' }} />
