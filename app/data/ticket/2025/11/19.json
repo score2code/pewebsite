@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sloven-ruma-x-estrela-vermelha",
+    "league": "Copa da Sérvia",
+    "homeTeam": "Sloven Ruma",
+    "awayTeam": "Estrela Vermelha",
+    "date": "2025-11-19",
+    "time": "09:00",
+    "timezone": "GMT",
+    "prediction": "Handicap Asiático: Estrela Vermelha -2.5"
+  },
+  {
+    "id": "atletico-grau-x-sporting-cristal",
+    "league": "Liga 1 Peru",
+    "homeTeam": "Atlético Grau",
+    "awayTeam": "Sporting Cristal",
+    "date": "2025-11-19",
+    "time": "17:00",
+    "timezone": "GMT",
+    "prediction": "Resultado Final: 2"
+  }
+]
