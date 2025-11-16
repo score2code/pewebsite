@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elche-x-real-madrid",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Elche",
+    "awayTeam": "Real Madrid",
+    "date": "2025-11-23",
+    "time": "17:00",
+    "timezone": "GMT",
+    "prediction": "Resultado Final: 2"
+  },
+  {
+    "id": "rb-leipzig-x-werder-bremen",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "RB Leipzig",
+    "awayTeam": "Werder Bremen",
+    "date": "2025-11-23",
+    "time": "11:30",
+    "timezone": "GMT",
+    "prediction": "Resultado Final: 1"
+  }
+]

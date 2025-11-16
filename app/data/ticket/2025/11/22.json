@@ -1,0 +1,22 @@
+[
+  {
+    "id": "barcelona-x-athletic-bilbao",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Athletic Bilbao",
+    "date": "2025-11-22",
+    "time": "12:15",
+    "timezone": "GMT",
+    "prediction": "Resultado Final: 1"
+  },
+  {
+    "id": "liverpool-x-nottingham-forest",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Nottingham Forest",
+    "date": "2025-11-22",
+    "time": "12:00",
+    "timezone": "GMT",
+    "prediction": "Resultado Final: 1"
+  }
+]
