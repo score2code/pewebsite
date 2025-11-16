@@ -1,0 +1,22 @@
+[
+  {
+    "id": "nacional-asuncion-x-sportivo-ameliano",
+    "league": "Primera División (Paraguai)",
+    "homeTeam": "Nacional Asunción",
+    "awayTeam": "Sportivo Ameliano",
+    "date": "2025-11-20",
+    "time": "19:30",
+    "timezone": "GMT",
+    "prediction": "Resultado Final: 1"
+  },
+  {
+    "id": "alajuelense-x-cartagines",
+    "league": "Primera División (Costa Rica)",
+    "homeTeam": "Alajuelense",
+    "awayTeam": "Cartagines",
+    "date": "2025-11-20",
+    "time": "23:00",
+    "timezone": "GMT",
+    "prediction": "Resultado Final: 1"
+  }
+]
