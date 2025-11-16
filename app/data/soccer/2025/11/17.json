@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ca-belgrano-x-union-de-santa-fe",
+    "league": "Liga Profesional Argentina",
+    "homeTeam": "CA Belgrano",
+    "awayTeam": "Union de Santa Fe",
+    "date": "2025-11-17",
+    "time": "17:00",
+    "prediction": "Menos de 2.5 Gols",
+    "confidence": 58,
+    "result": "Pending",
+    "analysis": "Jogo com tendência de controle e poucas chances claras; perfil mais conservador na Argentina favorece placar baixo."
+  },
+  {
+    "id": "defensa-y-justicia-x-independiente-rivadavia",
+    "league": "Liga Profesional Argentina",
+    "homeTeam": "Defensa y Justicia",
+    "awayTeam": "Independiente Rivadavia",
+    "date": "2025-11-17",
+    "time": "17:00",
+    "prediction": "Mais de 1.5 Gols",
+    "confidence": 60,
+    "result": "Pending",
+    "analysis": "Defensa costuma propor jogo e gerar volume ofensivo; linha de 1.5 deve ser alcançável."
+  },
+  {
+    "id": "barracas-central-x-ca-huracan",
+    "league": "Liga Profesional Argentina",
+    "homeTeam": "Barracas Central",
+    "awayTeam": "CA Huracan",
+    "date": "2025-11-17",
+    "time": "17:00",
+    "prediction": "Menos de 2.5 Gols",
+    "confidence": 59,
+    "result": "Pending",
+    "analysis": "Partida com viés de equilíbrio e menor agressividade ofensiva; expectativa de poucos gols."
+  },
+  {
+    "id": "ca-platense-x-gimnasia-la-plata",
+    "league": "Liga Profesional Argentina",
+    "homeTeam": "CA Platense",
+    "awayTeam": "Gimnasia La Plata",
+    "date": "2025-11-17",
+    "time": "19:30",
+    "prediction": "Menos de 2.5 Gols",
+    "confidence": 60,
+    "result": "Pending",
+    "analysis": "Confronto de tendência under pela postura das equipes; criação limitada e ritmo mais truncado."
+  },
+  {
+    "id": "montenegro-x-croacia",
+    "league": "Internacional - Seleções",
+    "homeTeam": "Montenegro",
+    "awayTeam": "Croácia",
+    "date": "2025-11-17",
+    "time": "16:45",
+    "prediction": "Mais de 1.5 Gols",
+    "confidence": 65,
+    "result": "Pending",
+    "analysis": "Favoritismo técnico da Croácia e potencial de converter; linha de 1.5 acessível."
+  },
+  {
+    "id": "malta-x-polonia",
+    "league": "Internacional - Seleções",
+    "homeTeam": "Malta",
+    "awayTeam": "Polônia",
+    "date": "2025-11-17",
+    "time": "16:45",
+    "prediction": "Mais de 2.5 Gols",
+    "confidence": 70,
+    "result": "Pending",
+    "analysis": "Desnível técnico favorece cenário de gols; Polônia com volume suficiente para linha de 2.5."
+  },
+  {
+    "id": "alemanha-x-eslovaquia",
+    "league": "Internacional - Seleções",
+    "homeTeam": "Alemanha",
+    "awayTeam": "Eslováquia",
+    "date": "2025-11-17",
+    "time": "16:45",
+    "prediction": "Mais de 2.5 Gols",
+    "confidence": 68,
+    "result": "Pending",
+    "analysis": "Alemanha costuma impor ritmo e criar chances; expectativa de jogo aberto acima de 2.5 gols."
+  },
+  {
+    "id": "irlanda-do-norte-x-luxemburgo",
+    "league": "Internacional - Seleções",
+    "homeTeam": "Irlanda do Norte",
+    "awayTeam": "Luxemburgo",
+    "date": "2025-11-17",
+    "time": "16:45",
+    "prediction": "Menos de 2.5 Gols",
+    "confidence": 62,
+    "result": "Pending",
+    "analysis": "Partida tende a ser travada e com poucas oportunidades claras; perfil under moderado."
+  },
+  {
+    "id": "catar-x-zimbabue",
+    "league": "Internacional - Seleções",
+    "homeTeam": "Catar",
+    "awayTeam": "Zimbábue",
+    "date": "2025-11-17",
+    "time": "13:30",
+    "prediction": "Menos de 2.5 Gols",
+    "confidence": 55,
+    "result": "Pending",
+    "analysis": "Cenário de ritmo moderado e pouca conversão; prudência em linha de gols elevadas."
+  },
+  {
+    "id": "finlandia-x-andorra",
+    "league": "Internacional - Seleções",
+    "homeTeam": "Finlândia",
+    "awayTeam": "Andorra",
+    "date": "2025-11-17",
+    "time": "14:00",
+    "prediction": "Mais de 2.5 Gols",
+    "confidence": 68,
+    "result": "Pending",
+    "analysis": "Diferença técnica e domínio territorial esperados; linha de 2.5 viável com controle da Finlândia."
+  }
+]
