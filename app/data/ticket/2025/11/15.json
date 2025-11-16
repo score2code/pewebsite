@@ -1,22 +1,26 @@
 [
   {
-    "id": "rochdale-x-aldershot-town-2025-11-15",
+    "id": "rochdale-x-aldershot-town",
     "league": "Inglaterra - National League",
     "homeTeam": "Rochdale",
     "awayTeam": "Aldershot Town",
     "date": "2025-11-15",
     "time": "12:03",
     "timezone": "BRT (Horário de Brasília)",
-    "prediction": "Total de Gols: Mais de 1.5"
+    "prediction": "Total de Gols: Mais de 1.5",
+    "hit": false,
+    "reason": "Placar: 1 x 0"
   },
   {
-    "id": "fleetwood-town-x-swindon-town-2025-11-15",
+    "id": "fleetwood-town-x-swindon-town",
     "league": "Inglaterra - League Two (4ª Divisão Inglesa)",
     "homeTeam": "Fleetwood Town",
     "awayTeam": "Swindon Town",
     "date": "2025-11-15",
     "time": "12:00",
     "timezone": "BRT (Horário de Brasília)",
-    "prediction": "Total de Gols: Mais de 1.5"
+    "prediction": "Total de Gols: Mais de 1.5",
+    "hit": true,
+    "reason": "Placar: 1 x 1"
   }
 ]

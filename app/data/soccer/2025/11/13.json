@@ -10,7 +10,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 60,
     "status": "pending",
-    "analysis": "Confronto entre duas seleções com foco defensivo. O Equador tem uma solidez notável (0.3 gols sofridos/jogo nos últimos 6 e invencibilidade recente), enquanto o Canadá prioriza a organização em casa. A ausência de pressão competitiva em um amistoso internacional, em conjunto com o histórico defensivo do Equador, sugere um jogo de baixo placar. O mercado Under 2.5 Gols (odd justa 1.67) oferece o melhor valor, com confiança de 60%."
+    "analysis": "Confronto entre duas seleções com foco defensivo. O Equador tem uma solidez notável (0.3 gols sofridos/jogo nos últimos 6 e invencibilidade recente), enquanto o Canadá prioriza a organização em casa. A ausência de pressão competitiva em um amistoso internacional, em conjunto com o histórico defensivo do Equador, sugere um jogo de baixo placar. O mercado Under 2.5 Gols (odd justa 1.67) oferece o melhor valor, com confiança de 60%.",
+    "hit": true,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "franca-x-ucrania",
@@ -83,7 +85,9 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 75,
     "status": "pending",
-    "analysis": "Confronto da última rodada com alto peso para o Llaneros (11º) que busca uma vaga no G8 jogando em casa. O Envigado (18º) tem um dos piores ataques da liga (0.8 gols/jogo) e demonstrou péssima forma recente. A vantagem do mando de campo é decisiva, e a necessidade de pontuar do Llaneros, contra um adversário desmotivado e fraco, confere uma alta probabilidade (75%) de não perder a partida. O mercado de Under 2.5 Gols é a principal alternativa, dada a baixa média de gols de ambas as equipes na temporada (65% de probabilidade, odd justa 1.54)."
+    "analysis": "Confronto da última rodada com alto peso para o Llaneros (11º) que busca uma vaga no G8 jogando em casa. O Envigado (18º) tem um dos piores ataques da liga (0.8 gols/jogo) e demonstrou péssima forma recente. A vantagem do mando de campo é decisiva, e a necessidade de pontuar do Llaneros, contra um adversário desmotivado e fraco, confere uma alta probabilidade (75%) de não perder a partida. O mercado de Under 2.5 Gols é a principal alternativa, dada a baixa média de gols de ambas as equipes na temporada (65% de probabilidade, odd justa 1.54).",
+    "hit": false,
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "independiente-santa-fe-x-alianza-valledupar",
@@ -96,7 +100,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Confronto de vida ou morte para o Santa Fe (11º) em casa, contra o Alianza (8º), que já está classificado. A combinação de necessidade de vitória do Santa Fe, a vantagem da altitude de Bogotá e a provável falta de foco/rotação do Alianza Valledupar (por já estar classificado) gera uma assimetria de motivação e contexto físico crucial. O H2H recente em casa (4-1) e a urgência por pontuação sustentam a alta probabilidade (65%) de vitória do mandante, apesar da forma irregular recente."
+    "analysis": "Confronto de vida ou morte para o Santa Fe (11º) em casa, contra o Alianza (8º), que já está classificado. A combinação de necessidade de vitória do Santa Fe, a vantagem da altitude de Bogotá e a provável falta de foco/rotação do Alianza Valledupar (por já estar classificado) gera uma assimetria de motivação e contexto físico crucial. O H2H recente em casa (4-1) e a urgência por pontuação sustentam a alta probabilidade (65%) de vitória do mandante, apesar da forma irregular recente.",
+    "hit": true,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "independiente-medellin-x-america-de-cali",
@@ -109,7 +115,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Clássico de alta tensão na estreia do quadrangular final. O DIM, apesar do ataque forte, enfrentará um AME que priorizará a defesa fora de casa. O retrospecto H2H recente tem favorecido a cautela (3/5 Under 2.5). A necessidade de não perder um confronto direto no mata-mata, somada ao estilo de jogo tático esperado, aponta para um jogo de baixa contagem. Odd justa de 1.72 (58% de chance) oferece valor. A alternativa de Dupla Chance (1X) é a segunda mais segura (70% de chance)."
+    "analysis": "Clássico de alta tensão na estreia do quadrangular final. O DIM, apesar do ataque forte, enfrentará um AME que priorizará a defesa fora de casa. O retrospecto H2H recente tem favorecido a cautela (3/5 Under 2.5). A necessidade de não perder um confronto direto no mata-mata, somada ao estilo de jogo tático esperado, aponta para um jogo de baixa contagem. Odd justa de 1.72 (58% de chance) oferece valor. A alternativa de Dupla Chance (1X) é a segunda mais segura (70% de chance).",
+    "hit": false,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "deportivo-cali-x-once-caldas",
@@ -122,7 +130,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 60,
     "status": "pending",
-    "analysis": "A Liga Colombiana possui uma baixa média histórica de gols. O Deportivo Cali está em má fase, com baixa eficiência ofensiva, e o Once Caldas adota um estilo cauteloso. A combinação de um time em crise (Cali) e outro focado em não conceder (Caldas) favorece um jogo truncado e de poucas chances claras. O H2H recente (exceto um 4-1 atípico) reforça a tendência de placares curtos. A probabilidade de menos de 3 gols é de 60%. Dados de arbitragem e estatísticas avançadas (xG/xGA) não estão disponíveis, o que limita a confiança, mas não invalida o palpite no Under 2.5 com base no contexto da liga e na forma das equipes."
+    "analysis": "A Liga Colombiana possui uma baixa média histórica de gols. O Deportivo Cali está em má fase, com baixa eficiência ofensiva, e o Once Caldas adota um estilo cauteloso. A combinação de um time em crise (Cali) e outro focado em não conceder (Caldas) favorece um jogo truncado e de poucas chances claras. O H2H recente (exceto um 4-1 atípico) reforça a tendência de placares curtos. A probabilidade de menos de 3 gols é de 60%. Dados de arbitragem e estatísticas avançadas (xG/xGA) não estão disponíveis, o que limita a confiança, mas não invalida o palpite no Under 2.5 com base no contexto da liga e na forma das equipes.",
+    "hit": true,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "junior-barranquilla-x-atletico-nacional",
@@ -135,6 +145,8 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 70,
     "status": "pending",
-    "analysis": "Clássico de alta rivalidade onde o Junior Barranquilla (6º) precisa pontuar em casa contra o líder Atlético Nacional. O fator mando de campo no Estádio Metropolitano, sob calor e umidade (Barranquilla), é um forte diferencial contra o Nacional, que tem oscilado fora. A combinação de histórico forte do Junior em casa, o desgaste do adversário em viagem e a importância do jogo na fase final de classificação resultam em uma alta probabilidade (70%) do Junior pontuar. O mercado de Under 2.5 Gols é uma alternativa de valor devido às condições climáticas que tendem a diminuir a intensidade ofensiva e à tensão do confronto, resultando em cautela."
+    "analysis": "Clássico de alta rivalidade onde o Junior Barranquilla (6º) precisa pontuar em casa contra o líder Atlético Nacional. O fator mando de campo no Estádio Metropolitano, sob calor e umidade (Barranquilla), é um forte diferencial contra o Nacional, que tem oscilado fora. A combinação de histórico forte do Junior em casa, o desgaste do adversário em viagem e a importância do jogo na fase final de classificação resultam em uma alta probabilidade (70%) do Junior pontuar. O mercado de Under 2.5 Gols é uma alternativa de valor devido às condições climáticas que tendem a diminuir a intensidade ofensiva e à tensão do confronto, resultando em cautela.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   }
 ]

@@ -19,6 +19,8 @@
     "date": "2025-11-13",
     "time": "21:00",
     "timezone": "BRT (Horário de Brasília)",
-    "prediction": "Dupla Chance: 1X"
+    "prediction": "Dupla Chance: 1X",
+    "hit": false,
+    "reason": "Placar: 0 x 3"
   }
 ]
