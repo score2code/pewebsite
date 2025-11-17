@@ -134,13 +134,15 @@ export async function getTicketStats() {
 
   const totalTickets = ticketDaily.length;
 
+  // Classificação ignora palpites adiados/void; só avalia os demais
   const classifyTicket = (picks: BasePick[]): 'win' | 'loss' | 'pending' | 'void' => {
-    const hasFalse = picks.some(p => p.hit === false);
-    const allTrue = picks.length > 0 && picks.every(p => p.hit === true);
-    const allVoid = picks.length > 0 && picks.every(p => p.status === 'postponed' || p.status === 'void');
+    const evaluated = picks.filter(p => p.status !== 'postponed' && p.status !== 'void');
+    // Se todos os palpites do bilhete forem adiados/void, o bilhete é 'void'
+    if (evaluated.length === 0 && picks.length > 0) return 'void';
+    const hasFalse = evaluated.some(p => p.hit === false);
+    const allTrue = evaluated.length > 0 && evaluated.every(p => p.hit === true);
     if (allTrue) return 'win';
     if (hasFalse) return 'loss';
-    if (allVoid) return 'void';
     return 'pending';
   };
 
@@ -157,7 +159,7 @@ export async function getTicketStats() {
     else pending++;
   }
 
-  const denom = winners + losers; // exclui pendentes
+  const denom = winners + losers; // exclui pendentes e voids
   const winRate = denom > 0 ? Number(((winners / denom) * 100).toFixed(1)) : 0;
 
   // Série dos últimos 30 dias: 100=win, 0=loss, 50=pending, 75=adiado/void
