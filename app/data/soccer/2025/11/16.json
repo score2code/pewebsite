@@ -10,7 +10,9 @@
     "prediction": "Over 4.5 Cartões",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Confronto direto por posição de G-12 (Bragantino) e G-6 (Atlético-MG), o que intensifica a tensão e a natureza faltosa do jogo. O fator decisivo é o árbitro André Luiz Skettino Policarpo Bento, que apresenta uma média de 6.00 cartões amarelos por jogo na Série A 2025. O estilo de jogo intenso das equipes (pressão e transição), o desgaste climático de Bragança Paulista e a alta média de cartões do árbitro convergem para uma alta probabilidade (64%) de o jogo ultrapassar 4.5 cartões. A Dupla Chance 1X é uma alternativa de valor moderado."
+    "analysis": "Confronto direto por posição de G-12 (Bragantino) e G-6 (Atlético-MG), o que intensifica a tensão e a natureza faltosa do jogo. O fator decisivo é o árbitro André Luiz Skettino Policarpo Bento, que apresenta uma média de 6.00 cartões amarelos por jogo na Série A 2025. O estilo de jogo intenso das equipes (pressão e transição), o desgaste climático de Bragança Paulista e a alta média de cartões do árbitro convergem para uma alta probabilidade (64%) de o jogo ultrapassar 4.5 cartões. A Dupla Chance 1X é uma alternativa de valor moderado.",
+    "hit": true,
+    "reason": "5 Cartões Amarelos e 1 Vermelho"
   },
   {
     "id": "goias-x-novorizontino-sp",
@@ -23,7 +25,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 75,
     "status": "pending",
-    "analysis": "Confronto direto de 'seis pontos' pelo G4, com ambos os times separados por 1 ponto. A alta tensão do jogo final (acesso) e a necessidade de não perder um confronto direto impõem uma estratégia defensiva cautelosa. O Goiás vem de uma forte sequência defensiva (4 jogos sem sofrer gol em 5) e o Novorizontino tem mostrado solidez, mas com tendência a empates (4 empates em 5 jogos recentes). O foco será a anulação mútua, favorecendo um jogo de poucos gols. O mercado Over 4.5 Cartões é uma alternativa forte devido ao árbitro com média alta de cartões e a intensidade da disputa."
+    "analysis": "Confronto direto de 'seis pontos' pelo G4, com ambos os times separados por 1 ponto. A alta tensão do jogo final (acesso) e a necessidade de não perder um confronto direto impõem uma estratégia defensiva cautelosa. O Goiás vem de uma forte sequência defensiva (4 jogos sem sofrer gol em 5) e o Novorizontino tem mostrado solidez, mas com tendência a empates (4 empates em 5 jogos recentes). O foco será a anulação mútua, favorecendo um jogo de poucos gols. O mercado Over 4.5 Cartões é uma alternativa forte devido ao árbitro com média alta de cartões e a intensidade da disputa.",
+    "hit": true,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "criciuma-x-botafogo-sp",
@@ -36,7 +40,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Confronto de alto contraste motivacional na reta final. O Criciúma (5º) joga em casa (Heriberto Hülse) com forte necessidade de vitória para entrar no G-4 e brigar pelo acesso. O Botafogo-SP (15º) possui um dos ataques mais ineficientes da liga (0.89 gols/jogo), jogará por um ponto e tem fraco desempenho fora. A superioridade técnica, a motivação (acesso vs. fuga do Z-4) e a vantagem do mando de campo do Criciúma resultam em uma alta probabilidade (65%) de vitória simples. O mercado de Under 2.5 Gols ou Ambos Marcam (BTTS - Não) também apresentam valor moderado devido ao estilo de jogo defensivo do Botafogo-SP."
+    "analysis": "Confronto de alto contraste motivacional na reta final. O Criciúma (5º) joga em casa (Heriberto Hülse) com forte necessidade de vitória para entrar no G-4 e brigar pelo acesso. O Botafogo-SP (15º) possui um dos ataques mais ineficientes da liga (0.89 gols/jogo), jogará por um ponto e tem fraco desempenho fora. A superioridade técnica, a motivação (acesso vs. fuga do Z-4) e a vantagem do mando de campo do Criciúma resultam em uma alta probabilidade (65%) de vitória simples. O mercado de Under 2.5 Gols ou Ambos Marcam (BTTS - Não) também apresentam valor moderado devido ao estilo de jogo defensivo do Botafogo-SP.",
+    "hit": true,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "america-mg-x-cuiaba",
@@ -49,7 +55,9 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 65,
     "status": "pending",
-    "analysis": "O América-MG (14º) tem maior necessidade de pontuar em casa para selar a permanência na Série B. O Cuiabá (11º) apresenta desempenho como visitante muito fraco (apenas 2 vitórias em 18 jogos). A probabilidade de o América-MG pontuar (vitória ou empate) é alta (65%), devido à vantagem do mando e à dificuldade do adversário fora. O árbitro Ramon Abatti Abel tem alta média de cartões, reforçando o Under Gols como alternativa em função da tensão e cautela esperada na partida."
+    "analysis": "O América-MG (14º) tem maior necessidade de pontuar em casa para selar a permanência na Série B. O Cuiabá (11º) apresenta desempenho como visitante muito fraco (apenas 2 vitórias em 18 jogos). A probabilidade de o América-MG pontuar (vitória ou empate) é alta (65%), devido à vantagem do mando e à dificuldade do adversário fora. O árbitro Ramon Abatti Abel tem alta média de cartões, reforçando o Under Gols como alternativa em função da tensão e cautela esperada na partida.",
+    "hit": true,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "ferroviaria-sp-x-athletico-pr",
@@ -62,7 +70,9 @@
     "prediction": "Dupla Chance: X2",
     "confidence": 75,
     "status": "pending",
-    "analysis": "Duelo de extremos na 37ª rodada, com a Ferroviária (17º) em zona de rebaixamento e o Athletico PR (2º) buscando o acesso. O Athletico é superior tecnicamente, está em melhor forma recente (5 jogos invicto) e tem motivação máxima para garantir a vaga no G-4. A Ferroviária não vence em casa há 5 jogos. A alta qualidade do visitante e a pressão do mandante resultam em uma probabilidade de 75% para o Athletico pontuar (X2). A principal alternativa de valor é o Under 2.5 Gols devido ao ataque ineficiente da Ferroviária e a tendência de cautela do Athletico para segurar o resultado."
+    "analysis": "Duelo de extremos na 37ª rodada, com a Ferroviária (17º) em zona de rebaixamento e o Athletico PR (2º) buscando o acesso. O Athletico é superior tecnicamente, está em melhor forma recente (5 jogos invicto) e tem motivação máxima para garantir a vaga no G-4. A Ferroviária não vence em casa há 5 jogos. A alta qualidade do visitante e a pressão do mandante resultam em uma probabilidade de 75% para o Athletico pontuar (X2). A principal alternativa de valor é o Under 2.5 Gols devido ao ataque ineficiente da Ferroviária e a tendência de cautela do Athletico para segurar o resultado.",
+    "hit": true,
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "azerbaijao-x-franca",
@@ -75,7 +85,9 @@
     "prediction": "Handicap Asiático: França -2.5",
     "confidence": 65,
     "status": "pending",
-    "analysis": "A França é amplamente superior, invicta e com ataque letal (média de 2.25 gols/jogo). O Azerbaijão é defensivamente frágil (sofre 2.84 gols/jogo) e tem um ataque ineficaz (xG baixo e 0.50 gols/jogo). O H2H recente terminou 3-0 para a França, com domínio de posse e xG. A linha de -2.5 reflete a alta probabilidade de uma goleada controlada, impulsionada pela superioridade técnica e a necessidade da França de consolidar a liderança do grupo. A principal alternativa de valor é Over 9.5 Escanteios."
+    "analysis": "A França é amplamente superior, invicta e com ataque letal (média de 2.25 gols/jogo). O Azerbaijão é defensivamente frágil (sofre 2.84 gols/jogo) e tem um ataque ineficaz (xG baixo e 0.50 gols/jogo). O H2H recente terminou 3-0 para a França, com domínio de posse e xG. A linha de -2.5 reflete a alta probabilidade de uma goleada controlada, impulsionada pela superioridade técnica e a necessidade da França de consolidar a liderança do grupo. A principal alternativa de valor é Over 9.5 Escanteios.",
+    "hit": false,
+    "reason": "Placar: 1 x 3"
   },
   {
     "id": "italia-x-noruega",
@@ -88,7 +100,9 @@
     "prediction": "Ambas Marcam (BTTS): Sim",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Confronto direto com a Itália precisando vencer em Milão para ter chance de classificação direta ou ir à repescagem. A Noruega, líder do grupo (21 pts) e dona de um ataque de alta média de gols (3.62/jogo, com Haaland em excelente fase), jogará com a tranquilidade do empate, explorando o contra-ataque. A necessidade ofensiva da Itália no San Siro (2 gols/jogo de média) irá expor sua defesa. A alta motivação e a postura aberta forçada do mandante aumentam a probabilidade de gols para ambos os lados."
+    "analysis": "Confronto direto com a Itália precisando vencer em Milão para ter chance de classificação direta ou ir à repescagem. A Noruega, líder do grupo (21 pts) e dona de um ataque de alta média de gols (3.62/jogo, com Haaland em excelente fase), jogará com a tranquilidade do empate, explorando o contra-ataque. A necessidade ofensiva da Itália no San Siro (2 gols/jogo de média) irá expor sua defesa. A alta motivação e a postura aberta forçada do mandante aumentam a probabilidade de gols para ambos os lados.",
+    "hit": true,
+    "reason": "Placar: 1 x 4"
   },
   {
     "id": "boca-juniors-x-tigre",
@@ -101,7 +115,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 60,
     "status": "pending",
-    "analysis": "O Boca Juniors (1º) busca a vitória em casa para confirmar a liderança e a vaga direta na Libertadores, jogando contra um Tigre (4º) que busca se classificar para os Play-Offs. A necessidade de vitória do Boca e sua forte forma recente em La Bombonera (4V nos últimos 5) são os drivers principais. O Tigre, embora resiliente (4 empates seguidos), apresenta um xG baixo (0.74), indicando dificuldade em superar a defesa do Boca. O poder ofensivo superior do mandante, aliado ao contexto decisivo, projeta a vitória simples. O árbitro Darío Herrera tem média alta de cartões (~5.41), reforçando a previsão de um jogo tenso."
+    "analysis": "O Boca Juniors (1º) busca a vitória em casa para confirmar a liderança e a vaga direta na Libertadores, jogando contra um Tigre (4º) que busca se classificar para os Play-Offs. A necessidade de vitória do Boca e sua forte forma recente em La Bombonera (4V nos últimos 5) são os drivers principais. O Tigre, embora resiliente (4 empates seguidos), apresenta um xG baixo (0.74), indicando dificuldade em superar a defesa do Boca. O poder ofensivo superior do mandante, aliado ao contexto decisivo, projeta a vitória simples. O árbitro Darío Herrera tem média alta de cartões (~5.41), reforçando a previsão de um jogo tenso.",
+    "hit": true,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "liverpool-montevideo-x-penarol",
@@ -114,7 +130,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 70,
     "status": "pending",
-    "analysis": "Confronto eliminatório (jogo único) de alta tensão, onde a cautela defensiva é esperada. O principal fator de validação é o clima: a previsão de **chuva forte e ventos de 29 mph** em Montevidéu para o horário da partida reduz drasticamente a precisão ofensiva, a velocidade do jogo e a qualidade técnica, favorecendo as defesas e um placar baixo. O árbitro Andrés Matonte, em jogos importantes, tem histórico de manter alta intensidade e controle disciplinar, o que pode levar a um jogo mais faltoso, mas não necessariamente aberto. A probabilidade de 70% reflete a forte correlação entre o contexto (mata-mata) e o fator externo (clima)."
+    "analysis": "Confronto eliminatório (jogo único) de alta tensão, onde a cautela defensiva é esperada. O principal fator de validação é o clima: a previsão de **chuva forte e ventos de 29 mph** em Montevidéu para o horário da partida reduz drasticamente a precisão ofensiva, a velocidade do jogo e a qualidade técnica, favorecendo as defesas e um placar baixo. O árbitro Andrés Matonte, em jogos importantes, tem histórico de manter alta intensidade e controle disciplinar, o que pode levar a um jogo mais faltoso, mas não necessariamente aberto. A probabilidade de 70% reflete a forte correlação entre o contexto (mata-mata) e o fator externo (clima).",
+    "hit": true,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "deportivo-madryn-x-deportivo-moron",
@@ -127,6 +145,8 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 70,
     "status": "pending",
-    "analysis": "Jogo de volta da semifinal de promoção, com o Morón em vantagem (1-0 na ida). O Morón possui uma das melhores defesas da liga (0.51 GS/J) e jogará recuado pelo empate. O Madryn, obrigado a atacar, enfrenta histórico H2H com 100% de Unders 2.5 em 4 jogos. A tendência é de um jogo tenso, faltoso e de pouquíssimas chances de gol, dominado pela estratégia defensiva do Morón. A probabilidade de 70% para Under 2.5 Gols reflete a alta solidez defensiva em contexto de mata-mata decisivo."
+    "analysis": "Jogo de volta da semifinal de promoção, com o Morón em vantagem (1-0 na ida). O Morón possui uma das melhores defesas da liga (0.51 GS/J) e jogará recuado pelo empate. O Madryn, obrigado a atacar, enfrenta histórico H2H com 100% de Unders 2.5 em 4 jogos. A tendência é de um jogo tenso, faltoso e de pouquíssimas chances de gol, dominado pela estratégia defensiva do Morón. A probabilidade de 70% para Under 2.5 Gols reflete a alta solidez defensiva em contexto de mata-mata decisivo.",
+    "hit": true,
+    "reason": "Placar: 1 x 0"
   }
 ]
