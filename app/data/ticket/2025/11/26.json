@@ -1,0 +1,22 @@
+[
+  {
+    "id": "liverpool-x-psv-eindhoven",
+    "league": "UEFA Champions League",
+    "homeTeam": "Liverpool",
+    "awayTeam": "PSV Eindhoven",
+    "date": "2025-11-26",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Mais de 2.5 gols"
+  },
+  {
+    "id": "arsenal-x-bayern-munich",
+    "league": "UEFA Champions League",
+    "homeTeam": "Arsenal",
+    "awayTeam": "Bayern Munich",
+    "date": "2025-11-26",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "BTTS - Sim"
+  }
+]
