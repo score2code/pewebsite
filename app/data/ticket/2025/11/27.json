@@ -1,0 +1,22 @@
+[
+  {
+    "id": "aston-villa-x-young-boys",
+    "league": "UEFA Europa League",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Young Boys",
+    "date": "2025-11-27",
+    "time": "14:45",
+    "timezone": "UTC",
+    "prediction": "Mais de 2.5 gols"
+  },
+  {
+    "id": "rangers-x-braga",
+    "league": "UEFA Europa League",
+    "homeTeam": "Rangers",
+    "awayTeam": "Braga",
+    "date": "2025-11-27",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "BTTS - Sim"
+  }
+]
