@@ -45,6 +45,9 @@ export default async function HomePage() {
     // Estatísticas unificadas para o dashboard (soccer + football + ticket), com deduplicação e série diária
     const dashboardStats = await getDashboardStats();
     const ticketStats = await getTicketStats();
+    // Filtrar apenas análises com status pendente para a Home (Últimas Análises)
+    const latestPendingSoccer = latestPicksSoccer.filter((p) => p.status === 'pending');
+    const latestPendingFootball = latestPicksFootball.filter((p) => p.status === 'pending');
 
     return (
         <div className="min-h-screen font-sans pt-12">
@@ -88,9 +91,9 @@ export default async function HomePage() {
                     <h2 className="text-3xl font-bold text-dark-900 dark:text-light-100 text-center mb-8">
                         Últimas <span className="text-purple-600 dark:text-purple-400">Análises</span>
                     </h2>
-                    {(latestPicksSoccer.length + latestPicksFootball.length) > 0 ? (
+                    {(latestPendingSoccer.length + latestPendingFootball.length) > 0 ? (
                         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                            {latestPicksSoccer.slice(0, 3).map((pick) => (
+                            {latestPendingSoccer.slice(0, 3).map((pick) => (
                                 <MemoizedPickCard
                                     key={`soccer-${pick.id}`}
                                     pick={pick}
@@ -100,7 +103,7 @@ export default async function HomePage() {
                                     sportSegment="futebol"
                                 />
                             ))}
-                            {latestPicksFootball.slice(0, 3).map((pick) => (
+                            {latestPendingFootball.slice(0, 3).map((pick) => (
                                 <MemoizedPickCard
                                     key={`football-${pick.id}`}
                                     pick={pick}
