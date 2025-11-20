@@ -50,23 +50,56 @@ export const generateStaticParams = async () => {
   return params;
 };
 
+// Lista todas as datas com arquivos disponíveis para futebol americano
+async function listAvailableDates(): Promise<string[]> {
+  const dates: string[] = [];
+  try {
+    const baseDir = path.join(process.cwd(), 'app', 'data', 'football');
+    const years = await fs.readdir(baseDir).catch(() => []);
+    for (const y of years) {
+      const yearDir = path.join(baseDir, y);
+      const months = await fs.readdir(yearDir).catch(() => []);
+      for (const m of months) {
+        const monthDir = path.join(yearDir, m);
+        const files = await fs.readdir(monthDir).catch(() => []);
+        for (const f of files) {
+          if (f.endsWith('.json')) {
+            const day = f.replace('.json', '');
+            dates.push(`${y}-${m}-${day}`);
+          }
+        }
+      }
+    }
+  } catch {}
+  return dates.sort();
+}
+
 export default async function AmericanFootballByDatePage({ params }: { params: { date: string } }) {
   const date = params.date;
   const picks = await loadPicksData(date, 'football');
-  const prevDate = changeDate(date, -1);
-  const nextDate = changeDate(date, 1);
+  const available = await listAvailableDates();
+  const prevDate = available.filter(d => d < date).pop() || null;
+  const nextDate = available.find(d => d > date) || null;
 
   return (
     <div className="min-h-screen pt-8 px-4">
       <div className="max-w-4xl mx-auto">
         <Breadcrumb className="mb-4" />
         <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm flex items-center justify-between">
-          <a href={`/futebol-americano/${prevDate}`} aria-label="Dia Anterior" className="p-2 rounded-lg text-dark-900/70 dark:text-light-100/70 hover:bg-light-200 dark:hover:bg-dark-700 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500">◀</a>
+          {prevDate ? (
+            <a href={`/futebol-americano/${prevDate}`} aria-label="Dia Anterior" className="p-2 rounded-lg text-dark-900/70 dark:text-light-100/70 hover:bg-light-200 dark:hover:bg-dark-700 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500">◀</a>
+          ) : (
+            <span aria-disabled="true" className="p-2 rounded-lg text-dark-900/30 dark:text-light-100/30 opacity-40 cursor-not-allowed">◀</span>
+          )}
           <div className="text-center">
             <h1 className="text-3xl font-extrabold text-dark-900 dark:text-light-100">Palpites de Futebol Americano</h1>
             <p className="text-dark-900/70 dark:text-light-100/70">{formatDateDisplay(date)}</p>
           </div>
-          <a href={`/futebol-americano/${nextDate}`} aria-label="Próximo Dia" className="p-2 rounded-lg text-dark-900/70 dark:text-light-100/70 hover:bg-light-200 dark:hover:bg-dark-700 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500">▶</a>
+          {nextDate ? (
+            <a href={`/futebol-americano/${nextDate}`} aria-label="Próximo Dia" className="p-2 rounded-lg text-dark-900/70 dark:text-light-100/70 hover:bg-light-200 dark:hover:bg-dark-700 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500">▶</a>
+          ) : (
+            <span aria-disabled="true" className="p-2 rounded-lg text-dark-900/30 dark:text-light-100/30 opacity-40 cursor-not-allowed">▶</span>
+          )}
         </div>
 
         {!picks.length && (
