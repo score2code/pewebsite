@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 type SeriesPoint = { label: string; value: number };
 
@@ -11,18 +11,37 @@ interface PerformanceChartProps {
 
 // Simple responsive bar chart using SVG, accent-aware
 const PerformanceChart: React.FC<PerformanceChartProps> = ({ series, height = 200 }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState<number>(600);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const update = () => setContainerWidth(el.clientWidth || 600);
+    update();
+    const ro = new ResizeObserver(() => update());
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
   const maxValue = Math.max(100, ...series.map(s => s.value));
   const barGap = 8; // px gap between bars
-  const barWidth = Math.max(12, Math.floor((600 - (series.length - 1) * barGap) / series.length));
-  const chartWidth = series.length * barWidth + (series.length - 1) * barGap;
   const padding = 24;
-  const width = chartWidth + padding * 2;
+  const minBarWidth = 12;
+  const n = series.length;
+  const availableWidth = Math.max(0, containerWidth - padding * 2);
+  const barWidthCandidate = n > 0 ? Math.floor((availableWidth - (n - 1) * barGap) / n) : minBarWidth;
+  const barWidth = Math.max(minBarWidth, barWidthCandidate);
+  const chartWidth = n * barWidth + (n - 1) * barGap;
+  const svgWidth = chartWidth + padding * 2;
+  const fitsContainer = barWidthCandidate >= minBarWidth;
+  const width = fitsContainer ? containerWidth : svgWidth;
   const innerHeight = height - padding * 2;
 
   const getBarHeight = (v: number) => Math.round((v / maxValue) * innerHeight);
 
   return (
-    <div className="w-full overflow-x-auto">
+    <div ref={containerRef} className="w-full overflow-x-auto">
       <svg
         width={width}
         height={height}
