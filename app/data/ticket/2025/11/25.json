@@ -1,0 +1,22 @@
+[
+  {
+    "id": "napoli-x-qarabag",
+    "league": "UEFA Champions League",
+    "homeTeam": "Napoli",
+    "awayTeam": "Qarabag",
+    "date": "2025-11-25",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1"
+  },
+  {
+    "id": "manchester-city-x-bayer-leverkusen",
+    "league": "UEFA Champions League",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Bayer Leverkusen",
+    "date": "2025-11-25",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Mais de 2.5 gols"
+  }
+]
