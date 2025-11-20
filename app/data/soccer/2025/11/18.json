@@ -10,7 +10,9 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Botafogo com maior controle e elenco superior; 1X cobre empate com boa probabilidade em jogo de mando forte."
+    "analysis": "Botafogo com maior controle e elenco superior; 1X cobre empate com boa probabilidade em jogo de mando forte.",
+    "hit": true,
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "coreia-do-sul-x-gana",
@@ -23,7 +25,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Duas seleções com transições rápidas e criação razoável; probabilidade equilibrada de ambos converterem."
+    "analysis": "Duas seleções com transições rápidas e criação razoável; probabilidade equilibrada de ambos converterem.",
+    "hit": false,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "brasil-x-tunisia",
@@ -36,7 +40,9 @@
     "prediction": "Handicap Asiático: Brasil -1.5",
     "confidence": 69,
     "status": "pending",
-    "analysis": "Diferença técnica clara e domínio de posse; expectativa de vitória por dois gols ou mais."
+    "analysis": "Diferença técnica clara e domínio de posse; expectativa de vitória por dois gols ou mais.",
+    "hit": false,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "mexico-x-paraguai",
@@ -49,7 +55,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Histórico de partidas mais fechadas; controle defensivo e baixa conversão sugerem under moderado."
+    "analysis": "Histórico de partidas mais fechadas; controle defensivo e baixa conversão sugerem under moderado.",
+    "hit": false,
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "kosovo-x-suica",
@@ -62,7 +70,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Suíça superior taticamente e em elenco; alta probabilidade de controlar e vencer fora."
+    "analysis": "Suíça superior taticamente e em elenco; alta probabilidade de controlar e vencer fora.",
+    "hit": false,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "suecia-x-eslovenia",
@@ -75,7 +85,9 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Mando sueco com boa consistência defensiva; 1X cobre empate em cenário de controle do jogo."
+    "analysis": "Mando sueco com boa consistência defensiva; 1X cobre empate em cenário de controle do jogo.",
+    "hit": true,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "escocia-x-dinamarca",
@@ -88,7 +100,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Duas defesas organizadas e ritmo físico; tendência de jogo truncado abaixo de 3 gols."
+    "analysis": "Duas defesas organizadas e ritmo físico; tendência de jogo truncado abaixo de 3 gols.",
+    "hit": false,
+    "reason": "Placar: 4 x 2"
   },
   {
     "id": "espanha-x-turquia",
@@ -101,7 +115,9 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 68,
     "status": "pending",
-    "analysis": "Espanha com posse e alta criação; Turquia pode contribuir em transições — cenário propício para 3+ gols."
+    "analysis": "Espanha com posse e alta criação; Turquia pode contribuir em transições — cenário propício para 3+ gols.",
+    "hit": true,
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "austria-x-bosnia-e-herzegovina",
@@ -114,7 +130,9 @@
     "prediction": "Total de Gols: Mais de 1.5",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Áustria agressiva em casa; linha de 1.5 acessível pela diferença técnica e dinâmica ofensiva."
+    "analysis": "Áustria agressiva em casa; linha de 1.5 acessível pela diferença técnica e dinâmica ofensiva.",
+    "hit": true,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "fortaleza-ceif-x-deportes-tolima",
@@ -127,6 +145,8 @@
     "prediction": "Dupla Chance: X2",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Tolima mais sólido e experiente; boa probabilidade de pontuar fora (empate ou vitória)."
+    "analysis": "Tolima mais sólido e experiente; boa probabilidade de pontuar fora (empate ou vitória).",
+    "hit": true,
+    "reason": "Placar: 0 x 1"
   }
 ]

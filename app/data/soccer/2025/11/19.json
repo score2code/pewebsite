@@ -10,7 +10,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 68,
     "status": "pending",
-    "analysis": "Palmeiras favorito em casa, controle de posse e maior criação; vitória do mandante é a linha principal."
+    "analysis": "Palmeiras favorito em casa, controle de posse e maior criação; vitória do mandante é a linha principal.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "fluminense-x-flamengo",
@@ -23,7 +25,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Clássico com propostas ofensivas e defesas que concedem; alta probabilidade de ambos converterem."
+    "analysis": "Clássico com propostas ofensivas e defesas que concedem; alta probabilidade de ambos converterem.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "santos-x-mirassol",
@@ -36,7 +40,9 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Mando do Santos com maior volume e estabilidade; 1X cobre empate com boa segurança."
+    "analysis": "Mando do Santos com maior volume e estabilidade; 1X cobre empate com boa segurança.",
+    "hit": true,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "gremio-rs-x-vasco-da-gama",
@@ -49,7 +55,9 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Grêmio mais sólido em casa; cenário cobre empate com probabilidade elevada de pontuar."
+    "analysis": "Grêmio mais sólido em casa; cenário cobre empate com probabilidade elevada de pontuar.",
+    "hit": true,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "vila-nova-go-x-volta-redonda",
@@ -62,7 +70,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Jogo com tendência de equilíbrio e baixa conversão; perfil de Copa favorece prudência ofensiva."
+    "analysis": "Jogo com tendência de equilíbrio e baixa conversão; perfil de Copa favorece prudência ofensiva.",
+    "hit": false,
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "atletico-grau-x-sporting-cristal",
@@ -75,7 +85,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 67,
     "status": "pending",
-    "analysis": "Sporting Cristal tecnicamente superior e com melhor forma; alta probabilidade de vitória fora."
+    "analysis": "Sporting Cristal tecnicamente superior e com melhor forma; alta probabilidade de vitória fora.",
+    "hit": true,
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "junior-barranquilla-x-independiente-medellin",
@@ -88,33 +100,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Duas equipes com boa produção ofensiva e transições; probabilidade consistente de BTTS."
-  },
-  {
-    "id": "persijap-jepara-x-semen-padang",
-    "league": "Liga 2 Indonésia",
-    "homeTeam": "Persijap Jepara",
-    "awayTeam": "Semen Padang",
-    "date": "2025-11-19",
-    "time": "05:30",
-    "timezone": "GMT+7",
-    "prediction": "Total de Gols: Menos de 2.5",
-    "confidence": 61,
-    "status": "pending",
-    "analysis": "Liga com menor conversão média; jogo tende a ser travado e com poucos gols."
-  },
-  {
-    "id": "persija-jakarta-x-persik-kediri",
-    "league": "Liga 1 Indonésia",
-    "homeTeam": "Persija Jakarta",
-    "awayTeam": "Persik Kediri",
-    "date": "2025-11-19",
-    "time": "09:00",
-    "timezone": "GMT+7",
-    "prediction": "Ambas Marcam (BTTS Sim)",
-    "confidence": 64,
-    "status": "pending",
-    "analysis": "Confronto com potencial ofensivo dos dois lados; probabilidade de ambos converterem é razoável."
+    "analysis": "Duas equipes com boa produção ofensiva e transições; probabilidade consistente de BTTS.",
+    "hit": false,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "sloven-ruma-x-estrela-vermelha",
@@ -127,6 +115,8 @@
     "prediction": "Handicap Asiático: Estrela Vermelha -2.5",
     "confidence": 70,
     "status": "pending",
-    "analysis": "Grande desnível técnico; Estrela Vermelha deve impor goleada com forte domínio."
+    "analysis": "Grande desnível técnico; Estrela Vermelha deve impor goleada com forte domínio.",
+    "hit": false,
+    "reason": "Placar: 0 x 2"
   }
 ]

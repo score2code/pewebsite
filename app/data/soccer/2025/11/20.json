@@ -1,5 +1,33 @@
 [
   {
+    "id": "persijap-jepara-x-semen-padang",
+    "league": "Liga 2 Indonésia",
+    "homeTeam": "Persijap Jepara",
+    "awayTeam": "Semen Padang",
+    "date": "2025-11-20",
+    "time": "05:30",
+    "timezone": "GMT+7",
+    "prediction": "Total de Gols: Menos de 2.5",
+    "confidence": 61,
+    "status": "pending",
+    "analysis": "Liga com menor conversão média; jogo tende a ser travado e com poucos gols.",
+    "hit": false,
+    "reason": "Placar: 1 x 2"
+  },
+  {
+    "id": "persija-jakarta-x-persik-kediri",
+    "league": "Liga 1 Indonésia",
+    "homeTeam": "Persija Jakarta",
+    "awayTeam": "Persik Kediri",
+    "date": "2025-11-20",
+    "time": "09:00",
+    "timezone": "GMT+7",
+    "prediction": "Ambas Marcam (BTTS Sim)",
+    "confidence": 64,
+    "status": "pending",
+    "analysis": "Confronto com potencial ofensivo dos dois lados; probabilidade de ambos converterem é razoável."
+  },
+  {
     "id": "juventude-x-cruzeiro-mg",
     "league": "Brasileirão Série A",
     "homeTeam": "Juventude",
