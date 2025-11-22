@@ -49,7 +49,9 @@
     "prediction": "Dupla Chance: X2",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Atlético com maior densidade técnica; boa probabilidade de pontuar (empate ou vitória)."
+    "analysis": "Atlético com maior densidade técnica; boa probabilidade de pontuar (empate ou vitória).",
+    "hit": true,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "burnley-x-chelsea",
@@ -62,7 +64,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Diferença técnica e elenco favorecem o Chelsea mesmo fora; controle de posse e criação."
+    "analysis": "Diferença técnica e elenco favorecem o Chelsea mesmo fora; controle de posse e criação.",
+    "hit": true,
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "newcastle-x-manchester-city",
@@ -75,7 +79,9 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Confronto com alto volume ofensivo e bolas paradas; tendência de 3+ gols."
+    "analysis": "Confronto com alto volume ofensivo e bolas paradas; tendência de 3+ gols.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "liverpool-x-nottingham-forest",
@@ -88,7 +94,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 67,
     "status": "pending",
-    "analysis": "Liverpool dominante em casa e superior em produção; alta probabilidade de vitória."
+    "analysis": "Liverpool dominante em casa e superior em produção; alta probabilidade de vitória.",
+    "hit": false,
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "wolverhampton-x-crystal-palace",
@@ -101,7 +109,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Ritmo moderado e controle defensivo dos dois lados; menor conversão em chances claras."
+    "analysis": "Ritmo moderado e controle defensivo dos dois lados; menor conversão em chances claras.",
+    "hit": true,
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "barcelona-x-athletic-bilbao",
@@ -114,7 +124,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 67,
     "status": "pending",
-    "analysis": "Barcelona dominante em casa; posse, pressão e criação sustentam a vitória do mandante."
+    "analysis": "Barcelona dominante em casa; posse, pressão e criação sustentam a vitória do mandante.",
+    "hit": true,
+    "reason": "Placar: 4 x 0"
   },
   {
     "id": "villarreal-x-mallorca",
@@ -127,6 +139,8 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Mallorca costuma reduzir ritmo e espaço; partida tende a baixa produção de gols."
+    "analysis": "Mallorca costuma reduzir ritmo e espaço; partida tende a baixa produção de gols.",
+    "hit": false,
+    "reason": "Placar: 2 x 1"
   }
 ]

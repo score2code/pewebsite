@@ -10,7 +10,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Derbi com tendência de cautela e linhas compactas; menor volume de finalizações claras."
+    "analysis": "Derbi com tendência de cautela e linhas compactas; menor volume de finalizações claras.",
+    "hit": true,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "mainz-x-hoffenheim",
@@ -23,7 +25,9 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Hoffenheim costuma produzir em transições e bolas paradas; ritmo favorece linha de 3+ gols."
+    "analysis": "Hoffenheim costuma produzir em transições e bolas paradas; ritmo favorece linha de 3+ gols.",
+    "hit": false,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "nice-x-olympique-marseille",
@@ -36,7 +40,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Nice de bloco sólido e controle defensivo; jogo tende a baixa conversão."
+    "analysis": "Nice de bloco sólido e controle defensivo; jogo tende a baixa conversão.",
+    "hit": false,
+    "reason": "Placar: 1 x 5"
   },
   {
     "id": "al-ittihad-x-al-riyadh",
@@ -49,7 +55,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Mandante com superioridade técnica e poder ofensivo; alta probabilidade de vitória."
+    "analysis": "Mandante com superioridade técnica e poder ofensivo; alta probabilidade de vitória.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "al-ahli-x-al-qadisiyah",
@@ -62,7 +70,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Al Ahli com elenco superior e bom momento; mando favorece controle do jogo."
+    "analysis": "Al Ahli com elenco superior e bom momento; mando favorece controle do jogo.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "standard-liege-x-zulte-waregem",
@@ -75,7 +85,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Standard mais consistente e com apoio local; vantagem técnica indica vitória do mandante."
+    "analysis": "Standard mais consistente e com apoio local; vantagem técnica indica vitória do mandante.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "slaven-belupo-x-vukovar",
@@ -88,7 +100,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Partida com perfil tático e ritmo moderado; poucas chances claras esperadas."
+    "analysis": "Partida com perfil tático e ritmo moderado; poucas chances claras esperadas.",
+    "hit": false,
+    "reason": "Placar: 4 x 1"
   },
   {
     "id": "silkeborg-x-agf-aarhus",
@@ -101,7 +115,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Confronto equilibrado com criação dos dois lados; probabilidade alta de gols para ambos."
+    "analysis": "Confronto equilibrado com criação dos dois lados; probabilidade alta de gols para ambos.",
+    "hit": false,
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "deportivo-cuenca-x-cd-el-nacional",
@@ -114,7 +130,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Times com tendência a jogos abertos e transições; cenário favorece gols dos dois lados."
+    "analysis": "Times com tendência a jogos abertos e transições; cenário favorece gols dos dois lados.",
+    "hit": false,
+    "reason": "Placar: 5 x 0"
   },
   {
     "id": "kfum-oslo-x-bodo-glimt",
@@ -127,6 +145,8 @@
     "prediction": "Resultado Final: 2",
     "confidence": 67,
     "status": "pending",
-    "analysis": "Bodo/Glimt dominante e com maior eficiência ofensiva; boa probabilidade de vitória fora."
+    "analysis": "Bodo/Glimt dominante e com maior eficiência ofensiva; boa probabilidade de vitória fora.",
+    "hit": true,
+    "reason": "Placar: 1 x 2"
   }
 ]
