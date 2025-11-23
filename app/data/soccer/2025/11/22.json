@@ -10,7 +10,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Confronto de alta exigência com blocos compactos; tendência de poucos gols."
+    "analysis": "Confronto de alta exigência com blocos compactos; tendência de poucos gols.",
+    "hit": false,
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "flamengo-x-rb-bragantino",
@@ -23,7 +25,9 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Duas equipes com criação elevada e transições rápidas; cenário para 3+ gols."
+    "analysis": "Duas equipes com criação elevada e transições rápidas; cenário para 3+ gols.",
+    "hit": true,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "palmeiras-x-fluminense",
@@ -36,7 +40,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Jogo de controle e disciplina defensiva; linha de poucos gols favorecida."
+    "analysis": "Jogo de controle e disciplina defensiva; linha de poucos gols favorecida.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "ca-lanus-x-atletico-mg",
