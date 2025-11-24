@@ -1,0 +1,22 @@
+[
+  {
+    "id": "psv-eindhoven-x-volendam",
+    "league": "Holanda - Eredivisie",
+    "homeTeam": "PSV Eindhoven",
+    "awayTeam": "Volendam",
+    "date": "2025-11-30",
+    "time": "08:15",
+    "timezone": "UTC",
+    "prediction": "Handicap: PSV -2.0"
+  },
+  {
+    "id": "girona-x-real-madrid",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Girona",
+    "awayTeam": "Real Madrid",
+    "date": "2025-11-30",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Handicap: Real Madrid -1.0"
+  }
+]
