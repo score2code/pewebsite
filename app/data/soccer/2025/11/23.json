@@ -10,7 +10,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Mandante com maior controle e criação; cenário favorece vitória em casa."
+    "analysis": "Mandante com maior controle e criação; cenário favorece vitória em casa.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "bahia-x-vasco-da-gama",
@@ -23,7 +25,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Confronto com transições e bolas paradas fortes dos dois lados; boa chance de gols para ambos."
+    "analysis": "Confronto com transições e bolas paradas fortes dos dois lados; boa chance de gols para ambos.",
+    "hit": false,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "cruzeiro-mg-x-corinthians",
@@ -36,7 +40,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Jogo tende a controle e cautela; histórico recente indica baixa conversão em chances claras."
+    "analysis": "Jogo tende a controle e cautela; histórico recente indica baixa conversão em chances claras.",
+    "hit": false,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "leeds-united-x-aston-villa",
@@ -49,7 +55,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Ritmo intenso e criação dos dois lados; alta probabilidade de gols de ambas equipes."
+    "analysis": "Ritmo intenso e criação dos dois lados; alta probabilidade de gols de ambas equipes.",
+    "hit": true,
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "arsenal-x-tottenham",
@@ -62,7 +70,9 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Derbi com alto volume ofensivo e pressão; tendência de 3+ gols."
+    "analysis": "Derbi com alto volume ofensivo e pressão; tendência de 3+ gols.",
+    "hit": true,
+    "reason": "Placar: 4 x 1"
   },
   {
     "id": "betis-x-girona",
@@ -75,7 +85,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Ambos têm criação consistente e espaço entrelinhas; bom cenário para gols dos dois lados."
+    "analysis": "Ambos têm criação consistente e espaço entrelinhas; bom cenário para gols dos dois lados.",
+    "hit": true,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "getafe-x-atletico-madrid",
@@ -88,7 +100,9 @@
     "prediction": "Dupla Chance: X2",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Atlético mais estável e eficiente; boa probabilidade de pontuar fora (empate ou vitória)."
+    "analysis": "Atlético mais estável e eficiente; boa probabilidade de pontuar fora (empate ou vitória).",
+    "hit": true,
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "elche-x-real-madrid",
@@ -101,7 +115,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 67,
     "status": "pending",
-    "analysis": "Superioridade técnica do visitante e alta produção ofensiva; forte probabilidade de vitória fora."
+    "analysis": "Superioridade técnica do visitante e alta produção ofensiva; forte probabilidade de vitória fora.",
+    "hit": false,
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "rb-leipzig-x-werder-bremen",
@@ -114,7 +130,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 67,
     "status": "pending",
-    "analysis": "Leipzig dominante em casa com pressão e finalização acima da média; tende a vitória."
+    "analysis": "Leipzig dominante em casa com pressão e finalização acima da média; tende a vitória.",
+    "hit": true,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "auxerre-x-olympique-lyon",
@@ -127,6 +145,8 @@
     "prediction": "Resultado Final: 2",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Lyon com maior densidade técnica e criação; visitante com boa chance de vitória."
+    "analysis": "Lyon com maior densidade técnica e criação; visitante com boa chance de vitória.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   }
 ]

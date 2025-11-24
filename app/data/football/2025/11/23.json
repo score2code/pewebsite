@@ -11,7 +11,9 @@
     "prediction": "Handicap: Kansas City Chiefs -3.5",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Chiefs superiores em EPA por jogada e terceira descida; handicap -3.5 captura vantagem ofensiva e pressão sobre QB dos Colts."
+    "analysis": "Chiefs superiores em EPA por jogada e terceira descida; handicap -3.5 captura vantagem ofensiva e pressão sobre QB dos Colts.",
+    "hit": false,
+    "reason": "Placar: 23 x 20"
   },
   {
     "id": "tennessee-titans-x-seattle-seahawks",
@@ -25,7 +27,9 @@
     "prediction": "Total de Pontos: Mais de 43.5",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Seahawks explosivos em play-action e Titans cedendo big plays; ritmo e eficiência sugerem placar acima de 43.5 pontos."
+    "analysis": "Seahawks explosivos em play-action e Titans cedendo big plays; ritmo e eficiência sugerem placar acima de 43.5 pontos.",
+    "hit": true,
+    "reason": "Placar: 24 x 30"
   },
   {
     "id": "baltimore-ravens-x-new-york-jets",
@@ -39,7 +43,9 @@
     "prediction": "Handicap: Baltimore Ravens -6.5",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Ravens dominam trincheiras e aplicam blitz eficiente; -6.5 reflete vantagem consistente contra ataque pouco produtivo dos Jets."
+    "analysis": "Ravens dominam trincheiras e aplicam blitz eficiente; -6.5 reflete vantagem consistente contra ataque pouco produtivo dos Jets.",
+    "hit": true,
+    "reason": "Placar: 23 x 10"
   },
   {
     "id": "chicago-bears-x-pittsburgh-steelers",
@@ -53,7 +59,9 @@
     "prediction": "Total de Pontos: Menos de 41.5",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Defesas com pressão e ataques inconsistentes; tendência de jogo truncado com poucos big plays, sustentando under 41.5."
+    "analysis": "Defesas com pressão e ataques inconsistentes; tendência de jogo truncado com poucos big plays, sustentando under 41.5.",
+    "hit": false,
+    "reason": "Placar: 31 x 28"
   },
   {
     "id": "green-bay-packers-x-minnesota-vikings",
@@ -67,7 +75,9 @@
     "prediction": "Total de Pontos: Mais de 45.5",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Rotas intermediárias e vulnerabilidades em tackles abrem espaço para pontos; ritmo sugere over 45.5."
+    "analysis": "Rotas intermediárias e vulnerabilidades em tackles abrem espaço para pontos; ritmo sugere over 45.5.",
+    "hit": false,
+    "reason": "Placar: 23 x 6"
   },
   {
     "id": "detroit-lions-x-new-york-giants",
@@ -81,7 +91,9 @@
     "prediction": "Handicap: Detroit Lions -4.5",
     "confidence": 65,
     "status": "pending",
-    "analysis": "OL dos Lions dominante e script ofensivo eficaz; -4.5 captura superioridade contra ataque pouco consistente dos Giants."
+    "analysis": "OL dos Lions dominante e script ofensivo eficaz; -4.5 captura superioridade contra ataque pouco consistente dos Giants.",
+    "hit": true,
+    "reason": "Placar: 34 x 27"
   },
   {
     "id": "cincinnati-bengals-x-new-england-patriots",
@@ -95,7 +107,9 @@
     "prediction": "Handicap: Cincinnati Bengals -4.5",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Bengals eficientes em passes rápidos e YAC; -4.5 aproveita vantagem em terceiras descidas contra ataque dos Patriots de baixa explosão."
+    "analysis": "Bengals eficientes em passes rápidos e YAC; -4.5 aproveita vantagem em terceiras descidas contra ataque dos Patriots de baixa explosão.",
+    "hit": false,
+    "reason": "Placar: 20 x 26"
   },
   {
     "id": "arizona-cardinals-x-jacksonville-jaguars",
@@ -109,7 +123,9 @@
     "prediction": "Total de Pontos: Mais de 45.5",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Jaguars equilibrados e Cardinals concedendo big plays; ritmo e explosividade sustentam over 45.5."
+    "analysis": "Jaguars equilibrados e Cardinals concedendo big plays; ritmo e explosividade sustentam over 45.5.",
+    "hit": true,
+    "reason": "Placar: 24 x 27"
   },
   {
     "id": "las-vegas-raiders-x-cleveland-browns",
@@ -123,7 +139,9 @@
     "prediction": "Total de Pontos: Menos de 42.5",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Browns com defesa física e pass rush forte; perfil sugere jogo amarrado e under 42.5."
+    "analysis": "Browns com defesa física e pass rush forte; perfil sugere jogo amarrado e under 42.5.",
+    "hit": true,
+    "reason": "Placar: 10 x 24"
   },
   {
     "id": "new-orleans-saints-x-atlanta-falcons",
@@ -137,7 +155,9 @@
     "prediction": "Handicap: New Orleans Saints -2.5",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Saints estáveis em red zone e defesa; -2.5 capta vantagem casa contra Falcons irregulares sob pressão interna."
+    "analysis": "Saints estáveis em red zone e defesa; -2.5 capta vantagem casa contra Falcons irregulares sob pressão interna.",
+    "hit": false,
+    "reason": "Placar: 10 x 24"
   },
   {
     "id": "dallas-cowboys-x-philadelphia-eagles",
@@ -151,7 +171,9 @@
     "prediction": "Handicap: Philadelphia Eagles +2.5",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Linha ofensiva dos Eagles dominante e RPO eficiente; +2.5 oferece proteção em jogo equilibrado contra Cowboys."
+    "analysis": "Linha ofensiva dos Eagles dominante e RPO eficiente; +2.5 oferece proteção em jogo equilibrado contra Cowboys.",
+    "hit": false,
+    "reason": "Placar: 24 x 21"
   },
   {
     "id": "los-angeles-rams-x-tampa-bay-buccaneers",
@@ -165,6 +187,8 @@
     "prediction": "Total de Pontos: Menos de 44.5",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Jogo tende a ser controlado taticamente, menos explosões; under 44.5 ajusta à pressão defensiva e ritmo moderado das equipes."
+    "analysis": "Jogo tende a ser controlado taticamente, menos explosões; under 44.5 ajusta à pressão defensiva e ritmo moderado das equipes.",
+    "hit": true,
+    "reason": "Placar: 31 x 7"
   }
 ]
