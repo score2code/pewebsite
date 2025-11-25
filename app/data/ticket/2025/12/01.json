@@ -1,0 +1,22 @@
+[
+  {
+    "id": "gorica-x-dinamo-zagreb",
+    "league": "Croácia - 1. HNL",
+    "homeTeam": "Gorica",
+    "awayTeam": "Dinamo Zagreb",
+    "date": "2025-12-01",
+    "time": "14:00",
+    "timezone": "UTC",
+    "prediction": "Handicap: Dinamo Zagreb -1.5"
+  },
+  {
+    "id": "brondby-x-fredericia",
+    "league": "Dinamarca - Superliga",
+    "homeTeam": "Brøndby",
+    "awayTeam": "Fredericia",
+    "date": "2025-12-01",
+    "time": "15:00",
+    "timezone": "UTC",
+    "prediction": "Handicap: Brøndby -1.5"
+  }
+]
