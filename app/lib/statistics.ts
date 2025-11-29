@@ -11,7 +11,6 @@ type BasePick = {
   time: string;
   timezone?: string;
   prediction: string;
-  hit?: boolean;
   confidence?: number;
   status?: string;
 };
@@ -98,12 +97,12 @@ export async function getDashboardStats() {
   const allPicks = unifiedDaily.flatMap(d => d.picks);
 
   const totalPicks = allPicks.length;
-  // Para taxa de acerto, consideramos apenas picks com hit definido
-  const settledPicks = allPicks.filter(p => p.hit !== undefined);
-  const totalHits = settledPicks.filter(p => p.hit === true).length;
+  // Para taxa de acerto, consideramos apenas picks com status green/red
+  const settledPicks = allPicks.filter(p => p.status === 'green' || p.status === 'red');
+  const totalHits = settledPicks.filter(p => p.status === 'green').length;
   const hitRate = settledPicks.length > 0 ? (totalHits / settledPicks.length) * 100 : 0;
-  // Para pendentes, exclui adiados/void
-  const resolvedForPending = allPicks.filter(p => p.hit !== undefined || p.status === 'postponed' || p.status === 'void');
+  // Para pendentes, exclui adiados/void e resolvidos
+  const resolvedForPending = allPicks.filter(p => p.status === 'green' || p.status === 'red' || p.status === 'postponed' || p.status === 'void');
   const pendingCount = totalPicks - resolvedForPending.length;
 
   // Gera dados para o gráfico de desempenho (últimos 30 dias com atividade)
@@ -111,8 +110,8 @@ export async function getDashboardStats() {
     // Formatar label sem timezone para evitar dia desalinhado
     const [y, m, d] = day.date.split('-');
     const label = `${d}/${m}`;
-    const daySettled = day.picks.filter(p => p.hit !== undefined);
-    const dayHits = daySettled.filter(p => p.hit === true).length;
+    const daySettled = day.picks.filter(p => p.status === 'green' || p.status === 'red');
+    const dayHits = daySettled.filter(p => p.status === 'green').length;
     const pct = daySettled.length > 0 ? (dayHits / daySettled.length) * 100 : 0;
     return {
       label,
@@ -134,15 +133,15 @@ export async function getTicketStats() {
 
   const totalTickets = ticketDaily.length;
 
-  // Classificação ignora palpites adiados/void; só avalia os demais
+  // Classificação ignora adiados/void; avalia green/red
   const classifyTicket = (picks: BasePick[]): 'win' | 'loss' | 'pending' | 'void' => {
     const evaluated = picks.filter(p => p.status !== 'postponed' && p.status !== 'void');
     // Se todos os palpites do bilhete forem adiados/void, o bilhete é 'void'
     if (evaluated.length === 0 && picks.length > 0) return 'void';
-    const hasFalse = evaluated.some(p => p.hit === false);
-    const allTrue = evaluated.length > 0 && evaluated.every(p => p.hit === true);
-    if (allTrue) return 'win';
-    if (hasFalse) return 'loss';
+    const hasRed = evaluated.some(p => p.status === 'red');
+    const allGreen = evaluated.length > 0 && evaluated.every(p => p.status === 'green');
+    if (allGreen) return 'win';
+    if (hasRed) return 'loss';
     return 'pending';
   };
 

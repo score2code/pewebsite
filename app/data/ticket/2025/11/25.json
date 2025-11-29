@@ -8,7 +8,7 @@
     "time": "17:00",
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -20,7 +20,7 @@
     "time": "17:00",
     "timezone": "UTC",
     "prediction": "Mais de 2.5 gols",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 0 x 2"
   }
 ]

@@ -10,9 +10,8 @@
     "awayTeam": "Club América",
     "prediction": "BTTS - Sim",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Duas equipes com ótimo ataque e boa chegada na área; tendência de chances claras para ambos e gols.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -26,9 +25,8 @@
     "awayTeam": "Ferencvaros",
     "prediction": "Resultado Final: 1",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Mando forte do Fenerbahce e boa pressão inicial; Ferencvaros tende a baixar linhas e sofrer em bolas aéreas.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -42,9 +40,8 @@
     "awayTeam": "Celtic",
     "prediction": "BTTS - Sim",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Feyenoord cria por amplitude e cruzamentos; Celtic vertical e agressivo. Cenário favorável a ambos marcarem.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 1 x 3"
   },
   {
@@ -58,9 +55,8 @@
     "awayTeam": "Midtjylland",
     "prediction": "Resultado Final: 1",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Roma consistente defensivamente e com volume ofensivo em casa; Midtjylland deve sofrer sob pressão e bolas paradas.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -74,9 +70,8 @@
     "awayTeam": "Celta Vigo",
     "prediction": "Resultado Final: 2",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Celta superior tecnicamente e eficiente em transição; Ludogorets competitivo em casa, mas vulnerável a entrelinhas.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 3 x 2"
   },
   {
@@ -90,9 +85,8 @@
     "awayTeam": "Brann",
     "prediction": "Resultado Final: 1",
     "confidence": 62,
-    "status": "pending",
     "analysis": "PAOK forte no mando e em bolas paradas; Brann tende a ceder território e oportunidades.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -106,8 +100,8 @@
     "awayTeam": "Dinamo Zagreb",
     "prediction": "Resultado Final: 1",
     "confidence": 63,
-    "status": "pending",
-    "analysis": "Lille com boa organização e pressão; Dinamo resiste, mas deve sofrer em volume de finalizações contra bloco alto."
+    "analysis": "Lille com boa organização e pressão; Dinamo resiste, mas deve sofrer em volume de finalizações contra bloco alto.",
+    "status": "pending"
   },
   {
     "id": "aston-villa-x-young-boys",
@@ -120,9 +114,8 @@
     "awayTeam": "Young Boys",
     "prediction": "Mais de 2.5 gols",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Villa agressivo em casa e vertical; Young Boys responde em transições. Jogo com potencial para 3+ gols.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 4 x 0"
   },
   {
@@ -136,9 +129,8 @@
     "awayTeam": "Freiburg",
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Equipes com proposta ofensiva e transições constantes; defesas cedem em cruzamentos e segunda bola.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -152,9 +144,8 @@
     "awayTeam": "Nice",
     "prediction": "Resultado Final: 1",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Porto dominante no Dragão e eficaz em bola parada; Nice competitivo, mas menos eficiente fora.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -168,9 +159,8 @@
     "awayTeam": "Rayo Vallecano",
     "prediction": "BTTS - Sim",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Rayo agressivo em transições; Slovan forte em casa. Expectativa de chances claras para ambos.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -184,9 +174,8 @@
     "awayTeam": "Olympique Lyon",
     "prediction": "BTTS - Sim",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Maccabi pressionando alto; Lyon com qualidade na criação. Tendência de ambos marcarem.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 0 x 6"
   },
   {
@@ -200,9 +189,8 @@
     "awayTeam": "Utrecht",
     "prediction": "Resultado Final: 1",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Betis com boa posse e ataque posicional; Utrecht enfrenta dificuldade em manter linhas contra pressão sustentada.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -216,9 +204,8 @@
     "awayTeam": "Basel",
     "prediction": "Mais de 2.5 gols",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Genk e Basel com transições rápidas e boas bolas paradas — potencial para 3+ gols.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -232,9 +219,8 @@
     "awayTeam": "RB Salzburg",
     "prediction": "Menos de 2.5 gols",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Jogo de equilíbrio e linhas compactas; tendência de poucas grandes chances e placar baixo.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 4 x 1"
   },
   {
@@ -248,9 +234,8 @@
     "awayTeam": "FCSB",
     "prediction": "Resultado Final: 1",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Mando forte e pressão inicial do Estrela Vermelha; FCSB deve baixar blocos e sofrer em cruzamentos.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -264,9 +249,8 @@
     "awayTeam": "Sturm Graz",
     "prediction": "Menos de 2.5 gols",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Partida com tendência de controle e poucas chances claras; blocos médios bem organizados.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -280,9 +264,8 @@
     "awayTeam": "Malmo FF",
     "prediction": "Resultado Final: 1",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Forest com posse e criação em casa; Malmo enfrenta dificuldades defensivas contra pressão e amplitude.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -296,9 +279,8 @@
     "awayTeam": "Stuttgart",
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Jogo aberto com transições frequentes; defesas vulneráveis a segunda bola e cruzamentos.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 0 x 4"
   },
   {
@@ -312,9 +294,8 @@
     "awayTeam": "Braga",
     "prediction": "BTTS - Sim",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Rangers forte no mando e Braga perigoso em transição — alta chance de gols dos dois lados.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -328,9 +309,8 @@
     "awayTeam": "AEK Atenas",
     "prediction": "Resultado Final: 1",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Fiorentina com posse e controle territorial; AEK deve se fechar e ceder em volume.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -344,9 +324,8 @@
     "awayTeam": "Samsunspor",
     "prediction": "Mais de 2.5 gols",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Duas equipes com proposta ofensiva e defesas vulneráveis em transição — cenário para 3+ gols.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 2 x 2"
   },
   {
@@ -360,9 +339,8 @@
     "awayTeam": "Crystal Palace",
     "prediction": "BTTS - Sim",
     "confidence": 62,
-    "status": "pending",
+    "status": "green",
     "analysis": "Strasbourg encontra espaços em casa; Palace é perigoso em contra-ataque. Ambos devem criar chances.",
-    "hit": true,
     "reason": "Placar: 2 x 1"
   }
 ]

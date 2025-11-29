@@ -15,7 +15,7 @@ Cada arquivo por data contém uma lista (array) de objetos de palpite com o segu
 - `timezone` (string, opcional): sigla do fuso horário, ex.: `BRT`.
 - `prediction` (string): recomendação/mercado sugerido.
 - `confidence` (number): nível de confiança percentual (0–100).
-- `result` (string): estado do resultado (`Pending`, `Won`, `Lost`, etc.).
+- `status` (string): estado do palpite (`pending`, `green`, `red`, `postponed`, `void`).
 - `analysis` (string): resumo textual da análise principal.
 
 Observações:
@@ -38,7 +38,7 @@ Arquivo: `public/data/soccer/2025/11/04.json`
     "timezone": "BRT",
     "prediction": "Mais de 2.5 Gols",
     "confidence": 85,
-    "result": "Pending",
+    "status": "pending",
     "analysis": "O Corinthians tem demonstrado fragilidade defensiva nas últimas três partidas em casa..."
   },
   {
@@ -51,7 +51,7 @@ Arquivo: `public/data/soccer/2025/11/04.json`
     "timezone": "GMT",
     "prediction": "Ambos Marcam",
     "confidence": 78,
-    "result": "Pending",
+    "status": "pending",
     "analysis": "Clássico com duas das melhores linhas ofensivas da Europa..."
   }
 ]

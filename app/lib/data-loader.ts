@@ -38,6 +38,15 @@ export const changeDate = (currentDate: string, days: number): string => {
  * Load picks data from static JSON files
  */
 export const loadPicksData = async (date: string, sport: SportType): Promise<Pick[]> => {
+  // Normaliza status duplicado no texto JSON, priorizando 'green'/'red'
+  const normalizeStatusPriority = (txt: string): string => {
+    // Renomeia status não resolvidos para chaves auxiliares, para que 'green'/'red' permaneçam como 'status'
+    // Assim, em caso de duplicidade dentro do mesmo objeto, o parse final preserva 'green'/'red'
+    return txt
+      .replace(/"status"\s*:\s*"pending"/g, '"status_pending":"pending"')
+      .replace(/"status"\s*:\s*"postponed"/g, '"status_postponed":"postponed"')
+      .replace(/"status"\s*:\s*"void"/g, '"status_void":"void"');
+  };
   // No servidor, leia diretamente de app/data
   if (typeof window === 'undefined') {
     try {
@@ -49,7 +58,8 @@ export const loadPicksData = async (date: string, sport: SportType): Promise<Pic
       const filePath = pathMod.join(process.cwd(), 'app', 'data', sport, year, month, `${day}.json`);
       const file = await readFile(filePath, 'utf-8').catch(() => null);
       if (!file) return [];
-      const raw = JSON.parse(file);
+      const normalizedText = normalizeStatusPriority(file);
+      const raw = JSON.parse(normalizedText);
       const picks = Array.isArray(raw) ? raw : Array.isArray(raw?.data) ? raw.data : [];
       const validated = validatePickArray(picks);
       return validated.map(p => ({ ...p, date: p.date && p.date.length === 10 ? p.date : date }));
@@ -75,7 +85,9 @@ export const loadPicksData = async (date: string, sport: SportType): Promise<Pic
       console.warn(`[client] Content-Type inválido para ${url}: ${contentType}`);
       return [];
     }
-    const raw = await res.json();
+    const text = await res.text();
+    const normalizedText = normalizeStatusPriority(text);
+    const raw = JSON.parse(normalizedText);
     const picks = Array.isArray(raw) ? raw : Array.isArray(raw?.data) ? raw.data : [];
     const validated = validatePickArray(picks);
     return validated.map(p => ({ ...p, date: p.date && p.date.length === 10 ? p.date : date }));

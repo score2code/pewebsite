@@ -9,9 +9,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Partida de ritmo moderado e blocos compactos; menor volume de chances claras.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -24,9 +23,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Inter mais estável em casa; posse e criação sustentam boa probabilidade de vitória.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -39,9 +37,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Ritmo alto e transições dos dois lados; cenário favorece 3+ gols.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -54,9 +51,8 @@
     "timezone": "GMT",
     "prediction": "Dupla Chance: X2",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Sevilla com maior densidade técnica e experiência; alta chance de pontuar fora.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -69,9 +65,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Trabzonspor eficiente em transições e bolas paradas; visitante com boa probabilidade de vencer.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 4"
   },
   {
@@ -84,9 +79,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Confronto de menor ritmo e controle defensivo; tendência de baixa conversão em gols.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -99,9 +93,8 @@
     "timezone": "GMT",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Jogo equilibrado com criação de ambos lados; cenário favorece gols para os dois.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -114,9 +107,8 @@
     "timezone": "GMT",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Equilíbrio e espaço entrelinhas; os dois times costumam converter boas oportunidades.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -129,9 +121,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Mandante com maior consistência e criação; vantagem técnica indica vitória em casa.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 5 x 1"
   },
   {
@@ -144,9 +135,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Slavia superior técnica e taticamente; boa probabilidade de vitória fora.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 1"
   }
 ]

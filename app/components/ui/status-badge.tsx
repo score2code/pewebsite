@@ -1,18 +1,17 @@
 import React from 'react';
-import { CheckCircle, XCircle, Clock, TrendingUp, TrendingDown, Info } from 'lucide-react';
+import { CheckCircle, XCircle, Clock, TrendingUp, Info } from 'lucide-react';
 
-export type PickStatus = 'pending' | 'won' | 'lost' | 'postponed' | 'high-confidence';
+export type PickStatus = 'pending' | 'green' | 'red' | 'postponed' | 'void' | 'high-confidence';
 
 interface StatusBadgeProps {
   status: PickStatus;
   confidence?: number;
-  result?: 'won' | 'lost' | 'pending';
 }
 
 const StatusBadge: React.FC<StatusBadgeProps> = ({ status, confidence }) => {
   const getStatusConfig = () => {
     switch (status) {
-      case 'won':
+      case 'green':
         return {
           icon: CheckCircle,
           text: 'Ganhou',
@@ -20,7 +19,7 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({ status, confidence }) => {
           textColor: 'text-green-700 dark:text-green-400',
           borderColor: 'border-green-300 dark:border-green-700'
         };
-      case 'lost':
+      case 'red':
         return {
           icon: XCircle,
           text: 'Perdeu',
@@ -35,6 +34,14 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({ status, confidence }) => {
           bgColor: 'bg-blue-100 dark:bg-blue-900/30',
           textColor: 'text-blue-700 dark:text-blue-400',
           borderColor: 'border-blue-300 dark:border-blue-700'
+        };
+      case 'void':
+        return {
+          icon: Info,
+          text: 'Anulado',
+          bgColor: 'bg-orange-100 dark:bg-orange-900/30',
+          textColor: 'text-orange-700 dark:text-orange-400',
+          borderColor: 'border-orange-300 dark:border-orange-700'
         };
       case 'high-confidence':
         return {

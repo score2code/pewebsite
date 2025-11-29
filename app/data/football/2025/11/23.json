@@ -10,9 +10,8 @@
     "awayTeam": "Indianapolis Colts",
     "prediction": "Handicap: Kansas City Chiefs -3.5",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
     "analysis": "Chiefs superiores em EPA por jogada e terceira descida; handicap -3.5 captura vantagem ofensiva e pressão sobre QB dos Colts.",
-    "hit": false,
     "reason": "Placar: 23 x 20"
   },
   {
@@ -26,9 +25,8 @@
     "awayTeam": "Seattle Seahawks",
     "prediction": "Total de Pontos: Mais de 43.5",
     "confidence": 64,
-    "status": "pending",
+    "status": "green",
     "analysis": "Seahawks explosivos em play-action e Titans cedendo big plays; ritmo e eficiência sugerem placar acima de 43.5 pontos.",
-    "hit": true,
     "reason": "Placar: 24 x 30"
   },
   {
@@ -42,9 +40,8 @@
     "awayTeam": "New York Jets",
     "prediction": "Handicap: Baltimore Ravens -6.5",
     "confidence": 65,
-    "status": "pending",
+    "status": "green",
     "analysis": "Ravens dominam trincheiras e aplicam blitz eficiente; -6.5 reflete vantagem consistente contra ataque pouco produtivo dos Jets.",
-    "hit": true,
     "reason": "Placar: 23 x 10"
   },
   {
@@ -58,9 +55,8 @@
     "awayTeam": "Pittsburgh Steelers",
     "prediction": "Total de Pontos: Menos de 41.5",
     "confidence": 63,
-    "status": "pending",
+    "status": "red",
     "analysis": "Defesas com pressão e ataques inconsistentes; tendência de jogo truncado com poucos big plays, sustentando under 41.5.",
-    "hit": false,
     "reason": "Placar: 31 x 28"
   },
   {
@@ -74,9 +70,8 @@
     "awayTeam": "Minnesota Vikings",
     "prediction": "Total de Pontos: Mais de 45.5",
     "confidence": 62,
-    "status": "pending",
+    "status": "red",
     "analysis": "Rotas intermediárias e vulnerabilidades em tackles abrem espaço para pontos; ritmo sugere over 45.5.",
-    "hit": false,
     "reason": "Placar: 23 x 6"
   },
   {
@@ -90,9 +85,8 @@
     "awayTeam": "New York Giants",
     "prediction": "Handicap: Detroit Lions -4.5",
     "confidence": 65,
-    "status": "pending",
+    "status": "green",
     "analysis": "OL dos Lions dominante e script ofensivo eficaz; -4.5 captura superioridade contra ataque pouco consistente dos Giants.",
-    "hit": true,
     "reason": "Placar: 34 x 27"
   },
   {
@@ -106,9 +100,8 @@
     "awayTeam": "New England Patriots",
     "prediction": "Handicap: Cincinnati Bengals -4.5",
     "confidence": 64,
-    "status": "pending",
+    "status": "red",
     "analysis": "Bengals eficientes em passes rápidos e YAC; -4.5 aproveita vantagem em terceiras descidas contra ataque dos Patriots de baixa explosão.",
-    "hit": false,
     "reason": "Placar: 20 x 26"
   },
   {
@@ -122,9 +115,8 @@
     "awayTeam": "Jacksonville Jaguars",
     "prediction": "Total de Pontos: Mais de 45.5",
     "confidence": 64,
-    "status": "pending",
+    "status": "green",
     "analysis": "Jaguars equilibrados e Cardinals concedendo big plays; ritmo e explosividade sustentam over 45.5.",
-    "hit": true,
     "reason": "Placar: 24 x 27"
   },
   {
@@ -138,9 +130,8 @@
     "awayTeam": "Cleveland Browns",
     "prediction": "Total de Pontos: Menos de 42.5",
     "confidence": 63,
-    "status": "pending",
+    "status": "green",
     "analysis": "Browns com defesa física e pass rush forte; perfil sugere jogo amarrado e under 42.5.",
-    "hit": true,
     "reason": "Placar: 10 x 24"
   },
   {
@@ -154,9 +145,8 @@
     "awayTeam": "Atlanta Falcons",
     "prediction": "Handicap: New Orleans Saints -2.5",
     "confidence": 62,
-    "status": "pending",
+    "status": "red",
     "analysis": "Saints estáveis em red zone e defesa; -2.5 capta vantagem casa contra Falcons irregulares sob pressão interna.",
-    "hit": false,
     "reason": "Placar: 10 x 24"
   },
   {
@@ -170,9 +160,8 @@
     "awayTeam": "Philadelphia Eagles",
     "prediction": "Handicap: Philadelphia Eagles +2.5",
     "confidence": 63,
-    "status": "pending",
+    "status": "red",
     "analysis": "Linha ofensiva dos Eagles dominante e RPO eficiente; +2.5 oferece proteção em jogo equilibrado contra Cowboys.",
-    "hit": false,
     "reason": "Placar: 24 x 21"
   },
   {
@@ -186,9 +175,8 @@
     "awayTeam": "Tampa Bay Buccaneers",
     "prediction": "Total de Pontos: Menos de 44.5",
     "confidence": 62,
-    "status": "pending",
+    "status": "green",
     "analysis": "Jogo tende a ser controlado taticamente, menos explosões; under 44.5 ajusta à pressão defensiva e ritmo moderado das equipes.",
-    "hit": true,
     "reason": "Placar: 31 x 7"
   }
 ]

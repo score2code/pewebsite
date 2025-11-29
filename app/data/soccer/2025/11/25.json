@@ -10,9 +10,8 @@
     "awayTeam": "Benfica",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Duas equipes com proposta ofensiva e transições rápidas. Linhas defensivas expostas em bolas paradas e ataques pelas pontas sugerem ambos marcam.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -26,9 +25,8 @@
     "awayTeam": "Royale Union SG",
     "prediction": "Resultado Final: 1",
     "confidence": 61,
-    "status": "pending",
     "analysis": "Forte mando de campo do Galatasaray e pressão inicial alta. Union SG é competitivo, mas costuma ceder volume e finalizações fora.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -42,9 +40,8 @@
     "awayTeam": "Barcelona",
     "prediction": "Mais de 2.5 gols",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Jogo com alta densidade de criação. Chelsea tem chegada por cruzamentos e segunda bola; Barça gera chances por posse e entrelinhas. Tendência de 3+ gols.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -58,9 +55,8 @@
     "awayTeam": "Villarreal",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Dortmund acelera transições e pressiona alto; Villarreal responde em contra-ataque e bola parada. Cenário típico de múltiplas ocasiões e 3+ gols.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 4 x 0"
   },
   {
@@ -74,9 +70,8 @@
     "awayTeam": "Newcastle",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Marseille cede espaços em transição; Newcastle cria por amplitude e infiltrações. Ambos têm bolas paradas fortes — cenário favorável a ambos marcam.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -90,9 +85,8 @@
     "awayTeam": "Juventus",
     "prediction": "Resultado Final: 2",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Bodo é forte em casa, mas a Juventus controla ritmo e concede poucas grandes chances. Eficiência em transição e bolas paradas favorece o visitante.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 3"
   },
   {
@@ -106,9 +100,8 @@
     "awayTeam": "Qarabag",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
     "analysis": "Napoli dominante em posse e criação, clara superioridade técnica. Qarabag deve se fechar, mas sofre em volume e qualidade de chances contra top-5 europeu.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -122,9 +115,8 @@
     "awayTeam": "Athletic Bilbao",
     "prediction": "Resultado Final: 1",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Slavia tem consistência em casa e bom ritmo defensivo. Bilbao competitivo, porém tende a cair em rendimento fora contra blocos médios bem organizados.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -138,9 +130,8 @@
     "awayTeam": "Bayer Leverkusen",
     "prediction": "Mais de 2.5 gols",
     "confidence": 67,
-    "status": "pending",
     "analysis": "City gera alto volume e controle territorial; Leverkusen é agressivo e vertical. Expectativa de chances claras para ambos e 3+ gols.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -154,9 +145,8 @@
     "awayTeam": "De Graafschap",
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Liga de alta média de gols; equipes com tendência ofensiva e transições frequentes. Defesas vulneráveis a segunda bola e cruzamentos.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 2"
   }
 ]

@@ -15,8 +15,7 @@ export const PickSchema = z.object({
   probability: z.number().min(0).max(100, 'Probabilidade deve estar entre 0 e 100').optional().default(0),
   confidence: z.number().min(0).max(100, 'Confiança deve estar entre 0 e 100'),
   // inclui 'postponed' para marcar jogos adiados como concluídos
-  status: z.enum(['pending', 'won', 'lost', 'void', 'postponed']).default('pending'),
-  hit: z.boolean().optional(),
+  status: z.enum(['pending', 'green', 'red', 'void', 'postponed']).default('pending'),
   reason: z.string().optional(),
   result: z.string().optional(),
   stake: z.number().positive('Stake deve ser positivo').optional().default(1),
@@ -45,7 +44,7 @@ export const PickSchema = z.object({
   weather: z.string().optional(),
   createdAt: z.string().datetime('Data de criação deve estar em formato ISO').optional(),
   updatedAt: z.string().datetime('Data de atualização deve estar em formato ISO').optional(),
-  
+
   // Campos legados para compatibilidade com dados antigos
   dateTime: z.string().optional(), // Campo legado - será mapeado para time/timezone e date pelo loader
   tip: z.string().optional(), // Campo legado - será mapeado para prediction
@@ -147,7 +146,7 @@ const slugify = (text: string): string => {
 
 const mapLegacyPickData = (data: any): any => {
   const mapped = { ...data };
-  
+
   // Mapear campos legados para novos nomes
   if (mapped.dateTime) {
     // Extrair hora e timezone de strings amigáveis (ex: "HOJE, 14:45 BRT")
@@ -157,25 +156,26 @@ const mapLegacyPickData = (data: any): any => {
       if (match[2]) mapped.timezone = match[2];
     }
   }
-  
+
   if (mapped.tip && !mapped.prediction) {
     mapped.prediction = mapped.tip;
   }
-  
+
   if (mapped.result && !mapped.status) {
     const resultMap = {
       'Pending': 'pending',
-      'Win': 'won',
-      'Loss': 'lost',
+      'Win': 'green',
+      'Loss': 'red',
       'Void': 'void',
       'Postponed': 'postponed'
     };
     mapped.status = resultMap[mapped.result as keyof typeof resultMap] || 'pending';
   }
 
-  // Se houver "hit" explícito, sincroniza status para garantir exibição correta
+  // Se houver "hit" explícito, sincroniza status para garantir exibição correta e remove hit
   if (typeof mapped.hit === 'boolean') {
-    mapped.status = mapped.hit ? 'won' : 'lost';
+    mapped.status = mapped.hit ? 'green' : 'red';
+    delete mapped.hit;
   }
 
   // Se o motivo indicar adiamento, marca como 'postponed'
@@ -185,17 +185,33 @@ const mapLegacyPickData = (data: any): any => {
       mapped.status = 'postponed';
     }
   }
-  
+
   // Remover campos legados que não são mais necessários
   delete mapped.dateTime;
   delete mapped.tip;
   delete mapped.result;
 
+  // Resolver possíveis chaves auxiliares criadas pela normalização de texto
+  // Se existir 'status' com 'green' ou 'red', mantém. Caso contrário, usa pendente/adiado/void se presentes.
+  const isGreenRed = mapped.status === 'green' || mapped.status === 'red';
+  if (!isGreenRed) {
+    if (mapped.status_pending === 'pending') {
+      mapped.status = 'pending';
+    } else if (mapped.status_postponed === 'postponed') {
+      mapped.status = 'postponed';
+    } else if (mapped.status_void === 'void') {
+      mapped.status = 'void';
+    }
+  }
+  delete mapped.status_pending;
+  delete mapped.status_postponed;
+  delete mapped.status_void;
+
   // Garantir ID consistente: se o JSON já traz id, preserva; senão gera slug
   if (!mapped.id && mapped.homeTeam && mapped.awayTeam) {
     mapped.id = `${slugify(String(mapped.homeTeam))}-x-${slugify(String(mapped.awayTeam))}`;
   }
-  
+
   return mapped;
 };
 

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { ChevronLeft, Loader, AlertTriangle, Trophy, TrendingUp } from 'lucide-react';
-import { CheckCircle, XCircle, Clock } from 'lucide-react';
+import { CheckCircle, XCircle } from 'lucide-react';
 
 import { Pick } from '@/app/types';
 import { validatePickArray } from '@/app/lib/validation';
@@ -121,10 +121,17 @@ const PickAnalysisClient = ({ initialPick }: { initialPick: Pick }) => {
                 <div className="mt-6 grid grid-cols-1 gap-6">
                     <div className="bg-light-200/50 dark:bg-dark-700/50 p-6 rounded-xl border border-light-300 dark:border-dark-600">
                         <p className="text-sm font-medium text-dark-900/70 dark:text-light-100/70 mb-2">Resultado</p>
-                        {typeof pick.hit === 'boolean' && (
-                            <div className={`inline-flex items-center gap-2 px-3 py-2 rounded-lg border text-sm ${pick.hit ? 'bg-green-100 dark:bg-green-900/30 border-green-300 dark:border-green-700 text-green-700 dark:text-green-400' : 'bg-red-100 dark:bg-red-900/30 border-red-300 dark:border-red-700 text-red-700 dark:text-red-400'}`}>
-                                {pick.hit ? <CheckCircle className="w-4 h-4" /> : <XCircle className="w-4 h-4" />}
-                                <span>{pick.hit ? 'Ganhou' : 'Perdeu'}</span>
+                        {pick.status === 'green' && (
+                            <div className={`inline-flex items-center gap-2 px-3 py-2 rounded-lg border text-sm bg-green-100 dark:bg-green-900/30 border-green-300 dark:border-green-700 text-green-700 dark:text-green-400`}>
+                                <CheckCircle className="w-4 h-4" />
+                                <span>Ganhou</span>
+                                <span className="text-sm text-dark-900/70 dark:text-light-100/70"> {pick.reason}</span>
+                            </div>
+                        )}
+                        {pick.status === 'red' && (
+                            <div className={`inline-flex items-center gap-2 px-3 py-2 rounded-lg border text-sm bg-red-100 dark:bg-red-900/30 border-red-300 dark:border-red-700 text-red-700 dark:text-red-400`}>
+                                <XCircle className="w-4 h-4" />
+                                <span>Perdeu</span>
                                 <span className="text-sm text-dark-900/70 dark:text-light-100/70"> {pick.reason}</span>
                             </div>
                         )}

@@ -8,7 +8,7 @@
     "time": "14:45",
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Mais de 4.5",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 3 x 0"
    },
   {
@@ -20,7 +20,7 @@
     "time": "16:30",
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Dupla Chance: 1X",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 0 x 0"
   }
 ]

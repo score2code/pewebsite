@@ -12,9 +12,8 @@ type TicketPick = {
   time: string;
   timezone?: string;
   prediction: string;
-  hit?: boolean; // indica se o palpite foi certo
   reason?: string; // motivo do resultado (acerto/erro)
-  status?: 'pending' | 'won' | 'lost' | 'void' | 'postponed';
+  status?: 'pending' | 'green' | 'red' | 'void' | 'postponed';
 };
 
 async function getTicketPicks(date: string): Promise<TicketPick[]> {
@@ -116,7 +115,7 @@ export default async function TicketByDatePage({ params }: { params: { date: str
   const prevDate = changeDate(date, -1);
   const nextDate = changeDate(date, 1);
 
-  const allHit = picks.length > 0 && picks.every(p => p.hit === true);
+  const allHit = picks.length > 0 && picks.every(p => p.status === 'green');
 
   const picksWithHref = await Promise.all(
     picks.map(async (p) => ({ ...p, href: await resolvePickHref(p.id, date) }))
@@ -168,29 +167,42 @@ export default async function TicketByDatePage({ params }: { params: { date: str
                 <span className="inline-block bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-md text-sm font-semibold break-words">
                   {p.prediction}
                 </span>
-                {p.hit === true && (
+                {p.status === 'green' && (
                   <span className="inline-flex bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
                     Ganhou
                   </span>
                 )}
-                {p.hit === false && (
+                {p.status === 'red' && (
                   <span className="inline-flex bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
                     Perdeu
                   </span>
                 )}
-                {(p.status === 'postponed' || p.status === 'void') && (
+                {p.status === 'postponed' && (
                   <span className="inline-flex bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
                     Adiado
                   </span>
                 )}
-                {p.hit === undefined && !(p.status === 'postponed' || p.status === 'void') && (
+                {p.status === 'void' && (
+                  <span className="inline-flex bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
+                    Anulado
+                  </span>
+                )}
+                {(!p.status || p.status === 'pending') && (
                   <span className="inline-flex bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
                     Pendente
                   </span>
                 )}
               </div>
               {p.reason && (
-                <p className="mt-1 pb-1 text-xs text-dark-900/70 dark:text-light-100/70">
+                <p
+                  className={`mt-1 pb-1 text-xs ${p.status === 'green'
+                    ? 'text-green-700 dark:text-green-400'
+                    : p.status === 'red'
+                    ? 'text-red-700 dark:text-red-400'
+                    : p.status === 'void'
+                    ? 'text-orange-700 dark:text-orange-400'
+                    : 'text-dark-900/70 dark:text-light-100/70'}`}
+                >
                   Resultado: {p.reason}
                 </p>
               )}

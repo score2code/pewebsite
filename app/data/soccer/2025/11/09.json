@@ -9,9 +9,8 @@
     "timezone": "GMT",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 74,
-    "status": "pending",
     "analysis": "Clássico belga com altas linhas ofensivas; BTTS frequente nos últimos confrontos.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -24,9 +23,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 80,
-    "status": "pending",
     "analysis": "Superioridade técnica e profundidade do elenco do Real; alta consistência como visitante.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -39,9 +37,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 76,
-    "status": "pending",
     "analysis": "Eredivisie com ritmo alto e duas equipes muito produtivas; média de gols elevada.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 1 x 5"
   },
   {
@@ -54,9 +51,8 @@
     "timezone": "GMT",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 77,
-    "status": "pending",
     "analysis": "Duelos recentes com alta criação de chances; ambas têm ataque de elite.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -69,9 +65,8 @@
     "timezone": "GMT",
     "prediction": "Stuttgart - Total de Gols: Mais de 1.5",
     "confidence": 78,
-    "status": "pending",
     "analysis": "Stuttgart agressivo em casa, volume e conversão acima da média; linha 1.5 com valor.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 2"
   },
   {
@@ -84,9 +79,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 79,
-    "status": "pending",
     "analysis": "Porto superior técnica e fisicamente; confronto costuma favorecer o visitante.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -99,9 +93,8 @@
     "timezone": "GMT",
     "prediction": "Handicap Asiático: Benfica (-1.25)",
     "confidence": 77,
-    "status": "pending",
     "analysis": "Benfica dominante na Luz; -1.25 cobre vantagem técnica e volume ofensivo esperado.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 2 x 2"
   },
   {
@@ -114,9 +107,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 78,
-    "status": "pending",
     "analysis": "Dinamo com elenco e consistência superiores; histórico favorável mesmo fora de casa.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -129,9 +121,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 75,
-    "status": "pending",
     "analysis": "AEK com melhor fase e estrutura tática; favoritismo claro frente ao OFI.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -144,9 +135,8 @@
     "timezone": "GMT",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 73,
-    "status": "pending",
     "analysis": "Equipas com boa criação e espaços; Brentford casa e Newcastle transições indicam BTTS.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 1"
   }
 ]

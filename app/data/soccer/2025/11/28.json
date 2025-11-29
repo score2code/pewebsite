@@ -10,9 +10,8 @@
     "awayTeam": "Elche",
     "prediction": "Menos de 2.5 gols",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Jogo de copa com tendência de poucos gols: Getafe compacto e direto, Elche com baixa criação contra blocos médios; ritmo e risco controlados.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -26,9 +25,8 @@
     "awayTeam": "RB Leipzig",
     "prediction": "BTTS - Sim",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Partida de alta intensidade: Leipzig agressivo em transição e Gladbach consegue produzir em casa; ambos com volume e fragilidades defensivas gerando gols dos dois lados.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -42,9 +40,8 @@
     "awayTeam": "Sassuolo",
     "prediction": "Mais de 2.5 gols",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Trocas de posse e espaços entrelinhas aumentam finalizações; ambas cedem chances por laterais e bolas aéreas, favorecendo placar elevado.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -58,9 +55,8 @@
     "awayTeam": "Rennes",
     "prediction": "Empate Anula Aposta: Rennes",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Rennes superior em organização e pressão; DNB reduz risco do empate fora de casa mantendo valor pela qualidade defensiva e bola parada.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -74,9 +70,8 @@
     "awayTeam": "Heerenveen",
     "prediction": "BTTS - Sim",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Ritmo alto e defensas permissivas; ambos com criação por corredores e cruzamentos, gerando chances claras para gol de cada lado.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -90,9 +85,8 @@
     "awayTeam": "AVS",
     "prediction": "Empate Anula Aposta: Vitória Guimarães",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Guimarães forte em pressão média e bolas paradas; DNB cobre o risco de empate diante de possível bloco baixo do AVS.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 4 x 0"
   },
   {
@@ -106,9 +100,8 @@
     "awayTeam": "Caernarfon Town",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
     "analysis": "TNS dominante ofensivamente com alto xG por posse; Caernarfon concede espaços em transição e bolas laterais, sustentando tendência de múltiplos gols.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -124,7 +117,7 @@
     "confidence": 64,
     "status": "void",
     "analysis": "Maior qualidade técnica e profundidade do Plovdiv; DNB protege contra empate típico de copa mantendo edge em bolas paradas e posse.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -138,9 +131,8 @@
     "awayTeam": "Arda Kardzhali",
     "prediction": "Dupla Chance: Arda Kardzhali ou Empate",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Arda compacto e eficiente em transições; dupla chance reduz variância fora de casa contra Lokomotiv com dificuldades em ataque posicional.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 0"
   }
 ]

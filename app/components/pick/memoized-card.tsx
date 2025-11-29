@@ -34,13 +34,14 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
   // (já calculado acima)
 
   const getBadgeStatus = (): PickStatus => {
-    if (pick.hit === true) return 'won';
-    if (pick.hit === false) return 'lost';
-    if (pick.result === 'won') return 'won';
-    if (pick.result === 'lost') return 'lost';
-    // Mapear 'void' e 'postponed' para estado concluído "Adiado"
-    if (pick.status === 'void' || pick.status === 'postponed') return 'postponed';
-    if (pick.status === 'won' || pick.status === 'lost') return pick.status as PickStatus;
+    // Normaliza para novo padrão: green/red/pending/postponed
+    if (pick.status === 'green' || pick.status === 'red' || pick.status === 'postponed') {
+      return pick.status as PickStatus;
+    }
+    if (pick.status === 'void') return 'void';
+    // Fallback para legados com result
+    if (pick.result === 'won') return 'green';
+    if (pick.result === 'lost') return 'red';
     return 'pending';
   };
 
@@ -51,13 +52,12 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
   };
 
   const hasFinalOutcome =
-    pick.hit !== undefined ||
-    pick.result === 'won' ||
-    pick.result === 'lost' ||
-    pick.status === 'won' ||
-    pick.status === 'lost' ||
+    pick.status === 'green' ||
+    pick.status === 'red' ||
     pick.status === 'postponed' ||
-    pick.status === 'void';
+    pick.status === 'void' ||
+    pick.result === 'won' ||
+    pick.result === 'lost';
 
   const showConfidenceTag = pick.confidence >= 80 && !hasFinalOutcome;
 
@@ -89,7 +89,7 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
             <p className="mt-1 text-xs text-dark-900/70 dark:text-light-100/70 break-words">
               {pick.prediction}
             </p>
-            {typeof pick.hit === 'boolean' && pick.reason && (
+            {pick.reason && (
               <p className="mt-1 text-[11px] text-dark-900/70 dark:text-light-100/70 break-words">
                 Resultado: {pick.reason}
               </p>
@@ -180,7 +180,13 @@ const MemoizedPickCard = memo<MemoizedPickCardProps>(({
         Ver Análise Completa
       </Link>
       {pick.reason && (
-        <div className={`mt-3 text-sm inline-flex items-center gap-2 ${pick.hit ? ' text-green-700 dark:text-green-400' : ' text-red-700 dark:text-red-400'}`}>
+        <div className={`mt-3 text-sm inline-flex items-center gap-2 ${getBadgeStatus() === 'green'
+          ? ' text-green-700 dark:text-green-400'
+          : getBadgeStatus() === 'red'
+          ? ' text-red-700 dark:text-red-400'
+          : getBadgeStatus() === 'void'
+          ? ' text-orange-700 dark:text-orange-400'
+          : ' text-dark-900/70 dark:text-light-100/70'}`}>
           <span className="text-xs opacity-80">Resultado: {pick.reason}</span>
         </div>
       )}

@@ -8,7 +8,7 @@
     "time": "21:00",
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 1",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -20,7 +20,7 @@
     "time": "15:00",
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 5 x 1"
   }
 ]

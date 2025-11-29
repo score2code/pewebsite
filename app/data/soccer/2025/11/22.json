@@ -9,9 +9,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Confronto de alta exigência com blocos compactos; tendência de poucos gols.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 3 x 2"
   },
   {
@@ -24,9 +23,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Duas equipes com criação elevada e transições rápidas; cenário para 3+ gols.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -39,9 +37,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Jogo de controle e disciplina defensiva; linha de poucos gols favorecida.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -54,9 +51,8 @@
     "timezone": "GMT",
     "prediction": "Dupla Chance: X2",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Atlético com maior densidade técnica; boa probabilidade de pontuar (empate ou vitória).",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -69,9 +65,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Diferença técnica e elenco favorecem o Chelsea mesmo fora; controle de posse e criação.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -84,9 +79,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Confronto com alto volume ofensivo e bolas paradas; tendência de 3+ gols.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -99,9 +93,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
     "analysis": "Liverpool dominante em casa e superior em produção; alta probabilidade de vitória.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 3"
   },
   {
@@ -114,9 +107,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Ritmo moderado e controle defensivo dos dois lados; menor conversão em chances claras.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -129,9 +121,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
     "analysis": "Barcelona dominante em casa; posse, pressão e criação sustentam a vitória do mandante.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 4 x 0"
   },
   {
@@ -144,9 +135,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Mallorca costuma reduzir ritmo e espaço; partida tende a baixa produção de gols.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 2 x 1"
   }
 ]

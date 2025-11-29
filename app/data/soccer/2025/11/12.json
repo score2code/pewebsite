@@ -9,9 +9,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 1",
     "confidence": 62,
-    "status": "pending",
     "analysis": "A força do Atlético-MG jogando em casa é o principal driver. O Fortaleza enfrenta um momento crítico de calendário, com uma final continental prioritária no horizonte, o que sugere potencial rotação de elenco e menor foco/intensidade neste jogo. A recente melhora na forma do Galo e a instabilidade do Fortaleza como visitante (5 jogos sem vencer) reforçam a aposta no mandante. A confiança é alta devido ao contexto, apesar da ausência de dados aprofundados de xG/xGA para o confronto específico.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 3 x 3"
   },
   {
@@ -24,9 +23,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Mais de 4.5",
     "confidence": 80,
-    "status": "pending",
     "analysis": "O Barcelona (F) é a força dominante do futebol europeu e tem uma média de 5.5 gols/jogo na UWCL, incluindo goleadas recentes (7-1 e 4-0). O Leuven (F) tem sofrido na UWCL, com uma diferença de gols negativa. A imensa diferença de qualidade entre os elencos, o mando de campo e a busca pela liderança do grupo garantem uma alta probabilidade de uma vitória por grande margem, superando a linha de 4.5 gols. A principal alternativa é o Handicap Asiático: Barcelona -4.5.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -39,9 +37,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Dupla Chance: 1X",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Confronto de gigantes da UWCL. O Bayern (F) é o líder invicto da Frauen-Bundesliga, com desempenho superior em seu mando de campo. O Arsenal (F) chega em ótima forma (4V e 1E nos últimos 5 jogos da UWCL), mas enfrenta a dificuldade histórica de jogar contra o Bayern na Alemanha (apesar do dado de 5-2, o h2h recente é equilibrado na Champions, com 2-2 e 1-0 para o Bayern nas quartas de final de 2024). A necessidade de pontuar em um grupo competitivo, somada à solidez do time da casa, confere ao Bayern uma probabilidade alta (65%) de conquistar pelo menos um empate. O mercado Dupla Chance (1X) é a aposta principal com valor e solidez. O risco reside no alto potencial ofensivo de ambos, que torna o Over 2.5 Gols (60% de probabilidade) uma excelente alternativa.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 2"
   },
   {
@@ -54,9 +51,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 1",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Confronto da fase de grupos onde o Benfica (F) (3º no grupo) precisa vencer em casa para manter as chances de classificação. A equipe portuguesa possui superioridade técnica e a vantagem do mando de campo (Estádio da Luz). O Twente (F) (2º no grupo), apesar da boa fase doméstica, enfrenta um nível de adversário superior na UWCL e deve ser mais defensivo. A combinação de maior qualidade, motivação e o domínio territorial esperado eleva a probabilidade de vitória do Benfica (62%). O mercado de 'Ambos Marcam - Não' é a alternativa principal, devido à esperada solidez defensiva do Benfica em casa contra um ataque de menor poder. Faltam dados críticos de árbitro, limitando a confiança em mercados de cartões.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -69,9 +65,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Ambas Marcam (BTTS): Sim",
     "confidence": 68,
-    "status": "pending",
     "analysis": "Jogo de volta eliminatório (ida 1-1) que força o Manchester United (F) a buscar o gol **jogando em casa**, alinhado com seu alto índice de gols na liga (2.71 Gols/Jogo). O PSG (F) é um adversário com forte poder ofensivo (2.17 Gols/Jogo na liga) e busca a classificação. É altamente provável que ambas as equipes marquem. A necessidade de gols do MU aumenta a exposição defensiva de ambos, tornando o mercado BTTS (Sim) a melhor aposta de valor e alta confiança (68%)",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -84,9 +79,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Dupla Chance: 1X",
     "confidence": 73,
-    "status": "pending",
     "analysis": "Confronto de extremos na tabela baixa. O Zamora CF (12º) tem o crucial fator casa contra o Ourense CF, que é o lanterna (20º) e possui um dos piores ataques da liga (0.6 Gols/J). A probabilidade do Zamora pontuar é alta (78% para 1X), com a equipe da casa buscando se afastar da zona de rebaixamento. O mercado 1X (Dupla Chance: Zamora CF ou Empate) oferece a melhor combinação de alta probabilidade e valor. A tendência de placar baixo (Under 2.5 Gols com 60% de probabilidade) reforça a escolha por um resultado que favoreça o mandante, sem a necessidade de uma goleada.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -99,9 +93,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Dupla Chance: 1X",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Confronto de Copa, onde o Zbrojovka Brno (2ª Divisão) recebe o Hradec Kralove (1ª Divisão). O Brno está em excelente forma recente, com 11 jogos de invencibilidade, e possui uma defesa altamente eficaz em casa (0.7 gols sofridos/jogo nos últimos 10). Apesar da diferença de divisão, a vantagem do mando e o bom momento nivelam o confronto. O Hradec Kralove não tem retrospecto dominante H2H em Brno. A necessidade do time da 1ª Divisão de não ser eliminado e a solidez do mandante indicam uma alta probabilidade (65%) de o Brno pontuar.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 3"
   },
   {
@@ -114,9 +107,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 68,
-    "status": "pending",
     "analysis": "A recomendação de Under 2.5 Gols se baseia na postura tática do Peru (bloco baixo, foco defensivo) e na natureza de 'teste' do amistoso, que historicamente favorece a cautela. O Peru tem um histórico recente de jogos de baixa pontuação nas Eliminatórias. Embora a Rússia tenha goleado adversários mais fracos em casa, a defesa sul-americana é mais organizada e resiliente. A falta de dados de árbitro, estádio e xG/xGA eleva a incerteza em mercados voláteis, mas a tendência de poucos gols é a mais robusta.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 1"
   }
 ]

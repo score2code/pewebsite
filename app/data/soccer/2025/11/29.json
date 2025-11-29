@@ -10,8 +10,8 @@
     "awayTeam": "Mirassol",
     "prediction": "Empate Anula Aposta: Vitória BA (DNB)",
     "confidence": 64,
-    "status": "pending",
-    "analysis": "Vitória melhora em casa, Mirassol tem queda fora. DNB protege contra empate em jogo equilibrado."
+    "analysis": "Vitória melhora em casa, Mirassol tem queda fora. DNB protege contra empate em jogo equilibrado.",
+    "status": "pending"
   },
   {
     "id": "ceara-x-cruzeiro-mg",
@@ -24,8 +24,8 @@
     "awayTeam": "Cruzeiro MG",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 63,
-    "status": "pending",
-    "analysis": "Ceará costuma marcar em casa, Cruzeiro cria volume ofensivo. Tendência de ambos marcarem."
+    "analysis": "Ceará costuma marcar em casa, Cruzeiro cria volume ofensivo. Tendência de ambos marcarem.",
+    "status": "pending"
   },
   {
     "id": "palmeiras-x-flamengo",
@@ -38,8 +38,8 @@
     "awayTeam": "Flamengo",
     "prediction": "Mais de 2.5 gols",
     "confidence": 65,
-    "status": "pending",
-    "analysis": "Confronto de alta intensidade e ataques fortes. Probabilidade elevada de 3+ gols."
+    "analysis": "Confronto de alta intensidade e ataques fortes. Probabilidade elevada de 3+ gols.",
+    "status": "pending"
   },
   {
     "id": "brentford-x-burnley",
@@ -52,9 +52,8 @@
     "awayTeam": "Burnley",
     "prediction": "Mais de 2.0 gols (Linha Asiática)",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Brentford eficiente em bolas paradas, Burnley concede chances. Linha asiática protege caso exatamente 2 gols.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 1"
   },
   {
@@ -68,9 +67,8 @@
     "awayTeam": "Bournemouth",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Times com média de finalizações alta e defesas vulneráveis. Cenário favorável para gols dos dois lados.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 2"
   },
   {
@@ -84,9 +82,8 @@
     "awayTeam": "Leeds United",
     "prediction": "Handicap: Manchester City -1.5",
     "confidence": 67,
-    "status": "pending",
     "analysis": "City dominante em casa, controle de posse e criação. Leeds instável defensivamente. Vitória por 2+ gols é provável.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 2"
   },
   {
@@ -100,9 +97,8 @@
     "awayTeam": "Newcastle",
     "prediction": "Empate Anula Aposta: Newcastle (DNB)",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Newcastle mais sólido taticamente e com melhor fase. DNB reduz risco num jogo físico.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 1 x 4"
   },
   {
@@ -116,8 +112,8 @@
     "awayTeam": "Fulham",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Tottenham joga propositivo, Fulham concede espaços. Partida com ritmo alto e tendência de 3+ gols."
+    "analysis": "Tottenham joga propositivo, Fulham concede espaços. Partida com ritmo alto e tendência de 3+ gols.",
+    "status": "pending"
   },
   {
     "id": "mallorca-x-osasuna",
@@ -130,9 +126,8 @@
     "awayTeam": "Osasuna",
     "prediction": "Dupla Chance: Mallorca ou Empate",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Mallorca consistente em casa, Osasuna cai rendimento fora. Valor na proteção de empate.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 2 x 2"
   },
   {
@@ -146,9 +141,8 @@
     "awayTeam": "Alavés",
     "prediction": "Handicap: Barcelona -1.5",
     "confidence": 67,
-    "status": "pending",
     "analysis": "Barça com alta posse e criação; Alavés costuma sofrer contra blocos altos. Tendência de vitória confortável.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 1"
   },
   {
@@ -162,9 +156,8 @@
     "awayTeam": "Athletic Bilbao",
     "prediction": "Empate Anula Aposta: Athletic Bilbao (DNB)",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Bilbao com melhor físico e transição. DNB preserva em jogo potencialmente truncado.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -178,8 +171,8 @@
     "awayTeam": "Real Oviedo",
     "prediction": "Handicap: Atletico Madrid -1.0",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Atlético superior tecnicamente. Linha -1 dá push se vencer por apenas um gol."
+    "analysis": "Atlético superior tecnicamente. Linha -1 dá push se vencer por apenas um gol.",
+    "status": "pending"
   },
   {
     "id": "hoffenheim-x-augsburg",
@@ -192,9 +185,8 @@
     "awayTeam": "Augsburg",
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Ambas equipes com jogos abertos e média de finalizações elevada. 3+ gols é plausível.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -208,9 +200,8 @@
     "awayTeam": "FC Koln",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Werder agressivo no ataque, Köln vulnerável atrás mas perigoso na bola aérea.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -224,9 +215,8 @@
     "awayTeam": "Heidenheim",
     "prediction": "Dupla Chance: Union Berlin ou Empate",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Union forte em casa e compacto defensivamente. Proteção ao empate reduz variância.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 1 x 2"
   },
   {
@@ -242,7 +232,6 @@
     "confidence": 68,
     "status": "void",
     "analysis": "Diferença técnica grande. Linha -2 confere push em vitória por dois gols e valor acima disso.",
-    "hit": false,
     "reason": "Placar: 3 x 1"
   },
   {
@@ -256,9 +245,8 @@
     "awayTeam": "Borussia Dortmund",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Duelos entre Leverkusen e Dortmund costumam ser abertos, com pressão alta e transições rápidas.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 1 x 2"
   },
   {
@@ -272,9 +260,8 @@
     "awayTeam": "PSG",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Ataques com alta produção de xG. Tendência ofensiva e marcação de ambos lados.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -288,8 +275,8 @@
     "awayTeam": "Auxerre",
     "prediction": "Dupla Chance: Auxerre ou Empate",
     "confidence": 63,
-    "status": "pending",
-    "analysis": "Auxerre mais consistente em sequência recente; proteção ao empate captura valor fora de casa."
+    "analysis": "Auxerre mais consistente em sequência recente; proteção ao empate captura valor fora de casa.",
+    "status": "pending"
   },
   {
     "id": "olympique-marseille-x-toulouse",
@@ -302,8 +289,8 @@
     "awayTeam": "Toulouse",
     "prediction": "Empate Anula Aposta: Marseille (DNB)",
     "confidence": 65,
-    "status": "pending",
-    "analysis": "Marseille forte no Vélodrome, Toulouse oscila fora. DNB segura caso jogo amarre."
+    "analysis": "Marseille forte no Vélodrome, Toulouse oscila fora. DNB segura caso jogo amarre.",
+    "status": "pending"
   },
   {
     "id": "excelsior-x-nac-breda",
@@ -316,9 +303,8 @@
     "awayTeam": "NAC Breda",
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Jogo típico de alta produção ofensiva na Eredivisie, defesas vulneráveis.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -332,8 +318,8 @@
     "awayTeam": "Heracles Almelo",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 64,
-    "status": "pending",
-    "analysis": "Perfil ofensivo e transições rápidas dos dois lados. Defesas cedem boas chances."
+    "analysis": "Perfil ofensivo e transições rápidas dos dois lados. Defesas cedem boas chances.",
+    "status": "pending"
   },
   {
     "id": "nec-nijmegen-x-sparta-rotterdam",
@@ -346,8 +332,8 @@
     "awayTeam": "Sparta Rotterdam",
     "prediction": "Empate Anula Aposta: NEC Nijmegen (DNB)",
     "confidence": 63,
-    "status": "pending",
-    "analysis": "NEC tem melhor desempenho como mandante; DNB reduz risco num jogo parelho."
+    "analysis": "NEC tem melhor desempenho como mandante; DNB reduz risco num jogo parelho.",
+    "status": "pending"
   },
   {
     "id": "audax-italiano-x-nublense",

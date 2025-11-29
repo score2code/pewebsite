@@ -8,10 +8,7 @@
     "time": "17:00",
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Handicap Asiático Real Madrid (F) -1.5",
-    "confidence": 78,
-    "status": "pending",
-    "analysis": "O Real Madrid (F) é amplamente superior em forma (8 jogos invicto) e qualidade de elenco. O Paris FC (F) demonstrou fragilidade defensiva contra times de elite. A partida, no Alfredo Di Stéfano, tem alta probabilidade de terminar com uma vitória do time da casa por, no mínimo, dois gols de diferença, justificada pela disparidade técnica e pela necessidade de gols do Real para se consolidar no grupo. A probabilidade de 78% garante alta confiança no mercado de Handicap -1.5.",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -23,10 +20,7 @@
     "time": "17:00",
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Mais de 2.5",
-    "confidence": 70,
-    "status": "pending",
-    "analysis": "Confronto entre duas potências ofensivas do futebol feminino com histórico de jogos de placares altos. Lyon e Wolfsburg chegam em excelente fase, com alta média de gols marcados e a presença de suas principais atacantes. A forma recente e o H2H apontam para um jogo aberto e dominado pelos ataques. A probabilidade de 70% para o Over 2.5 Gols torna esta a recomendação principal de Alta Confiança. O mercado de Ambos Marcam (BTTS) é a alternativa mais próxima em termos de valor.",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 1"
   }
 ]

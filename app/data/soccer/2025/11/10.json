@@ -9,9 +9,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 1",
     "confidence": 65,
-    "status": "pending",
     "analysis": "A Chapecoense busca o acesso em casa, tem forma recente superior (invicta) e histórico H2H dominante na Arena Condá. A motivação máxima e o forte mando de campo superam a recente estabilidade defensiva do América-MG, que joga apenas pela permanência. Mercado 1X2 com valor.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -24,9 +23,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Dupla Chance: 1X",
     "confidence": 75,
-    "status": "pending",
     "analysis": "Confronto direto contra o rebaixamento, onde o Botafogo-SP (16º) busca se manter fora da zona contra o Amazonas (18º). O Amazonas tem péssimo retrospecto fora de casa (4 derrotas seguidas fora nos últimos 5 jogos da liga) e um ataque ineficiente (0.6 gols/jogo). O Botafogo-SP, ligeiramente melhor em casa e com maior motivação, tem probabilidade alta (75%) de pontuar. A natureza tensa da partida e a necessidade de não perder um confronto direto reforçam a escolha do 1X. O árbitro Wagner do Nascimento Magalhães tem média de cartões alta (~5.7 por jogo na Série B), indicando um jogo faltoso, o que favorece a defesa. O mercado de Under 2.5 Gols é a principal alternativa de valor.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -39,9 +37,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 70,
-    "status": "pending",
     "analysis": "Confronto de estilos que aponta para um placar baixo. O Vélez Sarsfield exibe uma das melhores defesas do Clausura (0.43 G/J sofrido) e tem demonstrado solidez em sua forma recente. O Gimnasia, apesar do mando, não tem um poder ofensivo que justifique superar a retaguarda do Vélez. A alta tensão típica da liga argentina e a irregularidade ofensiva de ambos (Under 2.5 em 62% dos cenários esperados) consolidam a escolha. O mercado de Under 2.5 Gols (odd justa ~1.61) apresenta alta confiança. O árbitro de alta média de cartões (~5.50) sustenta o valor na alternativa Over 4.5 Cartões.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -54,9 +51,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Dupla Chance: 1X",
     "confidence": 68,
-    "status": "pending",
     "analysis": "O Deportivo Riestra está em boa fase em casa (4V, 1D nos últimos 5 jogos na Liga), jogando com solidez defensiva (tendência Under Gols). O CA Independiente vive uma crise de resultados, com péssimo desempenho fora (0.57 pontos/jogo, 0.77 gols/jogo fora). O estilo de jogo do Riestra, a necessidade de não perder e a diferença de forma recente justificam a alta probabilidade de o time da casa pontuar (68%). A alta média de cartões do árbitro (Fernando Echenique, ~5.3 por jogo) reforça a expectativa por um jogo brigado e de poucos espaços, o que favorece a Dupla Chance 1X e o mercado Under 2.5 Gols (alternativa de valor).",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -69,9 +65,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Confronto de estilos. O Argentinos Juniors (AJ) é mais ofensivo em casa (~1.8 gols/jogo), mas o CA Belgrano (BEL) é extremamente cauteloso e eficiente na defesa fora de casa (~0.9 gols sofridos/jogo). A probabilidade de um jogo Under Gols é alta (62%), reforçada pela tendência de duelos H2H de poucos gols e a solidez defensiva do Belgrano. O árbitro Yael Falcón Pérez tem média de cartões alta, indicando um jogo faltoso, o que pode fragmentar o ritmo de ataque. O mercado de Cartões Acima de 5.5 é a principal alternativa de valor, dada a rigidez do juiz.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -84,9 +79,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Dupla Chance: 1X",
     "confidence": 68,
-    "status": "pending",
     "analysis": "Confronto do recém-campeão da Copa Argentina (Rivadavia) em casa, contra um Central Córdoba que busca explorar a fadiga do adversário. A Dupla Chance (1X) é favorecida pelo forte fator casa, a euforia do título (apesar do desgaste físico da final 5 dias antes) e o baixo poder ofensivo do Central Córdoba como visitante. A necessidade de o Rivadavia pontuar na Liga, e o histórico disciplinar do árbitro (Pablo Echavarría) favorecendo um jogo faltoso, reforçam a aposta. A principal alternativa de valor é o 'Ambos Marcam - NÃO'.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -99,9 +93,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Confronto entre um Sportivo Ameliano em má fase (11º) e um CS 2 de Mayo (4º) com ambições continentais. Os dados de H2H recente (4/5 Under 2.5) e a necessidade do Ameliano de ser cauteloso em casa contra um adversário superior reforçam o cenário de baixa contagem de gols. A Odd Justa de 1.54 valida o valor em odds de mercado acima de 1.70, tornando Under 2.5 Gols a aposta principal com alta confiança. A falta de métricas avançadas (xG/Árbitro) ajusta a confiança para 65%.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 2 x 3"
   },
   {
@@ -114,9 +107,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 2",
     "confidence": 58,
-    "status": "pending",
     "analysis": "O Nacional Asunción (5º) é tecnicamente superior ao lanterna Tembetary (12º). Apesar da forma recente irregular do Nacional (4 empates e 1 derrota nos últimos 5 jogos), a fragilidade do Tembetary, que tem a segunda pior defesa e é o pior mandante da liga, eleva a probabilidade de vitória do time visitante. A Odd Justa de 1.89 para a vitória simples, contra a odd mínima aceitável de 1.80, oferece valor, mesmo com a confiança limitada pela série de empates do Nacional. O mercado de Under 2.5 Gols é uma alternativa sólida, dada a baixa produção ofensiva do Tembetary e a falta de poder de fogo recente do Nacional.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -129,9 +121,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
     "analysis": "A grande vantagem do mando de campo em alta altitude (Tarma) é o fator primordial. O AD Tarma tem histórico consistente de vitórias em casa contra equipes de nível semelhante, e o Los Chankas CYC tende a sofrer fora de seus domínios. A diferença de desempenho casa/fora de ambos os times, potencializada pela altitude, garante uma probabilidade de vitória de 66% para o time da casa. A aposta alternativa de valor é o Over 2.5 Gols (52%) devido ao estilo aberto e às defesas medianas na Liga 1.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -144,9 +135,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 1",
     "confidence": 68,
-    "status": "pending",
     "analysis": "O Esbjerg (5º) joga em casa contra o lanterna Middelfart (12º), que vem de 5 derrotas seguidas na liga e tem a pior defesa. O H2H é esmagadoramente favorável ao Esbjerg (7V-0E-1D em 8 jogos). A superioridade técnica, a motivação pela zona de promoção e o fator casa sustentam uma alta probabilidade (68%) de vitória do mandante. A chuva e o vento previstos podem tornar o jogo físico, mas a diferença de qualidade é o fator dominante. Alternativa de valor é o Handicap Asiático Esbjerg -1.0.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 4 x 2"
   }
 ]

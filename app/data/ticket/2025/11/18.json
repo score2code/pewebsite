@@ -8,7 +8,7 @@
     "time": "16:30",
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Handicap Asiático: Brasil -1.5",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -20,7 +20,7 @@
     "time": "16:45",
     "timezone": "GMT",
     "prediction": "Total de Gols: Mais de 2.5",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 2 x 2"
   }
 ]

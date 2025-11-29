@@ -8,7 +8,7 @@
     "time": "19:30",
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -20,7 +20,7 @@
     "time": "23:00",
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 0 x 0"
   }
 ]

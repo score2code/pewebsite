@@ -9,9 +9,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Derbi com tendência de cautela e linhas compactas; menor volume de finalizações claras.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -24,9 +23,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Hoffenheim costuma produzir em transições e bolas paradas; ritmo favorece linha de 3+ gols.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -39,9 +37,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Nice de bloco sólido e controle defensivo; jogo tende a baixa conversão.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 1 x 5"
   },
   {
@@ -54,9 +51,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Mandante com superioridade técnica e poder ofensivo; alta probabilidade de vitória.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -69,9 +65,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Al Ahli com elenco superior e bom momento; mando favorece controle do jogo.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -84,9 +79,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Standard mais consistente e com apoio local; vantagem técnica indica vitória do mandante.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -99,9 +93,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Partida com perfil tático e ritmo moderado; poucas chances claras esperadas.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 4 x 1"
   },
   {
@@ -114,9 +107,8 @@
     "timezone": "GMT",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Confronto equilibrado com criação dos dois lados; probabilidade alta de gols para ambos.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -129,9 +121,8 @@
     "timezone": "GMT",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Times com tendência a jogos abertos e transições; cenário favorece gols dos dois lados.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 5 x 0"
   },
   {
@@ -144,9 +135,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 67,
-    "status": "pending",
     "analysis": "Bodo/Glimt dominante e com maior eficiência ofensiva; boa probabilidade de vitória fora.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 2"
   }
 ]

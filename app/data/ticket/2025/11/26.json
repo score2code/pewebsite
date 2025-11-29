@@ -8,7 +8,7 @@
     "time": "17:00",
     "timezone": "UTC",
     "prediction": "Mais de 2.5 gols",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 1 x 4"
   },
   {
@@ -20,7 +20,7 @@
     "time": "17:00",
     "timezone": "UTC",
     "prediction": "BTTS - Sim",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 3 x 1"
   }
 ]

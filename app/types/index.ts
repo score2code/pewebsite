@@ -6,8 +6,7 @@ export interface Pick {
   prediction: string;
   confidence: number;
   analysis?: string;
-  status: 'pending' | 'won' | 'lost' | 'void' | 'postponed';
-  hit?: boolean;
+  status: 'pending' | 'green' | 'red' | 'void' | 'postponed';
   reason?: string;
   country?: string;
   date?: string;

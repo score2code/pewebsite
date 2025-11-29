@@ -8,7 +8,7 @@
     "time": "16:45",
     "timezone": "GMT",
     "prediction": "Total de Gols: Mais de 2.5",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 6 x 0"
   },
   {
@@ -20,7 +20,7 @@
     "time": "14:00",
     "timezone": "GMT",
     "prediction": "Total de Gols: Mais de 2.5",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 4 x 0"
   }
 ]

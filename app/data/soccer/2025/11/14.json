@@ -9,9 +9,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Cartões: Mais de 4.5",
     "confidence": 68,
-    "status": "pending",
     "analysis": "Confronto direto na zona de rebaixamento com o Paysandu (20º) em péssima fase recente (0v, 1e, 4d nos últimos 5) e o Amazonas (18º) desesperado por pontos. O principal fator é a alta tensão do jogo combinada com o histórico do árbitro Bruno Arleu de Araújo, que tem média de cartões elevada (~5.94/jogo no Série A, ~5.2/jogo no Série B de 2024 - ajustado). A necessidade de resultado para o Amazonas e a pressão da torcida no Curuzu devem gerar um jogo físico e picotado, elevando a probabilidade de cartões (68% para Over 4.5). O mercado de Under 2.5 Gols é a principal alternativa de valor (60%), devido à fraca capacidade ofensiva de ambos e ao contexto de cautela.",
-    "hit": true,
+  "status": "green",
     "reason": "8 Cartões Amarelos e 1 Vermelho"
   },
   {
@@ -24,9 +23,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Handicap Asiático: Alemanha -2.5",
     "confidence": 68,
-    "status": "pending",
     "analysis": "A Alemanha é esmagadoramente superior a Luxemburgo (lanterna do grupo) em todos os quesitos técnicos e históricos. O H2H recente (4-0) e a necessidade de saldo de gols para a Alemanha impulsionam a aposta no handicap negativo. Luxemburgo tem ataque ineficiente e a probabilidade de a Alemanha vencer por 3 ou mais gols (probabilidade estimada em 68%) é o maior valor disponível no mercado principal, apesar das lacunas em dados de arbitragem e xG/xGA detalhados.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -39,9 +37,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 2",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Confronto de seleções com Países Baixos sendo claramente superior em técnica, elenco e histórico recente (17 jogos sem perder para a Polônia). A forma recente e o estilo de jogo holandês, focado em posse e pressão ofensiva, superam a dependência polonesa de Lewandowski e a abordagem mais reativa. A probabilidade de vitória holandesa é de 62%, justificando a recomendação de 'Países Baixos Vence (1X2)'. O risco principal é a Polônia conseguir se fechar e anular o ataque holandês, forçando um empate, mas o histórico recente sugere o contrário.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -54,9 +51,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Handicap Asiático: Croácia -2.5",
     "confidence": 65,
-    "status": "pending",
     "analysis": "A Croácia é tecnicamente muito superior e joga em casa, onde historicamente impõe placares elásticos contra seleções de menor expressão. O último confronto direto (1-0) foi atípico, pois o xG da Croácia (2.98) sugeria uma goleada. O time precisa consolidar a liderança. A aposta no Handicap Asiático -2.5 exige uma vitória por 3 ou mais gols, uma probabilidade alta (65%) dada a disparidade de qualidade e o estilo de jogo dominante da Croácia. O mercado Over 3.5 Gols é a principal alternativa de valor (58% de chance).",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 3 x 1"
   },
   {
@@ -83,9 +79,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Handicap Asiático: The New Saints -2.5",
     "confidence": 70,
-    "status": "pending",
     "analysis": "O The New Saints (TNS) é o líder e força dominante do campeonato (90% de probabilidade de vitória). O Flint Town United (9º) tem um desempenho defensivo fraco (2.06 Gols Sofridos/jogo). O confronto direto histórico (H2H) é o principal driver, com TNS vencendo 12 dos 13 jogos e, crucialmente, cobrindo o handicap -2.5 em 6 dos últimos 6 jogos diretos. A superioridade ofensiva (3.07 Gols/jogo TNS) e a tendência histórica de goleadas justificam a alta confiança no Handicap Asiático -2.5, mesmo com odds conservadoras.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 3"
   },
   {
@@ -98,9 +93,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Dupla Chance: 1X",
     "confidence": 70,
-    "status": "pending",
     "analysis": "Confronto de meio/baixo de tabela onde o Fremad Amager (8º) tem forte vantagem no confronto direto (invicto nos últimos 6 jogos H2H) e enfrenta um Skive IK (11º) em péssima forma recente (0V-2E-3D nos últimos 5) e com uma defesa ineficiente (1.67 Gols Sofridos/Jogo; 11 jogos sem Clean Sheet). A probabilidade de o time da casa pontuar é alta. O mercado Over 2.5 Gols é a principal alternativa de valor devido à média de gols sofridos dos visitantes e ao histórico H2H.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -113,9 +107,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 2",
     "confidence": 68,
-    "status": "pending",
     "analysis": "Confronto entre o líder (AB Gladsaxe) e o lanterna (FC Helsingør). O AB possui a melhor forma recente e um ataque eficiente, enquanto o Helsingør está em profunda crise, com 8 derrotas nos últimos 10 jogos e a pior defesa da liga. A probabilidade de vitória do AB Gladsaxe foi calculada em 68% (odd justa de 1.47). O mercado de 'Vitória AB Gladsaxe' oferece valor se a odd for superior a 1.70. O risco principal reside em uma possível rotação inesperada de elenco pelo AB.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 5"
   },
   {

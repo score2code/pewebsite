@@ -7,20 +7,20 @@ export const usePickStats = (picks: Pick[]) => {
     if (!picks.length) return null;
 
     const total = picks.length;
-    const won = picks.filter(p => p.status === 'won').length;
-    const lost = picks.filter(p => p.status === 'lost').length;
+    const won = picks.filter(p => p.status === 'green').length;
+    const lost = picks.filter(p => p.status === 'red').length;
     const pending = picks.filter(p => p.status === 'pending').length;
-    
+
     const hitRate = total > 0 ? Math.round((won / (won + lost)) * 100) : 0;
     const averageOdds = total > 0
       ? picks.reduce((sum, p) => sum + (p.odds ?? 0), 0) / total
       : 0;
     const totalProfit = picks.reduce((sum, p) => {
-      if (p.status === 'won') return sum + ((p.odds ?? 2) - 1) * (p.stake ?? 1);
-      if (p.status === 'lost') return sum - (p.stake ?? 1);
+      if (p.status === 'green') return sum + ((p.odds ?? 2) - 1) * (p.stake ?? 1);
+      if (p.status === 'red') return sum - (p.stake ?? 1);
       return sum;
     }, 0);
-    
+
     const roi = total > 0 ? (totalProfit / (total * (picks[0]?.stake ?? 1))) * 100 : 0;
 
     return {
@@ -53,7 +53,7 @@ export const useFilteredPicks = (
     return picks.filter(pick => {
       if (filters.league && pick.league !== filters.league) return false;
       if (filters.status && pick.status !== filters.status) return false;
-      
+
       if (filters.confidence) {
         const confidenceNum = parseInt(filters.confidence);
         if (pick.confidence < confidenceNum) return false;
@@ -81,7 +81,7 @@ export const useSortedPicks = (picks: Pick[], sortBy: string, sortOrder: 'asc' |
 
     const sorted = [...picks].sort((a, b) => {
       let comparison = 0;
-      
+
       switch (sortBy) {
         case 'date':
           comparison = (a.date ? new Date(a.date).getTime() : 0) - (b.date ? new Date(b.date).getTime() : 0);
@@ -128,8 +128,8 @@ export const useLeagueStats = (picks: Pick[]) => {
       }
 
       stats[pick.league].total++;
-      if (pick.status === 'won') stats[pick.league].won++;
-      if (pick.status === 'lost') stats[pick.league].lost++;
+      if (pick.status === 'green') stats[pick.league].won++;
+      if (pick.status === 'red') stats[pick.league].lost++;
       // Removido: cálculo de lucro baseado em odds
       // Mantemos profit neutro enquanto o campo odds não existe mais
     });
@@ -191,7 +191,7 @@ export const useDebounce = <T extends any[]>(
       const timeoutId = setTimeout(() => {
         callback(...args);
       }, delay);
-      
+
       return () => clearTimeout(timeoutId);
     },
     [callback, delay]

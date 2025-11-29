@@ -10,7 +10,7 @@
     "prediction": "Vencedor: 2",
     "confidence": 72,
     "analysis": "Lions em melhor fase; Commanders instáveis. Moneyline visitante (2).",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 22 x 44"
   }
 ]

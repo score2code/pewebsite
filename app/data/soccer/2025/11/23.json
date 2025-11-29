@@ -9,9 +9,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Mandante com maior controle e criação; cenário favorece vitória em casa.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -24,9 +23,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Confronto com transições e bolas paradas fortes dos dois lados; boa chance de gols para ambos.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -39,9 +37,8 @@
     "timezone": "BRT (Horário de Brasília)",
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Jogo tende a controle e cautela; histórico recente indica baixa conversão em chances claras.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -54,9 +51,8 @@
     "timezone": "GMT",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Ritmo intenso e criação dos dois lados; alta probabilidade de gols de ambas equipes.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 2"
   },
   {
@@ -69,9 +65,8 @@
     "timezone": "GMT",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Derbi com alto volume ofensivo e pressão; tendência de 3+ gols.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 4 x 1"
   },
   {
@@ -84,9 +79,8 @@
     "timezone": "GMT",
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Ambos têm criação consistente e espaço entrelinhas; bom cenário para gols dos dois lados.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -99,9 +93,8 @@
     "timezone": "GMT",
     "prediction": "Dupla Chance: X2",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Atlético mais estável e eficiente; boa probabilidade de pontuar fora (empate ou vitória).",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -114,9 +107,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 67,
-    "status": "pending",
     "analysis": "Superioridade técnica do visitante e alta produção ofensiva; forte probabilidade de vitória fora.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 2 x 2"
   },
   {
@@ -129,9 +121,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
     "analysis": "Leipzig dominante em casa com pressão e finalização acima da média; tende a vitória.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -144,9 +135,8 @@
     "timezone": "GMT",
     "prediction": "Resultado Final: 2",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Lyon com maior densidade técnica e criação; visitante com boa chance de vitória.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 0 x 0"
   }
 ]

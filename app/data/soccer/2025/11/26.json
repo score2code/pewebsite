@@ -10,9 +10,8 @@
     "awayTeam": "Mônaco",
     "prediction": "Resultado Final: 2",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Mônaco superior em qualidade e elenco; Pafos competitivo em casa, mas cede em transições e bolas paradas.",
-    "hit": false,
+  "status": "red",
     "reason": "Placar: 2 x 2"
   },
   {
@@ -26,9 +25,8 @@
     "awayTeam": "Kairat Almaty",
     "prediction": "Resultado Final: 1",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Copenhagen sólido em casa, boa pressão inicial e volume de finalizações; Kairat deve baixar blocos e sofrer em bolas aéreas.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 2"
   },
   {
@@ -42,9 +40,8 @@
     "awayTeam": "Atalanta",
     "prediction": "Mais de 2.5 gols",
     "confidence": 65,
-    "status": "pending",
     "analysis": "Duas equipes verticais e criativas; transições rápidas e bolas paradas perigosas indicam alto potencial de gols.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 3"
   },
   {
@@ -58,9 +55,8 @@
     "awayTeam": "Bayern Munich",
     "prediction": "BTTS - Sim",
     "confidence": 66,
-    "status": "pending",
     "analysis": "Arsenal agressivo em casa e Bayern com alta eficiência ofensiva; ambos tendem a criar chances claras.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 1"
   },
   {
@@ -74,9 +70,8 @@
     "awayTeam": "PSV Eindhoven",
     "prediction": "Mais de 2.5 gols",
     "confidence": 67,
-    "status": "pending",
     "analysis": "Liverpool imprime ritmo alto e cria volume; PSV tem transição rápida e capacidade de finalizar. Contexto favorável a 3+ gols.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 4"
   },
   {
@@ -90,9 +85,8 @@
     "awayTeam": "Real Madrid",
     "prediction": "Resultado Final: 2",
     "confidence": 64,
-    "status": "pending",
     "analysis": "Real Madrid dominante em posse e qualidade individual; Olympiacos forte em casa, mas vulnerável contra pressão e entrelinhas.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 4"
   },
   {
@@ -106,9 +100,8 @@
     "awayTeam": "Tottenham",
     "prediction": "BTTS - Sim",
     "confidence": 65,
-    "status": "pending",
     "analysis": "PSG cria por posse e amplitude; Tottenham vertical e perigoso em transições. Expectativa de gols para ambos.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 5 x 3"
   },
   {
@@ -122,9 +115,8 @@
     "awayTeam": "Club Brugge",
     "prediction": "Resultado Final: 1",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Sporting consistente em casa com boa organização defensiva; Brugge competitivo, mas tende a ceder contra pressão sustentada.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -138,9 +130,8 @@
     "awayTeam": "Cruz Azul",
     "prediction": "Dupla Chance: 1X",
     "confidence": 61,
-    "status": "pending",
     "analysis": "Guadalajara sólido no mando e concede poucas chances claras; Cruz Azul enfrenta dificuldades de criação fora.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -154,9 +145,8 @@
     "awayTeam": "CA Tigre",
     "prediction": "Menos de 2.5 gols",
     "confidence": 62,
-    "status": "pending",
     "analysis": "Partida com tendência de equilíbrio e poucas grandes chances; linhas compactas favorecem placar baixo.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -170,9 +160,8 @@
     "awayTeam": "St. Gallen",
     "prediction": "Mais de 2.5 gols",
     "confidence": 63,
-    "status": "pending",
     "analysis": "Equipes com proposta ofensiva e transições constantes; defesas cedem em cruzamentos e segunda bola, indicando 3+ gols.",
-    "hit": true,
+  "status": "green",
     "reason": "Placar: 1 x 3"
   }
 ]

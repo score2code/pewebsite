@@ -8,7 +8,7 @@
     "homeTeam": "The New Saints",
     "awayTeam": "Caernarfon Town",
     "prediction": "Mais de 2.5 gols",
-    "hit": false,
+    "status": "red",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -20,7 +20,7 @@
     "homeTeam": "Vitória Guimarães",
     "awayTeam": "AVS",
     "prediction": "Empate Anula Aposta: Vitória Guimarães",
-    "hit": true,
+    "status": "green",
     "reason": "Placar: 4 x 0"
   }
 ]
