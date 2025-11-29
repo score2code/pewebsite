@@ -105,8 +105,15 @@ export async function getDashboardStats() {
   const resolvedForPending = allPicks.filter(p => p.status === 'green' || p.status === 'red' || p.status === 'postponed' || p.status === 'void');
   const pendingCount = totalPicks - resolvedForPending.length;
 
-  // Gera dados para o gráfico de desempenho (últimos 30 dias com atividade)
-  const performanceSeries = unifiedDaily.slice(-30).map(day => {
+  // Gera dados para o gráfico de desempenho: últimos 14 dias até o dia corrente
+  const today = new Date();
+  const fourteenDaysAgo = new Date(today.getTime() - 14 * 24 * 60 * 60 * 1000);
+  const recentDaily = unifiedDaily.filter(day => {
+    const d = new Date(day.date);
+    return d >= fourteenDaysAgo && d <= today;
+  });
+
+  const performanceSeries = recentDaily.map(day => {
     // Formatar label sem timezone para evitar dia desalinhado
     const [y, m, d] = day.date.split('-');
     const label = `${d}/${m}`;
@@ -161,8 +168,16 @@ export async function getTicketStats() {
   const denom = winners + losers; // exclui pendentes e voids
   const winRate = denom > 0 ? Number(((winners / denom) * 100).toFixed(1)) : 0;
 
-  // Série dos últimos 30 dias: 100=win, 0=loss, 50=pending, 75=adiado/void
-  const series = ticketDaily.slice(-30).map(day => {
+  // Série do mês corrente: 100=win, 0=loss, 50=pending, 75=adiado/void
+  const now = new Date();
+  const currentYear = String(now.getFullYear());
+  const currentMonth = String(now.getMonth() + 1).padStart(2, '0');
+  const currentMonthDaily = ticketDaily.filter(day => {
+    const [y, m] = day.date.split('-');
+    return y === currentYear && m === currentMonth;
+  });
+
+  const series = currentMonthDaily.map(day => {
     const [y, m, d] = day.date.split('-');
     const label = `${d}/${m}`;
     const status = classifyTicket(day.picks);
