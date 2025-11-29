@@ -11,7 +11,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Duas equipes com proposta ofensiva e transições rápidas. Linhas defensivas expostas em bolas paradas e ataques pelas pontas sugerem ambos marcam."
+    "analysis": "Duas equipes com proposta ofensiva e transições rápidas. Linhas defensivas expostas em bolas paradas e ataques pelas pontas sugerem ambos marcam.",
+    "hit": false,
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "galatasaray-x-royale-union-sg",
@@ -25,7 +27,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 61,
     "status": "pending",
-    "analysis": "Forte mando de campo do Galatasaray e pressão inicial alta. Union SG é competitivo, mas costuma ceder volume e finalizações fora."
+    "analysis": "Forte mando de campo do Galatasaray e pressão inicial alta. Union SG é competitivo, mas costuma ceder volume e finalizações fora.",
+    "hit": false,
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "chelsea-x-barcelona",
@@ -39,7 +43,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Jogo com alta densidade de criação. Chelsea tem chegada por cruzamentos e segunda bola; Barça gera chances por posse e entrelinhas. Tendência de 3+ gols."
+    "analysis": "Jogo com alta densidade de criação. Chelsea tem chegada por cruzamentos e segunda bola; Barça gera chances por posse e entrelinhas. Tendência de 3+ gols.",
+    "hit": true,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "borussia-dortmund-x-villarreal",
@@ -53,7 +59,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Dortmund acelera transições e pressiona alto; Villarreal responde em contra-ataque e bola parada. Cenário típico de múltiplas ocasiões e 3+ gols."
+    "analysis": "Dortmund acelera transições e pressiona alto; Villarreal responde em contra-ataque e bola parada. Cenário típico de múltiplas ocasiões e 3+ gols.",
+    "hit": true,
+    "reason": "Placar: 4 x 0"
   },
   {
     "id": "olympique-marseille-x-newcastle",
@@ -67,7 +75,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Marseille cede espaços em transição; Newcastle cria por amplitude e infiltrações. Ambos têm bolas paradas fortes — cenário favorável a ambos marcam."
+    "analysis": "Marseille cede espaços em transição; Newcastle cria por amplitude e infiltrações. Ambos têm bolas paradas fortes — cenário favorável a ambos marcam.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "bodo-glimt-x-juventus",
@@ -81,7 +91,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Bodo é forte em casa, mas a Juventus controla ritmo e concede poucas grandes chances. Eficiência em transição e bolas paradas favorece o visitante."
+    "analysis": "Bodo é forte em casa, mas a Juventus controla ritmo e concede poucas grandes chances. Eficiência em transição e bolas paradas favorece o visitante.",
+    "hit": true,
+    "reason": "Placar: 2 x 3"
   },
   {
     "id": "napoli-x-qarabag",
@@ -95,7 +107,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 67,
     "status": "pending",
-    "analysis": "Napoli dominante em posse e criação, clara superioridade técnica. Qarabag deve se fechar, mas sofre em volume e qualidade de chances contra top-5 europeu."
+    "analysis": "Napoli dominante em posse e criação, clara superioridade técnica. Qarabag deve se fechar, mas sofre em volume e qualidade de chances contra top-5 europeu.",
+    "hit": true,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "slavia-praga-x-athletic-bilbao",
@@ -109,7 +123,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Slavia tem consistência em casa e bom ritmo defensivo. Bilbao competitivo, porém tende a cair em rendimento fora contra blocos médios bem organizados."
+    "analysis": "Slavia tem consistência em casa e bom ritmo defensivo. Bilbao competitivo, porém tende a cair em rendimento fora contra blocos médios bem organizados.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "manchester-city-x-bayer-leverkusen",
@@ -123,7 +139,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 67,
     "status": "pending",
-    "analysis": "City gera alto volume e controle territorial; Leverkusen é agressivo e vertical. Expectativa de chances claras para ambos e 3+ gols."
+    "analysis": "City gera alto volume e controle territorial; Leverkusen é agressivo e vertical. Expectativa de chances claras para ambos e 3+ gols.",
+    "hit": false,
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "ado-den-haag-x-de-graafschap",
@@ -137,6 +155,8 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Liga de alta média de gols; equipes com tendência ofensiva e transições frequentes. Defesas vulneráveis a segunda bola e cruzamentos."
+    "analysis": "Liga de alta média de gols; equipes com tendência ofensiva e transições frequentes. Defesas vulneráveis a segunda bola e cruzamentos.",
+    "hit": true,
+    "reason": "Placar: 3 x 2"
   }
 ]

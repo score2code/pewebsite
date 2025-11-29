@@ -7,7 +7,9 @@
     "timezone": "UTC",
     "homeTeam": "The New Saints",
     "awayTeam": "Caernarfon Town",
-    "prediction": "Mais de 2.5 gols"
+    "prediction": "Mais de 2.5 gols",
+    "hit": false,
+    "reason": "Placar: 2 x 0"
   },
   {
     "league": "Primeira Liga",
@@ -17,6 +19,8 @@
     "timezone": "UTC",
     "homeTeam": "Vitória Guimarães",
     "awayTeam": "AVS",
-    "prediction": "Empate Anula Aposta: Vitória Guimarães"
+    "prediction": "Empate Anula Aposta: Vitória Guimarães",
+    "hit": true,
+    "reason": "Placar: 4 x 0"
   }
 ]

@@ -7,7 +7,10 @@
     "date": "2025-11-29",
     "time": "11:30",
     "timezone": "UTC",
-    "prediction": "Handicap: Bayern Munich -2.0"
+    "prediction": "Handicap: Bayern Munich -2.0",
+    "status": "void",
+    "hit": true,
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "barcelona-x-alaves",
@@ -17,6 +20,8 @@
     "date": "2025-11-29",
     "time": "12:15",
     "timezone": "UTC",
-    "prediction": "Handicap: Barcelona -1.5"
+    "prediction": "Handicap: Barcelona -1.5",
+    "hit": true,
+    "reason": "Placar: 3 x 1"
   }
 ]

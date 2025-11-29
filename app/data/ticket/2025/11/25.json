@@ -7,7 +7,9 @@
     "date": "2025-11-25",
     "time": "17:00",
     "timezone": "UTC",
-    "prediction": "Resultado Final: 1"
+    "prediction": "Resultado Final: 1",
+    "hit": true,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "manchester-city-x-bayer-leverkusen",
@@ -17,6 +19,8 @@
     "date": "2025-11-25",
     "time": "17:00",
     "timezone": "UTC",
-    "prediction": "Mais de 2.5 gols"
+    "prediction": "Mais de 2.5 gols",
+    "hit": false,
+    "reason": "Placar: 0 x 2"
   }
 ]

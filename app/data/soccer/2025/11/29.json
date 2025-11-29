@@ -53,7 +53,9 @@
     "prediction": "Mais de 2.0 gols (Linha Asiática)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Brentford eficiente em bolas paradas, Burnley concede chances. Linha asiática protege caso exatamente 2 gols."
+    "analysis": "Brentford eficiente em bolas paradas, Burnley concede chances. Linha asiática protege caso exatamente 2 gols.",
+    "hit": true,
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "sunderland-x-bournemouth",
@@ -67,7 +69,9 @@
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Times com média de finalizações alta e defesas vulneráveis. Cenário favorável para gols dos dois lados."
+    "analysis": "Times com média de finalizações alta e defesas vulneráveis. Cenário favorável para gols dos dois lados.",
+    "hit": true,
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "manchester-city-x-leeds-united",
@@ -81,7 +85,9 @@
     "prediction": "Handicap: Manchester City -1.5",
     "confidence": 67,
     "status": "pending",
-    "analysis": "City dominante em casa, controle de posse e criação. Leeds instável defensivamente. Vitória por 2+ gols é provável."
+    "analysis": "City dominante em casa, controle de posse e criação. Leeds instável defensivamente. Vitória por 2+ gols é provável.",
+    "hit": true,
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "everton-x-newcastle",
@@ -95,7 +101,9 @@
     "prediction": "Empate Anula Aposta: Newcastle (DNB)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Newcastle mais sólido taticamente e com melhor fase. DNB reduz risco num jogo físico."
+    "analysis": "Newcastle mais sólido taticamente e com melhor fase. DNB reduz risco num jogo físico.",
+    "hit": true,
+    "reason": "Placar: 1 x 4"
   },
   {
     "id": "tottenham-x-fulham",
@@ -123,7 +131,9 @@
     "prediction": "Dupla Chance: Mallorca ou Empate",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Mallorca consistente em casa, Osasuna cai rendimento fora. Valor na proteção de empate."
+    "analysis": "Mallorca consistente em casa, Osasuna cai rendimento fora. Valor na proteção de empate.",
+    "hit": true,
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "barcelona-x-alaves",
@@ -137,7 +147,9 @@
     "prediction": "Handicap: Barcelona -1.5",
     "confidence": 67,
     "status": "pending",
-    "analysis": "Barça com alta posse e criação; Alavés costuma sofrer contra blocos altos. Tendência de vitória confortável."
+    "analysis": "Barça com alta posse e criação; Alavés costuma sofrer contra blocos altos. Tendência de vitória confortável.",
+    "hit": true,
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "levante-x-athletic-bilbao",
@@ -151,7 +163,9 @@
     "prediction": "Empate Anula Aposta: Athletic Bilbao (DNB)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Bilbao com melhor físico e transição. DNB preserva em jogo potencialmente truncado."
+    "analysis": "Bilbao com melhor físico e transição. DNB preserva em jogo potencialmente truncado.",
+    "hit": true,
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "atletico-madrid-x-real-oviedo",
@@ -179,7 +193,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Ambas equipes com jogos abertos e média de finalizações elevada. 3+ gols é plausível."
+    "analysis": "Ambas equipes com jogos abertos e média de finalizações elevada. 3+ gols é plausível.",
+    "hit": true,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "werder-bremen-x-fc-koln",
@@ -193,7 +209,9 @@
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Werder agressivo no ataque, Köln vulnerável atrás mas perigoso na bola aérea."
+    "analysis": "Werder agressivo no ataque, Köln vulnerável atrás mas perigoso na bola aérea.",
+    "hit": true,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "union-berlin-x-heidenheim",
@@ -207,7 +225,9 @@
     "prediction": "Dupla Chance: Union Berlin ou Empate",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Union forte em casa e compacto defensivamente. Proteção ao empate reduz variância."
+    "analysis": "Union forte em casa e compacto defensivamente. Proteção ao empate reduz variância.",
+    "hit": false,
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "bayern-munich-x-st-pauli",
@@ -220,8 +240,10 @@
     "awayTeam": "St.Pauli",
     "prediction": "Handicap: Bayern Munich -2.0",
     "confidence": 68,
-    "status": "pending",
-    "analysis": "Diferença técnica grande. Linha -2 confere push em vitória por dois gols e valor acima disso."
+    "status": "void",
+    "analysis": "Diferença técnica grande. Linha -2 confere push em vitória por dois gols e valor acima disso.",
+    "hit": false,
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "bayer-leverkusen-x-borussia-dortmund",
@@ -235,7 +257,9 @@
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Duelos entre Leverkusen e Dortmund costumam ser abertos, com pressão alta e transições rápidas."
+    "analysis": "Duelos entre Leverkusen e Dortmund costumam ser abertos, com pressão alta e transições rápidas.",
+    "hit": true,
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "monaco-x-psg",
@@ -249,7 +273,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Ataques com alta produção de xG. Tendência ofensiva e marcação de ambos lados."
+    "analysis": "Ataques com alta produção de xG. Tendência ofensiva e marcação de ambos lados.",
+    "hit": false,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "paris-fc-x-auxerre",
@@ -291,7 +317,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Jogo típico de alta produção ofensiva na Eredivisie, defesas vulneráveis."
+    "analysis": "Jogo típico de alta produção ofensiva na Eredivisie, defesas vulneráveis.",
+    "hit": false,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "fortuna-sittard-x-heracles-almelo",

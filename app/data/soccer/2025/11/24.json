@@ -10,7 +10,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Partida de ritmo moderado e blocos compactos; menor volume de chances claras."
+    "analysis": "Partida de ritmo moderado e blocos compactos; menor volume de chances claras.",
+    "hit": true,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "internacional-rs-x-santos",
@@ -23,7 +25,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Inter mais estável em casa; posse e criação sustentam boa probabilidade de vitória."
+    "analysis": "Inter mais estável em casa; posse e criação sustentam boa probabilidade de vitória.",
+    "hit": false,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "manchester-united-x-everton",
@@ -36,7 +40,9 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Ritmo alto e transições dos dois lados; cenário favorece 3+ gols."
+    "analysis": "Ritmo alto e transições dos dois lados; cenário favorece 3+ gols.",
+    "hit": false,
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "espanyol-x-sevilla",
@@ -49,7 +55,9 @@
     "prediction": "Dupla Chance: X2",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Sevilla com maior densidade técnica e experiência; alta chance de pontuar fora."
+    "analysis": "Sevilla com maior densidade técnica e experiência; alta chance de pontuar fora.",
+    "hit": false,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "basaksehir-x-trabzonspor",
@@ -62,7 +70,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Trabzonspor eficiente em transições e bolas paradas; visitante com boa probabilidade de vencer."
+    "analysis": "Trabzonspor eficiente em transições e bolas paradas; visitante com boa probabilidade de vencer.",
+    "hit": true,
+    "reason": "Placar: 3 x 4"
   },
   {
     "id": "konyaspor-x-antalyaspor",
@@ -75,7 +85,9 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Confronto de menor ritmo e controle defensivo; tendência de baixa conversão em gols."
+    "analysis": "Confronto de menor ritmo e controle defensivo; tendência de baixa conversão em gols.",
+    "hit": true,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "nublense-x-huachipato",
@@ -88,7 +100,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Jogo equilibrado com criação de ambos lados; cenário favorece gols para os dois."
+    "analysis": "Jogo equilibrado com criação de ambos lados; cenário favorece gols para os dois.",
+    "hit": false,
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "randers-fc-x-odense-bk",
@@ -101,7 +115,9 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Equilíbrio e espaço entrelinhas; os dois times costumam converter boas oportunidades."
+    "analysis": "Equilíbrio e espaço entrelinhas; os dois times costumam converter boas oportunidades.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "pogon-szczecin-x-zaglebie-lubin",
@@ -114,7 +130,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Mandante com maior consistência e criação; vantagem técnica indica vitória em casa."
+    "analysis": "Mandante com maior consistência e criação; vantagem técnica indica vitória em casa.",
+    "hit": true,
+    "reason": "Placar: 5 x 1"
   },
   {
     "id": "botev-vratsa-x-slavia-sofia",
@@ -127,6 +145,8 @@
     "prediction": "Resultado Final: 2",
     "confidence": 66,
     "status": "pending",
-    "analysis": "Slavia superior técnica e taticamente; boa probabilidade de vitória fora."
+    "analysis": "Slavia superior técnica e taticamente; boa probabilidade de vitória fora.",
+    "hit": true,
+    "reason": "Placar: 0 x 1"
   }
 ]

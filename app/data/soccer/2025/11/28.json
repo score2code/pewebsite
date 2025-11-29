@@ -11,7 +11,9 @@
     "prediction": "Menos de 2.5 gols",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Jogo de copa com tendência de poucos gols: Getafe compacto e direto, Elche com baixa criação contra blocos médios; ritmo e risco controlados." 
+    "analysis": "Jogo de copa com tendência de poucos gols: Getafe compacto e direto, Elche com baixa criação contra blocos médios; ritmo e risco controlados.",
+    "hit": true,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "borussia-monchengladbach-x-rb-leipzig",
@@ -25,7 +27,9 @@
     "prediction": "BTTS - Sim",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Partida de alta intensidade: Leipzig agressivo em transição e Gladbach consegue produzir em casa; ambos com volume e fragilidades defensivas gerando gols dos dois lados." 
+    "analysis": "Partida de alta intensidade: Leipzig agressivo em transição e Gladbach consegue produzir em casa; ambos com volume e fragilidades defensivas gerando gols dos dois lados.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "como-x-sassuolo",
@@ -39,7 +43,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Trocas de posse e espaços entrelinhas aumentam finalizações; ambas cedem chances por laterais e bolas aéreas, favorecendo placar elevado." 
+    "analysis": "Trocas de posse e espaços entrelinhas aumentam finalizações; ambas cedem chances por laterais e bolas aéreas, favorecendo placar elevado.",
+    "hit": false,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "metz-x-rennes",
@@ -53,7 +59,9 @@
     "prediction": "Empate Anula Aposta: Rennes",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Rennes superior em organização e pressão; DNB reduz risco do empate fora de casa mantendo valor pela qualidade defensiva e bola parada." 
+    "analysis": "Rennes superior em organização e pressão; DNB reduz risco do empate fora de casa mantendo valor pela qualidade defensiva e bola parada.",
+    "hit": true,
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "zwolle-x-heerenveen",
@@ -67,7 +75,9 @@
     "prediction": "BTTS - Sim",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Ritmo alto e defesas permissivas; ambos com criação por corredores e cruzamentos, gerando chances claras para gol de cada lado." 
+    "analysis": "Ritmo alto e defensas permissivas; ambos com criação por corredores e cruzamentos, gerando chances claras para gol de cada lado.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "vitoria-guimaraes-x-avs",
@@ -81,7 +91,9 @@
     "prediction": "Empate Anula Aposta: Vitória Guimarães",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Guimarães forte em pressão média e bolas paradas; DNB cobre o risco de empate diante de possível bloco baixo do AVS." 
+    "analysis": "Guimarães forte em pressão média e bolas paradas; DNB cobre o risco de empate diante de possível bloco baixo do AVS.",
+    "hit": true,
+    "reason": "Placar: 4 x 0"
   },
   {
     "id": "the-new-saints-x-caernarfon-town",
@@ -95,7 +107,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
     "status": "pending",
-    "analysis": "TNS dominante ofensivamente com alto xG por posse; Caernarfon concede espaços em transição e bolas laterais, sustentando tendência de múltiplos gols." 
+    "analysis": "TNS dominante ofensivamente com alto xG por posse; Caernarfon concede espaços em transição e bolas laterais, sustentando tendência de múltiplos gols.",
+    "hit": false,
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "lokomotiv-plovdiv-x-montana",
@@ -108,8 +122,10 @@
     "awayTeam": "Montana",
     "prediction": "Empate Anula Aposta: Lokomotiv Plovdiv",
     "confidence": 64,
-    "status": "pending",
-    "analysis": "Maior qualidade técnica e profundidade do Plovdiv; DNB protege contra empate típico de copa mantendo edge em bolas paradas e posse." 
+    "status": "void",
+    "analysis": "Maior qualidade técnica e profundidade do Plovdiv; DNB protege contra empate típico de copa mantendo edge em bolas paradas e posse.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "lokomotiv-sofia-x-arda-kardzhali",
@@ -123,6 +139,8 @@
     "prediction": "Dupla Chance: Arda Kardzhali ou Empate",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Arda compacto e eficiente em transições; dupla chance reduz variância fora de casa contra Lokomotiv com dificuldades em ataque posicional." 
+    "analysis": "Arda compacto e eficiente em transições; dupla chance reduz variância fora de casa contra Lokomotiv com dificuldades em ataque posicional.",
+    "hit": true,
+    "reason": "Placar: 0 x 0"
   }
 ]

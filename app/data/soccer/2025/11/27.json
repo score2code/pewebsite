@@ -1,5 +1,21 @@
 [
   {
+    "id": "monterrey-x-club-america",
+    "league": "Liga MX (México)",
+    "country": "México",
+    "date": "2025-11-27",
+    "time": "18:00",
+    "timezone": "UTC",
+    "homeTeam": "Monterrey",
+    "awayTeam": "Club América",
+    "prediction": "BTTS - Sim",
+    "confidence": 64,
+    "status": "pending",
+    "analysis": "Duas equipes com ótimo ataque e boa chegada na área; tendência de chances claras para ambos e gols.",
+    "hit": false,
+    "reason": "Placar: 2 x 0"
+  },
+  {
     "id": "fenerbahce-x-ferencvaros",
     "league": "UEFA Europa League",
     "country": "Europa",
@@ -11,7 +27,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Mando forte do Fenerbahce e boa pressão inicial; Ferencvaros tende a baixar linhas e sofrer em bolas aéreas." 
+    "analysis": "Mando forte do Fenerbahce e boa pressão inicial; Ferencvaros tende a baixar linhas e sofrer em bolas aéreas.",
+    "hit": false,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "feyenoord-rotterdam-x-celtic",
@@ -25,7 +43,9 @@
     "prediction": "BTTS - Sim",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Feyenoord cria por amplitude e cruzamentos; Celtic vertical e agressivo. Cenário favorável a ambos marcarem." 
+    "analysis": "Feyenoord cria por amplitude e cruzamentos; Celtic vertical e agressivo. Cenário favorável a ambos marcarem.",
+    "hit": true,
+    "reason": "Placar: 1 x 3"
   },
   {
     "id": "as-roma-x-midtjylland",
@@ -39,7 +59,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Roma consistente defensivamente e com volume ofensivo em casa; Midtjylland deve sofrer sob pressão e bolas paradas." 
+    "analysis": "Roma consistente defensivamente e com volume ofensivo em casa; Midtjylland deve sofrer sob pressão e bolas paradas.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "ludogorets-razgrad-x-celta-vigo",
@@ -53,7 +75,9 @@
     "prediction": "Resultado Final: 2",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Celta superior tecnicamente e eficiente em transição; Ludogorets competitivo em casa, mas vulnerável a entrelinhas." 
+    "analysis": "Celta superior tecnicamente e eficiente em transição; Ludogorets competitivo em casa, mas vulnerável a entrelinhas.",
+    "hit": false,
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "paok-thessaloniki-x-brann",
@@ -67,7 +91,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 62,
     "status": "pending",
-    "analysis": "PAOK forte no mando e em bolas paradas; Brann tende a ceder território e oportunidades." 
+    "analysis": "PAOK forte no mando e em bolas paradas; Brann tende a ceder território e oportunidades.",
+    "hit": false,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "lille-x-dinamo-zagreb",
@@ -81,7 +107,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Lille com boa organização e pressão; Dinamo resiste, mas deve sofrer em volume de finalizações contra bloco alto." 
+    "analysis": "Lille com boa organização e pressão; Dinamo resiste, mas deve sofrer em volume de finalizações contra bloco alto."
   },
   {
     "id": "aston-villa-x-young-boys",
@@ -95,7 +121,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Villa agressivo em casa e vertical; Young Boys responde em transições. Jogo com potencial para 3+ gols." 
+    "analysis": "Villa agressivo em casa e vertical; Young Boys responde em transições. Jogo com potencial para 3+ gols.",
+    "hit": true,
+    "reason": "Placar: 4 x 0"
   },
   {
     "id": "viktoria-plzen-x-freiburg",
@@ -109,7 +137,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Equipes com proposta ofensiva e transições constantes; defesas cedem em cruzamentos e segunda bola." 
+    "analysis": "Equipes com proposta ofensiva e transições constantes; defesas cedem em cruzamentos e segunda bola.",
+    "hit": false,
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "porto-x-nice",
@@ -123,7 +153,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Porto dominante no Dragão e eficaz em bola parada; Nice competitivo, mas menos eficiente fora." 
+    "analysis": "Porto dominante no Dragão e eficaz em bola parada; Nice competitivo, mas menos eficiente fora.",
+    "hit": true,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "slovan-bratislava-x-rayo-vallecano",
@@ -137,7 +169,9 @@
     "prediction": "BTTS - Sim",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Rayo agressivo em transições; Slovan forte em casa. Expectativa de chances claras para ambos." 
+    "analysis": "Rayo agressivo em transições; Slovan forte em casa. Expectativa de chances claras para ambos.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "maccabi-tel-aviv-x-olympique-lyon",
@@ -151,7 +185,9 @@
     "prediction": "BTTS - Sim",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Maccabi pressionando alto; Lyon com qualidade na criação. Tendência de ambos marcarem." 
+    "analysis": "Maccabi pressionando alto; Lyon com qualidade na criação. Tendência de ambos marcarem.",
+    "hit": false,
+    "reason": "Placar: 0 x 6"
   },
   {
     "id": "betis-x-utrecht",
@@ -165,7 +201,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Betis com boa posse e ataque posicional; Utrecht enfrenta dificuldade em manter linhas contra pressão sustentada." 
+    "analysis": "Betis com boa posse e ataque posicional; Utrecht enfrenta dificuldade em manter linhas contra pressão sustentada.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "genk-x-basel",
@@ -179,7 +217,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Genk e Basel com transições rápidas e boas bolas paradas — potencial para 3+ gols." 
+    "analysis": "Genk e Basel com transições rápidas e boas bolas paradas — potencial para 3+ gols.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "bologna-x-rb-salzburg",
@@ -193,7 +233,9 @@
     "prediction": "Menos de 2.5 gols",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Jogo de equilíbrio e linhas compactas; tendência de poucas grandes chances e placar baixo." 
+    "analysis": "Jogo de equilíbrio e linhas compactas; tendência de poucas grandes chances e placar baixo.",
+    "hit": false,
+    "reason": "Placar: 4 x 1"
   },
   {
     "id": "estrela-vermelha-x-fcsb",
@@ -207,7 +249,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Mando forte e pressão inicial do Estrela Vermelha; FCSB deve baixar blocos e sofrer em cruzamentos." 
+    "analysis": "Mando forte e pressão inicial do Estrela Vermelha; FCSB deve baixar blocos e sofrer em cruzamentos.",
+    "hit": true,
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "panathinaikos-x-sturm-graz",
@@ -221,7 +265,9 @@
     "prediction": "Menos de 2.5 gols",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Partida com tendência de controle e poucas chances claras; blocos médios bem organizados." 
+    "analysis": "Partida com tendência de controle e poucas chances claras; blocos médios bem organizados.",
+    "hit": false,
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "nottingham-forest-x-malmo-ff",
@@ -235,7 +281,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Forest com posse e criação em casa; Malmo enfrenta dificuldades defensivas contra pressão e amplitude." 
+    "analysis": "Forest com posse e criação em casa; Malmo enfrenta dificuldades defensivas contra pressão e amplitude.",
+    "hit": true,
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "go-ahead-eagles-x-stuttgart",
@@ -249,7 +297,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Jogo aberto com transições frequentes; defesas vulneráveis a segunda bola e cruzamentos." 
+    "analysis": "Jogo aberto com transições frequentes; defesas vulneráveis a segunda bola e cruzamentos.",
+    "hit": true,
+    "reason": "Placar: 0 x 4"
   },
   {
     "id": "rangers-x-braga",
@@ -263,7 +313,9 @@
     "prediction": "BTTS - Sim",
     "confidence": 65,
     "status": "pending",
-    "analysis": "Rangers forte no mando e Braga perigoso em transição — alta chance de gols dos dois lados." 
+    "analysis": "Rangers forte no mando e Braga perigoso em transição — alta chance de gols dos dois lados.",
+    "hit": true,
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "fiorentina-x-aek-atenas",
@@ -277,7 +329,9 @@
     "prediction": "Resultado Final: 1",
     "confidence": 64,
     "status": "pending",
-    "analysis": "Fiorentina com posse e controle territorial; AEK deve se fechar e ceder em volume." 
+    "analysis": "Fiorentina com posse e controle territorial; AEK deve se fechar e ceder em volume.",
+    "hit": false,
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "breidablik-x-samsunspor",
@@ -291,7 +345,9 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 63,
     "status": "pending",
-    "analysis": "Duas equipes com proposta ofensiva e defesas vulneráveis em transição — cenário para 3+ gols." 
+    "analysis": "Duas equipes com proposta ofensiva e defesas vulneráveis em transição — cenário para 3+ gols.",
+    "hit": true,
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "strasbourg-x-crystal-palace",
@@ -305,6 +361,8 @@
     "prediction": "BTTS - Sim",
     "confidence": 62,
     "status": "pending",
-    "analysis": "Strasbourg encontra espaços em casa; Palace é perigoso em contra-ataque. Ambos devem criar chances." 
+    "analysis": "Strasbourg encontra espaços em casa; Palace é perigoso em contra-ataque. Ambos devem criar chances.",
+    "hit": true,
+    "reason": "Placar: 2 x 1"
   }
 ]
