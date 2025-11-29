@@ -1,0 +1,24 @@
+[
+  {
+    "id": "torino-fc-x-ac-milan",
+    "league": "Itália - Serie A",
+    "homeTeam": "Torino FC",
+    "awayTeam": "AC Milan",
+    "date": "2025-12-08",
+    "time": "16:45",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "confidence": 73
+  },
+  {
+    "id": "wolverhampton-x-manchester-united",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Wolverhampton",
+    "awayTeam": "Manchester United",
+    "date": "2025-12-08",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Dupla Chance: Manchester United ou Empate",
+    "confidence": 72
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "wolverhampton-x-manchester-united",
+    "league": "Inglaterra - Premier League",
+    "country": "Inglaterra",
+    "date": "2025-12-08",
+    "time": "17:00",
+    "timezone": "UTC",
+    "homeTeam": "Wolverhampton",
+    "awayTeam": "Manchester United",
+    "prediction": "Dupla Chance: Manchester United ou Empate",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "United com maior criação e elenco; X2 oferece proteção mantendo valor fora."
+  },
+  {
+    "id": "osasuna-x-levante",
+    "league": "Espanha - La Liga",
+    "country": "Espanha",
+    "date": "2025-12-08",
+    "time": "17:00",
+    "timezone": "UTC",
+    "homeTeam": "Osasuna",
+    "awayTeam": "Levante",
+    "prediction": "Empate Anula Aposta: Osasuna (DNB)",
+    "confidence": 71,
+    "status": "pending",
+    "analysis": "Osasuna sólido no mando e mais estável defensivamente; DNB reduz risco em jogo equilibrado."
+  },
+  {
+    "id": "torino-fc-x-ac-milan",
+    "league": "Itália - Serie A",
+    "country": "Itália",
+    "date": "2025-12-08",
+    "time": "16:45",
+    "timezone": "UTC",
+    "homeTeam": "Torino FC",
+    "awayTeam": "AC Milan",
+    "prediction": "Resultado Final: 2",
+    "confidence": 73,
+    "status": "pending",
+    "analysis": "Milan superior técnica e taticamente; boa probabilidade de vitória como visitante sem precisar de handicap."
+  }
+]

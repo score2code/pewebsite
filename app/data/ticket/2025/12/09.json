@@ -1,0 +1,24 @@
+[
+  {
+    "id": "bayern-munich-x-sporting-lisboa",
+    "league": "UEFA - Liga dos Campeões",
+    "homeTeam": "Bayern Munich",
+    "awayTeam": "Sporting Lisboa",
+    "date": "2025-12-09",
+    "time": "14:45",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 74
+  },
+  {
+    "id": "barcelona-x-eintracht-frankfurt",
+    "league": "UEFA - Liga Europa",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Eintracht Frankfurt",
+    "date": "2025-12-09",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Barcelona (DNB)",
+    "confidence": 73
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "real-madrid-x-celta-vigo",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Celta Vigo",
+    "date": "2025-12-07",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1"
+  },
+  {
+    "id": "fc-copenhagen-x-sonderjyske",
+    "league": "Dinamarca - Superliga",
+    "homeTeam": "FC Copenhagen",
+    "awayTeam": "Sonderjyske",
+    "date": "2025-12-07",
+    "time": "14:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1"
+  }
+]

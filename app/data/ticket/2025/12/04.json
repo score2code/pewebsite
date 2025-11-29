@@ -1,0 +1,22 @@
+[
+  {
+    "id": "midtjylland-x-nordsjalland",
+    "league": "Dinamarca - Superliga",
+    "homeTeam": "Midtjylland",
+    "awayTeam": "Nordsjalland",
+    "date": "2025-12-04",
+    "time": "15:00",
+    "timezone": "UTC",
+    "prediction": "BTTS: Sim (Ambos marcam)"
+  },
+  {
+    "id": "kisvarda-x-ferencvaros",
+    "league": "Hungria - NB I",
+    "homeTeam": "Kisvárda",
+    "awayTeam": "Ferencváros",
+    "date": "2025-12-04",
+    "time": "14:00",
+    "timezone": "UTC",
+    "prediction": "Dupla Chance: Ferencváros ou Empate"
+  }
+]

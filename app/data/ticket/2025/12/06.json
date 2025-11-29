@@ -1,0 +1,22 @@
+[
+  {
+    "id": "manchester-city-x-sunderland",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Sunderland",
+    "date": "2025-12-06",
+    "time": "12:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1"
+  },
+  {
+    "id": "sigma-olomouc-x-sparta-prague",
+    "league": "República Tcheca - 1. Liga",
+    "homeTeam": "Sigma Olomouc",
+    "awayTeam": "Sparta Prague",
+    "date": "2025-12-06",
+    "time": "14:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2"
+  }
+]

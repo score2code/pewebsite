@@ -1,0 +1,24 @@
+[
+  {
+    "id": "borussia-dortmund-x-bodo-glimt",
+    "league": "UEFA - Liga Europa",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Bodo/Glimt",
+    "date": "2025-12-10",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 74
+  },
+  {
+    "id": "athletic-bilbao-x-psg",
+    "league": "UEFA - Liga dos Campeões",
+    "homeTeam": "Athletic Bilbao",
+    "awayTeam": "PSG",
+    "date": "2025-12-10",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Dupla Chance: PSG ou Empate",
+    "confidence": 73
+  }
+]

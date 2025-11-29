@@ -1,0 +1,58 @@
+[
+  {
+    "id": "kairat-almaty-x-olympiacos",
+    "league": "UEFA - Liga dos Campeões",
+    "country": "Europa",
+    "date": "2025-12-09",
+    "time": "12:30",
+    "timezone": "UTC",
+    "homeTeam": "Kairat Almaty",
+    "awayTeam": "Olympiacos",
+    "prediction": "Dupla Chance: Olympiacos ou Empate",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Olympiacos com experiência europeia e melhor elenco; X2 protege fora sem handicap."
+  },
+  {
+    "id": "bayern-munich-x-sporting-lisboa",
+    "league": "UEFA - Liga dos Campeões",
+    "country": "Europa",
+    "date": "2025-12-09",
+    "time": "14:45",
+    "timezone": "UTC",
+    "homeTeam": "Bayern Munich",
+    "awayTeam": "Sporting Lisboa",
+    "prediction": "Resultado Final: 1",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Bayern dominante em casa com alta produção ofensiva; melhor probabilidade de vitória direta."
+  },
+  {
+    "id": "tottenham-x-slavia-praga",
+    "league": "UEFA - Liga Europa",
+    "country": "Europa",
+    "date": "2025-12-09",
+    "time": "17:00",
+    "timezone": "UTC",
+    "homeTeam": "Tottenham",
+    "awayTeam": "Slavia Praga",
+    "prediction": "Mais de 2.5 gols",
+    "confidence": 71,
+    "status": "pending",
+    "analysis": "Tottenham com proposta ofensiva; Slavia competitivo. Tendência de jogo aberto e gols sem recorrer a under."
+  },
+  {
+    "id": "barcelona-x-eintracht-frankfurt",
+    "league": "UEFA - Liga Europa",
+    "country": "Europa",
+    "date": "2025-12-09",
+    "time": "17:00",
+    "timezone": "UTC",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Eintracht Frankfurt",
+    "prediction": "Empate Anula Aposta: Barcelona (DNB)",
+    "confidence": 73,
+    "status": "pending",
+    "analysis": "Barcelona forte no mando; DNB conserva valor e evita handicap, protegendo contra empate."
+  }
+]

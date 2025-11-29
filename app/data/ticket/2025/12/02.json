@@ -1,0 +1,22 @@
+[
+  {
+    "id": "rb-leipzig-x-magdeburg",
+    "league": "Alemanha - DFB-Pokal",
+    "homeTeam": "RB Leipzig",
+    "awayTeam": "Magdeburg",
+    "date": "2025-12-02",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Handicap: RB Leipzig -1.5"
+  },
+  {
+    "id": "fulham-x-manchester-city",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Manchester City",
+    "date": "2025-12-02",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Handicap: Manchester City -1.0"
+  }
+]

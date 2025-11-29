@@ -1,0 +1,22 @@
+[
+  {
+    "id": "brest-x-monaco",
+    "league": "França - Ligue 1",
+    "homeTeam": "Brest",
+    "awayTeam": "Mônaco",
+    "date": "2025-12-05",
+    "time": "15:00",
+    "timezone": "UTC",
+    "prediction": "Dupla Chance: Mônaco ou Empate"
+  },
+  {
+    "id": "teplice-x-slavia-praga",
+    "league": "República Tcheca - 1. Liga",
+    "homeTeam": "Teplice",
+    "awayTeam": "Slavia Praga",
+    "date": "2025-12-05",
+    "time": "14:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2"
+  }
+]
