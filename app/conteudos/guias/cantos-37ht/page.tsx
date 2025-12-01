@@ -89,6 +89,16 @@ export default function Cantos37HTPage() {
               a tendência é manter a pressão por mais 1–2 cantos antes do intervalo.
             </p>
           </section>
+
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Checklist Rápido</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Pressão consistente nos últimos 5–10 minutos.</li>
+              <li>Laterais ativos e cruzamentos bloqueados recorrentes.</li>
+              <li>Preço compatível com janela e variância da liga.</li>
+              <li>Plano de saída ao reduzir ritmo ou bater meta.</li>
+            </ul>
+          </section>
         </div>
       </article>
     </div>

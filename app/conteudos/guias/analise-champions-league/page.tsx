@@ -1,3 +1,5 @@
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
+
 export default function ChampionsLeaguePage() {
     return (
         <div className="min-h-screen pt-8 pb-16 px-4">
@@ -124,7 +126,72 @@ export default function ChampionsLeaguePage() {
                             <li>Avalie o momento da temporada</li>
                         </ul>
                     </section>
+
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Exemplo prático</h2>
+                        <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+                            <p>
+                                Em jogo de ida entre equipe dominante e adversário sólido, a tendência é maior cautela.
+                                Sua estimativa para <strong className="text-dark-900 dark:text-light-100">Under 2.5</strong> é de 57%.
+                                O mercado oferece odd <strong className="text-dark-900 dark:text-light-100">2.10</strong> (probabilidade implícita 47.6%).
+                            </p>
+                            <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-4 border border-light-300 dark:border-dark-600">
+                                <ul className="list-disc list-inside ml-4">
+                                    <li>Prob. estimada Under 2.5: 57%</li>
+                                    <li>Odd mercado: 2.10 → 47.6%</li>
+                                    <li>Conclusão: há indício de valor, confirmar com ritmo e contexto</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Checklist Rápida</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Validar prioridade do clube e calendário.</li>
+                            <li>Checar histórico recente na competição.</li>
+                            <li>Definir mercados por fase (grupos vs. mata-mata).</li>
+                        </ul>
+                    </section>
+
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Erros Comuns</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Generalizar padrões das ligas nacionais.</li>
+                            <li>Subestimar gestão de vantagem no mata-mata.</li>
+                            <li>Ignorar impacto de viagens e clima europeu.</li>
+                        </ul>
+                    </section>
+
+                    <section className="mb-2">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Leituras relacionadas</h2>
+                        <ul className="list-disc list-inside space-y-2 ml-4">
+                            <li>
+                                <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/entendendo-libertadores">Entendendo a Copa Libertadores</a>
+                            </li>
+                            <li>
+                                <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/caracteristicas-premier-league">Características da Premier League</a>
+                            </li>
+                            <li>
+                                <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/analise-por-periodo">Análise por Período</a>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
+
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(
+                            buildArticleJsonLd({
+                                url: 'https://palpitesdodia.online/conteudos/guias/analise-champions-league',
+                                title: 'Guia da Champions League',
+                                description:
+                                    'Análise dos padrões e características da UEFA Champions League, incluindo fases, estratégias e mercados populares.',
+                            })
+                        ),
+                    }}
+                />
             </article>
         </div>
     );

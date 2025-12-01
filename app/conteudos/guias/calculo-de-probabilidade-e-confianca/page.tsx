@@ -1,6 +1,7 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import RelatedGuides from '@/app/components/related-guides';
 import { generateGuideMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateGuideMetadata({
   title: 'Cálculo de Probabilidade e Confiança: Metodologia do Site',
@@ -19,6 +20,19 @@ export default function GuideProbabilityConfidence() {
           className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 border border-light-300 dark:border-dark-600
             shadow-custom dark:shadow-custom-dark backdrop-blur-sm"
         >
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(
+                buildArticleJsonLd({
+                  url: 'https://score2code.com/conteudos/guias/calculo-de-probabilidade-e-confianca',
+                  title: 'Cálculo de Probabilidade e Confiança: Metodologia do Site',
+                  description:
+                    'Entenda como estimamos probabilidade e confiança exibidas nos cards de palpites: dados, pesos, ajustes e casos especiais.',
+                })
+              ),
+            }}
+          />
           <header className="mb-6">
             <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-3">
               Cálculo de Probabilidade e Confiança
@@ -157,6 +171,25 @@ Confiança = clamp(0, 100, (
                 },
               ]}
             />
+          </section>
+
+          <section className="space-y-4 mt-8">
+            <h2 className="text-2xl font-bold">Checklist Rápida</h2>
+            <ul className="list-disc pl-6 text-dark-900/80 dark:text-light-100/80">
+              <li>Confirmar fontes e janela de dados.</li>
+              <li>Comparar estimativa com probabilidade implícita da odd.</li>
+              <li>Aplicar ajustes de risco (calendário, clima, desfalques).</li>
+              <li>Revisar pesos por liga e mercado regularmente.</li>
+            </ul>
+          </section>
+
+          <section className="space-y-4 mt-8">
+            <h2 className="text-2xl font-bold">Erros Comuns</h2>
+            <ul className="list-disc pl-6 text-dark-900/80 dark:text-light-100/80">
+              <li>Usar dados desatualizados ou amostra muito curta.</li>
+              <li>Não ajustar por variância e qualidade de liga.</li>
+              <li>Confiar exclusivamente em odds sem contextualizar.</li>
+            </ul>
           </section>
         </article>
       </div>

@@ -1,3 +1,5 @@
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
+
 export default function MercadosOverUnderPage() {
     return (
         <div className="min-h-screen pt-8 pb-16 px-4">
@@ -141,7 +143,65 @@ export default function MercadosOverUnderPage() {
                             <li>Mantenha registros das análises</li>
                         </ul>
                     </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Segmentação HT/FT</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>HT under em jogos cautelosos; FT over com substituições ofensivas.</li>
+                            <li>Minutagem crítica: 30–45' e 70+ alteram ritmo e risco.</li>
+                            <li>Combine com xG por período e finalizações no alvo.</li>
+                        </ul>
+                    </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Sinais de Reversão</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Queda de ritmo após gols ou cartões.</li>
+                            <li>Mudança tática para segurar resultado.</li>
+                            <li>Redução de finalizações claras e posse avançada.</li>
+                        </ul>
+                    </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Checklist Rápida</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Validar médias e tendências recentes.</li>
+                            <li>Checar contexto (necessidade de vitória, clima, árbitro).</li>
+                            <li>Comparar com probabilidade implícita das odds.</li>
+                            <li>Definir preço mínimo e stake por variância da liga.</li>
+                        </ul>
+                    </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Erros Comuns</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Forçar Over em clássicos de baixa criação.</li>
+                            <li>Ignorar substituições e ajuste de risco no FT.</li>
+                            <li>Basear-se apenas em H2H sem contexto atual.</li>
+                        </ul>
+                    </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Exemplo prático</h2>
+                        <p className="text-dark-900/70 dark:text-light-100/70">Jogo com necessidade de vitória e xG recente alto: Over 2.5 com odd 2.05 (48.8%) frente estimativa de 54% indica valor; ajuste stake considerando variância da competição.</p>
+                    </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Leituras relacionadas</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/interpretando-probabilidades-e-odds">Interpretando probabilidades e odds</a></li>
+                            <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/analise-de-confrontos-diretos">Análise de confrontos diretos</a></li>
+                            <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/guia-de-analise-de-escanteios">Guia de análise de escanteios</a></li>
+                        </ul>
+                    </section>
                 </div>
+                {/* JSON-LD para SEO */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(
+                            buildArticleJsonLd({
+                                url: 'https://palpitesdodia.online/conteudos/guias/mercados-over-under-gols',
+                                title: 'Mercados Over/Under de Gols',
+                                description: 'Como analisar Over/Under usando estatísticas, contexto e probabilidades.',
+                            })
+                        ),
+                    }}
+                />
             </article>
         </div>
     );

@@ -1,4 +1,5 @@
 import { generateGuideMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 import RelatedGuides from '@/app/components/related-guides';
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 
@@ -51,9 +52,41 @@ export default function AnaliseConfrontosDiretosPage() {
             </ol>
           </section>
 
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Erros Comuns</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Usar amostra muito curta sem ajuste de contexto.</li>
+              <li>Ignorar mudanças de elenco e treinador.</li>
+              <li>Superestimar clássicos sem evidência recente.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Checklist Rápida</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Validar janela de H2H e competição.</li>
+              <li>Cruzar com forma atual e desfalques.</li>
+              <li>Ajustar probabilidade apenas quando sinal for robusto.</li>
+            </ul>
+          </section>
+
           <section>
             <h2 className="text-2xl font-bold mb-4">Conclusão</h2>
             <p className="text-dark-900/70 dark:text-light-100/70">Confrontos diretos são uma ferramenta valiosa quando usados com critério. Integre esse olhar à análise estatística e ao contexto atual das equipes para decisões mais informadas.</p>
+          </section>
+
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Sequência recente com jogos movimentados (4 dos últimos 5 com Over 2.5) e defesa desfalcada no mandante: ajuste leve na probabilidade para Over considerando o contexto atual e confirme com métricas de criação (xG).</p>
+          </section>
+
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/interpretando-probabilidades-e-odds">Interpretando probabilidades e odds</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/mercados-over-under-gols">Mercados Over/Under de gols</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/guia-de-cartoes">Guia de cartões</a></li>
+            </ul>
           </section>
 
           <RelatedGuides
@@ -71,6 +104,19 @@ export default function AnaliseConfrontosDiretosPage() {
             ]}
           />
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/guias/analise-de-confrontos-diretos',
+                title: 'Análise de Confrontos Diretos',
+                description: 'Como usar H2H de forma criteriosa para ajustar probabilidades e decisões.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

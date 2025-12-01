@@ -1,3 +1,5 @@
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
+
 export default function SistemaDeStalingPage() {
     return (
         <div className="min-h-screen pt-8 pb-16 px-4">
@@ -18,6 +20,20 @@ export default function SistemaDeStalingPage() {
                 <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
                     border border-light-300 dark:border-dark-600
                     shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+
+                    <script
+                      type="application/ld+json"
+                      dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(
+                          buildArticleJsonLd({
+                            url: 'https://score2code.com/conteudos/guias/sistema-staking-progressao',
+                            title: 'Sistema de Staking e Progressão',
+                            description:
+                              'Aprenda a gerenciar sua banca e aplicar estratégias de progressão com responsabilidade e critérios claros.',
+                          })
+                        ),
+                      }}
+                    />
 
                     <section className="mb-8">
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
@@ -112,6 +128,51 @@ export default function SistemaDeStalingPage() {
                         </div>
                     </section>
 
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Exemplo Numérico</h2>
+                        <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+                            <p>Bankroll: R$10.000. Stake por confiança: 1%/2%/3%.</p>
+                            <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-4 border border-light-300 dark:border-dark-600">
+                                <ul className="list-disc list-inside ml-4">
+                                    <li>Entrada A (baixa confiança): R$100</li>
+                                    <li>Entrada B (média confiança): R$200</li>
+                                    <li>Entrada C (alta confiança): R$300</li>
+                                    <li>Limite diário: 6% do bankroll distribuído</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Plano de Progressão Seguro</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Progressão positiva apenas após leituras repetidamente validadas.</li>
+                            <li>Limitar aumento a +0.5% do bankroll por sequência.</li>
+                            <li>Zerar progressão após duas perdas consecutivas.</li>
+                            <li>Registrar motivo objetivo para cada ajuste.</li>
+                        </ul>
+                    </section>
+
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Erros Comuns</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Aumentar stake para recuperar perdas.</li>
+                            <li>Ignorar limite diário/semanal.</li>
+                            <li>Variar sistema sem critério após oscilações.</li>
+                            <li>Não registrar entradas e contexto.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Checklist Rápida</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Definir sistema e percentuais antes do jogo.</li>
+                            <li>Aplicar limites e stop com disciplina.</li>
+                            <li>Revisar resultados por semana e por mercado.</li>
+                            <li>Documentar rationale de cada entrada.</li>
+                        </ul>
+                    </section>
+
                     <section>
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
                             Dicas para Sucesso
@@ -124,6 +185,21 @@ export default function SistemaDeStalingPage() {
                             <li>Mantenha disciplina emocional</li>
                             <li>Use ferramentas de tracking</li>
                         </ul>
+                    </section>
+
+                    <section className="mt-8">
+                      <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+                      <ul className="list-disc list-inside space-y-2 ml-4 text-dark-900/80 dark:text-light-100/80">
+                        <li>
+                          <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/como-gerenciar-sua-banca">Como Gerenciar Sua Banca</a>
+                        </li>
+                        <li>
+                          <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/como-identificar-valor-nas-odds">Como Identificar Valor nas Odds</a>
+                        </li>
+                        <li>
+                          <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/calculo-de-probabilidade-e-confianca">Cálculo de Probabilidade e Confiança</a>
+                        </li>
+                      </ul>
                     </section>
                 </div>
             </article>

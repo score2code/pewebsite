@@ -1,4 +1,5 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 export default function EscanteiosPage() {
     return (
         <div className="min-h-screen pt-8 pb-16 px-4">
@@ -135,7 +136,66 @@ export default function EscanteiosPage() {
                             <li>Acompanhe tendências da competição</li>
                         </ul>
                     </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Metodologia prática</h2>
+                        <ol className="list-decimal list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Coletar médias de cantos a favor/contra (últimos 8–10 jogos).</li>
+                            <li>Verificar estilo (laterais vs. jogo por dentro) e volume de cruzamentos.</li>
+                            <li>Confirmar intensidade inicial via scout/estatísticas ao vivo.</li>
+                            <li>Ajustar estimativa por contexto (casa/fora, necessidade de resultado, clima).</li>
+                            <li>Comparar com a probabilidade implícita da odd e decidir pelo valor.</li>
+                        </ol>
+                    </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Exemplo prático</h2>
+                        <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+                            <p>
+                                Derby com laterais ativos e pressão alta: médias recentes indicam 5.4 cantos HT somados.
+                                Odd para Over 4.5 HT implica ~55%. Com contexto favorável (mandante agressivo), elevamos
+                                estimativa para ~58% e encontramos valor moderado, ajustando stake pela variância da liga.
+                            </p>
+                            <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-4 border border-light-300 dark:border-dark-600">
+                                <ul className="list-disc list-inside ml-4">
+                                    <li>Média HT: 5.4 cantos</li>
+                                    <li>Odd Over 4.5 HT → p≈55%</li>
+                                    <li>Estimativa ajustada: ~58% (contexto + estilo)</li>
+                                    <li>Decisão: entrada pequena, confirmar intensidade nos 10’ iniciais</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Erros comuns</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Ignorar o estilo dos times e focar só na média bruta.</li>
+                            <li>Não ajustar por condições climáticas e estado do gramado.</li>
+                            <li>Desconsiderar a necessidade do resultado (time satisfeito reduz intensidade).
+                            </li>
+                            <li>Usar amostra muito curta sem contexto.</li>
+                        </ul>
+                    </section>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Leituras relacionadas</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/insights/cantos-e-xg-relacao">Relação entre cantos e xG</a></li>
+                            <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/insights/tendencias-cantos-8-semanas">Tendências de cantos em 8 semanas</a></li>
+                            <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/modelo-simples-xg-cantos">Modelo simples de xG para cantos</a></li>
+                        </ul>
+                    </section>
                 </div>
+                {/* JSON-LD para SEO */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(
+                            buildArticleJsonLd({
+                                url: 'https://score2code.com/conteudos/guias/guia-de-analise-de-escanteios',
+                                title: 'Guia de Análise de Escanteios',
+                                description: 'Estratégias e sinais para análise de cantos por período e contexto.',
+                            })
+                        ),
+                    }}
+                />
             </article>
         </div>
     );

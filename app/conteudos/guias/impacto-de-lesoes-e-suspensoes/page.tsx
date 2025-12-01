@@ -1,6 +1,7 @@
 import { generateGuideMetadata } from '@/app/utils/metadata';
 import RelatedGuides from '@/app/components/related-guides';
 import Breadcrumb from '@/app/components/ui/breadcrumb';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateGuideMetadata({
   title: 'Impacto de Lesões e Suspensões: Guia de Análise',
@@ -41,8 +42,46 @@ export default function ImpactoLesoesSuspensoesPage() {
           </section>
 
           <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+              <p>
+                Seu modelo indica <strong className="text-dark-900 dark:text-light-100">50%</strong> de vitória do Time A com elenco completo.
+                O artilheiro é desfalque e você estima impacto de <strong className="text-dark-900 dark:text-light-100">-10%</strong> relativo.
+              </p>
+              <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-4 border border-light-300 dark:border-dark-600">
+                <ul className="list-disc list-inside ml-4">
+                  <li>Probabilidade base: 50%</li>
+                  <li>Impacto estimado do artilheiro: -10% relativo → 50% × (1 - 0.10) = 45%</li>
+                  <li>Nova probabilidade: 45% (reavaliar valor frente às odds do mercado)</li>
+                </ul>
+              </div>
+              <p>
+                Ajuste adicional pode ser aplicado conforme a qualidade do substituto, o plano de jogo e a profundidade do elenco.
+              </p>
+            </div>
+          </section>
+
+          <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Fontes confiáveis</h2>
             <p className="text-dark-900/70 dark:text-light-100/70">Use sites oficiais, relatórios médicos e fontes locais. Verifique também o histórico de substitutos e a capacidade do treinador de adaptar a equipe.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Checklist Rápida</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Mapear desfalques por função tática.</li>
+              <li>Avaliar substituto e profundidade do elenco.</li>
+              <li>Aplicar ajuste percentual e revisar valor vs. odd.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Erros Comuns</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Tratar todas as ausências com o mesmo peso.</li>
+              <li>Ignorar plano de jogo que mitiga a ausência.</li>
+              <li>Não revisar decisão quando lineup é confirmado.</li>
+            </ul>
           </section>
 
           <section>
@@ -70,6 +109,20 @@ export default function ImpactoLesoesSuspensoesPage() {
             ]}
           />
         </div>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/guias/impacto-de-lesoes-e-suspensoes',
+                title: 'Impacto de Lesões e Suspensões: Guia de Análise',
+                description:
+                  'Aprenda a avaliar o impacto real de desfalques em equipes. Metodologia completa para análise de lesões, suspensões e seus efeitos nas probabilidades de jogos.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

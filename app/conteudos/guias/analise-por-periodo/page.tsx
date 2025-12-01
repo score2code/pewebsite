@@ -52,9 +52,56 @@ export default function ApostasPorTempoPage() {
             </ul>
           </section>
 
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+              <p>
+                O Time A apresenta média de gols no 1º tempo de <strong className="text-dark-900 dark:text-light-100">0.35</strong> e no 2º tempo de
+                <strong className="text-dark-900 dark:text-light-100">0.75</strong>. Contra o Time B, que tende a aumentar pressão após o intervalo,
+                a leitura sugere <em>Under 1º tempo</em> e maior probabilidade de gol no 2º tempo.
+              </p>
+              <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-4 border border-light-300 dark:border-dark-600">
+                <ul className="list-disc list-inside ml-4">
+                  <li>Média gols A (HT/FT): 0.35 / 0.75</li>
+                  <li>Finalizações A (HT/FT): 4.2 / 6.8</li>
+                  <li>Substituições B após intervalo: padrão ofensivo recorrente</li>
+                  <li>Estratégia: mercados HT Under e FT Over conforme preço</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
           <section>
             <h2 className="text-2xl font-bold mb-4">Dicas práticas</h2>
             <p className="text-dark-900/70 dark:text-light-100/70">Use dados segmentados por intervalos, observe a média dos últimos 6 jogos por período e combine com contexto (árbitro, clima, desfalques).</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Padrões por Minutagem</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>0–15': reconhecimento tático e intensidade inicial.</li>
+              <li>30–45': mais interrupções e ajustes defensivos.</li>
+              <li>60–75': impacto direto de substituições e fôlego novo.</li>
+              <li>75+ : busca por resultado, risco/recompensa aumenta.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Erros Comuns</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Projetar o 2º tempo a partir do 1º sem ajustes.</li>
+              <li>Ignorar impacto de substituições e cartões.</li>
+              <li>Usar amostra curta sem considerar contexto.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Checklist Rápida</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Validar médias HT/FT por equipe e liga.</li>
+              <li>Cruzar dados com substituições, posse e finalizações.</li>
+              <li>Definir mercados-alvo por período e preço mínimo.</li>
+            </ul>
           </section>
 
           <RelatedGuides

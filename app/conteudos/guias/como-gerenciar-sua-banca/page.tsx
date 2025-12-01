@@ -1,6 +1,7 @@
 
 import { Metadata } from 'next';
 import Breadcrumb from '@/app/components/ui/breadcrumb';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata: Metadata = {
     title: 'Gestão Inteligente de Recursos em Trading Esportivo',
@@ -48,10 +49,63 @@ export default function BankrollGuidePage() {
                         </div>
 
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Conclusão</h2>
-                        <p>A disciplina na gestão de capital é fundamental para o sucesso em trading esportivo. Mantenha-se fiel à sua estratégia de posicionamento, evite aumentar posições para recuperar perdas e faça avaliações periódicas do seu desempenho. Com uma abordagem profissional e sistemática, você estará no caminho certo para resultados consistentes.</p>                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Conclusão</h2>
                         <p>A disciplina na gestão de capital é fundamental para o sucesso em trading esportivo. Mantenha-se fiel à sua estratégia de posicionamento, evite aumentar posições para recuperar perdas e faça avaliações periódicas do seu desempenho. Com uma abordagem profissional e sistemática, você estará no caminho certo para resultados consistentes.</p>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Plano Diário e Semanal</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Definir limite diário de exposição (ex.: 6% do bankroll).</li>
+                            <li>Estabelecer número máximo de entradas por dia.</li>
+                            <li>Revisar resultados e rationale por semana.</li>
+                            <li>Ajustar percentuais conforme volatilidade das ligas.</li>
+                        </ul>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Métricas para Acompanhar</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Retorno por mercado (gols, cantos, cartões).</li>
+                            <li>Distribuição de stakes por confiança.</li>
+                            <li>Taxa de acerto vs. valor esperado (EV).</li>
+                            <li>Drawdown máximo e recuperação média.</li>
+                        </ul>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Erros Comuns</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Aumentar stake após perdas para recuperar.</li>
+                            <li>Alterar sistema sem critério após oscilação.</li>
+                            <li>Ignorar limites diários/semanalmente definidos.</li>
+                            <li>Não registrar contexto das entradas.</li>
+                        </ul>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Checklist Rápida</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Definir percentuais fixos por confiança.</li>
+                            <li>Configurar limites e stops objetivos.</li>
+                            <li>Registrar todas as entradas e saídas.</li>
+                            <li>Revisar performance por mercado semanalmente.</li>
+                        </ul>
+
+                        <section className="mt-8">
+                            <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Leituras relacionadas</h2>
+                            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                                <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/interpretando-probabilidades-e-odds">Interpretando probabilidades e odds</a></li>
+                                <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/mercados-over-under-gols">Mercados Over/Under de gols</a></li>
+                                <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/analise-de-confrontos-diretos">Análise de confrontos diretos</a></li>
+                            </ul>
+                        </section>
                     </div>
                 </div>
+                {/* JSON-LD para SEO */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(
+                            buildArticleJsonLd({
+                                url: 'https://palpitesdodia.online/conteudos/guias/como-gerenciar-sua-banca',
+                                title: 'Gestão Inteligente de Recursos em Trading Esportivo',
+                                description: 'Estratégias práticas de gestão de banca e posicionamento de stake para consistência.',
+                            })
+                        ),
+                    }}
+                />
             </div>
         </div>
     );

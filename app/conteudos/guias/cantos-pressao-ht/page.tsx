@@ -78,6 +78,30 @@ export default function CantosPressaoHTPage() {
               <li>Condições de jogo favoráveis a bola aérea e amplitude?</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Exemplo prático</h2>
+            <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+              <p>
+                Sequência de 2 cantos em 5 minutos, amplitude constante e cruzamentos bloqueados.
+                Entrada pequena em cantos HT, com saída parcial após novo canto ou queda de ritmo.
+              </p>
+              <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-4 border border-light-300 dark:border-dark-600">
+                <ul className="list-disc list-inside ml-4">
+                  <li>Critérios: posse avançada, laterais ativos, bloqueios recorrentes.</li>
+                  <li>Gestão: stake escalonada, reduzir em queda de pressão.</li>
+                  <li>Risco: jogo truncado e anti-jogo → evitar exposição longa.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Erros Comuns</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Entrar sem confirmação de padrão por alguns minutos.</li>
+              <li>Ignorar clima/campo que reduzem cruzamentos.</li>
+              <li>Manter exposição após queda clara de ritmo.</li>
+            </ul>
+          </section>
         </div>
       </article>
     </div>

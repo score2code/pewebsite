@@ -1,5 +1,6 @@
 
 import { Metadata } from 'next';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata: Metadata = {
     title: 'Análise Avançada: Handicap Asiático no Futebol',
@@ -16,6 +17,19 @@ export default function AsianHandicapGuidePage() {
                     <h1 className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-6">
                         Análise Avançada: Handicap Asiático no Futebol
                     </h1>
+                    <script
+                      type="application/ld+json"
+                      dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(
+                          buildArticleJsonLd({
+                            url: 'https://palpitesdodia.online/conteudos/guias/o-que-e-handicap-asiatico',
+                            title: 'Análise Avançada: Handicap Asiático no Futebol',
+                            description:
+                              'Compreenda a metodologia do Handicap Asiático, uma ferramenta sofisticada para análise e previsão de resultados no futebol.',
+                          })
+                        ),
+                      }}
+                    />
 
                     <div className="prose prose-purple dark:prose-invert max-w-none text-dark-900/70 dark:text-light-100/70 space-y-6">
                         <p className="text-xl">O Handicap Asiático é uma metodologia avançada de análise esportiva que introduz um fator de equalização entre equipes de diferentes níveis técnicos. Esta abordagem permite uma análise mais precisa das probabilidades reais em confrontos desequilibrados.</p>
@@ -48,6 +62,53 @@ export default function AsianHandicapGuidePage() {
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Conclusão</h2>
                         <p>O domínio da metodologia de Handicap Asiático é essencial para análises esportivas avançadas. Esta ferramenta permite uma avaliação mais precisa de confrontos desequilibrados e oferece flexibilidade na análise de diferentes cenários. Recomenda-se começar com ajustes básicos (0.0, -0.5, -1.0) antes de explorar variações mais complexas como quartos (-0.25, -0.75).</p>
                     </div>
+
+                    <section className="mt-8">
+                      <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+                      <ul className="list-disc list-inside space-y-2 ml-4 text-dark-900/80 dark:text-light-100/80">
+                        <li>
+                          <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/como-identificar-valor-nas-odds">Como Identificar Valor nas Odds</a>
+                        </li>
+                        <li>
+                          <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/guia-de-mercados-de-gols">Guia de Mercados de Gols</a>
+                        </li>
+                        <li>
+                          <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/analise-por-periodo">Análise por Período</a>
+                        </li>
+                      </ul>
+                    </section>
+                    <section className="mt-8">
+                      <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Exemplo prático</h2>
+                      <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+                        <p>
+                          Favorito com superioridade clara e defesa adversária desfalcada: linha <strong className="text-dark-900 dark:text-light-100">-1.0</strong> sugere
+                          vitória por margem. Caso o jogo sinalize cautela, reduzir exposição para <strong className="text-dark-900 dark:text-light-100">-0.5</strong>.
+                        </p>
+                        <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-4 border border-light-300 dark:border-dark-600">
+                          <ul className="list-disc list-inside ml-4">
+                            <li>Critérios: xG superior, amplitude e criação por flancos.</li>
+                            <li>Gestão: stake moderada, ajuste conforme ritmo e preço.</li>
+                            <li>Risco: gol mínimo não cobre <code>-1.0</code>; considerar parcial.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                    <section className="mt-8">
+                      <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Checklist Rápida</h2>
+                      <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                        <li>Validar superioridade com dados (xG, finalizações).</li>
+                        <li>Checar desfalques e profundidade do elenco.</li>
+                        <li>Definir linha e preço mínimos antes da entrada.</li>
+                      </ul>
+                    </section>
+                    <section className="mt-8">
+                      <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Erros Comuns</h2>
+                      <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                        <li>Usar linhas altas sem confirmação de ritmo.</li>
+                        <li>Ignorar impacto de jogo de ida/volta em mata-mata.</li>
+                        <li>Confundir vitória simples com cobertura de handicap.</li>
+                      </ul>
+                    </section>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 
 import { Metadata } from 'next';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata: Metadata = {
     title: 'Análise de Mercados de Gols | Guia Completo',
@@ -58,9 +59,71 @@ export default function GoalMarketsGuidePage() {
 
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Conclusão</h2>
                         <p>A análise de tendências de gols é uma metodologia estatística poderosa que permite fazer previsões baseadas em dados concretos, independentemente do resultado final da partida. É uma abordagem que privilegia a análise objetiva e quantitativa do futebol.</p>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Segmentação por Período</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70">
+                            <li>HT vs. FT: padrões distintos de ritmo e substituições.</li>
+                            <li>0–15', 30–45', 60–75', 75+: minutagem crítica muda probabilidade.</li>
+                            <li>Combine com posse e finalizações por período.</li>
+                        </ul>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Sinais de Reversão</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70">
+                            <li>Queda súbita de finalizações e posse avançada.</li>
+                            <li>Ajuste tático defensivo (linha baixa, volante extra).</li>
+                            <li>Cartões e faltas que quebram ritmo ofensivo.</li>
+                        </ul>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Checklist Rápida</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70">
+                            <li>Validar médias de gols e xG recentes.</li>
+                            <li>Conferir contexto (casa/fora, necessidade de resultado).</li>
+                            <li>Comparar com probabilidade implícita das odds.</li>
+                            <li>Definir preço mínimo e gestão de stake.</li>
+                        </ul>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Erros Comuns</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70">
+                            <li>Projetar Over apenas por xG sem contexto.</li>
+                            <li>Ignorar minutagem e efeito de substituições.</li>
+                            <li>Usar amostra curta sem ajuste de liga/competição.</li>
+                        </ul>
+
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100">Leituras relacionadas</h2>
+                        <ul className="list-disc list-inside space-y-2">
+                            <li>
+                                <a className="text-purple-600 dark:text-purple-400 hover:underline" href="/conteudos/guias/mercados-over-under-gols">
+                                    Mercados Over/Under de Gols
+                                </a>
+                            </li>
+                            <li>
+                                <a className="text-purple-600 dark:text-purple-400 hover:underline" href="/conteudos/guias/interpretando-probabilidades-e-odds">
+                                    Interpretando Probabilidades e Odds
+                                </a>
+                            </li>
+                            <li>
+                                <a className="text-purple-600 dark:text-purple-400 hover:underline" href="/conteudos/guias/como-identificar-valor-nas-odds">
+                                    Como Identificar Valor nas Odds
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        buildArticleJsonLd({
+                            url: 'https://palpitesdodia.online/conteudos/guias/guia-de-mercados-de-gols',
+                            title: 'Análise de Mercados de Gols | Guia Completo',
+                            description:
+                                'Domine as técnicas de análise estatística para prever tendências de gols em partidas de futebol com nosso guia especializado.',
+                        })
+                    ),
+                }}
+            />
         </div>
     );
 }

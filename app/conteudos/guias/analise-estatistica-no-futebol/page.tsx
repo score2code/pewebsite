@@ -1,4 +1,5 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 export default function AnaliseEstatisticaPage() {
     return (
         <div className="min-h-screen pt-8 pb-16 px-4">
@@ -20,6 +21,20 @@ export default function AnaliseEstatisticaPage() {
                 <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8
                     border border-light-300 dark:border-dark-600
                     shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
+
+                    <script
+                      type="application/ld+json"
+                      dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(
+                          buildArticleJsonLd({
+                            url: 'https://score2code.com/conteudos/guias/analise-estatistica-no-futebol',
+                            title: 'Análise Estatística no Futebol',
+                            description:
+                              'Guia completo sobre métricas avançadas (xG, posse efetiva, pressão) e como contextualizar dados nas suas análises.',
+                          })
+                        ),
+                      }}
+                    />
 
                     <section className="mb-8">
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
@@ -100,6 +115,46 @@ export default function AnaliseEstatisticaPage() {
                         </div>
                     </section>
 
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Estudo de Caso</h2>
+                        <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+                            <p>
+                                Equipe A acumula <strong className="text-dark-900 dark:text-light-100">1.8 xG</strong> médio nas últimas 6 partidas,
+                                porém converte pouco por finalizar fora da área. Já a Equipe B concede muitas chances
+                                de alta qualidade pelo corredor esquerdo. O cruzamento de métricas sugere valor em
+                                <em>finalizações no alvo</em> e <em>over xG</em>, enquanto o mercado de gols pode permanecer cauteloso.
+                            </p>
+                            <div className="bg-light-200/50 dark:bg-dark-700/50 rounded-lg p-4 border border-light-300 dark:border-dark-600">
+                                <ul className="list-disc list-inside ml-4">
+                                    <li>xG A (média 6 jogos): 1.8</li>
+                                    <li>Local de finalização: 42% fora da área</li>
+                                    <li>Concessão B: altas chances pelo lado esquerdo</li>
+                                    <li>Leitura: focar métricas de qualidade, não apenas volume</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Erros Comuns</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Usar métricas sem contexto de adversário e local.</li>
+                            <li>Confundir volume com qualidade de chances.</li>
+                            <li>Ignorar viés de amostra pequena (2–3 jogos).</li>
+                            <li>Desconsiderar mudanças táticas e ausências relevantes.</li>
+                        </ul>
+                    </section>
+
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">Checklist Rápida</h2>
+                        <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+                            <li>Verificar xG e locais de finalização.</li>
+                            <li>Comparar tendências em casa/fora.</li>
+                            <li>Cruzar dados com estilo tático e pressão.</li>
+                            <li>Ajustar leitura por desfalques e calendário.</li>
+                        </ul>
+                    </section>
+
                     <section>
                         <h2 className="text-2xl font-bold text-dark-900 dark:text-light-100 mb-4">
                             Conclusão
@@ -109,6 +164,21 @@ export default function AnaliseEstatisticaPage() {
                             outros fatores como análise tática, condições físicas dos jogadores e fatores externos.
                             O segredo está em encontrar o equilíbrio entre dados quantitativos e análise qualitativa.
                         </p>
+                    </section>
+
+                    <section className="mt-8">
+                      <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+                      <ul className="list-disc list-inside space-y-2 ml-4 text-dark-900/80 dark:text-light-100/80">
+                        <li>
+                          <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/interpretando-probabilidades-e-odds">Interpretando Probabilidades e Odds</a>
+                        </li>
+                        <li>
+                          <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/como-identificar-valor-nas-odds">Como Identificar Valor nas Odds</a>
+                        </li>
+                        <li>
+                          <a className="text-primary-600 dark:text-primary-400 hover:underline" href="/conteudos/guias/analise-por-periodo">Análise por Período</a>
+                        </li>
+                      </ul>
                     </section>
                 </div>
             </article>
