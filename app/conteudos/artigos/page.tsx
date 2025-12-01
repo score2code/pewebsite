@@ -23,7 +23,15 @@ export default function ArtigosPage() {
         <Breadcrumb className="mb-4" />
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
           <h1 className="text-3xl font-bold">Artigos (Blog)</h1>
-          <p className="text-dark-900/70 dark:text-light-100/70">Publicações e aprendizados contínuos.</p>
+          <p className="text-dark-900/70 dark:text-light-100/70">Publicações, aprendizados e opiniões com foco prático.</p>
+          <div className="mt-4 bg-white/40 dark:bg-black/20 rounded-lg p-4">
+            <h2 className="text-lg font-semibold mb-2">Como aproveitar melhor</h2>
+            <ul className="list-disc list-inside space-y-1 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Leia o artigo e identifique 2–3 pontos acionáveis.</li>
+              <li>Teste em jogos reais com critérios e registre o resultado.</li>
+              <li>Revisite após 1–2 semanas e ajuste sua abordagem.</li>
+            </ul>
+          </div>
         </header>
         <div className="grid gap-6 md:grid-cols-2">
           {articles.map((a) => (
@@ -39,4 +47,3 @@ export default function ArtigosPage() {
     </div>
   );
 }
-

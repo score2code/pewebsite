@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Bilhete do Dia: acertos e erros',
@@ -66,7 +67,31 @@ export default function BilheteDiaAcertosErrosPage() {
               <li>Ajustes documentados para próxima sessão.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70 mb-2">Bilhete com três mercados: documentar hipótese de cada entrada, preços e resultados; calcular EV realizado e identificar onde parcialização teria reduzido drawdown.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/como-documentar-analises">Como documentar análises</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/valor-esperado-na-pratica">Valor esperado na prática</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/estudos-de-caso/bilhete-dia-acertos-erros',
+                title: 'Bilhete do Dia: acertos e erros',
+                description: 'Revisão estruturada dos bilhetes com lições práticas.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Gestão de banca progressiva',
@@ -43,7 +44,35 @@ export default function GestaoDeBancaProgressivaPage() {
               <li>Proteções de risco ativas (stop por sessão/jogo).</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Confiança média: 0.5u com EV positivo moderado e variância controlada.</li>
+              <li>Upgrade para alta apenas com convergência de sinais e preço ótimo.</li>
+              <li>Downgrade para baixa ao perder dois sinais consecutivos.</li>
+            </ul>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/estrategias-avancadas/gestao-stake-por-confianca">Gestão de stake por confiança</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/valor-esperado-na-pratica">Valor esperado na prática</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/estrategias-avancadas/gestao-de-banca-progressiva',
+                title: 'Gestão de banca progressiva',
+                description: 'Alocação variável baseada em confiança e variância.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

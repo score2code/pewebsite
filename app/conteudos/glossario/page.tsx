@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildItemListJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Glossário e Fundamentos',
@@ -14,6 +15,9 @@ const terms = [
   { title: 'Valor Esperado (EV)', slug: 'valor-esperado', description: 'Cálculo, uso e limitações.' },
   { title: 'Probabilidade Implícita', slug: 'probabilidade-implicita', description: 'Convertendo odds em chance.' },
   { title: 'Banca e Stake', slug: 'banca-e-stake', description: 'Fundamentos de gestão e exposição.' },
+  { title: 'Margem da Casa (Vig)', slug: 'margem-casa-vig', description: 'Entenda o spread embutido nas odds.' },
+  { title: 'Parcialização', slug: 'parcializacao', description: 'Reduzir risco e travar lucro em etapas.' },
+  { title: 'Hedge', slug: 'hedge', description: 'Proteção parcial/total em cenários ao vivo.' },
 ];
 
 export default function GlossarioPage() {
@@ -24,6 +28,14 @@ export default function GlossarioPage() {
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-8 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
           <h1 className="text-3xl font-bold">Glossário e Fundamentos</h1>
           <p className="text-dark-900/70 dark:text-light-100/70">Conceitos essenciais para uma base sólida.</p>
+          <div className="mt-4 bg-white/40 dark:bg-black/20 rounded-lg p-4">
+            <h2 className="text-lg font-semibold mb-2">Como aproveitar melhor</h2>
+            <ul className="list-disc list-inside space-y-1 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Leia 2–3 termos por vez e aplique em jogos reais.</li>
+              <li>Ligue conceitos: probabilidade implícita → EV → preço mínimo.</li>
+              <li>Registre exemplos e revisite semanalmente para consolidar.</li>
+            </ul>
+          </div>
         </header>
         <div className="grid gap-6 md:grid-cols-2">
           {terms.map((a) => (
@@ -114,9 +126,73 @@ export default function GlossarioPage() {
                   </ul>
                 </div>
               )}
+
+              {a.slug === 'margem-casa-vig' && (
+                <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+                  <p>A margem da casa (vig) é o spread embutido nas odds. Ao somar probabilidades implícitas dos resultados, o total excede 100% pela margem.</p>
+                  <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100">Como estimar</h3>
+                  <ul className="list-disc list-inside ml-4">
+                    <li>Converta odds 1X2 em probabilidades implícitas.</li>
+                    <li>Some as probabilidades e subtraia 100% para a margem.</li>
+                    <li>Ajuste seu modelo levando a vig em conta.</li>
+                  </ul>
+                </div>
+              )}
+
+              {a.slug === 'parcializacao' && (
+                <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+                  <p>Parcializar é realizar parte do lucro (ou reduzir risco) em eventos/condições definidas, preservando upside e controlando drawdown.</p>
+                  <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100">Princípios</h3>
+                  <ul className="list-disc list-inside ml-4">
+                    <li>Defina gatilhos objetivos (evento, preço, tempo).</li>
+                    <li>Evite parcializar por medo sem critérios.</li>
+                    <li>Documente impacto no EV e variância.</li>
+                  </ul>
+                </div>
+              )}
+
+              {a.slug === 'hedge' && (
+                <div className="space-y-4 text-dark-900/70 dark:text-light-100/70">
+                  <p>Hedge é proteção parcial/total de uma posição aberta. Útil em ao vivo quando contexto muda e risco aumenta.</p>
+                  <h3 className="text-xl font-semibold text-dark-900 dark:text-light-100">Boas práticas</h3>
+                  <ul className="list-disc list-inside ml-4">
+                    <li>Preferir proteção parcial para manter upside.</li>
+                    <li>Basear decisão em sinais e preço, não emoção.</li>
+                    <li>Planejar a saída e registrar a decisão.</li>
+                  </ul>
+                </div>
+              )}
             </section>
           ))}
+
+          {/* Leituras relacionadas */}
+          <section className="bg-white/40 dark:bg-black/20 rounded-lg p-6">
+            <h2 className="text-2xl font-bold mb-3">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><Link className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/calculo-de-probabilidade-e-confianca">Cálculo de probabilidade e confiança</Link></li>
+              <li><Link className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/valor-esperado-na-pratica">Valor esperado na prática</Link></li>
+              <li><Link className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/estrategias-avancadas/gestao-stake-por-confianca">Gestão de stake por confiança</Link></li>
+            </ul>
+          </section>
         </div>
+
+        {/* JSON-LD ItemList para SEO do glossário */}
+        {(() => {
+          const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+          const itemListJsonLd = buildItemListJsonLd(
+            `${baseUrl}/conteudos/glossario`,
+            'Glossário e Fundamentos',
+            terms.map(t => ({
+              url: `${baseUrl}/conteudos/glossario/#${t.slug}`,
+              name: t.title,
+              description: t.description,
+            })),
+            'Coleção de termos e fundamentos para análise de mercados e probabilidades.'
+          );
+          return (
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+          );
+        })()}
       </div>
     </div>
   );

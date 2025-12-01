@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Estratégia H2H adaptativa',
@@ -43,7 +44,31 @@ export default function EstrategiaH2HAdaptativaPage() {
               <li>Integração com sinais ao vivo antes de entrar.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70 mb-2">Derby com padrão histórico de pressão e muitos cruzamentos: confirmar elenco e técnico atuais, validar sinais no live e operar mercados de cantos com sizing moderado.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/evitar-vies-recente">Evitar viés recente</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/leitura-de-momento-ao-vivo">Leitura de momento ao vivo</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/estrategias-avancadas/estrategia-h2h-adaptativa',
+                title: 'Estratégia H2H adaptativa',
+                description: 'Use histórico ajustado por elenco/técnico e integre sinais ao vivo.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

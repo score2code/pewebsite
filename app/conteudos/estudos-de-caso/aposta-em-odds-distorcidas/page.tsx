@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Apostas em odds distorcidas',
@@ -52,7 +53,31 @@ export default function ApostaEmOddsDistorcidasPage() {
               <li>Execução com risco controlado e registro da decisão.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70 mb-2">Under com preço 1.90 em uma casa e 1.78 em outra: após remover overround e validar contexto sem notícia oculta, entrada conservadora com 0.5u e plano de parcialização se ritmo subir.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/valor-esperado-na-pratica">Valor esperado na prática</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/evitar-vies-recente">Evitar viés recente</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/estudos-de-caso/aposta-em-odds-distorcidas',
+                title: 'Apostas em odds distorcidas',
+                description: 'Como identificar e explorar com cautela discrepâncias de mercado.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

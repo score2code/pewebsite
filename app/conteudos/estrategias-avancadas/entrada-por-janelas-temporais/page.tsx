@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Entradas por janelas temporais',
@@ -43,7 +44,36 @@ export default function EntradaPorJanelasTemporaisPage() {
               <li>Registro das entradas por janela para revisão.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70 mb-2">Pré-intervalo com pressão sustentada e bolas paradas próximas: entrada com parcial em evento único e total em sequência.</p>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li>Confirmar 2–3 sinais fortes nos primeiros minutos da janela.</li>
+              <li>Operar com limite de preço adequado ao tempo restante.</li>
+              <li>Registrar execução para avaliar valor e timing.</li>
+            </ul>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/leitura-de-momento-ao-vivo">Leitura de momento ao vivo</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/evitar-vies-recente">Evitar viés recente</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/estrategias-avancadas/entrada-por-janelas-temporais',
+                title: 'Entradas por janelas temporais',
+                description: 'Exploração de períodos com maior probabilidade de evento.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

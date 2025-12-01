@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Por que esse Under falhou?',
@@ -61,7 +62,31 @@ export default function UnderQueFalhouPage() {
               <li>Critérios atualizados para próximas entradas em Under.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70 mb-2">Under HT falhou após sequência de transições e escanteios: reavaliar EV com novo ritmo, aplicar parcialização de 30% e ajustar limites de preço para jogos com alta variância.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/estrategias-avancadas/hedge-parcial-ao-vivo">Hedge parcial em ao vivo</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/estrategias-avancadas/ajuste-estrategia-cenario">Ajuste de estratégia por cenário</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/estudos-de-caso/under-que-falhou',
+                title: 'Por que esse Under falhou?',
+                description: 'Diagnóstico de entradas e contexto de jogo para under.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

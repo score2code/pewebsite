@@ -17,7 +17,25 @@ export default function ConteudosIndexPage() {
         <Breadcrumb className="mb-4" />
         <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl shadow-custom dark:shadow-custom-dark p-8 mb-8 border border-light-300 dark:border-dark-600 backdrop-blur-sm">
           <h1 className="text-4xl font-bold text-dark-900 dark:text-light-100 mb-3">Conteúdos</h1>
-          <p className="text-lg text-dark-900/70 dark:text-light-100/70">Coleção de artigos e materiais para aprofundar seus estudos.</p>
+          <p className="text-lg text-dark-900/70 dark:text-light-100/70">Coleção de artigos, guias e estudos para evoluir sua análise e execução.</p>
+          <div className="mt-4 grid gap-3">
+            <p className="text-dark-900/70 dark:text-light-100/70">
+              Como aproveitar melhor:
+            </p>
+            <ul className="list-disc list-inside space-y-1 ml-4 text-dark-900/70 dark:text-light-100/70">
+              <li>Comece pelos Guias e Glossário para nivelar conceitos.</li>
+              <li>Use Insights de Dados para orientar liga e mercado.</li>
+              <li>Valide suas entradas com Estratégias e Estudos de Caso.</li>
+            </ul>
+            <div className="mt-2">
+              <a
+                href="/bilhete-do-dia"
+                className="inline-block bg-purple-600 dark:bg-purple-500 text-white font-bold px-5 py-3 rounded-lg hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              >
+                Ver Bilhete do Dia
+              </a>
+            </div>
+          </div>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
           {categories.map((c) => (
@@ -33,4 +51,3 @@ export default function ConteudosIndexPage() {
     </div>
   );
 }
-

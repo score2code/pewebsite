@@ -31,10 +31,13 @@ export default function InsightsPage() {
         <section className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
           <h2 className="text-2xl font-bold mb-3">Como usar</h2>
           <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
-            <li>Combine os insights com sinais ao vivo e preço.</li>
+            <li>Combine os insights com sinais ao vivo (pressão, ritmo) e preço.</li>
             <li>Priorize ligas com estabilidade e amostras robustas.</li>
-            <li>Documente entradas baseadas em insights para revisão.</li>
+            <li>Documente entradas baseadas em insights para revisão e melhoria.</li>
           </ul>
+          <div className="mt-4 text-sm text-dark-900/60 dark:text-light-100/60">
+            Ex.: se uma liga mostra alta correlação entre faltas e escanteios, priorize cenários de pressão lateral e bolas paradas para mercados de cantos.
+          </div>
         </section>
         <div className="grid gap-6 md:grid-cols-2">
           {insights.map((a) => (
