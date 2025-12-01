@@ -17,6 +17,7 @@ const LABEL_MAP: Record<string, string> = {
   "entretenimento": "Entretenimento",
   "estatisticas": "Estatísticas",
   "odds": "Odds",
+  "cursos": "Cursos",
 };
 
 function formatSegmentLabel(seg: string) {

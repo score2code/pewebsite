@@ -49,6 +49,7 @@ export default async function HomePage() {
     const latestPendingSoccer = latestPicksSoccer.filter((p) => p.status === 'pending');
     const latestPendingFootball = latestPicksFootball.filter((p) => p.status === 'pending');
 
+
     return (
         <div className="min-h-screen font-sans pt-12">
             <div className="max-w-6xl mx-auto px-4 py-4">

@@ -1,6 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-import { Target, Award, Hourglass, Ticket } from 'lucide-react';
+import { Target, Award } from 'lucide-react';
 
 interface StatsCardProps {
   title: string;
@@ -31,9 +31,7 @@ const StatsCard: React.FC<StatsCardProps> = ({ title, value, icon, color }) => {
 
 interface TicketStatsDashboardProps {
   winRate?: number;
-  totalTickets?: number;
-  winners?: number;
-  pending?: number;
+  pickHitRate?: number;
   series?: { label: string; value: number }[];
 }
 
@@ -41,9 +39,7 @@ const TicketPerformanceChart = dynamic(() => import('./ticket-performance-chart'
 
 const TicketStatsDashboard: React.FC<TicketStatsDashboardProps> = ({
   winRate = 0,
-  totalTickets = 0,
-  winners = 0,
-  pending = 0,
+  pickHitRate = 0,
   series = []
 }) => {
   return (
@@ -57,7 +53,7 @@ const TicketStatsDashboard: React.FC<TicketStatsDashboardProps> = ({
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-8">
         <StatsCard
           title="Taxa de Bilhetes Vencedores"
           value={`${winRate}%`}
@@ -65,22 +61,10 @@ const TicketStatsDashboard: React.FC<TicketStatsDashboardProps> = ({
           color="green"
         />
         <StatsCard
-          title="Total de Bilhetes"
-          value={totalTickets}
-          icon={<Ticket className="w-5 h-5" />}
-          color="blue"
-        />
-        <StatsCard
-          title="Vencedores"
-          value={winners}
+          title="Taxa de palpites corretos"
+          value={`${pickHitRate}%`}
           icon={<Award className="w-5 h-5" />}
-          color="purple"
-        />
-        <StatsCard
-          title="Pendentes"
-          value={pending}
-          icon={<Hourglass className="w-5 h-5" />}
-          color="orange"
+          color="blue"
         />
       </div>
 

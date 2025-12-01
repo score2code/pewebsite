@@ -7,7 +7,9 @@
     "date": "2025-12-01",
     "time": "14:00",
     "timezone": "UTC",
-    "prediction": "Handicap: Dinamo Zagreb -1.5"
+    "prediction": "Handicap: Dinamo Zagreb -1.5",
+    "status": "green",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "brondby-x-fredericia",
@@ -17,6 +19,8 @@
     "date": "2025-12-01",
     "time": "15:00",
     "timezone": "UTC",
-    "prediction": "Handicap: Brøndby -1.5"
+    "prediction": "Handicap: Brøndby -1.5",
+    "status": "red",
+    "reason": "Placar: 1 x 3"
   }
 ]

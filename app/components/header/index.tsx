@@ -42,6 +42,7 @@ const Header = ({ currentPath = '/' }) => {
         {
             name: 'Conteúdo', icon: 'BookOpen', type: 'dropdown', items: [
                 { name: 'Guias', path: '/conteudos/guias' },
+                { name: 'Cursos', path: '/conteudos/cursos' },
                 { name: 'Artigos', path: '/conteudos/artigos' },
                 { name: 'Estudos de Caso', path: '/conteudos/estudos-de-caso' },
                 { name: 'Insights de Dados', path: '/conteudos/insights' },

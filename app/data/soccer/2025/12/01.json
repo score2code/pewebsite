@@ -10,8 +10,9 @@
     "awayTeam": "Valencia",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Confronto equilibrado com tendência de trocas de ataque; ambas equipes vêm produzindo chances de gol."
+    "analysis": "Confronto equilibrado com tendência de trocas de ataque; ambas equipes vêm produzindo chances de gol.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "bologna-x-cremonese",
@@ -24,8 +25,9 @@
     "awayTeam": "Cremonese",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Bologna mais sólido como mandante e tecnicamente superior; Cremonese costuma oscilar fora."
+    "analysis": "Bologna mais sólido como mandante e tecnicamente superior; Cremonese costuma oscilar fora.",
+    "status": "red",
+    "reason": "Placar: 1 x 3"
   },
   {
     "id": "arouca-x-braga",
@@ -38,8 +40,9 @@
     "awayTeam": "Braga",
     "prediction": "Handicap: Braga -1.0",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Braga chega com maior volume ofensivo e controle de posse; -1.0 protege vitória mínima."
+    "analysis": "Braga chega com maior volume ofensivo e controle de posse; -1.0 protege vitória mínima.",
+    "status": "green",
+    "reason": "Placar: 0 x 4"
   },
   {
     "id": "fenerbahce-x-galatasaray",
@@ -52,8 +55,9 @@
     "awayTeam": "Galatasaray",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Derbi de alta intensidade e criação; tendência de jogo aberto com 3+ gols pelo histórico recente."
+    "analysis": "Derbi de alta intensidade e criação; tendência de jogo aberto com 3+ gols pelo histórico recente.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "samsunspor-x-alanyaspor",
@@ -66,8 +70,9 @@
     "awayTeam": "Alanyaspor",
     "prediction": "Dupla Chance: Alanyaspor ou Empate",
     "confidence": 65,
-    "status": "pending",
-    "analysis": "Alanyaspor mais consistente em transições e pontua bem fora; proteção ao empate reduz variância."
+    "analysis": "Alanyaspor mais consistente em transições e pontua bem fora; proteção ao empate reduz variância.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "audax-italiano-x-nublense",
@@ -94,8 +99,9 @@
     "awayTeam": "Dinamo Zagreb",
     "prediction": "Handicap: Dinamo Zagreb -1.5",
     "confidence": 68,
-    "status": "pending",
-    "analysis": "Dinamo dominante e com elenco superior; expectativa de vitória confortável com 2 gols de margem."
+    "analysis": "Dinamo dominante e com elenco superior; expectativa de vitória confortável com 2 gols de margem.",
+    "status": "green",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "brondby-x-fredericia",
@@ -108,8 +114,9 @@
     "awayTeam": "Fredericia",
     "prediction": "Handicap: Brøndby -1.5",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Diferença técnica e física relevante; Brøndby costuma impor ritmo alto e criar muitas chances em casa."
+    "analysis": "Diferença técnica e física relevante; Brøndby costuma impor ritmo alto e criar muitas chances em casa.",
+    "status": "red",
+    "reason": "Placar: 1 x 3"
   },
   {
     "id": "motor-lublin-x-legia-warszawa",
@@ -122,8 +129,9 @@
     "awayTeam": "Legia Warszawa",
     "prediction": "Handicap: Legia Warszawa -1.0",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Legia com mais qualidade e profundidade; -1.0 protege push em vitória mínima."
+    "analysis": "Legia com mais qualidade e profundidade; -1.0 protege push em vitória mínima.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "akritas-chlorakas-x-aek-larnaca",
@@ -136,8 +144,9 @@
     "awayTeam": "AEK Larnaca",
     "prediction": "Resultado Final: 2",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "AEK Larnaca superior técnica e taticamente; tendência de controle e resultado positivo fora."
+    "analysis": "AEK Larnaca superior técnica e taticamente; tendência de controle e resultado positivo fora.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "petrolul-ploiesti-x-metaloglobus-bucuresti",
@@ -150,8 +159,9 @@
     "awayTeam": "Metaloglobus București",
     "prediction": "Resultado Final: 1",
     "confidence": 65,
-    "status": "pending",
-    "analysis": "Petrolul forte como mandante e defensivamente organizado; Metaloglobus tem baixa produção ofensiva fora."
+    "analysis": "Petrolul forte como mandante e defensivamente organizado; Metaloglobus tem baixa produção ofensiva fora.",
+    "status": "green",
+    "reason": "Placar: 4 x 1"
   },
   {
     "id": "fc-sochi-x-dynamo-makhachkala",
@@ -164,7 +174,8 @@
     "awayTeam": "Dynamo Makhachkala",
     "prediction": "Dupla Chance: Dynamo Makhachkala ou Empate",
     "confidence": 65,
-    "status": "pending",
-    "analysis": "Dynamo mais estável nos últimos jogos; dupla chance oferece boa proteção em partida equilibrada."
+    "analysis": "Dynamo mais estável nos últimos jogos; dupla chance oferece boa proteção em partida equilibrada.",
+    "status": "green",
+    "reason": "Placar: 0 x 0"
   }
 ]

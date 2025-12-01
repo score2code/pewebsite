@@ -140,11 +140,13 @@ export async function getTicketStats() {
 
   const totalTickets = ticketDaily.length;
 
-  // Classificação ignora adiados/void; avalia green/red
-  const classifyTicket = (picks: BasePick[]): 'win' | 'loss' | 'pending' | 'void' => {
+  const classifyTicket = (picks: BasePick[]): 'win' | 'loss' | 'pending' | 'void' | 'postponed' => {
+    const allPostponed = picks.length > 0 && picks.every(p => p.status === 'postponed');
+    const allVoid = picks.length > 0 && picks.every(p => p.status === 'void');
+    if (allPostponed) return 'postponed';
+    if (allVoid) return 'void';
     const evaluated = picks.filter(p => p.status !== 'postponed' && p.status !== 'void');
-    // Se todos os palpites do bilhete forem adiados/void, o bilhete é 'void'
-    if (evaluated.length === 0 && picks.length > 0) return 'void';
+    if (evaluated.length === 0 && picks.length > 0) return 'pending';
     const hasRed = evaluated.some(p => p.status === 'red');
     const allGreen = evaluated.length > 0 && evaluated.every(p => p.status === 'green');
     if (allGreen) return 'win';
@@ -168,7 +170,12 @@ export async function getTicketStats() {
   const denom = winners + losers; // exclui pendentes e voids
   const winRate = denom > 0 ? Number(((winners / denom) * 100).toFixed(1)) : 0;
 
-  // Série do mês corrente: 100=win, 0=loss, 50=pending, 75=adiado/void
+  const allTicketPicks = ticketDaily.flatMap(d => d.picks);
+  const evaluatedPicks = allTicketPicks.filter(p => p.status === 'green' || p.status === 'red');
+  const pickHits = evaluatedPicks.filter(p => p.status === 'green').length;
+  const pickHitRate = evaluatedPicks.length > 0 ? Number(((pickHits / evaluatedPicks.length) * 100).toFixed(1)) : 0;
+
+  // Série do mês corrente: 100=win, 0=loss, 50=pending, 75=adiado, 87.5=anulado
   const now = new Date();
   const currentYear = String(now.getFullYear());
   const currentMonth = String(now.getMonth() + 1).padStart(2, '0');
@@ -181,12 +188,18 @@ export async function getTicketStats() {
     const [y, m, d] = day.date.split('-');
     const label = `${d}/${m}`;
     const status = classifyTicket(day.picks);
-    const value = status === 'win' ? 100 : (status === 'loss' ? 0 : (status === 'void' ? 75 : 50));
+    const value =
+      status === 'win' ? 100 :
+      status === 'loss' ? 0 :
+      status === 'postponed' ? 75 :
+      status === 'void' ? 87.5 :
+      50;
     return { label, value };
   });
 
   return {
     winRate,
+    pickHitRate,
     totalTickets,
     winners,
     losers,

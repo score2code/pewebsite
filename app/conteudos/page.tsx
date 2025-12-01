@@ -3,6 +3,7 @@ import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 export default function ConteudosIndexPage() {
   const categories = [
+    { title: 'Cursos', slug: 'cursos', description: 'Formações práticas para acelerar sua evolução.' },
     { title: 'Artigos (Blog)', slug: 'artigos', description: 'Publicações contínuas com análises e opiniões.' },
     { title: 'Estudos de Caso', slug: 'estudos-de-caso', description: 'Deep dives em jogos e tickets específicos.' },
     { title: 'Insights de Dados', slug: 'insights', description: 'Tendências e padrões a partir de estatísticas.' },
