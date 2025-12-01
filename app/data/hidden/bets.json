@@ -2,7 +2,7 @@
   {
     "date": "2025-12-01",
     "bingo": true,
-    "league": "-",
+    "league": "Futebol",
     "homeTeam": "-",
     "awayTeam": "-",
     "prediction": ["-"],
@@ -23,6 +23,42 @@
     ],
     "stake": 1,
     "odd": 1.50,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-01",
+    "bingo": true,
+    "league": "Basquete",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 1,
+    "odd": 3.36,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-01",
+    "bingo": true,
+    "league": "Basquete",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 1,
+    "odd": 2.23,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-01",
+    "bingo": false,
+    "league": "Futebol Americano",
+    "homeTeam": "New England Patriots",
+    "awayTeam": "New York Giants",
+    "prediction": ["Handicap: New England Patriots -3.5"],
+    "stake": 1,
+    "odd": 1.52,
     "return": 0,
     "status": "pending"
   }
