@@ -85,7 +85,7 @@ const TicketStatsDashboard: React.FC<TicketStatsDashboardProps> = ({
       </div>
 
       <div className="bg-light-100/50 dark:bg-dark-800/50 p-6 rounded-xl border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm mb-8">
-        <h3 className="text-xl font-bold text-dark-900 dark:text-light-100">Desempenho Recente de Bilhetes</h3>
+        <h3 className="text-xl font-bold text-dark-900 dark:text-light-100">Desempenho de Bilhetes do Mês</h3>
         {series && series.length > 0 ? (
           <TicketPerformanceChart series={series} height={60} />
         ) : (

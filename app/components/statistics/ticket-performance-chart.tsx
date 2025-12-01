@@ -40,7 +40,7 @@ const TicketPerformanceChart: React.FC<TicketPerformanceChartProps> = ({ series,
         width={width}
         height={height}
         role="img"
-        aria-label="Desempenho recente de bilhetes (verde=vitória, vermelho=derrota)"
+        aria-label="Desempenho de bilhetes do mês (verde=vitória, vermelho=derrota)"
         className="block"
       >
         {/* fundo */}
