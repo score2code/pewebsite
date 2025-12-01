@@ -155,8 +155,8 @@ export default async function RelatorioApostasPrivadoPage() {
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Data</th>
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Bingo</th>
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Campeonato</th>
-                  <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Time da Casa</th>
-                  <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Time Visitante</th>
+                  <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Casa</th>
+                  <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Visitante</th>
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Valor apostado</th>
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">ODD</th>
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Palpites</th>
