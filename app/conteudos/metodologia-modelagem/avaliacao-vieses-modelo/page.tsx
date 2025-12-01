@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Avaliação de vieses do modelo',
@@ -43,7 +44,32 @@ export default function AvaliacaoViesesModeloPage() {
               <li>Ajustes documentados e validados por temporada.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Se o modelo superestima cantos no fim do HT, estratifique por minuto e ajuste features/thresholds. Recalibre apenas os estratos com viés e reavalie métricas.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/calibracao-probabilidade-vs-odds">Calibração de probabilidade vs. odds</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/validacao-historica-modelo-simples">Validação histórica de modelo</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/pesos-variaveis-escanteios">Pesos e variáveis para escanteios</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/metodologia-modelagem/avaliacao-vieses-modelo',
+                title: 'Avaliação de vieses do modelo',
+                description: 'Detectar e mitigar vieses em previsões de cantos.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

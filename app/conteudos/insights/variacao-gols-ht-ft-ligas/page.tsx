@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Variação de gols HT/FT por liga',
@@ -43,7 +44,32 @@ export default function VariacaoGolsHtFtLigasPage() {
               <li>Integração com gestão de risco por variância.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Em ligas com maior produção de gols no FT, seja conservador em overs no HT e ajuste entradas para o segundo tempo com confirmação de ritmo.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/insights/ligas-mais-eficientes-under">Ligas mais eficientes para Under</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/insights/impacto-mandante-posse-campo">Impacto do mandante: posse e campo</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/leitura-momento-ao-vivo">Leitura de momento ao vivo</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/insights/variacao-gols-ht-ft-ligas',
+                title: 'Variação de gols HT/FT por liga',
+                description: 'Comparativo entre primeiro e segundo tempo por competição.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

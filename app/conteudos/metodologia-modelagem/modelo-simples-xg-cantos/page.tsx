@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Modelo simples de xG para cantos',
@@ -39,7 +40,32 @@ export default function ModeloSimplesXGCantosPage() {
               <li>Thresholds definidos por estratégia e risco.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Treine regressão logística com features básicas e selecione thresholds para cantos HT com base em precisão/recall e ROI simulado. Use walk-forward e ajuste por competição.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/estrategias-avancadas/escalonar-entradas-pressao">Escalonar entradas em pressão</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/estudos-de-caso/leitura-pressao-ht-estudo">Estudo de leitura de pressão HT</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/validacao-historica-modelo-simples">Validação histórica do modelo</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/metodologia-modelagem/modelo-simples-xg-cantos',
+                title: 'Modelo simples de xG para cantos',
+                description: 'Como estimar probabilidade de canto com features básicas.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

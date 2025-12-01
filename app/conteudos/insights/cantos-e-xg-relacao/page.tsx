@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Relação entre cantos e xG',
@@ -43,7 +44,32 @@ export default function CantosExGRelacaoPage() {
               <li>Critérios para usar relação em decisões definidos.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Se cantos antecedem xG em ligas com alta pressão lateral, priorize over cantos HT quando houver sequência de escanteios e entradas na área.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/insights/tendencias-cantos-8-semanas">Tendências de cantos (8 semanas)</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/modelo-simples-xg-cantos">Modelo simples de xG para cantos</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/leitura-momento-ao-vivo">Leitura de momento ao vivo</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/insights/cantos-e-xg-relacao',
+                title: 'Relação entre cantos e xG',
+                description: 'Quando volume de cantos antecipa xG e vice-versa.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

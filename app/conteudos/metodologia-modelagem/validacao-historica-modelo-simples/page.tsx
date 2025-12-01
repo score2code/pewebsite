@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Validação histórica de um modelo simples',
@@ -48,7 +49,32 @@ export default function ValidacaoHistoricaModeloSimplesPage() {
               <li>Ablação e análise de drift entre temporadas.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Valide um modelo simples de cantos com backtest por temporada e janelas rolantes; evite usar dados futuros e reporte métricas por competição.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/modelo-simples-xg-cantos">Modelo simples de xG para cantos</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/calibracao-probabilidade-vs-odds">Calibração de probabilidade vs. odds</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/avaliacao-vieses-modelo">Avaliação de vieses do modelo</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/metodologia-modelagem/validacao-historica-modelo-simples',
+                title: 'Validação histórica de um modelo simples',
+                description: 'Testes básicos, métricas e robustez ao longo de temporadas.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

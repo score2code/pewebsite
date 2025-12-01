@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Tendências de cantos nas últimas 8 semanas',
@@ -43,7 +44,32 @@ export default function TendenciasCantos8SemanasPage() {
               <li>Integração com preço e sinais ao vivo.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Se uma liga mostra tendência de alta de cantos com baixa variância, priorize over cantos HT nas partidas com pressão confirmada ao vivo.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/insights/cantos-e-xg-relacao">Relação entre cantos e xG</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/validacao-tempo-efetivo">Validação com tempo efetivo</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/leitura-momento-ao-vivo">Leitura de momento ao vivo</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/insights/tendencias-cantos-8-semanas',
+                title: 'Tendências de cantos nas últimas 8 semanas',
+                description: 'Quais ligas puxam mais cantos recentemente.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Validação com tempo efetivo',
@@ -39,7 +40,32 @@ export default function ValidacaoTempoEfetivoPage() {
               <li>Impacto refletido nas métricas de validação.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Ao comparar ligas com 48' vs. 57' de tempo efetivo, normalize cantos por minuto efetivo antes de avaliar thresholds de entrada. Ajuste a confiança quando jogos têm interrupções acima do normal.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/limpeza-dados-eventos">Limpeza de dados de eventos</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/tratamento-outliers">Tratamento de outliers</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/metodologia-modelagem/calibracao-probabilidade-vs-odds">Calibração de probabilidade vs. odds</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/metodologia-modelagem/validacao-tempo-efetivo',
+                title: 'Validação com tempo efetivo',
+                description: 'Como tempo de bola rolando afeta métricas e modelos.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

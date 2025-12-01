@@ -1,5 +1,6 @@
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildArticleJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Calibração de probabilidade vs. odds',
@@ -60,7 +61,32 @@ export default function CalibracaoProbabilidadeVsOddsPage() {
               <li>Métricas antes/depois documentadas por competição.</li>
             </ul>
           </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Exemplo prático</h2>
+            <p className="text-dark-900/70 dark:text-light-100/70">Construa bins de probabilidade (ex.: 0.1–0.2, 0.2–0.3…) e compare com frequências observadas. Aplique regressão isotônica para corrigir superconfiança e reavalie Brier/ECE.</p>
+          </section>
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Leituras relacionadas</h2>
+            <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/glossario/#margem-casa-vig">Margem da Casa (Vig)</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/guias/calculo-de-probabilidade-e-confianca">Cálculo de probabilidade e confiança</a></li>
+              <li><a className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/valor-esperado-na-pratica">Valor esperado na prática</a></li>
+            </ul>
+          </section>
         </div>
+        {/* JSON-LD para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildArticleJsonLd({
+                url: 'https://palpitesdodia.online/conteudos/metodologia-modelagem/calibracao-probabilidade-vs-odds',
+                title: 'Calibração de probabilidade vs. odds',
+                description: 'Alinhando estimativas com o mercado e reduzindo erro.',
+              })
+            ),
+          }}
+        />
       </article>
     </div>
   );

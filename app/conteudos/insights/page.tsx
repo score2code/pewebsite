@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import { generateContentMetadata } from '@/app/utils/metadata';
+import { buildItemListJsonLd } from '@/app/lib/jsonld';
 
 export const metadata = generateContentMetadata({
   title: 'Insights de Dados',
@@ -39,6 +40,14 @@ export default function InsightsPage() {
             Ex.: se uma liga mostra alta correlação entre faltas e escanteios, priorize cenários de pressão lateral e bolas paradas para mercados de cantos.
           </div>
         </section>
+        <section className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark">
+          <h2 className="text-2xl font-bold mb-3">Leituras relacionadas</h2>
+          <ul className="list-disc list-inside space-y-2 text-dark-900/70 dark:text-light-100/70 ml-4">
+            <li><Link className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/leitura-momento-ao-vivo">Leitura de momento ao vivo</Link></li>
+            <li><Link className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/gestao-banca-stake">Gestão de banca e stake</Link></li>
+            <li><Link className="text-purple-700 dark:text-purple-400 hover:underline" href="/conteudos/artigos/estrategias-hedge-ao-vivo">Estratégias de hedge ao vivo</Link></li>
+          </ul>
+        </section>
         <div className="grid gap-6 md:grid-cols-2">
           {insights.map((a) => (
             <Link key={a.slug} href={`/conteudos/insights/${a.slug}`} className="group">
@@ -49,6 +58,24 @@ export default function InsightsPage() {
             </Link>
           ))}
         </div>
+        {/* JSON-LD ItemList para SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildItemListJsonLd(
+                'https://palpitesdodia.online/conteudos/insights',
+                'Insights de Dados',
+                insights.map((i) => ({
+                  url: `https://palpitesdodia.online/conteudos/insights/${i.slug}`,
+                  name: i.title,
+                  description: i.description,
+                })),
+                'Tendências, padrões e sinais úteis extraídos de estatísticas.'
+              )
+            ),
+          }}
+        />
       </div>
     </div>
   );
