@@ -10,7 +10,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 66,
     "analysis": "Mandante com maior controle e criação; cenário favorece vitória em casa.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -24,7 +24,7 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
     "analysis": "Confronto com transições e bolas paradas fortes dos dois lados; boa chance de gols para ambos.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -38,7 +38,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 66,
     "analysis": "Jogo tende a controle e cautela; histórico recente indica baixa conversão em chances claras.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -52,7 +52,7 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 66,
     "analysis": "Ritmo intenso e criação dos dois lados; alta probabilidade de gols de ambas equipes.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 1 x 2"
   },
   {
@@ -66,7 +66,7 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
     "analysis": "Derbi com alto volume ofensivo e pressão; tendência de 3+ gols.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 4 x 1"
   },
   {
@@ -80,7 +80,7 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
     "analysis": "Ambos têm criação consistente e espaço entrelinhas; bom cenário para gols dos dois lados.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -94,7 +94,7 @@
     "prediction": "Dupla Chance: X2",
     "confidence": 66,
     "analysis": "Atlético mais estável e eficiente; boa probabilidade de pontuar fora (empate ou vitória).",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -108,7 +108,7 @@
     "prediction": "Resultado Final: 2",
     "confidence": 67,
     "analysis": "Superioridade técnica do visitante e alta produção ofensiva; forte probabilidade de vitória fora.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 2 x 2"
   },
   {
@@ -122,7 +122,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 67,
     "analysis": "Leipzig dominante em casa com pressão e finalização acima da média; tende a vitória.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -136,7 +136,7 @@
     "prediction": "Resultado Final: 2",
     "confidence": 65,
     "analysis": "Lyon com maior densidade técnica e criação; visitante com boa chance de vitória.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 0"
   }
 ]

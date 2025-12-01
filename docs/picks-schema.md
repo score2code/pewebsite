@@ -1,6 +1,6 @@
 # Schema de Palpites (JSON)
 
-Este documento descreve o formato dos arquivos JSON de palpites usados em `public/data/<type>/<YYYY>/<MM>/<DD>.json`.
+Este documento descreve o formato dos arquivos JSON de palpites usados em `app/data/<type>/<YYYY>/<MM>/<DD>.json`.
 
 ## Estrutura
 
@@ -15,16 +15,25 @@ Cada arquivo por data contém uma lista (array) de objetos de palpite com o segu
 - `timezone` (string, opcional): sigla do fuso horário, ex.: `BRT`.
 - `prediction` (string): recomendação/mercado sugerido.
 - `confidence` (number): nível de confiança percentual (0–100).
-- `status` (string): estado do palpite (`pending`, `green`, `red`, `postponed`, `void`).
+- `status` (string): estado do palpite.
 - `analysis` (string): resumo textual da análise principal.
 
 Observações:
 - Campos adicionais podem ser introduzidos conforme evolução do produto, mantendo compatibilidade retroativa sempre que possível.
 - Datas são organizadas por diretórios `YYYY/MM/DD` para garantir versionamento e reprodutibilidade.
 
+## Regras de Status
+
+- Valores permitidos: `pending`, `green`, `red`, `postponed`, `void`.
+- `pending`: padrão para itens não resolvidos; se ausente, deve ser adicionado.
+- `green`: vencedor; usado em taxa de acerto.
+- `red`: perdedor; usado em taxa de acerto.
+- `postponed`: adiado; não entra na taxa de acerto; exibido como "Adiado" (azul).
+- `void`: anulado; não entra na taxa de acerto; exibido como "Anulado" (laranja). O texto de "Resultado" também fica laranja.
+
 ## Exemplo Real
 
-Arquivo: `public/data/soccer/2025/11/04.json`
+Arquivo: `app/data/soccer/2025/11/04.json`
 
 ```json
 [
@@ -65,5 +74,5 @@ Arquivo: `public/data/soccer/2025/11/04.json`
 
 ## Consumo
 
-- Páginas estáticas usam `generateStaticParams` baseado na presença dos arquivos em `public/data`.
+- Páginas estáticas usam `generateStaticParams` baseado na presença dos arquivos em `app/data`.
 - O cliente (`PickAnalysisClient`) lê o arquivo de data e filtra pelo `id` quando necessário. Campos legados como `dateTime` e `tip` são mapeados automaticamente.

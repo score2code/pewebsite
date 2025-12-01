@@ -11,7 +11,8 @@
     "prediction": "Empate Anula Aposta: Vitória BA (DNB)",
     "confidence": 64,
     "analysis": "Vitória melhora em casa, Mirassol tem queda fora. DNB protege contra empate em jogo equilibrado.",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "ceara-x-cruzeiro-mg",
@@ -25,7 +26,8 @@
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 63,
     "analysis": "Ceará costuma marcar em casa, Cruzeiro cria volume ofensivo. Tendência de ambos marcarem.",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "palmeiras-x-flamengo",
@@ -39,7 +41,8 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 65,
     "analysis": "Confronto de alta intensidade e ataques fortes. Probabilidade elevada de 3+ gols.",
-    "status": "pending"
+    "status": "red",
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "brentford-x-burnley",
@@ -113,7 +116,8 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
     "analysis": "Tottenham joga propositivo, Fulham concede espaços. Partida com ritmo alto e tendência de 3+ gols.",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "mallorca-x-osasuna",
@@ -172,7 +176,8 @@
     "prediction": "Handicap: Atletico Madrid -1.0",
     "confidence": 66,
     "analysis": "Atlético superior tecnicamente. Linha -1 dá push se vencer por apenas um gol.",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "hoffenheim-x-augsburg",
@@ -276,7 +281,8 @@
     "prediction": "Dupla Chance: Auxerre ou Empate",
     "confidence": 63,
     "analysis": "Auxerre mais consistente em sequência recente; proteção ao empate captura valor fora de casa.",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "olympique-marseille-x-toulouse",
@@ -290,7 +296,8 @@
     "prediction": "Empate Anula Aposta: Marseille (DNB)",
     "confidence": 65,
     "analysis": "Marseille forte no Vélodrome, Toulouse oscila fora. DNB segura caso jogo amarre.",
-    "status": "pending"
+    "status": "void",
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "excelsior-x-nac-breda",
@@ -319,7 +326,8 @@
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 64,
     "analysis": "Perfil ofensivo e transições rápidas dos dois lados. Defesas cedem boas chances.",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "nec-nijmegen-x-sparta-rotterdam",
@@ -333,7 +341,8 @@
     "prediction": "Empate Anula Aposta: NEC Nijmegen (DNB)",
     "confidence": 63,
     "analysis": "NEC tem melhor desempenho como mandante; DNB reduz risco num jogo parelho.",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "audax-italiano-x-nublense",
@@ -346,7 +355,8 @@
     "awayTeam": "Nublense",
     "prediction": "Mais de 2.5 gols",
     "confidence": 63,
-    "status": "pending",
+    "status": "postponed",
+    "reason": "Adiado",
     "analysis": "Tendência de jogos abertos e média de gols elevada na liga; ataques com boa chegada."
   }
 ]

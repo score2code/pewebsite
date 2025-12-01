@@ -101,7 +101,8 @@
     "prediction": "Resultado Final: 1",
     "confidence": 63,
     "analysis": "Lille com boa organização e pressão; Dinamo resiste, mas deve sofrer em volume de finalizações contra bloco alto.",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 4 x 0"
   },
   {
     "id": "aston-villa-x-young-boys",
@@ -116,7 +117,7 @@
     "confidence": 65,
     "analysis": "Villa agressivo em casa e vertical; Young Boys responde em transições. Jogo com potencial para 3+ gols.",
     "status": "green",
-    "reason": "Placar: 4 x 0"
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "viktoria-plzen-x-freiburg",

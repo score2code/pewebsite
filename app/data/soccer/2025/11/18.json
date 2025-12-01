@@ -10,7 +10,7 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 66,
     "analysis": "Botafogo com maior controle e elenco superior; 1X cobre empate com boa probabilidade em jogo de mando forte.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 3 x 2"
   },
   {
@@ -24,7 +24,7 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
     "analysis": "Duas seleções com transições rápidas e criação razoável; probabilidade equilibrada de ambos converterem.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -38,7 +38,7 @@
     "prediction": "Handicap Asiático: Brasil -1.5",
     "confidence": 69,
     "analysis": "Diferença técnica clara e domínio de posse; expectativa de vitória por dois gols ou mais.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -52,7 +52,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
     "analysis": "Histórico de partidas mais fechadas; controle defensivo e baixa conversão sugerem under moderado.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 1 x 2"
   },
   {
@@ -66,7 +66,7 @@
     "prediction": "Resultado Final: 2",
     "confidence": 66,
     "analysis": "Suíça superior taticamente e em elenco; alta probabilidade de controlar e vencer fora.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -80,7 +80,7 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 65,
     "analysis": "Mando sueco com boa consistência defensiva; 1X cobre empate em cenário de controle do jogo.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -94,7 +94,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 62,
     "analysis": "Duas defesas organizadas e ritmo físico; tendência de jogo truncado abaixo de 3 gols.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 4 x 2"
   },
   {
@@ -108,7 +108,7 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 68,
     "analysis": "Espanha com posse e alta criação; Turquia pode contribuir em transições — cenário propício para 3+ gols.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 2"
   },
   {
@@ -122,7 +122,7 @@
     "prediction": "Total de Gols: Mais de 1.5",
     "confidence": 66,
     "analysis": "Áustria agressiva em casa; linha de 1.5 acessível pela diferença técnica e dinâmica ofensiva.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -136,7 +136,7 @@
     "prediction": "Dupla Chance: X2",
     "confidence": 63,
     "analysis": "Tolima mais sólido e experiente; boa probabilidade de pontuar fora (empate ou vitória).",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 1"
   }
 ]

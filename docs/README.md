@@ -6,7 +6,7 @@ Este documento cobre visão geral, funcionalidades, fluxo de dados, decisões de
 
 - Aplicação Next.js (App Router) com export estático orientado a dados.
 - Conteúdo principal em páginas de esportes: `futebol` e `futebol-americano`.
-- Dados armazenados em `public/data` por tipo e data, garantindo builds determinísticos e deploy simples.
+- Dados armazenados em `app/data` por tipo e data, garantindo builds determinísticos e deploy simples.
 - Renderização resiliente: busca por API opcional e fallback automático para arquivos JSON locais.
 
 ## Funcionalidades
@@ -27,21 +27,22 @@ Este documento cobre visão geral, funcionalidades, fluxo de dados, decisões de
   - `components/`: UI, análise de palpites, cabeçalho, notificações, etc.
   - `lib/`: carregamento e validação de dados (`data-loader.ts`, `picks.ts`).
   - `not-found.tsx`: página 404 tematizada.
-- `public/`: assets e dados estáticos.
-  - `data/`: `soccer/YYYY/MM/DD.json`, `football/YYYY/MM/DD.json`.
+- `public/`: assets estáticos.
+- `app/data/`: dados versionados por tipo e data.
+  - `soccer/YYYY/MM/DD.json`, `football/YYYY/MM/DD.json`, `ticket/YYYY/MM/DD.json`.
   - `reviews.json`, `odds.json`, `standings.json`, `championships-stats.json`.
 - `scripts/`: automações.
   - `generate-api-data.js`: depreciado; não há geração de JSONs em `public/api`.
 
 ## Fluxo de Dados
 
-- Origem dos dados: `public/data/<type>/<YYYY>/<MM>/<DD>.json`.
+- Origem dos dados: `app/data/<type>/<YYYY>/<MM>/<DD>.json`.
 - Cada arquivo de data contém uma lista de palpites com campos que incluem `id`, metadados do evento e análise.
 - Carregamento:
-  - Os componentes leem diretamente os JSONs estáticos via `loadPicksData`.
+- Os componentes leem diretamente os JSONs estáticos via `loadPicksData`.
   - Não há uso de rotas de API; o site é 100% estático.
 - Cliente (`PickAnalysisClient`):
-  - Lê `public/data/<type>/<YYYY>/<MM>/<DD>.json` e filtra pelo `id` do palpite.
+  - Lê `app/data/<type>/<YYYY>/<MM>/<DD>.json` e filtra pelo `id` do palpite.
   - Valida `content-type` e trata erros de leitura.
 
 ## Páginas Estáticas com JSON — Processo e Motivos
@@ -60,12 +61,18 @@ Este documento cobre visão geral, funcionalidades, fluxo de dados, decisões de
 - Considerações de compatibilidade:
   - Rotas de API dinâmicas não são compatíveis com `output: 'export'` sem `generateStaticParams()` (não suportado em handlers de API). Assim, a abordagem preferida é servir JSONs diretamente via `public/` ou gerar “APIs estáticas”.
 
-## API Estática Opcional
+## Regras de Status
 
-- Estratégia recomendada para disponibilizar endpoints sem rotas dinâmicas:
-  - Gerar arquivos em `public/api/picks/` (ex.: `soccer-2025-11-04-futebol-001.json`).
-  - Ajustar o script `scripts/generate-api-data.js` para escrever em `public/api/picks/` quando necessário.
-  - O cliente pode continuar consumindo `/api/picks/...` que será servido como arquivo estático.
+- Valores: `pending`, `green`, `red`, `postponed`, `void`.
+- `pending` é padrão para itens não resolvidos; deve existir sempre.
+- `green` e `red` contam para taxa de acerto; `postponed` e `void` não.
+- `postponed` aparece como "Adiado" (azul) e `void` como "Anulado" (laranja). O texto de "Resultado" também acompanha a cor laranja para `void`.
+- Script auxiliar: `scripts/fix-status-pending.js` adiciona `status: "pending"` em itens sem status em diretórios de data.
+
+## Dashboards (Home)
+
+- Bilhetes: série do mês corrente.
+- Palpites: série limitada aos últimos 14 dias.
 
 ## Desenvolvimento
 
@@ -92,7 +99,9 @@ Este documento cobre visão geral, funcionalidades, fluxo de dados, decisões de
 
 - `app/lib/data-loader.ts`: carregamento de dados e fallback.
 - `app/components/pick/index.tsx`: cliente de análise com validação e fallback.
+- `app/lib/statistics.ts`: agregação de estatísticas e geração das séries para os dashboards.
 - `scripts/generate-api-data.js`: geração de JSONs “API-like”.
+ - `scripts/fix-status-pending.js`: utilitário para padronizar `pending` quando ausente.
 - `app/layout.tsx`: tema, header, footer, banner de desenvolvimento.
 - `docs/picks-schema.md`: schema de palpites em JSON e exemplo real.
  - `app/sitemap.ts` e `app/robots.ts`: sitemap dinâmico e robots para SEO.

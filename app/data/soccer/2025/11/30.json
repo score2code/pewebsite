@@ -10,7 +10,8 @@
     "awayTeam": "Botafogo RJ",
     "prediction": "Empate Anula Aposta: Corinthians (DNB)",
     "confidence": 66,
-    "status": "pending",
+    "status": "void",
+    "reason": "Placar: 2 x 2",
     "analysis": "Corinthians tende a controlar em casa; DNB reduz risco em jogo físico."
   },
   {
@@ -24,7 +25,8 @@
     "awayTeam": "Atlético MG",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 65,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "Fortaleza agressivo como mandante; Atlético cria volume ofensivo. Tendência de gols dos dois lados."
   },
   {
@@ -38,7 +40,8 @@
     "awayTeam": "Manchester United",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 2",
     "analysis": "United concede chances; Palace costuma marcar em casa. Cenário favorável a ambos marcarem."
   },
   {
@@ -52,7 +55,8 @@
     "awayTeam": "Brighton",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 2",
     "analysis": "Brighton ofensivo e vulnerável atrás; jogo tende a ser aberto com 3+ gols."
   },
   {
@@ -66,7 +70,8 @@
     "awayTeam": "Wolverhampton",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 0",
     "analysis": "Villa dominante em casa, transições rápidas e eficiência nas chegadas."
   },
   {
@@ -80,7 +85,8 @@
     "awayTeam": "Liverpool",
     "prediction": "Mais de 2.5 gols",
     "confidence": 67,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 2",
     "analysis": "Liverpool cria muito; West Ham perigoso em bolas paradas. Ritmo alto favorece 3+ gols."
   },
   {
@@ -94,7 +100,8 @@
     "awayTeam": "Arsenal",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 65,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 1",
     "analysis": "Confronto de alta intensidade; ambos com capacidade de criação e finalização."
   },
   {
@@ -108,7 +115,8 @@
     "awayTeam": "Villarreal",
     "prediction": "Resultado Final: 1",
     "confidence": 65,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 2 x 3",
     "analysis": "Sociedad consistente em casa, marcação alta e posse. Villarreal oscila fora."
   },
   {
@@ -122,7 +130,8 @@
     "awayTeam": "Betis",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 65,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 2",
     "analysis": "Derbi intenso; espaços nas transições devem gerar chances claras para ambos."
   },
   {
@@ -136,7 +145,8 @@
     "awayTeam": "Espanyol",
     "prediction": "Dupla Chance: Celta Vigo ou Empate",
     "confidence": 65,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 1",
     "analysis": "Celta melhora desempenho como mandante; proteção ao empate reduz variância."
   },
   {
@@ -150,7 +160,8 @@
     "awayTeam": "Real Madrid",
     "prediction": "Handicap: Real Madrid -1.0",
     "confidence": 67,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "Madrid superior tecnicamente e com elenco profundo; -1 dá push se vencer por 1 gol."
   },
   {
@@ -164,7 +175,8 @@
     "awayTeam": "Stuttgart",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 65,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "Duas equipes ofensivas e defesas que cedem espaços; tendência de ambos marcarem."
   },
   {
@@ -178,7 +190,8 @@
     "awayTeam": "Wolfsburg",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "Jogo com ritmo e transições; volume ofensivo alto nas duas equipes."
   },
   {
@@ -192,7 +205,8 @@
     "awayTeam": "Mainz",
     "prediction": "Resultado Final: 1",
     "confidence": 65,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 0",
     "analysis": "Freiburg forte em casa e mais organizado; Mainz instável."
   },
   {
@@ -206,7 +220,8 @@
     "awayTeam": "Brest",
     "prediction": "Dupla Chance: Brest ou Empate",
     "confidence": 65,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 2",
     "analysis": "Brest vive melhor fase e é competitivo fora; proteção ao empate traz valor."
   },
   {
@@ -220,7 +235,8 @@
     "awayTeam": "Lens",
     "prediction": "Resultado Final: 2",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 2",
     "analysis": "Lens superior tecnicamente e consistente; Angers oscila contra pressão alta."
   },
   {
@@ -234,7 +250,8 @@
     "awayTeam": "Lille",
     "prediction": "Handicap: Lille -0.5",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 1",
     "analysis": "Lille mais equilibrado e eficiente; -0.5 equivale a vitória do Lille."
   },
   {
@@ -248,7 +265,8 @@
     "awayTeam": "Nice",
     "prediction": "Resultado Final: 2",
     "confidence": 67,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 3 x 1",
     "analysis": "Nice com melhor estrutura defensiva e transição; Lorient concede muitas chances."
   },
   {
@@ -262,7 +280,8 @@
     "awayTeam": "Nantes",
     "prediction": "Empate Anula Aposta: Lyon (DNB)",
     "confidence": 65,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 0",
     "analysis": "Lyon melhora desempenho como mandante; DNB protege em jogo potencialmente amarrado."
   },
   {
@@ -276,7 +295,8 @@
     "awayTeam": "Volendam",
     "prediction": "Handicap: PSV -2.0",
     "confidence": 68,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 0",
     "analysis": "Grande diferença técnica; linha -2 dá push com vitória por dois gols."
   },
   {
@@ -290,7 +310,8 @@
     "awayTeam": "Feyenoord Rotterdam",
     "prediction": "Handicap: Feyenoord -1.5",
     "confidence": 67,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 2",
     "analysis": "Feyenoord produtivo ofensivamente; Telstar deve sofrer contra pressão constante."
   },
   {
@@ -304,7 +325,8 @@
     "awayTeam": "Utrecht",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 65,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 2",
     "analysis": "Duas equipes com proposta ofensiva; defesas concedem oportunidades."
   },
   {
@@ -318,7 +340,8 @@
     "awayTeam": "AZ Alkmaar",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "Confronto direto com forte produção ofensiva; probabilidade elevada de gols de ambos."
   },
   {
@@ -332,7 +355,8 @@
     "awayTeam": "Groningen",
     "prediction": "Handicap: Ajax -1.5",
     "confidence": 67,
-    "status": "pending",
+    "status": "postponed",
+    "reason": "Anulado",
     "analysis": "Ajax com mais qualidade técnica e volume; tendência de vitória por margem."
   },
   {
@@ -346,7 +370,8 @@
     "awayTeam": "Antwerp",
     "prediction": "Mais de 2.5 gols",
     "confidence": 65,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 1",
     "analysis": "Duas equipes com boa criação; jogo propenso a gols e ritmo alto."
   },
   {
@@ -360,7 +385,8 @@
     "awayTeam": "Leuven",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "Genk dominante como mandante; Leuven vulnerável defensivamente."
   },
   {
@@ -374,7 +400,8 @@
     "awayTeam": "Nordsjalland",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 6 x 0",
     "analysis": "Duas equipes com proposta ofensiva e transições rápidas; cenário para ambos marcarem."
   }
 ]

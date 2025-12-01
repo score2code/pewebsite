@@ -11,7 +11,7 @@
     "prediction": "Menos de 2.5 gols",
     "confidence": 63,
     "analysis": "Jogo de copa com tendência de poucos gols: Getafe compacto e direto, Elche com baixa criação contra blocos médios; ritmo e risco controlados.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -26,7 +26,7 @@
     "prediction": "BTTS - Sim",
     "confidence": 65,
     "analysis": "Partida de alta intensidade: Leipzig agressivo em transição e Gladbach consegue produzir em casa; ambos com volume e fragilidades defensivas gerando gols dos dois lados.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -41,7 +41,7 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 63,
     "analysis": "Trocas de posse e espaços entrelinhas aumentam finalizações; ambas cedem chances por laterais e bolas aéreas, favorecendo placar elevado.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -56,7 +56,7 @@
     "prediction": "Empate Anula Aposta: Rennes",
     "confidence": 64,
     "analysis": "Rennes superior em organização e pressão; DNB reduz risco do empate fora de casa mantendo valor pela qualidade defensiva e bola parada.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -71,7 +71,7 @@
     "prediction": "BTTS - Sim",
     "confidence": 64,
     "analysis": "Ritmo alto e defensas permissivas; ambos com criação por corredores e cruzamentos, gerando chances claras para gol de cada lado.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -86,7 +86,7 @@
     "prediction": "Empate Anula Aposta: Vitória Guimarães",
     "confidence": 65,
     "analysis": "Guimarães forte em pressão média e bolas paradas; DNB cobre o risco de empate diante de possível bloco baixo do AVS.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 4 x 0"
   },
   {
@@ -101,7 +101,7 @@
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
     "analysis": "TNS dominante ofensivamente com alto xG por posse; Caernarfon concede espaços em transição e bolas laterais, sustentando tendência de múltiplos gols.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -117,7 +117,6 @@
     "confidence": 64,
     "status": "void",
     "analysis": "Maior qualidade técnica e profundidade do Plovdiv; DNB protege contra empate típico de copa mantendo edge em bolas paradas e posse.",
-  "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -132,7 +131,7 @@
     "prediction": "Dupla Chance: Arda Kardzhali ou Empate",
     "confidence": 62,
     "analysis": "Arda compacto e eficiente em transições; dupla chance reduz variância fora de casa contra Lokomotiv com dificuldades em ataque posicional.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 0"
   }
 ]

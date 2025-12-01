@@ -10,7 +10,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
     "analysis": "Partida de ritmo moderado e blocos compactos; menor volume de chances claras.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -24,7 +24,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 66,
     "analysis": "Inter mais estável em casa; posse e criação sustentam boa probabilidade de vitória.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -38,7 +38,7 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
     "analysis": "Ritmo alto e transições dos dois lados; cenário favorece 3+ gols.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -52,7 +52,7 @@
     "prediction": "Dupla Chance: X2",
     "confidence": 65,
     "analysis": "Sevilla com maior densidade técnica e experiência; alta chance de pontuar fora.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -66,7 +66,7 @@
     "prediction": "Resultado Final: 2",
     "confidence": 66,
     "analysis": "Trabzonspor eficiente em transições e bolas paradas; visitante com boa probabilidade de vencer.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 3 x 4"
   },
   {
@@ -80,7 +80,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
     "analysis": "Confronto de menor ritmo e controle defensivo; tendência de baixa conversão em gols.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -94,7 +94,7 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
     "analysis": "Jogo equilibrado com criação de ambos lados; cenário favorece gols para os dois.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 1"
   },
   {
@@ -108,7 +108,7 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 65,
     "analysis": "Equilíbrio e espaço entrelinhas; os dois times costumam converter boas oportunidades.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -122,7 +122,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 66,
     "analysis": "Mandante com maior consistência e criação; vantagem técnica indica vitória em casa.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 5 x 1"
   },
   {
@@ -136,7 +136,7 @@
     "prediction": "Resultado Final: 2",
     "confidence": 66,
     "analysis": "Slavia superior técnica e taticamente; boa probabilidade de vitória fora.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 1"
   }
 ]

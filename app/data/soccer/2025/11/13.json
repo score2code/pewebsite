@@ -10,7 +10,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 60,
     "analysis": "Confronto entre duas seleções com foco defensivo. O Equador tem uma solidez notável (0.3 gols sofridos/jogo nos últimos 6 e invencibilidade recente), enquanto o Canadá prioriza a organização em casa. A ausência de pressão competitiva em um amistoso internacional, em conjunto com o histórico defensivo do Equador, sugere um jogo de baixo placar. O mercado Under 2.5 Gols (odd justa 1.67) oferece o melhor valor, com confiança de 60%.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -24,7 +24,7 @@
     "prediction": "Handicap Asiático: França -1.5",
     "confidence": 60,
     "analysis": "A França possui uma superioridade técnica esmagadora (xG/xGA favorável, média de 2.6 gols/jogo) e joga em casa, onde é historicamente dominante contra a Ucrânia. O retorno de N'Golo Kanté reforça o meio-campo. A Ucrânia, desfalcada e com foco defensivo (bloco baixo) devido à necessidade de não perder por muito em um grupo difícil, terá dificuldades extremas para evitar que a França vença por pelo menos 2 gols de diferença. O retrospecto recente (última vitória por 2 a 0) e a motivação francesa para encaminhar a classificação sustentam o -1.5 como mercado de maior valor, com probabilidade estimada de 60% (Odd Justa 1.67).",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 4 x 0"
   },
   {
@@ -38,7 +38,7 @@
     "prediction": "Ambos Marcam (BTTS): NÃO",
     "confidence": 68,
     "analysis": "Portugal é superior, mas enfrenta uma Irlanda desesperada por pontos e jogando em casa sob bloco baixo. A Irlanda possui baixo poder ofensivo (0.6 gols/jogo no grupo) e Portugal tem uma defesa forte (0.25 gols sofridos/jogo). A tensão da partida e o estilo de jogo defensivo da Irlanda (visto no 1-0 no jogo anterior) sugerem um placar apertado e com pouca chance de gol da equipe da casa. A recomendação principal 'Ambos Marcam - NÃO' tem alta confiança (68%), com a alternativa de valor sendo 'Over 4.5 Cartões' devido à rivalidade e ao histórico do árbitro.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -52,7 +52,7 @@
     "prediction": "Total de Gols: Mais de 3.5",
     "confidence": 70,
     "analysis": "A Itália (2ª) é esmagadoramente superior à Moldávia (5ª), que possui a defesa mais vazada do grupo (média de 4.33 gols sofridos/jogo). O confronto direto histórico valida a expectativa de goleada (6-0 e 5-0 recentes). A Itália precisa de gols para melhorar seu saldo. Com a alta fragilidade defensiva do mandante, a probabilidade de a linha de 3.5 gols ser superada é de 68%. O mercado de Handicap Asiático Itália -2.5 é uma alternativa sólida de valor.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -66,7 +66,7 @@
     "prediction": "Ambos Marcam (BTTS): NÃO",
     "confidence": 60,
     "analysis": "A Inglaterra é a favorita esmagadora (68% de chance de vitória) e demonstra excelente solidez defensiva, sem sofrer gols nos últimos dois H2H contra a Sérvia. A Sérvia (xG de 0.18 no último H2H) terá dificuldade extrema em furar o bloqueio inglês. O cenário mais provável é de vitória inglesa por 1-0 ou 2-0, controlando a posse e limitando as chances do adversário. O risco principal reside na atuação do árbitro Daniele Orsato, que pode influenciar o mercado de cartões.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -80,7 +80,7 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 75,
     "analysis": "Confronto da última rodada com alto peso para o Llaneros (11º) que busca uma vaga no G8 jogando em casa. O Envigado (18º) tem um dos piores ataques da liga (0.8 gols/jogo) e demonstrou péssima forma recente. A vantagem do mando de campo é decisiva, e a necessidade de pontuar do Llaneros, contra um adversário desmotivado e fraco, confere uma alta probabilidade (75%) de não perder a partida. O mercado de Under 2.5 Gols é a principal alternativa, dada a baixa média de gols de ambas as equipes na temporada (65% de probabilidade, odd justa 1.54).",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 3"
   },
   {
@@ -94,7 +94,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 65,
     "analysis": "Confronto de vida ou morte para o Santa Fe (11º) em casa, contra o Alianza (8º), que já está classificado. A combinação de necessidade de vitória do Santa Fe, a vantagem da altitude de Bogotá e a provável falta de foco/rotação do Alianza Valledupar (por já estar classificado) gera uma assimetria de motivação e contexto físico crucial. O H2H recente em casa (4-1) e a urgência por pontuação sustentam a alta probabilidade (65%) de vitória do mandante, apesar da forma irregular recente.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -108,7 +108,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 62,
     "analysis": "Clássico de alta tensão na estreia do quadrangular final. O DIM, apesar do ataque forte, enfrentará um AME que priorizará a defesa fora de casa. O retrospecto H2H recente tem favorecido a cautela (3/5 Under 2.5). A necessidade de não perder um confronto direto no mata-mata, somada ao estilo de jogo tático esperado, aponta para um jogo de baixa contagem. Odd justa de 1.72 (58% de chance) oferece valor. A alternativa de Dupla Chance (1X) é a segunda mais segura (70% de chance).",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -122,7 +122,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 60,
     "analysis": "A Liga Colombiana possui uma baixa média histórica de gols. O Deportivo Cali está em má fase, com baixa eficiência ofensiva, e o Once Caldas adota um estilo cauteloso. A combinação de um time em crise (Cali) e outro focado em não conceder (Caldas) favorece um jogo truncado e de poucas chances claras. O H2H recente (exceto um 4-1 atípico) reforça a tendência de placares curtos. A probabilidade de menos de 3 gols é de 60%. Dados de arbitragem e estatísticas avançadas (xG/xGA) não estão disponíveis, o que limita a confiança, mas não invalida o palpite no Under 2.5 com base no contexto da liga e na forma das equipes.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -136,7 +136,7 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 70,
     "analysis": "Clássico de alta rivalidade onde o Junior Barranquilla (6º) precisa pontuar em casa contra o líder Atlético Nacional. O fator mando de campo no Estádio Metropolitano, sob calor e umidade (Barranquilla), é um forte diferencial contra o Nacional, que tem oscilado fora. A combinação de histórico forte do Junior em casa, o desgaste do adversário em viagem e a importância do jogo na fase final de classificação resultam em uma alta probabilidade (70%) do Junior pontuar. O mercado de Under 2.5 Gols é uma alternativa de valor devido às condições climáticas que tendem a diminuir a intensidade ofensiva e à tensão do confronto, resultando em cautela.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 1"
   }
 ]

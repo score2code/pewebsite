@@ -10,7 +10,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 65,
     "analysis": "Confronto de alta exigência com blocos compactos; tendência de poucos gols.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 3 x 2"
   },
   {
@@ -24,7 +24,7 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
     "analysis": "Duas equipes com criação elevada e transições rápidas; cenário para 3+ gols.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 3 x 0"
   },
   {
@@ -38,7 +38,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
     "analysis": "Jogo de controle e disciplina defensiva; linha de poucos gols favorecida.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -52,7 +52,7 @@
     "prediction": "Dupla Chance: X2",
     "confidence": 65,
     "analysis": "Atlético com maior densidade técnica; boa probabilidade de pontuar (empate ou vitória).",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -66,7 +66,7 @@
     "prediction": "Resultado Final: 2",
     "confidence": 66,
     "analysis": "Diferença técnica e elenco favorecem o Chelsea mesmo fora; controle de posse e criação.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -80,7 +80,7 @@
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 66,
     "analysis": "Confronto com alto volume ofensivo e bolas paradas; tendência de 3+ gols.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -94,7 +94,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 67,
     "analysis": "Liverpool dominante em casa e superior em produção; alta probabilidade de vitória.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 3"
   },
   {
@@ -108,7 +108,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 63,
     "analysis": "Ritmo moderado e controle defensivo dos dois lados; menor conversão em chances claras.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 0 x 2"
   },
   {
@@ -122,7 +122,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 67,
     "analysis": "Barcelona dominante em casa; posse, pressão e criação sustentam a vitória do mandante.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 4 x 0"
   },
   {
@@ -136,7 +136,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 64,
     "analysis": "Mallorca costuma reduzir ritmo e espaço; partida tende a baixa produção de gols.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 2 x 1"
   }
 ]

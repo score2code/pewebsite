@@ -10,7 +10,7 @@
     "prediction": "Resultado Final: 1",
     "confidence": 68,
     "analysis": "Palmeiras favorito em casa, controle de posse e maior criação; vitória do mandante é a linha principal.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 0"
   },
   {
@@ -24,7 +24,7 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 64,
     "analysis": "Clássico com propostas ofensivas e defesas que concedem; alta probabilidade de ambos converterem.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 1"
   },
   {
@@ -38,7 +38,7 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 63,
     "analysis": "Mando do Santos com maior volume e estabilidade; 1X cobre empate com boa segurança.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 1 x 1"
   },
   {
@@ -52,7 +52,7 @@
     "prediction": "Dupla Chance: 1X",
     "confidence": 65,
     "analysis": "Grêmio mais sólido em casa; cenário cobre empate com probabilidade elevada de pontuar.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 2 x 0"
   },
   {
@@ -66,7 +66,7 @@
     "prediction": "Total de Gols: Menos de 2.5",
     "confidence": 62,
     "analysis": "Jogo com tendência de equilíbrio e baixa conversão; perfil de Copa favorece prudência ofensiva.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 2 x 2"
   },
   {
@@ -80,7 +80,7 @@
     "prediction": "Resultado Final: 2",
     "confidence": 67,
     "analysis": "Sporting Cristal tecnicamente superior e com melhor forma; alta probabilidade de vitória fora.",
-  "status": "green",
+    "status": "green",
     "reason": "Placar: 1 x 2"
   },
   {
@@ -94,7 +94,7 @@
     "prediction": "Ambas Marcam (BTTS Sim)",
     "confidence": 66,
     "analysis": "Duas equipes com boa produção ofensiva e transições; probabilidade consistente de BTTS.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 1 x 0"
   },
   {
@@ -108,7 +108,7 @@
     "prediction": "Handicap Asiático: Estrela Vermelha -2.5",
     "confidence": 70,
     "analysis": "Grande desnível técnico; Estrela Vermelha deve impor goleada com forte domínio.",
-  "status": "red",
+    "status": "red",
     "reason": "Placar: 0 x 2"
   }
 ]
