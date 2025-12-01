@@ -25,7 +25,7 @@ export default function GuideProbabilityConfidence() {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(
                 buildArticleJsonLd({
-                  url: 'https://score2code.com/conteudos/guias/calculo-de-probabilidade-e-confianca',
+                  url: 'https://palpitesdodia.online/conteudos/guias/calculo-de-probabilidade-e-confianca',
                   title: 'Cálculo de Probabilidade e Confiança: Metodologia do Site',
                   description:
                     'Entenda como estimamos probabilidade e confiança exibidas nos cards de palpites: dados, pesos, ajustes e casos especiais.',

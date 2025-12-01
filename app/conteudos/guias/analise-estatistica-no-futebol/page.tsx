@@ -27,7 +27,7 @@ export default function AnaliseEstatisticaPage() {
                       dangerouslySetInnerHTML={{
                         __html: JSON.stringify(
                           buildArticleJsonLd({
-                            url: 'https://score2code.com/conteudos/guias/analise-estatistica-no-futebol',
+                          url: 'https://palpitesdodia.online/conteudos/guias/analise-estatistica-no-futebol',
                             title: 'Análise Estatística no Futebol',
                             description:
                               'Guia completo sobre métricas avançadas (xG, posse efetiva, pressão) e como contextualizar dados nas suas análises.',

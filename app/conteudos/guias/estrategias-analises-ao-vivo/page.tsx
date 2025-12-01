@@ -26,7 +26,7 @@ export default function AnalisesAoVivoPage() {
                       dangerouslySetInnerHTML={{
                         __html: JSON.stringify(
                           buildArticleJsonLd({
-                            url: 'https://score2code.com/conteudos/guias/estrategias-analises-ao-vivo',
+                            url: 'https://palpitesdodia.online/conteudos/guias/estrategias-analises-ao-vivo',
                             title: 'Estratégias para Análises ao Vivo',
                             description:
                               'Como analisar partidas em tempo real, usar estatísticas e contexto para encontrar valor durante os jogos.',

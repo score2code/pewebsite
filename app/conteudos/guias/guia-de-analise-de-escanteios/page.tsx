@@ -189,7 +189,7 @@ export default function EscanteiosPage() {
                     dangerouslySetInnerHTML={{
                         __html: JSON.stringify(
                             buildArticleJsonLd({
-                                url: 'https://score2code.com/conteudos/guias/guia-de-analise-de-escanteios',
+                                url: 'https://palpitesdodia.online/conteudos/guias/guia-de-analise-de-escanteios',
                                 title: 'Guia de Análise de Escanteios',
                                 description: 'Estratégias e sinais para análise de cantos por período e contexto.',
                             })

@@ -26,7 +26,7 @@ export default function SistemaDeStalingPage() {
                       dangerouslySetInnerHTML={{
                         __html: JSON.stringify(
                           buildArticleJsonLd({
-                            url: 'https://score2code.com/conteudos/guias/sistema-staking-progressao',
+                            url: 'https://palpitesdodia.online/conteudos/guias/sistema-staking-progressao',
                             title: 'Sistema de Staking e Progressão',
                             description:
                               'Aprenda a gerenciar sua banca e aplicar estratégias de progressão com responsabilidade e critérios claros.',

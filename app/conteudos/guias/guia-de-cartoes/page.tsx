@@ -222,7 +222,7 @@ export default function MercadosCartoesPage() {
                     dangerouslySetInnerHTML={{
                         __html: JSON.stringify(
                             buildArticleJsonLd({
-                                url: 'https://score2code.com/conteudos/guias/guia-de-cartoes',
+                                url: 'https://palpitesdodia.online/conteudos/guias/guia-de-cartoes',
                                 title: 'Guia de Cartões',
                                 description: 'Como analisar mercados de cartões considerando árbitro, contexto e período.',
                             })
