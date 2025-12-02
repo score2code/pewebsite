@@ -1,7 +1,7 @@
 [
   {
     "date": "2025-12-01",
-    "tipster": "Hemerson",
+    "tipster": "Togakure Tips",
     "bingo": true,
     "league": "Futebol",
     "homeTeam": "-",
@@ -14,7 +14,7 @@
   },
   {
     "date": "2025-12-01",
-    "tipster": "Hemerson",
+    "tipster": "Togakure Tips",
     "bingo": false,
     "league": "Amistoso Internacional (F)",
     "homeTeam": "EUA (F)",
@@ -30,7 +30,7 @@
   },
   {
     "date": "2025-12-01",
-    "tipster": "Hemerson",
+    "tipster": "Togakure Tips",
     "bingo": true,
     "league": "Basquete",
     "homeTeam": "-",
@@ -43,7 +43,7 @@
   },
   {
     "date": "2025-12-01",
-    "tipster": "Hemerson",
+    "tipster": "Togakure Tips",
     "bingo": true,
     "league": "Basquete",
     "homeTeam": "-",
@@ -56,7 +56,7 @@
   },
   {
     "date": "2025-12-01",
-    "tipster": "Hemerson",
+    "tipster": "Togakure Tips",
     "bingo": false,
     "league": "Futebol Americano",
     "homeTeam": "New England Patriots",
@@ -69,7 +69,7 @@
   },
   {
     "date": "2025-12-01",
-    "tipster": "Hemerson",
+    "tipster": "Togakure Tips",
     "bingo": false,
     "league": "Futebol Americano",
     "homeTeam": "New England Patriots",
@@ -194,6 +194,19 @@
     "prediction": ["-"],
     "stake": 3.25,
     "odd": 1.99,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 4.94,
     "return": 0,
     "status": "pending"
   }
