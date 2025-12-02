@@ -85,7 +85,8 @@
     "awayTeam": "Nublense",
     "prediction": "Mais de 1.5 gols",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "Ambas equipes com jogos recentes acima de 1 gol; ritmo favorece pelo menos 2 gols."
   },
   {

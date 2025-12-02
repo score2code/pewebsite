@@ -62,6 +62,18 @@ function computeNetReturn(stake: number, odd: number, status: BetRow['status']):
   return 0;
 }
 
+function computeNetReturnFromBet(b: BetRow): number {
+  const stake = Number(b.stake) || 0;
+  const odd = Number(b.odd) || 0;
+  if (typeof b.return === 'number') {
+    if (b.status === 'green') return Number(b.return) - stake;
+    if (b.status === 'red') return -stake;
+    if (b.status === 'void') return 0;
+    return 0;
+  }
+  return computeNetReturn(stake, odd, b.status);
+}
+
 function formatPredictions(pred?: string | string[]): string {
   if (!pred) return '';
   return Array.isArray(pred) ? pred.join(', ') : pred;
@@ -70,11 +82,9 @@ function formatPredictions(pred?: string | string[]): string {
 export default async function RelatorioApostasPrivadoPage() {
   const bets = await loadBets();
   const totalVolume = bets.reduce((sum, b) => sum + (Number(b.stake) || 0), 0);
-  const totalReturn = bets.reduce((sum, b) => {
-    const net = typeof (b as any).return === 'number' ? Number((b as any).return) : computeNetReturn(Number(b.stake) || 0, Number(b.odd) || 0, b.status);
-    return sum + net;
-  }, 0);
+  const totalReturn = bets.reduce((sum, b) => sum + computeNetReturnFromBet(b), 0);
   const initialBankroll = 325.74;
+  const currentBankroll = initialBankroll + totalReturn;
 
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -100,8 +110,12 @@ export default async function RelatorioApostasPrivadoPage() {
                   <span className="font-bold">{formatCurrencyBRL(totalVolume)}</span>
                 </div>
                 <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
-                  <span className="text-sm">Total de retorno:</span>
+                  <span className="text-sm">Lucro Total:</span>
                   <span className="font-bold">{formatCurrencyBRL(totalReturn)}</span>
+                </div>
+                <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
+                  <span className="text-sm">Banca atual:</span>
+                  <span className="font-bold">{formatCurrencyBRL(currentBankroll)}</span>
                 </div>
               </div>
             </div>
@@ -109,7 +123,7 @@ export default async function RelatorioApostasPrivadoPage() {
 
           <div className="md:hidden space-y-3">
             {bets.map((b, i) => {
-              const netReturn = typeof b.return === 'number' ? b.return : computeNetReturn(Number(b.stake) || 0, Number(b.odd) || 0, b.status);
+              const netReturn = computeNetReturnFromBet(b);
               const statusClass =
                 b.status === 'green'
                   ? 'text-green-700 dark:text-green-400'
@@ -160,13 +174,13 @@ export default async function RelatorioApostasPrivadoPage() {
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Valor apostado</th>
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">ODD</th>
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Palpites</th>
-                  <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Retorno</th>
+                  <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Lucro(R$)</th>
                   <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Resultado</th>
                 </tr>
               </thead>
               <tbody>
                 {bets.map((b, i) => {
-                  const netReturn = typeof b.return === 'number' ? b.return : computeNetReturn(Number(b.stake) || 0, Number(b.odd) || 0, b.status);
+                  const netReturn = computeNetReturnFromBet(b);
                   const statusClass =
                     b.status === 'green'
                       ? 'text-green-700 dark:text-green-400'
