@@ -10,7 +10,7 @@
     "stake": 0.74,
     "odd": 2751.06,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -96,8 +96,8 @@
     "prediction": ["Dupla Chance: 1X"],
     "stake": 3.25,
     "odd": 1.24,
-    "return": 0,
-    "status": "pending",
+    "return": 4.04,
+    "status": "green",
     "marketing": false
   },
   {
@@ -110,8 +110,8 @@
     "prediction": ["Dupla Chance: X2"],
     "stake": 3.25,
     "odd": 1.20,
-    "return": 0,
-    "status": "pending",
+    "return": 3.90,
+    "status": "green",
     "marketing": false
   },
   {
@@ -125,7 +125,7 @@
     "stake": 3.25,
     "odd": 2.06,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -152,8 +152,8 @@
     "prediction": ["-"],
     "stake": 3.25,
     "odd": 1.58,
-    "return": 0,
-    "status": "pending",
+    "return": 3.90,
+    "status": "green",
     "marketing": false
   },
   {
@@ -167,7 +167,7 @@
     "stake": 3.25,
     "odd": 2.20,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -181,7 +181,7 @@
     "stake": 3.25,
     "odd": 1.67,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -209,7 +209,7 @@
     "stake": 3.25,
     "odd": 1.99,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -251,7 +251,7 @@
     "stake": 0.75,
     "odd": 1.74,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -293,7 +293,7 @@
     "stake": 3.25,
     "odd": 2.25,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -307,7 +307,7 @@
     "stake": 3.25,
     "odd": 3.68,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -321,7 +321,7 @@
     "stake": 0.50,
     "odd": 74.96,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -349,7 +349,7 @@
     "stake": 3.25,
     "odd": 1.55,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -368,5 +368,22 @@
     "return": 5.90,
     "status": "green",
     "marketing": false
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Lucas Tylty",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Vasco",
+    "awayTeam": "Mirassol",
+    "prediction": [
+      "Total de Gols: Mais de 1.5",
+      "1º Tempo - Total de Gols: Mais de 0.5"
+    ],
+    "stake": 3.24,
+    "odd": 1.85,
+    "return": 0,
+    "status": "pending",
+    "marketing": true
   }
 ]
