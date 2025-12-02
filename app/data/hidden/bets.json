@@ -209,5 +209,18 @@
     "odd": 4.94,
     "return": 0,
     "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Corner Pro",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 2.58,
+    "return": 0,
+    "status": "pending"
   }
 ]
