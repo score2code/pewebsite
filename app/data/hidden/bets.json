@@ -79,5 +79,57 @@
     "odd": 1.01,
     "return": 1,
     "status": "green"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": false,
+    "league": "La Liga",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Atlético de Madrid",
+    "prediction": ["Dupla Chance: 1X"],
+    "stake": 3.25,
+    "odd": 1.24,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Manchester City",
+    "prediction": ["Dupla Chance: X2"],
+    "stake": 3.25,
+    "odd": 1.20,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 2.06,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 1.89,
+    "return": 0,
+    "status": "pending"
   }
 ]
