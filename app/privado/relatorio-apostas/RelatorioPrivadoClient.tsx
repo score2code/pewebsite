@@ -1,5 +1,6 @@
 "use client";
 import { useMemo } from 'react';
+import { Banknote, Wallet, Coins, TrendingUp, Target } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
 
 type BetRow = {
@@ -77,6 +78,10 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
     return result;
   }, [bets, selectedTipster, selectedMarketing]);
 
+  const sortedBets = useMemo(() => {
+    return [...filteredBets].reverse();
+  }, [filteredBets]);
+
   const totalVolume = filteredBets.reduce((sum, b) => sum + (Number(b.stake) || 0), 0);
   const totalReturn = filteredBets.reduce((sum, b) => sum + computeNetReturnFromBet(b), 0);
   const currentBankroll = initialBankroll + totalReturn;
@@ -85,53 +90,87 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
     : totalReturn < 0
     ? 'text-red-700 dark:text-red-400'
     : 'text-dark-900/70 dark:text-light-100/70';
+  const goal = initialBankroll * 12 - totalVolume;
+  const currentClass = currentBankroll > initialBankroll
+    ? 'text-green-700 dark:text-green-400'
+    : currentBankroll < initialBankroll
+    ? 'text-red-700 dark:text-red-400'
+    : 'text-dark-900/70 dark:text-light-100/70';
+  const goalClass = goal > 0
+    ? 'text-blue-700 dark:text-blue-400'
+    : 'text-green-700 dark:text-green-400';
 
   return (
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
       <div className="mb-4">
         <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Tabela de Apostas</h2>
-        <div className="flex flex-wrap items-center gap-3 text-dark-900 dark:text-light-100 mb-3">
-          <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
-            <span className="text-sm">Banca inicial:</span>
-            <span className="font-bold">{formatCurrencyBRL(initialBankroll)}</span>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
+          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+            <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
+            <div className="flex-1">
+              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Banca inicial</div>
+              <div className="font-bold text-dark-900 dark:text-light-100">{formatCurrencyBRL(initialBankroll)}</div>
+            </div>
           </div>
-          <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
-            <span className="text-sm">Banca atual:</span>
-            <span className="font-bold">{formatCurrencyBRL(currentBankroll)}</span>
+          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+            <Wallet size={16} className="text-dark-900/70 dark:text-light-100/70" />
+            <div className="flex-1">
+              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Banca atual</div>
+              <div className={`font-bold ${currentClass}`}>{formatCurrencyBRL(currentBankroll)}</div>
+            </div>
+          </div>
+          <div className="rounded-lg border border-orange-200 dark:border-orange-700 bg-orange-50 dark:bg-orange-900/20 p-3 flex items-center gap-2">
+            <Coins size={16} className="text-orange-700 dark:text-orange-400" />
+            <div className="flex-1">
+              <div className="text-xs text-orange-700 dark:text-orange-400">Volume total</div>
+              <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(totalVolume)}</div>
+            </div>
+          </div>
+          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+            <TrendingUp size={16} className={`${totalReturn > 0 ? 'text-green-700 dark:text-green-400' : totalReturn < 0 ? 'text-red-700 dark:text-red-400' : 'text-dark-900/70 dark:text-light-100/70'}`} />
+            <div className="flex-1">
+              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Lucro Total</div>
+              <div className={`font-bold ${totalReturnClass}`}>{formatCurrencyBRL(totalReturn)}</div>
+            </div>
           </div>
         </div>
-        <div className="flex flex-wrap items-center gap-3 text-dark-900 dark:text-light-100 mb-3">
-            <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
-              <span className="text-sm">Volume total:</span>
-              <span className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(totalVolume)}</span>
+        <div className="mb-3">
+          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+            <Target size={16} className={`${goal > 0 ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400'}`} />
+            <div className="flex-1">
+              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta restante</div>
+              <div className={`font-bold ${goalClass}`}>{formatCurrencyBRL(goal)}</div>
             </div>
-            <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
-              <span className="text-sm">Lucro Total:</span>
-              <span className={`font-bold ${totalReturnClass}`}>{formatCurrencyBRL(totalReturn)}</span>
-            </div>
+          </div>
         </div>
-        <div className="flex flex-wrap items-center gap-3 text-dark-900 dark:text-light-100">
-            <form method="GET" className="inline-flex items-center gap-2">
-              <label htmlFor="tipster" className="text-sm">Tipster:</label>
-              <select id="tipster" name="tipster" defaultValue={selectedTipster} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1">
-                <option value="">Todos</option>
-                {tipsterOptions.map((t) => (
-                  <option key={t} value={t}>{t}</option>
-                ))}
-              </select>
-              <label htmlFor="marketing" className="text-sm">Marketing:</label>
-              <select id="marketing" name="marketing" defaultValue={selectedMarketing} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1">
-                <option value="">Todos</option>
-                <option value="true">Sim</option>
-                <option value="false">Não</option>
-              </select>
-              <button type="submit" className="text-sm px-3 py-1 rounded border border-light-300 dark:border-dark-600 bg-light-200 dark:bg-dark-700">Filtrar</button>
+        <div className="text-dark-900 dark:text-light-100">
+            <form method="GET" className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-2 w-full">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1">
+                <label htmlFor="tipster" className="text-sm">Tipster</label>
+                <select id="tipster" name="tipster" defaultValue={selectedTipster} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1 w-full sm:w-auto">
+                  <option value="">Todos</option>
+                  {tipsterOptions.map((t) => (
+                    <option key={t} value={t}>{t}</option>
+                  ))}
+                </select>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1">
+                <label htmlFor="marketing" className="text-sm">Marketing</label>
+                <select id="marketing" name="marketing" defaultValue={selectedMarketing} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1 w-full sm:w-auto">
+                  <option value="">Todos</option>
+                  <option value="true">Sim</option>
+                  <option value="false">Não</option>
+                </select>
+              </div>
+              <div className="flex items-center">
+                <button type="submit" className="text-sm px-3 py-2 rounded border border-light-300 dark:border-dark-600 bg-light-200 dark:bg-dark-700 w-full sm:w-auto">Filtrar</button>
+              </div>
             </form>
         </div>
       </div>
 
       <div className="md:hidden space-y-3">
-        {filteredBets.map((b, i) => {
+        {sortedBets.map((b, i) => {
           const netReturn = computeNetReturnFromBet(b);
           const statusClass =
             b.status === 'green'
@@ -166,9 +205,9 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
             </div>
           );
         })}
-        {filteredBets.length === 0 && (
-          <div className="text-center text-sm text-dark-900/70 dark:text-light-100/70 py-4">Nenhuma aposta registrada.</div>
-        )}
+            {sortedBets.length === 0 && (
+              <div className="text-center text-sm text-dark-900/70 dark:text-light-100/70 py-4">Nenhuma aposta registrada.</div>
+            )}
       </div>
 
       <div className="overflow-x-auto hidden md:block">
@@ -188,7 +227,7 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
             </tr>
           </thead>
           <tbody>
-            {filteredBets.map((b, i) => {
+            {sortedBets.map((b, i) => {
               const netReturn = computeNetReturnFromBet(b);
               const statusClass =
                 b.status === 'green'
@@ -218,7 +257,7 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
                 </tr>
               );
             })}
-            {filteredBets.length === 0 && (
+            {sortedBets.length === 0 && (
               <tr>
                 <td className="px-3 py-4 text-center text-sm text-dark-900/70 dark:text-light-100/70" colSpan={11}>
                   Nenhuma aposta registrada.
