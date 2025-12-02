@@ -72,6 +72,11 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
   const totalVolume = filteredBets.reduce((sum, b) => sum + (Number(b.stake) || 0), 0);
   const totalReturn = filteredBets.reduce((sum, b) => sum + computeNetReturnFromBet(b), 0);
   const currentBankroll = initialBankroll + totalReturn;
+  const totalReturnClass = totalReturn > 0
+    ? 'text-green-700 dark:text-green-400'
+    : totalReturn < 0
+    ? 'text-red-700 dark:text-red-400'
+    : 'text-dark-900/70 dark:text-light-100/70';
 
   return (
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
@@ -92,10 +97,10 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
             <span className="text-sm">Volume total:</span>
             <span className="font-bold">{formatCurrencyBRL(totalVolume)}</span>
           </div>
-          <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
-            <span className="text-sm">Lucro Total:</span>
-            <span className="font-bold">{formatCurrencyBRL(totalReturn)}</span>
-          </div>
+            <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
+              <span className="text-sm">Lucro Total:</span>
+              <span className={`font-bold ${totalReturnClass}`}>{formatCurrencyBRL(totalReturn)}</span>
+            </div>
         </div>
         <div className="flex flex-wrap items-center gap-3 text-dark-900 dark:text-light-100">
           <form method="GET" className="inline-flex items-center gap-2">

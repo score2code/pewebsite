@@ -131,5 +131,70 @@
     "odd": 1.89,
     "return": 0,
     "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Bruxo Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 1.58,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Mundo Bet (Chris Tips)",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 2.20,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Rafaela Tipster",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 1.67,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "AVBets",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 1.84,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Freitas Tipster",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 1.99,
+    "return": 0,
+    "status": "pending"
   }
 ]
