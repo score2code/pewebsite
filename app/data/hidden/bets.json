@@ -1,6 +1,7 @@
 [
   {
     "date": "2025-12-01",
+    "tipster": "Hemerson",
     "bingo": true,
     "league": "Futebol",
     "homeTeam": "-",
@@ -13,6 +14,7 @@
   },
   {
     "date": "2025-12-01",
+    "tipster": "Hemerson",
     "bingo": false,
     "league": "Amistoso Internacional (F)",
     "homeTeam": "EUA (F)",
@@ -28,6 +30,7 @@
   },
   {
     "date": "2025-12-01",
+    "tipster": "Hemerson",
     "bingo": true,
     "league": "Basquete",
     "homeTeam": "-",
@@ -40,6 +43,7 @@
   },
   {
     "date": "2025-12-01",
+    "tipster": "Hemerson",
     "bingo": true,
     "league": "Basquete",
     "homeTeam": "-",
@@ -52,6 +56,7 @@
   },
   {
     "date": "2025-12-01",
+    "tipster": "Hemerson",
     "bingo": false,
     "league": "Futebol Americano",
     "homeTeam": "New England Patriots",
@@ -64,6 +69,7 @@
   },
   {
     "date": "2025-12-01",
+    "tipster": "Hemerson",
     "bingo": false,
     "league": "Futebol Americano",
     "homeTeam": "New England Patriots",
