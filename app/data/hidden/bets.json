@@ -10,7 +10,8 @@
     "stake": 0.74,
     "odd": 2751.06,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": true
   },
   {
     "date": "2025-12-01",
@@ -26,7 +27,8 @@
     "stake": 1,
     "odd": 1.50,
     "return": 1.50,
-    "status": "green"
+    "status": "green",
+    "marketing": false
   },
   {
     "date": "2025-12-01",
@@ -39,7 +41,8 @@
     "stake": 1,
     "odd": 3.36,
     "return": 0,
-    "status": "red"
+    "status": "red",
+    "marketing": false
   },
   {
     "date": "2025-12-01",
@@ -52,7 +55,8 @@
     "stake": 1,
     "odd": 2.23,
     "return": 0,
-    "status": "red"
+    "status": "red",
+    "marketing": false
   },
   {
     "date": "2025-12-01",
@@ -65,7 +69,8 @@
     "stake": 1,
     "odd": 1.52,
     "return": 1.52,
-    "status": "green"
+    "status": "green",
+    "marketing": false
   },
   {
     "date": "2025-12-01",
@@ -78,7 +83,8 @@
     "stake": 0.99,
     "odd": 1.01,
     "return": 1,
-    "status": "green"
+    "status": "green",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -91,7 +97,8 @@
     "stake": 3.25,
     "odd": 1.24,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -104,7 +111,8 @@
     "stake": 3.25,
     "odd": 1.20,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -117,7 +125,8 @@
     "stake": 3.25,
     "odd": 2.06,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -130,7 +139,8 @@
     "stake": 3.25,
     "odd": 1.89,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -143,7 +153,8 @@
     "stake": 3.25,
     "odd": 1.58,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -156,7 +167,8 @@
     "stake": 3.25,
     "odd": 2.20,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -169,7 +181,8 @@
     "stake": 3.25,
     "odd": 1.67,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -182,7 +195,8 @@
     "stake": 3.25,
     "odd": 1.84,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -195,7 +209,8 @@
     "stake": 3.25,
     "odd": 1.99,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -208,7 +223,8 @@
     "stake": 3.25,
     "odd": 4.94,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -221,7 +237,8 @@
     "stake": 3.25,
     "odd": 2.58,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
   },
   {
     "date": "2025-12-02",
@@ -234,6 +251,49 @@
     "stake": 0.75,
     "odd": 1.74,
     "return": 0,
-    "status": "pending"
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Coringa Bets",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Manchester City",
+    "prediction": ["Escanteios no 1º Tempo: Manchester City - Mais de 2.5"],
+    "stake": 3.25,
+    "odd": 1.80,
+    "return": 0,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Doctor Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 1.86,
+    "return": 0,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Futnet",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 2.25,
+    "return": 0,
+    "status": "pending",
+    "marketing": false
   }
 ]

@@ -13,6 +13,7 @@ type BetRow = {
   prediction?: string | string[];
   return?: number;
   tipster?: string;
+  marketing?: boolean;
   status: 'green' | 'red' | 'void' | 'pending' | 'postponed';
 };
 
@@ -60,14 +61,21 @@ function formatPredictions(pred?: string | string[]): string {
 export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets: BetRow[]; initialBankroll: number }) {
   const searchParams = useSearchParams();
   const selectedTipster = searchParams.get('tipster') || '';
+  const selectedMarketing = searchParams.get('marketing') || '';
 
   const tipsterOptions = useMemo(() => {
     return Array.from(new Set(bets.map(b => b.tipster).filter((t): t is string => Boolean(t)))).sort();
   }, [bets]);
 
   const filteredBets = useMemo(() => {
-    return selectedTipster ? bets.filter(b => (b.tipster || '') === selectedTipster) : bets;
-  }, [bets, selectedTipster]);
+    let result = selectedTipster ? bets.filter(b => (b.tipster || '') === selectedTipster) : bets;
+    if (selectedMarketing === 'true') {
+      result = result.filter(b => Boolean(b.marketing));
+    } else if (selectedMarketing === 'false') {
+      result = result.filter(b => !Boolean(b.marketing));
+    }
+    return result;
+  }, [bets, selectedTipster, selectedMarketing]);
 
   const totalVolume = filteredBets.reduce((sum, b) => sum + (Number(b.stake) || 0), 0);
   const totalReturn = filteredBets.reduce((sum, b) => sum + computeNetReturnFromBet(b), 0);
@@ -93,26 +101,32 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-3 text-dark-900 dark:text-light-100 mb-3">
-          <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
-            <span className="text-sm">Volume total:</span>
-            <span className="font-bold">{formatCurrencyBRL(totalVolume)}</span>
-          </div>
+            <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
+              <span className="text-sm">Volume total:</span>
+              <span className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(totalVolume)}</span>
+            </div>
             <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1">
               <span className="text-sm">Lucro Total:</span>
               <span className={`font-bold ${totalReturnClass}`}>{formatCurrencyBRL(totalReturn)}</span>
             </div>
         </div>
         <div className="flex flex-wrap items-center gap-3 text-dark-900 dark:text-light-100">
-          <form method="GET" className="inline-flex items-center gap-2">
-            <label htmlFor="tipster" className="text-sm">Tipster:</label>
-            <select id="tipster" name="tipster" defaultValue={selectedTipster} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1">
-              <option value="">Todos</option>
-              {tipsterOptions.map((t) => (
-                <option key={t} value={t}>{t}</option>
-              ))}
-            </select>
-            <button type="submit" className="text-sm px-3 py-1 rounded border border-light-300 dark:border-dark-600 bg-light-200 dark:bg-dark-700">Filtrar</button>
-          </form>
+            <form method="GET" className="inline-flex items-center gap-2">
+              <label htmlFor="tipster" className="text-sm">Tipster:</label>
+              <select id="tipster" name="tipster" defaultValue={selectedTipster} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1">
+                <option value="">Todos</option>
+                {tipsterOptions.map((t) => (
+                  <option key={t} value={t}>{t}</option>
+                ))}
+              </select>
+              <label htmlFor="marketing" className="text-sm">Marketing:</label>
+              <select id="marketing" name="marketing" defaultValue={selectedMarketing} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1">
+                <option value="">Todos</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+              </select>
+              <button type="submit" className="text-sm px-3 py-1 rounded border border-light-300 dark:border-dark-600 bg-light-200 dark:bg-dark-700">Filtrar</button>
+            </form>
         </div>
       </div>
 
@@ -140,7 +154,6 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
               </div>
               <div className="mt-1 text-dark-900 dark:text-light-100 font-semibold">{b.homeTeam} × {b.awayTeam}</div>
               <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
-                <div className="text-dark-900/70 dark:text-light-100/70">Bingo: {b.bingo ? 'Sim' : 'Não'}</div>
                 <div className="text-dark-900/70 dark:text-light-100/70">ODD: {Number(b.odd).toFixed(2)}</div>
                 <div className="text-dark-900/70 dark:text-light-100/70">Valor: {formatCurrencyBRL(Number(b.stake) || 0)}</div>
                 <div className="text-dark-900/70 dark:text-light-100/70 col-span-2 truncate">Tipster: {b.tipster || '—'}</div>
@@ -163,7 +176,6 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
           <thead className="bg-light-200 dark:bg-dark-700">
             <tr>
               <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Data</th>
-              <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Bingo</th>
               <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Campeonato</th>
               <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Tipster</th>
               <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Casa</th>
@@ -194,7 +206,6 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
               return (
                 <tr key={i} className="border-t border-light-300 dark:border-dark-600">
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{formatDateBR(b.date)}</td>
-                  <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.bingo ? 'Sim' : 'Não'}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.league}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.tipster || '—'}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.homeTeam}</td>

@@ -15,6 +15,7 @@ type BetRow = {
   prediction?: string | string[];
   return?: number;
   tipster?: string;
+  marketing?: boolean;
   status: 'green' | 'red' | 'void' | 'pending' | 'postponed';
 };
 
