@@ -295,5 +295,78 @@
     "return": 0,
     "status": "pending",
     "marketing": false
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Yuri Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 3.25,
+    "odd": 3.68,
+    "return": 0,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 74.96,
+    "return": 0,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 47.32,
+    "return": 0,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Lucas Tylty",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "New Castle",
+    "awayTeam": "Tottenham",
+    "prediction": ["Total de Cartões: Mais de 3.5"],
+    "stake": 3.25,
+    "odd": 1.55,
+    "return": 0,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Bruxo Tips",
+    "bingo": false,
+    "league": "La Liga",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Atlético de Madrid",
+    "prediction": [
+      "Ambas Equipes Mais de X Cartões Cada: Sim - 0.5",
+      "Atlético de Madrid - Total de Gols: Mais de 0.5"
+    ],
+    "stake": 3.25,
+    "odd": 1.81,
+    "return": 0,
+    "status": "pending",
+    "marketing": false
   }
 ]
