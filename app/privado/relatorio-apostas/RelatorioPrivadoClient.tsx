@@ -1,6 +1,6 @@
 "use client";
 import { useMemo } from 'react';
-import { Banknote, Wallet, Coins, TrendingUp, Target } from 'lucide-react';
+import { Banknote, Wallet, Coins, TrendingUp, Target, ListChecks, XCircle, CheckCircle } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
 
 type BetRow = {
@@ -99,6 +99,9 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
   const goalClass = goal > 0
     ? 'text-blue-700 dark:text-blue-400'
     : 'text-green-700 dark:text-green-400';
+  const totalBets = filteredBets.length;
+  const totalReds = filteredBets.filter(b => b.status === 'red').length;
+  const totalGreens = filteredBets.filter(b => b.status === 'green').length;
 
   return (
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
@@ -134,12 +137,33 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
             </div>
           </div>
         </div>
-        <div className="mb-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
           <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
             <Target size={16} className={`${goal > 0 ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400'}`} />
             <div className="flex-1">
               <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta restante</div>
               <div className={`font-bold ${goalClass}`}>{formatCurrencyBRL(goal)}</div>
+            </div>
+          </div>
+          <div className="rounded-lg border border-indigo-200 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-900/20 p-3 flex items-center gap-2">
+            <ListChecks size={16} className="text-indigo-700 dark:text-indigo-400" />
+            <div className="flex-1">
+              <div className="text-xs text-indigo-700 dark:text-indigo-400">Apostas</div>
+              <div className="font-bold text-indigo-700 dark:text-indigo-400">{totalBets}</div>
+            </div>
+          </div>
+          <div className="rounded-lg border border-red-200 dark:border-red-700 bg-red-50 dark:bg-red-900/20 p-3 flex items-center gap-2">
+            <XCircle size={16} className="text-red-700 dark:text-red-400" />
+            <div className="flex-1">
+              <div className="text-xs text-red-700 dark:text-red-400">Reds</div>
+              <div className="font-bold text-red-700 dark:text-red-400">{totalReds}</div>
+            </div>
+          </div>
+          <div className="rounded-lg border border-green-200 dark:border-green-700 bg-green-50 dark:bg-green-900/20 p-3 flex items-center gap-2">
+            <CheckCircle size={16} className="text-green-700 dark:text-green-400" />
+            <div className="flex-1">
+              <div className="text-xs text-green-700 dark:text-green-400">Greens</div>
+              <div className="font-bold text-green-700 dark:text-green-400">{totalGreens}</div>
             </div>
           </div>
         </div>
