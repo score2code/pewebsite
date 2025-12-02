@@ -59,7 +59,7 @@
     "prediction": ["Handicap: New England Patriots -3.5"],
     "stake": 1,
     "odd": 1.52,
-    "return": 0,
+    "return": 1.52,
     "status": "green"
   },
   {
@@ -71,7 +71,7 @@
     "prediction": ["Resultado Final: 1"],
     "stake": 0.99,
     "odd": 1.01,
-    "return": 0,
+    "return": 1,
     "status": "green"
   }
 ]
