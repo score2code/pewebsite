@@ -222,5 +222,18 @@
     "odd": 2.58,
     "return": 0,
     "status": "pending"
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Sokker Pro",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 0.75,
+    "odd": 1.74,
+    "return": 0,
+    "status": "pending"
   }
 ]
