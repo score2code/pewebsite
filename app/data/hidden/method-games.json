@@ -7,7 +7,7 @@
     "awayTeam":"Sport Recife",
     "market":"DC 1X",
     "odds":1.05,
-    "recommended":false
+    "recommended":true
   },
   {
     "date":"2025-12-03",
@@ -17,7 +17,7 @@
     "awayTeam":"Ceará",
     "market":"DC 1X",
     "odds":1.05,
-    "recommended":false
+    "recommended":true
   },
   {
     "date":"2025-12-03",
@@ -27,7 +27,7 @@
     "awayTeam":"Brentford",
     "market":"DC 1X",
     "odds":1.09,
-    "recommended":false
+    "recommended":true
   },
   {
     "date":"2025-12-03",
@@ -77,16 +77,6 @@
     "awayTeam":"WSG Tirol",
     "market":"DC 1X",
     "odds":1.16,
-    "recommended":false
-  },
-  {
-    "date":"2025-12-03",
-    "time":"21:30",
-    "league":"Brasileirão Série A",
-    "homeTeam":"Atlético MG",
-    "awayTeam":"Palmeiras",
-    "market":"HC Atlético MG (2.5)",
-    "odds":1.03,
     "recommended":false
   },
   {
