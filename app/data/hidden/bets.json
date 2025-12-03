@@ -139,7 +139,7 @@
     "stake": 3.25,
     "odd": 1.89,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -236,8 +236,8 @@
     "prediction": ["-"],
     "stake": 3.25,
     "odd": 2.58,
-    "return": 0,
-    "status": "pending",
+    "return": 8.39,
+    "status": "green",
     "marketing": false
   },
   {
@@ -384,6 +384,40 @@
     "odd": 1.85,
     "return": 0,
     "status": "red",
-    "marketing": true
+    "marketing": false
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Grêmio",
+    "awayTeam": "Fluminense",
+    "prediction": [
+      "Total de Gols: Mais de 1.5",
+      "Fluminense - Chutes no Gols: Mais de 2.5",
+      "Fluminense - Total de Escanteios: Mais de 2.5"
+    ],
+    "stake": 2,
+    "odd": 1.80,
+    "return": 0,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Grêmio",
+    "awayTeam": "Fluminense",
+    "prediction": [
+      "Jogador - Finalizações: Melo, Arthur - Mais de 0.5"
+    ],
+    "stake": 2.38,
+    "odd": 1.48,
+    "return": 0,
+    "status": "pending",
+    "marketing": false
   }
 ]
