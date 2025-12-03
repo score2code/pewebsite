@@ -10,8 +10,9 @@
     "awayTeam": "Mirassol",
     "prediction": "Empate Anula Aposta: Vasco (DNB)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Vasco costuma impor mais força em casa; DNB protege contra empate em jogo de copa."
+    "analysis": "Vasco costuma impor mais força em casa; DNB protege contra empate em jogo de copa.",
+    "status": "red",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "fulham-x-manchester-city",
@@ -24,8 +25,9 @@
     "awayTeam": "Manchester City",
     "prediction": "Handicap: Manchester City -1.0",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "City com controle de posse e criação de volume; -1.0 dá push em vitória mínima."
+    "analysis": "City com controle de posse e criação de volume; -1.0 dá push em vitória mínima.",
+    "status": "void",
+    "reason": "Placar: 4 x 5"
   },
   {
     "id": "gremio-rs-x-fluminense",
@@ -38,8 +40,9 @@
     "awayTeam": "Fluminense",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Duas equipes com proposta ofensiva e vulnerabilidades defensivas recentes; tendência de gols dos dois lados."
+    "analysis": "Duas equipes com proposta ofensiva e vulnerabilidades defensivas recentes; tendência de gols dos dois lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "newcastle-x-tottenham",
@@ -52,8 +55,9 @@
     "awayTeam": "Tottenham",
     "prediction": "Escanteios: Mais de 9.5",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Jogo de transições e finalizações frequentes; tendência de alto volume de escanteios."
+    "analysis": "Jogo de transições e finalizações frequentes; tendência de alto volume de escanteios.",
+    "status": "green",
+    "reason": "Escanteios: 11 x 8"
   },
   {
     "id": "bournemouth-x-everton",
@@ -66,8 +70,9 @@
     "awayTeam": "Everton",
     "prediction": "Cartões: Mais de 4.5",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Partida física, com pressão e disputas; linha de cartões acima do padrão médio recente."
+    "analysis": "Partida física, com pressão e disputas; linha de cartões acima do padrão médio recente.",
+    "status": "green",
+    "reason": "Cartões: 3 x 3"
   },
   {
     "id": "barcelona-x-atletico-madrid",
@@ -80,8 +85,9 @@
     "awayTeam": "Atletico Madrid",
     "prediction": "Empate Anula Aposta: Barcelona (DNB)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Barcelona com maior posse e criação em casa; DNB reduz risco diante da solidez do Atlético."
+    "analysis": "Barcelona com maior posse e criação em casa; DNB reduz risco diante da solidez do Atlético.",
+    "status": "green",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "rb-leipzig-x-magdeburg",
@@ -94,8 +100,9 @@
     "awayTeam": "Magdeburg",
     "prediction": "Handicap: RB Leipzig -1.5",
     "confidence": 68,
-    "status": "pending",
-    "analysis": "Diferença técnica significativa; expectativa de superioridade e vitória com margem confortável."
+    "analysis": "Diferença técnica significativa; expectativa de superioridade e vitória com margem confortável.",
+    "status": "green",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "borussia-dortmund-x-bayer-leverkusen",
@@ -108,8 +115,9 @@
     "awayTeam": "Bayer Leverkusen",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Confronto de alto ritmo e ataques letais; forte tendência de gols para ambos."
+    "analysis": "Confronto de alto ritmo e ataques letais; forte tendência de gols para ambos.",
+    "status": "red",
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "juventus-x-udinese",
@@ -122,8 +130,9 @@
     "awayTeam": "Udinese",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Juventus mais consistente e eficiente em casa; Udinese tem baixa conversão ofensiva recente."
+    "analysis": "Juventus mais consistente e eficiente em casa; Udinese tem baixa conversão ofensiva recente.",
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "universidad-de-chile-x-coquimbo-unido",
@@ -136,8 +145,9 @@
     "awayTeam": "Coquimbo Unido",
     "prediction": "Dupla Chance: Universidad de Chile ou Empate",
     "confidence": 65,
-    "status": "pending",
-    "analysis": "Universidad de Chile mais estável como mandante; dupla chance reduz variância em jogo equilibrado."
+    "analysis": "Universidad de Chile mais estável como mandante; dupla chance reduz variância em jogo equilibrado.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "san-jose-de-oruro-x-san-antonio-bulo-bulo",
@@ -150,8 +160,9 @@
     "awayTeam": "San Antonio Bulo Bulo",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Partidas na altitude tendem a ritmo alto e defesas vulneráveis; cenário para 3+ gols."
+    "analysis": "Partidas na altitude tendem a ritmo alto e defesas vulneráveis; cenário para 3+ gols.",
+    "status": "green",
+    "reason": "Placar: 1 x 5"
   },
   {
     "id": "sporting-cristal-x-alianza-lima",
@@ -164,8 +175,9 @@
     "awayTeam": "Alianza Lima",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Clássico com dois ataques fortes; tendência de trocas de chances e gols dos dois lados."
+    "analysis": "Clássico com dois ataques fortes; tendência de trocas de chances e gols dos dois lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "cs-dinamo-bucuresti-x-concordia-chiajna",
@@ -178,8 +190,9 @@
     "awayTeam": "Concordia Chiajna",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Dinamo com melhor momento e mando de campo; expectativa de controle do jogo e vitória."
+    "analysis": "Dinamo com melhor momento e mando de campo; expectativa de controle do jogo e vitória.",
+    "status": "red",
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "montana-x-lokomotiv-sofia",
@@ -192,7 +205,8 @@
     "awayTeam": "Lokomotiv Sofia",
     "prediction": "Dupla Chance: Lokomotiv Sofia ou Empate",
     "confidence": 65,
-    "status": "pending",
-    "analysis": "Lokomotiv apresenta maior consistência recente; dupla chance protege em jogo de baixa margem."
+    "analysis": "Lokomotiv apresenta maior consistência recente; dupla chance protege em jogo de baixa margem.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   }
 ]
