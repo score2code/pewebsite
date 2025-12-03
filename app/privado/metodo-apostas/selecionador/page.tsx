@@ -6,6 +6,7 @@ import SelecionadorClient from './SelecionadorClient';
 
 type GameItem = {
   date: string;
+  time?: string;
   league: string;
   homeTeam: string;
   awayTeam: string;
@@ -49,4 +50,3 @@ export default async function MetodoSelecionadorPrivadoPage() {
     </div>
   );
 }
-

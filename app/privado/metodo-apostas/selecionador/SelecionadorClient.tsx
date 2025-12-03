@@ -11,6 +11,7 @@ type GameItem = {
   market: string; // e.g. "DC 1X", "DC X2", "DC 12", "HA +2.5", "HA +3.0"
   odds: number;
   recommended?: boolean;
+  time?: string;
 };
 
 function formatDateBR(dateStr: string): string {
@@ -27,13 +28,20 @@ function formatDateBR(dateStr: string): string {
 export default function SelecionadorClient({ games }: { games: GameItem[] }) {
   const searchParams = useSearchParams();
   const selectedDate = searchParams.get('date') || '';
-  const onlyRecommended = (searchParams.get('rec') || '') === 'true';
+  const recParam = searchParams.get('rec') || '';
 
   const filtered = useMemo(() => {
     let list = selectedDate ? games.filter(g => g.date === selectedDate) : games;
-    if (onlyRecommended) list = list.filter(g => Boolean(g.recommended));
-    return [...list].sort((a, b) => a.odds - b.odds);
-  }, [games, selectedDate, onlyRecommended]);
+    if (recParam === 'true') {
+      list = list.filter(g => Boolean(g.recommended));
+    } else if (recParam === 'false') {
+      list = list.filter(g => !Boolean(g.recommended));
+    }
+    return [...list].sort((a, b) => {
+      if (a.date !== b.date) return a.date.localeCompare(b.date);
+      return toMinutes(a.time) - toMinutes(b.time);
+    });
+  }, [games, selectedDate, recParam]);
 
   return (
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
@@ -46,9 +54,10 @@ export default function SelecionadorClient({ games }: { games: GameItem[] }) {
           </div>
           <div className="flex flex-col">
             <label htmlFor="rec" className="text-sm flex items-center gap-1"><Target size={14} /> Recomendadas do dia</label>
-            <select id="rec" name="rec" defaultValue={onlyRecommended ? 'true' : ''} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1">
-              <option value="">Não</option>
+            <select id="rec" name="rec" defaultValue={recParam} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1">
+              <option value="">Todos</option>
               <option value="true">Sim</option>
+              <option value="false">Não</option>
             </select>
           </div>
           <div className="sm:col-span-2 md:col-span-3 flex justify-end">
@@ -65,7 +74,7 @@ export default function SelecionadorClient({ games }: { games: GameItem[] }) {
           return (
             <div key={`${g.date}-${g.league}-${g.homeTeam}-${g.awayTeam}-${i}`} className={`rounded-lg border ${cardClass} bg-light-100/50 dark:bg-dark-800/50 p-4`}>
               <div className="flex items-baseline gap-2">
-                <div className="text-sm text-dark-900/80 dark:text-light-100/80 font-medium whitespace-nowrap">{formatDateBR(g.date)}</div>
+                <div className="text-sm text-dark-900/80 dark:text-light-100/80 font-medium whitespace-nowrap">{formatDateBR(g.date)}{g.time ? ` • ${g.time}` : ''}</div>
                 <div className="text-xs text-dark-900/70 dark:text-light-100/70 flex-1 min-w-0 overflow-hidden text-right truncate">{g.league}</div>
               </div>
               <div className="mt-1 text-dark-900 dark:text-light-100 font-semibold">{g.homeTeam} × {g.awayTeam}</div>
@@ -85,4 +94,11 @@ export default function SelecionadorClient({ games }: { games: GameItem[] }) {
       </div>
     </div>
   );
+}
+function toMinutes(t?: string): number {
+  if (!t) return 0;
+  const parts = t.split(':');
+  const h = Number(parts[0]) || 0;
+  const m = Number(parts[1]) || 0;
+  return h * 60 + m;
 }
