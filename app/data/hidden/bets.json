@@ -858,7 +858,7 @@
     "stake": 0.5,
     "odd": 3.18,
     "return": 1.59,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -973,6 +973,23 @@
     "stake": 2,
     "odd": 3.24,
     "return": 6.50,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Ana Green",
+    "bingo": false,
+    "league":"Premier League",
+    "homeTeam":"Manchester United",
+    "awayTeam":"West Ham",
+    "prediction": [
+      "Manchester United - Total de Gols: Mais de 1.5",
+      "Total de Escanteios: Mais de 7.5"
+    ],
+    "stake": 5,
+    "odd": 1.70,
+    "return": 8.50,
     "status": "pending",
     "marketing": false
   }
