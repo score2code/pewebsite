@@ -900,7 +900,7 @@
     "stake": 40,
     "odd": 1.15,
     "return": 46,
-    "status": "pending",
+    "status": "green",
     "marketing": false
   },
   {
@@ -914,7 +914,7 @@
     "stake": 40,
     "odd": 1.01,
     "return": 40.40,
-    "status": "pending",
+    "status": "green",
     "marketing": false
   },
   {
@@ -990,6 +990,34 @@
     "stake": 5,
     "odd": 1.70,
     "return": 8.50,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Dinamarca - Copa",
+    "homeTeam":"Midtjylland",
+    "awayTeam":"Nordsjaelland",
+    "prediction": ["Total de Gols: Mais de 0.5"],
+    "stake": 5,
+    "odd": 1.03,
+    "return": 5.15,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Sérvia - Super Liga",
+    "homeTeam":"Estrela Vermelha",
+    "awayTeam":"Cukaricki",
+    "prediction": ["Total de Gols: Mais de 1.5"],
+    "stake": 5,
+    "odd": 1.01,
+    "return": 5.05,
     "status": "pending",
     "marketing": false
   }
