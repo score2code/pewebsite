@@ -1,11 +1,28 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const Hero = () => {
+    const router = useRouter();
+    const [clicks, setClicks] = useState(0);
+
+    function handleSecretClick() {
+        setClicks((c) => {
+            const next = c + 1;
+            if (next >= 5) {
+                // reset e navega para a área privada
+                setTimeout(() => setClicks(0), 0);
+                router.push('/privado');
+            }
+            return next;
+        });
+    }
+
     return (
         <div className="text-center bg-light-100/50 dark:bg-dark-800/50 rounded-2xl p-8 sm:p-12 mb-10 shadow-custom dark:shadow-custom-dark backdrop-blur-sm border border-light-300 dark:border-dark-600 hover:border-purple-500 dark:hover:border-purple-400 transition-all duration-300">
             <h2 className="text-4xl sm:text-5xl font-extrabold text-dark-900 dark:text-light-100 mb-4">
-                Seu Ponto de Partida para <span className="text-purple-600 dark:text-purple-400">Análises Inteligentes</span>
+                Seu Ponto de Partida para <span className="text-purple-600 dark:text-purple-400 cursor-pointer select-none" onClick={handleSecretClick}>Análises Inteligentes</span>
             </h2>
             <p className="text-xl text-dark-900/70 dark:text-light-100/70 mb-8 max-w-2xl mx-auto">
                 Acesse análises, prognósticos e as melhores odds para acompanhar eventos esportivos.

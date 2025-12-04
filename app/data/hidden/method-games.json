@@ -57,6 +57,16 @@
     "awayTeam":"Cukaricki",
     "market":"DC 1X",
     "odds":1.009,
-    "recommended":false
+    "recommended":true
+  },
+  {
+    "date":"2025-12-04",
+    "time":"15:00",
+    "league":"Dinamarca - Copa",
+    "homeTeam":"Midtjylland",
+    "awayTeam":"Nordsjaelland",
+    "market":"DC 1X",
+    "odds":1.12,
+    "recommended":true
   }
 ]
