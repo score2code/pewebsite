@@ -916,5 +916,19 @@
     "return": 40.40,
     "status": "pending",
     "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Dinamarca - Copa",
+    "homeTeam":"Midtjylland",
+    "awayTeam":"Nordsjaelland",
+    "prediction": ["DC: 1X"],
+    "stake": 20,
+    "odd": 1.12,
+    "return": 22.40,
+    "status": "pending",
+    "marketing": false
   }
 ]
