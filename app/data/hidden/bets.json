@@ -1076,5 +1076,136 @@
     "return": 7.37,
     "status": "red",
     "marketing": true
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Boleiros Tips",
+    "bingo": false,
+    "league":"Colômbia - Primeira A",
+    "homeTeam":"Atletico Nacional",
+    "awayTeam":"Independiente Medellín",
+    "prediction": ["Total de Cartões: Mais de 6.5"],
+    "stake": 2,
+    "odd": 1.75,
+    "return": 3.50,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Brasileirão Série A",
+    "homeTeam":"Cruzeiro MG",
+    "awayTeam":"Botafogo RJ",
+    "prediction": [
+      "Cruzeiro MG - Total de Gols: Mais de 0.5",
+      "Total de Gols: Mais de 1.5",
+      "Total de Escanteios: Mais de 7.5",
+      "Cruzeiro MG - Total de Escanteios: Mais de 3.5"
+    ],
+    "stake": 2,
+    "odd": 1.90,
+    "return": 3.80,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Brasileirão Série A",
+    "homeTeam":"Cruzeiro MG",
+    "awayTeam":"Botafogo RJ",
+    "prediction": [
+      "Jogador - Chutes no Gol Jorge, Kaio - Mais de 0.5",
+      "Total de Gols: Mais de 1.5",
+      "Cruzeiro MG - Chutes no Gol: Mais de 2.5",
+      "Ambas As Equipes Mais de X Escanteios Cada: Sim - 1.5"
+    ],
+    "stake": 2,
+    "odd": 1.90,
+    "return": 3.80,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 2,
+    "odd": 1.75,
+    "return": 3.50,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Brasileirão Série A",
+    "homeTeam":"Cruzeiro MG",
+    "awayTeam":"Botafogo RJ",
+    "prediction": ["Jogador - Finalizações: Cuiabano - Mais de 0.5"],
+    "stake": 0.50,
+    "odd": 1.59,
+    "return": 0.80,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Brasileirão Série A",
+    "homeTeam":"Cruzeiro MG",
+    "awayTeam":"Botafogo RJ",
+    "prediction": ["Jogador - Finalizações: Bruno, Fabricio - Mais de 0.5"],
+    "stake": 0.50,
+    "odd": 1.60,
+    "return": 0.80,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Brasileirão Série A",
+    "homeTeam":"Cruzeiro MG",
+    "awayTeam":"Botafogo RJ",
+    "prediction": [
+      "Total de Gols: Mais de 2.5",
+      "Cruzeiro MG - Total de Gols: Mais de 0.5",
+      "Total de Cartões: Mais de 3.5",
+      "Total de Escanteios: Mais de 8.5",
+      "Botafogo RJ - Total de Cartões: Mais de 1.5"
+    ],
+    "stake": 0.50,
+    "odd": 3.75,
+    "return": 1.88,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Brasileirão Série A",
+    "homeTeam":"Cruzeiro MG",
+    "awayTeam":"Botafogo RJ",
+    "prediction": [
+      "Jogador - Faltas Cometidas: Furtado, William - Mais de 1.5",
+      "Jogador - Faltas Cometidas: Bruno, Fabricio - Mais de 0.5"
+    ],
+    "stake": 0.50,
+    "odd": 4,
+    "return": 2,
+    "status": "pending",
+    "marketing": false
   }
 ]
