@@ -1020,5 +1020,61 @@
     "return": 5.05,
     "status": "green",
     "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Bolívia - Liga Profesional",
+    "homeTeam":"Always Ready",
+    "awayTeam":"CD Aurora",
+    "prediction": ["Resultado Final: 1"],
+    "stake": 5,
+    "odd": 1.11,
+    "return": 5.55,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Premier League",
+    "homeTeam":"Manchester United",
+    "awayTeam":"West Ham",
+    "prediction": ["Total de Gols: Mais de 0.5"],
+    "stake": 5,
+    "odd": 1.04,
+    "return": 5.20,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Portugal - Taça da Liga",
+    "homeTeam":"Porto",
+    "awayTeam":"Vitória Guimarães",
+    "prediction": ["Porto - Total de Gols: Mais de 0.5"],
+    "stake": 5,
+    "odd": 1.14,
+    "return": 5.70,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Rafaela Tipster",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 1,
+    "odd": 7.06,
+    "return": 7.37,
+    "status": "pending",
+    "marketing": true
   }
 ]

@@ -143,7 +143,7 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
           <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
             <Target size={16} className={`${goal > 0 ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400'}`} />
             <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta restante</div>
+              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta restante (volume)</div>
               <div className={`font-bold ${goalClass}`}>{formatCurrencyBRL(goal)}</div>
             </div>
           </div>
