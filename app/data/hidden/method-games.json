@@ -45,9 +45,9 @@
     "league":"Premier League",
     "homeTeam":"Manchester United",
     "awayTeam":"West Ham",
-    "market":"HC West Ham (3.5)",
-    "odds":1.07,
-    "recommended":false
+    "market":"HC West Ham (4.5)",
+    "odds":1.02,
+    "recommended":true
   },
   {
     "date":"2025-12-04",

@@ -930,5 +930,50 @@
     "return": 22.40,
     "status": "pending",
     "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Itália - Copa",
+    "homeTeam":"Bologna",
+    "awayTeam":"Parma",
+    "prediction": [
+      "DC: 1X",
+      "Total de Gols: Mais de 1.5"
+    ],
+    "stake": 5,
+    "odd": 1.45,
+    "return": 7.25,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"Itália - Copa",
+    "homeTeam":"Bologna",
+    "awayTeam":"Parma",
+    "prediction": ["HC West Ham (4.5)"],
+    "stake": 20,
+    "odd": 1.02,
+    "return": 20.40,
+    "status": "pending",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-04",
+    "tipster": "Yuri Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 2,
+    "odd": 3.24,
+    "return": 6.50,
+    "status": "pending",
+    "marketing": false
   }
 ]
