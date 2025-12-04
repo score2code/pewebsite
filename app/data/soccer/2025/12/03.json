@@ -10,8 +10,9 @@
     "awayTeam": "Santos",
     "prediction": "Dupla Chance: Santos ou Empate",
     "confidence": 65,
-    "status": "pending",
-    "analysis": "Santos com leve superioridade técnica; dupla chance protege contra empate em jogo equilibrado."
+    "analysis": "Santos com leve superioridade técnica; dupla chance protege contra empate em jogo equilibrado.",
+    "status": "green",
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "arsenal-x-brentford",
@@ -24,7 +25,8 @@
     "awayTeam": "Brentford",
     "prediction": "Handicap: Arsenal -1.0",
     "confidence": 67,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 0",
     "analysis": "Arsenal domina posse e criação em casa; -1.0 oferece push em vitória mínima."
   },
   {
@@ -38,7 +40,8 @@
     "awayTeam": "Vejle BK",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 1",
     "analysis": "Viborg mais consistente como mandante e cria chances de melhor qualidade."
   },
   {
@@ -52,7 +55,8 @@
     "awayTeam": "Sport Recife",
     "prediction": "Cartões: Mais de 4.5",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Cartões Amarelos: 1 x 3",
     "analysis": "Jogo físico e de rivalidade regional; tendência de faltas e advertências acima da média."
   },
   {
@@ -66,7 +70,8 @@
     "awayTeam": "Crystal Palace",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 1",
     "analysis": "Defesas vulneráveis e transições rápidas; probabilidade elevada de gols dos dois lados."
   },
   {
@@ -80,7 +85,8 @@
     "awayTeam": "Kifisia",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 0",
     "analysis": "Panathinaikos tecnicamente superior e dominante em casa; Kifisia concede muitas chances."
   },
   {
@@ -94,7 +100,8 @@
     "awayTeam": "Internacional RS",
     "prediction": "Empate Anula Aposta: São Paulo (DNB)",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 0",
     "analysis": "São Paulo melhora atuação no Morumbi; DNB reduz risco contra equipe forte como o Inter."
   },
   {
@@ -108,7 +115,8 @@
     "awayTeam": "Chelsea",
     "prediction": "Escanteios: Mais de 9.5",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Escanteios: 4 x 2",
     "analysis": "Jogo de alta intensidade nas alas; volume de cruzamentos favorece muitos escanteios."
   },
   {
@@ -122,7 +130,8 @@
     "awayTeam": "OFI Crete",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 0",
     "analysis": "AEK dominante e com maior qualidade ofensiva; OFI tem desempenho irregular fora."
   },
   {
@@ -136,12 +145,13 @@
     "awayTeam": "Palmeiras",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 67,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 3",
     "analysis": "Confronto de alto nível com ataques produtivos; chances de gol claras para ambos."
   },
   {
     "id": "liverpool-x-sunderland",
-    "league": "Inglaterra - Copa/EFL Cup",
+    "league": "Inglaterra - Premier League",
     "country": "Inglaterra",
     "date": "2025-12-03",
     "time": "17:15",
@@ -150,7 +160,8 @@
     "awayTeam": "Sunderland",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "Liverpool cria alto volume e deve impor ritmo; cenário para 3+ gols."
   },
   {
@@ -164,7 +175,8 @@
     "awayTeam": "Rangers",
     "prediction": "Handicap: Rangers -1.0",
     "confidence": 67,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 2 x 2",
     "analysis": "Rangers superior e com elenco profundo; -1.0 dá push em vitória por um gol."
   },
   {
@@ -178,7 +190,8 @@
     "awayTeam": "Ceará",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 0",
     "analysis": "Flamengo forte no Maracanã e com maiores soluções ofensivas; Ceará concede chances."
   },
   {
@@ -192,7 +205,8 @@
     "awayTeam": "Real Madrid",
     "prediction": "Dupla Chance: Real Madrid ou Empate",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 3",
     "analysis": "Madrid mais qualificado e com elenco profundo; proteção ao empate em visita difícil."
   },
   {
@@ -206,7 +220,8 @@
     "awayTeam": "WSG Tirol",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 3",
     "analysis": "Sturm Graz superior tecnicamente e mais sólido defensivamente; WSG oscila fora."
   },
   {
@@ -220,7 +235,8 @@
     "awayTeam": "Aston Villa",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 67,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 4",
     "analysis": "Duas equipes ofensivas e com transições rápidas; forte tendência de ambos marcarem."
   },
   {
@@ -234,7 +250,8 @@
     "awayTeam": "Bayern Munich",
     "prediction": "Handicap: Bayern Munich -1.0",
     "confidence": 68,
-    "status": "pending",
+    "status": "void",
+    "reason": "Placar: 2 x 3",
     "analysis": "Bayern controla posse e cria em volume; -1.0 protege vitória mínima."
   },
   {
@@ -248,7 +265,8 @@
     "awayTeam": "ABB",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 6 x 0",
     "analysis": "Ritmo alto e defesas vulneráveis favorecem jogo com 3+ gols."
   },
   {
@@ -262,7 +280,8 @@
     "awayTeam": "Nottingham Forest",
     "prediction": "Dupla Chance: Wolverhampton ou Empate",
     "confidence": 65,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 1",
     "analysis": "Wolves competitivos em casa e Forest irregular; dupla chance reduz variância."
   },
   {
@@ -276,7 +295,8 @@
     "awayTeam": "Cagliari",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "Napoli dominante como mandante e com ataque eficiente; Cagliari sofre fora."
   },
   {
@@ -290,7 +310,8 @@
     "awayTeam": "CSKA 1948 Sofia",
     "prediction": "Resultado Final: 2",
     "confidence": 66,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 4",
     "analysis": "CSKA 1948 tecnicamente superior e vive melhor momento; tendência de vitória fora."
   },
   {
@@ -304,7 +325,8 @@
     "awayTeam": "FCSB",
     "prediction": "Empate Anula Aposta: FCSB (DNB)",
     "confidence": 66,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 3 x 0",
     "analysis": "FCSB com maior qualidade e regularidade; DNB protege em partida potencialmente travada."
   }
 ]

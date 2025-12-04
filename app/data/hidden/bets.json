@@ -431,7 +431,7 @@
     "stake": 0.50,
     "odd": 30.54,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -445,7 +445,7 @@
     "stake": 0.50,
     "odd": 6.77,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -459,7 +459,7 @@
     "stake": 20,
     "odd": 1.97,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": false
   },
   {
@@ -472,8 +472,8 @@
     "prediction": ["DC: X2"],
     "stake": 20,
     "odd": 1.18,
-    "return": 0,
-    "status": "pending",
+    "return": 23.60,
+    "status": "green",
     "marketing": false
   },
   {
@@ -486,8 +486,8 @@
     "prediction": ["DC: 1X"],
     "stake": 30,
     "odd": 1.12,
-    "return": 0,
-    "status": "pending",
+    "return": 33.71,
+    "status": "green",
     "marketing": false
   },
   {
@@ -500,8 +500,8 @@
     "prediction": ["DC: 1X"],
     "stake": 30,
     "odd": 1.09,
-    "return": 0,
-    "status": "pending",
+    "return": 32.70,
+    "status": "green",
     "marketing": false
   },
   {
@@ -514,8 +514,8 @@
     "prediction": ["-"],
     "stake": 30,
     "odd": 1.22,
-    "return": 0,
-    "status": "pending",
+    "return": 36.89,
+    "status": "green",
     "marketing": false
   },
   {
@@ -529,7 +529,7 @@
     "stake": 0.50,
     "odd": 5.28,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -543,7 +543,266 @@
     "stake": 1,
     "odd": 136.19,
     "return": 0,
-    "status": "pending",
+    "status": "red",
     "marketing": true
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Dinamarca - Copa",
+    "homeTeam": "Esbjerg fB",
+    "awayTeam": "FC Copenhagen",
+    "prediction": ["Total de Gols: Mais de 2.5"],
+    "stake": 5.50,
+    "odd": 1.007,
+    "return": 5.54,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Israel - Premier League",
+    "homeTeam": "Maccabi Netanya",
+    "awayTeam": "SC Ashdod",
+    "prediction": ["Total de Gols: Mais de 1.5"],
+    "stake": 5,
+    "odd": 1.006,
+    "return": 5.03,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Bolívia - Liga Profesional",
+    "homeTeam": "Blooming",
+    "awayTeam": "ABB",
+    "prediction": ["Total de Gols: Menos de 8.5"],
+    "stake": 5,
+    "odd": 1.08,
+    "return": 5.40,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Inglaterra - EFL Trophy",
+    "homeTeam": "Crewe Alexandra",
+    "awayTeam": "Stockport County",
+    "prediction": ["Total de Gols: Mais de 1.5"],
+    "stake": 5,
+    "odd": 1.02,
+    "return": 5.10,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "La Liga",
+    "homeTeam": "Athletic Bilbao",
+    "awayTeam": "Real Madrid",
+    "prediction": ["Resultado Final: 2"],
+    "stake": 5,
+    "odd": 1.02,
+    "return": 5.02,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Alemanha - Copa",
+    "homeTeam": "Union Berlin",
+    "awayTeam": "Bayern Munich",
+    "prediction": ["Total de Gols: Mais de 1.5"],
+    "stake": 5,
+    "odd": 1.03,
+    "return": 5.15,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Alemanha - Copa",
+    "homeTeam": "Union Berlin",
+    "awayTeam": "Bayern Munich",
+    "prediction": ["Total de Gols: Mais de 2.5"],
+    "stake": 5,
+    "odd": 1.05,
+    "return": 5.25,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "Leeds United",
+    "awayTeam": "Chelsea",
+    "prediction": ["Total de Gols: Mais de 1.5"],
+    "stake": 5,
+    "odd": 1.07,
+    "return": 5.35,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Yuri Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["Faixa de Gols: 1-3"],
+    "stake": 3.14,
+    "odd": 2.15,
+    "return": 6.77,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Brasileirão Série A",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["Super Odds: Mais de 1.5 em cada partida (03/12)"],
+    "stake": 0.5,
+    "odd": 7.75,
+    "return": 3.88,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Juventude",
+    "awayTeam": "Santos",
+    "prediction": [
+      "Total de Gols: Mais de 1.5",
+      "Resultado Final: 2"
+    ],
+    "stake": 2,
+    "odd": 1.95,
+    "return": 3.90,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Juventude",
+    "awayTeam": "Santos",
+    "prediction": [
+      "Total de Gols: Mais de 1.5",
+      "Resultado Final: 2"
+    ],
+    "stake": 2,
+    "odd": 1.95,
+    "return": 3.90,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Atlético MG",
+    "awayTeam": "Palmeiras",
+    "prediction": [
+      "Total de Gols: Mais de 1.5",
+      "Palmeiras - Total de Gols: Mais de 0.5",
+      "Total de Escanteios: Mais de 5.5",
+      "Palmeiras - Chutes no Gols: Mais de 2.5"
+    ],
+    "stake": 2,
+    "odd": 1.70,
+    "return": 3.40,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Flamengo",
+    "awayTeam": "Ceará",
+    "prediction": [
+      "Total de Gols: Mais de 1.5",
+      "Total de Escanteios: Mais de 5.5",
+      "Resultado Final: 1"
+    ],
+    "stake": 2,
+    "odd": 1.50,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Fortaleza",
+    "awayTeam": "Corinthians",
+    "prediction": [
+      "Total de Gols: Mais de 1.5",
+      "Fortaleza - Chutes no Gol: Mais de 2.5",
+      "Corinthians - Chutes no Gol: Mais de 1.5"
+    ],
+    "stake": 2,
+    "odd": 1.65,
+    "return": 3.30,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Brasileirão Série A",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 0.5,
+    "odd": 13.30,
+    "return": 7.39,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "date": "2025-12-03",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Juventude",
+    "awayTeam": "Santos",
+    "prediction": [
+      "Jogador - Chutes no Gol Neymar - Mais de 0.5"
+    ],
+    "stake": 1,
+    "odd": 1.50,
+    "return": 1.50,
+    "status": "green",
+    "marketing": false
   }
 ]
