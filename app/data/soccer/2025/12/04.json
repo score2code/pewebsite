@@ -10,8 +10,9 @@
     "awayTeam": "West Ham",
     "prediction": "Escanteios: Mais de 9.5",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Partida com uso intenso das alas e cruzamentos; tendência de alto volume de escanteios."
+    "analysis": "Partida com uso intenso das alas e cruzamentos; tendência de alto volume de escanteios.",
+    "status": "green",
+    "reason": "Escanteios: 6 x 6"
   },
   {
     "id": "bologna-x-parma",
@@ -24,8 +25,9 @@
     "awayTeam": "Parma",
     "prediction": "Empate Anula Aposta: Bologna (DNB)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Bologna apresenta melhor controle em casa; DNB reduz risco contra um Parma reativo."
+    "analysis": "Bologna apresenta melhor controle em casa; DNB reduz risco contra um Parma reativo.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "midtjylland-x-nordsjalland",
@@ -38,8 +40,9 @@
     "awayTeam": "Nordsjalland",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Duas equipes ofensivas e com transições rápidas; forte probabilidade de gols dos dois lados."
+    "analysis": "Duas equipes ofensivas e com transições rápidas; forte probabilidade de gols dos dois lados.",
+    "status": "green",
+    "reason": "Placar: 5 x 1"
   },
   {
     "id": "zawisza-bydgoszcz-x-wisla-krakow",
@@ -52,8 +55,9 @@
     "awayTeam": "Wisla Krakow",
     "prediction": "Resultado Final: 2",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Wisla superior técnica e coletivamente; tendência de controle e resultado positivo fora."
+    "analysis": "Wisla superior técnica e coletivamente; tendência de controle e resultado positivo fora.",
+    "status": "red",
+    "reason": "Placar: 4 x 1"
   },
   {
     "id": "kisvarda-x-ferencvaros",
@@ -66,8 +70,9 @@
     "awayTeam": "Ferencváros",
     "prediction": "Dupla Chance: Ferencváros ou Empate",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Ferencváros com maior profundidade de elenco; X2 oferece proteção mantendo valor."
+    "analysis": "Ferencváros com maior profundidade de elenco; X2 oferece proteção mantendo valor.",
+    "status": "green",
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "dobrudzha-dobrich-x-ludogorets-razgrad",
@@ -80,8 +85,9 @@
     "awayTeam": "Ludogorets Razgrad",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Ludogorets costuma impor ritmo alto e converter bem; cenário favorável a 3+ gols."
+    "analysis": "Ludogorets costuma impor ritmo alto e converter bem; cenário favorável a 3+ gols.",
+    "status": "red",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "slavia-sofia-x-levski-sofia",
@@ -94,7 +100,8 @@
     "awayTeam": "Levski Sofia",
     "prediction": "Cartões: Mais de 4.5",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Derbi local com alta tensão; tendência de muitas faltas e advertências."
+    "analysis": "Derbi local com alta tensão; tendência de muitas faltas e advertências.",
+    "status": "red",
+    "reason": "Cartões: 1 x 2"
   }
 ]
