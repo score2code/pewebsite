@@ -497,12 +497,14 @@
     "homeTeam": "Junior Barranquilla",
     "awayTeam": "América de Cali",
     "prediction": [
-      "Converter Pênalti: Não"
+      "Total de Cartões: Mais de 4.5",
+      "Total de Escanteios: Menos de 12.5",
+      "Total de Gols: Mais de 1.5"
     ],
     "stake": 2,
     "odd": 2.05,
     "return": 4.10,
-    "status": "pending",
+    "status": "green",
     "marketing": false
   }
 ]
