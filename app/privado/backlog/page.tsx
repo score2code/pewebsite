@@ -15,7 +15,7 @@ type GameItem = {
 };
 
 export const metadata: Metadata = {
-  title: 'Selecionador de Jogos (Privado)',
+  title: 'Backlog (Privado)',
   description: 'Ferramenta para filtrar jogos conforme o método de apostas',
   robots: { index: false, follow: false },
 };
@@ -42,7 +42,7 @@ export default async function BacklogPrivadoPage() {
       <div className="max-w-6xl mx-auto">
         <Breadcrumb className="mb-4" />
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 md:p-8 mb-6 md:mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
-          <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-2">Selecionador de Jogos</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-2">Backlog</h1>
           <p className="text-base md:text-lg text-dark-900/70 dark:text-light-100/70">Página privada para filtrar jogos do método. Carrega de backlog.json.</p>
         </header>
         <BacklogClient games={games} />
