@@ -1,0 +1,105 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-01",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 0.74,
+    "odd": 2751.06,
+    "return": 0,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-01",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Amistoso Internacional (F)",
+    "homeTeam": "EUA (F)",
+    "awayTeam": "Itália (F)",
+    "prediction": [
+      "Resultado Final: 1",
+      "Total de Gols: Mais de 1.5"
+    ],
+    "stake": 1,
+    "odd": 1.5,
+    "return": 1.5,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-01",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Basquete",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 1,
+    "odd": 3.36,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-01",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Basquete",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 1,
+    "odd": 2.23,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-01",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Futebol Americano",
+    "homeTeam": "New England Patriots",
+    "awayTeam": "New York Giants",
+    "prediction": [
+      "Handicap: New England Patriots -3.5"
+    ],
+    "stake": 1,
+    "odd": 1.52,
+    "return": 1.52,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-01",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Futebol Americano",
+    "homeTeam": "New England Patriots",
+    "awayTeam": "New York Giants",
+    "prediction": [
+      "Resultado Final: 1"
+    ],
+    "stake": 0.99,
+    "odd": 1.01,
+    "return": 1,
+    "status": "green",
+    "marketing": false
+  }
+]

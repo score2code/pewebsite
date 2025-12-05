@@ -16,6 +16,7 @@ type BetRow = {
   tipster?: string;
   marketing?: boolean;
   status: 'green' | 'red' | 'void' | 'pending' | 'postponed';
+  type?: 'bet' | 'transaction';
 };
 
 function formatCurrencyBRL(value: number): string {
@@ -64,21 +65,31 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
   const selectedDate = searchParams.get('date') || '';
   const selectedTipster = searchParams.get('tipster') || '';
   const selectedMarketing = searchParams.get('marketing') || '';
+  const selectedType = searchParams.get('type') || '';
+
+  const normalizedBets = useMemo(() => {
+    return bets.map((b) => ({ type: 'bet' as const, ...b } as BetRow));
+  }, [bets]);
 
   const tipsterOptions = useMemo(() => {
     return Array.from(new Set(bets.map(b => b.tipster).filter((t): t is string => Boolean(t)))).sort();
   }, [bets]);
 
   const filteredBets = useMemo(() => {
-    let result = selectedDate ? bets.filter(b => b.date === selectedDate) : bets;
+    let result = selectedDate ? normalizedBets.filter(b => b.date === selectedDate) : normalizedBets;
     result = selectedTipster ? result.filter(b => (b.tipster || '') === selectedTipster) : result;
     if (selectedMarketing === 'true') {
       result = result.filter(b => Boolean(b.marketing));
     } else if (selectedMarketing === 'false') {
       result = result.filter(b => !Boolean(b.marketing));
     }
+    if (selectedType === 'transaction') {
+      result = result.filter(b => b.type === 'transaction');
+    } else {
+      result = result.filter(b => (b.type || 'bet') === 'bet');
+    }
     return result;
-  }, [bets, selectedDate, selectedTipster, selectedMarketing]);
+  }, [normalizedBets, selectedDate, selectedTipster, selectedMarketing, selectedType]);
 
   const sortedBets = useMemo(() => {
     return [...filteredBets].reverse();
@@ -171,7 +182,7 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
           </div>
         </div>
         <div className="text-dark-900 dark:text-light-100">
-            <form method="GET" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 w-full">
+            <form method="GET" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 w-full">
               <div className="flex flex-col">
                 <label htmlFor="date" className="text-sm">Data</label>
                 <input id="date" name="date" type="date" defaultValue={selectedDate} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1 w-full" />
@@ -191,6 +202,13 @@ export default function RelatorioPrivadoClient({ bets, initialBankroll }: { bets
                   <option value="">Todos</option>
                   <option value="true">Sim</option>
                   <option value="false">Não</option>
+                </select>
+              </div>
+              <div className="flex flex-col gap-1">
+                <label htmlFor="type" className="text-sm">Tipo</label>
+                <select id="type" name="type" defaultValue={selectedType} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1 w-full">
+                  <option value="bet">Apostas</option>
+                  <option value="transaction">Transações</option>
                 </select>
               </div>
               <div className="flex items-center md:justify-end sm:col-span-2 md:col-span-1">

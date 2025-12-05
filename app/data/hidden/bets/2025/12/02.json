@@ -1,0 +1,397 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": false,
+    "league": "La Liga",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Atlético de Madrid",
+    "prediction": [
+      "Dupla Chance: 1X"
+    ],
+    "stake": 3.25,
+    "odd": 1.24,
+    "return": 4.04,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Manchester City",
+    "prediction": [
+      "Dupla Chance: X2"
+    ],
+    "stake": 3.25,
+    "odd": 1.2,
+    "return": 3.9,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 2.06,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 1.89,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Bruxo Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 1.58,
+    "return": 3.9,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Mundo Bet (Chris Tips)",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 2.2,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Rafaela Tipster",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 1.67,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "AVBets",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 1.84,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Freitas Tipster",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 1.99,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 4.94,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Corner Pro",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 2.58,
+    "return": 8.39,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Sokker Pro",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 0.75,
+    "odd": 1.74,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Coringa Bets",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Manchester City",
+    "prediction": [
+      "Escanteios no 1º Tempo: Manchester City - Mais de 2.5"
+    ],
+    "stake": 3.25,
+    "odd": 1.8,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Doctor Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 1.86,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Futnet",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 2.25,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Yuri Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 3.25,
+    "odd": 3.68,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 0.5,
+    "odd": 74.96,
+    "return": 0,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "Futebol",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 0.5,
+    "odd": 47.32,
+    "return": 0,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Lucas Tylty",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "New Castle",
+    "awayTeam": "Tottenham",
+    "prediction": [
+      "Total de Cartões: Mais de 3.5"
+    ],
+    "stake": 3.25,
+    "odd": 1.55,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Bruxo Tips",
+    "bingo": false,
+    "league": "La Liga",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Atlético de Madrid",
+    "prediction": [
+      "Ambas Equipes Mais de X Cartões Cada: Sim - 0.5",
+      "Atlético de Madrid - Total de Gols: Mais de 0.5"
+    ],
+    "stake": 3.25,
+    "odd": 1.81,
+    "return": 5.9,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Lucas Tylty",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Vasco",
+    "awayTeam": "Mirassol",
+    "prediction": [
+      "Total de Gols: Mais de 1.5",
+      "1º Tempo - Total de Gols: Mais de 0.5"
+    ],
+    "stake": 3.24,
+    "odd": 1.85,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Grêmio",
+    "awayTeam": "Fluminense",
+    "prediction": [
+      "Total de Gols: Mais de 1.5",
+      "Fluminense - Chutes no Gols: Mais de 2.5",
+      "Fluminense - Total de Escanteios: Mais de 2.5"
+    ],
+    "stake": 2,
+    "odd": 1.8,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-02",
+    "tipster": "Boleiros Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Grêmio",
+    "awayTeam": "Fluminense",
+    "prediction": [
+      "Jogador - Finalizações: Melo, Arthur - Mais de 0.5"
+    ],
+    "stake": 2.38,
+    "odd": 1.48,
+    "return": 0,
+    "status": "red",
+    "marketing": false
+  }
+]

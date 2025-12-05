@@ -1,0 +1,508 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 0.87,
+    "odd": 3.17,
+    "return": 2.76,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 0.5,
+    "odd": 6.72,
+    "return": 3.65,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 1,
+    "odd": 104.99,
+    "return": 104.99,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 0.5,
+    "odd": 3.18,
+    "return": 1.59,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 1,
+    "odd": 115.15,
+    "return": 132.28,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 0.5,
+    "odd": 36.59,
+    "return": 19.19,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Dinamarca - Copa",
+    "homeTeam": "Midtjylland",
+    "awayTeam": "Nordsjaelland",
+    "prediction": [
+      "Total de Gols: Mais de 1.5"
+    ],
+    "stake": 40,
+    "odd": 1.15,
+    "return": 46,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Sérvia - Super Liga",
+    "homeTeam": "Estrela Vermelha",
+    "awayTeam": "Cukaricki",
+    "prediction": [
+      "Estrela Vermelha - Total de Gols: Mais de 0.5"
+    ],
+    "stake": 40,
+    "odd": 1.01,
+    "return": 40.4,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Dinamarca - Copa",
+    "homeTeam": "Midtjylland",
+    "awayTeam": "Nordsjaelland",
+    "prediction": [
+      "DC: 1X"
+    ],
+    "stake": 20,
+    "odd": 1.12,
+    "return": 22.4,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Itália - Copa",
+    "homeTeam": "Bologna",
+    "awayTeam": "Parma",
+    "prediction": [
+      "DC: 1X",
+      "Total de Gols: Mais de 1.5"
+    ],
+    "stake": 5,
+    "odd": 1.45,
+    "return": 7.25,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "Manchester United",
+    "awayTeam": "West Ham",
+    "prediction": [
+      "HC West Ham (4.5)"
+    ],
+    "stake": 20,
+    "odd": 1.02,
+    "return": 20.4,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Yuri Tips",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 2,
+    "odd": 3.24,
+    "return": 6.5,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Ana Green",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "Manchester United",
+    "awayTeam": "West Ham",
+    "prediction": [
+      "Manchester United - Total de Gols: Mais de 1.5",
+      "Total de Escanteios: Mais de 7.5"
+    ],
+    "stake": 5,
+    "odd": 1.7,
+    "return": 8.5,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Dinamarca - Copa",
+    "homeTeam": "Midtjylland",
+    "awayTeam": "Nordsjaelland",
+    "prediction": [
+      "Total de Gols: Mais de 0.5"
+    ],
+    "stake": 5,
+    "odd": 1.03,
+    "return": 5.15,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Sérvia - Super Liga",
+    "homeTeam": "Estrela Vermelha",
+    "awayTeam": "Cukaricki",
+    "prediction": [
+      "Total de Gols: Mais de 1.5"
+    ],
+    "stake": 5,
+    "odd": 1.01,
+    "return": 5.05,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Bolívia - Liga Profesional",
+    "homeTeam": "Always Ready",
+    "awayTeam": "CD Aurora",
+    "prediction": [
+      "Resultado Final: 1"
+    ],
+    "stake": 5,
+    "odd": 1.11,
+    "return": 5.55,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Premier League",
+    "homeTeam": "Manchester United",
+    "awayTeam": "West Ham",
+    "prediction": [
+      "Total de Gols: Mais de 0.5"
+    ],
+    "stake": 5,
+    "odd": 1.04,
+    "return": 5.2,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Portugal - Taça da Liga",
+    "homeTeam": "Porto",
+    "awayTeam": "Vitória Guimarães",
+    "prediction": [
+      "Porto - Total de Gols: Mais de 0.5"
+    ],
+    "stake": 5,
+    "odd": 1.14,
+    "return": 5.7,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Rafaela Tipster",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 1,
+    "odd": 7.06,
+    "return": 7.37,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Boleiros Tips",
+    "bingo": false,
+    "league": "Colômbia - Primeira A",
+    "homeTeam": "Atletico Nacional",
+    "awayTeam": "Independiente Medellín",
+    "prediction": [
+      "Total de Cartões: Mais de 6.5"
+    ],
+    "stake": 2,
+    "odd": 1.75,
+    "return": 3.5,
+    "status": "green",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Cruzeiro MG",
+    "awayTeam": "Botafogo RJ",
+    "prediction": [
+      "Cruzeiro MG - Total de Gols: Mais de 0.5",
+      "Total de Gols: Mais de 1.5",
+      "Total de Escanteios: Mais de 7.5",
+      "Cruzeiro MG - Total de Escanteios: Mais de 3.5"
+    ],
+    "stake": 2,
+    "odd": 1.9,
+    "return": 3.8,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Cruzeiro MG",
+    "awayTeam": "Botafogo RJ",
+    "prediction": [
+      "Jogador - Chutes no Gol Jorge, Kaio - Mais de 0.5",
+      "Total de Gols: Mais de 1.5",
+      "Cruzeiro MG - Chutes no Gol: Mais de 2.5",
+      "Ambas As Equipes Mais de X Escanteios Cada: Sim - 1.5"
+    ],
+    "stake": 2,
+    "odd": 1.9,
+    "return": 3.8,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "-"
+    ],
+    "stake": 2,
+    "odd": 1.75,
+    "return": 3.5,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Cruzeiro MG",
+    "awayTeam": "Botafogo RJ",
+    "prediction": [
+      "Jogador - Finalizações: Cuiabano - Mais de 0.5"
+    ],
+    "stake": 0.5,
+    "odd": 1.59,
+    "return": 0.8,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Cruzeiro MG",
+    "awayTeam": "Botafogo RJ",
+    "prediction": [
+      "Jogador - Finalizações: Bruno, Fabricio - Mais de 0.5"
+    ],
+    "stake": 0.5,
+    "odd": 1.6,
+    "return": 0.8,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Cruzeiro MG",
+    "awayTeam": "Botafogo RJ",
+    "prediction": [
+      "Total de Gols: Mais de 2.5",
+      "Cruzeiro MG - Total de Gols: Mais de 0.5",
+      "Total de Cartões: Mais de 3.5",
+      "Total de Escanteios: Mais de 8.5",
+      "Botafogo RJ - Total de Cartões: Mais de 1.5"
+    ],
+    "stake": 0.5,
+    "odd": 3.75,
+    "return": 1.88,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Cruzeiro MG",
+    "awayTeam": "Botafogo RJ",
+    "prediction": [
+      "Jogador - Faltas Cometidas: Furtado, William - Mais de 1.5",
+      "Jogador - Faltas Cometidas: Bruno, Fabricio - Mais de 0.5"
+    ],
+    "stake": 0.5,
+    "odd": 4,
+    "return": 2,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Brasileirão Série A",
+    "homeTeam": "Cruzeiro MG",
+    "awayTeam": "Botafogo RJ",
+    "prediction": [
+      "Converter Pênalti: Não"
+    ],
+    "stake": 0.5,
+    "odd": 4,
+    "return": 2,
+    "status": "red",
+    "marketing": false
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-04",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league": "Colômbia - Primeira A",
+    "homeTeam": "Junior Barranquilla",
+    "awayTeam": "América de Cali",
+    "prediction": [
+      "Converter Pênalti: Não"
+    ],
+    "stake": 2,
+    "odd": 2.05,
+    "return": 4.10,
+    "status": "pending",
+    "marketing": false
+  }
+]

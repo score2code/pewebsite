@@ -17,6 +17,7 @@ type BetRow = {
   tipster?: string;
   marketing?: boolean;
   status: 'green' | 'red' | 'void' | 'pending' | 'postponed';
+  type?: 'bet' | 'transaction';
 };
 
 export const metadata: Metadata = {
@@ -27,11 +28,44 @@ export const metadata: Metadata = {
 
 
 async function loadBets(): Promise<BetRow[]> {
-  const candidates = [
+  const dirCandidates = [
+    path.join(process.cwd(), 'app', 'data', 'hidden', 'bets'),
+    path.join(process.cwd(), 'data', 'hidden', 'bets'),
+  ];
+
+  const rows: BetRow[] = [];
+
+  for (const baseDir of dirCandidates) {
+    try {
+      const years = await fs.readdir(baseDir).catch(() => []);
+      for (const y of years) {
+        const yearDir = path.join(baseDir, y);
+        const months = await fs.readdir(yearDir).catch(() => []);
+        for (const m of months) {
+          const monthDir = path.join(yearDir, m);
+          const files = await fs.readdir(monthDir).catch(() => []);
+          for (const f of files) {
+            if (f.endsWith('.json')) {
+              const filePath = path.join(monthDir, f);
+              try {
+                const content = await fs.readFile(filePath, 'utf-8');
+                const data = JSON.parse(content);
+                if (Array.isArray(data)) rows.push(...data);
+              } catch {}
+            }
+          }
+        }
+      }
+    } catch {}
+  }
+
+  if (rows.length) return rows;
+
+  const fileFallbacks = [
     path.join(process.cwd(), 'app', 'data', 'hidden', 'bets.json'),
     path.join(process.cwd(), 'data', 'hidden', 'bets.json'),
   ];
-  for (const filePath of candidates) {
+  for (const filePath of fileFallbacks) {
     try {
       const content = await fs.readFile(filePath, 'utf-8');
       const data = JSON.parse(content);
