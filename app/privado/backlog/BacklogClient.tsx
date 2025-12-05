@@ -4,13 +4,14 @@ import { useSearchParams } from 'next/navigation';
 import { CalendarDays, Target, BadgeCheck } from 'lucide-react';
 
 type GameItem = {
-  date: string; // YYYY-MM-DD
+  date: string;
   league: string;
   homeTeam: string;
   awayTeam: string;
-  market: string; // e.g. "DC 1X", "DC X2", "DC 12", "HA +2.5", "HA +3.0"
+  market: string;
   odds: number;
   recommended?: boolean;
+  live?: boolean;
   time?: string;
 };
 
@@ -23,9 +24,7 @@ function formatDateBR(dateStr: string): string {
   return new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'America/Sao_Paulo' }).format(new Date(dateStr));
 }
 
-// recomendações agora são controladas via propriedade boolean 'recommended' no JSON
-
-export default function SelecionadorClient({ games }: { games: GameItem[] }) {
+export default function BacklogClient({ games }: { games: GameItem[] }) {
   const searchParams = useSearchParams();
   const selectedDate = searchParams.get('date') || '';
   const recParam = searchParams.get('rec') || '';
@@ -46,7 +45,7 @@ export default function SelecionadorClient({ games }: { games: GameItem[] }) {
   return (
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
       <div className="mb-4">
-        <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Selecionador de Jogos (Rollover)</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Backlog</h2>
         <form method="GET" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
           <div className="flex flex-col">
             <label htmlFor="date" className="text-sm flex items-center gap-1"><CalendarDays size={14} /> Data</label>
@@ -69,8 +68,13 @@ export default function SelecionadorClient({ games }: { games: GameItem[] }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {filtered.map((g, i) => {
           const isRecommended = Boolean(g.recommended);
-          const badgeClass = isRecommended ? 'text-green-700 dark:text-green-400' : 'text-dark-900/70 dark:text-light-100/70';
-          const cardClass = isRecommended ? 'border-green-200 dark:border-green-700' : 'border-light-300 dark:border-dark-600';
+          const isLive = Boolean(g.live);
+          const badgeClass = isLive
+            ? 'text-blue-700 dark:text-blue-400'
+            : (isRecommended ? 'text-green-700 dark:text-green-400' : 'text-dark-900/70 dark:text-light-100/70');
+          const cardClass = isLive
+            ? 'border-blue-200 dark:border-blue-700'
+            : (isRecommended ? 'border-green-200 dark:border-green-700' : 'border-light-300 dark:border-dark-600');
           return (
             <div key={`${g.date}-${g.league}-${g.homeTeam}-${g.awayTeam}-${i}`} className={`rounded-lg border ${cardClass} bg-light-100/50 dark:bg-dark-800/50 p-4`}>
               <div className="flex items-baseline gap-2">

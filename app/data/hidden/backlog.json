@@ -1,0 +1,23 @@
+[
+  {
+    "date":"2025-12-04",
+    "time":"16:00",
+    "league":"Bolívia - Liga Profesional",
+    "homeTeam":"Always Ready",
+    "awayTeam":"CD Aurora",
+    "market":"DC 1X",
+    "odds":1.02,
+    "recommended":true
+  },
+  {
+    "date":"2025-12-04",
+    "time":"21:00",
+    "league":"Bolívia - Liga Profesional",
+    "homeTeam":"Bolivar La Paz",
+    "awayTeam":"Nacional Potosí",
+    "market":"DC 1X",
+    "odds":1.02,
+    "recommended":false,
+    "live":true
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-05",
+    "league": "Colômbia - Primeira A",
+    "homeTeam": "Junior Barranquilla",
+    "awayTeam": "América de Cali",
+    "prediction": [
+      "CS: 2 x 1"
+    ],
+    "stake": 2,
+    "odd": 16,
+    "return": 5.97,
+    "status": "green"
+  }
+]

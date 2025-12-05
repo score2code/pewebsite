@@ -12,13 +12,13 @@ export default function PrivadoIndexPage() {
   const pages = [
     {
       href: '/privado/metodo-apostas',
-      title: 'Método de Apostas',
-      description: 'Documentação do método e regras.'
+      title: 'Métodos de Apostas',
+      description: 'Rollover, Trader e Salary; com Backlog.'
     },
     {
-      href: '/privado/metodo-apostas/selecionador',
-      title: 'Selecionador de Jogos',
-      description: 'Filtrar jogos por data e recomendações.'
+      href: '/privado/backlog',
+      title: 'Backlog',
+      description: 'Lista para seleção de jogos por data e recomendações.'
     },
     {
       href: '/privado/relatorio-apostas',
@@ -49,4 +49,3 @@ export default function PrivadoIndexPage() {
     </div>
   );
 }
-
