@@ -10,8 +10,9 @@
     "awayTeam": "Borussia Monchengladbach",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Duas defesas vulneráveis em transição e bom volume ofensivo; tendência de gols para ambos."
+    "analysis": "Duas defesas vulneráveis em transição e bom volume ofensivo; tendência de gols para ambos.",
+    "status": "red",
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "brest-x-monaco",
@@ -24,8 +25,9 @@
     "awayTeam": "Mônaco",
     "prediction": "Dupla Chance: Mônaco ou Empate",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Mônaco com maior profundidade e consistência; X2 oferece proteção mantendo valor fora."
+    "analysis": "Mônaco com maior profundidade e consistência; X2 oferece proteção mantendo valor fora.",
+    "status": "red",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "galatasaray-x-samsunspor",
@@ -38,8 +40,9 @@
     "awayTeam": "Samsunspor",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Superioridade técnica e mando forte; alta probabilidade de vitória do mandante."
+    "analysis": "Superioridade técnica e mando forte; alta probabilidade de vitória do mandante.",
+    "status": "green",
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "teplice-x-slavia-praga",
@@ -52,8 +55,9 @@
     "awayTeam": "Slavia Praga",
     "prediction": "Resultado Final: 2",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Slavia muito superior em criação e controle; tendência clara de vitória como visitante."
+    "analysis": "Slavia muito superior em criação e controle; tendência clara de vitória como visitante.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "ado-den-haag-x-emmen",
@@ -66,8 +70,9 @@
     "awayTeam": "Emmen",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Liga de alta média de gols e defesas permissivas; cenário propício para 3+ gols."
+    "analysis": "Liga de alta média de gols e defesas permissivas; cenário propício para 3+ gols.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "cambuur-x-den-bosch",
@@ -80,8 +85,9 @@
     "awayTeam": "Den Bosch",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Cambuur dominante como mandante; Den Bosch cede muito em transições — valor no 1."
+    "analysis": "Cambuur dominante como mandante; Den Bosch cede muito em transições — valor no 1.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "akhmat-grozny-x-orenburg",
@@ -94,7 +100,8 @@
     "awayTeam": "Orenburg",
     "prediction": "Cartões: Mais de 3.5",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Confronto físico com tendência a faltas e advertências; linha de cartões com bom valor."
+    "analysis": "Confronto físico com tendência a faltas e advertências; linha de cartões com bom valor.",
+    "status": "red",
+    "reason": "Cartões: 1 x 2"
   }
 ]

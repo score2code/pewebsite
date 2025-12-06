@@ -7,7 +7,9 @@
     "date": "2025-12-05",
     "time": "15:00",
     "timezone": "UTC",
-    "prediction": "Dupla Chance: Mônaco ou Empate"
+    "prediction": "Dupla Chance: Mônaco ou Empate",
+    "status": "red",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "teplice-x-slavia-praga",
@@ -17,6 +19,8 @@
     "date": "2025-12-05",
     "time": "14:00",
     "timezone": "UTC",
-    "prediction": "Resultado Final: 2"
+    "prediction": "Resultado Final: 2",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   }
 ]
