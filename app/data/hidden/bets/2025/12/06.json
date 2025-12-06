@@ -26,7 +26,7 @@
     "stake": 1,
     "odd": 199.35,
     "return": 238.02,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -79,7 +79,7 @@
     "stake": 0.50,
     "odd": 1824.83,
     "return": 1139.90,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -109,7 +109,7 @@
     "stake": 0.50,
     "odd": 47.94,
     "return": 26.99,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -124,7 +124,7 @@
     "stake": 0.50,
     "odd": 234.31,
     "return": 130.66,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -139,6 +139,21 @@
     "stake": 0.50,
     "odd": 27.24,
     "return": 14.70,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-06",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 434.92,
+    "return": 243,
     "status": "pending",
     "marketing": true
   }

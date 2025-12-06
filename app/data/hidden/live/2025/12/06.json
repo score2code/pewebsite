@@ -1,0 +1,77 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-06",
+    "tipster": "Togakure Tips",
+    "league":"Alemanha - Bundesliga",
+    "homeTeam":"Stuttgart",
+    "awayTeam":"Bayern Munich",
+    "prediction": [
+      "CS: 1 x 3"
+    ],
+    "stake": 2,
+    "odd": 10,
+    "return": 2.13,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-06",
+    "tipster": "Togakure Tips",
+    "league":"Alemanha - Bundesliga",
+    "homeTeam":"Augsburg",
+    "awayTeam":"Bayer Leverkusen",
+    "prediction": [
+      "CS: 3 x 1"
+    ],
+    "stake": 1,
+    "odd": 8.40,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-06",
+    "tipster": "Togakure Tips",
+    "league":"Inglaterra - Premier League",
+    "homeTeam":"Manchester City",
+    "awayTeam":"Sunderland",
+    "prediction": [
+      "CS: 3 x 1"
+    ],
+    "stake": 2,
+    "odd": 15,
+    "return": 2.61,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-06",
+    "tipster": "Togakure Tips",
+    "league":"Inglaterra - Premier League",
+    "homeTeam":"New Castle",
+    "awayTeam":"Burnley",
+    "prediction": [
+      "CS: 3 x 1"
+    ],
+    "stake": 2,
+    "odd": 12,
+    "return": 1.36,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-06",
+    "tipster": "Togakure Tips",
+    "league":"Inglaterra - Premier League",
+    "homeTeam":"Bournemouth",
+    "awayTeam":"Chelsea",
+    "prediction": [
+      "CS: 1 x 3"
+    ],
+    "stake": 1,
+    "odd": 48,
+    "return": 0,
+    "status": "red"
+  }
+]
