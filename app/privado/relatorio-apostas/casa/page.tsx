@@ -16,7 +16,7 @@ type BetRow = {
   return?: number;
   tipster?: string;
   marketing?: boolean;
-  status?: 'green' | 'red' | 'void' | 'pending' | 'postponed';
+  status?: 'green' | 'red' | 'void' | 'pending' | 'postponed' | 'cashout';
   type?: 'bet' | 'transaction';
   kind?: 'deposit' | 'withdraw' | 'withdrawal';
   amount?: number;

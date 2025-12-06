@@ -13,7 +13,7 @@ type BetRow = {
   odd?: number;
   prediction?: string | string[];
   return?: number;
-  status?: 'green' | 'red' | 'void' | 'pending' | 'postponed';
+  status?: 'green' | 'red' | 'void' | 'pending' | 'postponed' | 'cashout';
   type?: 'bet' | 'transaction';
   kind?: 'deposit' | 'withdraw' | 'withdrawal';
   amount?: number;
@@ -77,7 +77,7 @@ async function loadLive(): Promise<BetRow[]> {
 
 export default async function RelatorioExchangePrivadoPage() {
   const bets = await loadLive();
-  const initialBankroll = 22.58;
+  const initialBankroll = 21.58;
 
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">

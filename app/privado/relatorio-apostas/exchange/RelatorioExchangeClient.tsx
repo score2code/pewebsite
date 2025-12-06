@@ -12,7 +12,7 @@ type BetRow = {
   odd?: number;
   prediction?: string | string[];
   return?: number;
-  status?: 'green' | 'red' | 'void' | 'pending' | 'postponed';
+  status?: 'green' | 'red' | 'void' | 'pending' | 'postponed' | 'cashout';
   type?: 'bet' | 'transaction';
   kind?: 'deposit' | 'withdraw' | 'withdrawal';
   amount?: number;
@@ -29,6 +29,7 @@ function formatStatusLabel(status: BetRow['status']): string {
   if (status === 'red') return 'red';
   if (status === 'void') return 'void';
   if (status === 'postponed') return 'adiado';
+  if (status === 'cashout') return 'cashout';
   return 'pendente';
 }
 
@@ -47,6 +48,7 @@ function computeNetReturnFromBet(b: BetRow): number {
     if (b.status === 'green') return Number(b.return) - stake;
     if (b.status === 'red') return -stake;
     if (b.status === 'void') return 0;
+    if (b.status === 'cashout') return Number(b.return) - stake;
     return 0;
   }
   const odd = Number(b.odd) || 0;

@@ -1,0 +1,77 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-05",
+    "tipster": "Togakure Tips",
+    "league": "Turquia - Super Lig",
+    "homeTeam": "Galatasaray",
+    "awayTeam": "Samsunspor",
+    "prediction": [
+      "CS: 3 x 1"
+    ],
+    "stake": 3,
+    "odd": 12,
+    "return": 4.29,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-05",
+    "tipster": "Togakure Tips",
+    "league": "Republica Tcheca - Liga 1",
+    "homeTeam": "Teplice",
+    "awayTeam": "Slavia Praha",
+    "prediction": [
+      "CS: 1 x 3"
+    ],
+    "stake": 1,
+    "odd": 18,
+    "return": 1.80,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-05",
+    "tipster": "Togakure Tips",
+    "league":"Países Baixos - Eerste Divisie",
+    "homeTeam":"Cambuur",
+    "awayTeam":"Den Bosch",
+    "prediction": [
+      "CS: 2 x 1"
+    ],
+    "stake": 2,
+    "odd": 9.20,
+    "return": 1.12,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-05",
+    "tipster": "Togakure Tips",
+    "league":"Países Baixos - Eerste Divisie",
+    "homeTeam":"ADO Den Haag",
+    "awayTeam":"Emmen",
+    "prediction": [
+      "CS: 3 x 2"
+    ],
+    "stake": 2,
+    "odd": 11,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-05",
+    "tipster": "Togakure Tips",
+    "league":"França - Ligue 1",
+    "homeTeam":"Lille",
+    "awayTeam":"Olympique Marseille",
+    "prediction": [
+      "CS: 2 x 2"
+    ],
+    "stake": 2,
+    "odd": 10.50,
+    "return": 0,
+    "status": "red"
+  }
+]
