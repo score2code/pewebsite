@@ -10,8 +10,9 @@
     "awayTeam": "Arsenal",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Villa agressivo em casa e Arsenal com alta produção ofensiva; ambos devem marcar."
+    "analysis": "Villa agressivo em casa e Arsenal com alta produção ofensiva; ambos devem marcar.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "villarreal-x-getafe",
@@ -24,8 +25,9 @@
     "awayTeam": "Getafe",
     "prediction": "Empate Anula Aposta: Villarreal (DNB)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Mando forte e maior criação do Villarreal; DNB reduz variância contra Getafe reativo."
+    "analysis": "Mando forte e maior criação do Villarreal; DNB reduz variância contra Getafe reativo.",
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "toulouse-x-strasbourg",
@@ -38,8 +40,9 @@
     "awayTeam": "Strasbourg",
     "prediction": "Dupla Chance: Toulouse ou Empate",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Toulouse mais competitivo em casa; X2 protege contra jogo equilibrado com poucas margens."
+    "analysis": "Toulouse mais competitivo em casa; X2 protege contra jogo equilibrado com poucas margens.",
+    "status": "green",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "sint-truiden-x-club-brugge",
@@ -52,8 +55,9 @@
     "awayTeam": "Club Brugge",
     "prediction": "Resultado Final: 2",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Brugge superior tecnicamente e com maior profundidade; tendência clara de vitória visitante."
+    "analysis": "Brugge superior tecnicamente e com maior profundidade; tendência clara de vitória visitante.",
+    "status": "red",
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "manchester-city-x-sunderland",
@@ -66,8 +70,9 @@
     "awayTeam": "Sunderland",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "City dominante em casa e com alta conversão; cenário favorável para vitória sem precisar de handicap."
+    "analysis": "City dominante em casa e com alta conversão; cenário favorável para vitória sem precisar de handicap.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "betis-x-barcelona",
@@ -80,8 +85,9 @@
     "awayTeam": "Barcelona",
     "prediction": "Resultado Final: 2",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Barcelona superior em criação e controle; boa probabilidade de vitória fora."
+    "analysis": "Barcelona superior em criação e controle; boa probabilidade de vitória fora.",
+    "status": "green",
+    "reason": "Placar: 3 x 5"
   },
   {
     "id": "heerenveen-x-psv-eindhoven",
@@ -94,8 +100,9 @@
     "awayTeam": "PSV Eindhoven",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Eredivisie com média alta de gols; PSV ofensivo e Heerenveen concede — tendência 3+."
+    "analysis": "Eredivisie com média alta de gols; PSV ofensivo e Heerenveen concede — tendência 3+.",
+    "status": "red",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "dinamo-zagreb-x-hajduk-split",
@@ -108,8 +115,9 @@
     "awayTeam": "Hajduk Split",
     "prediction": "Cartões: Mais de 4.5",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Clássico intenso e físico; histórico de advertências acima da média em confrontos diretos."
+    "analysis": "Clássico intenso e físico; histórico de advertências acima da média em confrontos diretos.",
+    "status": "green",
+    "reason": "Cartões: 5 x 9"
   },
   {
     "id": "bournemouth-x-chelsea",
@@ -122,8 +130,9 @@
     "awayTeam": "Chelsea",
     "prediction": "Dupla Chance: Chelsea ou Empate",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Chelsea com elenco mais profundo e controle; X2 conserva valor fora."
+    "analysis": "Chelsea com elenco mais profundo e controle; X2 conserva valor fora.",
+    "status": "green",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "stuttgart-x-bayern-munich",
@@ -136,8 +145,9 @@
     "awayTeam": "Bayern Munich",
     "prediction": "Resultado Final: 2",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Bayern com maior qualidade e profundidade; probabilidade elevada de vitória fora."
+    "analysis": "Bayern com maior qualidade e profundidade; probabilidade elevada de vitória fora.",
+    "status": "green",
+    "reason": "Placar: 0 x 5"
   },
   {
     "id": "fortuna-sittard-x-ajax-amsterdam",
@@ -150,8 +160,9 @@
     "awayTeam": "Ajax Amsterdam",
     "prediction": "Resultado Final: 2",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Ajax com superioridade técnica; mesmo em oscilação, deve impor jogo e vencer."
+    "analysis": "Ajax com superioridade técnica; mesmo em oscilação, deve impor jogo e vencer.",
+    "status": "green",
+    "reason": "Placar: 1 x 3"
   },
   {
     "id": "slovacko-x-viktoria-plzen",
@@ -164,8 +175,9 @@
     "awayTeam": "Viktoria Plzen",
     "prediction": "Dupla Chance: Viktoria Plzen ou Empate",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Plzen mais estável; X2 reduz risco num confronto com blocos organizados."
+    "analysis": "Plzen mais estável; X2 reduz risco num confronto com blocos organizados.",
+    "status": "red",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "tottenham-x-brentford",
@@ -178,8 +190,9 @@
     "awayTeam": "Brentford",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Tottenham concede e cria; Brentford eficiente em transições — ambos com boa chance de gol."
+    "analysis": "Tottenham concede e cria; Brentford eficiente em transições — ambos com boa chance de gol.",
+    "status": "red",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "augsburg-x-bayer-leverkusen",
@@ -192,8 +205,9 @@
     "awayTeam": "Bayer Leverkusen",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Leverkusen ofensivo e Augsburg permissivo; dinâmica aponta para 3+ gols."
+    "analysis": "Leverkusen ofensivo e Augsburg permissivo; dinâmica aponta para 3+ gols.",
+    "status": "red",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "feyenoord-rotterdam-x-zwolle",
@@ -206,8 +220,9 @@
     "awayTeam": "Zwolle",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Feyenoord muito superior no mando e em criação; boa probabilidade de vitória."
+    "analysis": "Feyenoord muito superior no mando e em criação; boa probabilidade de vitória.",
+    "status": "green",
+    "reason": "Placar: 6 x 1"
   },
   {
     "id": "sigma-olomouc-x-sparta-prague",
@@ -220,8 +235,9 @@
     "awayTeam": "Sparta Prague",
     "prediction": "Resultado Final: 2",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Sparta com maior densidade técnica e regularidade; valor na vitória visitante."
+    "analysis": "Sparta com maior densidade técnica e regularidade; valor na vitória visitante.",
+    "status": "green",
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "newcastle-x-burnley",
@@ -234,8 +250,9 @@
     "awayTeam": "Burnley",
     "prediction": "Resultado Final: 1",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Newcastle forte em casa e Burnley com baixa conversão ofensiva; valor no 1."
+    "analysis": "Newcastle forte em casa e Burnley com baixa conversão ofensiva; valor no 1.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "fc-koln-x-st-pauli",
@@ -248,8 +265,9 @@
     "awayTeam": "St. Pauli",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Duas equipes com tendência a criar e conceder; probabilidade de gols dos dois lados."
+    "analysis": "Duas equipes com tendência a criar e conceder; probabilidade de gols dos dois lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "everton-x-nottingham-forest",
@@ -262,8 +280,9 @@
     "awayTeam": "Nottingham Forest",
     "prediction": "Empate Anula Aposta: Everton (DNB)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Everton melhora defensivamente em casa; DNB protege contra empate em jogo físico."
+    "analysis": "Everton melhora defensivamente em casa; DNB protege contra empate em jogo físico.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "heidenheim-x-freiburg",
@@ -276,8 +295,9 @@
     "awayTeam": "Freiburg",
     "prediction": "Dupla Chance: Freiburg ou Empate",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Freiburg mais organizado e com maior controle; X2 reduz variância."
+    "analysis": "Freiburg mais organizado e com maior controle; X2 reduz variância.",
+    "status": "red",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "eyupspor-x-kayserispor",
@@ -290,8 +310,9 @@
     "awayTeam": "Kayserispor",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Eyupspor ofensivo e Kayserispor encontra espaços em transição; tendência de ambos marcarem."
+    "analysis": "Eyupspor ofensivo e Kayserispor encontra espaços em transição; tendência de ambos marcarem.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "olympiacos-x-ofi-crete",
@@ -304,8 +325,9 @@
     "awayTeam": "OFI Crete",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Olympiacos dominante no mando e com maior qualidade; alta probabilidade de vitória."
+    "analysis": "Olympiacos dominante no mando e com maior qualidade; alta probabilidade de vitória.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "leeds-united-x-liverpool",
@@ -318,8 +340,9 @@
     "awayTeam": "Liverpool",
     "prediction": "Mais de 2.5 gols",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Liverpool agressivo e Leeds concede espaços; dinâmica de jogo para 3+ gols."
+    "analysis": "Liverpool agressivo e Leeds concede espaços; dinâmica de jogo para 3+ gols.",
+    "status": "green",
+    "reason": "Placar: 3 x 3"
   },
   {
     "id": "psg-x-rennes",
@@ -332,8 +355,9 @@
     "awayTeam": "Rennes",
     "prediction": "Resultado Final: 1",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "PSG superior tecnicamente e com elenco profundo; forte tendência de vitória."
+    "analysis": "PSG superior tecnicamente e com elenco profundo; forte tendência de vitória.",
+    "status": "green",
+    "reason": "Placar: 5 x 0"
   },
   {
     "id": "royale-union-sg-x-gent",
@@ -346,8 +370,9 @@
     "awayTeam": "Gent",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 66,
-    "status": "pending",
-    "analysis": "Duas equipes ofensivas e com alta conversão; tendência de gols dos dois lados."
+    "analysis": "Duas equipes ofensivas e com alta conversão; tendência de gols dos dois lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "kilmarnock-x-rangers",
@@ -360,7 +385,8 @@
     "awayTeam": "Rangers",
     "prediction": "Dupla Chance: Rangers ou Empate",
     "confidence": 67,
-    "status": "pending",
-    "analysis": "Rangers com maior controle e profundidade; X2 oferece proteção mantendo valor fora."
+    "analysis": "Rangers com maior controle e profundidade; X2 oferece proteção mantendo valor fora.",
+    "status": "green",
+    "reason": "Placar: 0 x 3"
   }
 ]
