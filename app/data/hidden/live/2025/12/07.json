@@ -1,0 +1,129 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-07",
+    "league":"Alemanha - Bundesliga",
+    "homeTeam":"Borussia Dortmund",
+    "awayTeam":"Hoffenheim",
+    "prediction": [
+      "CS: Qualquer outro empate"
+    ],
+    "stake": 1,
+    "odd": 500,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-07",
+    "league":"Dinamarca - Superliga",
+    "homeTeam":"FC Copenhagen",
+    "awayTeam":"Sonderjyske",
+    "prediction": [
+      "CS: 3 x 1",
+      "CS: Qualquer outro empate"
+    ],
+    "stake": 2,
+    "odd": 340,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-07",
+    "league":"Espanha - La Liga",
+    "homeTeam":"Real Madrid",
+    "awayTeam":"Celta Vigo",
+    "prediction": [
+      "CS: 3 x 1"
+    ],
+    "stake": 4.48,
+    "odd": 11.50,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-07",
+    "league":"Itália - Serie A",
+    "homeTeam":"Napoli",
+    "awayTeam":"Juventus",
+    "prediction": [
+      "CS: 3 x 1"
+    ],
+    "stake": 1,
+    "odd": 15.50,
+    "return": 2.21,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-07",
+    "league":"Brasileirão Série A",
+    "homeTeam":"Botafogo RJ",
+    "awayTeam":"Fortaleza",
+    "prediction": [
+      "CS: Qualquer outro empate"
+    ],
+    "stake": 1,
+    "odd": 100,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-07",
+    "league":"Portugal - Primeira Liga",
+    "homeTeam":"Tondela",
+    "awayTeam":"Porto",
+    "prediction": [
+      "CS: 1 x 3"
+    ],
+    "stake": 1,
+    "odd": 15,
+    "return": 1.04,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-07",
+    "league": "Argentina - Primera División",
+    "homeTeam": "CA Boca Juniors",
+    "awayTeam": "Racing Club",
+    "prediction": [
+      "CS: 2 x 1"
+    ],
+    "stake": 1,
+    "odd": 10,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-07",
+    "league": "Argentina - Primera División",
+    "homeTeam": "CA Boca Juniors",
+    "awayTeam": "Racing Club",
+    "prediction": [
+      "Under: Menos de 0.5 Gols"
+    ],
+    "stake": 1,
+    "odd": 6,
+    "return": 1.15,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-07",
+    "league": "Bolívia - Liga Profesional",
+    "homeTeam": "Club Aurora",
+    "awayTeam": "Universitario de Vinto",
+    "prediction": [
+      "CS: 0 x 0"
+    ],
+    "stake": 1,
+    "odd": 44,
+    "return": 1,
+    "status": "cashout"
+  }
+]
