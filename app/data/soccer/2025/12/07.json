@@ -10,8 +10,9 @@
     "awayTeam": "West Ham",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Duas equipes com transições rápidas e criação consistente; tendência de gols dos dois lados."
+    "analysis": "Duas equipes com transições rápidas e criação consistente; tendência de gols dos dois lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "nice-x-angers",
@@ -24,8 +25,9 @@
     "awayTeam": "Angers",
     "prediction": "Empate Anula Aposta: Nice (DNB)",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Nice mais estável em casa; DNB reduz risco preservando valor do mandante."
+    "analysis": "Nice mais estável em casa; DNB reduz risco preservando valor do mandante.",
+    "status": "red",
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "fc-copenhagen-x-sonderjyske",
@@ -38,8 +40,9 @@
     "awayTeam": "Sonderjyske",
     "prediction": "Resultado Final: 1",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Copenhagen dominante no mando e superior tecnicamente; alta probabilidade de vitória."
+    "analysis": "Copenhagen dominante no mando e superior tecnicamente; alta probabilidade de vitória.",
+    "status": "red",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "fulham-x-crystal-palace",
@@ -52,8 +55,9 @@
     "awayTeam": "Crystal Palace",
     "prediction": "Escanteios: Mais de 9.5",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Jogo com amplitude e cruzamentos frequentes; tendência de alto volume de escanteios."
+    "analysis": "Jogo com amplitude e cruzamentos frequentes; tendência de alto volume de escanteios.",
+    "status": "green",
+    "reason": "Escanteios: 6 x 4"
   },
   {
     "id": "lorient-x-olympique-lyon",
@@ -66,8 +70,9 @@
     "awayTeam": "Olympique Lyon",
     "prediction": "Dupla Chance: Olympique Lyon ou Empate",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Lyon com maior profundidade e controle; X2 conserva valor fora de casa."
+    "analysis": "Lyon com maior profundidade e controle; X2 conserva valor fora de casa.",
+    "status": "red",
+    "reason": "Escanteios: 1 x 0"
   },
   {
     "id": "ae-larissa-x-panathinaikos",
@@ -80,8 +85,9 @@
     "awayTeam": "Panathinaikos",
     "prediction": "Resultado Final: 2",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Panathinaikos superior técnica e taticamente; tendência de controle e vitória visitante."
+    "analysis": "Panathinaikos superior técnica e taticamente; tendência de controle e vitória visitante.",
+    "status": "red",
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "valencia-x-sevilla",
@@ -94,8 +100,9 @@
     "awayTeam": "Sevilla",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Equilíbrio de forças com ataques produtivos; probabilidade elevada de gols para ambos."
+    "analysis": "Equilíbrio de forças com ataques produtivos; probabilidade elevada de gols para ambos.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "volendam-x-nec-nijmegen",
@@ -108,8 +115,9 @@
     "awayTeam": "NEC Nijmegen",
     "prediction": "Mais de 2.5 gols",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Eredivisie com média alta de gols e defesas permissivas; cenário para 3+."
+    "analysis": "Eredivisie com média alta de gols e defesas permissivas; cenário para 3+.",
+    "status": "green",
+    "reason": "Placar: 2 x 3"
   },
   {
     "id": "paok-thessaloniki-x-aris-thessaloniki",
@@ -122,8 +130,9 @@
     "awayTeam": "Aris Thessaloniki",
     "prediction": "Cartões: Mais de 4.5",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Derbi tenso e físico; histórico de muitas faltas e advertências."
+    "analysis": "Derbi tenso e físico; histórico de muitas faltas e advertências.",
+    "status": "red",
+    "reason": "Cartões: 2 x 0"
   },
   {
     "id": "espanyol-x-rayo-vallecano",
@@ -136,8 +145,9 @@
     "awayTeam": "Rayo Vallecano",
     "prediction": "Dupla Chance: Rayo Vallecano ou Empate",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Rayo oferece boa resistência fora e transições rápidas; X2 reduz variância."
+    "analysis": "Rayo oferece boa resistência fora e transições rápidas; X2 reduz variância.",
+    "status": "red",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "az-alkmaar-x-go-ahead-eagles",
@@ -150,8 +160,9 @@
     "awayTeam": "Go Ahead Eagles",
     "prediction": "Resultado Final: 1",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "AZ superior em criação e mando; boa probabilidade de vitória do mandante."
+    "analysis": "AZ superior em criação e mando; boa probabilidade de vitória do mandante.",
+    "status": "red",
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "aek-atenas-x-atromitos",
@@ -164,8 +175,9 @@
     "awayTeam": "Atromitos",
     "prediction": "Empate Anula Aposta: AEK Atenas (DNB)",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "AEK com maior qualidade e regularidade no mando; DNB oferece proteção."
+    "analysis": "AEK com maior qualidade e regularidade no mando; DNB oferece proteção.",
+    "status": "green",
+    "reason": "Placar: 4 x 1"
   },
   {
     "id": "viborg-x-midtjylland",
@@ -178,8 +190,9 @@
     "awayTeam": "Midtjylland",
     "prediction": "Dupla Chance: Midtjylland ou Empate",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Midtjylland mais consistente; X2 conserva valor em jogo potencialmente equilibrado."
+    "analysis": "Midtjylland mais consistente; X2 conserva valor em jogo potencialmente equilibrado.",
+    "status": "green",
+    "reason": "Placar: 3 x 3"
   },
   {
     "id": "nordsjalland-x-silkeborg",
@@ -192,8 +205,9 @@
     "awayTeam": "Silkeborg",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Duas equipes propositivas e com defesas expostas; forte tendência de ambos marcarem."
+    "analysis": "Duas equipes propositivas e com defesas expostas; forte tendência de ambos marcarem.",
+    "status": "red",
+    "reason": "Placar: 5 x 0"
   },
   {
     "id": "real-madrid-x-celta-vigo",
@@ -206,8 +220,9 @@
     "awayTeam": "Celta Vigo",
     "prediction": "Resultado Final: 1",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Madrid muito superior técnica e taticamente; alta probabilidade de vitória no Bernabéu."
+    "analysis": "Madrid muito superior técnica e taticamente; alta probabilidade de vitória no Bernabéu.",
+    "status": "red",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "sparta-rotterdam-x-nac-breda",
@@ -220,8 +235,9 @@
     "awayTeam": "NAC Breda",
     "prediction": "Resultado Final: 1",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Sparta mais sólido em casa; NAC concede em transições — valor no mandante."
+    "analysis": "Sparta mais sólido em casa; NAC concede em transições — valor no mandante.",
+    "status": "green",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "celtic-x-hearts",
@@ -234,8 +250,9 @@
     "awayTeam": "Hearts",
     "prediction": "Resultado Final: 1",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Celtic dominante no Celtic Park e com maior conversão; alta probabilidade de 3 pontos."
+    "analysis": "Celtic dominante no Celtic Park e com maior conversão; alta probabilidade de 3 pontos.",
+    "status": "red",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "borussia-dortmund-x-hoffenheim",
@@ -248,8 +265,9 @@
     "awayTeam": "Hoffenheim",
     "prediction": "Mais de 2.5 gols",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Dortmund ofensivo e Hoffenheim concede; ritmo favorece jogo aberto com 3+ gols."
+    "analysis": "Dortmund ofensivo e Hoffenheim concede; ritmo favorece jogo aberto com 3+ gols.",
+    "status": "red",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "kocaelispor-x-kasimpasa",
@@ -262,8 +280,9 @@
     "awayTeam": "Kasımpaşa",
     "prediction": "Dupla Chance: Kasımpaşa ou Empate",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Kasımpaşa de divisão superior e com maior qualidade; X2 reduz risco em jogo de copa."
+    "analysis": "Kasımpaşa de divisão superior e com maior qualidade; X2 reduz risco em jogo de copa.",
+    "status": "green",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "sturm-graz-x-grazer-ak",
@@ -276,8 +295,9 @@
     "awayTeam": "Grazer AK",
     "prediction": "Resultado Final: 1",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Sturm tecnicamente superior e com elenco mais forte; tendência de vitória em casa."
+    "analysis": "Sturm tecnicamente superior e com elenco mais forte; tendência de vitória em casa.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "fc-sochi-x-lokomotiv-moscow",
@@ -290,8 +310,9 @@
     "awayTeam": "Lokomotiv Moscow",
     "prediction": "Dupla Chance: Lokomotiv Moscow ou Empate",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Lokomotiv mais regular e com melhor momento; X2 traz valor fora de casa."
+    "analysis": "Lokomotiv mais regular e com melhor momento; X2 traz valor fora de casa.",
+    "status": "green",
+    "reason": "Placar: 2 x 4"
   },
   {
     "id": "hamburger-x-werder-bremen",
@@ -304,8 +325,9 @@
     "awayTeam": "Werder Bremen",
     "prediction": "BTTS: Sim (Ambos marcam)",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Derbi com proposta ofensiva dos dois lados; tendência de gols para ambos."
+    "analysis": "Derbi com proposta ofensiva dos dois lados; tendência de gols para ambos.",
+    "status": "green",
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "radnicki-1923-x-partizan",
@@ -318,7 +340,8 @@
     "awayTeam": "Partizan",
     "prediction": "Resultado Final: 2",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Partizan superior técnica e fisicamente; forte tendência de vitória como visitante."
+    "analysis": "Partizan superior técnica e fisicamente; forte tendência de vitória como visitante.",
+    "status": "green",
+    "reason": "Placar: 2 x 4"
   }
 ]
