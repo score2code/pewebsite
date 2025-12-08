@@ -1,0 +1,67 @@
+[
+  {
+    "id": "manchester-united-x-bournemouth",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester United",
+    "awayTeam": "Bournemouth",
+    "date": "2025-12-15",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 75,
+    "status": "pending",
+    "analysis": "United com maior controle territorial e criação; favoritismo em casa sem necessidade de handicap."
+  },
+  {
+    "id": "rayo-vallecano-x-betis",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Rayo Vallecano",
+    "awayTeam": "Betis",
+    "date": "2025-12-15",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Betis (DNB)",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Betis mais estável e eficiente; DNB protege contra empate num confronto equilibrado."
+  },
+  {
+    "id": "fenerbahce-x-konyaspor",
+    "league": "Turquia - Super Lig",
+    "homeTeam": "Fenerbahce",
+    "awayTeam": "Konyaspor",
+    "date": "2025-12-15",
+    "time": "14:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 77,
+    "status": "pending",
+    "analysis": "Fener dominante em casa, alta produção ofensiva e elenco superior; tendência clara de vitória."
+  },
+  {
+    "id": "porto-x-estrela-amadora",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Porto",
+    "awayTeam": "Estrela Amadora",
+    "date": "2025-12-15",
+    "time": "17:45",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 73,
+    "status": "pending",
+    "analysis": "Porto costuma impor ritmo e criar volume; probabilidade alta de 3+ gols considerando desnível técnico."
+  },
+  {
+    "id": "braga-x-santa-clara",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Braga",
+    "awayTeam": "Santa Clara",
+    "date": "2025-12-15",
+    "time": "15:45",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Braga (DNB)",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Braga com maior organização e mando forte; DNB reduz variância mantendo valor."
+  }
+]

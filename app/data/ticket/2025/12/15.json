@@ -1,0 +1,24 @@
+[
+  {
+    "id": "fenerbahce-x-konyaspor",
+    "league": "Turquia - Super Lig",
+    "homeTeam": "Fenerbahce",
+    "awayTeam": "Konyaspor",
+    "date": "2025-12-15",
+    "time": "14:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "status": "pending"
+  },
+  {
+    "id": "manchester-united-x-bournemouth",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester United",
+    "awayTeam": "Bournemouth",
+    "date": "2025-12-15",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "status": "pending"
+  }
+]
