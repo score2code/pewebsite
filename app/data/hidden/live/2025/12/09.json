@@ -1,0 +1,32 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-09",
+    "league": "UEFA Champions League",
+    "homeTeam": "FC Kairat Almaty",
+    "awayTeam": "Olympiacos",
+    "prediction": [
+      "CS: 1 x 2",
+      "CS: 1 x 3"
+    ],
+    "stake": 3,
+    "odd": 18.25,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-09",
+    "league": "UEFA Champions League",
+    "homeTeam": "Bayern Munich",
+    "awayTeam": "Sporting CP",
+    "prediction": [
+      "CS: 3 x 1",
+      "CS: Qualquer outra vitória em casa"
+    ],
+    "stake": 6,
+    "odd": 0,
+    "return": 9.14,
+    "status": "green"
+  }
+]

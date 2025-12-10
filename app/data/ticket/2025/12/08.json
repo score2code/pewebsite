@@ -8,7 +8,9 @@
     "time": "16:45",
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
-    "confidence": 73
+    "confidence": 73,
+    "status": "green",
+    "reason": "Placar: 2 x 3"
   },
   {
     "id": "wolverhampton-x-manchester-united",
@@ -19,6 +21,8 @@
     "time": "17:00",
     "timezone": "UTC",
     "prediction": "Dupla Chance: Manchester United ou Empate",
-    "confidence": 72
+    "confidence": 72,
+    "status": "green",
+    "reason": "Placar: 1 x 4"
   }
 ]

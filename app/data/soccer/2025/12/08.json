@@ -10,8 +10,9 @@
     "awayTeam": "Manchester United",
     "prediction": "Dupla Chance: Manchester United ou Empate",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "United com maior criação e elenco; X2 oferece proteção mantendo valor fora."
+    "analysis": "United com maior criação e elenco; X2 oferece proteção mantendo valor fora.",
+    "status": "green",
+    "reason": "Placar: 1 x 4"
   },
   {
     "id": "osasuna-x-levante",
@@ -24,8 +25,9 @@
     "awayTeam": "Levante",
     "prediction": "Empate Anula Aposta: Osasuna (DNB)",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Osasuna sólido no mando e mais estável defensivamente; DNB reduz risco em jogo equilibrado."
+    "analysis": "Osasuna sólido no mando e mais estável defensivamente; DNB reduz risco em jogo equilibrado.",
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "torino-fc-x-ac-milan",
@@ -38,7 +40,8 @@
     "awayTeam": "AC Milan",
     "prediction": "Resultado Final: 2",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Milan superior técnica e taticamente; boa probabilidade de vitória como visitante sem precisar de handicap."
+    "analysis": "Milan superior técnica e taticamente; boa probabilidade de vitória como visitante sem precisar de handicap.",
+    "status": "green",
+    "reason": "Placar: 2 x 3"
   }
 ]

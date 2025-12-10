@@ -10,8 +10,9 @@
     "awayTeam": "Olympiacos",
     "prediction": "Dupla Chance: Olympiacos ou Empate",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Olympiacos com experiência europeia e melhor elenco; X2 protege fora sem handicap."
+    "analysis": "Olympiacos com experiência europeia e melhor elenco; X2 protege fora sem handicap.",
+    "status": "green",
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "bayern-munich-x-sporting-lisboa",
@@ -24,8 +25,9 @@
     "awayTeam": "Sporting Lisboa",
     "prediction": "Resultado Final: 1",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Bayern dominante em casa com alta produção ofensiva; melhor probabilidade de vitória direta."
+    "analysis": "Bayern dominante em casa com alta produção ofensiva; melhor probabilidade de vitória direta.",
+    "status": "green",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "tottenham-x-slavia-praga",
@@ -38,8 +40,9 @@
     "awayTeam": "Slavia Praga",
     "prediction": "Mais de 2.5 gols",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Tottenham com proposta ofensiva; Slavia competitivo. Tendência de jogo aberto e gols sem recorrer a under."
+    "analysis": "Tottenham com proposta ofensiva; Slavia competitivo. Tendência de jogo aberto e gols sem recorrer a under.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "barcelona-x-eintracht-frankfurt",
@@ -52,7 +55,8 @@
     "awayTeam": "Eintracht Frankfurt",
     "prediction": "Empate Anula Aposta: Barcelona (DNB)",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Barcelona forte no mando; DNB conserva valor e evita handicap, protegendo contra empate."
+    "analysis": "Barcelona forte no mando; DNB conserva valor e evita handicap, protegendo contra empate.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   }
 ]
