@@ -1,0 +1,24 @@
+[
+  {
+    "id": "egito-x-zimbabwe",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Egito",
+    "awayTeam": "Zimbábue",
+    "date": "2025-12-22",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "status": "pending"
+  },
+  {
+    "id": "athletic-bilbao-x-espanyol",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Athletic Bilbao",
+    "awayTeam": "Espanyol",
+    "date": "2025-12-22",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "status": "pending"
+  }
+]

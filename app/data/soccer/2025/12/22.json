@@ -1,0 +1,54 @@
+[
+  {
+    "id": "fulham-x-nottingham-forest",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Nottingham Forest",
+    "date": "2025-12-22",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Fulham (DNB)",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Fulham mais consistente em casa e com melhor criação; DNB reduz risco em confronto ajustado."
+  },
+  {
+    "id": "athletic-bilbao-x-espanyol",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Athletic Bilbao",
+    "awayTeam": "Espanyol",
+    "date": "2025-12-22",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 75,
+    "status": "pending",
+    "analysis": "Bilbao forte no mando e eficiente em bolas paradas; superioridade deve se refletir na vitória."
+  },
+  {
+    "id": "panserraikos-x-levadiakos",
+    "league": "Grécia - Super Lig",
+    "homeTeam": "Panserraikos",
+    "awayTeam": "Levadiakos",
+    "date": "2025-12-22",
+    "time": "13:00",
+    "timezone": "UTC",
+    "prediction": "Dupla Chance: Levadiakos ou Empate",
+    "confidence": 71,
+    "status": "pending",
+    "analysis": "Jogo equilibrado; Levadiakos com leve vantagem recente e X2 protege contra variância."
+  },
+  {
+    "id": "egito-x-zimbabwe",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Egito",
+    "awayTeam": "Zimbábue",
+    "date": "2025-12-22",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 77,
+    "status": "pending",
+    "analysis": "Egito com maior qualidade e profundidade; controle de jogo deve resultar em vitória."
+  }
+]

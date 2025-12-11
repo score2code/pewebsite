@@ -1,0 +1,28 @@
+[
+  {
+    "id": "argelia-x-sudao",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Argélia",
+    "awayTeam": "Sudão",
+    "date": "2025-12-24",
+    "time": "12:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Argélia com maior qualidade técnica e organização; mando e profundidade de elenco sustentam vitória."
+  },
+  {
+    "id": "costa-do-marfim-x-mocambique",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Costa do Marfim",
+    "awayTeam": "Moçambique",
+    "date": "2025-12-24",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Costa do Marfim (DNB)",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Costa do Marfim superior em físico e técnica; DNB reduz variância típica de amistosos com rotações."
+  }
+]

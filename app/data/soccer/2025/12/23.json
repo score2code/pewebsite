@@ -1,0 +1,54 @@
+[
+  {
+    "id": "arsenal-x-crystal-palace",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Arsenal",
+    "awayTeam": "Crystal Palace",
+    "date": "2025-12-23",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 77,
+    "status": "pending",
+    "analysis": "Arsenal dominante em posse e criação; controle do jogo e elenco superior sugerem vitória em casa."
+  },
+  {
+    "id": "nigeria-x-tanzania",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Nigéria",
+    "awayTeam": "Tanzânia",
+    "date": "2025-12-23",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Nigéria (DNB)",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Nigéria com elenco e físico superiores; DNB preserva valor em amistoso com possíveis rotações."
+  },
+  {
+    "id": "senegal-x-botsuana",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Senegal",
+    "awayTeam": "Botsuana",
+    "date": "2025-12-23",
+    "time": "12:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Senegal com superioridade técnica e organização; tendência forte de vitória no mando."
+  },
+  {
+    "id": "tunisia-x-uganda",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Tunísia",
+    "awayTeam": "Uganda",
+    "date": "2025-12-23",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 75,
+    "status": "pending",
+    "analysis": "Tunísia mais sólida taticamente e com melhor controle; favoritismo claro sem necessidade de handicap."
+  }
+]

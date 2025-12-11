@@ -1,0 +1,24 @@
+[
+  {
+    "id": "arsenal-x-crystal-palace",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Arsenal",
+    "awayTeam": "Crystal Palace",
+    "date": "2025-12-23",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "status": "pending"
+  },
+  {
+    "id": "senegal-x-botsuana",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Senegal",
+    "awayTeam": "Botsuana",
+    "date": "2025-12-23",
+    "time": "12:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "status": "pending"
+  }
+]
