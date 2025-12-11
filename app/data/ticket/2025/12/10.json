@@ -8,7 +8,9 @@
     "time": "17:00",
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
-    "confidence": 74
+    "confidence": 74,
+    "status": "red",
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "athletic-bilbao-x-psg",
@@ -19,6 +21,8 @@
     "time": "17:00",
     "timezone": "UTC",
     "prediction": "Dupla Chance: PSG ou Empate",
-    "confidence": 73
+    "confidence": 73,
+    "status": "green",
+    "reason": "Placar: 0 x 0"
   }
 ]

@@ -10,8 +10,9 @@
     "awayTeam": "Corinthians",
     "prediction": "Empate Anula Aposta: Cruzeiro (DNB)",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Cruzeiro consistente em casa; DNB reduz risco em jogo tradicionalmente equilibrado sem recorrer a handicap."
+    "status": "red",
+    "analysis": "Cruzeiro consistente em casa; DNB reduz risco em jogo tradicionalmente equilibrado sem recorrer a handicap.",
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "villarreal-x-fc-copenhagen",
@@ -24,8 +25,9 @@
     "awayTeam": "FC Copenhagen",
     "prediction": "Resultado Final: 1",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Villarreal forte como mandante e mais qualificado; melhor estimativa é vitória direta sem handicap."
+    "analysis": "Villarreal forte como mandante e mais qualificado; melhor estimativa é vitória direta sem handicap.",
+    "status": "red",
+    "reason": "Placar: 2 x 3"
   },
   {
     "id": "borussia-dortmund-x-bodo-glimt",
@@ -38,8 +40,9 @@
     "awayTeam": "Bodo/Glimt",
     "prediction": "Resultado Final: 1",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Dortmund tecnicamente superior e dominante no Signal Iduna Park; alta probabilidade de vitória."
+    "analysis": "Dortmund tecnicamente superior e dominante no Signal Iduna Park; alta probabilidade de vitória.",
+    "status": "red",
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "juventus-x-pafos",
@@ -52,8 +55,9 @@
     "awayTeam": "Pafos",
     "prediction": "Mais de 2.5 gols",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Jogo com tendência ofensiva pela superioridade da Juve; expectativa de criar e converter múltiplas chances."
+    "analysis": "Jogo com tendência ofensiva pela superioridade da Juve; expectativa de criar e converter múltiplas chances.",
+    "status": "red",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "club-brugge-x-arsenal",
@@ -66,8 +70,9 @@
     "awayTeam": "Arsenal",
     "prediction": "BTTS: Sim",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Arsenal com ataque consistente e Brugge competitivo em casa; ambos devem marcar sem precisar de handicap."
+    "analysis": "Arsenal com ataque consistente e Brugge competitivo em casa; ambos devem marcar sem precisar de handicap.",
+    "status": "red",
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "athletic-bilbao-x-psg",
@@ -80,8 +85,9 @@
     "awayTeam": "PSG",
     "prediction": "Dupla Chance: PSG ou Empate",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "PSG com elenco superior; X2 protege contra ambiente difícil em Bilbao mantendo alta confiança."
+    "analysis": "PSG com elenco superior; X2 protege contra ambiente difícil em Bilbao mantendo alta confiança.",
+    "status": "green",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "bayer-leverkusen-x-newcastle",
@@ -94,7 +100,8 @@
     "awayTeam": "Newcastle",
     "prediction": "Empate Anula Aposta: Bayer Leverkusen (DNB)",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Leverkusen com fase e proposta ofensiva fortes; DNB protege o empate sem recorrer a handicap."
+    "analysis": "Leverkusen com fase e proposta ofensiva fortes; DNB protege o empate sem recorrer a handicap.",
+    "status": "void",
+    "reason": "Placar: 2 x 2"
   }
 ]

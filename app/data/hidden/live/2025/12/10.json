@@ -1,0 +1,285 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"FIFA Intercontinental",
+    "homeTeam":"Cruz Azul",
+    "awayTeam":"Flamengo",
+    "prediction": [
+      "Under: 0.5 gols"
+    ],
+    "stake": 1,
+    "odd": 9.8,
+    "return": 1,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"FIFA Intercontinental",
+    "homeTeam":"Cruz Azul",
+    "awayTeam":"Flamengo",
+    "prediction": [
+      "1º Tempo - Under: 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 1.89,
+    "return": 1,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"FIFA Intercontinental",
+    "homeTeam":"Cruz Azul",
+    "awayTeam":"Flamengo",
+    "prediction": [
+      "CS: 1 x  3"
+    ],
+    "stake": 1,
+    "odd": 12,
+    "return": 2.03,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"UEFA Champions League",
+    "homeTeam":"Villarreal",
+    "awayTeam":"FC Copenhagen",
+    "prediction": [
+      "CS: 1 x  3"
+    ],
+    "stake": 1,
+    "odd": 30,
+    "return": 1,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"FIFA Intercontinental",
+    "homeTeam":"Cruz Azul",
+    "awayTeam":"Flamengo",
+    "prediction": [
+      "Under: 2.5 gols"
+    ],
+    "stake": 1,
+    "odd": 3.65,
+    "return": 1,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"UEFA Champions League",
+    "homeTeam":"Villarreal",
+    "awayTeam":"FC Copenhagen",
+    "prediction": [
+      "Under: 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 15.50,
+    "return": 1,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"UEFA Champions League",
+    "homeTeam":"Qarabag",
+    "awayTeam":"Ajax",
+    "prediction": [
+      "Under: 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 8.03,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"Criador de Eventos",
+    "homeTeam":"Cruzeiro",
+    "awayTeam":"Manchester City",
+    "prediction": [
+      "Cruzeiro Vence"
+    ],
+    "stake": 1,
+    "odd": 2.83,
+    "return": 2.83,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"Criador de Eventos",
+    "homeTeam":"Bayern Munich (F)",
+    "awayTeam":"Manchester City",
+    "prediction": [
+      "Bayern Munich (F) Vence"
+    ],
+    "stake": 1,
+    "odd": 1.90,
+    "return": 1.90,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"Criador de Eventos",
+    "homeTeam":"Bayern Munich (F)",
+    "awayTeam":"Real Madrid",
+    "prediction": [
+      "Bayern Munich (F) Vence"
+    ],
+    "stake": 1,
+    "odd": 1.71,
+    "return": 1.71,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"Criador de Eventos",
+    "homeTeam":"Arsenal",
+    "awayTeam":"Manchester City",
+    "prediction": [
+      "Arsenal Vence"
+    ],
+    "stake": 1.57,
+    "odd": 1.95,
+    "return": 3.06,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"Criador de Eventos",
+    "homeTeam":"Napoli",
+    "awayTeam":"Cruzeiro",
+    "prediction": [
+      "Cruzeiro Vence"
+    ],
+    "stake": 1,
+    "odd": 1.90,
+    "return": 1.90,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"UEFA Champions League",
+    "homeTeam":"Real Madrid",
+    "awayTeam":"Manchester City",
+    "prediction": [
+      "CS: 1 x  3",
+      "CS: 3 x  1"
+    ],
+    "stake": 2,
+    "odd": 0,
+    "return": 2.61,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"UEFA Champions League",
+    "homeTeam":"Athletic Bilbao",
+    "awayTeam":"PSG",
+    "prediction": [
+      "Back: PSG"
+    ],
+    "stake": 1,
+    "odd": 2.16,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"UEFA Champions League",
+    "homeTeam":"Borussia Dortmund",
+    "awayTeam":"Bodo/Glimt",
+    "prediction": [
+      "CS: 3 x  1"
+    ],
+    "stake": 1,
+    "odd": 9.8,
+    "return": 1.60,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"UEFA Champions League",
+    "homeTeam":"Juventus",
+    "awayTeam":"Pafos",
+    "prediction": [
+      "CS: 2 x  1"
+    ],
+    "stake": 1,
+    "odd": 11.5,
+    "return": 0.67,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"UEFA Champions League",
+    "homeTeam":"Club Brugge",
+    "awayTeam":"Arsenal",
+    "prediction": [
+      "Back: Arsenal"
+    ],
+    "stake": 1,
+    "odd": 1.47,
+    "return": 1.29,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"UEFA Champions League",
+    "homeTeam":"Juventus",
+    "awayTeam":"Parfos",
+    "prediction": [
+      "Under: 2.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2.14,
+    "return": 1.23,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"Criador de Eventos",
+    "homeTeam":"Cruzeiro",
+    "awayTeam":"Vasco",
+    "prediction": [
+      "Cruzeiro Vence"
+    ],
+    "stake": 1.97,
+    "odd": 1.77,
+    "return": 3.49,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-10",
+    "league":"Copa do Brasil",
+    "homeTeam":"Cruzeiro",
+    "awayTeam":"Corinthians",
+    "prediction": [
+      "1º Tempo -Under: 0.5 gols",
+      "CS: 0 x 1",
+      "CS 2 x 2"
+    ],
+    "stake": 2,
+    "odd": 2.18,
+    "return": 1.12,
+    "status": "cashout"
+  }
+]
