@@ -1,0 +1,24 @@
+[
+  {
+    "id": "heidenheim-x-bayern-munich",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Heidenheim",
+    "awayTeam": "Bayern Munich",
+    "date": "2025-12-21",
+    "time": "13:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "status": "pending"
+  },
+  {
+    "id": "utrecht-x-psv-eindhoven",
+    "league": "Países Baixos - Eredivisie",
+    "homeTeam": "Utrecht",
+    "awayTeam": "PSV Eindhoven",
+    "date": "2025-12-21",
+    "time": "08:15",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "status": "pending"
+  }
+]

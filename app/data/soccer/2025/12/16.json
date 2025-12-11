@@ -1,0 +1,80 @@
+[
+  {
+    "id": "cardiff-city-x-chelsea",
+    "league": "Inglaterra - Copa",
+    "homeTeam": "Cardiff City",
+    "awayTeam": "Chelsea",
+    "date": "2025-12-16",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Chelsea superior em elenco e criação; favoritismo claro mesmo fora, sem necessidade de handicap."
+  },
+  {
+    "id": "amsterdamsche-fc-x-nec-nijmegen",
+    "league": "Países Baixos - Copa KNVB",
+    "homeTeam": "Amsterdamsche FC",
+    "awayTeam": "NEC Nijmegen",
+    "date": "2025-12-16",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "NEC com maior ritmo competitivo e qualidade técnica; diferença de divisão pesa pela vitória."
+  },
+  {
+    "id": "hsv-hoek-x-telstar",
+    "league": "Países Baixos - Copa KNVB",
+    "homeTeam": "HSV Hoek",
+    "awayTeam": "Telstar",
+    "date": "2025-12-16",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "confidence": 75,
+    "status": "pending",
+    "analysis": "Telstar acima tecnicamente e fisicamente; controle de jogo deve se traduzir em vitória."
+  },
+  {
+    "id": "den-bosch-x-vv-katwijk",
+    "league": "Países Baixos - Copa KNVB",
+    "homeTeam": "Den Bosch",
+    "awayTeam": "VV Katwijk",
+    "date": "2025-12-16",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Den Bosch (DNB)",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Den Bosch com elenco de divisão superior e mando; DNB reduz variância num jogo de copa."
+  },
+  {
+    "id": "blooming-x-bolivar-la-paz",
+    "league": "Bolívia - División Profesional",
+    "homeTeam": "Blooming",
+    "awayTeam": "Bolivar La Paz",
+    "date": "2025-12-16",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "confidence": 77,
+    "status": "pending",
+    "analysis": "Bolívar dominante nacionalmente e mais eficiente; expectativa de controle e vitória fora."
+  },
+  {
+    "id": "the-strongest-x-nacional-potosi",
+    "league": "Bolívia - División Profesional",
+    "homeTeam": "The Strongest",
+    "awayTeam": "Nacional Potosí",
+    "date": "2025-12-16",
+    "time": "20:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "The Strongest muito forte em casa e altitude; controle físico e técnico favorecem a vitória."
+  }
+]

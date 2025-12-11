@@ -1,0 +1,80 @@
+[
+  {
+    "id": "manchester-city-x-brentford",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Brentford",
+    "date": "2025-12-17",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 78,
+    "status": "pending",
+    "analysis": "City dominante em posse e criação; diferença técnica e mando apontam vitória sem handicap."
+  },
+  {
+    "id": "newcastle-x-fulham",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Fulham",
+    "date": "2025-12-17",
+    "time": "17:15",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Newcastle mais intenso e eficiente em casa; volume ofensivo deve se impor."
+  },
+  {
+    "id": "top-oss-x-utrecht",
+    "league": "Países Baixos - Copa KNVB",
+    "homeTeam": "TOP Oss",
+    "awayTeam": "Utrecht",
+    "date": "2025-12-17",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "confidence": 75,
+    "status": "pending",
+    "analysis": "Utrecht com elenco e ritmo de primeira divisão; tendência clara de confirmar favoritismo."
+  },
+  {
+    "id": "feyenoord-rotterdam-x-heerenveen",
+    "league": "Países Baixos - Eredivisie",
+    "homeTeam": "Feyenoord Rotterdam",
+    "awayTeam": "Heerenveen",
+    "date": "2025-12-17",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Feyenoord forte em casa, alta produção e controle; favoritismo sem necessidade de handicap."
+  },
+  {
+    "id": "young-boys-x-grasshopper",
+    "league": "Suíça - Super League",
+    "homeTeam": "Young Boys",
+    "awayTeam": "Grasshopper",
+    "date": "2025-12-17",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Young Boys com alta produção ofensiva; ritmo e bolas paradas sustentam 3+ gols no agregado."
+  },
+  {
+    "id": "dundee-united-x-celtic",
+    "league": "Escócia - Premiership",
+    "homeTeam": "Dundee United",
+    "awayTeam": "Celtic",
+    "date": "2025-12-17",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Celtic superior técnica e taticamente; controle de posse e fases defensivas estáveis apontam vitória."
+  }
+]

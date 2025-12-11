@@ -1,0 +1,67 @@
+[
+  {
+    "id": "valencia-x-mallorca",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Valencia",
+    "awayTeam": "Mallorca",
+    "date": "2025-12-19",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Valencia (DNB)",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Valencia mais consistente em casa; DNB reduz risco em duelo potencialmente truncado."
+  },
+  {
+    "id": "borussia-dortmund-x-borussia-monchengladbach",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Borussia Monchengladbach",
+    "date": "2025-12-19",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 73,
+    "status": "pending",
+    "analysis": "Ritmo alto e vocação ofensiva; tendência de 3+ gols pelo volume de criação."
+  },
+  {
+    "id": "bologna-x-inter-de-milao",
+    "league": "Itália - Serie A",
+    "homeTeam": "Bologna",
+    "awayTeam": "Inter de Milão",
+    "date": "2025-12-19",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Inter com maior qualidade coletiva e profundidade; controle de fases deve se refletir em vitória."
+  },
+  {
+    "id": "beroe-stara-zagora-x-ludogorets-razgrad",
+    "league": "Bulgária - Parva Liga",
+    "homeTeam": "Beroe Stara Zagora",
+    "awayTeam": "Ludogorets Razgrad",
+    "date": "2025-12-19",
+    "time": "12:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "confidence": 77,
+    "status": "pending",
+    "analysis": "Ludogorets dominante nacionalmente; superioridade técnica e tática sustentam vitória fora."
+  },
+  {
+    "id": "sporting-charleroi-x-genk",
+    "league": "Bélgica - Pro League",
+    "homeTeam": "Sporting Charleroi",
+    "awayTeam": "Genk",
+    "date": "2025-12-19",
+    "time": "16:45",
+    "timezone": "UTC",
+    "prediction": "Dupla Chance: Genk ou Empate",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Genk mais organizado e eficiente; X2 mantém valor e reduz variância fora de casa."
+  }
+]

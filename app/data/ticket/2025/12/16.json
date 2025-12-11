@@ -1,0 +1,24 @@
+[
+  {
+    "id": "blooming-x-bolivar-la-paz",
+    "league": "Bolívia - División Profesional",
+    "homeTeam": "Blooming",
+    "awayTeam": "Bolivar La Paz",
+    "date": "2025-12-16",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "status": "pending"
+  },
+  {
+    "id": "cardiff-city-x-chelsea",
+    "league": "Inglaterra - Copa",
+    "homeTeam": "Cardiff City",
+    "awayTeam": "Chelsea",
+    "date": "2025-12-16",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "status": "pending"
+  }
+]
