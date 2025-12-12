@@ -101,7 +101,7 @@
     "stake": 0.50,
     "odd": 8.26,
     "return": 4.50,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {

@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: RB Leipzig (DNB)",
     "confidence": 73,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 3 x 1",
     "analysis": "Leipzig com maior produção ofensiva e elenco mais profundo; DNB protege em jogo fora contra bloco organizado do Union."
   },
   {
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 75,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 4",
     "analysis": "ADO mais estável e com melhor conversão de chances; vantagem técnica deve prevalecer sem necessidade de handicap."
   },
   {
@@ -35,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 72,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 4",
     "analysis": "Equipes sub-23 costumam produzir jogos abertos; transições e desconcentrações defensivas sugerem gols dos dois lados."
   },
   {
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Dupla Chance: FC Eindhoven ou Empate",
     "confidence": 71,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 4",
     "analysis": "Eindhoven mais consistente fora e com melhor organização; X2 reduz risco mantendo valor na projeção."
   },
   {
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 74,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 1",
     "analysis": "Venlo com melhor fase e construção ofensiva; tendência de dominar as principais ações e converter em vitória."
   }
 ]
