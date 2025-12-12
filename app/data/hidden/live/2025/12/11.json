@@ -1,0 +1,62 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-11",
+    "league":"UEFA Europa League",
+    "homeTeam":"Stuttgart",
+    "awayTeam":"Maccabi Tel Aviv",
+    "prediction": [
+      "CS: 3 x 1",
+      "CS: Qualquer outra vitória da casa"
+    ],
+    "stake": 2.07,
+    "odd": 12.50,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-11",
+    "league":"UEFA Europa League",
+    "homeTeam":"Utrecht",
+    "awayTeam":"Nottingham Forest",
+    "prediction": [
+      "CS: 1 x 3",
+      "CS: 1 x 2"
+    ],
+    "stake": 2,
+    "odd": 19.50,
+    "return": 2.52,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-11",
+    "league":"UEFA Europa League",
+    "homeTeam":"Dinamo Zagreb",
+    "awayTeam":"Real Betis",
+    "prediction": [
+      "CS: Qualquer outra vitória do visitante"
+    ],
+    "stake": 2.10,
+    "odd": 1.61,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-11",
+    "league":"Copa do Brasil",
+    "homeTeam":"Vasco",
+    "awayTeam":"Fluminense",
+    "prediction": [
+      "Under: 0.5 gols",
+      "CS: 1 x 2",
+      "CS: 2 x 1"
+    ],
+    "stake": 2,
+    "odd": 7,
+    "return": 2.62,
+    "status": "green"
+  }
+]

@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Fluminense (DNB)",
     "confidence": 74,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 2 x 1",
     "analysis": "Fluminense com melhor controle de posse e criação recente; DNB protege contra empate em clássico equilibrado."
   },
   {
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 75,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 1",
     "analysis": "Stuttgart superior em ritmo e pressão alta; vantagem técnica e mando sugerem vitória sem precisar de handicap."
   },
   {
@@ -35,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 72,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "Duas equipes com transições rápidas e boa conversão de chances; tendência de gols dos dois lados."
   },
   {
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Panathinaikos (DNB)",
     "confidence": 71,
-    "status": "pending",
+    "status": "void",
+    "reason": "Placar: 0 x 0",
     "analysis": "Mando forte e organização defensiva do Panathinaikos; DNB reduz exposição em jogo de poucas brechas."
   },
   {
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 73,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "Ritmo alto e verticalidade dos dois lados; pressão e bolas paradas elevam probabilidade de 3+ gols."
   },
   {
@@ -74,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "Lyon com maior qualidade coletiva e profundidade; controle territorial deve se traduzir em vitória."
   },
   {
@@ -87,7 +93,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 77,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 3",
     "analysis": "AZ superior em criação e eficiência; diferença técnica considerável frente ao Drita, sem necessidade de handicap."
   },
   {
@@ -100,7 +107,8 @@
     "timezone": "UTC",
     "prediction": "Dupla Chance: AGF Aarhus ou Empate",
     "confidence": 72,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "AGF mais consistente defensivamente e melhor em pontos fora; X2 equilibra risco mantendo valor."
   }
 ]
