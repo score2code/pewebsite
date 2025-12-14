@@ -146,7 +146,7 @@
     "type": "bet",
     "date": "2025-12-13",
     "tipster": "Togakure Tips",
-    "bingo": true,
+    "bingo": false,
     "league":"NBA",
     "homeTeam":"Oklahoma City Thunder",
     "awayTeam":"San Antonio Spurs",
@@ -154,14 +154,14 @@
     "stake": 2,
     "odd": 1.78,
     "return": 3.56,
-    "status": "pending",
+    "status": "green",
     "marketing": true
   },
   {
     "type": "bet",
     "date": "2025-12-13",
     "tipster": "Togakure Tips",
-    "bingo": true,
+    "bingo": false,
     "league":"NBA",
     "homeTeam":"Oklahoma City Thunder",
     "awayTeam":"San Antonio Spurs",
@@ -169,7 +169,7 @@
     "stake": 2,
     "odd": 1.62,
     "return": 3.24,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   }
 ]
