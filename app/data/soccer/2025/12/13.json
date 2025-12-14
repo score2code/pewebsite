@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 74,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 0",
     "analysis": "Chelsea com maior controle territorial e criação; favoritismo em casa sem precisar de handicap."
   },
   {
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 0",
     "analysis": "Liverpool superior em ritmo e pressão; qualidade coletiva e elenco sugerem vitória."
   },
   {
@@ -35,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Dupla Chance: Fulham ou Empate",
     "confidence": 72,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 3",
     "analysis": "Fulham mais consistente e com melhor transição; X2 equilibra risco fora de casa."
   },
   {
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 77,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "Arsenal dominante em posse e criação; deve converter superioridade em vitória em casa."
   },
     {
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 75,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "Atleti forte no Wanda e sólido defensivamente; controle de jogo favorece vitória."
   },
   {
@@ -74,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 72,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 2 x 0",
     "analysis": "Barça com alta produção ofensiva; ritmo e posse sugerem 3+ gols no agregado."
   },
   {
@@ -87,7 +93,8 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 71,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "Duas equipes com transições e oportunidades; tendência de gol para ambos."
   },
   {
@@ -100,7 +107,8 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 73,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 1",
     "analysis": "Jogo com tendência aberta e vulnerabilidades defensivas; probabilidade alta de gols dos dois lados."
   },
   {
@@ -113,7 +121,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 78,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 3",
     "analysis": "PSG com ampla superioridade técnica e elenco; favoritismo claro mesmo fora."
   },
   {
@@ -126,7 +135,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 77,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 3",
     "analysis": "PSV dominante em casa; criação e eficiência sugerem vitória sem necessidade de handicap."
   },
   {
@@ -139,7 +149,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 74,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 4",
     "analysis": "Galatasaray superior tecnicamente e mais estável; deve impor vantagem mesmo fora."
   }
 ]
