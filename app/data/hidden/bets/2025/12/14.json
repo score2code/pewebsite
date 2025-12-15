@@ -73,5 +73,73 @@
     "return": 1.53,
     "status": "cashout",
     "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-14",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 1,
+    "odd": 39,
+    "return": 0,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 30,
+    "date": "2025-12-14",
+    "affectsInitial": false,
+    "note": "Delay Ball"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-14",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 1,
+    "odd": 2.20,
+    "return": 2.20,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-14",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"NBA",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 2,
+    "odd": 1.95,
+    "return": 3.90,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-14",
+    "tipster": "Togakure Tips",
+    "bingo": false,
+    "league":"NBA",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 2,
+    "odd": 1.76,
+    "return": 3.54,
+    "status": "pending",
+    "marketing": true
   }
 ]

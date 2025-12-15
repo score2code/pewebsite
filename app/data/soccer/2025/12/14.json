@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Villa agressivo e West Ham com boa bola parada; jogo com chances claras para ambos."
+    "analysis": "Villa agressivo e West Ham com boa bola parada; jogo com chances claras para ambos.",
+    "status": "green",
+    "reason": "Placar: 2 x 3"
   },
   {
     "id": "sunderland-x-newcastle",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Newcastle superior em criação e transição; favoritismo claro mesmo fora."
+    "analysis": "Newcastle superior em criação e transição; favoritismo claro mesmo fora.",
+    "status": "red",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "nottingham-forest-x-tottenham",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Spurs com pressão alta e melhor fase; deve converter domínio em vitória."
+    "analysis": "Spurs com pressão alta e melhor fase; deve converter domínio em vitória.",
+    "status": "red",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "crystal-palace-x-manchester-city",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "City dominante em posse e chance criada; grande favoritismo pela superioridade técnica."
+    "analysis": "City dominante em posse e chance criada; grande favoritismo pela superioridade técnica.",
+    "status": "green",
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "brentford-x-leeds-united",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Ritmo alto e transições frequentes; tendência de gols dos dois lados."
+    "analysis": "Ritmo alto e transições frequentes; tendência de gols dos dois lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "levante-x-villarreal",
@@ -74,8 +79,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Villarreal (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Villarreal com melhor qualidade técnica; DNB reduz exposição num jogo potencialmente equilibrado."
+    "analysis": "Villarreal com melhor qualidade técnica; DNB reduz exposição num jogo potencialmente equilibrado.",
+    "status": "postponed",
+    "reason": "Adiado"
   },
   {
     "id": "alaves-x-real-madrid",
@@ -87,8 +93,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "Madrid superior em elenco e criação; deve confirmar favoritismo mesmo fora."
+    "analysis": "Madrid superior em elenco e criação; deve confirmar favoritismo mesmo fora.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "bayern-munich-x-mainz",
@@ -100,8 +107,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "Bayern dominante em casa; produção ofensiva e elenco sustentam vitória."
+    "analysis": "Bayern dominante em casa; produção ofensiva e elenco sustentam vitória.",
+    "status": "red",
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "werder-bremen-x-stuttgart",
@@ -113,8 +121,9 @@
     "timezone": "UTC",
     "prediction": "Dupla Chance: Stuttgart ou Empate",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Stuttgart mais consistente e eficiente; X2 protege contra variância fora de casa."
+    "analysis": "Stuttgart mais consistente e eficiente; X2 protege contra variância fora de casa.",
+    "status": "green",
+    "reason": "Placar: 0 x 4"
   },
   {
     "id": "olympique-lyon-x-le-havre",
@@ -126,8 +135,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Lyon com maior qualidade coletiva; mando favorece controle e vitória."
+    "analysis": "Lyon com maior qualidade coletiva; mando favorece controle e vitória.",
+    "status": "green",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "auxerre-x-lille",
@@ -139,8 +149,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Lille (DNB)",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Lille mais estável defensivamente; DNB mantém valor e reduz risco."
+    "analysis": "Lille mais estável defensivamente; DNB mantém valor e reduz risco.",
+    "status": "green",
+    "reason": "Placar: 3 x 4"
   },
   {
     "id": "strasbourg-x-lorient",
@@ -152,8 +163,9 @@
     "timezone": "UTC",
     "prediction": "Dupla Chance: Strasbourg ou Empate",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Equilíbrio com leve vantagem do mando; X2 para Strasbourg reduz variância."
+    "analysis": "Equilíbrio com leve vantagem do mando; X2 para Strasbourg reduz variância.",
+    "status": "green",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "olympique-marseille-x-monaco",
@@ -165,8 +177,9 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Duas equipes com vocação ofensiva; tendência de gols dos dois lados."
+    "analysis": "Duas equipes com vocação ofensiva; tendência de gols dos dois lados.",
+    "status": "red",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "twente-x-go-ahead-eagles",
@@ -178,8 +191,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Twente forte no mando e eficiente na criação; favoritismo claro."
+    "analysis": "Twente forte no mando e eficiente na criação; favoritismo claro.",
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "az-alkmaar-x-excelsior",
@@ -191,8 +205,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "AZ superior técnica e taticamente; deve confirmar vitória em casa."
+    "analysis": "AZ superior técnica e taticamente; deve confirmar vitória em casa.",
+    "status": "postponed",
+    "reason": "Adiado"
   },
   {
     "id": "genk-x-westerlo",
@@ -204,8 +219,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Genk com melhor construção e aproveitamento; mando reforça vantagem."
+    "analysis": "Genk com melhor construção e aproveitamento; mando reforça vantagem.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "slaven-belupo-x-dinamo-zagreb",
@@ -217,8 +233,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "Dinamo superior em elenco e consistência; favoritismo como visitante."
+    "analysis": "Dinamo superior em elenco e consistência; favoritismo como visitante.",
+    "status": "green",
+    "reason": "Placar: 2 x 5"
   },
   {
     "id": "sparta-prague-x-slovan-liberec",
@@ -230,8 +247,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Sparta dominante em casa; vantagem técnica deve se refletir no placar."
+    "analysis": "Sparta dominante em casa; vantagem técnica deve se refletir no placar.",
+    "status": "red",
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "nordsjalland-x-midtjylland",
@@ -243,8 +261,9 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Confronto direto ofensivo na Dinamarca; probabilidade elevada de gols para os dois."
+    "analysis": "Confronto direto ofensivo na Dinamarca; probabilidade elevada de gols para os dois.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "panathinaikos-x-volos-fc",
@@ -256,8 +275,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Panathinaikos sólido em casa e melhor organização; favoritismo claro."
+    "analysis": "Panathinaikos sólido em casa e melhor organização; favoritismo claro.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "atromitos-x-paok-thessaloniki",
@@ -269,8 +289,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "PAOK com maior eficiência e elenco; vantagem mesmo atuando fora."
+    "analysis": "PAOK com maior eficiência e elenco; vantagem mesmo atuando fora.",
+    "status": "red",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "basel-x-lausanne-sport",
@@ -295,8 +316,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Young Boys de alta produção; ritmo e bola parada sugerem 3+ gols no agregado."
+    "analysis": "Young Boys de alta produção; ritmo e bola parada sugerem 3+ gols no agregado.",
+    "status": "red",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "ferencvaros-x-debreceni-vsc",
@@ -308,7 +330,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Ferencvaros dominante localmente; qualidade ofensiva deve garantir vitória."
+    "analysis": "Ferencvaros dominante localmente; qualidade ofensiva deve garantir vitória.",
+    "status": "red",
+    "reason": "Placar: 0 x 1"
   }
 ]

@@ -8,7 +8,8 @@
     "time": "11:00",
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "bayern-munich-x-mainz",
@@ -19,6 +20,7 @@
     "time": "13:30",
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
-    "status": "pending"
+    "status": "red",
+    "reason": "Placar: 2 x 2"
   }
 ]

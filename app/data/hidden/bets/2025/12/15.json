@@ -1,0 +1,25 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-15",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.59,
+    "odd": 2.11,
+    "return": 1.25,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 140,
+    "date": "2025-12-15",
+    "affectsInitial": false,
+    "note": "Ração 10kg para as gatas"
+  }
+]
