@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "United com maior controle territorial e criação; favoritismo em casa sem necessidade de handicap."
+    "analysis": "United com maior controle territorial e criação; favoritismo em casa sem necessidade de handicap.",
+    "status": "red",
+    "reason": "Placar: 4 x 4"
   },
   {
     "id": "rayo-vallecano-x-betis",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Betis (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Betis mais estável e eficiente; DNB protege contra empate num confronto equilibrado."
+    "analysis": "Betis mais estável e eficiente; DNB protege contra empate num confronto equilibrado.",
+    "status": "void",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "fenerbahce-x-konyaspor",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "Fener dominante em casa, alta produção ofensiva e elenco superior; tendência clara de vitória."
+    "analysis": "Fener dominante em casa, alta produção ofensiva e elenco superior; tendência clara de vitória.",
+    "status": "green",
+    "reason": "Placar: 4 x 0"
   },
   {
     "id": "porto-x-estrela-amadora",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Porto costuma impor ritmo e criar volume; probabilidade alta de 3+ gols considerando desnível técnico."
+    "analysis": "Porto costuma impor ritmo e criar volume; probabilidade alta de 3+ gols considerando desnível técnico.",
+    "status": "green",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "braga-x-santa-clara",
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Braga (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Braga com maior organização e mando forte; DNB reduz variância mantendo valor."
+    "analysis": "Braga com maior organização e mando forte; DNB reduz variância mantendo valor.",
+    "status": "green",
+    "reason": "Placar: 1 x 0"
   }
 ]
