@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ac-milan-x-verona",
+    "league": "Itália - Serie A",
+    "homeTeam": "AC Milan",
+    "awayTeam": "Verona",
+    "date": "2025-12-28",
+    "time": "08:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 1",
+    "status": "pending"
+  },
+  {
+    "id": "cremonese-x-napoli",
+    "league": "Itália - Serie A",
+    "homeTeam": "Cremonese",
+    "awayTeam": "Napoli",
+    "date": "2025-12-28",
+    "time": "11:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "status": "pending"
+  }
+]

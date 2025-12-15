@@ -21,5 +21,35 @@
     "date": "2025-12-15",
     "affectsInitial": false,
     "note": "Ração 10kg para as gatas"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-15",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 1,
+    "odd": 40.03,
+    "return": 44.72,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-15",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 1321.32,
+    "return": 759.69,
+    "status": "pending",
+    "marketing": true
   }
 ]

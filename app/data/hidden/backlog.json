@@ -1,72 +1,76 @@
 [
   {
-    "date":"2025-12-10",
+    "date":"2025-12-15",
+    "time":"12:30",
+    "league":"Romênia - Superliga",
+    "homeTeam":"Farul Constanta",
+    "awayTeam":"UTA Arad",
+    "market":"Over 1.5 gols",
+    "odds":1.27,
+    "recommended":false
+  },
+  {
+    "date":"2025-12-15",
+    "time":"15:30",
+    "league":"Romênia - Superliga",
+    "homeTeam":"Unirea Slobozia",
+    "awayTeam":"FCSB",
+    "market":"DC: X2",
+    "odds":1.13,
+    "recommended":false,
+    "live": true
+  },
+  {
+    "date":"2025-12-15",
+    "time":"16:30",
+    "league":"",
+    "homeTeam":"CD Castellón",
+    "awayTeam":"Mirandes",
+    "market":"Over 1.5 gols",
+    "odds": 0,
+    "recommended":false,
+    "live": true
+  },
+  {
+    "date":"2025-12-15",
     "time":"14:00",
-    "league":"FIFA Intercontinental",
-    "homeTeam":"Cruz Azul",
-    "awayTeam":"Flamengo",
-    "market":"DC X2",
-    "odds":1.19,
-    "recommended":false
-  },
-  {
-    "date":"2025-12-10",
-    "time":"14:45",
-    "league":"UEFA Champions League",
-    "homeTeam":"Villarreal",
-    "awayTeam":"FC Copenhagen",
+    "league":"Turquia - Super Lig",
+    "homeTeam":"Fenerbahce",
+    "awayTeam":"Konyaspor",
     "market":"DC 1X",
-    "odds":1.19,
+    "odds":1.05,
     "recommended":false
   },
   {
-    "date":"2025-12-10",
-    "time":"14:45",
-    "league":"UEFA Champions League",
-    "homeTeam":"Qarabag",
-    "awayTeam":"Ajax",
-    "market":"CS",
-    "odds":1.19,
-    "recommended":false
-  },
-  {
-    "date":"2025-12-10",
-    "time":"17:00",
-    "league":"UEFA Champions League",
-    "homeTeam":"Club Brugge",
-    "awayTeam":"Arsenal",
-    "market":"DC X2",
-    "odds":1.19,
-    "recommended":false
-  },
-  {
-    "date":"2025-12-10",
-    "time":"17:00",
-    "league":"UEFA Champions League",
-    "homeTeam":"Athletic Bilbao",
-    "awayTeam":"PSG",
-    "market":"DC X2",
-    "odds":1.19,
-    "recommended":false
-  },
-  {
-    "date":"2025-12-10",
-    "time":"17:00",
-    "league":"UEFA Champions League",
-    "homeTeam":"Borussia Dortmund",
-    "awayTeam":"Bodo/Glimt",
+    "date":"2025-12-15",
+    "time":"17:45",
+    "league":"Portugal - Primeira Liga",
+    "homeTeam":"Porto",
+    "awayTeam":"Estrela Amadora",
     "market":"DC 1X",
-    "odds":1.19,
+    "odds":1.04,
     "recommended":false
   },
   {
-    "date":"2025-12-10",
+    "date":"2025-12-15",
     "time":"17:00",
-    "league":"UEFA Champions League",
-    "homeTeam":"Real Madrid",
-    "awayTeam":"Manchester City",
-    "market":"DC 1X",
-    "odds":1.19,
-    "recommended":false
+    "league":"Inglaterra - Premier League",
+    "homeTeam":"Manchester United",
+    "awayTeam":"Bounemounth",
+    "market":"Over 1.5 gols",
+    "odds":1.14,
+    "recommended":false,
+    "live": true
+  },
+  {
+    "date":"2025-12-15",
+    "time":"17:00",
+    "league":"Espanha - La Liga",
+    "homeTeam":"Rayo Vallecano",
+    "awayTeam":"Betis",
+    "market":"Over 1.5 gols",
+    "odds":1.30,
+    "recommended":false,
+    "live": true
   }
 ]

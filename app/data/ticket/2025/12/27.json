@@ -1,0 +1,24 @@
+[
+{
+    "id": "burnley-x-everton",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Burnley",
+    "awayTeam": "Everton",
+    "date": "2025-12-27",
+    "time": "12:00",
+    "timezone": "UTC",
+    "prediction": "Dupla Chance: Everton ou Empate",
+    "status": "pending"
+  },
+  {
+    "id": "pisa-x-juventus",
+    "league": "Itália - Copa",
+    "homeTeam": "Pisa",
+    "awayTeam": "Juventus",
+    "date": "2025-12-27",
+    "time": "16:45",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: 2",
+    "status": "pending"
+  }
+]
