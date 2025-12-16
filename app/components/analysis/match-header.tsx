@@ -7,12 +7,12 @@ export default function MatchHeader({ pick }: { pick: AnalysisData }) {
   const timeStr = pick.time ? pick.time + (pick.timezone ? ` ${pick.timezone}` : '') : '';
   return (
     <div className="p-6 border-b border-light-300 dark:border-dark-600">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-wrap gap-2">
         <div className="flex items-center gap-2">
           <Trophy className="w-4 h-4 text-purple-600 dark:text-purple-400" />
           <span className="text-sm font-medium text-purple-600 dark:text-purple-400">{pick.league}</span>
         </div>
-        <div className="flex items-center gap-4 text-xs text-dark-900/70 dark:text-light-100/70">
+        <div className="flex items-center gap-2 flex-wrap text-xs text-dark-900/70 dark:text-light-100/70">
           <div className="flex items-center gap-1">
             <Calendar className="w-3 h-3" />
             <span>{formattedDate}</span>

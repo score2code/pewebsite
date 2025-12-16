@@ -74,7 +74,7 @@ export default function TacticalAnalysisSection({
     return (
       <div className="rounded-xl p-4 border border-light-300/50 dark:border-dark-600/50 bg-light-100/50 dark:bg-dark-800/50">
         <p className="text-sm text-dark-900/70 dark:text-light-100/70 mb-2">{title}</p>
-        <div className="grid grid-cols-2 gap-4 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm text-dark-900/70 dark:text-light-100/70">{homeTeam}</p>
             <RadarMetrics metrics={homeMetrics} />

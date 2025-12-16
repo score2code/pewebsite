@@ -136,7 +136,7 @@ export default function StatsCardSection({ stats, homeTeam, awayTeam }: Props) {
       <p className="text-[11px] text-dark-900/60 dark:text-light-100/60 mb-2">
         Comparação das médias dos últimos jogos em duas janelas (5 e 10). Verde indica melhor desempenho relativo, vermelho pior, roxo equilíbrio.
       </p>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Block title="Últimos 5 Jogos" stats={stats} n={5} />
         <Block title="Últimos 10 Jogos" stats={stats} n={10} />
       </div>

@@ -149,7 +149,7 @@ export default function TrendSection({ trend }: { trend?: AnalysisTrend }) {
       <p className="text-[11px] text-dark-900/60 dark:text-light-100/60 mb-2">
         Comparação visual Casa vs. Visitante e tabela com valores dos períodos (20, 10, 5 e Projeção).
       </p>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Card
           title="% Pontos"
           unit={unitPercent}

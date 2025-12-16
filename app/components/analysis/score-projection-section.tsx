@@ -118,7 +118,7 @@ export default function ScoreProjectionSection({ stats }: { stats?: AnalysisStat
     return (
       <div className="space-y-3">
         <p className="text-sm text-dark-900/70 dark:text-light-100/70">{title}</p>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Column
             title="Vantagem Casa"
             rows={(projection?.homeAdvantage || []) as Array<{ score: string; probability: number }>}
