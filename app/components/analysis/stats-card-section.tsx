@@ -117,10 +117,10 @@ function Block({ title, stats, n }: { title: string; stats?: AnalysisStats; n: n
         <RowCompare label="Gols Marcados" home={block?.gTotal?.home} away={block?.gTotal?.away} />
         <RowCompare label="Gols Esperados (xG)" home={block?.xgTotal?.home} away={block?.xgTotal?.away} />
         <RowCompare label="Índice de Valor de Performance" home={block?.nvTotal?.home} away={block?.nvTotal?.away} />
-        <div className="flex justify-between"><span>Over 1.5</span><span>{block?.probabilities?.over15 ?? '-'}%</span></div>
-        <div className="flex justify-between"><span>Over 2.5</span><span>{block?.probabilities?.over25 ?? '-'}%</span></div>
-        <div className="flex justify-between"><span>Over 3.5</span><span>{block?.probabilities?.over35 ?? '-'}%</span></div>
-        <div className="flex justify-between"><span>Ambas Marcam (BTTS)</span><span>{block?.probabilities?.btts ?? '-'}%</span></div>
+        <div className="flex justify-between"><span>Over 1.5</span><span>{fmt(block?.probabilities?.over15)}%</span></div>
+        <div className="flex justify-between"><span>Over 2.5</span><span>{fmt(block?.probabilities?.over25)}%</span></div>
+        <div className="flex justify-between"><span>Over 3.5</span><span>{fmt(block?.probabilities?.over35)}%</span></div>
+        <div className="flex justify-between"><span>Ambas Marcam (BTTS)</span><span>{fmt(block?.probabilities?.btts)}%</span></div>
       </div>
     </div>
   );

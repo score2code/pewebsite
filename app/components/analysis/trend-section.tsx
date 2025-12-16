@@ -73,7 +73,7 @@ export default function TrendSection({ trend }: { trend?: AnalysisTrend }) {
           const fmt2 = (n: number) => (Math.round(n * 100) / 100).toFixed(2);
           return (
             <div key={i} className="text-center">
-              {typeof v === 'number' ? (i === 3 ? fmt2(v) : v) : '-'}
+              {typeof v === 'number' ? fmt2(v) : '-'}
             </div>
           );
         })}
@@ -86,7 +86,7 @@ export default function TrendSection({ trend }: { trend?: AnalysisTrend }) {
           const fmt2 = (n: number) => (Math.round(n * 100) / 100).toFixed(2);
           return (
             <div key={i} className="text-center">
-              {typeof v === 'number' ? (i === 3 ? fmt2(v) : v) : '-'}
+              {typeof v === 'number' ? fmt2(v) : '-'}
             </div>
           );
         })}
@@ -123,8 +123,14 @@ export default function TrendSection({ trend }: { trend?: AnalysisTrend }) {
       const den = (m5 != null ? w5 : 0) + (m10 != null ? w10 : 0) + (m20 != null ? w20 : 0);
       return den > 0 ? num / den : (m5 ?? m10 ?? m20);
     };
-    const hv = [lastOf(home.s20), lastOf(home.s20, 10), lastOf(home.s20, 5), project(home.s20)];
-    const av = away ? [lastOf(away.s20), lastOf(away.s20, 10), lastOf(away.s20, 5), project(away.s20)] : undefined;
+    const m20h = mean(home.s20);
+    const m10h = mean(home.s20?.slice(-10));
+    const m5h = mean(home.s20?.slice(-5));
+    const hv = [m20h, m10h, m5h, project(home.s20)];
+    const m20a = away ? mean(away.s20) : undefined;
+    const m10a = away ? mean(away.s20?.slice(-10)) : undefined;
+    const m5a = away ? mean(away.s20?.slice(-5)) : undefined;
+    const av = away ? [m20a, m10a, m5a, project(away.s20)] : undefined;
     return (
       <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-4 border border-light-300/50 dark:border-dark-600/50">
         <p className="text-sm text-dark-900/70 dark:text-light-100/70 mb-2">{title}</p>

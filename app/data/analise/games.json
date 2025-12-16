@@ -5,5 +5,12 @@
     "awayTeam": "Manchester City",
     "date": "2025-12-27",
     "time": "09:30"
+  },
+  {
+    "league": "Intercontinental",
+    "homeTeam": "PSG",
+    "awayTeam": "Flamengo",
+    "date": "2025-12-17",
+    "time": "14:00"
   }
 ]

@@ -23,8 +23,8 @@ function average(arr?: number[], n?: number): number | undefined {
 }
 
 function computeProjection(stats?: AnalysisStats, n?: number) {
-  const lambdaHome = average(stats?.last20?.home?.g, n) ?? 0;
-  const lambdaAway = average(stats?.last20?.away?.g, n) ?? 0;
+  const lambdaHome = average(stats?.last20?.home?.xg, n) ?? 0;
+  const lambdaAway = average(stats?.last20?.away?.xg, n) ?? 0;
   const maxGoals = Math.max(6, Math.ceil(lambdaHome + lambdaAway + 4));
   const rows: Array<{ score: string; p: number; type: 'home' | 'draw' | 'away' }> = [];
   for (let h = 0; h <= maxGoals; h++) {
@@ -47,13 +47,13 @@ function computeProjection(stats?: AnalysisStats, n?: number) {
     return a - h >= 2;
   }).reduce((s, r) => s + r.p, 0);
   return {
-    homeAdvantage: topHome.map(r => ({ score: r.score, probability: Math.round(r.p * 100) })),
-    draw: topDraw.map(r => ({ score: r.score, probability: Math.round(r.p * 100) })),
-    awayAdvantage: topAway.map(r => ({ score: r.score, probability: Math.round(r.p * 100) })),
+    homeAdvantage: topHome.map(r => ({ score: r.score, probability: r.p * 100 })),
+    draw: topDraw.map(r => ({ score: r.score, probability: r.p * 100 })),
+    awayAdvantage: topAway.map(r => ({ score: r.score, probability: r.p * 100 })),
     categories: {
-      goleadaCasa: Math.round(goleadaCasa * 100),
-      empate: Math.round(empate * 100),
-      goleadaVisitante: Math.round(goleadaVisitante * 100),
+      goleadaCasa: goleadaCasa * 100,
+      empate: empate * 100,
+      goleadaVisitante: goleadaVisitante * 100,
     }
   };
 }
@@ -72,7 +72,7 @@ export default function ScoreProjectionSection({ stats }: { stats?: AnalysisStat
       <div className="space-y-1">
         <div className="flex justify-between items-center text-sm">
           <span className={`px-2 py-0.5 rounded-full ${chipBg}`}>{score}</span>
-          <span className="text-dark-900/80 dark:text-light-100/80">{pct}%</span>
+          <span className="text-dark-900/80 dark:text-light-100/80">{pct.toFixed(2)}%</span>
         </div>
         <div className="h-2 w-full rounded bg-light-200 dark:bg-dark-700 overflow-hidden">
           <div className={`h-2 ${fill}`} style={{ width: `${pct}%` }} />
@@ -137,9 +137,9 @@ export default function ScoreProjectionSection({ stats }: { stats?: AnalysisStat
         </div>
         <div className="mt-2 text-xs text-dark-900/70 dark:text-light-100/70">
           <div className="flex items-center gap-4">
-            <span>Goleada Casa: {projection?.categories?.goleadaCasa}%</span>
-            <span>Empate: {projection?.categories?.empate}%</span>
-            <span>Goleada Visitante: {projection?.categories?.goleadaVisitante}%</span>
+            <span>Goleada Casa: {projection?.categories?.goleadaCasa != null ? projection.categories.goleadaCasa.toFixed(2) : '-'}%</span>
+            <span>Empate: {projection?.categories?.empate != null ? projection.categories.empate.toFixed(2) : '-'}%</span>
+            <span>Goleada Visitante: {projection?.categories?.goleadaVisitante != null ? projection.categories.goleadaVisitante.toFixed(2) : '-'}%</span>
           </div>
         </div>
       </div>
