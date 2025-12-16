@@ -9,6 +9,7 @@ import Analytics from '@/app/components/analytics';
 import { ThemeProvider } from './components/theme-provider';
 import { Suspense } from 'react';
 import NotificationSystem from '@/app/components/notifications/system';
+import FooterEasterEgg from '@/app/components/FooterEasterEgg';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -50,6 +51,8 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.webmanifest',
 };
+
+
 
 export default function RootLayout({
   children,
@@ -117,7 +120,9 @@ export default function RootLayout({
 
               <footer className="mt-auto py-6 bg-light-100/80 dark:bg-dark-800/80 backdrop-blur-lg border-t border-light-300 dark:border-dark-600">
                 <div className="max-w-6xl mx-auto px-4 text-center text-dark-900/70 dark:text-light-100/70">
-                  <p className="text-sm">&copy; {new Date().getFullYear()} Palpites do dia. Todos os direitos reservados.</p>
+                  <FooterEasterEgg>
+                    <p className="text-sm">&copy; {new Date().getFullYear()} Palpites do dia. Todos os direitos reservados.</p>
+                  </FooterEasterEgg>
                 </div>
               </footer>
             </div>
