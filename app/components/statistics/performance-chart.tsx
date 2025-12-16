@@ -95,7 +95,6 @@ const PerformanceChart: React.FC<PerformanceChartProps> = ({ series, height = 20
                 x={x + barWidth / 2}
                 y={height - 6}
                 textAnchor="middle"
-                transform={fitsContainer ? undefined : `rotate(-45 ${x + barWidth / 2}, ${height - 6})`}
                 className="fill-current text-[10px] md:text-xs text-dark-900/70 dark:text-light-100/70"
               >
                 {s.label}
