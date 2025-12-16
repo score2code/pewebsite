@@ -119,3 +119,61 @@ export interface ChampionshipData {
     stats: ChampionshipStats;
   }>;
 }
+
+export interface AnalysisTrend {
+  pointsPct?: {
+    home?: number[];
+    away?: number[];
+  };
+  xgScore?: {
+    home?: number[];
+    away?: number[];
+  };
+  xg?: {
+    home?: number[];
+    away?: number[];
+  };
+  teamsCV?: {
+    home?: number[];
+    away?: number[];
+  };
+}
+
+export interface AnalysisStatsSeries {
+  g?: number[];
+  ga?: number[];
+  xg?: number[];
+  nv?: number[];
+}
+
+export interface AnalysisStats {
+  last20?: {
+    home?: AnalysisStatsSeries;
+    away?: AnalysisStatsSeries;
+  };
+}
+
+export interface AnalysisTacticalMetrics {
+  mppt: number;
+  dfpt: number;
+  nv: number;
+  nvpf: number;
+}
+
+export interface AnalysisTactical {
+  home?: AnalysisTacticalMetrics;
+  away?: AnalysisTacticalMetrics;
+}
+
+export interface AnalysisData {
+  id: string;
+  league: string;
+  homeTeam: string;
+  awayTeam: string;
+  date: string;
+  time?: string;
+  timezone?: string;
+  trend?: AnalysisTrend;
+  stats?: AnalysisStats;
+  tactical?: AnalysisTactical;
+}
