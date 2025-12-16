@@ -81,10 +81,10 @@ function computeBlock(n: number, stats?: AnalysisStats) {
   const gAway = sum(away?.g, n);
   const gaHome = sum(home?.ga, n);
   const gaAway = sum(away?.ga, n);
-  const xgHome = sum(home?.xg, n);
-  const xgAway = sum(away?.xg, n);
-  const nvHome = sum(home?.nv, n);
-  const nvAway = sum(away?.nv, n);
+  const xgHome = avg(home?.xg, n);
+  const xgAway = avg(away?.xg, n);
+  const nvHome = avg(home?.nv, n);
+  const nvAway = avg(away?.nv, n);
 
   const lambdaHome = avg(home?.g, n) ?? 0;
   const lambdaAway = avg(away?.g, n) ?? 0;
@@ -113,14 +113,14 @@ function Block({ title, stats, n }: { title: string; stats?: AnalysisStats; n: n
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-4 border border-light-300/50 dark:border-dark-600/50">
       <p className="text-sm text-dark-900/70 dark:text-light-100/70 mb-2">{title}</p>
       <div className="space-y-2 text-sm">
-        <RowCompare label="Score Total" home={block?.scoreTotal?.home} away={block?.scoreTotal?.away} />
-        <RowCompare label="G Total" home={block?.gTotal?.home} away={block?.gTotal?.away} />
-        <RowCompare label="XG Total" home={block?.xgTotal?.home} away={block?.xgTotal?.away} />
-        <RowCompare label="NV Total" home={block?.nvTotal?.home} away={block?.nvTotal?.away} />
+        <RowCompare label="Gols Totais (marcados + sofridos)" home={block?.scoreTotal?.home} away={block?.scoreTotal?.away} />
+        <RowCompare label="Gols Marcados" home={block?.gTotal?.home} away={block?.gTotal?.away} />
+        <RowCompare label="Gols Esperados (xG)" home={block?.xgTotal?.home} away={block?.xgTotal?.away} />
+        <RowCompare label="Índice de Valor de Performance" home={block?.nvTotal?.home} away={block?.nvTotal?.away} />
         <div className="flex justify-between"><span>Over 1.5</span><span>{block?.probabilities?.over15 ?? '-'}%</span></div>
         <div className="flex justify-between"><span>Over 2.5</span><span>{block?.probabilities?.over25 ?? '-'}%</span></div>
         <div className="flex justify-between"><span>Over 3.5</span><span>{block?.probabilities?.over35 ?? '-'}%</span></div>
-        <div className="flex justify-between"><span>BTTS</span><span>{block?.probabilities?.btts ?? '-'}%</span></div>
+        <div className="flex justify-between"><span>Ambas Marcam (BTTS)</span><span>{block?.probabilities?.btts ?? '-'}%</span></div>
       </div>
     </div>
   );
@@ -151,11 +151,11 @@ export default function StatsCardSection({ stats, homeTeam, awayTeam }: Props) {
         <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-full bg-purple-600" /> equilíbrio</span>
       </div>
       <div className="mt-3 text-[11px] text-dark-900/70 dark:text-light-100/70 space-y-1">
-        <p><span className="font-semibold">Score Total</span>: gols marcados e sofridos somados no período.</p>
-        <p><span className="font-semibold">G Total</span>: gols marcados pelo time no período.</p>
-        <p><span className="font-semibold">XG Total</span>: gols esperados (qualidade das chances) no período.</p>
-        <p><span className="font-semibold">NV Total</span>: índice proprietário de valor de performance ajustado (0–100).</p>
-        <p><span className="font-semibold">Probabilidades Over/BTTS</span>: percentuais estimados a partir do histórico recente.</p>
+        <p><span className="font-semibold">Gols Totais (marcados + sofridos)</span>: soma de gols marcados e sofridos no período.</p>
+        <p><span className="font-semibold">Gols Marcados</span>: total de gols marcados no período.</p>
+        <p><span className="font-semibold">Gols Esperados (xG)</span>: qualidade média das chances no período.</p>
+        <p><span className="font-semibold">Índice de Valor de Performance</span>: média recente (0–100) do indicador proprietário.</p>
+        <p><span className="font-semibold">Probabilidades Over / Ambas Marcam</span>: percentuais estimados a partir do histórico recente.</p>
       </div>
     </div>
   );

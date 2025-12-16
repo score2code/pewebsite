@@ -22,9 +22,9 @@ function average(arr?: number[], n?: number): number | undefined {
   return s / slice.length;
 }
 
-function computeProjection(stats?: AnalysisStats) {
-  const lambdaHome = average(stats?.last20?.home?.g, 10) ?? average(stats?.last20?.home?.g, 5) ?? average(stats?.last20?.home?.g) ?? 0;
-  const lambdaAway = average(stats?.last20?.away?.g, 10) ?? average(stats?.last20?.away?.g, 5) ?? average(stats?.last20?.away?.g) ?? 0;
+function computeProjection(stats?: AnalysisStats, n?: number) {
+  const lambdaHome = average(stats?.last20?.home?.g, n) ?? 0;
+  const lambdaAway = average(stats?.last20?.away?.g, n) ?? 0;
   const maxGoals = Math.max(6, Math.ceil(lambdaHome + lambdaAway + 4));
   const rows: Array<{ score: string; p: number; type: 'home' | 'draw' | 'away' }> = [];
   for (let h = 0; h <= maxGoals; h++) {
@@ -59,7 +59,6 @@ function computeProjection(stats?: AnalysisStats) {
 }
 
 export default function ScoreProjectionSection({ stats }: { stats?: AnalysisStats }) {
-  const projection = computeProjection(stats);
   const Row = ({ score, probability, color }: { score: string; probability: number; color: 'green' | 'blue' | 'red' }) => {
     const pct = Math.max(0, Math.min(100, probability || 0));
     const fill =
@@ -114,6 +113,39 @@ export default function ScoreProjectionSection({ stats }: { stats?: AnalysisStat
     );
   };
 
+  const Block = ({ title, n }: { title: string; n: number }) => {
+    const projection = computeProjection(stats, n);
+    return (
+      <div className="space-y-3">
+        <p className="text-sm text-dark-900/70 dark:text-light-100/70">{title}</p>
+        <div className="grid grid-cols-3 gap-4">
+          <Column
+            title="Vantagem Casa"
+            rows={(projection?.homeAdvantage || []) as Array<{ score: string; probability: number }>}
+            color="green"
+          />
+          <Column
+            title="Empate"
+            rows={(projection?.draw || []) as Array<{ score: string; probability: number }>}
+            color="blue"
+          />
+          <Column
+            title="Vantagem Visitante"
+            rows={(projection?.awayAdvantage || []) as Array<{ score: string; probability: number }>}
+            color="red"
+          />
+        </div>
+        <div className="mt-2 text-xs text-dark-900/70 dark:text-light-100/70">
+          <div className="flex items-center gap-4">
+            <span>Goleada Casa: {projection?.categories?.goleadaCasa}%</span>
+            <span>Empate: {projection?.categories?.empate}%</span>
+            <span>Goleada Visitante: {projection?.categories?.goleadaVisitante}%</span>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="mb-2">
       <h2 className="text-lg font-bold text-dark-900 dark:text-light-100 mb-3 flex items-center gap-2">
@@ -121,31 +153,12 @@ export default function ScoreProjectionSection({ stats }: { stats?: AnalysisStat
         <span>Projeção de Placar Correto</span>
       </h2>
       <p className="text-[11px] text-dark-900/60 dark:text-light-100/60 mb-2">
-        Lista de placares mais prováveis por cenário. Use como referência comparativa, não como garantia.
+        Lista de placares mais prováveis por cenário em três janelas (5, 10 e 20). Use como referência comparativa, não como garantia.
       </p>
-      <div className="grid grid-cols-3 gap-4">
-        <Column
-          title="Vantagem Casa"
-          rows={(projection?.homeAdvantage || []) as Array<{ score: string; probability: number }>}
-          color="green"
-        />
-        <Column
-          title="Empate"
-          rows={(projection?.draw || []) as Array<{ score: string; probability: number }>}
-          color="blue"
-        />
-        <Column
-          title="Vantagem Visitante"
-          rows={(projection?.awayAdvantage || []) as Array<{ score: string; probability: number }>}
-          color="red"
-        />
-      </div>
-      <div className="mt-4 text-xs text-dark-900/70 dark:text-light-100/70">
-        <div className="flex items-center gap-4">
-          <span>Goleada Casa: {projection?.categories?.goleadaCasa}%</span>
-          <span>Empate: {projection?.categories?.empate}%</span>
-          <span>Goleada Visitante: {projection?.categories?.goleadaVisitante}%</span>
-        </div>
+      <div className="space-y-4">
+        <Block title="Últimos 5 Jogos" n={5} />
+        <Block title="Últimos 10 Jogos" n={10} />
+        <Block title="Últimos 20 Jogos" n={20} />
       </div>
       <div className="mt-2 text-[11px] text-dark-900/70 dark:text-light-100/70 space-y-1">
         <p><span className="font-semibold">Probabilidade</span>: estimativa de ocorrência do placar.</p>

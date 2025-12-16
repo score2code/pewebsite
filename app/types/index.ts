@@ -146,10 +146,25 @@ export interface AnalysisStatsSeries {
   nv?: number[];
 }
 
+export interface AnalysisTacticalRaw {
+  possessionPct?: number[];
+  fieldTiltPct?: number[];
+  ppda?: number[];
+  pressuresFinalThird?: number[];
+  defensiveActions?: number[];
+  penaltyAreaEntries?: number[];
+  shotsBoxPct?: number[];
+  nvRaw?: number[];
+}
+
+export interface AnalysisStatsTeam extends AnalysisStatsSeries {
+  tacticalRaw?: AnalysisTacticalRaw;
+}
+
 export interface AnalysisStats {
   last20?: {
-    home?: AnalysisStatsSeries;
-    away?: AnalysisStatsSeries;
+    home?: AnalysisStatsTeam;
+    away?: AnalysisStatsTeam;
   };
 }
 
