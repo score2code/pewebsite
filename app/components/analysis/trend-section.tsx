@@ -14,7 +14,7 @@ export default function TrendSection({ trend }: { trend?: AnalysisTrend }) {
     awayVals?: Array<number | undefined>;
     unit: string;
   }) => {
-    const w = 260;
+    const w = 228;
     const h = 80;
     const padX = 8;
     const padY = 8;
@@ -80,7 +80,7 @@ export default function TrendSection({ trend }: { trend?: AnalysisTrend }) {
       </div>
       <div className="grid grid-cols-5 text-[11px] mt-1 items-center">
         <div className="flex items-center gap-2 leading-none">
-          <span className="inline-block w-2 h-2 rounded-full aspect-square bg-purple-600" /> <span>VISITANTE</span>
+          <span className="inline-block w-2 h-2 rounded-full aspect-square bg-purple-600" /> <span>VISITA</span>
         </div>
         {(awayVals || Array(homeVals.length).fill(undefined)).map((v, i) => {
           const fmt2 = (n: number) => (Math.round(n * 100) / 100).toFixed(2);
