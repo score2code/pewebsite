@@ -25,9 +25,9 @@ const PerformanceChart: React.FC<PerformanceChartProps> = ({ series, height = 20
   }, []);
 
   const maxValue = Math.max(100, ...series.map(s => s.value));
-  const barGap = 8; // px gap between bars
+  const barGap = 16; // px gap between bars
   const padding = 24;
-  const minBarWidth = 12;
+  const minBarWidth = 25;
   const n = series.length;
   const availableWidth = Math.max(0, containerWidth - padding * 2);
   const barWidthCandidate = n > 0 ? Math.floor((availableWidth - (n - 1) * barGap) / n) : minBarWidth;
@@ -95,7 +95,8 @@ const PerformanceChart: React.FC<PerformanceChartProps> = ({ series, height = 20
                 x={x + barWidth / 2}
                 y={height - 6}
                 textAnchor="middle"
-                className="fill-current text-xs text-dark-900/70 dark:text-light-100/70"
+                transform={fitsContainer ? undefined : `rotate(-45 ${x + barWidth / 2}, ${height - 6})`}
+                className="fill-current text-[10px] md:text-xs text-dark-900/70 dark:text-light-100/70"
               >
                 {s.label}
               </text>
