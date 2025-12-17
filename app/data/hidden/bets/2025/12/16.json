@@ -1,0 +1,47 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-16",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 1,
+    "odd": 40,
+    "return": 43.90,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-16",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 1,
+    "odd": 69.91,
+    "return": 76.80,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-16",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 1,
+    "odd": 3.05,
+    "return": 3.05,
+    "status": "red",
+    "marketing": true
+  }
+]

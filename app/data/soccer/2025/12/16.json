@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Chelsea superior em elenco e criação; favoritismo claro mesmo fora, sem necessidade de handicap."
+    "analysis": "Chelsea superior em elenco e criação; favoritismo claro mesmo fora, sem necessidade de handicap.",
+    "status": "green",
+    "reason": "Placar: 1 x 3"
   },
   {
     "id": "amsterdamsche-fc-x-nec-nijmegen",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "NEC com maior ritmo competitivo e qualidade técnica; diferença de divisão pesa pela vitória."
+    "analysis": "NEC com maior ritmo competitivo e qualidade técnica; diferença de divisão pesa pela vitória.",
+    "status": "green",
+    "reason": "Placar: 1 x 3"
   },
   {
     "id": "hsv-hoek-x-telstar",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Telstar acima tecnicamente e fisicamente; controle de jogo deve se traduzir em vitória."
+    "analysis": "Telstar acima tecnicamente e fisicamente; controle de jogo deve se traduzir em vitória.",
+    "status": "green",
+    "reason": "Placar: 1 x 4"
   },
   {
     "id": "den-bosch-x-vv-katwijk",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Den Bosch (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Den Bosch com elenco de divisão superior e mando; DNB reduz variância num jogo de copa."
+    "analysis": "Den Bosch com elenco de divisão superior e mando; DNB reduz variância num jogo de copa.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "blooming-x-bolivar-la-paz",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "Bolívar dominante nacionalmente e mais eficiente; expectativa de controle e vitória fora."
+    "analysis": "Bolívar dominante nacionalmente e mais eficiente; expectativa de controle e vitória fora.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "the-strongest-x-nacional-potosi",
