@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "City dominante em posse e criação; diferença técnica e mando apontam vitória sem handicap."
+    "analysis": "City dominante em posse e criação; diferença técnica e mando apontam vitória sem handicap.",
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "newcastle-x-fulham",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Newcastle mais intenso e eficiente em casa; volume ofensivo deve se impor."
+    "analysis": "Newcastle mais intenso e eficiente em casa; volume ofensivo deve se impor.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "top-oss-x-utrecht",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Utrecht com elenco e ritmo de primeira divisão; tendência clara de confirmar favoritismo."
+    "analysis": "Utrecht com elenco e ritmo de primeira divisão; tendência clara de confirmar favoritismo.",
+    "status": "green",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "feyenoord-rotterdam-x-heerenveen",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Feyenoord forte em casa, alta produção e controle; favoritismo sem necessidade de handicap."
+    "analysis": "Feyenoord forte em casa, alta produção e controle; favoritismo sem necessidade de handicap.",
+    "status": "red",
+    "reason": "Placar: 2 x 3"
   },
   {
     "id": "young-boys-x-grasshopper",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Young Boys com alta produção ofensiva; ritmo e bolas paradas sustentam 3+ gols no agregado."
+    "analysis": "Young Boys com alta produção ofensiva; ritmo e bolas paradas sustentam 3+ gols no agregado.",
+    "status": "green",
+    "reason": "Placar: 2 x 6"
   },
   {
     "id": "dundee-united-x-celtic",
@@ -74,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Celtic superior técnica e taticamente; controle de posse e fases defensivas estáveis apontam vitória."
+    "analysis": "Celtic superior técnica e taticamente; controle de posse e fases defensivas estáveis apontam vitória.",
+    "status": "red",
+    "reason": "Placar: 2 x 1"
   }
 ]

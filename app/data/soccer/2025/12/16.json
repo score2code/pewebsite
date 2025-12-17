@@ -79,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "The Strongest muito forte em casa e altitude; controle físico e técnico favorecem a vitória."
+    "analysis": "The Strongest muito forte em casa e altitude; controle físico e técnico favorecem a vitória.",
+    "status": "red",
+    "reason": "Placar: 1 x 2"
   }
 ]
