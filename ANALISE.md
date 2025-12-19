@@ -1,4 +1,4 @@
-Time: Flamengo
+Time: Başakşehir
 Data de Referência: Hoje
 
 **Instrução Principal:** **PESQUISE NA WEB** os resultados oficiais e estatísticas dos últimos 20 jogos do time informado. **Compile** um arquivo JSON de análise estatística baseada nesses **DADOS REAIS E HISTÓRICOS**.

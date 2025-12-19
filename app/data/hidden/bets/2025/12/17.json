@@ -19,7 +19,7 @@
     "stake": 0.50,
     "odd": 10.25,
     "return": 5.13,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -50,6 +50,21 @@
     "odd": 2.05,
     "return": 2.05,
     "status": "green",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-17",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"Copa do Brasil ",
+    "homeTeam":"Corinthians",
+    "awayTeam":"Vasco",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 2,
+    "return": 1,
+    "status": "red",
     "marketing": true
   }
 ]
