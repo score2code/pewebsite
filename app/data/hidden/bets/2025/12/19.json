@@ -79,7 +79,7 @@
     "stake": 0.50,
     "odd": 381105.65,
     "return": 304883.39,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -94,7 +94,7 @@
     "stake": 0.50,
     "odd": 1380.351,
     "return": 793.13,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -229,7 +229,7 @@
     "stake": 0.50,
     "odd": 55.89,
     "return": 31.24,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -244,7 +244,7 @@
     "stake": 0.50,
     "odd": 218.29,
     "return": 125.45,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -259,6 +259,36 @@
     "stake": 0.50,
     "odd": 153.29,
     "return": 85.78,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-19",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 160326.92,
+    "return": 124253.09,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-19",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"NBA",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 12.54,
+    "return": 6.85,
     "status": "pending",
     "marketing": true
   }

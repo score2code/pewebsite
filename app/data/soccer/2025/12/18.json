@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Confronto de alta qualidade ofensiva dos dois lados; transições e bolas paradas sugerem gols para ambos."
+    "analysis": "Confronto de alta qualidade ofensiva dos dois lados; transições e bolas paradas sugerem gols para ambos.",
+    "status": "red",
+    "reason": "Placar: 2 x 0"
   }
 ]

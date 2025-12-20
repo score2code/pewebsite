@@ -8,6 +8,7 @@
     "time": "16:00",
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
-    "status": "pending"
+    "status": "red",
+    "reason": "Placar: 2 x 0"
   }
 ]

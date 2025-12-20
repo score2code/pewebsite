@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Valencia (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Valencia mais consistente em casa; DNB reduz risco em duelo potencialmente truncado."
+    "analysis": "Valencia mais consistente em casa; DNB reduz risco em duelo potencialmente truncado.",
+    "status": "void",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "borussia-dortmund-x-borussia-monchengladbach",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Ritmo alto e vocação ofensiva; tendência de 3+ gols pelo volume de criação."
+    "analysis": "Ritmo alto e vocação ofensiva; tendência de 3+ gols pelo volume de criação.",
+    "status": "red",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "bologna-x-inter-de-milao",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Inter com maior qualidade coletiva e profundidade; controle de fases deve se refletir em vitória."
+    "analysis": "Inter com maior qualidade coletiva e profundidade; controle de fases deve se refletir em vitória.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "beroe-stara-zagora-x-ludogorets-razgrad",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "Ludogorets dominante nacionalmente; superioridade técnica e tática sustentam vitória fora."
+    "analysis": "Ludogorets dominante nacionalmente; superioridade técnica e tática sustentam vitória fora.",
+    "status": "green",
+    "reason": "Placar: 0 x 4"
   },
   {
     "id": "sporting-charleroi-x-genk",
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Dupla Chance: Genk ou Empate",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Genk mais organizado e eficiente; X2 mantém valor e reduz variância fora de casa."
+    "analysis": "Genk mais organizado e eficiente; X2 mantém valor e reduz variância fora de casa.",
+    "status": "green",
+    "reason": "Placar: 2 x 2"
   }
 ]
