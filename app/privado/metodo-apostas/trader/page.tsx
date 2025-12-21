@@ -65,7 +65,7 @@ export default function MetodoTraderPrivadoPage() {
                 <ul className="list-disc ml-5 text-dark-900/90 dark:text-light-100/90 space-y-1">
                   <li>Janela: 45' - 65' (empate 0x0 ou 1x1)</li>
                   <li>Saída: Imediata após o primeiro gol</li>
-                  <li>Critério: Favorito com >60% posse</li>
+                  <li>Critério: Favorito com &gt;60% posse</li>
                 </ul>
               </div>
               <div className="rounded-lg border border-light-300 dark:border-dark-600 p-4">
@@ -96,7 +96,7 @@ export default function MetodoTraderPrivadoPage() {
               <li>Proibido "All-in" (Máximo 2 stakes por jogo)</li>
               <li>Em caso de Red, não dobrar a próxima entrada</li>
               <li>Aceitar o lucro de centavos (Juros compostos são a chave)</li>
-              <li>Priorizar jogos com liquidez > R$ 100k</li>
+              <li>Priorizar jogos com liquidez &gt; R$ 100k</li>
             </ul>
           </section>
         </div>
