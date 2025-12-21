@@ -94,7 +94,7 @@
     "stake": 0.50,
     "odd": 124.67,
     "return": 74.71,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -227,8 +227,8 @@
     "awayTeam":"-",
     "prediction": ["-"],
     "stake": 0.50,
-    "odd": 44.30,
-    "return": 24.75,
+    "odd": 36.615,
+    "return": 20.44,
     "status": "pending",
     "marketing": true
   },
@@ -289,7 +289,7 @@
     "stake": 0.50,
     "odd": 48.19,
     "return": 26.93,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -319,7 +319,7 @@
     "stake": 0.50,
     "odd": 11.41,
     "return": 6.33,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {

@@ -56,7 +56,7 @@
     "stake": 0.50,
     "odd": 353.55,
     "return": 197.93,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -71,7 +71,7 @@
     "stake": 0.50,
     "odd": 22652.05,
     "return": 16422.52,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   }
 ]
