@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Fulham (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Fulham mais consistente em casa e com melhor criação; DNB reduz risco em confronto ajustado."
+    "analysis": "Fulham mais consistente em casa e com melhor criação; DNB reduz risco em confronto ajustado.",
+    "status": "green",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "athletic-bilbao-x-espanyol",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Bilbao forte no mando e eficiente em bolas paradas; superioridade deve se refletir na vitória."
+    "analysis": "Bilbao forte no mando e eficiente em bolas paradas; superioridade deve se refletir na vitória.",
+    "status": "red",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "panserraikos-x-levadiakos",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Dupla Chance: Levadiakos ou Empate",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Jogo equilibrado; Levadiakos com leve vantagem recente e X2 protege contra variância."
+    "analysis": "Jogo equilibrado; Levadiakos com leve vantagem recente e X2 protege contra variância.",
+    "status": "green",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "egito-x-zimbabwe",
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "Egito com maior qualidade e profundidade; controle de jogo deve resultar em vitória."
+    "analysis": "Egito com maior qualidade e profundidade; controle de jogo deve resultar em vitória.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   }
 ]
