@@ -11,7 +11,52 @@
     "stake": 0.70,
     "odd": 3.03,
     "return": 2.13,
+    "status": "green",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-21",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.63,
+    "odd": 50.73,
+    "return": 35.09,
     "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-21",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 39.84,
+    "return": 19.92,
+    "status": "red",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-21",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 100,
+    "return": 50,
+    "status": "red",
     "marketing": true
   }
 ]

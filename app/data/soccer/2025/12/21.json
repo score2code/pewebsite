@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Aston Villa (DNB)",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Villa intenso e eficiente no mando; DNB reduz variância em confronto equilibrado."
+    "analysis": "Villa intenso e eficiente no mando; DNB reduz variância em confronto equilibrado.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "girona-x-atletico-madrid",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Atleti sólido defensivamente e eficaz em transições; leve favoritismo fora."
+    "analysis": "Atleti sólido defensivamente e eficaz em transições; leve favoritismo fora.",
+    "status": "green",
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "betis-x-getafe",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Betis com maior posse e criação; mando e momento favorecem vitória."
+    "analysis": "Betis com maior posse e criação; mando e momento favorecem vitória.",
+    "status": "green",
+    "reason": "Placar: 4 x 0"
   },
   {
     "id": "mainz-x-st-pauli",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Duas equipes com tendências ofensivas e transições constantes; probabilidade de gols dos dois lados."
+    "analysis": "Duas equipes com tendências ofensivas e transições constantes; probabilidade de gols dos dois lados.",
+    "status": "red",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "heidenheim-x-bayern-munich",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "Bayern dominante em posse e criação; diferença técnica sustenta vitória."
+    "analysis": "Bayern dominante em posse e criação; diferença técnica sustenta vitória.",
+    "status": "green",
+    "reason": "Placar: 0 x 4"
   },
   {
     "id": "utrecht-x-psv-eindhoven",
@@ -74,8 +79,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "PSV superior em criação e finalização; tendência de confirmar favoritismo fora."
+    "analysis": "PSV superior em criação e finalização; tendência de confirmar favoritismo fora.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "feyenoord-rotterdam-x-twente",
@@ -87,8 +93,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Feyenoord forte no mando e com alto volume; favoritismo claro em casa."
+    "analysis": "Feyenoord forte no mando e com alto volume; favoritismo claro em casa.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "fortuna-sittard-x-az-alkmaar",
@@ -100,8 +107,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "AZ com qualidade superior e melhor fase; projeção de vitória sem handicap."
+    "analysis": "AZ com qualidade superior e melhor fase; projeção de vitória sem handicap.",
+    "status": "red",
+    "reason": "Placar: 4 x 3"
   },
   {
     "id": "club-brugge-x-gent",
@@ -113,8 +121,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Brugge com maior organização e elenco; mando favorece controle e vitória."
+    "analysis": "Brugge com maior organização e elenco; mando favorece controle e vitória.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "sint-truiden-x-mechelen",
@@ -126,8 +135,9 @@
     "timezone": "UTC",
     "prediction": "Dupla Chance: Sint-Truiden ou Empate",
     "confidence": 71,
-    "status": "pending",
-    "analysis": "Confronto equilibrado com leve vantagem do mando; X2 reduz variância mantendo valor."
+    "analysis": "Confronto equilibrado com leve vantagem do mando; X2 reduz variância mantendo valor.",
+    "status": "green",
+    "reason": "Placar: 1 x 0"
   },
   {
     "id": "aek-atenas-x-ofi-crete",
@@ -139,8 +149,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "AEK consistente em casa e com maior qualidade; favoritismo sem necessidade de handicap."
+    "analysis": "AEK consistente em casa e com maior qualidade; favoritismo sem necessidade de handicap.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "paok-thessaloniki-x-panathinaikos",
@@ -152,7 +163,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: PAOK (DNB)",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Clássico ajustado; PAOK com mando forte e solidez defensiva, DNB protege contra empate."
+    "analysis": "Clássico ajustado; PAOK com mando forte e solidez defensiva, DNB protege contra empate.",
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   }
 ]
