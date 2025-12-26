@@ -124,7 +124,7 @@
     "stake": 0.50,
     "odd": 5.05,
     "return": 2.63,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -139,7 +139,7 @@
     "stake": 0.50,
     "odd": 2.08,
     "return": 1.04,
-    "status": "pending",
+    "status": "green",
     "marketing": true
   },
   {
@@ -229,7 +229,7 @@
     "stake": 0.50,
     "odd": 36.615,
     "return": 20.44,
-    "status": "pending",
+    "status": "green",
     "marketing": true
   },
   {
@@ -304,7 +304,7 @@
     "stake": 0.50,
     "odd": 8.22,
     "return": 4.47,
-    "status": "pending",
+    "status": "green",
     "marketing": true
   },
   {
@@ -349,7 +349,7 @@
     "stake": 0.50,
     "odd": 7.87,
     "return": 4.11,
-    "status": "pending",
+    "status": "green",
     "marketing": true
   },
   {

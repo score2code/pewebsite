@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Argélia com maior qualidade técnica e organização; mando e profundidade de elenco sustentam vitória."
+    "analysis": "Argélia com maior qualidade técnica e organização; mando e profundidade de elenco sustentam vitória.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "costa-do-marfim-x-mocambique",
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Costa do Marfim (DNB)",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Costa do Marfim superior em físico e técnica; DNB reduz variância típica de amistosos com rotações."
+    "analysis": "Costa do Marfim superior em físico e técnica; DNB reduz variância típica de amistosos com rotações.",
+    "status": "green",
+    "reason": "Placar: 1 x 0"
   }
 ]

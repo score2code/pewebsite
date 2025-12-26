@@ -1,0 +1,10 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 5,
+    "date": "2025-12-26",
+    "affectsInitial": false,
+    "note": "Apostas gratis de sexta-feira"
+  }
+]

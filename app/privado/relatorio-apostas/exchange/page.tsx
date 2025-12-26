@@ -77,7 +77,7 @@ async function loadLive(): Promise<BetRow[]> {
 
 export default async function RelatorioExchangePrivadoPage() {
   const bets = await loadLive();
-  const initialBankroll = 21.58 + 20;
+  const initialBankroll = 20.04;
 
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">

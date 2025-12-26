@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "Arsenal dominante em posse e criação; controle do jogo e elenco superior sugerem vitória em casa."
+    "analysis": "Arsenal dominante em posse e criação; controle do jogo e elenco superior sugerem vitória em casa.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "nigeria-x-tanzania",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Nigéria (DNB)",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Nigéria com elenco e físico superiores; DNB preserva valor em amistoso com possíveis rotações."
+    "analysis": "Nigéria com elenco e físico superiores; DNB preserva valor em amistoso com possíveis rotações.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "senegal-x-botsuana",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Senegal com superioridade técnica e organização; tendência forte de vitória no mando."
+    "analysis": "Senegal com superioridade técnica e organização; tendência forte de vitória no mando.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "tunisia-x-uganda",
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Tunísia mais sólida taticamente e com melhor controle; favoritismo claro sem necessidade de handicap."
+    "analysis": "Tunísia mais sólida taticamente e com melhor controle; favoritismo claro sem necessidade de handicap.",
+    "status": "green",
+    "reason": "Placar: 3 x 1"
   }
 ]
