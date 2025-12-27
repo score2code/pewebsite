@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Manchester United (DNB)",
     "confidence": 74,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 0",
     "analysis": "United com mando forte e maior controle territorial. Newcastle oferece transições perigosas, mas o DNB preserva valor ao reduzir a variância em jogo grande, mantendo confiança acima de 70 sem recorrer a handicap ou under."
   }
 ]

@@ -8,6 +8,7 @@
     "time": "17:00",
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Manchester United (DNB)",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 1 x 0"
   }
 ]
