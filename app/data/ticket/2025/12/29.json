@@ -1,0 +1,24 @@
+[
+  {
+    "id": "as-roma-x-genoa",
+    "league": "Itália - Serie A",
+    "homeTeam": "AS Roma",
+    "awayTeam": "Genoa",
+    "date": "2025-12-29",
+    "time": "16:45",
+    "timezone": "UTC",
+    "prediction": "Vitória: AS Roma",
+    "status": "pending"
+  },
+  {
+    "id": "porto-x-avs",
+    "league": "Portugal - Liga Portugal",
+    "homeTeam": "Porto",
+    "awayTeam": "AVS",
+    "date": "2025-12-29",
+    "time": "17:15",
+    "timezone": "UTC",
+    "prediction": "Porto Vence e Mais de 1.5 Gols",
+    "status": "pending"
+  }
+]

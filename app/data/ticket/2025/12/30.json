@@ -1,0 +1,24 @@
+[
+  {
+    "id": "burnley-x-newcastle",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Burnley",
+    "awayTeam": "Newcastle",
+    "date": "2025-12-30",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Vencedor: Newcastle",
+    "status": "pending"
+  },
+  {
+    "id": "man-united-x-wolves",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester United",
+    "awayTeam": "Wolverhampton",
+    "date": "2025-12-30",
+    "time": "17:15",
+    "timezone": "UTC",
+    "prediction": "Gols: Manchester United - Mais de 1.5",
+    "status": "pending"
+  }
+]
