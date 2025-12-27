@@ -23,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "Liverpool com alta pressão e controle territorial em casa; superioridade técnica e momento favorecem vitória direta."
   },
   {
@@ -36,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 72,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 1",
     "analysis": "West Ham forte em bolas paradas e Fulham eficiente em transições; cenário de chances claras para ambos os lados."
   },
   {
@@ -49,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 77,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "Arsenal dominante em posse e criação; qualidade coletiva e mando apontam para vitória sem recorrer a handicap."
   },
   {
@@ -62,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Dupla Chance: Everton ou Empate",
     "confidence": 72,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 0",
     "analysis": "Everton mais estável defensivamente e com melhor conversão recente; X2 reduz variância em jogo físico e ajustado."
   },
   {
@@ -75,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 72,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 1",
     "analysis": "Duas equipes com proposta ofensiva e transições rápidas; tendência de jogo aberto para 3+ gols sem recorrer a under."
   },
   {
@@ -88,7 +93,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Chelsea (DNB)",
     "confidence": 73,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 2",
     "analysis": "Chelsea com maior controle territorial no mando; DNB preserva valor diante de um Villa competitivo, evitando exposição desnecessária."
   },
   {
@@ -101,7 +107,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 76,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 2",
     "analysis": "Juventus superior técnica e taticamente; profundidade de elenco e experiência em jogos de copa sustentam favoritismo fora de casa."
   }
 ]

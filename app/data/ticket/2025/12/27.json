@@ -8,7 +8,8 @@
     "time": "12:00",
     "timezone": "UTC",
     "prediction": "Dupla Chance: Everton ou Empate",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "pisa-x-juventus",
@@ -19,6 +20,7 @@
     "time": "16:45",
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 0 x 2"
   }
 ]
