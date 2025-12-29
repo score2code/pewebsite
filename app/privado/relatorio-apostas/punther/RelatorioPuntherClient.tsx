@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 
 type BetRow = {
   date: string;
-  bingo?: boolean;
+  model?: 'punther' | 'volume' | 'leverage';
   league?: string;
   homeTeam?: string;
   awayTeam?: string;
@@ -13,8 +13,6 @@ type BetRow = {
   odd?: number;
   prediction?: string | string[];
   return?: number;
-  tipster?: string;
-  marketing?: boolean;
   status?: 'green' | 'red' | 'void' | 'pending' | 'postponed' | 'cashout';
   type?: 'bet' | 'transaction';
   kind?: 'deposit' | 'withdraw' | 'withdrawal';
@@ -75,31 +73,19 @@ function formatPredictions(pred?: string | string[]): string {
 export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: BetRow[]; initialBankroll: number }) {
   const searchParams = useSearchParams();
   const selectedDate = searchParams.get('date') || '';
-  const selectedTipster = searchParams.get('tipster') || '';
-  const selectedMarketing = searchParams.get('marketing') || '';
   const selectedType = searchParams.get('type') || '';
 
   const normalizedBets = useMemo(() => {
     return bets as BetRow[];
   }, [bets]);
 
-  const tipsterOptions = useMemo(() => {
-    return Array.from(new Set(bets.map(b => b.tipster).filter((t): t is string => Boolean(t)))).sort();
-  }, [bets]);
-
   const filteredBets = useMemo(() => {
     let result = selectedDate ? normalizedBets.filter(b => b.date === selectedDate) : normalizedBets;
-    result = selectedTipster ? result.filter(b => (b.tipster || '') === selectedTipster) : result;
-    if (selectedMarketing === 'true') {
-      result = result.filter(b => Boolean(b.marketing));
-    } else if (selectedMarketing === 'false') {
-      result = result.filter(b => !Boolean(b.marketing));
-    }
     if (selectedType === 'transaction') {
       result = result.filter(b => b.type === 'transaction');
     }
     return result;
-  }, [normalizedBets, selectedDate, selectedTipster, selectedMarketing, selectedType]);
+  }, [normalizedBets, selectedDate, selectedType]);
 
   const sortedBets = useMemo(() => {
     return [...filteredBets].reverse();
@@ -203,23 +189,6 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
                 <input id="date" name="date" type="date" defaultValue={selectedDate} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1 w-full" />
               </div>
               <div className="flex flex-col gap-1">
-                <label htmlFor="tipster" className="text-sm">Tipster</label>
-                <select id="tipster" name="tipster" defaultValue={selectedTipster} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1 w-full">
-                  <option value="">Todos</option>
-                  {tipsterOptions.map((t) => (
-                    <option key={t} value={t}>{t}</option>
-                  ))}
-                </select>
-              </div>
-              <div className="flex flex-col gap-1">
-                <label htmlFor="marketing" className="text-sm">Marketing</label>
-                <select id="marketing" name="marketing" defaultValue={selectedMarketing} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1 w-full">
-                  <option value="">Todos</option>
-                  <option value="true">Sim</option>
-                  <option value="false">Não</option>
-                </select>
-              </div>
-              <div className="flex flex-col gap-1">
                 <label htmlFor="type" className="text-sm">Tipo</label>
                 <select id="type" name="type" defaultValue={selectedType} className="text-sm bg-light-100 dark:bg-dark-800 border border-light-300 dark:border-dark-600 rounded px-2 py-1 w-full">
                   <option value="bet">Apostas</option>
@@ -260,7 +229,6 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
                 <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
                   <div className="text-dark-900/70 dark:text-light-100/70">ODD: {Number(b.odd).toFixed(2)}</div>
                   <div className="text-dark-900/70 dark:text-light-100/70">Valor: {formatCurrencyBRL(Number(b.stake) || 0)}</div>
-                  <div className="text-dark-900/70 dark:text-light-100/70 col-span-2 truncate">Tipster: {b.tipster || '—'}</div>
                   <div className="text-dark-900/70 dark:text-light-100/70 col-span-2 truncate">Palpites: {formatPredictions(b.prediction)}</div>
                 </div>
                 <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
@@ -330,12 +298,11 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
               <tr>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Data</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Campeonato</th>
-                <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Tipster</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Casa</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Visitante</th>
-                <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Valor apostado</th>
+                <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Valor</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">ODD</th>
-                <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Palpites</th>
+                <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Método</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Lucro(R$)</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Resultado</th>
               </tr>
@@ -348,7 +315,6 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
                 return (
                   <tr key={i} className={`border-t border-light-300 dark:border-dark-600 ${rowTint}`}>
                     <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{formatDateBR(b.date)}</td>
-                    <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">—</td>
                     <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">—</td>
                     <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">—</td>
                     <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">—</td>
@@ -374,11 +340,12 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
                 : netReturn < 0
                 ? 'text-red-700 dark:text-red-400'
                 : 'text-dark-900/70 dark:text-light-100/70';
+
+              const rowTint2 = b.model === 'leverage' ? 'bg-indigo-50 dark:bg-indigo-900/10' : b.model === 'volume' ? 'bg-orange-50 dark:bg-orange-900/10' : '';
               return (
-                <tr key={i} className="border-t border-light-300 dark:border-dark-600">
+                <tr key={i} className={`border-t border-light-300 dark:border-dark-600 ${rowTint2}`}>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{formatDateBR(b.date)}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.league}</td>
-                  <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.tipster || '—'}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.homeTeam}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.awayTeam}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{formatCurrencyBRL(Number(b.stake) || 0)}</td>

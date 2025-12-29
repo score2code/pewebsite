@@ -6,7 +6,7 @@ import RelatorioPuntherClient from './RelatorioPuntherClient';
 
 type BetRow = {
   date: string;
-  bingo?: boolean;
+  model?: 'punther' | 'volume' | 'leverage';
   league?: string;
   homeTeam?: string;
   awayTeam?: string;
@@ -14,8 +14,6 @@ type BetRow = {
   odd?: number;
   prediction?: string | string[];
   return?: number;
-  tipster?: string;
-  marketing?: boolean;
   status?: 'green' | 'red' | 'void' | 'pending' | 'postponed' | 'cashout';
   type?: 'bet' | 'transaction';
   kind?: 'deposit' | 'withdraw' | 'withdrawal';
@@ -80,7 +78,7 @@ async function loadBets(): Promise<BetRow[]> {
 
 export default async function RelatorioCasaPrivadoPage() {
   const bets = await loadBets();
-  const initialBankroll = 325.74;
+  const initialBankroll = 0;
 
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">

@@ -22,8 +22,8 @@ type BetRow = {
 };
 
 export const metadata: Metadata = {
-  title: 'Relatório Exchange (Privado)',
-  description: 'Relatório baseado em registros de operações exchange (live).',
+  title: 'Relatório Trader (Privado)',
+  description: 'Relatório baseado em registros de operações trader.',
   robots: { index: false, follow: false },
 };
 

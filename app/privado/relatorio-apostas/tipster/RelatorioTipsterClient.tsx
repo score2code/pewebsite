@@ -120,7 +120,7 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
   return (
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
       <div className="mb-4">
-        <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Tabela de Apostas</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Tabela dos Tipsters</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
           <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
             <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />

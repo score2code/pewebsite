@@ -103,8 +103,7 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
     : totalReturn < 0
     ? 'text-red-700 dark:text-red-400'
     : 'text-dark-900/70 dark:text-light-100/70';
-  const MIN_WAGE_BR = 1518;
-  const goal = MIN_WAGE_BR - currentBankroll;
+  const goal = currentBankroll + (currentBankroll * (10 / 100));
   const currentClass = currentBankroll > initialBankroll
     ? 'text-green-700 dark:text-green-400'
     : currentBankroll < initialBankroll
@@ -155,7 +154,7 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
           <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
             <Target size={16} className={`${goal > 0 ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400'}`} />
             <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta restante (R$)</div>
+              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta (R$)</div>
               <div className={`font-bold ${goalClass}`}>{formatCurrencyBRL(goal)}</div>
             </div>
           </div>
@@ -228,7 +227,7 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
                 <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
                   <div className="text-dark-900/70 dark:text-light-100/70">ODD: {Number(b.odd).toFixed(2)}</div>
                   <div className="text-dark-900/70 dark:text-light-100/70">Valor: {formatCurrencyBRL(Number(b.stake) || 0)}</div>
-                  <div className="text-dark-900/70 dark:text-light-100/70 col-span-2 truncate">Palpites: {formatPredictions(b.prediction)}</div>
+                  <div className="text-dark-900/70 dark:text-light-100/70 col-span-2 truncate">Método: {formatPredictions(b.prediction)}</div>
                 </div>
                 <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
                   <div className={`${returnClass}`}>Retorno: {formatCurrencyBRL(netReturn)}</div>
@@ -299,9 +298,9 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Campeonato</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Casa</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Visitante</th>
-                <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Valor apostado</th>
+                <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Valor</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">ODD</th>
-                <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Palpites</th>
+                <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Método</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Lucro(R$)</th>
                 <th className="px-3 py-2 text-left text-sm font-semibold text-dark-900 dark:text-light-100">Resultado</th>
               </tr>
