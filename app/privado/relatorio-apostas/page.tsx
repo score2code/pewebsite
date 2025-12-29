@@ -4,14 +4,16 @@ import Breadcrumb from '@/app/components/ui/breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Relatórios (Privado)',
-  description: 'Escolha entre Casa de Apostas e Exchange',
+  description: 'Escolha o relatório que deseja visualizar.',
   robots: { index: false, follow: false },
 };
 
 export default function RelatoriosIndexPrivadoPage() {
   const reports = [
-    { href: '/privado/relatorio-apostas/casa', title: 'Casa de Apostas', description: 'Relatório com dados de bets/**' },
-    { href: '/privado/relatorio-apostas/exchange', title: 'Exchange', description: 'Relatório com dados de live/**' },
+    { href: '/privado/relatorio-apostas/punther', title: 'Punther', description: 'Relatório com dados de punther/**' },
+    { href: '/privado/relatorio-apostas/trader', title: 'Trader', description: 'Relatório com dados de trader/**' },
+    { href: '/privado/relatorio-apostas/analise', title: 'Análises', description: 'Relatório com dados de analysis/**' },
+    { href: '/privado/relatorio-apostas/tipster', title: 'Tipster', description: 'Relatório com dados de tipster/**' },
   ];
 
   return (

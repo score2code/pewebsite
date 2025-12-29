@@ -1,0 +1,11 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-01",
+    "analysis": 30,
+    "stake": 1,
+    "odd": 1.40,
+    "return": 1.40,
+    "status": "pending"
+  }
+]

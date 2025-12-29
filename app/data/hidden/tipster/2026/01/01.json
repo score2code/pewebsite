@@ -1,0 +1,11 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-01",
+    "tipster": "Yuri Tips",
+    "stake": 0.50,
+    "odd": 2,
+    "return": 2.30,
+    "status": "pending"
+  }
+]
