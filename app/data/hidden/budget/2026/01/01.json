@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2025-12-27",
+    "item": "HBO Max",
+    "value": 8.90,
+    "status": "green"
+  },
+  {
+    "date": "2026-01-14",
+    "item": "Delay Ball",
+    "value": 40,
+    "status": "pending"
+  },
+  {
+    "date": "2026-01-02",
+    "item": "Trader",
+    "value": 40,
+    "status": "pending"
+  },
+  {
+    "date": "2026-01-02",
+    "item": "Análises",
+    "value": 20,
+    "status": "pending"
+  },
+  {
+    "date": "2026-01-02",
+    "item": "Marketing",
+    "value": 40,
+    "status": "pending"
+  },
+  {
+    "date": "2026-01-02",
+    "item": "Volume e Alavancagem",
+    "value": 30,
+    "status": "pending"
+  }
+]

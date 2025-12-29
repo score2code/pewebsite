@@ -1,0 +1,17 @@
+[
+  {
+    "type": "bet",
+    "date": "2025-12-29",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.75,
+    "odd": 90.39,
+    "return": 77.85,
+    "status": "pending",
+    "marketing": true
+  }
+]
