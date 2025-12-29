@@ -23,8 +23,8 @@ type BetRow = {
 };
 
 export const metadata: Metadata = {
-  title: 'Relatório Casa de Apostas (Privado)',
-  description: 'Relatório baseado em registros de casas de apostas (bets).',
+  title: 'Relatório Punther (Privado)',
+  description: 'Relatório baseado em registros de punther.',
   robots: { index: false, follow: false },
 };
 

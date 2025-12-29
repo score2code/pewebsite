@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 
 export default function RelatoriosIndexPrivadoPage() {
   const reports = [
-    { href: '/privado/relatorio-apostas/orcamento', title: 'Orçamento', description: 'Relatório com dados de budget/**' },
-    { href: '/privado/relatorio-apostas/punther', title: 'Punther', description: 'Relatório com dados de punther/**' },
-    { href: '/privado/relatorio-apostas/trader', title: 'Trader', description: 'Relatório com dados de trader/**' },
-    { href: '/privado/relatorio-apostas/analise', title: 'Análises', description: 'Relatório com dados de analysis/**' },
-    { href: '/privado/relatorio-apostas/tipster', title: 'Tipster', description: 'Relatório com dados de tipster/**' },
+    { href: '/privado/relatorios/orcamento', title: 'Orçamento', description: 'Relatório com dados de budget/**' },
+    { href: '/privado/relatorios/punther', title: 'Punther', description: 'Relatório com dados de punther/**' },
+    { href: '/privado/relatorios/trader', title: 'Trader', description: 'Relatório com dados de trader/**' },
+    { href: '/privado/relatorios/analise', title: 'Análises', description: 'Relatório com dados de analysis/**' },
+    { href: '/privado/relatorios/tipster', title: 'Tipster', description: 'Relatório com dados de tipster/**' },
   ];
 
   return (

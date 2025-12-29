@@ -12,18 +12,18 @@ export const metadata: Metadata = {
 export default function PrivadoIndexPage() {
   const pages = [
     {
-      href: '/privado/metodo-apostas',
-      title: 'Métodos de Apostas',
-      description: 'Rollover, Trader e Salary; com Backlog.'
+      href: '/privado/metodos',
+      title: 'Métodos',
+      description: 'Rollover, Trader e Punther.'
     },
     {
-      href: '/privado/backlog',
-      title: 'Backlog',
+      href: '/privado/planejamento',
+      title: 'Planejamento',
       description: 'Lista para seleção de jogos por data e recomendações.'
     },
     {
-      href: '/privado/relatorio-apostas',
-      title: 'Relatório de Apostas',
+      href: '/privado/relatorios',
+      title: 'Relatórios',
       description: 'Tabela com volume, lucro e filtros.'
     },
   ];

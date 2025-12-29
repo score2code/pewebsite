@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 export default function MetodoApostasIndexPage() {
   const methods = [
-    { href: '/privado/metodo-apostas/rollover', title: 'Rollover', description: 'Plano semanal focado em volume.' },
-    { href: '/privado/metodo-apostas/trader', title: 'Trader', description: 'Gestão ativa e operações por mercado.' },
-    { href: '/privado/metodo-apostas/salary', title: 'Salary', description: 'Meta mensal baseada em salário.' },
+    { href: '/privado/metodos/rollover', title: 'Rollover', description: 'Plano semanal focado em volume.' },
+    { href: '/privado/metodos/trader', title: 'Trader', description: 'Gestão ativa e operações por mercado.' },
+    { href: '/privado/metodos/punther', title: 'Punther', description: 'Meta mensal baseada em punther.' },
   ];
 
   return (

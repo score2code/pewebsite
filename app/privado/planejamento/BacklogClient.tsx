@@ -8,8 +8,7 @@ type GameItem = {
   league: string;
   homeTeam: string;
   awayTeam: string;
-  market: string;
-  odds: number;
+  market: { type: string; method: string }[];
   recommended?: boolean;
   live?: boolean;
   time?: string;
@@ -45,7 +44,7 @@ export default function BacklogClient({ games }: { games: GameItem[] }) {
   return (
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
       <div className="mb-4">
-        <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Backlog</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Planejamento</h2>
         <form method="GET" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
           <div className="flex flex-col">
             <label htmlFor="date" className="text-sm flex items-center gap-1"><CalendarDays size={14} /> Data</label>
@@ -68,13 +67,7 @@ export default function BacklogClient({ games }: { games: GameItem[] }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {filtered.map((g, i) => {
           const isRecommended = Boolean(g.recommended);
-          const isLive = Boolean(g.live);
-          const badgeClass = isLive
-            ? 'text-blue-700 dark:text-blue-400'
-            : (isRecommended ? 'text-green-700 dark:text-green-400' : 'text-dark-900/70 dark:text-light-100/70');
-          const cardClass = isLive
-            ? 'border-blue-200 dark:border-blue-700'
-            : (isRecommended ? 'border-green-200 dark:border-green-700' : 'border-light-300 dark:border-dark-600');
+          const cardClass = isRecommended ? 'border-green-200 dark:border-green-700' : 'border-light-300 dark:border-dark-600';
           return (
             <div key={`${g.date}-${g.league}-${g.homeTeam}-${g.awayTeam}-${i}`} className={`rounded-lg border ${cardClass} bg-light-100/50 dark:bg-dark-800/50 p-4`}>
               <div className="flex items-baseline gap-2">
@@ -82,12 +75,17 @@ export default function BacklogClient({ games }: { games: GameItem[] }) {
                 <div className="text-xs text-dark-900/70 dark:text-light-100/70 flex-1 min-w-0 overflow-hidden text-right truncate">{g.league}</div>
               </div>
               <div className="mt-1 text-dark-900 dark:text-light-100 font-semibold">{g.homeTeam} × {g.awayTeam}</div>
-              <div className="mt-2 flex items-center justify-between text-sm">
-                <div className="inline-flex items-center gap-1">
-                  <BadgeCheck size={14} className={badgeClass} />
-                  <span className={badgeClass}>{g.market}</span>
-                </div>
-                <div className="font-bold">{g.odds.toFixed(2)}</div>
+              <div className="mt-2 flex flex-col text-sm">
+                {[...g.market].map((item: { type: string; method: string }, index: number) => {
+                  const isTrader = Boolean(item.type === 'trader');
+                  const badgeClass = isTrader ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400';
+                  return (
+                    <div className="inline-flex items-center">
+                      <BadgeCheck size={14} className={badgeClass} />
+                      <span className={`${badgeClass}`}><strong className="ml-1 text-dark-900/70 dark:text-light-100/70">Plano {index + 1}:</strong> {item.method}</span>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           );

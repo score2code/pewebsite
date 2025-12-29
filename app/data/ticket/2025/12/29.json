@@ -8,7 +8,8 @@
     "time": "16:45",
     "timezone": "UTC",
     "prediction": "Vitória: AS Roma",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "porto-x-avs",
@@ -19,6 +20,7 @@
     "time": "17:15",
     "timezone": "UTC",
     "prediction": "Porto Vence e Mais de 1.5 Gols",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   }
 ]

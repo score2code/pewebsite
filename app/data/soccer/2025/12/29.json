@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Vitória: AS Roma",
     "confidence": 84,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 1",
     "analysis": "A Roma no Olímpico mantém um domínio posicional forte contra equipes da metade inferior da tabela. O Genoa apresenta dificuldades defensivas em transições rápidas fora de casa."
   },
   {
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Porto Vence e Mais de 1.5 Gols",
     "confidence": 91,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 0",
     "analysis": "Diferença técnica abismal entre os elencos. O Porto jogando no Dragão costuma imprimir um ritmo forte desde o início, e o AVS raramente segura clean sheets contra os 'três grandes'."
   },
   {
@@ -35,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Vitória: Leicester",
     "confidence": 82,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "O Leicester possui um elenco de nível superior para a divisão e um aproveitamento doméstico muito alto. O Derby sofre com a falta de profundidade de elenco em períodos de jogos seguidos."
   },
   {
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Ambas Marcam: Sim",
     "confidence": 78,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 2",
     "analysis": "Duelo de equipes ofensivas. O Ipswich mantém um estilo vertical independente de onde joga, enquanto o Coventry tem marcado consistentemente em casa, mas cede espaços em contra-ataques."
   },
   {
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Mais de 2.5 Gols",
     "confidence": 85,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "O Peterborough tem o ataque mais prolífico da League One em casa, mas uma defesa instável. Historicamente, os jogos contra o Reading são abertos e com muitas chances criadas."
   },
   {
@@ -74,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Chance Dupla: Wrexham ou Empate",
     "confidence": 80,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "O Wrexham transformou seu estádio em uma fortaleza. Mesmo contra um Preston sólido, a energia da torcida e a organização defensiva em casa garantem alta probabilidade de pontuar."
   },
   {
@@ -87,7 +93,8 @@
     "timezone": "UTC",
     "prediction": "Vitória: Luton Town",
     "confidence": 77,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 0",
     "analysis": "O Luton está em uma fase de recuperação e possui um físico muito superior para os padrões da League One. O Leyton Orient tem dificuldades crônicas em bolas paradas defensivas."
   },
   {
@@ -100,7 +107,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Middlesbrough",
     "confidence": 75,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 1",
     "analysis": "O Boro é taticamente mais organizado que o Hull. O mercado DNB protege o investimento caso o Hull consiga um empate fortuito em um jogo de muita posse de bola dos mandantes."
   },
   {
@@ -113,7 +121,8 @@
     "timezone": "UTC",
     "prediction": "Chance Dupla: Sheffield United ou Empate",
     "confidence": 79,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 2",
     "analysis": "O Sheffield United briga pelo topo e possui uma das melhores defesas da liga. O Stoke é irregular e terá dificuldades de furar o bloqueio dos visitantes."
   },
   {
@@ -126,7 +135,8 @@
     "timezone": "UTC",
     "prediction": "Ambas Marcam: Sim",
     "confidence": 74,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 1",
     "analysis": "Jogo de alto nível técnico para a Championship. Ambas as equipes priorizam o ataque e possuem finalizadores eficientes, tornando o mercado de gols em ambas as redes muito provável."
   },
   {
@@ -139,7 +149,8 @@
     "timezone": "UTC",
     "prediction": "Vitória: West Brom",
     "confidence": 72,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "West Brom é extremamente sólido defensivamente em casa. O QPR luta contra o rebaixamento e apresenta um ataque pouco criativo para superar a linha de quatro do Albion."
   },
   {
@@ -152,7 +163,8 @@
     "timezone": "UTC",
     "prediction": "Mais de 1.5 Gols",
     "confidence": 88,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 2",
     "analysis": "Stockport joga de forma agressiva e o Doncaster é o rei dos contra-ataques na League Two. A linha de 1.5 é extremamente conservadora para o padrão de agressividade dessas equipes."
   }
 ]
