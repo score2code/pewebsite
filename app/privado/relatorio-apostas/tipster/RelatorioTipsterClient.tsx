@@ -61,16 +61,10 @@ function computeTransactionEffect(b: BetRow): number {
   return isWithdrawalKind(b.kind) ? -amt : amt;
 }
 
-function formatPredictions(pred?: string | string[]): string {
-  if (!pred) return '';
-  return Array.isArray(pred) ? pred.join(', ') : pred;
-}
-
 export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: BetRow[]; initialBankroll: number }) {
   const searchParams = useSearchParams();
   const selectedDate = searchParams.get('date') || '';
   const selectedTipster = searchParams.get('tipster') || '';
-  const selectedMarketing = searchParams.get('marketing') || '';
   const selectedType = searchParams.get('type') || '';
 
   const normalizedBets = useMemo(() => {
@@ -89,7 +83,7 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
       result = result.filter(b => b.type === 'transaction');
     }
     return result;
-  }, [normalizedBets, selectedDate, selectedTipster, selectedMarketing, selectedType]);
+  }, [normalizedBets, selectedDate, selectedTipster, selectedType]);
 
   const sortedBets = useMemo(() => {
     return [...filteredBets].reverse();
@@ -118,9 +112,10 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
   const goalClass = goal > 0
     ? 'text-blue-700 dark:text-blue-400'
     : 'text-green-700 dark:text-green-400';
-  const totalBets = betsOnly.length;
-  const totalReds = betsOnly.filter(b => b.status === 'red').length;
-  const totalGreens = betsOnly.filter(b => b.status === 'green').length;
+  const tipster = ['Yuri', 'Rafaela', 'Bruxo', 'Edge2Green'];
+  const totalBets = (tipster: string) => betsOnly.filter(b => b.tipster === tipster).length;
+  const totalReds = (tipster: string) => betsOnly.filter(b => b.status === 'red' && b.tipster === tipster).length;
+  const totalGreens = (tipster: string) => betsOnly.filter(b => b.status === 'green' && b.tipster === tipster).length;
 
   return (
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
@@ -156,36 +151,40 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
-          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
-            <Target size={16} className={`${goal > 0 ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400'}`} />
-            <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta restante (R$)</div>
-              <div className={`font-bold ${goalClass}`}>{formatCurrencyBRL(goal)}</div>
+        {tipster.map(item => {
+          return (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
+              <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+                <Target size={16} className={`${goal > 0 ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400'}`} />
+                <div className="flex-1">
+                  <div className="text-xs text-dark-900/70 dark:text-light-100/70">Tipster</div>
+                  <div className={`font-bold ${goalClass}`}>{item}</div>
+                </div>
+              </div>
+              <div className="rounded-lg border border-indigo-200 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-900/20 p-3 flex items-center gap-2">
+                <ListChecks size={16} className="text-indigo-700 dark:text-indigo-400" />
+                <div className="flex-1">
+                  <div className="text-xs text-indigo-700 dark:text-indigo-400">Apostas</div>
+                  <div className="font-bold text-indigo-700 dark:text-indigo-400">{totalBets(item)}</div>
+                </div>
+              </div>
+              <div className="rounded-lg border border-red-200 dark:border-red-700 bg-red-50 dark:bg-red-900/20 p-3 flex items-center gap-2">
+                <XCircle size={16} className="text-red-700 dark:text-red-400" />
+                <div className="flex-1">
+                  <div className="text-xs text-red-700 dark:text-red-400">Reds</div>
+                  <div className="font-bold text-red-700 dark:text-red-400">{totalReds(item)}</div>
+                </div>
+              </div>
+              <div className="rounded-lg border border-green-200 dark:border-green-700 bg-green-50 dark:bg-green-900/20 p-3 flex items-center gap-2">
+                <CheckCircle size={16} className="text-green-700 dark:text-green-400" />
+                <div className="flex-1">
+                  <div className="text-xs text-green-700 dark:text-green-400">Greens</div>
+                  <div className="font-bold text-green-700 dark:text-green-400">{totalGreens(item)}</div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="rounded-lg border border-indigo-200 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-900/20 p-3 flex items-center gap-2">
-            <ListChecks size={16} className="text-indigo-700 dark:text-indigo-400" />
-            <div className="flex-1">
-              <div className="text-xs text-indigo-700 dark:text-indigo-400">Apostas</div>
-              <div className="font-bold text-indigo-700 dark:text-indigo-400">{totalBets}</div>
-            </div>
-          </div>
-          <div className="rounded-lg border border-red-200 dark:border-red-700 bg-red-50 dark:bg-red-900/20 p-3 flex items-center gap-2">
-            <XCircle size={16} className="text-red-700 dark:text-red-400" />
-            <div className="flex-1">
-              <div className="text-xs text-red-700 dark:text-red-400">Reds</div>
-              <div className="font-bold text-red-700 dark:text-red-400">{totalReds}</div>
-            </div>
-          </div>
-          <div className="rounded-lg border border-green-200 dark:border-green-700 bg-green-50 dark:bg-green-900/20 p-3 flex items-center gap-2">
-            <CheckCircle size={16} className="text-green-700 dark:text-green-400" />
-            <div className="flex-1">
-              <div className="text-xs text-green-700 dark:text-green-400">Greens</div>
-              <div className="font-bold text-green-700 dark:text-green-400">{totalGreens}</div>
-            </div>
-          </div>
-        </div>
+          )
+        })}
         <div className="text-dark-900 dark:text-light-100">
             <form method="GET" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 w-full">
               <div className="flex flex-col">

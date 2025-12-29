@@ -67,7 +67,6 @@ async function loadBets(): Promise<BetRow[]> {
 
 export default async function RelatorioBudgetPrivadoPage() {
   const bets = await loadBets();
-  const initialBankroll = 0;
 
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -79,7 +78,7 @@ export default async function RelatorioBudgetPrivadoPage() {
           <p className="text-base md:text-lg text-dark-900/70 dark:text-light-100/70">Baseado em dados de orçamento.</p>
         </header>
 
-        <RelatorioBudgetClient bets={bets} initialBankroll={initialBankroll} />
+        <RelatorioBudgetClient bets={bets} />
       </div>
     </div>
   );

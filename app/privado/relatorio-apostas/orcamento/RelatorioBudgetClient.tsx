@@ -28,7 +28,7 @@ function formatDateBR(dateStr: string): string {
   return new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'America/Sao_Paulo' }).format(new Date(dateStr));
 }
 
-export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: BetRow[]; initialBankroll: number }) {
+export default function RelatorioBudgetClient({ bets }: { bets: BetRow[]; }) {
   const searchParams = useSearchParams();
   const selectedDate = searchParams.get('date') || '';
   const selectedTipster = searchParams.get('tipster') || '';

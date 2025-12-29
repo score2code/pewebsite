@@ -29,8 +29,8 @@ export const metadata: Metadata = {
 
 async function loadLive(): Promise<BetRow[]> {
   const dirCandidates = [
-    path.join(process.cwd(), 'app', 'data', 'hidden', 'live'),
-    path.join(process.cwd(), 'data', 'hidden', 'live'),
+    path.join(process.cwd(), 'app', 'data', 'hidden', 'trader'),
+    path.join(process.cwd(), 'data', 'hidden', 'trader'),
   ];
 
   const rows: BetRow[] = [];
@@ -62,8 +62,8 @@ async function loadLive(): Promise<BetRow[]> {
   if (rows.length) return rows.map(({ /* tipster, bingo, marketing, */ ...rest }) => rest as BetRow);
 
   const fileFallbacks = [
-    path.join(process.cwd(), 'app', 'data', 'hidden', 'live.json'),
-    path.join(process.cwd(), 'data', 'hidden', 'live.json'),
+    path.join(process.cwd(), 'app', 'data', 'hidden', 'trader.json'),
+    path.join(process.cwd(), 'data', 'hidden', 'trader.json'),
   ];
   for (const filePath of fileFallbacks) {
     try {

@@ -109,11 +109,12 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
   const totalBets = betsOnly.length;
   const totalReds = betsOnly.filter(b => b.status === 'red').length;
   const totalGreens = betsOnly.filter(b => b.status === 'green').length;
+  const totalAnalysis = betsOnly.reduce((sum, b) => sum + (Number(b.analysis) || 0), 0);
 
   return (
     <div className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
       <div className="mb-4">
-        <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Tabela de Apostas</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Tabela de Análises</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
           <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
             <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
@@ -148,8 +149,8 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
           <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
             <Target size={16} className={`${goal > 0 ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400'}`} />
             <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta restante (R$)</div>
-              <div className={`font-bold ${goalClass}`}>{formatCurrencyBRL(goal)}</div>
+              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Análises</div>
+              <div className={`font-bold ${goalClass}`}>{totalAnalysis}</div>
             </div>
           </div>
           <div className="rounded-lg border border-indigo-200 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-900/20 p-3 flex items-center gap-2">

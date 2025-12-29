@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 
 async function loadBets(): Promise<BetRow[]> {
   const dirCandidates = [
-    path.join(process.cwd(), 'app', 'data', 'hidden', 'bets'),
-    path.join(process.cwd(), 'data', 'hidden', 'bets'),
+    path.join(process.cwd(), 'app', 'data', 'hidden', 'punther'),
+    path.join(process.cwd(), 'data', 'hidden', 'punther'),
   ];
 
   const rows: BetRow[] = [];
@@ -65,8 +65,8 @@ async function loadBets(): Promise<BetRow[]> {
   if (rows.length) return rows;
 
   const fileFallbacks = [
-    path.join(process.cwd(), 'app', 'data', 'hidden', 'bets.json'),
-    path.join(process.cwd(), 'data', 'hidden', 'bets.json'),
+    path.join(process.cwd(), 'app', 'data', 'hidden', 'punther.json'),
+    path.join(process.cwd(), 'data', 'hidden', 'punther.json'),
   ];
   for (const filePath of fileFallbacks) {
     try {
@@ -88,8 +88,8 @@ export default async function RelatorioCasaPrivadoPage() {
         <Breadcrumb className="mb-4" />
 
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 md:p-8 mb-6 md:mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
-          <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-2">Relatório – Casa de Apostas</h1>
-          <p className="text-base md:text-lg text-dark-900/70 dark:text-light-100/70">Baseado em dados de casas de apostas.</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-2">Relatório – Punther</h1>
+          <p className="text-base md:text-lg text-dark-900/70 dark:text-light-100/70">Baseado em dados de punther.</p>
         </header>
 
         <RelatorioPuntherClient bets={bets} initialBankroll={initialBankroll} />
