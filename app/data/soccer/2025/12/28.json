@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Leeds United (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Leeds com maior ritmo e transições eficientes; DNB reduz variância num duelo físico fora de casa, mantendo valor e alta confiança sem recorrer a handicap."
+    "analysis": "Leeds com maior ritmo e transições eficientes; DNB reduz variância num duelo físico fora de casa, mantendo valor e alta confiança sem recorrer a handicap.",
+    "status": "void",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "crystal-palace-x-tottenham",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Tottenham com pressão alta e melhor fase; controle das principais ações deve se traduzir em vitória sem necessidade de handicap."
+    "analysis": "Tottenham com pressão alta e melhor fase; controle das principais ações deve se traduzir em vitória sem necessidade de handicap.",
+    "status": "green",
+    "reason": "Placar: 0 x 1"
   },
   {
     "id": "ac-milan-x-verona",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 1",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Milan superior técnica e taticamente; mando forte e profundidade de elenco sustentam favoritismo direto."
+    "analysis": "Milan superior técnica e taticamente; mando forte e profundidade de elenco sustentam favoritismo direto.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "cremonese-x-napoli",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: 2",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "Napoli com maior qualidade coletiva e criação; diferença técnica sustenta vitória fora sem precisar de handicap."
+    "analysis": "Napoli com maior qualidade coletiva e criação; diferença técnica sustenta vitória fora sem precisar de handicap.",
+    "status": "green",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "bologna-x-sassuolo",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Ambos Marcam (BTTS): SIM",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Perfis ofensivos e defesas vulneráveis em transição; tendência de chances claras para ambos sem recorrer a under."
+    "analysis": "Perfis ofensivos e defesas vulneráveis em transição; tendência de chances claras para ambos sem recorrer a under.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "atalanta-x-inter-de-milao",
@@ -74,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Inter de Milão (DNB)",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Inter com maior controle e eficiência; DNB preserva valor em jogo grande contra um mandante agressivo, evitando exposição e mantendo alta confiança."
+    "analysis": "Inter com maior controle e eficiência; DNB preserva valor em jogo grande contra um mandante agressivo, evitando exposição e mantendo alta confiança.",
+    "status": "green",
+    "reason": "Placar: 0 x 1"
   }
 ]

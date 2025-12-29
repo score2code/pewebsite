@@ -71,7 +71,7 @@
     "stake": 0.50,
     "odd": 11.93,
     "return": 5.47,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -85,8 +85,8 @@
     "prediction": ["-"],
     "stake": 0.50,
     "odd": 179.28,
-    "return": 102.51,
-    "status": "pending",
+    "return": 1.35,
+    "status": "cashout",
     "marketing": true
   },
   {
@@ -146,7 +146,7 @@
     "stake": 0.50,
     "odd": 385.10,
     "return": 221.36,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -161,7 +161,7 @@
     "stake": 0.50,
     "odd": 159.44,
     "return": 89.23,
-    "status": "pending",
+    "status": "red",
     "marketing": true
   },
   {
@@ -177,6 +177,74 @@
     "odd": 218.14,
     "return": 130.78,
     "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 2,
+    "date": "2025-12-27",
+    "affectsInitial": false,
+    "note": "Apostas gratis"
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-27",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 38.07,
+    "return": 19.47,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-27",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 5.21,
+    "return": 2.11,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-27",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 3.37,
+    "return": 1.19,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-27",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.50,
+    "odd": 4.79,
+    "return": 1.99,
+    "status": "red",
     "marketing": true
   }
 ]
