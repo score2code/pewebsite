@@ -61,11 +61,11 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
       <div className="mb-4">
         <h2 className="text-xl md:text-2xl font-semibold text-dark-900 dark:text-light-100 mb-3">Tabela de Orçamento</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
-          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
-            <Wallet size={16} className="text-dark-900/70 dark:text-light-100/70" />
+          <div className="rounded-lg border border-indigo-200 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-900/20 p-3 flex items-center gap-2">
+            <Wallet size={16} className="text-indigo-700 dark:text-indigo-400" />
             <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Total</div>
-              <div className={`font-bold`}>{formatCurrencyBRL(total)}</div>
+              <div className="text-xs text-indigo-700 dark:text-indigo-400">Total</div>
+              <div className={`font-bold text-indigo-700 dark:text-indigo-400`}>{formatCurrencyBRL(total)}</div>
             </div>
           </div>
         </div>

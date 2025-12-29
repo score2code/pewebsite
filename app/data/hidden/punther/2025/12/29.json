@@ -13,5 +13,35 @@
     "return": 77.85,
     "status": "pending",
     "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-29",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.5,
+    "odd": 2.17,
+    "return": 1.09,
+    "status": "pending",
+    "marketing": true
+  },
+  {
+    "type": "bet",
+    "date": "2025-12-29",
+    "tipster": "Togakure Tips",
+    "bingo": true,
+    "league":"-",
+    "homeTeam":"-",
+    "awayTeam":"-",
+    "prediction": ["-"],
+    "stake": 0.5,
+    "odd": 1.84,
+    "return": 0.92,
+    "status": "pending",
+    "marketing": true
   }
 ]

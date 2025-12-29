@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 
 type BetRow = {
   date: string;
+  model?: 'free' | 'marketing';
   analysis?: number;
   stake?: number;
   odd?: number;
@@ -59,11 +60,6 @@ function computeTransactionEffect(b: BetRow): number {
   if (b.type !== 'transaction') return 0;
   const amt = Number(b.amount) || 0;
   return isWithdrawalKind(b.kind) ? -amt : amt;
-}
-
-function formatPredictions(pred?: string | string[]): string {
-  if (!pred) return '';
-  return Array.isArray(pred) ? pred.join(', ') : pred;
 }
 
 export default function RelatorioExchangeClient({ bets, initialBankroll }: { bets: BetRow[]; initialBankroll: number }) {
@@ -201,35 +197,37 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
       <div className="md:hidden space-y-3">
         {sortedBets.map((b, i) => {
           if ((b.type || 'bet') === 'bet') {
-            const netReturn = computeNetReturnFromBet(b);
-            const statusClass =
-              b.status === 'green'
+            if ((b.odd || 0) > 0) {
+              const netReturn = computeNetReturnFromBet(b);
+              const statusClass =
+                b.status === 'green'
+                  ? 'text-green-700 dark:text-green-400'
+                  : b.status === 'red'
+                  ? 'text-red-700 dark:text-red-400'
+                  : b.status === 'void'
+                  ? 'text-orange-700 dark:text-orange-400'
+                  : 'text-dark-900/70 dark:text-light-100/70';
+              const returnClass = netReturn > 0
                 ? 'text-green-700 dark:text-green-400'
-                : b.status === 'red'
+                : netReturn < 0
                 ? 'text-red-700 dark:text-red-400'
-                : b.status === 'void'
-                ? 'text-orange-700 dark:text-orange-400'
                 : 'text-dark-900/70 dark:text-light-100/70';
-            const returnClass = netReturn > 0
-              ? 'text-green-700 dark:text-green-400'
-              : netReturn < 0
-              ? 'text-red-700 dark:text-red-400'
-              : 'text-dark-900/70 dark:text-light-100/70';
-            return (
-              <div key={i} className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4">
-                <div className="flex items-baseline gap-2">
-                  <div className="text-sm text-dark-900/80 dark:text-light-100/80 font-medium whitespace-nowrap">{formatDateBR(b.date)}</div>
+              return (
+                <div key={i} className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4">
+                  <div className="flex items-baseline gap-2">
+                    <div className="text-sm text-dark-900/80 dark:text-light-100/80 font-medium whitespace-nowrap">{formatDateBR(b.date)}</div>
+                  </div>
+                  <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
+                    <div className="text-dark-900/70 dark:text-light-100/70">ODD: {Number(b.odd).toFixed(2)}</div>
+                    <div className="text-dark-900/70 dark:text-light-100/70">Valor: {formatCurrencyBRL(Number(b.stake) || 0)}</div>
+                  </div>
+                  <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
+                    <div className={`${returnClass}`}>Retorno: {formatCurrencyBRL(netReturn)}</div>
+                    <div className={`${statusClass}`}>Resultado: {formatStatusLabel(b.status!)}</div>
+                  </div>
                 </div>
-                <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
-                  <div className="text-dark-900/70 dark:text-light-100/70">ODD: {Number(b.odd).toFixed(2)}</div>
-                  <div className="text-dark-900/70 dark:text-light-100/70">Valor: {formatCurrencyBRL(Number(b.stake) || 0)}</div>
-                </div>
-                <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
-                  <div className={`${returnClass}`}>Retorno: {formatCurrencyBRL(netReturn)}</div>
-                  <div className={`${statusClass}`}>Resultado: {formatStatusLabel(b.status!)}</div>
-                </div>
-              </div>
-            );
+              );
+            }
           } else {
             const effect = computeTransactionEffect(b);
             return (
@@ -327,8 +325,15 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
                 : netReturn < 0
                 ? 'text-red-700 dark:text-red-400'
                 : 'text-dark-900/70 dark:text-light-100/70';
+
+              if ((b.odd || 0) === 0) {
+                return null
+              }
+
+              const rowTint2 = b.model === 'marketing' ? 'bg-indigo-50 dark:bg-indigo-900/10' : 'bg-orange-50 dark:bg-orange-900/10';
+
               return (
-                <tr key={i} className="border-t border-light-300 dark:border-dark-600">
+                <tr key={i} className={`border-t border-light-300 dark:border-dark-600 ${rowTint2}`}>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{formatDateBR(b.date)}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.analysis}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{formatCurrencyBRL(Number(b.stake) || 0)}</td>

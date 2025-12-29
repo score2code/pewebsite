@@ -6,6 +6,7 @@ import RelatorioAnalysisClient from './RelatorioAnalysisClient';
 
 type BetRow = {
   date: string;
+  model?: 'free' | 'marketing';
   analysis?: number;
   stake?: number;
   odd?: number;

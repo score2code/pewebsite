@@ -1,11 +1,10 @@
 [
   {
-    "type": "bet",
-    "date": "2026-01-01",
-    "analysis": 30,
-    "stake": 1,
-    "odd": 1.40,
-    "return": 1.40,
-    "status": "pending"
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 20,
+    "date": "2026-01-02",
+    "affectsInitial": true,
+    "note": "Orçamento inicial"
   }
 ]
