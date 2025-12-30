@@ -161,7 +161,7 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
           <div className="rounded-lg border border-indigo-200 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-900/20 p-3 flex items-center gap-2">
             <ListChecks size={16} className="text-indigo-700 dark:text-indigo-400" />
             <div className="flex-1">
-              <div className="text-xs text-indigo-700 dark:text-indigo-400">Apostas</div>
+              <div className="text-xs text-indigo-700 dark:text-indigo-400">Entradas</div>
               <div className="font-bold text-indigo-700 dark:text-indigo-400">{totalBets}</div>
             </div>
           </div>

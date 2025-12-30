@@ -2,7 +2,7 @@
   {
     "type": "transaction",
     "kind": "deposit",
-    "amount": 321.27,
+    "amount": 321.46,
     "date": "2026-01-01",
     "affectsInitial": true,
     "note": "Orçamento inicial"

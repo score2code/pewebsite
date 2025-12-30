@@ -21,35 +21,5 @@
     "odd": 1.52,
     "return": 2.52,
     "status": "pending"
-  },
-  {
-    "type": "bet",
-    "model": "rollover",
-    "date": "2026-01-01",
-    "league": "Futebol Americano",
-    "homeTeam": "New England Patriots",
-    "awayTeam": "New York Giants",
-    "prediction": [
-      "Handicap: New England Patriots -3.5"
-    ],
-    "stake": 10,
-    "odd": 1.52,
-    "return": 12.52,
-    "status": "pending"
-  },
-  {
-    "type": "bet",
-    "model": "leverage",
-    "date": "2026-01-01",
-    "league": "Futebol Americano",
-    "homeTeam": "New England Patriots",
-    "awayTeam": "New York Giants",
-    "prediction": [
-      "Handicap: New England Patriots -3.5"
-    ],
-    "stake": 1,
-    "odd": 1.52,
-    "return": 1.52,
-    "status": "pending"
   }
 ]
