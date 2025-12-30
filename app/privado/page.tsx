@@ -45,6 +45,10 @@ export default function PrivadoIndexPage() {
           <Items category="punther" />
           <Items category="trader" />
           <Items category="tipster" />
+          <Items category="tipster" tipster="Yuri" />
+          <Items category="tipster" tipster="Rafaela" />
+          <Items category="tipster" tipster="Tylty" />
+          <Items category="tipster" tipster="Edge2Green" />
           <Items category="analysis" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
