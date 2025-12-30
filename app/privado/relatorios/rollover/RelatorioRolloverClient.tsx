@@ -5,7 +5,6 @@ import { useSearchParams } from 'next/navigation';
 
 type BetRow = {
   date: string;
-  model?: 'punther' | 'rollover' | 'leverage';
   league?: string;
   homeTeam?: string;
   awayTeam?: string;
@@ -70,7 +69,7 @@ function formatPredictions(pred?: string | string[]): string {
   return Array.isArray(pred) ? pred.join(', ') : pred;
 }
 
-export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: BetRow[]; initialBankroll: number }) {
+export default function RelatorioRolloverClient({ bets, initialBankroll }: { bets: BetRow[]; initialBankroll: number }) {
   const searchParams = useSearchParams();
   const selectedDate = searchParams.get('date') || '';
   const selectedType = searchParams.get('type') || '';
@@ -104,8 +103,7 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
     : totalReturn < 0
     ? 'text-red-700 dark:text-red-400'
     : 'text-dark-900/70 dark:text-light-100/70';
-  const MIN_WAGE_BR = 1518;
-  const goal = MIN_WAGE_BR - currentBankroll;
+  const goal = initialBankrollAdjusted + (initialBankrollAdjusted * (10 / 100));
   const currentClass = currentBankroll > initialBankroll
     ? 'text-green-700 dark:text-green-400'
     : currentBankroll < initialBankroll
@@ -156,7 +154,7 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
           <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
             <Target size={16} className={`${goal > 0 ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400'}`} />
             <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta restante (R$)</div>
+              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Meta (R$)</div>
               <div className={`font-bold ${goalClass}`}>{formatCurrencyBRL(goal)}</div>
             </div>
           </div>
@@ -341,9 +339,8 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
                 ? 'text-red-700 dark:text-red-400'
                 : 'text-dark-900/70 dark:text-light-100/70';
 
-              const rowTint2 = b.model === 'leverage' ? 'bg-indigo-50 dark:bg-indigo-900/10' : b.model === 'rollover' ? 'bg-orange-50 dark:bg-orange-900/10' : '';
               return (
-                <tr key={i} className={`border-t border-light-300 dark:border-dark-600 ${rowTint2}`}>
+                <tr key={i} className={`border-t border-light-300 dark:border-dark-600`}>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{formatDateBR(b.date)}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.league}</td>
                   <td className="px-3 py-2 text-sm text-dark-900/80 dark:text-light-100/80">{b.homeTeam}</td>

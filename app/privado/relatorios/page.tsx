@@ -15,6 +15,7 @@ export default function RelatoriosIndexPrivadoPage() {
     { href: '/privado/relatorios/trader', title: 'Trader', description: 'Relatório com dados de trader/**' },
     { href: '/privado/relatorios/analise', title: 'Análises', description: 'Relatório com dados de analysis/**' },
     { href: '/privado/relatorios/tipster', title: 'Tipster', description: 'Relatório com dados de tipster/**' },
+    { href: '/privado/relatorios/rollover', title: 'Rollover', description: 'Relatório com dados de rollover/**' },
   ];
 
   return (

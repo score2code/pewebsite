@@ -2,11 +2,10 @@ import * as path from 'path';
 import * as fs from 'fs/promises';
 import type { Metadata } from 'next';
 import Breadcrumb from '@/app/components/ui/breadcrumb';
-import RelatorioPuntherClient from './RelatorioPuntherClient';
+import RelatorioRolloverClient from './RelatorioRolloverClient';
 
 type BetRow = {
   date: string;
-  model?: 'punther' | 'rollover' | 'leverage';
   league?: string;
   homeTeam?: string;
   awayTeam?: string;
@@ -23,15 +22,15 @@ type BetRow = {
 };
 
 export const metadata: Metadata = {
-  title: 'Relatório Punther (Privado)',
-  description: 'Relatório baseado em registros de punther.',
+  title: 'Relatório Rollover (Privado)',
+  description: 'Relatório baseado em registros de rollover.',
   robots: { index: false, follow: false },
 };
 
 async function loadBets(): Promise<BetRow[]> {
   const dirCandidates = [
-    path.join(process.cwd(), 'app', 'data', 'hidden', 'punther'),
-    path.join(process.cwd(), 'data', 'hidden', 'punther'),
+    path.join(process.cwd(), 'app', 'data', 'hidden', 'rollover'),
+    path.join(process.cwd(), 'data', 'hidden', 'rollover'),
   ];
 
   const rows: BetRow[] = [];
@@ -63,8 +62,8 @@ async function loadBets(): Promise<BetRow[]> {
   if (rows.length) return rows;
 
   const fileFallbacks = [
-    path.join(process.cwd(), 'app', 'data', 'hidden', 'punther.json'),
-    path.join(process.cwd(), 'data', 'hidden', 'punther.json'),
+    path.join(process.cwd(), 'app', 'data', 'hidden', 'rollover.json'),
+    path.join(process.cwd(), 'data', 'hidden', 'rollover.json'),
   ];
   for (const filePath of fileFallbacks) {
     try {
@@ -86,11 +85,11 @@ export default async function RelatorioCasaPrivadoPage() {
         <Breadcrumb className="mb-4" />
 
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 md:p-8 mb-6 md:mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
-          <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-2">Relatório – Punther</h1>
-          <p className="text-base md:text-lg text-dark-900/70 dark:text-light-100/70">Baseado em dados de punther.</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-2">Relatório – Rollover</h1>
+          <p className="text-base md:text-lg text-dark-900/70 dark:text-light-100/70">Baseado em dados de rollover.</p>
         </header>
 
-        <RelatorioPuntherClient bets={bets} initialBankroll={initialBankroll} />
+        <RelatorioRolloverClient bets={bets} initialBankroll={initialBankroll} />
       </div>
     </div>
   );

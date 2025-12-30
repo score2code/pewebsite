@@ -10,7 +10,7 @@
   {
     "type": "bet",
     "model": "punther",
-    "date": "2025-12-01",
+    "date": "2026-01-01",
     "league": "Futebol Americano",
     "homeTeam": "New England Patriots",
     "awayTeam": "New York Giants",
@@ -24,8 +24,8 @@
   },
   {
     "type": "bet",
-    "model": "volume",
-    "date": "2025-12-01",
+    "model": "rollover",
+    "date": "2026-01-01",
     "league": "Futebol Americano",
     "homeTeam": "New England Patriots",
     "awayTeam": "New York Giants",
@@ -40,7 +40,7 @@
   {
     "type": "bet",
     "model": "leverage",
-    "date": "2025-12-01",
+    "date": "2026-01-01",
     "league": "Futebol Americano",
     "homeTeam": "New England Patriots",
     "awayTeam": "New York Giants",
