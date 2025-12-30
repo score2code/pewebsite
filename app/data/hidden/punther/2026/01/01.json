@@ -20,7 +20,7 @@
     "stake": 2,
     "odd": 1.52,
     "return": 2.52,
-    "status": "green"
+    "status": "pending"
   },
   {
     "type": "bet",
@@ -35,7 +35,7 @@
     "stake": 10,
     "odd": 1.52,
     "return": 12.52,
-    "status": "green"
+    "status": "pending"
   },
   {
     "type": "bet",
@@ -50,6 +50,6 @@
     "stake": 1,
     "odd": 1.52,
     "return": 1.52,
-    "status": "green"
+    "status": "pending"
   }
 ]

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import PrivadoGate from './PrivadoGate';
+import Items from './util/items';
 
 export const metadata: Metadata = {
   title: 'Área Privada',
@@ -34,11 +35,19 @@ export default function PrivadoIndexPage() {
         <div className="max-w-6xl mx-auto">
           <Breadcrumb className="mb-4" />
           <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 md:p-8 mb-6 md:mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
-            <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-2">Área Privada</h1>
-            <p className="text-base md:text-lg text-dark-900/70 dark:text-light-100/70">Atalhos para páginas privadas não indexáveis.</p>
+            <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100">Dashboard</h1>
           </header>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <Items category="rollover" />
+          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 mb-2">
+            <h3 className="text-lg font-bold text-dark-900 dark:text-light-100 text-center">Bancas com Dinheiro Real</h3>
+          </div>
+          <Items category="punther" />
+          <Items category="trader" />
+          <Items category="tipster" />
+          <Items category="analysis" />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
             {pages.map((p) => (
               <Link key={p.href} href={p.href} className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 transition-colors">
                 <div className="text-lg font-semibold text-dark-900 dark:text-light-100">{p.title}</div>
