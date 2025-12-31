@@ -146,6 +146,20 @@ export interface AnalysisStatsSeries {
   nv?: number[];
 }
 
+/**
+ * Interface para dados brutos de volume de jogo (Match Raw Data)
+ */
+export interface AnalysisMatchRaw {
+  shots?: number[];
+  shotsOnTarget?: number[];
+  corners?: number[];
+  fouls?: number[];
+  accuratePasses?: number[];
+  saves?: number[];
+  tackles?: number[];
+  dangerousAttacks?: number[];
+}
+
 export interface AnalysisTacticalRaw {
   possessionPct?: number[];
   fieldTiltPct?: number[];
@@ -159,6 +173,7 @@ export interface AnalysisTacticalRaw {
 
 export interface AnalysisStatsTeam extends AnalysisStatsSeries {
   tacticalRaw?: AnalysisTacticalRaw;
+  matchRaw?: AnalysisMatchRaw; // Extensão com os novos dados brutos
 }
 
 export interface AnalysisStats {
@@ -192,3 +207,6 @@ export interface AnalysisData {
   stats?: AnalysisStats;
   tactical?: AnalysisTactical;
 }
+
+// Exportação adicional para garantir compatibilidade com importações diretas de TeamStats
+export type TeamStats = AnalysisStats;
