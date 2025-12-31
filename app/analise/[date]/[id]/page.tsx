@@ -6,6 +6,7 @@ import TrendSection from '@/app/components/analysis/trend-section';
 import StatsCardSection from '@/app/components/analysis/stats-card-section';
 import TacticalAnalysisSection from '@/app/components/analysis/tactical-analysis-section';
 import ScoreProjectionSection from '@/app/components/analysis/score-projection-section';
+import MatchInsightSection from '@/app/components/analysis/match-insight-section'
 
 export const dynamicParams = true;
 
@@ -126,6 +127,11 @@ export default async function AnaliseJogoPage({ params }: { params: { date: stri
         <div className="bg-light-100/60 dark:bg-dark-800/60 rounded-xl border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm overflow-hidden">
           <MatchHeader pick={pick} />
           <div className="p-6">
+            <MatchInsightSection
+              homeName={pick.homeTeam}
+              awayName={pick.awayTeam}
+              stats={pick.stats}
+            />
             <TrendSection trend={pick.trend} />
             <StatsCardSection stats={pick.stats} homeTeam={pick.homeTeam} awayTeam={pick.awayTeam} />
             <TacticalAnalysisSection stats={pick.stats} homeTeam={pick.homeTeam} awayTeam={pick.awayTeam} />

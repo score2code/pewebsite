@@ -1,11 +1,11 @@
-Time: Başakşehir
-Data de Referência: Hoje
+Time: Leeds United
+Data de Referência: Hoje (2025-12-31)
 
-**Instrução Principal:** **PESQUISE NA WEB** os resultados oficiais e estatísticas dos últimos 20 jogos do time informado. **Compile** um arquivo JSON de análise estatística baseada nesses **DADOS REAIS E HISTÓRICOS**.
+**Instrução Principal:** **Leia as informações acima** com os resultados oficiais e estatísticas dos últimos jogos do time informado. **Compile** um arquivo JSON de análise estatística baseada nesses **DADOS REAIS E HISTÓRICOS**.
 
 **Requisito de Fidelidade de Dados (CRÍTICO):**
 1.  **Resultados Reais (Placares):** Os campos `g` (gols pró), `ga` (gols sofridos) e os resultados (vitória/empate/derrota) devem corresponder **exatamente** aos jogos reais ocorridos cronologicamente. **PROIBIDO INVENTAR OU SIMULAR PLACARES.**
-2.  **Métricas Avançadas (Estimativa Informada):** Para métricas onde não há dados públicos consolidados jogo-a-jogo (como `xG`, `ppda`, `teamsCV`, `nvRaw`), você deve **estimar os valores** de forma consistente com o placar real da partida (ex: Vitória por 4-0 implica xG alto e PPDA baixo).
+2.  **Métricas Avançadas (Estimativa Informada):** Para métricas onde não há dados públicos consolidados jogo-a-jogo (como `ppda`, `teamsCV`, `nvRaw`), você deve **estimar os valores** de forma consistente com o placar real da partida (ex: Vitória por 4-0 implica PPDA baixo).
 3.  **Ordem:** Todas as listas devem estar em ordem cronológica, do jogo mais antigo (índice 0) para o mais recente (índice 19).
 
 ### 1. Perfil do Time (Para calibragem de estimativas)

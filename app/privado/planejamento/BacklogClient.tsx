@@ -78,7 +78,8 @@ export default function BacklogClient({ games }: { games: GameItem[] }) {
               <div className="mt-2 flex flex-col text-sm">
                 {[...g.market].map((item: { type: string; method: string }, index: number) => {
                   const isTrader = Boolean(item.type === 'trader');
-                  const badgeClass = isTrader ? 'text-blue-700 dark:text-blue-400' : 'text-green-700 dark:text-green-400';
+                  const isRollover = Boolean(item.type === 'rollover');
+                  const badgeClass = isTrader ? 'text-blue-700 dark:text-blue-400' : isRollover ? 'text-orange-700 dark:text-orange-400' : 'text-green-700 dark:text-green-400';
                   return (
                     <div className="inline-flex items-center">
                       <BadgeCheck size={14} className={badgeClass} />

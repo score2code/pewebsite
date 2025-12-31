@@ -5,13 +5,8 @@
     "league":"Inglaterra - Premier League",
     "homeTeam":"Cystal Palace",
     "awayTeam":"Fulham",
-    "market":[
-      {"type": "punther", "method":"Over 1.5 gols"},
-      {"type": "trader", "method":"Lay ao Empate (LTD)"},
-      {"type": "punther", "method":"Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method":"Over 1.5 Live"}
-    ],
-    "recommended":true
+    "market":[],
+    "recommended":false
   },
   {
     "date":"2026-01-01",
@@ -20,10 +15,7 @@
     "homeTeam":"Liverpool",
     "awayTeam":"Leeds United",
     "market":[
-      {"type": "punther", "method":"Over 1.5 gols"},
-      {"type": "trader", "method":"Lay ao Empate (LTD)"},
-      {"type": "punther", "method":"Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method":"Over 1.5 Live"}
+      {"type": "rollover", "method":"Over 0.5 Gols Live"}
     ],
     "recommended":false
   },
@@ -34,10 +26,8 @@
     "homeTeam":"Sunderland",
     "awayTeam":"Manchester City",
     "market":[
-      {"type": "punther", "method":"Over 1.5 gols"},
-      {"type": "trader", "method":"Lay ao Empate (LTD)"},
-      {"type": "punther", "method":"Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method":"Over 1.5 Live"}
+      {"type": "rollover", "method":"1º Tempo - Handicap Manchester City (1.5)"},
+      {"type": "rollover", "method":"Over 0.5 Gols Live"}
     ],
     "recommended":false
   },
@@ -48,10 +38,7 @@
     "homeTeam":"Brentford",
     "awayTeam":"Tottenham",
     "market":[
-      {"type": "punther", "method":"Over 1.5 gols"},
-      {"type": "trader", "method":"Lay ao Empate (LTD)"},
-      {"type": "punther", "method":"Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method":"Over 1.5 Live"}
+      {"type": "rollover", "method":"Over 0.5 Gols Live"}
     ],
     "recommended":true
   }
