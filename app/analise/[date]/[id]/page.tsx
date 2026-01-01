@@ -11,6 +11,8 @@ import TrendSection from '@/app/components/analysis/trend-section';
 import StatsCardSection from '@/app/components/analysis/stats-card-section';
 import PerformanceActivitySection from '@/app/components/analysis/performance-activity-section';
 import ScoreProjectionSection from '@/app/components/analysis/score-projection-section';
+import PredictiveClashSection from '@/app/components/analysis/predictive-clash-section';
+import DefensiveSecuritySection from '@/app/components/analysis/defensive-security-section';
 
 export const dynamicParams = true;
 
@@ -162,6 +164,18 @@ export default async function AnaliseJogoPage({ params }: { params: { date: stri
             />
 
             <PerformanceActivitySection stats={pick.stats} />
+
+            <PredictiveClashSection
+              stats={pick.stats}
+              homeTeam={pick.homeTeam}
+              awayTeam={pick.awayTeam}
+            />
+
+            <DefensiveSecuritySection
+              stats={pick.stats}
+              homeTeam={pick.homeTeam}
+              awayTeam={pick.awayTeam}
+            />
 
             <ScoreProjectionSection stats={pick.stats} />
           </div>
