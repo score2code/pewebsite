@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Dupla Hipótese: Nottingham Forest ou Empate",
     "confidence": 78,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 2",
     "analysis": "O Forest é extremamente sólido no City Ground, utilizando transições rápidas que castigam defesas lentas como a do Everton. A chance de vitória caseira é alta, mas a dupla hipótese protege contra um eventual ferrolho defensivo dos visitantes."
   },
   {
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim",
     "confidence": 82,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 2",
     "analysis": "Confronto entre duas equipes que priorizam o ataque e possuem sistemas defensivos que costumam ceder espaços. O Brighton mantém a posse e o West Ham é letal no contra-ataque, cenário ideal para gols de ambos os lados."
   },
   {
@@ -35,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Vencedor: Newcastle",
     "confidence": 74,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 3",
     "analysis": "O Newcastle possui um elenco muito superior tecnicamente e físico. Mesmo jogando fora de casa, a intensidade dos 'Magpies' deve prevalecer sobre um Burnley que luta para manter a consistência na elite."
   },
   {
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 76,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 2",
     "analysis": "O Chelsea em Stamford Bridge costuma impor um ritmo alto, mas ainda apresenta falhas de concentração na defesa. O Bournemouth é um time corajoso que não se abdica de atacar, o que sugere um jogo aberto e com placar movimentado."
   },
   {
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Vencedor: Arsenal",
     "confidence": 81,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 1",
     "analysis": "O Arsenal em casa é um dos times mais confiáveis da Europa. Embora o Villa de Unai Emery seja perigoso, a organização tática e o fator torcida no Emirates colocam os Gunners como amplos favoritos para somar os três pontos."
   },
   {
@@ -74,8 +79,10 @@
     "timezone": "UTC",
     "prediction": "Gols: Manchester United - Mais de 1.5",
     "confidence": 79,
-    "status": "pending",
-    "analysis": "O United tende a pressionar alto em Old Trafford. Contra um Wolves que muitas vezes se perde na marcação sob pressão, espera-se que o ataque dos Red Devils consiga marcar ao menos dois gols para garantir o resultado."
+    "analysis": "O United tende a pressionar alto em Old Trafford. Contra um Wolves que muitas vezes se perde na marcação sob pressão, espera-se que o ataque dos Red Devils consiga marcar ao menos dois gols para garantir o resultado.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
+
   },
   {
     "id": "al-ahli-x-al-fayha",
@@ -87,7 +94,8 @@
     "timezone": "UTC",
     "prediction": "Vencedor: Al Ahli",
     "confidence": 89,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 0",
     "analysis": "A diferença de investimento e qualidade individual é abissal. O Al Ahli, contando com suas estrelas internacionais e jogando em casa, deve dominar as ações do início ao fim contra o modesto Al Fayha."
   },
   {
@@ -100,7 +108,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Al Nassr",
     "confidence": 85,
-    "status": "pending",
+    "status": "void",
+    "reason": "Placar: 2 x 2",
     "analysis": "O Al Nassr briga pelo topo da tabela e possui um poder de fogo ofensivo muito superior. O Al Ettifaq é organizado, mas raramente consegue segurar o ímpeto de um time que conta com finalizadores de elite mundial."
   },
   {
@@ -113,7 +122,8 @@
     "timezone": "UTC",
     "prediction": "Vencedor ao Intervalo (HT): Rangers",
     "confidence": 84,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar - 1º Tempo: 1 x 0",
     "analysis": "O Rangers costuma sufocar seus adversários nos primeiros 20 minutos jogando no Ibrox. O St. Mirren terá dificuldades imensas para sair do seu campo de defesa, tornando a vitória parcial dos mandantes bem provável."
   },
   {
@@ -126,7 +136,8 @@
     "timezone": "UTC",
     "prediction": "Resultado/Total de Gols: Celtic e Mais de 1.5",
     "confidence": 91,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 2 x 0",
     "analysis": "O Celtic é o time a ser batido na Escócia. Sua média de gols é altíssima e o Motherwell não possui as ferramentas defensivas necessárias para impedir uma vitória confortável dos visitantes por dois ou mais gols de diferença."
   },
   {
@@ -139,7 +150,8 @@
     "timezone": "UTC",
     "prediction": "Vencedor: Maccabi Tel Aviv",
     "confidence": 94,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "O Maccabi Tel Aviv é o maior clube do país e enfrenta uma equipe recém-promovida/menor. A superioridade técnica é total, e qualquer resultado que não seja a vitória dos mandantes seria uma zebra histórica."
   }
 ]

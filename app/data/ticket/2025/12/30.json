@@ -8,7 +8,8 @@
     "time": "16:30",
     "timezone": "UTC",
     "prediction": "Vencedor: Newcastle",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 1 x 3"
   },
   {
     "id": "man-united-x-wolves",
@@ -19,6 +20,7 @@
     "time": "17:15",
     "timezone": "UTC",
     "prediction": "Gols: Manchester United - Mais de 1.5",
-    "status": "pending"
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   }
 ]

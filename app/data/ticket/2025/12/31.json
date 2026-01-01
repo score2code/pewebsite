@@ -8,7 +8,8 @@
     "time": "11:30",
     "timezone": "UTC",
     "prediction": "Resultado Final: The New Saints",
-    "status": "pending"
+    "status": "red",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "hapoel-beer-sheva-x-hapoel-jerusalem",
@@ -19,6 +20,7 @@
     "time": "15:00",
     "timezone": "UTC",
     "prediction": "Gols: Mais de 1.5",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 4 x 1"
   }
 ]

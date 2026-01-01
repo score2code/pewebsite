@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: The New Saints",
     "confidence": 88,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 3 x 1",
     "analysis": "O TNS é a força dominante em Gales, com um elenco profissional superior aos demais. Mesmo fora de casa, a consistência técnica e o histórico de vitórias no confronto direto justificam a alta confiança no triunfo visitante."
   },
   {
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Gols: Mais de 1.5",
     "confidence": 78,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 1",
     "analysis": "O Beer Sheva em casa é muito agressivo, enquanto o Hapoel Jerusalem costuma ceder espaços em transições. A linha de 1.5 gols é extremamente segura considerando o índice de gols marcados do time mandante nesta temporada."
   },
   {
@@ -35,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Maccabi Netanya",
     "confidence": 74,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 2",
     "analysis": "Netanya possui um conjunto mais equilibrado e fator casa a seu favor. O DNB (Draw No Bet) protege o investimento contra um eventual empate, embora a probabilidade de vitória do time da casa seja alta devido à fragilidade defensiva do Petah Tikva."
   },
   {
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Maccabi Haifa",
     "confidence": 82,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 4",
     "analysis": "O Maccabi Haifa luta pelo título e possui individualidades que resolvem jogos contra times da metade inferior da tabela. A diferença de orçamento e qualidade técnica é o fator determinante aqui."
   },
   {
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Dupla Hipótese: Empate ou Camarões",
     "confidence": 85,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 2",
     "analysis": "Camarões possui jogadores em ligas europeias de elite e uma estrutura defensiva sólida. Moçambique é resiliente em casa, mas a chance de vitória visitante ou um empate controlado por Camarões é muito provável."
   },
   {
@@ -74,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim",
     "confidence": 71,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 3",
     "analysis": "O Gabão costuma marcar jogando em seus domínios com a presença de suas estrelas ofensivas, enquanto a Costa do Marfim é um dos ataques mais poderosos do continente. Cenário propício para gols de ambos os lados."
   },
   {
@@ -87,7 +93,8 @@
     "timezone": "UTC",
     "prediction": "Vencedor: Argélia",
     "confidence": 76,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 3",
     "analysis": "A Argélia recuperou sua estabilidade tática e possui um volume de jogo muito superior. Guiné Equatorial é organizada, mas a qualidade técnica individual dos argelinos deve prevalecer nos momentos decisivos."
   },
   {
@@ -100,7 +107,8 @@
     "timezone": "UTC",
     "prediction": "Intervalo/Final: Al Hilal/Al Hilal",
     "confidence": 92,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar - 1º Tempo: 2 x 1",
     "analysis": "O Al Hilal é atualmente a melhor equipe da Ásia. Contra o Al Kholood, a tendência é que imponham o ritmo desde o primeiro minuto, vencendo tanto o primeiro tempo quanto o jogo completo."
   },
   {
@@ -113,7 +121,8 @@
     "timezone": "UTC",
     "prediction": "Gols: Mais de 2.5",
     "confidence": 80,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 3",
     "analysis": "Com Benzema e um setor ofensivo fortíssimo, o Al Ittihad costuma participar de jogos de placar elástico. O Neom SC, por ser inferior, deve conceder muitas chances, tornando o Over 2.5 um mercado de alta confiança."
   }
 ]
