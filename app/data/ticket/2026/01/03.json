@@ -1,0 +1,24 @@
+[
+  {
+    "id": "aston-villa-x-nottingham-forest",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Nottingham Forest",
+    "date": "2026-01-03",
+    "time": "09:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Aston Villa",
+    "status": "pending"
+  },
+  {
+    "id": "brighton-x-burnley",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Brighton",
+    "awayTeam": "Burnley",
+    "date": "2026-01-03",
+    "time": "12:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Brighton",
+    "status": "pending"
+  }
+]

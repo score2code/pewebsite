@@ -1,0 +1,93 @@
+[
+  {
+    "id": "rayo-vallecano-x-getafe",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Rayo Vallecano",
+    "awayTeam": "Getafe",
+    "date": "2026-01-02",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Rayo Vallecano (DNB)",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Rayo em Vallecas impõe ritmo intenso. Getafe costuma jogar fechado fora de casa, mas a proteção do DNB oferece valor dado o mando de campo e a necessidade de vitória dos locais."
+  },
+  {
+    "id": "cagliari-x-ac-milan",
+    "league": "Itália - Serie A",
+    "homeTeam": "Cagliari",
+    "awayTeam": "AC Milan",
+    "date": "2026-01-02",
+    "time": "16:45",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: AC Milan",
+    "confidence": 78,
+    "status": "pending",
+    "analysis": "Milan possui superioridade técnica evidente e busca consolidar posição na tabela. Cagliari tem dificuldades defensivas contra times do topo da tabela."
+  },
+  {
+    "id": "toulouse-x-lens",
+    "league": "França - Ligue 1",
+    "homeTeam": "Toulouse",
+    "awayTeam": "Lens",
+    "date": "2026-01-02",
+    "time": "16:45",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Lens (DNB)",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Lens é uma equipe taticamente muito organizada e difícil de ser batida. Toulouse oscila em casa, tornando o DNB no visitante uma opção segura com boa probabilidade de green."
+  },
+  {
+    "id": "gil-vicente-x-sporting-lisboa",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Gil Vicente",
+    "awayTeam": "Sporting Lisboa",
+    "date": "2026-01-02",
+    "time": "15:45",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Sporting Lisboa",
+    "confidence": 85,
+    "status": "pending",
+    "analysis": "Sporting vive fase excelente e tem um ataque avassalador. A diferença de qualidade individual e coletiva deve garantir uma vitória confortável para os Leões."
+  },
+  {
+    "id": "vitoria-guimaraes-x-cd-nacional",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Vitória Guimarães",
+    "awayTeam": "CD Nacional",
+    "date": "2026-01-02",
+    "time": "17:45",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Vitória Guimarães",
+    "confidence": 80,
+    "status": "pending",
+    "analysis": "Jogando no D. Afonso Henriques, o Vitória é muito forte. Nacional tem fraco desempenho como visitante, o que favorece amplamente o time da casa."
+  },
+  {
+    "id": "al-ettifaq-x-al-akhdoud",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Ettifaq",
+    "awayTeam": "Al Akhdoud",
+    "date": "2026-01-02",
+    "time": "11:35",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Al Ettifaq",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Al Ettifaq tem um elenco superior e joga em casa contra um adversário que luta na parte de baixo da tabela. A vitória mandante é o cenário mais provável."
+  },
+  {
+    "id": "al-ahli-x-al-nassr",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Ahli",
+    "awayTeam": "Al Nassr",
+    "date": "2026-01-02",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 82,
+    "status": "pending",
+    "analysis": "Clássico com ataques poderosos repletos de estrelas mundiais. Ambas as defesas costumam ceder espaços em jogos grandes, prometendo uma partida movimentada e com gols."
+  }
+]

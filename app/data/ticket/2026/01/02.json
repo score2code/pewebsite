@@ -1,0 +1,24 @@
+[
+  {
+    "id": "rayo-vallecano-x-getafe",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Rayo Vallecano",
+    "awayTeam": "Getafe",
+    "date": "2026-01-02",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Rayo Vallecano (DNB)",
+    "status": "pending"
+  },
+  {
+    "id": "al-ahli-x-al-nassr",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Ahli",
+    "awayTeam": "Al Nassr",
+    "date": "2026-01-02",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  }
+]

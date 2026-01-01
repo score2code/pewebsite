@@ -1,0 +1,24 @@
+[
+  {
+    "id": "liverpool-x-leeds-united",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Leeds United",
+    "date": "2026-01-01",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Liverpool",
+    "status": "pending"
+  },
+  {
+    "id": "brentford-x-tottenham",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Brentford",
+    "awayTeam": "Tottenham",
+    "date": "2026-01-01",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  }
+]

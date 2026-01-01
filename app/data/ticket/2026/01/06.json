@@ -1,0 +1,24 @@
+[
+  {
+    "id": "costa-do-marfim-x-burkina-faso",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Costa do Marfim",
+    "awayTeam": "Burkina Faso",
+    "date": "2026-01-06",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Costa do Marfim (DNB)",
+    "status": "pending"
+  },
+  {
+    "id": "argelia-x-rd-do-congo",
+    "league": "Internacional - Amistoso",
+    "homeTeam": "Argélia",
+    "awayTeam": "RD do Congo",
+    "date": "2026-01-06",
+    "time": "13:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Argélia",
+    "status": "pending"
+  }
+]

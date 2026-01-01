@@ -1,0 +1,24 @@
+[
+  {
+    "id": "newcastle-x-crystal-palace",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Crystal Palace",
+    "date": "2026-01-04",
+    "time": "12:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Newcastle",
+    "status": "pending"
+  },
+  {
+    "id": "fulham-x-liverpool",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Liverpool",
+    "date": "2026-01-04",
+    "time": "12:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Liverpool",
+    "status": "pending"
+  }
+]

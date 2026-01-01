@@ -1,0 +1,24 @@
+[
+  {
+    "id": "galatasaray-x-trabzonspor",
+    "league": "Turquia - Süper Lig",
+    "homeTeam": "Galatasaray",
+    "awayTeam": "Trabzonspor",
+    "date": "2026-01-05",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  },
+  {
+    "id": "leicester-x-west-bromwich-albion",
+    "league": "Inglaterra - Championship",
+    "homeTeam": "Leicester",
+    "awayTeam": "West Bromwich Albion",
+    "date": "2026-01-05",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Leicester",
+    "status": "pending"
+  }
+]
