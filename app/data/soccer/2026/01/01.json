@@ -9,8 +9,10 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Confronto equilibrado com histórico recente de jogos abertos. O Palace em casa busca o ataque, enquanto o Fulham tem aproveitado contra-ataques eficientes, aumentando a probabilidade de gols para os dois lados."
+    "analysis": "Confronto equilibrado com histórico recente de jogos abertos. O Palace em casa busca o ataque, enquanto o Fulham tem aproveitado contra-ataques eficientes, aumentando a probabilidade de gols para os dois lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
+
   },
   {
     "id": "liverpool-x-leeds-united",
@@ -22,8 +24,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Liverpool",
     "confidence": 82,
-    "status": "pending",
-    "analysis": "Liverpool jogando em Anfield possui um volume ofensivo muito superior. Leeds tem sofrido defensivamente contra times do 'Big Six', tornando a vitória dos mandantes o cenário mais provável."
+    "analysis": "Liverpool jogando em Anfield possui um volume ofensivo muito superior. Leeds tem sofrido defensivamente contra times do 'Big Six', tornando a vitória dos mandantes o cenário mais provável.",
+    "status": "red",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "brentford-x-tottenham",
@@ -35,8 +38,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "O estilo agressivo do Tottenham frequentemente expõe sua defesa, e o Brentford é perigoso em casa. A tendência é de um jogo movimentado com múltiplas chances de gol."
+    "analysis": "O estilo agressivo do Tottenham frequentemente expõe sua defesa, e o Brentford é perigoso em casa. A tendência é de um jogo movimentado com múltiplas chances de gol.",
+    "status": "red",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "sunderland-x-manchester-city",
@@ -48,8 +52,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Manchester City",
     "confidence": 85,
-    "status": "pending",
-    "analysis": "Diferença técnica abismal. O City deve controlar a posse e criar chances desde o início, enquanto o Sunderland terá dificuldades para conter o ímpeto ofensivo do adversário."
+    "analysis": "Diferença técnica abismal. O City deve controlar a posse e criar chances desde o início, enquanto o Sunderland terá dificuldades para conter o ímpeto ofensivo do adversário.",
+    "status": "red",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "sheffield-united-x-leicester",
@@ -61,8 +66,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Leicester (DNB)",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Leicester apresenta um elenco mais qualificado e melhor organização tática. O Sheffield em casa é combativo, mas o DNB protege o investimento em caso de um jogo travado."
+    "analysis": "Leicester apresenta um elenco mais qualificado e melhor organização tática. O Sheffield em casa é combativo, mas o DNB protege o investimento em caso de um jogo travado.",
+    "status": "red",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "beitar-jerusalem-x-hapoel-tel-aviv",
@@ -74,7 +80,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Beitar Jerusalem",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Fator casa é determinante neste clássico. Beitar vem em melhor momento de forma e deve se impor fisicamente e tecnicamente sobre o Hapoel."
+    "analysis": "Fator casa é determinante neste clássico. Beitar vem em melhor momento de forma e deve se impor fisicamente e tecnicamente sobre o Hapoel.",
+    "status": "green",
+    "reason": "Placar: 1 x 0"
   }
 ]
