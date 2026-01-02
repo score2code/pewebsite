@@ -1,0 +1,54 @@
+[
+  {
+    "id": "sevilla-x-celta-vigo",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Sevilla",
+    "awayTeam": "Celta Vigo",
+    "date": "2026-01-12",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Sevilla",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Jogando no Ramón Sánchez Pizjuán, o Sevilla costuma impor seu ritmo. O Celta tem oscilado fora de casa, o que favorece o mandante para conquistar os 3 pontos."
+  },
+  {
+    "id": "jong-psv-eindhoven-x-top-oss",
+    "league": "Holanda - Eerste Divisie",
+    "homeTeam": "Jong PSV Eindhoven",
+    "awayTeam": "TOP Oss",
+    "date": "2026-01-12",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 85,
+    "status": "pending",
+    "analysis": "A Eerste Divisie é conhecida por jogos abertos. O Jong PSV tem um ataque produtivo e enfrenta um TOP Oss que cede muitos espaços. Tendência clara de over."
+  },
+  {
+    "id": "jong-az-alkmaar-x-jong-ajax-amsterdam",
+    "league": "Holanda - Eerste Divisie",
+    "homeTeam": "Jong AZ Alkmaar",
+    "awayTeam": "Jong Ajax Amsterdam",
+    "date": "2026-01-12",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "confidence": 82,
+    "status": "pending",
+    "analysis": "Duelo de academias ofensivas. Jong AZ e Jong Ajax priorizam o ataque em detrimento da defesa, criando um cenário ideal para gols de ambos os lados."
+  },
+  {
+    "id": "liverpool-x-barnsley",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Barnsley",
+    "date": "2026-01-12",
+    "time": "16:45",
+    "timezone": "UTC",
+    "prediction": "Liverpool vence o 1º Tempo",
+    "confidence": 88,
+    "status": "pending",
+    "analysis": "Diferença técnica abismal. O Liverpool deve pressionar desde o início em Anfield para resolver o jogo cedo, tornando a vitória no primeiro tempo muito provável."
+  }
+]

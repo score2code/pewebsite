@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ac-milan-x-genoa",
+    "league": "Itália - Serie A",
+    "homeTeam": "AC Milan",
+    "awayTeam": "Genoa",
+    "date": "2026-01-08",
+    "time": "16:45",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: AC Milan",
+    "status": "pending"
+  },
+  {
+    "id": "psg-x-olympique-marseille",
+    "league": "França - Ligue 1",
+    "homeTeam": "PSG",
+    "awayTeam": "Olympique Marseille",
+    "date": "2026-01-08",
+    "time": "15:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  }
+]

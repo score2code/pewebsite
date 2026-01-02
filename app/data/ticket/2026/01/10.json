@@ -1,0 +1,24 @@
+[
+  {
+    "id": "villarreal-x-alaves",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Villarreal",
+    "awayTeam": "Alavés",
+    "date": "2026-01-10",
+    "time": "12:15",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Villarreal",
+    "status": "pending"
+  },
+  {
+    "id": "bayer-leverkusen-x-stuttgart",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Bayer Leverkusen",
+    "awayTeam": "Stuttgart",
+    "date": "2026-01-10",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "status": "pending"
+  }
+]

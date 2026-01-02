@@ -1,4 +1,4 @@
-- com esses jogos, faca a analise e monte o json app/data/soccer/2026/01/07.json, não seja preguiçoso repetindo o mesmo mercado para todos os jogos, e evite ao maximo o under gols e se usar, só quando tiver mais de 90% de certeza que terá, e sempre escolha o palpite com alta confiança. E evite ao maximo hadicap tambem. E sempre com palpites com confiança acima de 70.
+- com esses jogos, faca a analise e monte o json app/data/soccer/2026/01/14.json, não seja preguiçoso repetindo o mesmo mercado para todos os jogos, e evite ao maximo o under gols e se usar, só quando tiver mais de 90% de certeza que terá, e sempre escolha o palpite com alta confiança. E evite ao maximo hadicap tambem. E sempre com palpites com confiança acima de 70.
 
 Exemplo do json: 
 

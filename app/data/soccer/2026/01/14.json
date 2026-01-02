@@ -1,0 +1,68 @@
+[
+  {
+    "id": "chelsea-x-arsenal",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Arsenal",
+    "date": "2026-01-14",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "confidence": 79,
+    "status": "pending",
+    "analysis": "Derby londrino de alta intensidade. Chelsea e Arsenal com dinâmica ofensiva forte e linhas defensivas expostas em transições, favorecendo o BTTS com boa margem."
+  },
+  {
+    "id": "wolfsburg-x-st-pauli",
+    "league": "Alemanha - DFB-Pokal",
+    "homeTeam": "Wolfsburg",
+    "awayTeam": "St. Pauli",
+    "date": "2026-01-14",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Wolfsburg",
+    "confidence": 75,
+    "status": "pending",
+    "analysis": "Wolfsburg mais qualificado tecnicamente e com elenco profundo para copas; St. Pauli competitivo, mas tende a sofrer fora contra pressão e bolas paradas."
+  },
+  {
+    "id": "fc-koln-x-bayern-munich",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "FC Koln",
+    "awayTeam": "Bayern Munich",
+    "date": "2026-01-14",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Bayern Munich vence o 1º Tempo",
+    "confidence": 86,
+    "status": "pending",
+    "analysis": "Bayern inicia jogos com pressão alta e volume ofensivo; Koln costuma ceder chances cedo. Valor em vencer o 1º tempo, mantendo alta confiança."
+  },
+  {
+    "id": "rb-leipzig-x-freiburg",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "RB Leipzig",
+    "awayTeam": "Freiburg",
+    "date": "2026-01-14",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: RB Leipzig",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Leipzig com controle territorial e boa criação; Freiburg competitivo, mas inferior fora contra blocos médios e pressão pós-perda. Resultado final favorece o mandante."
+  },
+  {
+    "id": "hoffenheim-x-borussia-monchengladbach",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Hoffenheim",
+    "awayTeam": "Borussia Monchengladbach",
+    "date": "2026-01-14",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 82,
+    "status": "pending",
+    "analysis": "Duas equipes com proposta ofensiva e defesas vulneráveis em bolas cruzadas e transições. Ritmo alto e criação sugerem over com boa confiança."
+  }
+]
+

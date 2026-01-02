@@ -1,0 +1,24 @@
+[
+  {
+    "id": "fc-koln-x-bayern-munich",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "FC Koln",
+    "awayTeam": "Bayern Munich",
+    "date": "2026-01-14",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Bayern Munich vence o 1º Tempo",
+    "status": "pending"
+  },
+  {
+    "id": "hoffenheim-x-borussia-monchengladbach",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Hoffenheim",
+    "awayTeam": "Borussia Monchengladbach",
+    "date": "2026-01-14",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  }
+]

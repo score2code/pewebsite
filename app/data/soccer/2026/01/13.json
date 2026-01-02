@@ -1,0 +1,81 @@
+[
+  {
+    "id": "newcastle-x-manchester-city",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Manchester City",
+    "date": "2026-01-13",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Manchester City",
+    "confidence": 78,
+    "status": "pending",
+    "analysis": "City com posse dominante e criação constante; Newcastle tende a sofrer em transições defensivas contra ataques posicionais. Valor no resultado final sem recorrer a handicap."
+  },
+  {
+    "id": "stuttgart-x-eintracht-frankfurt",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Stuttgart",
+    "awayTeam": "Eintracht Frankfurt",
+    "date": "2026-01-13",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "confidence": 80,
+    "status": "pending",
+    "analysis": "Stuttgart agressivo em casa e Frankfurt eficiente em transições; ambas as defesas concedem chances claras. Cenário favorável para gols dos dois lados."
+  },
+  {
+    "id": "borussia-dortmund-x-werder-bremen",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Werder Bremen",
+    "date": "2026-01-13",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 83,
+    "status": "pending",
+    "analysis": "Dortmund com alta produção ofensiva e Bremen vulnerável fora; ritmo de jogo e volume de finalizações sugerem um over sustentável sem necessidade de handicap."
+  },
+  {
+    "id": "mainz-x-heidenheim",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Mainz",
+    "awayTeam": "Heidenheim",
+    "date": "2026-01-13",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Mainz (DNB)",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Jogo de margem apertada; Mainz mais sólido em casa e Heidenheim competitivo. DNB reduz variância mantendo boa confiança sem recorrer a handicap."
+  },
+  {
+    "id": "hamburger-x-bayer-leverkusen",
+    "league": "Alemanha - DFB-Pokal",
+    "homeTeam": "Hamburger",
+    "awayTeam": "Bayer Leverkusen",
+    "date": "2026-01-13",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 86,
+    "status": "pending",
+    "analysis": "Leverkusen apresenta ataque de elite e impõe ritmo alto; Hamburger concede espaços. Jogo com forte tendência de gols, mantendo alta confiança no over."
+  },
+  {
+    "id": "as-roma-x-torino-fc",
+    "league": "Itália - Serie A",
+    "homeTeam": "AS Roma",
+    "awayTeam": "Torino FC",
+    "date": "2026-01-13",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: AS Roma (DNB)",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Roma forte no Olímpico e Torino com bloco baixo disciplinado. DNB favorece o mandante, reduzindo risco de empate sem usar handicap."
+  }
+]
+

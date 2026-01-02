@@ -1,0 +1,24 @@
+[
+  {
+    "id": "panathinaikos-x-panserraikos",
+    "league": "Grécia - Super League",
+    "homeTeam": "Panathinaikos",
+    "awayTeam": "Panserraikos",
+    "date": "2026-01-11",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Panathinaikos",
+    "status": "pending"
+  },
+  {
+    "id": "portsmouth-x-arsenal",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Portsmouth",
+    "awayTeam": "Arsenal",
+    "date": "2026-01-11",
+    "time": "11:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Arsenal",
+    "status": "pending"
+  }
+]

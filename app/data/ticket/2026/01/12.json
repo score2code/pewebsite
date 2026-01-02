@@ -1,0 +1,24 @@
+[
+  {
+    "id": "jong-psv-eindhoven-x-top-oss",
+    "league": "Holanda - Eerste Divisie",
+    "homeTeam": "Jong PSV Eindhoven",
+    "awayTeam": "TOP Oss",
+    "date": "2026-01-12",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  },
+  {
+    "id": "jong-az-alkmaar-x-jong-ajax-amsterdam",
+    "league": "Holanda - Eerste Divisie",
+    "homeTeam": "Jong AZ Alkmaar",
+    "awayTeam": "Jong Ajax Amsterdam",
+    "date": "2026-01-12",
+    "time": "16:00",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "status": "pending"
+  }
+]

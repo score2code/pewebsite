@@ -1,0 +1,24 @@
+[
+  {
+    "id": "stuttgart-x-eintracht-frankfurt",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Stuttgart",
+    "awayTeam": "Eintracht Frankfurt",
+    "date": "2026-01-13",
+    "time": "14:30",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "status": "pending"
+  },
+  {
+    "id": "borussia-dortmund-x-werder-bremen",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Werder Bremen",
+    "date": "2026-01-13",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  }
+]
