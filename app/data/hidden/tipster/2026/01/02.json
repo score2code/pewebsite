@@ -1,0 +1,82 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.80,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 1.68,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "tipster": "Tylty",
+    "stake": 1,
+    "odd": 1.45,
+    "return": 1.45,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "tipster": "Edge2Green",
+    "stake": 1,
+    "odd": 1.83,
+    "return": 1.38,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 2.02,
+    "return": 2.03,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 1.97,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.85,
+    "return": 1.85,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.78,
+    "return": 1.78,
+    "status": "green"
+  },
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 4,
+    "date": "2026-01-02",
+    "affectsInitial": true,
+    "note": "Crédito de bônus inicial"
+  }
+]

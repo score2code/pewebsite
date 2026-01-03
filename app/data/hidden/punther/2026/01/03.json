@@ -1,0 +1,25 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 4,
+    "date": "2026-01-03",
+    "affectsInitial": true,
+    "note": "Crédito de bônus inicial"
+  },
+  {
+    "type": "bet",
+    "model": "leverage",
+    "date": "2026-01-03",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Brighton",
+    "awayTeam": "Burnley",
+    "prediction": [
+      "Over 1.5 Gols"
+    ],
+    "stake": 2,
+    "odd": 1.22,
+    "return": 2.44,
+    "status": "pending"
+  }
+]

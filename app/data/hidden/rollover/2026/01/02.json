@@ -1,0 +1,226 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 323.30,
+    "date": "2026-01-02",
+    "affectsInitial": true,
+    "note": "Orçamento inicial"
+  },
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 2,
+    "date": "2026-01-02",
+    "affectsInitial": false,
+    "note": "Analises"
+  },
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 4,
+    "date": "2026-01-02",
+    "affectsInitial": false,
+    "note": "Tipster"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Ahli",
+    "awayTeam": "Al Nassr",
+    "prediction": [
+      "Over 0.5 Gols Live"
+    ],
+    "stake": 40,
+    "odd": 1.009,
+    "return": 40.36,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Ahli",
+    "awayTeam": "Al Nassr",
+    "prediction": [
+      "Over 1.5 Gols Live"
+    ],
+    "stake": 40,
+    "odd": 1.01,
+    "return": 40.40,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Ahli",
+    "awayTeam": "Al Nassr",
+    "prediction": [
+      "Under 8.5 Gols"
+    ],
+    "stake": 10,
+    "odd": 1.01,
+    "return": 10.10,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Ahli",
+    "awayTeam": "Al Nassr",
+    "prediction": [
+      "Over 4.5 Gols"
+    ],
+    "stake": 10,
+    "odd": 1.12,
+    "return": 11.20,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Gil Vicente",
+    "awayTeam": "Sporting Lisboa",
+    "prediction": [
+      "Over 0.5 Gols Live"
+    ],
+    "stake": 40,
+    "odd": 1.04,
+    "return": 41.60,
+    "status": "green"
+  },
+  {
+    "type": "audit",
+    "date": "2026-01-02",
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["Tipster"],
+    "stake": 8,
+    "odd": 8,
+    "return": 8,
+    "status": "void"
+  },
+  {
+    "type": "audit",
+    "date": "2026-01-02",
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["Analysis"],
+    "stake": 2,
+    "odd": 2,
+    "return": 2,
+    "status": "void"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Gil Vicente",
+    "awayTeam": "Sporting Lisboa",
+    "prediction": [
+      "Under 4.5 Gols"
+    ],
+    "stake": 20,
+    "odd": 1.005,
+    "return": 20.10,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "França - Ligue 1",
+    "homeTeam": "Toulouse",
+    "awayTeam": "Lens",
+    "prediction": [
+      "Under 5.5 Gols"
+    ],
+    "stake": 20,
+    "odd": 1.003,
+    "return": 20.06,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Itália - Série A",
+    "homeTeam": "Cagliari",
+    "awayTeam": "AC Milan",
+    "prediction": [
+      "Over 0.5 Gols Live"
+    ],
+    "stake": 5,
+    "odd": 1.14,
+    "return": 5.70,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Itália - Série A",
+    "homeTeam": "Cagliari",
+    "awayTeam": "AC Milan",
+    "prediction": [
+      "Under 4.5 Gols"
+    ],
+    "stake": 5,
+    "odd": 1.008,
+    "return": 5.04,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Rayo Vallecano",
+    "awayTeam": "Getafe",
+    "prediction": [
+      "Under 4.5 Gols"
+    ],
+    "stake": 5,
+    "odd": 1.004,
+    "return": 5.02,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Itália - Série A",
+    "homeTeam": "Cagliari",
+    "awayTeam": "AC Milan",
+    "prediction": [
+      "CD: X2"
+    ],
+    "stake": 5,
+    "odd": 1.004,
+    "return": 5.02,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-02",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Vitória Guimarães",
+    "awayTeam": "CD Nacional",
+    "prediction": [
+      "Under 3.5 Gols"
+    ],
+    "stake": 5.50,
+    "odd": 1.003,
+    "return": 5.52,
+    "status": "green"
+  },
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 4.49,
+    "date": "2026-01-02",
+    "affectsInitial": false,
+    "note": "Tipster"
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 5,
+    "date": "2026-01-03",
+    "affectsInitial": true,
+    "note": "Crédito de bônus inicial"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 1.74,
+    "return": 1.74,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Edge2Green",
+    "stake": 1,
+    "odd": 1.86,
+    "return": 1.86,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.75,
+    "return": 1.75,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.50,
+    "return": 1.50,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.45,
+    "return": 1.45,
+    "status": "pending"
+  }
+]

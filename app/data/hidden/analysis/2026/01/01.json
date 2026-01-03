@@ -2,9 +2,9 @@
   {
     "type": "transaction",
     "kind": "deposit",
-    "amount": 20,
-    "date": "2026-01-01",
+    "amount": 2,
+    "date": "2026-01-02",
     "affectsInitial": true,
-    "note": "Orçamento inicial"
+    "note": "Crédito de bônus inicial"
   }
 ]

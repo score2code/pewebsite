@@ -9,7 +9,7 @@ type BetRow = {
   return?: number;
   tipster?: string;
   status?: 'green' | 'red' | 'void' | 'pending' | 'postponed' | 'cashout';
-  type?: 'bet' | 'transaction';
+  type?: 'bet' | 'transaction' | 'audit';
   kind?: 'deposit' | 'withdraw' | 'withdrawal';
   amount?: number;
   affectsInitial?: boolean;
@@ -72,11 +72,12 @@ export default async function Items({ category, tipster }: { category: string, t
   const bets = await loadBets(category);
   const transactions = bets.filter(b => b.type === 'transaction');
   const initialAdjust = transactions.filter(t => Boolean(t.affectsInitial)).reduce((s, t) => s + computeTransactionEffect(t), 0);
-  const totalBets = (tipster?: string) => bets.filter(b => b.type === 'bet' && (!tipster || b.tipster === tipster)).length;
+  const runtimeTrans = transactions.filter(t => !Boolean(t.affectsInitial)).reduce((s, t) => s + computeTransactionEffect(t), 0);
+  const totalBets = (tipster?: string) => bets.filter(b => b.type !== 'transaction' && b.type !== 'audit' && (!tipster || b.tipster === tipster)).length;
   const totalReds = (tipster?: string) => bets.filter(b => b.status === 'red' && (!tipster || b.tipster === tipster)).length;
   const totalGreens = (tipster?: string) => bets.filter(b => b.status === 'green' && (!tipster || b.tipster === tipster)).length;
-  const totalStake = (tipster?: string) => bets.filter(b => b.status !== 'pending' && b.type === 'bet' && (!tipster || b.tipster === tipster)).reduce((sum, b) => sum + (b.stake || 0), 0);
-  const totalReturn = (tipster?: string) => bets.filter(b => b.status !== 'pending' && b.type === 'bet' && (!tipster || b.tipster === tipster)).reduce((sum, b) => sum + (b.return || 0), 0) - totalStake(tipster);
+  const totalStake = (tipster?: string) => bets.filter(b => b.status !== 'pending' && b.type !== 'transaction' && (!tipster || b.tipster === tipster)).reduce((sum, b) => sum + (b.stake || 0), 0);
+  const totalReturn = (tipster?: string) => bets.filter(b => b.status !== 'pending' && b.type !== 'transaction' && (!tipster || b.tipster === tipster)).reduce((sum, b) => sum + (b.return || 0), 0) - totalStake(tipster);
 
   const returnClass = `${totalReturn(tipster) > 0 ? 'text-green-700 dark:text-green-400' : totalReturn(tipster) < 0 ? 'text-red-700 dark:text-red-400' : 'text-dark-900/70 dark:text-light-100/70'}`
   const bankrollClass = `${(initialAdjust + totalReturn(tipster)) > initialAdjust ? 'text-green-700 dark:text-green-400' : (initialAdjust + totalReturn(tipster)) < initialAdjust ? 'text-red-700 dark:text-red-400' : 'text-dark-900/70 dark:text-light-100/70'}`
@@ -104,7 +105,7 @@ export default async function Items({ category, tipster }: { category: string, t
         <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
         <div className="flex-1">
           <div className="text-xs text-dark-900/70 dark:text-light-100/70">Banca Atual</div>
-          <div className={`font-bold ${bankrollClass}`}>{formatCurrencyBRL(initialAdjust + totalReturn(tipster))}</div>
+          <div className={`font-bold ${bankrollClass}`}>{formatCurrencyBRL(initialAdjust + totalReturn(tipster) + runtimeTrans)}</div>
         </div>
       </div>
       )}

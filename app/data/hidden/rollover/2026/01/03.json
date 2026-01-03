@@ -1,0 +1,84 @@
+[
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 5,
+    "date": "2026-01-03",
+    "affectsInitial": false,
+    "note": "Tipster"
+  },
+  {
+    "type": "audit",
+    "date": "2026-01-03",
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["Tipster"],
+    "stake": 5,
+    "odd": 5,
+    "return": 5,
+    "status": "void"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Nottingham Forest",
+    "prediction": [
+      "Over 0.5 Gols Live"
+    ],
+    "stake": 40,
+    "odd": 1.06,
+    "return": 42.40,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Nottingham Forest",
+    "prediction": [
+      "Over 3.5 Gols Live"
+    ],
+    "stake": 10,
+    "odd": 1.53,
+    "return": 15.30,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "league": "Escócia - Premiership",
+    "homeTeam": "Celtic",
+    "awayTeam": "Rangers",
+    "prediction": [
+      "Over 3.5 Gols Live"
+    ],
+    "stake": 10,
+    "odd": 1.33,
+    "return": 13.30,
+    "status": "green"
+  },
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 4,
+    "date": "2026-01-03",
+    "affectsInitial": false,
+    "note": "Punther"
+  },
+  {
+    "type": "audit",
+    "date": "2026-01-03",
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["Punther"],
+    "stake": 4,
+    "odd": 4,
+    "return": 4,
+    "status": "void"
+  }
+]

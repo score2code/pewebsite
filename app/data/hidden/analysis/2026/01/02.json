@@ -1,32 +1,42 @@
 [
   {
     "type": "bet",
-    "model": "free",
+    "model": "marketing",
     "date": "2026-01-02",
     "analysis": 30,
     "stake": 0.50,
-    "odd": 0,
+    "odd": 15120.05,
     "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "model": "marketing",
+    "date": "2026-01-02",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 25720.87,
+    "return": 19290.40,
     "status": "pending"
   },
   {
     "type": "bet",
-    "model": "free",
+    "model": "marketing",
     "date": "2026-01-02",
     "analysis": 30,
     "stake": 0.50,
-    "odd": 0,
-    "return": 0,
+    "odd": 2279.92,
+    "return": 1367.86,
     "status": "pending"
   },
   {
     "type": "bet",
-    "model": "free",
+    "model": "marketing",
     "date": "2026-01-02",
-    "analysis": 30,
+    "analysis": 0,
     "stake": 0.50,
-    "odd": 0,
-    "return": 0,
+    "odd": 1349.01,
+    "return": 809.31,
     "status": "pending"
   },
   {

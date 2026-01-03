@@ -689,3 +689,39 @@ Wolverhampton
 - Impedimentos: 0
 - Cartões: 1
 
+### Rodada 19 - 01/01/2026 - 14:30
+Liverpool 0 x 0 Leeds United
+
+Liverpool
+- Gols
+  - 
+- Gols esperados (xG): 2.08
+- Posse de bola: 68%
+- Finalizações: 19
+- Finalizações no gol: 4
+- Total de desarmes: 8
+- Defesas do goleiro: 2
+- Escanteios: 8
+- Faltas: 10
+- Passes certos: 549
+- Ataques: 35
+- Ataques perigosos: 4
+- Impedimentos: 6
+- Cartões: 0
+
+Leeds United
+- Gols
+  - 
+- Gols esperados (xG): 0.69
+- Posse de bola: 32%
+- Finalizações: 4
+- Finalizações no gol: 2
+- Total de desarmes: 18
+- Defesas do goleiro: 4
+- Escanteios: 3
+- Faltas: 8
+- Passes certos: 194
+- Ataques: 11
+- Ataques perigosos: 1
+- Impedimentos: 1
+- Cartões: 2

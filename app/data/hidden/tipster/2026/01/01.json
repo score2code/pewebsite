@@ -2,18 +2,9 @@
   {
     "type": "transaction",
     "kind": "deposit",
-    "amount": 40,
+    "amount": 4,
     "date": "2026-01-01",
     "affectsInitial": true,
-    "note": "Orçamento inicial"
-  },
-  {
-    "type": "bet",
-    "date": "2026-01-01",
-    "tipster": "Yuri",
-    "stake": 0.50,
-    "odd": 0,
-    "return": 1,
-    "status": "pending"
+    "note": "Crédito de bônus inicial"
   }
 ]
