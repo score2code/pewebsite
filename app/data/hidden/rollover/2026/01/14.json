@@ -1,0 +1,10 @@
+[
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 40,
+    "date": "2026-01-14",
+    "affectsInitial": false,
+    "note": "Pessoal: Delay Ball"
+  }
+]

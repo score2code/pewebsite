@@ -1,0 +1,104 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 20.13,
+    "date": "2026-01-03",
+    "affectsInitial": true,
+    "note": "Orçamento inicial"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Togakure Tips",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Wolverhampton",
+    "awayTeam": "West Ham",
+    "prediction": [
+      "Back: Ambas Marcam"
+    ],
+    "stake": 1,
+    "odd": 2.08,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Togakure Tips",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Bournemouth",
+    "awayTeam": "Arsenal",
+    "prediction": [
+      "Back: CS: 0 x 2",
+      "Back: CS: 1 x 2",
+      "Lay: CS: 1 x 2"
+    ],
+    "stake": 2,
+    "odd": 9.40,
+    "return": 2.32,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Togakure Tips",
+    "league": "Itália - Série A",
+    "homeTeam": "Juventus",
+    "awayTeam": "Lecce",
+    "prediction": [
+      "Back: CS: 2 x 1"
+    ],
+    "stake": 1,
+    "odd": 12,
+    "return": 2.71,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Togakure Tips",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Elche CF",
+    "awayTeam": "Villarreal",
+    "prediction": [
+      "Back: Qualquer outra vitória do visitante",
+      "Lay: CS: 2 x 2"
+    ],
+    "stake": 2,
+    "odd": 7,
+    "return": 2,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Togakure Tips",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Benfica",
+    "awayTeam": "Estoril Praia",
+    "prediction": [
+      "Back: CS: 3 x 1"
+    ],
+    "stake": 1,
+    "odd": 11,
+    "return": 1.68,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "tipster": "Togakure Tips",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Espanyol",
+    "awayTeam": "Barcelona",
+    "prediction": [
+      "Lay: CS: 0 x 1",
+      "Lay: Over 1.5 Gols Live"
+    ],
+    "stake": 15.35,
+    "odd": 4.10,
+    "return": 0,
+    "status": "red"
+  }
+]

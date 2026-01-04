@@ -70,13 +70,5 @@
     "odd": 1.78,
     "return": 1.78,
     "status": "green"
-  },
-  {
-    "type": "transaction",
-    "kind": "withdrawal",
-    "amount": 4,
-    "date": "2026-01-02",
-    "affectsInitial": true,
-    "note": "Crédito de bônus inicial"
   }
 ]

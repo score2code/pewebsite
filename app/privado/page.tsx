@@ -49,6 +49,9 @@ export default function PrivadoIndexPage() {
           <Items category="tipster" tipster="Rafaela" />
           <Items category="tipster" tipster="Tylty" />
           <Items category="tipster" tipster="Edge2Green" />
+          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 mb-2">
+            <h3 className="text-lg font-bold text-dark-900 dark:text-light-100 text-center">O RED é normal, bingos com apostas grátis</h3>
+          </div>
           <Items category="analysis" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">

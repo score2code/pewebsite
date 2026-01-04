@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Aston Villa",
     "confidence": 78,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 1",
     "analysis": "Villa Park é uma fortaleza e o time mandante tem um retrospecto excelente em casa. Forest costuma ceder espaços quando joga fora, favorecendo o ataque veloz do Villa."
   },
   {
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 75,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 3 x 0",
     "analysis": "Dois times com vocação ofensiva e defesas que oscilam. O histórico recente sugere um jogo aberto com oportunidades claras para ambos os lados."
   },
   {
@@ -35,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Brighton",
     "confidence": 80,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 0",
     "analysis": "A qualidade técnica e a posse de bola do Brighton devem dominar o Burnley, que terá dificuldades para conter a movimentação ofensiva dos mandantes."
   },
   {
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Arsenal",
     "confidence": 82,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 3",
     "analysis": "Arsenal na disputa pelo título não pode tropeçar. A equipe londrina tem consistência tática e talento individual superior para superar a defesa do Bournemouth."
   },
   {
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Celta Vigo (DNB)",
     "confidence": 72,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 4 x 1",
     "analysis": "Celta é muito forte em casa e o Valencia tem desempenho irregular como visitante. O DNB protege contra um possível empate em um jogo travado."
   },
   {
@@ -74,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Athletic Bilbao (DNB)",
     "confidence": 74,
-    "status": "pending",
+    "status": "void",
+    "reason": "Placar: 1 x 1",
     "analysis": "Duelo basco-navarro intenso. Bilbao tem um elenco superior e vive melhor momento, sendo o favorito, mas o DNB é prudente dado o fator casa do Osasuna."
   },
   {
@@ -87,7 +93,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Villarreal",
     "confidence": 77,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 3",
     "analysis": "A diferença técnica é considerável. O Submarino Amarelo tem um ataque potente que deve sobressair contra a defesa mais frágil do Elche."
   },
   {
@@ -100,7 +107,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Barcelona",
     "confidence": 84,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 2",
     "analysis": "Derbi da Catalunha. Barcelona lidera em estatísticas ofensivas e deve impor seu jogo de posse para vencer o rival local, que luta na parte inferior."
   },
   {
@@ -113,7 +121,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Udinese (DNB)",
     "confidence": 73,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "Udinese é uma equipe fisicamente forte e experiente na Serie A, enquanto o Como ainda busca estabilidade. O DNB a favor dos visitantes tem bom valor."
   },
   {
@@ -126,7 +135,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Juventus",
     "confidence": 86,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "Juventus em Turim é amplamente favorita. A solidez defensiva combinada com a necessidade de pontos deve garantir uma vitória segura contra o Lecce."
   },
   {
@@ -139,7 +149,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 79,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 3",
     "analysis": "Clássico do futebol francês entre dois ataques poderosos. Mônaco joga para frente em casa e o Lyon tem qualidade ofensiva para responder, prometendo gols."
   },
   {
@@ -152,7 +163,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Lille (DNB)",
     "confidence": 75,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 2",
     "analysis": "Lille é muito forte no Pierre-Mauroy. Rennes é um adversário perigoso, mas o fator casa inclina o favoritismo para o Lille, com o DNB oferecendo segurança."
   },
   {
@@ -165,7 +177,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Braga",
     "confidence": 81,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 3 x 3",
     "analysis": "Braga tem um elenco muito superior e briga no topo da tabela. Estrela Amadora terá dificuldades para conter o volume de jogo dos visitantes."
   },
   {
@@ -178,7 +191,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Benfica",
     "confidence": 88,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 1",
     "analysis": "Benfica na Luz é uma das apostas mais seguras da liga. A diferença técnica é enorme e as Águias devem vencer com autoridade."
   },
   {
@@ -191,7 +205,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Al Ittihad",
     "confidence": 79,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 0",
     "analysis": "Jogando em casa e com um elenco estrelado, o Al Ittihad tem tudo para somar 3 pontos contra um Al Taawoun que, apesar de organizado, é inferior tecnicamente."
   },
   {
@@ -204,7 +219,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Olympiacos",
     "confidence": 85,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 0",
     "analysis": "Olympiacos domina o futebol grego e é avassalador em casa. OFI Crete raramente consegue surpreender no Pireu."
   },
   {
@@ -217,7 +233,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 76,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 3",
     "analysis": "O Old Firm é sempre disputado com alta intensidade. Ambos os times lideram a liga com folga e têm os melhores ataques, tornando o BTTS uma escolha lógica."
   }
 ]

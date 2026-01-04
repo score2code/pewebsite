@@ -13,7 +13,7 @@
     "amount": 2,
     "date": "2026-01-02",
     "affectsInitial": false,
-    "note": "Analises"
+    "note": "Banca: Analises"
   },
   {
     "type": "transaction",
@@ -21,7 +21,19 @@
     "amount": 4,
     "date": "2026-01-02",
     "affectsInitial": false,
-    "note": "Tipster"
+    "note": "Banca: Tipster"
+  },
+  {
+    "type": "audit",
+    "date": "2026-01-02",
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["Tipster"],
+    "stake": 8,
+    "odd": 8,
+    "return": 8.49,
+    "status": "void"
   },
   {
     "type": "bet",
@@ -92,30 +104,6 @@
     "odd": 1.04,
     "return": 41.60,
     "status": "green"
-  },
-  {
-    "type": "audit",
-    "date": "2026-01-02",
-    "league": "-",
-    "homeTeam": "-",
-    "awayTeam": "-",
-    "prediction": ["Tipster"],
-    "stake": 8,
-    "odd": 8,
-    "return": 8,
-    "status": "void"
-  },
-  {
-    "type": "audit",
-    "date": "2026-01-02",
-    "league": "-",
-    "homeTeam": "-",
-    "awayTeam": "-",
-    "prediction": ["Analysis"],
-    "stake": 2,
-    "odd": 2,
-    "return": 2,
-    "status": "void"
   },
   {
     "type": "bet",
@@ -214,13 +202,5 @@
     "odd": 1.003,
     "return": 5.52,
     "status": "green"
-  },
-  {
-    "type": "transaction",
-    "kind": "deposit",
-    "amount": 4.49,
-    "date": "2026-01-02",
-    "affectsInitial": false,
-    "note": "Tipster"
   }
 ]

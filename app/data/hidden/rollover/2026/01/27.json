@@ -1,0 +1,10 @@
+[
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 8.9,
+    "date": "2026-01-27",
+    "affectsInitial": false,
+    "note": "Pessoal: HBO Max"
+  }
+]

@@ -2,10 +2,10 @@
   {
     "type": "transaction",
     "kind": "withdrawal",
-    "amount": 5,
+    "amount": 36,
     "date": "2026-01-03",
     "affectsInitial": false,
-    "note": "Tipster"
+    "note": "Banca: Tipster"
   },
   {
     "type": "audit",
@@ -14,9 +14,9 @@
     "homeTeam": "-",
     "awayTeam": "-",
     "prediction": ["Tipster"],
-    "stake": 5,
-    "odd": 5,
-    "return": 5,
+    "stake": 18,
+    "odd": 0,
+    "return": 12,
     "status": "void"
   },
   {
@@ -64,10 +64,10 @@
   {
     "type": "transaction",
     "kind": "withdrawal",
-    "amount": 4,
+    "amount": 30,
     "date": "2026-01-03",
     "affectsInitial": false,
-    "note": "Punther"
+    "note": "Banca: Punther"
   },
   {
     "type": "audit",
@@ -76,9 +76,53 @@
     "homeTeam": "-",
     "awayTeam": "-",
     "prediction": ["Punther"],
-    "stake": 4,
-    "odd": 4,
-    "return": 4,
+    "stake": 2,
+    "odd": 0,
+    "return": 2.66,
     "status": "void"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Wolverhampton",
+    "awayTeam": "West Ham",
+    "prediction": [
+      "Over 1.5 Gols Live"
+    ],
+    "stake": 40,
+    "odd": 1.05,
+    "return": 42,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-03",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Brighton",
+    "awayTeam": "Burnley",
+    "prediction": [
+      "Over 0.5 Gols Live"
+    ],
+    "stake": 7.3,
+    "odd": 1.04,
+    "return": 7.59,
+    "status": "green"
+  },
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 20,
+    "date": "2026-01-03",
+    "affectsInitial": false,
+    "note": "Banca: Trader"
+  },
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 14,
+    "date": "2026-01-03",
+    "affectsInitial": false,
+    "note": "Pessoal: MP3 Player"
   }
 ]

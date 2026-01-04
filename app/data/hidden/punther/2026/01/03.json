@@ -2,7 +2,7 @@
   {
     "type": "transaction",
     "kind": "deposit",
-    "amount": 4,
+    "amount": 30,
     "date": "2026-01-03",
     "affectsInitial": true,
     "note": "Crédito de bônus inicial"
@@ -18,8 +18,8 @@
       "Over 1.5 Gols"
     ],
     "stake": 2,
-    "odd": 1.22,
-    "return": 2.44,
-    "status": "pending"
+    "odd": 1.33,
+    "return": 2.66,
+    "status": "green"
   }
 ]
