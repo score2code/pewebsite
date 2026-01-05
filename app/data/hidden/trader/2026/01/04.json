@@ -1,0 +1,230 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Sevilla",
+    "awayTeam": "Levante",
+    "prediction": [
+      "Back: Under 2.5 gols"
+    ],
+    "stake": 1.49,
+    "odd": 1.33,
+    "return": 1.55,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Everton",
+    "awayTeam": "Brentford",
+    "prediction": [
+      "Back: CS: 2 x 2"
+    ],
+    "stake": 1.55,
+    "odd": 18.5,
+    "return": 2.39,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Crystal Palace",
+    "prediction": [
+      "Back: Favorito (Newcastle)"
+    ],
+    "stake": 1,
+    "odd": 2.16,
+    "return": 1.69,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Betis",
+    "prediction": [
+      "Lay: Favorito (Real Madrid)"
+    ],
+    "stake": 2,
+    "odd": 1.27,
+    "return": 1.46,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Liverpool",
+    "prediction": [
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 1,
+    "odd": 1.84,
+    "return": 1.80,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Chelsea",
+    "prediction": [
+      "Back: CS: 2 x 2",
+      "Back: CS: 2 x 1"
+    ],
+    "stake": 3,
+    "odd": 17.50,
+    "return": 2,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Damac",
+    "awayTeam": "Al Hilal",
+    "prediction": [
+      "Back: CS: 1 x 2"
+    ],
+    "stake": 1,
+    "odd": 9.60,
+    "return": 1.02,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Damac",
+    "awayTeam": "Al Hilal",
+    "prediction": [
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2.02,
+    "return": 1,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Santa Clara",
+    "awayTeam": "Porto",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2.74,
+    "return": 0.72,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Chelsea",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2.03,
+    "return": 1.98,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "França - Ligue 1",
+    "homeTeam": "PSG",
+    "awayTeam": "Paris FC",
+    "prediction": [
+      "Back: 1º Tempo - Under 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 1.85,
+    "return": 1.06,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "França - Ligue 1",
+    "homeTeam": "PSG",
+    "awayTeam": "Paris FC",
+    "prediction": [
+      "Back: CS: 3 x 1"
+    ],
+    "stake": 1,
+    "odd": 12,
+    "return": 3.32,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Itália - Série A",
+    "homeTeam": "Inter de Milão",
+    "awayTeam": "Bologna",
+    "prediction": [
+      "Back: CS: 2 x 1"
+    ],
+    "stake": 1,
+    "odd": 9.80,
+    "return": 1.04,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Atlético de Madrid",
+    "prediction": [
+      "Back: 1º Tempo - Under 0.5 gols"
+    ],
+    "stake": 1,
+    "odd": 3.35,
+    "return": 1.06,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Atlético de Madrid",
+    "prediction": [
+      "Back: Under 2.5 gols",
+      "Back: Under 2.5 gols",
+      "Back: Under 3.5 gols"
+    ],
+    "stake": 3,
+    "odd": 2.01,
+    "return": 3.21,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-04",
+    "league": "Itália - Série A",
+    "homeTeam": "Inter de Milão",
+    "awayTeam": "Bologna",
+    "prediction": [
+      "Back: Under 2.5 gols",
+      "Back: Under 4.5 gols"
+    ],
+    "stake": 2,
+    "odd": 2.28,
+    "return": 2.11,
+    "status": "green"
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "date": "2026-01-04",
+    "time": "09:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Leeds United",
+    "awayTeam": "Manchester United",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Rivalidade histórica com alta intensidade. O Leeds costuma ceder espaços, o que favorece o LTD e o Over 1.5 em live."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "12:00",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Crystal Palace",
+    "market": [
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": true,
+    "note": "Newcastle é muito forte em casa. O DH + Over 1.5 protege a vitória simples e aproveita a média de gols do time mandante."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "12:00",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Liverpool",
+    "market": [
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "trader", "method": "Correct Score 3x1 - 1x3"}
+    ],
+    "recommended": true,
+    "note": "Liverpool pressiona alto desde o início. O Over Live e o Back Delayed são ideais caso o gol não saia nos primeiros 15 minutos."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "12:00",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Everton",
+    "awayTeam": "Brentford",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Handicap Asiático +0.5 Zebra"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Jogo equilibrado e com tendência defensiva. O Under 2.5 é a prioridade, mas o LTD pode ser usado com cautela."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "12:00",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Tottenham",
+    "awayTeam": "Sunderland",
+    "market": [
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Grande disparidade técnica. O Lay 0-1 protege contra um susto inicial da zebra, enquanto o DH foca na superioridade do Spurs."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "14:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Chelsea",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Jogo de alta liquidez e volume ofensivo. O LTD é o padrão ouro aqui, com o CS Cruzado cobrindo placares típicos de clássicos."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "10:00",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Sevilla",
+    "awayTeam": "Levante",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"}
+    ],
+    "recommended": false,
+    "note": "A La Liga tem tendência Under. Sevilla em casa costuma ser pragmático, favorecendo o mercado de menos gols e LTD curto."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "12:15",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Betis",
+    "market": [
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "trader", "method": "Correct Score 3x1 - 1x3"}
+    ],
+    "recommended": true,
+    "note": "Real Madrid no Bernabéu é forte no 2º tempo. O DH + Over 1.5 é seguro pela qualidade individual do elenco."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "17:00",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Atletico Madrid",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
+      {"type": "punter", "method": "Handicap Asiático +0.5 Zebra"}
+    ],
+    "recommended": false,
+    "note": "Duelo tático entre dois times que defendem muito bem. Cenário de poucos gols e alta probabilidade de empate."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "08:30",
+    "league": "Itália - Série A",
+    "homeTeam": "Lazio",
+    "awayTeam": "Napoli",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Jogo aberto na Série A. Ambas equipes buscam o ataque, o que torna o LTD e o CS Cruzado muito lucrativos em caso de gols."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "16:45",
+    "league": "Itália - Série A",
+    "homeTeam": "Inter de Milão",
+    "awayTeam": "Bologna",
+    "market": [
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
+    ],
+    "recommended": true,
+    "note": "Inter é dominante em casa. O Lay 0-1 protege o capital enquanto o time busca a vitória no mercado Punter."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "11:00",
+    "league": "França - Ligue 1",
+    "homeTeam": "Olympique Marseille",
+    "awayTeam": "Nantes",
+    "market": [
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": true,
+    "note": "Marseille costuma impor pressão inicial. DH e LTD são as melhores opções pela fragilidade do Nantes como visitante."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "16:45",
+    "league": "França - Ligue 1",
+    "homeTeam": "PSG",
+    "awayTeam": "Paris FC",
+    "market": [
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Correct Score 3x1 - 1x3"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Dérbi parisiense com grande desnível técnico. Ideal para buscar placares esticados (CS 3x1) e lucro no HT."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "15:00",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Santa Clara",
+    "awayTeam": "Porto",
+    "market": [
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"}
+    ],
+    "recommended": true,
+    "note": "Porto costuma amadurecer o gol fora de casa. O Back Delayed após os 20 min oferece uma odd muito superior ao pré-live."
+  },
+  {
+    "date": "2026-01-04",
+    "time": "14:30",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Damac",
+    "awayTeam": "Al Hilal",
+    "market": [
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Correct Score 3x1 - 1x3"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"}
+    ],
+    "recommended": true,
+    "note": "Al Hilal é a equipe mais forte da liga. O foco é na vitória confortável e no mercado de gols devido ao poder ofensivo."
+  }
+]

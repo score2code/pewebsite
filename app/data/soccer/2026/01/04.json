@@ -22,8 +22,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Newcastle",
     "confidence": 80,
-    "status": "pending",
-    "analysis": "St. James' Park é um diferencial enorme. O Newcastle costuma ser agressivo e dominante em seus domínios, superando times de meio de tabela como o Palace."
+    "analysis": "St. James' Park é um diferencial enorme. O Newcastle costuma ser agressivo e dominante em seus domínios, superando times de meio de tabela como o Palace.",
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "fulham-x-liverpool",
@@ -35,7 +36,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Liverpool",
     "confidence": 78,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 2 x 2",
     "analysis": "Apesar do Fulham ser competitivo em casa, o Liverpool tem um elenco superior e briga pelo topo. A necessidade de vitória deve impulsionar os Reds."
   },
   {
@@ -48,7 +50,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Everton (DNB)",
     "confidence": 72,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 2 x 4",
     "analysis": "Jogo equilibrado, mas o Everton se transforma no Goodison Park. O DNB oferece segurança contra um Brentford que é perigoso nos contra-ataques."
   },
   {
@@ -61,7 +64,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Tottenham",
     "confidence": 84,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "Spurs têm um ataque muito potente para a defesa do Sunderland. A disparidade técnica e o fator casa indicam uma vitória tranquila para o Tottenham."
   },
   {
@@ -74,7 +78,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Manchester City",
     "confidence": 79,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "O City em casa em jogos grandes costuma controlar as ações. O Chelsea tem qualidade, mas ainda oscila contra os gigantes, dando favoritismo aos Citizens."
   },
   {
@@ -87,7 +92,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Real Madrid",
     "confidence": 85,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 5 x 1",
     "analysis": "No Santiago Bernabéu, o Real Madrid é avassalador. O Betis joga bem, mas dificilmente segura o ímpeto ofensivo dos Merengues por 90 minutos."
   },
   {
@@ -100,7 +106,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Atletico Madrid (DNB)",
     "confidence": 73,
-    "status": "pending",
+    "status": "void",
+    "reason": "Placar: 1 x 1",
     "analysis": "Jogo tático e fechado. O Atlético tem mais experiência e solidez defensiva para pontuar fora de casa. O DNB é a escolha sensata num duelo parelho."
   },
   {
@@ -113,7 +120,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 75,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 2",
     "analysis": "Dois times que priorizam o ataque e brigam por vagas europeias. A tendência é de um jogo aberto com chances para os dois lados."
   },
   {
@@ -126,7 +134,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Fiorentina",
     "confidence": 82,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 0",
     "analysis": "A Fiorentina é muito superior tecnicamente e joga em casa contra um adversário que luta contra o rebaixamento. Vitória esperada da Viola."
   },
   {
@@ -139,7 +148,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Inter de Milão",
     "confidence": 81,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 1",
     "analysis": "A Inter possui um dos melhores elencos da liga e é muito forte no San Siro. O Bologna é organizado, mas não deve resistir à pressão nerazzurri."
   },
   {
@@ -152,7 +162,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Olympique Marseille",
     "confidence": 79,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 0 x 2",
     "analysis": "O Vélodrome empurra o time. O Marseille tem mais qualidade individual e coletiva para superar a defesa do Nantes e somar 3 pontos."
   },
   {
@@ -165,7 +176,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: PSG",
     "confidence": 88,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "No derby parisiense, a diferença de investimento e talento é abismal. O PSG deve dominar completamente a partida e vencer com tranquilidade."
   },
   {
@@ -178,7 +190,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Porto",
     "confidence": 77,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 1",
     "analysis": "Jogar nos Açores é difícil, mas o Porto não pode perder pontos na corrida pelo título. A raça e a qualidade técnica dos Dragões devem prevalecer."
   },
   {
@@ -191,7 +204,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Al Hilal",
     "confidence": 86,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 2",
     "analysis": "Al Hilal é a potência dominante da liga, com um elenco recheado de estrelas. O Damac não tem recursos para parar o ataque visitante."
   }
 ]

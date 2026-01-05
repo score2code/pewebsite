@@ -1,7 +1,7 @@
 "use client";
 import { useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { CalendarDays, Target, BadgeCheck } from 'lucide-react';
+import { CalendarDays, Target, BadgeCheck, Info } from 'lucide-react';
 
 type GameItem = {
   date: string;
@@ -12,6 +12,7 @@ type GameItem = {
   recommended?: boolean;
   live?: boolean;
   time?: string;
+  note?: string; // Nova propriedade adicionada
 };
 
 function formatDateBR(dateStr: string): string {
@@ -67,23 +68,38 @@ export default function BacklogClient({ games }: { games: GameItem[] }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {filtered.map((g, i) => {
           const isRecommended = Boolean(g.recommended);
-          const cardClass = isRecommended ? 'border-green-200 dark:border-green-700' : 'border-light-300 dark:border-dark-600';
+          const cardClass = isRecommended ? 'border-green-200 dark:border-green-700 bg-green-50/10 dark:bg-green-900/5' : 'border-light-300 dark:border-dark-600';
           return (
-            <div key={`${g.date}-${g.league}-${g.homeTeam}-${g.awayTeam}-${i}`} className={`rounded-lg border ${cardClass} bg-light-100/50 dark:bg-dark-800/50 p-4`}>
+            <div key={`${g.date}-${g.league}-${g.homeTeam}-${g.awayTeam}-${i}`} className={`rounded-lg border ${cardClass} bg-light-100/50 dark:bg-dark-800/50 p-4 transition-all hover:shadow-md`}>
               <div className="flex items-baseline gap-2">
                 <div className="text-sm text-dark-900/80 dark:text-light-100/80 font-medium whitespace-nowrap">{formatDateBR(g.date)}{g.time ? ` • ${g.time}` : ''}</div>
                 <div className="text-xs text-dark-900/70 dark:text-light-100/70 flex-1 min-w-0 overflow-hidden text-right truncate">{g.league}</div>
               </div>
-              <div className="mt-1 text-dark-900 dark:text-light-100 font-semibold">{g.homeTeam} × {g.awayTeam}</div>
-              <div className="mt-2 flex flex-col text-sm">
+
+              <div className="mt-1 text-dark-900 dark:text-light-100 font-semibold text-lg">{g.homeTeam} × {g.awayTeam}</div>
+
+              {/* Seção da Nota/Motivo */}
+              {g.note && (
+                <div className="mt-2 mb-3 flex gap-2 p-2 rounded bg-blue-50/50 dark:bg-blue-900/10 border border-blue-100/50 dark:border-blue-800/50">
+                  <Info size={16} className="text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
+                  <p className="text-xs text-blue-800/90 dark:text-blue-300/90 italic leading-relaxed">
+                    {g.note}
+                  </p>
+                </div>
+              )}
+
+              <div className="mt-2 flex flex-col gap-1 text-sm">
                 {[...g.market].map((item: { type: string; method: string }, index: number) => {
-                  const isTrader = Boolean(item.type === 'trader');
-                  const isRollover = Boolean(item.type === 'rollover');
+                  const isTrader = item.type === 'trader';
+                  const isRollover = item.type === 'rollover';
                   const badgeClass = isTrader ? 'text-blue-700 dark:text-blue-400' : isRollover ? 'text-orange-700 dark:text-orange-400' : 'text-green-700 dark:text-green-400';
+
                   return (
-                    <div className="inline-flex items-center">
+                    <div key={index} className="flex items-center gap-2">
                       <BadgeCheck size={14} className={badgeClass} />
-                      <span className={`${badgeClass}`}><strong className="ml-1 text-dark-900/70 dark:text-light-100/70">Plano {index + 1}:</strong> {item.method}</span>
+                      <span className="text-dark-900/90 dark:text-light-100/90">
+                        <strong className="text-[10px] uppercase tracking-wider opacity-60">Plano {index + 1}:</strong> {item.method}
+                      </span>
                     </div>
                   )
                 })}
@@ -98,6 +114,7 @@ export default function BacklogClient({ games }: { games: GameItem[] }) {
     </div>
   );
 }
+
 function toMinutes(t?: string): number {
   if (!t) return 0;
   const parts = t.split(':');

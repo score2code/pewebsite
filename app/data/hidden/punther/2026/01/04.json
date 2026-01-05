@@ -1,0 +1,47 @@
+[
+  {
+    "type": "bet",
+    "model": "punther",
+    "date": "2026-01-04",
+    "league": "França - Ligue 1",
+    "homeTeam": "Olympique Marseille",
+    "awayTeam": "Nantes",
+    "prediction": [
+      "DH (Favorito) + Over 1.5"
+    ],
+    "stake": 2,
+    "odd": 1.20,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "model": "punther",
+    "date": "2026-01-04",
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "Bingo"
+    ],
+    "stake": 1,
+    "odd": 3.18,
+    "return": 1.05,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "model": "punther",
+    "date": "2026-01-04",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Santa Clara",
+    "awayTeam": "Porto",
+    "prediction": [
+      "Over 1.5 gols Live"
+    ],
+    "stake": 1,
+    "odd": 2.50,
+    "return": 0,
+    "status": "red"
+  }
+]
