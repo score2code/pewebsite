@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "Galatasaray em casa é avassalador ofensivamente e costuma ditar um ritmo intenso. O Trabzonspor tem qualidade para contra-atacar e marcar, o que tende a transformar o jogo em uma partida aberta com muitos gols."
+    "analysis": "Galatasaray em casa é avassalador ofensivamente e costuma ditar um ritmo intenso. O Trabzonspor tem qualidade para contra-atacar e marcar, o que tende a transformar o jogo em uma partida aberta com muitos gols.",
+    "status": "green",
+    "reason": "Placar: 4 x 1"
   },
   {
     "id": "leicester-x-west-bromwich-albion",
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Leicester",
     "confidence": 76,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "Leicester jogando no King Power Stadium tem mostrado grande consistência nesta temporada. O West Bromwich é um adversário físico, mas a maior qualidade técnica e criativa do meio-campo do Leicester deve garantir os 3 pontos."
   },
   {
@@ -35,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Maccabi Haifa",
     "confidence": 82,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 0",
     "analysis": "No Derby de Haifa, a disparidade técnica é evidente a favor do Maccabi. Vindo de uma sequência sólida e com o apoio massivo da torcida, o Maccabi Haifa tem tudo para vencer seu rival local com autoridade."
   }
 ]

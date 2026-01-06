@@ -1,0 +1,119 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Mundo Bet",
+    "stake": 1,
+    "odd": 1.65,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Boleiros",
+    "stake": 1,
+    "odd": 2.25,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 3.40,
+    "return": 3.41,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 7.91,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Edge2Green",
+    "stake": 1,
+    "odd": 4.40,
+    "return": 4.58,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.68,
+    "return": 1.68,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 9.37,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.67,
+    "return": 1.67,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Edge2Green",
+    "stake": 1,
+    "odd": 7.05,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Edge2Green",
+    "stake": 0.50,
+    "odd": 18.12,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.90,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Edge2Green",
+    "stake": 0.76,
+    "odd": 7.98,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.88,
+    "return": 1.88,
+    "status": "green"
+  }
+]

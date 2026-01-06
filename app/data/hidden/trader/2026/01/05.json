@@ -1,0 +1,107 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "league": "Amistoso de Clubes",
+    "homeTeam": "Stuttgart",
+    "awayTeam": "Luzern",
+    "prediction": [
+      "Back: Under 4.5 gols"
+    ],
+    "stake": 1,
+    "odd": 1.70,
+    "return": 1,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "league": "Egito - League Cup",
+    "homeTeam": "El-Masry",
+    "awayTeam": "Smouha SC",
+    "prediction": [
+      "Back: Under 2.5 gols"
+    ],
+    "stake": 1,
+    "odd": 1.62,
+    "return": 1.08,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Egito",
+    "awayTeam": "Benin",
+    "prediction": [
+      "Back: Under 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 1.89,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "league": "Turquia - Super Copa",
+    "homeTeam": "Galatasaray",
+    "awayTeam": "Trabzonspor",
+    "prediction": [
+      "Back: Under 4.5 gols",
+      "Back: Under 5.5 gols",
+      "Back: Under 6.5 gols"
+    ],
+    "stake": 5,
+    "odd": 1.86,
+    "return": 5.42,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Nigéria",
+    "awayTeam": "Moçambique",
+    "prediction": [
+      "Back: Under 3.5 gols",
+      "Back: Under 2.5 gols",
+      "Back: Under 5.5 gols",
+      "Back: Under 6.5 gols"
+    ],
+    "stake": 2,
+    "odd": 1.48,
+    "return": 0.70,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "league": "Inglaterra - Championship",
+    "homeTeam": "Leicester",
+    "awayTeam": "West Bromwich Albion",
+    "prediction": [
+      "Back: Correct Score Cruzado (2x1 e 1x2)",
+      "Back: Under 5.5 gols",
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 4,
+    "odd": 11,
+    "return": 6.98,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-05",
+    "league": "Itália - Serie C",
+    "homeTeam": "Benevento",
+    "awayTeam": "Crotone",
+    "prediction": [
+      "Back: Qualqer outra vitória em casa"
+    ],
+    "stake": 1,
+    "odd": 19.50,
+    "return": 0,
+    "status": "red"
+  }
+]

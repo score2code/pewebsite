@@ -1,0 +1,41 @@
+[
+  {
+    "type": "bet",
+    "model": "punther",
+    "date": "2026-01-05",
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["Bingo"],
+    "stake": 1,
+    "odd": 2.65,
+    "return": 2.66,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "model": "punther",
+    "date": "2026-01-05",
+    "league": "Inglaterra - Championship",
+    "homeTeam": "Leicester",
+    "awayTeam": "West Bromwich Albion",
+    "prediction": ["Over 2.5 gols"],
+    "stake": 2,
+    "odd": 1.72,
+    "return": 3.44,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "model": "leverage",
+    "date": "2026-01-05",
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": ["Bingo"],
+    "stake": 0.50,
+    "odd": 19.16,
+    "return": 0,
+    "status": "pending"
+  }
+]

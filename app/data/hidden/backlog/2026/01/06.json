@@ -1,0 +1,167 @@
+[
+  {
+    "date": "2026-01-06",
+    "time": "17:00",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "West Ham",
+    "awayTeam": "Nottingham Forest",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": true,
+    "note": "Jogo crucial para fuga do rebaixamento. West Ham sem vencer em 9 jogos, Forest perdeu últimos 4. Ambas defesas frágeis (41 e 28 gols sofridos), mas ataques limitados. Jogo tenso e travado esperado. Under 2.5 prioritário pela pressão. LTD interessante pois alguém precisa ganhar. Forest tem melhor ataque relativo."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "11:00",
+    "league": "Itália - Séria A",
+    "homeTeam": "Pisa",
+    "awayTeam": "Como",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Under 2.5 gols"}
+    ],
+    "recommended": false,
+    "note": "Derby regional entre times de meio de tabela na Série B italiana. Jogos equilibrados entre equipes similares costumam produzir gols após análise inicial. Over 1.5 Live prioritário para aguardar movimentação."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "14:00",
+    "league": "Itália - Séria A",
+    "homeTeam": "Lecce",
+    "awayTeam": "AS Roma",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Correct Score 3x1 - 1x3"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": true,
+    "note": "Lecce tem pior ataque da liga (12 gols), Roma melhor defesa (12 sofridos). Roma favorita mas perdeu últimos 3 fora. Under 2.5 prioritário - jogo travado esperado. Lay 0-1 contra zebra do Lecce. Roma venceu últimos 9 confrontos contra Lecce."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "16:45",
+    "league": "Itália - Séria A",
+    "homeTeam": "Sassuolo",
+    "awayTeam": "Juventus",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
+    ],
+    "recommended": true,
+    "note": "Juventus favorita (57% probabilidade), mas empatou último jogo. Sassuolo 4 jogos sem vitória. Juve em 5º lugar brigando por Champions. Under 2.5 prioritário - últimos 5 confrontos tiveram média baixa de gols. Lay 0-1 contra zebra. Back delayed na Juve se odds subirem."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "17:00",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Sporting Lisboa",
+    "awayTeam": "Vitória Guimarães",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Sporting é um dos favoritos ao título português e joga em casa. Vitória também é time ofensivo. Esperado jogo aberto com gols. Over 1.5 Live prioritário. LTD eficiente - Sporting deve pressionar. DH Sporting + Over 1.5 tem boa value."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "14:30",
+    "league": "Turquia - Super Copa",
+    "homeTeam": "Fenerbahce",
+    "awayTeam": "Samsunspor",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
+    ],
+    "recommended": true,
+    "note": "Semi-final da Supercopa. Fenerbahce amplo favorito (invicto em 16 jogos), Samsunspor perdeu 5 dos últimos 6. Fenerbahce fez 13 gols em últimos 5 jogos. LTD prioritário - jogo eliminatório. DH Fener + Over 1.5 tem excelente valor pela força ofensiva."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "15:00",
+    "league": "Grécia - Copa",
+    "homeTeam": "PAOK Thessaloniki",
+    "awayTeam": "Atromitos",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
+    ],
+    "recommended": false,
+    "note": "Copa da Grécia - PAOK é favorito claro. Jogos de copa tendem a ser mais abertos. PAOK costuma dominar adversários menores em casa. Over 1.5 Live e LTD são boas opções pela diferença de nível."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "17:00",
+    "league": "Escócia - Premiership",
+    "homeTeam": "Rangers",
+    "awayTeam": "Aberdeen",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"}
+    ],
+    "recommended": true,
+    "note": "Rangers em grande forma (3 vitórias seguidas, venceu Celtic 3-1). Aberdeen demitiu técnico após 4 derrotas seguidas fora. Rangers venceu 5 dos últimos 7 contra Aberdeen. LTD prioritário - Rangers deve dominar em casa. Back delayed se odds subirem."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "13:00",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Argélia",
+    "awayTeam": "RD do Congo",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": false,
+    "note": "Fase eliminatória da CAN. Jogos de seleções africanas em mata-mata costumam ser cautelosos. Under 2.5 prioritário pela importância. LTD também interessante pois precisa ter vencedor. Jogo equilibrado esperado."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "16:00",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Costa do Marfim",
+    "awayTeam": "Burkina Faso",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": false,
+    "note": "Costa do Marfim anfitriã e favorita. Burkina Faso sempre competitivo. Jogos de mata-mata tendem ao Under 2.5. LTD interessante pela necessidade de resultado. Costa do Marfim deve ter leve vantagem."
+  },
+  {
+    "date": "2026-01-06",
+    "time": "16:45",
+    "league": "País de Gales - Premier League",
+    "homeTeam": "The New Saints",
+    "awayTeam": "Bala Town",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
+    ],
+    "recommended": false,
+    "note": "Liga galesa - The New Saints é dominante no país. Esperado jogo com diferença técnica clara. Over 1.5 Live e LTD são opções prioritárias. TNS costuma fazer muitos gols em casa contra adversários menores."
+  }
+]

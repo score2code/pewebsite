@@ -1,0 +1,107 @@
+[
+  {
+    "date": "2026-01-05",
+    "time": "17:00",
+    "league": "Inglaterra - Championship",
+    "homeTeam": "Leicester",
+    "awayTeam": "West Bromwich Albion",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Under 2.5 gols"}
+    ],
+    "recommended": true,
+    "note": "Ambas equipes marcam em quase todos os jogos (BTTS em 8 jogos seguidos do Leicester). WBA tem 9 derrotas consecutivas fora. Jogo aberto com gols esperados. Leicester ligeiro favorito em casa mas defesa vulnerável."
+  },
+  {
+    "date": "2026-01-05",
+    "time": "14:30",
+    "league": "Turquia - Super Copa",
+    "homeTeam": "Galatasaray",
+    "awayTeam": "Trabzonspor",
+    "market": [
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"}
+    ],
+    "recommended": true,
+    "note": "Galatasaray favorito absoluto com 5 vitórias nos últimos 6 H2H. Trabzonspor em crise com 2 derrotas seguidas. Último jogo: 4-3. Galatasaray líder invicto com 3 vitórias consecutivas. Jogo de semifinal em campo neutro com tendência a gols."
+  },
+  {
+    "date": "2026-01-05",
+    "time": "13:00",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Egito",
+    "awayTeam": "Benin",
+    "market": [
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"}
+    ],
+    "recommended": true,
+    "note": "Egito invicto na competição, apenas 1 gol sofrido em 3 jogos. Benin marcou apenas 1 gol em 3 jogos. Defesa egípcia muito sólida. Egito favorito absoluto mas jogo tende a ser controlado e com poucos gols (under 3.5 em 17 jogos seguidos do Egito)."
+  },
+  {
+    "date": "2026-01-05",
+    "time": "16:00",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Nigéria",
+    "awayTeam": "Moçambique",
+    "market": [
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"}
+    ],
+    "recommended": true,
+    "note": "Nigéria com 100% na fase de grupos (3 vitórias). Maior força ofensiva do torneio. Moçambique sofreu gols em todos os 18 jogos da AFCON. Nigéria marca 2+ gols em 60% dos últimos 10 jogos. Favorito absoluto."
+  },
+  {
+    "date": "2026-01-05",
+    "time": "10:00",
+    "league": "Amistoso de Clubes",
+    "homeTeam": "Stuttgart",
+    "awayTeam": "Luzern",
+    "market": [
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
+    ],
+    "recommended": false,
+    "note": "Jogo amistoso de pré-temporada. Stuttgart da Bundesliga favorito contra Luzern da Suíça. Amistosos podem ter rotação de elenco e imprevisibilidade. Priorize jogos competitivos."
+  },
+  {
+    "date": "2026-01-05",
+    "time": "11:30",
+    "league": "Amistoso de Clubes",
+    "homeTeam": "FC Koln",
+    "awayTeam": "Lugano",
+    "market": [
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Under 2.5 gols"}
+    ],
+    "recommended": false,
+    "note": "Jogo amistoso de pré-temporada. FC Köln (2. Bundesliga) vs Lugano (Suíça). Amistosos têm menor previsibilidade e muitas rotações de elenco. Evite ou use apenas para treino."
+  },
+  {
+    "date": "2026-01-05",
+    "time": "15:30",
+    "league": "Israel - Premier League",
+    "homeTeam": "Maccabi Haifa",
+    "awayTeam": "Hapoel Haifa",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": true,
+    "note": "Clássico local (Derby de Haifa). Jogos de rivalidade tendem a ser intensos e com gols. Maccabi Haifa tradicionalmente mais forte. Derbies geralmente evitam empates e são muito disputados."
+  }
+]
