@@ -42,8 +42,8 @@ export default function DuplaChanceCalculator() {
     // Calcular diferença em pontos percentuais
     const difPontos = maiorProb.valor - segundaMaiorProb.valor;
 
-    // Só recomenda se a diferença for >= 25 pontos percentuais
-    const temCenarioDefinido = difPontos >= 25;
+    // Só recomenda se a diferença for >= 30 pontos percentuais
+    const temCenarioDefinido = difPontos >= 30;
 
     // Coberturas reais
     const cobertura1X = casa + empate;
@@ -286,7 +286,7 @@ export default function DuplaChanceCalculator() {
                       </div>
                       <div className="bg-green-100/50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-3">
                         <p className="text-sm text-green-800/90 dark:text-green-300/90 italic leading-relaxed">
-                          <strong>Análise:</strong> Diferença de {result.difPontos} pontos percentuais atende o critério mínimo de 25 pontos.
+                          <strong>Análise:</strong> Diferença de {result.difPontos} pontos percentuais atende o critério mínimo de 30 pontos.
                           A opção {result.melhorOpcao.nome} cobre o cenário mais provável com {result.melhorOpcao.cobertura.toFixed(1)}% de probabilidade.
                         </p>
                       </div>
@@ -299,13 +299,13 @@ export default function DuplaChanceCalculator() {
                       </p>
                       <div className="bg-orange-100/50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-3 mb-3">
                         <p className="text-sm text-orange-800/90 dark:text-orange-300/90 leading-relaxed">
-                          <strong>⚠ Risco elevado:</strong> Diferença de apenas {result.difPontos} pontos (abaixo do mínimo de 25 pontos).
+                          <strong>⚠ Risco elevado:</strong> Diferença de apenas {result.difPontos} pontos (abaixo do mínimo de 30 pontos).
                           O jogo é muito imprevisível, sem cenário claro dominante.
                         </p>
                       </div>
                       <div className="bg-red-50/50 dark:bg-red-900/10 border border-red-200 dark:border-red-800 rounded-lg p-3">
                         <p className="text-sm text-red-800/90 dark:text-red-300/90 font-semibold">
-                          🚫 Recomendação: EVITAR este jogo. Aguarde oportunidades com cenários mais definidos (diferença ≥ 25 pontos percentuais).
+                          🚫 Recomendação: EVITAR este jogo. Aguarde oportunidades com cenários mais definidos (diferença ≥ 30 pontos percentuais).
                         </p>
                       </div>
                     </>

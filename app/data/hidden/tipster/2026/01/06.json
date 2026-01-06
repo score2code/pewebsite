@@ -6,6 +6,105 @@
     "stake": 0.50,
     "odd": 4.64,
     "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Mundo Bet",
+    "stake": 1,
+    "odd": 1.82,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Mundo Bet",
+    "stake": 1,
+    "odd": 3.23,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Boleiros",
+    "stake": 1,
+    "odd": 2.57,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Boleiros",
+    "stake": 0.50,
+    "odd": 9,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.68,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Rafaela",
+    "stake": 0.50,
+    "odd": 1.70,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Rafaela",
+    "stake": 0.50,
+    "odd": 2.72,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Rafaela",
+    "stake": 0.50,
+    "odd": 6.07,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Edge2Green",
+    "stake": 0.50,
+    "odd": 8.11,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Edge2Green",
+    "stake": 0.50,
+    "odd": 2.58,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Edge2Green",
+    "stake": 0.50,
+    "odd": 6.85,
+    "return": 0,
     "status": "pending"
   }
 ]

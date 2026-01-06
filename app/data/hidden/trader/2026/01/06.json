@@ -1,0 +1,16 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "league": "Itália - Séria A",
+    "homeTeam": "Pisa",
+    "awayTeam": "Como",
+    "prediction": [
+      ""
+    ],
+    "stake": 1,
+    "odd": 0,
+    "return": 0,
+    "status": "pending"
+  }
+]
