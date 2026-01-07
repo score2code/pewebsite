@@ -1,0 +1,25 @@
+[
+  {
+    "id": "deportivo-toluca-x-santos-laguna",
+    "league": "México - Liga MX",
+    "homeTeam": "Deportivo Toluca",
+    "awayTeam": "Santos Laguna",
+    "date": "2026-01-15",
+    "time": "00:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  },
+  {
+    "id": "uanl-tigres-x-unam-pumas",
+    "league": "México - Liga MX",
+    "homeTeam": "UANL Tigres",
+    "awayTeam": "UNAM Pumas",
+    "date": "2026-01-15",
+    "time": "00:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: UANL Tigres",
+    "status": "pending"
+  }
+]
+

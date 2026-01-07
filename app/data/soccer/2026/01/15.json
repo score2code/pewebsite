@@ -1,0 +1,55 @@
+[
+  {
+    "id": "augsburg-x-union-berlin",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Augsburg",
+    "awayTeam": "Union Berlin",
+    "date": "2026-01-15",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Augsburg pressiona em casa e o Union explora transições rápidas; ambas criam chances claras e tendem a marcar ao menos uma vez."
+  },
+  {
+    "id": "deportivo-toluca-x-santos-laguna",
+    "league": "México - Liga MX",
+    "homeTeam": "Deportivo Toluca",
+    "awayTeam": "Santos Laguna",
+    "date": "2026-01-15",
+    "time": "00:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 82,
+    "status": "pending",
+    "analysis": "Liga MX com jogos abertos; Toluca e Santos têm ataques móveis e defesas que concedem espaços. Ritmo e volume indicam over 2.5 com boa confiança."
+  },
+  {
+    "id": "uanl-tigres-x-unam-pumas",
+    "league": "México - Liga MX",
+    "homeTeam": "UANL Tigres",
+    "awayTeam": "UNAM Pumas",
+    "date": "2026-01-15",
+    "time": "00:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: UANL Tigres",
+    "confidence": 81,
+    "status": "pending",
+    "analysis": "Tigres com elenco superior e controle de posse em casa; Pumas sente o ambiente e tende a sofrer em bolas paradas e ataques posicionais."
+  },
+  {
+    "id": "anderlecht-x-gent",
+    "league": "Bélgica - Pro League",
+    "homeTeam": "Anderlecht",
+    "awayTeam": "Gent",
+    "date": "2026-01-15",
+    "time": "16:30",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Anderlecht (DNB)",
+    "confidence": 75,
+    "status": "pending",
+    "analysis": "Jogo equilibrado, mas Anderlecht apresenta solidez em casa e melhor controle territorial. DNB reduz variância mantendo valor no mandante."
+  }
+]
+

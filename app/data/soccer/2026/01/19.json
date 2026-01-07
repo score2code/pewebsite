@@ -1,0 +1,81 @@
+[
+  {
+    "id": "brighton-x-bournemouth",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Brighton",
+    "awayTeam": "Bournemouth",
+    "date": "2026-01-19",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "confidence": 78,
+    "status": "pending",
+    "analysis": "Brighton com construção ofensiva forte e defesa exposta; Bournemouth eficiente em transições. Cenário favorável para gols de ambos."
+  },
+  {
+    "id": "elche-x-sevilla",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Elche",
+    "awayTeam": "Sevilla",
+    "date": "2026-01-19",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Sevilla",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Sevilla mais qualificado tecnicamente e organizado defensivamente; Elche tem dificuldades para propor contra blocos bem estruturados."
+  },
+  {
+    "id": "besiktas-x-kayserispor",
+    "league": "Turquia - Süper Lig",
+    "homeTeam": "Besiktas",
+    "awayTeam": "Kayserispor",
+    "date": "2026-01-19",
+    "time": "14:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 83,
+    "status": "pending",
+    "analysis": "Clube grande com proposta ofensiva e defesa do Kayseri que cede; ritmo e criação projetam um jogo com muitos gols."
+  },
+  {
+    "id": "panetolikos-x-levadiakos",
+    "league": "Grécia - Super League",
+    "homeTeam": "Panetolikos",
+    "awayTeam": "Levadiakos",
+    "date": "2026-01-19",
+    "time": "13:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Panetolikos (DNB)",
+    "confidence": 72,
+    "status": "pending",
+    "analysis": "Duelo de margens pequenas; Panetolikos mais consistente em casa. DNB reduz variância e mantém valor."
+  },
+  {
+    "id": "volos-fc-x-atromitos",
+    "league": "Grécia - Super League",
+    "homeTeam": "Volos FC",
+    "awayTeam": "Atromitos",
+    "date": "2026-01-19",
+    "time": "15:00",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "confidence": 75,
+    "status": "pending",
+    "analysis": "Volos e Atromitos alternam posse e transições; defesas concedem chances claras. BTTS com boa confiança."
+  },
+  {
+    "id": "konyaspor-x-eyupspor",
+    "league": "Turquia - Süper Lig",
+    "homeTeam": "Konyaspor",
+    "awayTeam": "Eyupspor",
+    "date": "2026-01-19",
+    "time": "11:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Konyaspor",
+    "confidence": 76,
+    "status": "pending",
+    "analysis": "Konyaspor mais ajustado taticamente em casa; Eyupspor sente contra posse alta e pressão inicial."
+  }
+]
+

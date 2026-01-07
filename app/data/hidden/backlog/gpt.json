@@ -1,0 +1,226 @@
+[
+  {
+    "id": "14025046",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Everton",
+    "awayTeam": "Wolverhampton",
+    "market": [
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Under 2.5 gols"},
+      {"method": "Over 0.5 Gols HT"},
+      {"method": "Back ao Favorito \"Delayed\""}
+    ],
+    "recommended": false,
+    "note": "Jogo equilibrado, tendência de primeiro tempo estudado e decisão tardia. Ideal para leitura de ritmo."
+  },
+  {
+    "id": "14025015",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Bournemouth",
+    "awayTeam": "Tottenham",
+    "market": [
+      {"method": "Back ao Favorito \"Delayed\""},
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Favorito Marcar no 2º Tempo"},
+      {"method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Tottenham superior tecnicamente, costuma acelerar no segundo tempo. Bom cenário para entradas progressivas."
+  },
+  {
+    "id": "14025061",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Brighton",
+    "market": [
+      {"method": "Back ao Favorito \"Delayed\""},
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Over 1.5 Live"},
+      {"method": "Correct Score 3x1 - 1x3"}
+    ],
+    "recommended": true,
+    "note": "City dominante em posse e volume ofensivo. Brighton costuma competir mas cede espaços."
+  },
+  {
+    "id": "14025049",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Chelsea",
+    "market": [
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Back ao Favorito \"Delayed\""},
+      {"method": "Over 0.5 Gols HT"},
+      {"method": "Over 1.5 Live"}
+    ],
+    "recommended": false,
+    "note": "Chelsea com mais qualidade, Fulham competitivo em casa. Bom jogo para entradas após leitura inicial."
+  },
+  {
+    "id": "14025027",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Brentford",
+    "awayTeam": "Sunderland",
+    "market": [
+      {"method": "Lay 0-1 (Contra a Zebra)"},
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Over 1.5 Live"},
+      {"method": "DH (Favorito) + Over 1.5"}
+    ],
+    "recommended": true,
+    "note": "Brentford mais sólido, Sunderland vulnerável fora. Ótimo para explorar erro da zebra."
+  },
+  {
+    "id": "14025058",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Crystal Palace",
+    "awayTeam": "Aston Villa",
+    "market": [
+      {"method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Over 1.5 Live"},
+      {"method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Times ofensivos e irregulares defensivamente. Jogo propício a placar definido."
+  },
+  {
+    "id": "14025052",
+    "date": "2026-01-07",
+    "time": "17:15",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Leeds United",
+    "market": [
+      {"method": "Back ao Favorito \"Delayed\""},
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Over 1.5 Live"},
+      {"method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Newcastle forte em casa, Leeds expõe linhas. Tendência de pressão crescente."
+  },
+  {
+    "id": "14025037",
+    "date": "2026-01-07",
+    "time": "17:15",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Burnley",
+    "awayTeam": "Manchester United",
+    "market": [
+      {"method": "Back ao Favorito \"Delayed\""},
+      {"method": "Lay 0-1 (Contra a Zebra)"},
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": true,
+    "note": "United com superioridade técnica, Burnley tende a resistir no início."
+  },
+  {
+    "id": "14252104",
+    "date": "2026-01-07",
+    "time": "16:00",
+    "league": "Espanha - Super Copa",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Athletic Bilbao",
+    "market": [
+      {"method": "Back ao Favorito \"Delayed\""},
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Over 1.5 Live"},
+      {"method": "Correct Score 3x1 - 1x3"}
+    ],
+    "recommended": true,
+    "note": "Final com intensidade, Barcelona controla jogo, mas Bilbao compete."
+  },
+  {
+    "id": "15014414",
+    "date": "2026-01-07",
+    "time": "17:00",
+    "league": "Portugal - Taça da Liga",
+    "homeTeam": "Benfica",
+    "awayTeam": "Braga",
+    "market": [
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Over 1.5 Live"},
+      {"method": "Favorito Marcar no 2º Tempo"},
+      {"method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": false,
+    "note": "Jogo grande, ritmo forte e decisões após o intervalo."
+  },
+  {
+    "id": "13981607",
+    "date": "2026-01-07",
+    "time": "14:30",
+    "league": "Itália - Série A",
+    "homeTeam": "Napoli",
+    "awayTeam": "Verona",
+    "market": [
+      {"method": "Back ao Favorito \"Delayed\""},
+      {"method": "Lay 0-1 (Contra a Zebra)"},
+      {"method": "Over 1.5 Live"},
+      {"method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Napoli dominante em casa, Verona reativo."
+  },
+  {
+    "id": "13981601",
+    "date": "2026-01-07",
+    "time": "14:30",
+    "league": "Itália - Série A",
+    "homeTeam": "Bologna",
+    "awayTeam": "Atalanta",
+    "market": [
+      {"method": "Over 1.5 Live"},
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Jogo aberto, Atalanta intensa ofensivamente."
+  },
+  {
+    "id": "13981605",
+    "date": "2026-01-07",
+    "time": "16:45",
+    "league": "Itália - Série A",
+    "homeTeam": "Lazio",
+    "awayTeam": "Fiorentina",
+    "market": [
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Under 2.5 gols"},
+      {"method": "Over 0.5 Gols HT"},
+      {"method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": false,
+    "note": "Equilíbrio técnico, tendência de jogo tático."
+  },
+  {
+    "id": "13981610",
+    "date": "2026-01-07",
+    "time": "16:45",
+    "league": "Itália - Série A",
+    "homeTeam": "Parma",
+    "awayTeam": "Inter de Milão",
+    "market": [
+      {"method": "Back ao Favorito \"Delayed\""},
+      {"method": "Lay 0-1 (Contra a Zebra)"},
+      {"method": "Lay ao Empate (LTD)"},
+      {"method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": true,
+    "note": "Inter superior, Parma tende a se fechar e errar sob pressão."
+  }
+]

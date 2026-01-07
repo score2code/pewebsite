@@ -1,0 +1,25 @@
+[
+  {
+    "id": "aston-villa-x-everton",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Everton",
+    "date": "2026-01-18",
+    "time": "13:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Aston Villa",
+    "status": "pending"
+  },
+  {
+    "id": "real-sociedad-x-barcelona",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Barcelona",
+    "date": "2026-01-18",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  }
+]
+

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "manchester-united-x-manchester-city",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester United",
+    "awayTeam": "Manchester City",
+    "date": "2026-01-17",
+    "time": "09:30",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  },
+  {
+    "id": "real-madrid-x-levante",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Levante",
+    "date": "2026-01-17",
+    "time": "10:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Real Madrid",
+    "status": "pending"
+  }
+]
+

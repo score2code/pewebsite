@@ -1,0 +1,226 @@
+[
+  {
+    "id": "14025046",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Everton",
+    "awayTeam": "Wolverhampton",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Handicap Asiático +0.5 Zebra"}
+    ],
+    "recommended": true,
+    "note": "Wolves com novo técnico Rob Edwards, ambos times na parte de baixo da tabela. Jogo equilibrado e tenso, típico de times lutando contra rebaixamento. Everton em casa pode ter leve vantagem."
+  },
+  {
+    "id": "14025015",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Bournemouth",
+    "awayTeam": "Tottenham",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": true,
+    "note": "Bournemouth sem vencer há 11 jogos mas invicto nos últimos 3 H2H contra Spurs. Tottenham com 2º melhor desempenho fora mas problemas no meio-campo (AFCON). Jogo aberto com gols esperados."
+  },
+  {
+    "id": "14025061",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Brighton",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "City favorito (68.9% de probabilidade) precisa vencer para pressionar Arsenal. Haaland marcou nos últimos 4 jogos contra Brighton. Brighton cedeu 2+ gols nos últimos 3 jogos fora. City sem perder em casa recentemente."
+  },
+  {
+    "id": "14025049",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Chelsea",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": true,
+    "note": "Derby londrino. Fulham invicto nos últimos 5 jogos da PL. Chelsea sem técnico (Maresca saiu), apenas 1 vitória nos últimos 4 jogos. Chelsea favorito (47.6%) mas Fulham resiliente em casa. Ambos times costumam marcar."
+  },
+  {
+    "id": "14025027",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Brentford",
+    "awayTeam": "Sunderland",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Brentford favorito (57.6%) em casa. Sunderland é time promovido mas tem mostrado resiliência (empate com City e Spurs recentemente). Brentford precisa vencer, jogo com expectativa de gols."
+  },
+  {
+    "id": "14025058",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Crystal Palace",
+    "awayTeam": "Aston Villa",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Under 2.5 gols"}
+    ],
+    "recommended": false,
+    "note": "Jogo equilibrado. Villa tem qualidade mas Palace em casa pode competir. Histórico recente sugere jogo aberto mas não muitos gols."
+  },
+  {
+    "id": "14025052",
+    "date": "2026-01-07",
+    "time": "17:15",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Leeds United",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Newcastle favorito em casa contra Leeds promovido. Newcastle precisa manter ritmo para Champions League. Leeds lutando para se adaptar à Premier League. Favorito claro."
+  },
+  {
+    "id": "14025037",
+    "date": "2026-01-07",
+    "time": "17:15",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Burnley",
+    "awayTeam": "Manchester United",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": true,
+    "note": "United demitiu Amorim em 05/01, estava em 6º lugar. Burnley é time promovido em casa. Incerteza no United favorece jogo aberto. Possível zebra ou jogo equilibrado."
+  },
+  {
+    "id": "14252104",
+    "date": "2026-01-07",
+    "time": "16:00",
+    "league": "Espanha - Super Copa",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Athletic Bilbao",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Barça em forma excepcional: 8 vitórias consecutivas, últimas 4 com clean sheets (2-0). Athletic sem vencer últimos 5 jogos (90 min). Barcelona domina H2H: 8 vitórias seguidas. Favorito absoluto (67.47%)."
+  },
+  {
+    "id": "15014414",
+    "date": "2026-01-07",
+    "time": "17:00",
+    "league": "Portugal - Taça da Liga",
+    "homeTeam": "Benfica",
+    "awayTeam": "Braga",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"}
+    ],
+    "recommended": true,
+    "note": "Final da Taça da Liga. Benfica favorito em casa. Clássico português sempre competitivo. Benfica tem mais qualidade no elenco. Expectativa de jogo movimentado."
+  },
+  {
+    "id": "13981607",
+    "date": "2026-01-07",
+    "time": "14:30",
+    "league": "Itália - Série A",
+    "homeTeam": "Napoli",
+    "awayTeam": "Verona",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Napoli em forma: 4 vitórias seguidas (todas 2-0). Verona na zona de rebaixamento, sem vencer Napoli fora desde 1983. Napoli 73.3% de probabilidade. Casa invicta há mais de 1 ano. Favorito esmagador."
+  },
+  {
+    "id": "13981601",
+    "date": "2026-01-07",
+    "time": "14:30",
+    "league": "Itália - Série A",
+    "homeTeam": "Bologna",
+    "awayTeam": "Atalanta",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": true,
+    "note": "Atalanta joga futebol ofensivo, frequentemente alto scoring. Bologna em casa competitivo. Expectativa de jogo aberto com múltiplos gols. Atalanta leve favorito."
+  },
+  {
+    "id": "13981605",
+    "date": "2026-01-07",
+    "time": "16:45",
+    "league": "Itália - Série A",
+    "homeTeam": "Lazio",
+    "awayTeam": "Fiorentina",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Handicap Asiático +0.5 Zebra"}
+    ],
+    "recommended": false,
+    "note": "Lazio perdeu últimos 3 jogos em casa da liga. Fiorentina tem pior desempenho fora (4 derrotas consecutivas). Jogo difícil de prever, baixa expectativa de gols. Lazio favorito mas não convincente."
+  },
+  {
+    "id": "13981610",
+    "date": "2026-01-07",
+    "time": "16:45",
+    "league": "Itália - Série A",
+    "homeTeam": "Parma",
+    "awayTeam": "Inter de Milão",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Inter brigando pelo título, visitando Parma. Inter tem qualidade superior mas Parma em casa pode dificultar. Inter favorito claro mas precisa de atenção total."
+  }
+]

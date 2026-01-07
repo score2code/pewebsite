@@ -1,0 +1,25 @@
+[
+  {
+    "id": "newcastle-x-psv-eindhoven",
+    "league": "Europa - Champions League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "PSV Eindhoven",
+    "date": "2026-01-21",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  },
+  {
+    "id": "chelsea-x-pafos",
+    "league": "Europa - Champions League",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Pafos",
+    "date": "2026-01-21",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Chelsea",
+    "status": "pending"
+  }
+]
+

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "bodo-glimt-x-manchester-city",
+    "league": "Europa - Champions League",
+    "homeTeam": "Bodo/Glimt",
+    "awayTeam": "Manchester City",
+    "date": "2026-01-20",
+    "time": "14:45",
+    "timezone": "UTC",
+    "prediction": "Manchester City vence o 1º Tempo",
+    "status": "pending"
+  },
+  {
+    "id": "olympiacos-x-bayer-leverkusen",
+    "league": "Europa - Champions League",
+    "homeTeam": "Olympiacos",
+    "awayTeam": "Bayer Leverkusen",
+    "date": "2026-01-20",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  }
+]
+

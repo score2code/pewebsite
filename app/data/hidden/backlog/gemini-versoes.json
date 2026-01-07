@@ -1,0 +1,226 @@
+[
+  {
+    "id": "14025046",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Everton",
+    "awayTeam": "Wolverhampton",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Handicap Asiático +0.5 Zebra"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Duelo na parte de baixo da tabela com Wolves sob novo comando (Rob Edwards). Tendência de jogo truncado e nervoso. O Under 2.5 e o AH favorável à zebra têm valor pelo equilíbrio e falta de efetividade ofensiva das equipes."
+  },
+  {
+    "id": "14025015",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Bournemouth",
+    "awayTeam": "Tottenham",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Tottenham mantém alta intensidade, mas tem desfalques no meio (AFCON). Bournemouth resiliente no H2H recente. Cenário ideal para LTD e Over Live devido à postura ofensiva de ambas as equipes."
+  },
+  {
+    "id": "14025061",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Brighton",
+    "market": [
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Correct Score 3x1 - 1x3"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "City dominante (68.9% prob.) com Haaland em fase artilheira contra o Brighton. O Back 'Delayed' busca valorizar a odd inicial baixa. Brighton costuma ceder espaços ao tentar propor jogo."
+  },
+  {
+    "id": "14025049",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Fulham",
+    "awayTeam": "Chelsea",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": false,
+    "note": "Derby londrino com Chelsea em transição (pós-Maresca). Fulham invicto há 5 jogos. O Lay 0-1 protege contra a zebra em um jogo onde o favoritismo do Chelsea é questionável pela instabilidade."
+  },
+  {
+    "id": "14025027",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Brentford",
+    "awayTeam": "Sunderland",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Brentford muito forte fisicamente em casa (57.6% prob.). Sunderland, apesar de resiliente contra gigantes, sofre no jogo aéreo. Favoritismo claro dos mandantes para explorar erro da zebra."
+  },
+  {
+    "id": "14025058",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Crystal Palace",
+    "awayTeam": "Aston Villa",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": false,
+    "note": "Jogo tático e equilibrado. Villa é superior tecnicamente, mas o Palace trava bem o jogo em casa. Valor estatístico no Under 2.5 e proteção no placar cruzado."
+  },
+  {
+    "id": "14025052",
+    "date": "2026-01-07",
+    "time": "17:15",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Leeds United",
+    "market": [
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Newcastle fortíssimo no St. James' Park contra um Leeds que expõe muito as linhas. Expectativa de pressão crescente e gols em ambos os tempos."
+  },
+  {
+    "id": "14025037",
+    "date": "2026-01-07",
+    "time": "17:15",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Burnley",
+    "awayTeam": "Manchester United",
+    "market": [
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "United sob incerteza após demissão de Amorim. Burnley tende a resistir no início. O Back 'Delayed' e o gol no 2º tempo são padrões quando o United enfrenta blocos baixos."
+  },
+  {
+    "id": "14252104",
+    "date": "2026-01-07",
+    "time": "16:00",
+    "league": "Espanha - Super Copa",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Athletic Bilbao",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Barça em forma excepcional (8 vitórias seguidas). Bilbao endurece finais, mas a superioridade técnica do Barcelona é esmagadora. LTD excelente pela necessidade de resultado em final."
+  },
+  {
+    "id": "15014414",
+    "date": "2026-01-07",
+    "time": "17:00",
+    "league": "Portugal - Taça da Liga",
+    "homeTeam": "Benfica",
+    "awayTeam": "Braga",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"}
+    ],
+    "recommended": true,
+    "note": "Final da Taça da Liga. Confronto ofensivo onde o Braga não se acovarda. O LTD e mercados de gols são favorecidos pela alta rivalidade e qualidade dos elencos."
+  },
+  {
+    "id": "13981607",
+    "date": "2026-01-07",
+    "time": "14:30",
+    "league": "Itália - Série A",
+    "homeTeam": "Napoli",
+    "awayTeam": "Verona",
+    "market": [
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Napoli com 4 vitórias seguidas (73.3% prob.) contra um Verona que não vence o Napoli fora desde 1983. Favoritismo absoluto; buscar valor no live se o gol demorar."
+  },
+  {
+    "id": "13981601",
+    "date": "2026-01-07",
+    "time": "14:30",
+    "league": "Itália - Série A",
+    "homeTeam": "Bologna",
+    "awayTeam": "Atalanta",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Duelo tático entre a verticalidade da Atalanta e a competitividade do Bologna em casa. Jogo com fortíssima tendência a gols (sem 0-0)."
+  },
+  {
+    "id": "13981605",
+    "date": "2026-01-07",
+    "time": "16:45",
+    "league": "Itália - Série A",
+    "homeTeam": "Lazio",
+    "awayTeam": "Fiorentina",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Handicap Asiático +0.5 Zebra"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Equilíbrio total e má fase de ambos (Lazio em casa e Viola fora). Jogo de 'meio-campo' com valor estatístico no Under 2.5."
+  },
+  {
+    "id": "13981610",
+    "date": "2026-01-07",
+    "time": "16:45",
+    "league": "Itália - Série A",
+    "homeTeam": "Parma",
+    "awayTeam": "Inter de Milão",
+    "market": [
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Inter brigando pelo título e muito superior tecnicamente. O Parma deve se fechar, tornando o gol no 2º tempo e o Back 'Delayed' as melhores estratégias operacionais."
+  }
+]

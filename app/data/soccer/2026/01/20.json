@@ -1,0 +1,107 @@
+[
+  {
+    "id": "kairat-almaty-x-club-brugge",
+    "league": "Europa - Champions League",
+    "homeTeam": "Kairat Almaty",
+    "awayTeam": "Club Brugge",
+    "date": "2026-01-20",
+    "time": "12:30",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Club Brugge",
+    "confidence": 77,
+    "status": "pending",
+    "analysis": "Brugge com maior qualidade técnica e experiência europeia; Kairat sente nível competitivo e concede espaços."
+  },
+  {
+    "id": "bodo-glimt-x-manchester-city",
+    "league": "Europa - Champions League",
+    "homeTeam": "Bodo/Glimt",
+    "awayTeam": "Manchester City",
+    "date": "2026-01-20",
+    "time": "14:45",
+    "timezone": "UTC",
+    "prediction": "Manchester City vence o 1º Tempo",
+    "confidence": 86,
+    "status": "pending",
+    "analysis": "City impõe pressão e posse alta desde o início; tendência de vantagem construída no primeiro tempo."
+  },
+  {
+    "id": "sporting-lisboa-x-psg",
+    "league": "Europa - Champions League",
+    "homeTeam": "Sporting Lisboa",
+    "awayTeam": "PSG",
+    "date": "2026-01-20",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
+    "confidence": 79,
+    "status": "pending",
+    "analysis": "Sporting agressivo em Alvalade; PSG com ataque de elite e espaços em transições. Cenário para gols dos dois lados."
+  },
+  {
+    "id": "villarreal-x-ajax-amsterdam",
+    "league": "Europa - Champions League",
+    "homeTeam": "Villarreal",
+    "awayTeam": "Ajax Amsterdam",
+    "date": "2026-01-20",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 82,
+    "status": "pending",
+    "analysis": "Villarreal e Ajax com propostas ofensivas e boa criação; defesas concedem chances em transições e cruzamentos."
+  },
+  {
+    "id": "inter-de-milao-x-arsenal",
+    "league": "Europa - Champions League",
+    "homeTeam": "Inter de Milão",
+    "awayTeam": "Arsenal",
+    "date": "2026-01-20",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Empate Anula Aposta: Inter de Milão (DNB)",
+    "confidence": 74,
+    "status": "pending",
+    "analysis": "Confronto equilibrado; Inter mais forte no San Siro em duelos físicos. DNB reduz variância mantendo valor no mandante."
+  },
+  {
+    "id": "olympiacos-x-bayer-leverkusen",
+    "league": "Europa - Champions League",
+    "homeTeam": "Olympiacos",
+    "awayTeam": "Bayer Leverkusen",
+    "date": "2026-01-20",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "confidence": 84,
+    "status": "pending",
+    "analysis": "Leverkusen com ataque de elite e jogo acelerado; Olympiacos marca em casa. Ritmo alto favorece over com boa confiança."
+  },
+  {
+    "id": "real-madrid-x-monaco",
+    "league": "Europa - Champions League",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Mônaco",
+    "date": "2026-01-20",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Real Madrid",
+    "confidence": 88,
+    "status": "pending",
+    "analysis": "Madrid dominante no Bernabéu com grande volume ofensivo; Mônaco competitivo, mas inferior tecnicamente neste cenário."
+  },
+  {
+    "id": "fc-copenhagen-x-napoli",
+    "league": "Europa - Champions League",
+    "homeTeam": "FC Copenhagen",
+    "awayTeam": "Napoli",
+    "date": "2026-01-20",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Resultado Final: Napoli",
+    "confidence": 78,
+    "status": "pending",
+    "analysis": "Napoli com circulação rápida e ataque móvel; Copenhagen sente pressão e concede finalizações perigosas."
+  }
+]
+

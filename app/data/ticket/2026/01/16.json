@@ -1,0 +1,25 @@
+[
+  {
+    "id": "psg-x-lille",
+    "league": "França - Ligue 1",
+    "homeTeam": "PSG",
+    "awayTeam": "Lille",
+    "date": "2026-01-16",
+    "time": "17:00",
+    "timezone": "UTC",
+    "prediction": "Total de Gols: Mais de 2.5",
+    "status": "pending"
+  },
+  {
+    "id": "rangers-x-annan-athletic",
+    "league": "Escócia - Copa da Escócia",
+    "homeTeam": "Rangers",
+    "awayTeam": "Annan Athletic",
+    "date": "2026-01-16",
+    "time": "16:45",
+    "timezone": "UTC",
+    "prediction": "Rangers vence o 1º Tempo",
+    "status": "pending"
+  }
+]
+
