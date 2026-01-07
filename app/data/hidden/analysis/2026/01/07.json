@@ -1,0 +1,90 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 4,
+    "date": "2026-01-07",
+    "affectsInitial": true,
+    "note": "Supercoins"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-07",
+    "analysis": 13,
+    "stake": 0.50,
+    "odd": 189.57,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-07",
+    "analysis": 14,
+    "stake": 0.50,
+    "odd": 133.09,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-07",
+    "analysis": 19,
+    "stake": 0.50,
+    "odd": 1910.97,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-07",
+    "analysis": 19,
+    "stake": 0.50,
+    "odd": 167.27,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-07",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 5378.43,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-07",
+    "analysis": 29,
+    "stake": 0.50,
+    "odd": 14159.98,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-07",
+    "analysis": 25,
+    "stake": 0.50,
+    "odd": 227.38,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-07",
+    "analysis": 12,
+    "stake": 0.50,
+    "odd": 183.75,
+    "return": 0,
+    "status": "pending"
+  }
+]

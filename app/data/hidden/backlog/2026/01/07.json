@@ -7,12 +7,13 @@
     "homeTeam": "Everton",
     "awayTeam": "Wolverhampton",
     "market": [
-      {"type": "Trader", "method": "Under 2.5 gols"},
-      {"type": "Trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "Punter", "method": "Handicap Asiático +0.5 Zebra"}
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Handicap Asiático +0.5 Zebra"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": false,
-    "note": "Jogo tenso de parte baixa da tabela. Tendência de poucos gols e decisão tardia. Ideal para leitura, não para forçar entrada."
+    "note": "Jogo equilibrado e truncado entre times na zona de rebaixamento. Wolves com novo técnico Rob Edwards traz imprevisibilidade. Everton foca na defesa em casa com fragilidade ofensiva. Consenso forte no Under 2.5 (presente em 3/3 análises). Jogo tende a ser estudado no primeiro tempo com decisão tardia. Não recomendado por falta de consenso claro nas estratégias principais."
   },
   {
     "id": "14025015",
@@ -22,12 +23,13 @@
     "homeTeam": "Bournemouth",
     "awayTeam": "Tottenham",
     "market": [
-      {"type": "Trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "Punter", "method": "Over 1.5 Live"},
-      {"type": "Trader", "method": "Back ao Favorito \"Delayed\""}
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
     ],
     "recommended": true,
-    "note": "Tottenham mais intenso e vertical. Bournemouth joga e deixa jogar. Forte expectativa de gols e fim do empate."
+    "note": "CONSENSO FORTE (3/3). Bournemouth sem vencer há 11 jogos mas invicto nos últimos 3 H2H contra Spurs. Tottenham com 2º melhor desempenho fora mas problemas no meio-campo (AFCON). Tottenham de Postecoglou mantém alta intensidade e ataca desde o início. Jogo aberto com grande tendência de gols no primeiro tempo. Spurs acelera no segundo tempo. Lay ao Empate e Over 1.5 Live presentes em todas as análises."
   },
   {
     "id": "14025061",
@@ -37,12 +39,13 @@
     "homeTeam": "Manchester City",
     "awayTeam": "Brighton",
     "market": [
-      {"type": "Trader", "method": "Back ao Favorito \"Delayed\""},
-      {"type": "Trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "Punter", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
-    "note": "City dominante em casa, Brighton competitivo mas vulnerável fora. Padrão clássico de pressão crescente."
+    "note": "CONSENSO MUITO FORTE (3/3). City favorito absoluto (68.9% probabilidade) precisa vencer para pressionar Arsenal. Haaland marcou nos últimos 4 jogos contra Brighton. Brighton cedeu 2+ gols nos últimos 3 jogos fora. City sem perder em casa recentemente. Domina posse mas Brighton costuma incomodar no início. Back 'Delayed' unanimidade pois melhora a odd. City resolve no segundo tempo. Estratégias presentes em todas as análises."
   },
   {
     "id": "14025049",
@@ -52,11 +55,13 @@
     "homeTeam": "Fulham",
     "awayTeam": "Chelsea",
     "market": [
-      {"type": "Trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "Punter", "method": "Over 1.5 Live"}
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"}
     ],
     "recommended": false,
-    "note": "Derby londrino imprevisível. Chelsea superior tecnicamente, Fulham competitivo em casa. Jogo de leitura."
+    "note": "Derby londrino com opiniões divididas. Fulham invicto nos últimos 5 jogos da PL, resiliente em casa. Chelsea sem técnico (Maresca saiu), apenas 1 vitória nos últimos 4 jogos. Chelsea favorito (47.6%) mas instável. Lay ao Empate e Over 1.5 Live são consenso, mas recomendação dividida (2 sim, 1 não). Aguardar leitura inicial do jogo, ambos times costumam marcar. Entrar após primeiro gol."
   },
   {
     "id": "14025027",
@@ -66,11 +71,29 @@
     "homeTeam": "Brentford",
     "awayTeam": "Sunderland",
     "market": [
-      {"type": "Trader", "method": "Lay 0-1 (Contra a Zebra)"},
-      {"type": "Punter", "method": "DH (Favorito) + Over 1.5"}
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
-    "note": "Brentford forte em casa contra time promovido. Boa leitura para erro da zebra."
+    "note": "Brentford favorito (57.6%) em casa, muito forte fisicamente. Sunderland é time promovido mas tem mostrado resiliência (empate com City e Spurs recentemente). Sunderland tende a sofrer no jogo aéreo. Brentford precisa vencer, jogo com expectativa de gols. Lay 0-1 e LTD presentes em múltiplas análises. Explorar erro da zebra, Brentford tende a dominar."
+  },
+  {
+    "id": "14025058",
+    "date": "2026-01-07",
+    "time": "16:30",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Crystal Palace",
+    "awayTeam": "Aston Villa",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Handicap Asiático +0.5 Zebra"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Jogo muito equilibrado e tático. Villa tem qualidade superior mas Palace em casa trava bem o jogo e pode competir. Histórico recente sugere jogo aberto mas poucos gols. Under 2.5 presente em 2/3 análises. Palace competitivo em casa, Villa irregular. Não recomendado pela dificuldade de leitura e falta de consenso claro."
   },
   {
     "id": "14025052",
@@ -80,11 +103,13 @@
     "homeTeam": "Newcastle",
     "awayTeam": "Leeds United",
     "market": [
-      {"type": "Trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "Punter", "method": "Over 1.5 Live"}
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
-    "note": "Newcastle muito forte em casa. Leeds expõe linhas. Tendência clara de gols."
+    "note": "CONSENSO FORTE (3/3). Newcastle favorito em casa precisa manter ritmo para Champions League. Leeds promovido, lutando para se adaptar à Premier League, mas joga e deixa jogar. St. James' Park ferve, alta intensidade. Leeds expõe linhas defensivas. Alta probabilidade de gols em ambos os tempos. Entrada progressiva conforme Newcastle pressiona. Tendência de pressão crescente."
   },
   {
     "id": "14025037",
@@ -94,11 +119,13 @@
     "homeTeam": "Burnley",
     "awayTeam": "Manchester United",
     "market": [
-      {"type": "Trader", "method": "Back ao Favorito \"Delayed\""},
-      {"type": "Trader", "method": "Lay 0-1 (Contra a Zebra)"}
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
-    "note": "United superior tecnicamente, mas tende a resolver no segundo tempo. Bom jogo para entrada tardia."
+    "note": "United demitiu Amorim em 05/01, estava em 6º lugar. Burnley é time promovido em casa, tende a resistir no início. Incerteza no United favorece jogo aberto mas United tem superioridade técnica. United costuma demorar a furar bloqueios baixos. Back 'Delayed' e gol no 2º tempo são padrões clássicos deste confronto. Possível zebra mas favorito claro. Aguardar United resolver no segundo tempo."
   },
   {
     "id": "14252104",
@@ -108,11 +135,13 @@
     "homeTeam": "Barcelona",
     "awayTeam": "Athletic Bilbao",
     "market": [
-      {"type": "Trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "Trader", "method": "Back ao Favorito \"Delayed\""}
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"}
     ],
     "recommended": true,
-    "note": "Barcelona em fase excelente. Final exige vitória. Padrão forte para LTD."
+    "note": "CONSENSO MUITO FORTE (3/3). Barça em forma excepcional: 8 vitórias consecutivas, últimas 4 com clean sheets (2-0). Athletic sem vencer últimos 5 jogos (90 min). Barcelona domina H2H: 8 vitórias seguidas. Favorito absoluto (67.47%). Campo neutro e decisão. Bilbao sempre endurece mas Barça busca controle. LTD em finais é excelente pela necessidade de resultado. Final com intensidade, expectativa de jogo movimentado."
   },
   {
     "id": "15014414",
@@ -122,11 +151,13 @@
     "homeTeam": "Benfica",
     "awayTeam": "Braga",
     "market": [
-      {"type": "Trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "Punter", "method": "Over 1.5 Live"}
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
-    "note": "Final intensa, Braga não se fecha. Excelente cenário para gols e fim do empate."
+    "note": "Final da Taça da Liga. Benfica favorito em casa com mais qualidade no elenco. Clássico português sempre competitivo. Confronto de alta rivalidade ofensiva. Braga não se acovarda na Luz, o que favorece mercados de gols e LTD. Expectativa de jogo movimentado com ritmo forte desde o início. Jogo grande com decisões após o intervalo. LTD em finais excelente."
   },
   {
     "id": "13981607",
@@ -136,11 +167,13 @@
     "homeTeam": "Napoli",
     "awayTeam": "Verona",
     "market": [
-      {"type": "Trader", "method": "Back ao Favorito \"Delayed\""},
-      {"type": "Trader", "method": "Lay 0-1 (Contra a Zebra)"}
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
-    "note": "Napoli muito superior. Verona reativo. Entrada segura no favoritismo."
+    "note": "Napoli em forma excepcional: 4 vitórias seguidas (todas 2-0). Verona na zona de rebaixamento, sem vencer Napoli fora desde 1983. Napoli 73.3% de probabilidade, casa invicta há mais de 1 ano. Favorito esmagador com diferença técnica abismal. Napoli dominante, deve pressionar desde o início. Back 'Delayed' e Lay 0-1 presentes em múltiplas análises. Verona pode se fechar muito mas Napoli resolve."
   },
   {
     "id": "13981601",
@@ -150,11 +183,13 @@
     "homeTeam": "Bologna",
     "awayTeam": "Atalanta",
     "market": [
-      {"type": "Trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "Punter", "method": "Over 1.5 Live"}
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
-    "note": "Atalanta ofensiva, Bologna competitivo. Dificilmente termina empatado."
+    "note": "CONSENSO FORTE (3/3). Atalanta joga futebol ofensivo, frequentemente alto scoring, muito vertical. Bologna em casa é competitivo e atrevido. Expectativa de jogo aberto com múltiplos gols. Atalanta leve favorito. Duelo tático intenso desde o início. Dificilmente este jogo termina em 0-0. Lay ao Empate e Over 1.5 Live unanimidade nas análises."
   },
   {
     "id": "13981605",
@@ -164,10 +199,13 @@
     "homeTeam": "Lazio",
     "awayTeam": "Fiorentina",
     "market": [
-      {"type": "Trader", "method": "Under 2.5 gols"}
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punter", "method": "Handicap Asiático +0.5 Zebra"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": false,
-    "note": "Jogo muito equilibrado e tático. Pouco valor pré-jogo."
+    "note": "Lazio perdeu últimos 3 jogos em casa da liga. Fiorentina tem pior desempenho fora (4 derrotas consecutivas). Jogo difícil de prever com equilíbrio total, típico jogo de meio-campo. Lazio favorito mas não convincente. Baixa expectativa de gols, histórico recente favorece Under 2.5 (presente em 3/3 análises). Não recomendado pela dificuldade de leitura e ambos em má fase."
   },
   {
     "id": "13981610",
@@ -177,10 +215,12 @@
     "homeTeam": "Parma",
     "awayTeam": "Inter de Milão",
     "market": [
-      {"type": "Trader", "method": "Back ao Favorito \"Delayed\""},
-      {"type": "Trader", "method": "Lay 0-1 (Contra a Zebra)"}
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
-    "note": "Inter muito superior. Parma tende a errar sob pressão contínua."
+    "note": "CONSENSO FORTE (3/3). Inter brigando pelo título, visitando Parma. Inter tem qualidade muito superior. Parma tentará se fechar em casa mas a Inter costuma resolver no segundo tempo quando a odd do Back sobe no live. Parma em casa pode dificultar inicialmente mas tende a errar sob pressão. Inter precisa de atenção total mas é favorito claro. Back 'Delayed' unanimidade."
   }
 ]

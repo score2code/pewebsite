@@ -1,0 +1,83 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 3.02,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 0.50,
+    "odd": 14.68,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Boleiros",
+    "stake": 1,
+    "odd": 1.54,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Boleiros",
+    "stake": 0.50,
+    "odd": 4.54,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.66,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.55,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.69,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Rafaela",
+    "stake": 0.50,
+    "odd": 6.60,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Rafaela",
+    "stake": 0.50,
+    "odd": 12.30,
+    "return": 0,
+    "status": "pending"
+  }
+]
