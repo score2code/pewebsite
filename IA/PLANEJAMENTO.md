@@ -1,6 +1,7 @@
 Como neste exemplo, estou planejando o que fazer no trader e punther de cada jogo de futebol.. exemplo ..
 
 {
+"id": "1223",
 "date":"2026-01-01",
 "time":"17:00",
 "league":"Inglaterra - Premier League",

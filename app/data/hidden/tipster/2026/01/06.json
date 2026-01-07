@@ -15,7 +15,7 @@
     "stake": 1,
     "odd": 1.82,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -33,7 +33,7 @@
     "stake": 1,
     "odd": 2.57,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -106,5 +106,23 @@
     "odd": 6.85,
     "return": 0,
     "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 3.62,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 6.52,
+    "return": 0,
+    "status": "pending"
   }
 ]
