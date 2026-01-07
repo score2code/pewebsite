@@ -24,7 +24,7 @@
     "stake": 1,
     "odd": 3.23,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -42,7 +42,7 @@
     "stake": 0.50,
     "odd": 9,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -50,8 +50,8 @@
     "tipster": "Yuri",
     "stake": 1,
     "odd": 1.68,
-    "return": 0,
-    "status": "pending"
+    "return": 1.69,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -59,8 +59,8 @@
     "tipster": "Rafaela",
     "stake": 0.50,
     "odd": 1.70,
-    "return": 0,
-    "status": "pending"
+    "return": 0.85,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -68,8 +68,8 @@
     "tipster": "Rafaela",
     "stake": 0.50,
     "odd": 2.72,
-    "return": 0,
-    "status": "pending"
+    "return": 1.36,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -78,7 +78,7 @@
     "stake": 0.50,
     "odd": 6.07,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -86,8 +86,8 @@
     "tipster": "Edge2Green",
     "stake": 0.50,
     "odd": 8.11,
-    "return": 0,
-    "status": "pending"
+    "return": 4.06,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -96,7 +96,7 @@
     "stake": 0.50,
     "odd": 2.58,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -105,6 +105,6 @@
     "stake": 0.50,
     "odd": 6.85,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   }
 ]

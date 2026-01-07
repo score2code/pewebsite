@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Duelo intenso na Premier League. O West Ham busca propor o jogo em casa, mas o Forest possui um contra-ataque letal. A necessidade de vitória de ambos favorece um cenário com gols para os dois lados."
+    "analysis": "Duelo intenso na Premier League. O West Ham busca propor o jogo em casa, mas o Forest possui um contra-ataque letal. A necessidade de vitória de ambos favorece um cenário com gols para os dois lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "pisa-x-como",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Pisa (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "Jogo equilibrado. O Pisa tem forte mando de campo e solidez defensiva em casa. O DNB oferece a segurança necessária num confronto direto onde o fator casa pode ser decisivo."
+    "analysis": "Jogo equilibrado. O Pisa tem forte mando de campo e solidez defensiva em casa. O DNB oferece a segurança necessária num confronto direto onde o fator casa pode ser decisivo.",
+    "status": "red",
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "lecce-x-as-roma",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: AS Roma",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "A Roma precisa somar pontos para suas ambições europeias. Mesmo fora de casa, a disparidade técnica contra o Lecce é evidente, tornando a vitória visitante o cenário mais provável."
+    "analysis": "A Roma precisa somar pontos para suas ambições europeias. Mesmo fora de casa, a disparidade técnica contra o Lecce é evidente, tornando a vitória visitante o cenário mais provável.",
+    "status": "green",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "sassuolo-x-juventus",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Juventus",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "A Juventus mantém uma consistência tática superior. O Sassuolo costuma ceder espaços defensivos que o ataque da Velha Senhora deve aproveitar para garantir os três pontos."
+    "analysis": "A Juventus mantém uma consistência tática superior. O Sassuolo costuma ceder espaços defensivos que o ataque da Velha Senhora deve aproveitar para garantir os três pontos.",
+    "status": "green",
+    "reason": "Placar: 0 x 3"
   },
   {
     "id": "sporting-lisboa-x-vitoria-guimaraes",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 80,
-    "status": "pending",
-    "analysis": "O Sporting em Alvalade é uma máquina ofensiva. O Vitória Guimarães também tem qualidade para marcar, o que projeta um jogo movimentado e com placar elástico."
+    "analysis": "O Sporting em Alvalade é uma máquina ofensiva. O Vitória Guimarães também tem qualidade para marcar, o que projeta um jogo movimentado e com placar elástico.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "fenerbahce-x-samsunspor",
@@ -74,8 +79,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Fenerbahce",
     "confidence": 83,
-    "status": "pending",
-    "analysis": "Fenerbahce luta pelo título e não pode tropeçar em casa. A diferença de elenco é gritante, e a pressão da torcida deve empurrar o time para uma vitória confortável."
+    "analysis": "Fenerbahce luta pelo título e não pode tropeçar em casa. A diferença de elenco é gritante, e a pressão da torcida deve empurrar o time para uma vitória confortável.",
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "paok-thessaloniki-x-atromitos",
@@ -87,12 +93,13 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: PAOK Thessaloniki",
     "confidence": 82,
-    "status": "pending",
-    "analysis": "O PAOK é dominante em seus domínios. O Atromitos terá dificuldades para conter o ímpeto ofensivo dos donos da casa, que devem controlar a partida do início ao fim."
+    "analysis": "O PAOK é dominante em seus domínios. O Atromitos terá dificuldades para conter o ímpeto ofensivo dos donos da casa, que devem controlar a partida do início ao fim.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "costa-do-marfim-x-burkina-faso",
-    "league": "Internacional - Amistoso",
+    "league": "Copa Africana de Nações",
     "homeTeam": "Costa do Marfim",
     "awayTeam": "Burkina Faso",
     "date": "2026-01-06",
@@ -100,12 +107,13 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Costa do Marfim (DNB)",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Clássico regional africano. A Costa do Marfim possui individualidades mais decisivas jogando em casa (ou campo neutro favorável), justificando o favoritismo com proteção do empate."
+    "analysis": "Clássico regional africano. A Costa do Marfim possui individualidades mais decisivas jogando em casa (ou campo neutro favorável), justificando o favoritismo com proteção do empate.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "argelia-x-rd-do-congo",
-    "league": "Internacional - Amistoso",
+    "league": "Copa Africana de Nações",
     "homeTeam": "Argélia",
     "awayTeam": "RD do Congo",
     "date": "2026-01-06",
@@ -113,7 +121,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Argélia",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "A Argélia tem mostrado um futebol sólido e organizado. Contra a RD do Congo, que oscila defensivamente, os argelinos têm tudo para sair com a vitória."
+    "analysis": "A Argélia tem mostrado um futebol sólido e organizado. Contra a RD do Congo, que oscila defensivamente, os argelinos têm tudo para sair com a vitória.",
+    "status": "red",
+    "reason": "Placar: 0 x 0"
   }
 ]

@@ -77,7 +77,7 @@
     "stake": 0.50,
     "odd": 35296.40,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",

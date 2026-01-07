@@ -12,7 +12,8 @@ type GameItem = {
   recommended?: boolean;
   live?: boolean;
   time?: string;
-  note?: string; // Nova propriedade adicionada
+  note?: string;
+  id?: string;
 };
 
 function formatDateBR(dateStr: string): string {
@@ -86,6 +87,26 @@ export default function BacklogClient({ games }: { games: GameItem[] }) {
                     {g.note}
                   </p>
                 </div>
+              )}
+
+              {/* Widget SofaScore dentro do card */}
+              {!!g.id && (
+              <div className="mt-3 mb-3 rounded-lg overflow-hidden border border-light-300 dark:border-dark-600">
+                <div className="overflow-hidden h-[140px]">
+                  <iframe
+                    width="100%"
+                    height="286"
+                    src={`https://widgets.sofascore.com/pt-BR/embed/attackMomentum?id=${g.id}&widgetTheme=dark`}
+                    frameBorder="0"
+                    scrolling="no"
+                    title={`Stats ${g.homeTeam} vs ${g.awayTeam}`}
+                    className="mt-[-10px]"
+                  />
+                </div>
+                <div className="text-[10px] px-2 py-1 bg-light-200/50 dark:bg-dark-700/50 text-center border-t border-light-300 dark:border-dark-600">
+                  Momento de ataque: {g.homeTeam} x {g.awayTeam}
+                </div>
+              </div>
               )}
 
               <div className="mt-2 flex flex-col gap-1 text-sm">

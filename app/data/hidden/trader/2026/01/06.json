@@ -6,11 +6,98 @@
     "homeTeam": "Pisa",
     "awayTeam": "Como",
     "prediction": [
-      ""
+      "Back: Under 2.5 gols"
+    ],
+    "stake": 5,
+    "odd": 1.07,
+    "return": 5.22,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Argélia",
+    "awayTeam": "RD do Congo",
+    "prediction": [
+      "Back: Over 1.5 Live",
+      "Back: Over 0.5 Live"
+    ],
+    "stake": 2.27,
+    "odd": 3.63,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "league": "Itália - Séria A",
+    "homeTeam": "Lecce",
+    "awayTeam": "AS Roma",
+    "prediction": [
+      "Back: Correct Score 1x3"
     ],
     "stake": 1,
-    "odd": 0,
+    "odd": 11.50,
     "return": 0,
-    "status": "pending"
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "league": "Turquia - Super Copa",
+    "homeTeam": "Fenerbahce",
+    "awayTeam": "Samsunspor",
+    "prediction": [
+      "Back: Qualquer outra vitória da casa"
+    ],
+    "stake": 1,
+    "odd": 5,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "league": "Itália - Séria A",
+    "homeTeam": "Sassuolo",
+    "awayTeam": "Juventus",
+    "prediction": [
+      "Back: Correct Score 1x3",
+      "Back: Correct Score 1x2"
+    ],
+    "stake": 2,
+    "odd": 17,
+    "return": 2.01,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "West Ham",
+    "awayTeam": "Nottingham Forest",
+    "prediction": [
+      "Lay: West Ham",
+      "Back: Over 2.5 Live"
+    ],
+    "stake": 2,
+    "odd": 1.85,
+    "return": 3.65,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-06",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Sporting Lisboa",
+    "awayTeam": "Vitória Guimarães",
+    "prediction": [
+      "Lay: Under 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 1.53,
+    "return": 1.96,
+    "status": "green"
   }
 ]
