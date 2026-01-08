@@ -1,3 +1,5 @@
+Seja uma analista profissional de futebol e busque nas fontes sérias
+
 Como neste exemplo, estou planejando o que fazer no trader e punther de cada jogo de futebol.. exemplo ..
 
 {

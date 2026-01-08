@@ -5,8 +5,8 @@
     "tipster": "Yuri",
     "stake": 1,
     "odd": 3.02,
-    "return": 0,
-    "status": "pending"
+    "return": 3.02,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -15,7 +15,7 @@
     "stake": 0.50,
     "odd": 14.68,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -23,8 +23,8 @@
     "tipster": "Boleiros",
     "stake": 1,
     "odd": 1.54,
-    "return": 0,
-    "status": "pending"
+    "return": 1.55,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -33,7 +33,7 @@
     "stake": 0.50,
     "odd": 4.54,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -42,7 +42,7 @@
     "stake": 1,
     "odd": 1.66,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -50,8 +50,8 @@
     "tipster": "Yuri",
     "stake": 1,
     "odd": 1.55,
-    "return": 0,
-    "status": "pending"
+    "return": 1.55,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -59,8 +59,8 @@
     "tipster": "Yuri",
     "stake": 1,
     "odd": 1.69,
-    "return": 0,
-    "status": "pending"
+    "return": 1.69,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -68,8 +68,8 @@
     "tipster": "Rafaela",
     "stake": 0.50,
     "odd": 6.60,
-    "return": 0,
-    "status": "pending"
+    "return": 3.44,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -78,6 +78,96 @@
     "stake": 0.50,
     "odd": 12.30,
     "return": 0,
-    "status": "pending"
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.75,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.67,
+    "return": 1.68,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Edge2Green",
+    "stake": 1,
+    "odd": 2.80,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.97,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.87,
+    "return": 1.87,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.95,
+    "return": 1.95,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 1.70,
+    "return": 1.70,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 1.70,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 1.61,
+    "return": 1.61,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "tipster": "Edge2Green",
+    "stake": 0.50,
+    "odd": 17.69,
+    "return": 0,
+    "status": "red"
   }
 ]

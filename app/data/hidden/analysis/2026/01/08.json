@@ -1,0 +1,50 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 2,
+    "date": "2026-01-08",
+    "affectsInitial": true,
+    "note": "Super Spin"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-08",
+    "analysis": 7,
+    "stake": 0.50,
+    "odd": 33.27,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-08",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 241.29,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-08",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 128.58,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-08",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 0,
+    "return": 0,
+    "status": "pending"
+  }
+]

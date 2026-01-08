@@ -1,0 +1,107 @@
+[
+  {
+    "id": "14025019",
+    "date": "2026-01-08",
+    "time": "17:00",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Arsenal",
+    "awayTeam": "Liverpool",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Arsenal em ótima forma em casa, líder do campeonato. Liverpool sem Salah e instável defensivamente. Clássico equilibrado com tendência de gols, Arsenal favorito mas Liverpool competitivo. Histórico recente indica jogo movimentado."
+  },
+  {
+    "id": "14252105",
+    "date": "2026-01-08",
+    "time": "16:00",
+    "league": "Espanha - Super Copa",
+    "homeTeam": "Atletico Madrid",
+    "awayTeam": "Real Madrid",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": true,
+    "note": "Dérbi madrilenho decisivo pela semifinal. Atlético venceu 5-2 no confronto anterior na temporada, chegando confiante. Real Madrid sem Mbappé, Militão e TAA, mas em boa sequência. Rivalidade histórica indica jogo intenso e com gols."
+  },
+  {
+    "id": "14844437",
+    "date": "2026-01-08",
+    "time": "16:45",
+    "league": "Itália - Série A",
+    "homeTeam": "AC Milan",
+    "awayTeam": "Genoa",
+    "market": [
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Milan invicto há 16 jogos na Série A, forte em casa (7 vitórias nos últimos 9 no San Siro). Genoa lutando contra rebaixamento, 4 jogos sem vencer. Milan com Pulisic e Leão disponíveis. Histórico favorável aos donos da casa."
+  },
+  {
+    "id": "15024680",
+    "date": "2026-01-08",
+    "time": "15:00",
+    "league": "França - Super Copa",
+    "homeTeam": "PSG",
+    "awayTeam": "Olympique Marseille",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": true,
+    "note": "Le Classique pela final da Supercopa. PSG invicto há 6 jogos, não sofreu gols nas últimas 3 finais desta competição. Marseille instável, vem de derrota para o Nantes. PSG marcou primeiro nos últimos 5 jogos. Rivalidade histórica garante intensidade."
+  },
+  {
+    "id": "14771926",
+    "date": "2026-01-08",
+    "time": "11:55",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Hilal",
+    "awayTeam": "Al Hazem",
+    "market": [
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Al Hilal líder isolado, 9 vitórias consecutivas, média de 2.77 gols por jogo. Al Hazem na zona de rebaixamento. Histórico devastador: Al Hilal invicto nos últimos 8 confrontos. Diferença técnica gigantesca, Al Hilal não perde há 8 jogos contra esse adversário."
+  },
+  {
+    "id": "14771929",
+    "date": "2026-01-08",
+    "time": "14:30",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Nassr",
+    "awayTeam": "Al Qadisiyah",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""}
+    ],
+    "recommended": true,
+    "note": "Al Nassr perdeu liderança mas invicto em casa (6 vitórias em 6 jogos). Melhor ataque da liga (37 gols em 12 jogos). Al Qadisiyah venceu os últimos 3 confrontos diretos, mas luta fora de casa. Sadio Mané ausente por seleção. Jogo de recuperação para Al Nassr."
+  },
+  {
+    "id": "14771925",
+    "date": "2026-01-08",
+    "time": "14:30",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Najma Manama",
+    "awayTeam": "Al Ettifaq",
+    "market": [
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "Handicap Asiático +0.5 Zebra"}
+    ],
+    "recommended": false,
+    "note": "Jogo equilibrado entre times de meio de tabela. Al Ettifaq invicto nos últimos jogos, mas ambos com desempenhos irregulares. Partida pode ser disputada com chances para ambos os lados."
+  }
+]

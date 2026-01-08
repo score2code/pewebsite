@@ -72,7 +72,7 @@
     "stake": 2,
     "odd": 1.48,
     "return": 0.70,
-    "status": "red"
+    "status": "cashout"
   },
   {
     "type": "bet",

@@ -11,22 +11,13 @@ export const metadata: Metadata = {
 export default function MetodoTraderPage() {
   const metodos = [
     {
-      titulo: "Lay ao Empate (LTD)",
-      selecao: "Favorito em casa (Odd 1.5-2.0) + Empate < 4.50",
-      entrada: "Aos 20 minutos de jogo com 0x0 no placar",
-      validacao: "AP1 > 60 no Delay Ball (Favorito amassando)",
-      lucro: "Sai logo após o golo do favorito",
-      stopLoss: "Sai aos 70 minutos se continuar 0x0 (Sem exceção!)",
-      obs: "Responsabilidade máx R$ 4,00 por jogo (20% da banca)."
-    },
-    {
-      titulo: "Under 2.5 gols",
-      selecao: "Ligas de Under (Série B, Ligue 2) + Favorito Fora ou Equipes Equilibradas",
-      entrada: "Aos 10 ou 15 minutos do primeiro tempo com 0x0 no placar",
-      validacao: "AP1 < 30 e AP2 < 35 (Jogo 'morno', sem pressão)",
-      lucro: "Scalping: Sai após 5-10 min / Swing: Sai aos 35' do 1ºT",
-      stopLoss: "Saída Imediata em caso de golo ou se o AP1 subir para > 70",
-      obs: "Use Stakes fixas (ex: R$ 2,00). O objetivo é a queda da Odd pelo tempo."
+      titulo: "Back ao Favorito 'Delayed'",
+      selecao: "Super Favorito (@1.30 a @1.50) jogando em casa.",
+      entrada: "Back Favorito: Entre entre os 15' e 20' do 1º tempo se estiver 0x0.",
+      validacao: "AP1 > 60. O favorito deve estar dominando, mas a bola não entrou.",
+      lucro: "Golo do Favorito: A Odd pré @1.40 estará @1.75+. Lucro limpo.",
+      stopLoss: "Golo da Zebra: Se sofrer 0x1, saia com prejuízo ou espere correção.",
+      obs: "Você aposta no mesmo time, mas com um preço (odd) muito mais lucrativo."
     },
     {
       titulo: "Correct Score 3x1 - 1x3",
@@ -47,6 +38,24 @@ export default function MetodoTraderPage() {
       obs: "Estratégia de valorização. Ganha na tensão do 3º gol sair para qualquer lado."
     },
     {
+      titulo: "Lay ao Empate (LTD)",
+      selecao: "Favorito em casa (Odd 1.5-2.0) + Empate < 4.50",
+      entrada: "Aos 20 minutos de jogo com 0x0 no placar",
+      validacao: "AP1 > 60 no Delay Ball (Favorito amassando)",
+      lucro: "Sai logo após o golo do favorito",
+      stopLoss: "Sai aos 70 minutos se continuar 0x0 (Sem exceção!)",
+      obs: "Responsabilidade máx R$ 4,00 por jogo (20% da banca)."
+    },
+    {
+      titulo: "Under 2.5 gols",
+      selecao: "Ligas de Under (Série B, Ligue 2) + Favorito Fora ou Equipes Equilibradas",
+      entrada: "Aos 10 ou 15 minutos do primeiro tempo com 0x0 no placar",
+      validacao: "AP1 < 30 e AP2 < 35 (Jogo 'morno', sem pressão)",
+      lucro: "Scalping: Sai após 5-10 min / Swing: Sai aos 35' do 1ºT",
+      stopLoss: "Saída Imediata em caso de golo ou se o AP1 subir para > 70",
+      obs: "Use Stakes fixas (ex: R$ 2,00). O objetivo é a queda da Odd pelo tempo."
+    },
+    {
       titulo: "Lay 0-1 (Contra a Zebra)",
       selecao: "Favorito @1.40 a @1.70 em casa. Zebra com ataque muito fraco.",
       entrada: "Pré-Live ou nos primeiros 10 min de jogo.",
@@ -54,15 +63,6 @@ export default function MetodoTraderPage() {
       lucro: "Favorito marca: Se faz 1-0, o placar 0-1 'morre' e você ganha a aposta.",
       stopLoss: "Zebra marca: Se ficar 0-1, prejuízo máximo. Saia ou espere o 1-1.",
       obs: "Estratégia de Taxa de Acerto alta. Você ganha em quase todos os cenários."
-    },
-    {
-      titulo: "Back ao Favorito 'Delayed'",
-      selecao: "Super Favorito (@1.30 a @1.50) jogando em casa.",
-      entrada: "Back Favorito: Entre entre os 15' e 20' do 1º tempo se estiver 0x0.",
-      validacao: "AP1 > 60. O favorito deve estar dominando, mas a bola não entrou.",
-      lucro: "Golo do Favorito: A Odd pré @1.40 estará @1.75+. Lucro limpo.",
-      stopLoss: "Golo da Zebra: Se sofrer 0x1, saia com prejuízo ou espere correção.",
-      obs: "Você aposta no mesmo time, mas com um preço (odd) muito mais lucrativo."
     }
   ];
 

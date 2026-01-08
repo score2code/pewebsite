@@ -1,6 +1,8 @@
 const fs = require('fs/promises');
 const path = require('path');
 
+const PROJECT_ROOT = path.resolve(__dirname, '..', '..', 'pewebsite');
+
 async function readJson(filePath) {
   try {
     const raw = await fs.readFile(filePath, 'utf8');
@@ -10,26 +12,30 @@ async function readJson(filePath) {
   }
 }
 
-function isAllowedPrediction(pred) {
-  const p = (pred || '').toLowerCase();
-  return !p; // placeholder, real check happens in isAllowedPick
-}
-
 function pickKey(p) {
   return `${p.id || `${p.homeTeam}-${p.awayTeam}`}|${p.prediction}`;
 }
 
 async function collectCandidates() {
-  const baseDir = path.join(process.cwd(), 'app', 'data', 'soccer', '2026', '01');
+  const baseDir = path.join(PROJECT_ROOT, 'app', 'data', 'soccer', '2026', '01');
   const days = [
-    '07','08','09','10','11','12','13','14','15','16','17','18','19','20','21'
+    '08','09','10','11','12','13','14','15','16','17','18','19','20','21'
   ];
   const candidates = [];
+  let totalPredictions = 0;
+  let rejectedCount = 0;
+
   for (const d of days) {
     const file = path.join(baseDir, `${d}.json`);
     const arr = await readJson(file);
-    if (!Array.isArray(arr)) continue;
+    if (!Array.isArray(arr)) {
+      console.log(`[debug] ${file} não é array ou não existe`);
+      continue;
+    }
+    console.log(`[debug] ${d}.json tem ${arr.length} palpites`);
+
     for (const p of arr) {
+      totalPredictions++;
       const prediction = p.prediction || '';
       const confidence = Number(p.confidence ?? 0);
       const predLower = prediction.toLowerCase();
@@ -39,7 +45,13 @@ async function collectCandidates() {
         (!isUnder && !isHandicap && confidence >= 70) ||
         (isUnder && confidence >= 90) ||
         (isHandicap && confidence >= 80);
-      if (allowed) {
+
+      if (!allowed) {
+        rejectedCount++;
+        if (rejectedCount <= 5) { // mostra apenas os 5 primeiros
+          console.log(`[reject] ${p.homeTeam} vs ${p.awayTeam} | "${prediction}" | conf: ${confidence} | under: ${isUnder} | handicap: ${isHandicap}`);
+        }
+      } else {
         candidates.push({
           id: p.id,
           league: p.league,
@@ -53,6 +65,11 @@ async function collectCandidates() {
       }
     }
   }
+
+  console.log(`[debug] Total lidos: ${totalPredictions}`);
+  console.log(`[debug] Rejeitados: ${rejectedCount}`);
+  console.log(`[debug] Aprovados: ${candidates.length}`);
+
   // sort by confidence desc, then stable by date/time for variety
   candidates.sort((a, b) => {
     if (b.confidence !== a.confidence) return b.confidence - a.confidence;
@@ -68,7 +85,7 @@ async function ensureDir(dir) {
 }
 
 async function writeBilhetes(files) {
-  const outDir = path.join(process.cwd(), 'app', 'data', 'final');
+  const outDir = path.join(PROJECT_ROOT, 'app', 'data', 'final');
   await ensureDir(outDir);
   for (let i = 0; i < files.length; i++) {
     const picks = files[i];
@@ -87,7 +104,7 @@ async function writeBilhetes(files) {
 }
 
 async function main() {
-  const quotas = [30, 30, 30, 30, 20, 20, 13, 13];
+  const quotas = [30];
   const numFiles = quotas.length;
   const files = Array.from({ length: numFiles }, () => []);
   const perFileDateCount = Array.from({ length: numFiles }, () => new Map());
@@ -96,7 +113,7 @@ async function main() {
 
   const candidates = await collectCandidates();
   if (candidates.length < quotas.reduce((a, b) => a + b, 0)) {
-    console.warn(`[warn] Poucos candidatos (${candidates.length}) para a meta de 186. Ainda assim distribuirei o máximo possível respeitando as restrições.`);
+    console.warn(`[warn] Poucos candidatos (${candidates.length}) para a meta. Ainda assim distribuirei o máximo possível respeitando as restrições.`);
   }
 
   // helper to check if we can add pick to file idx

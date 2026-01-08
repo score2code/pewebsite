@@ -51,7 +51,7 @@
     ],
     "stake": 1,
     "odd": 12,
-    "return": 2.71,
+    "return": 2.72,
     "status": "green"
   },
   {
@@ -68,7 +68,7 @@
     "stake": 2,
     "odd": 7,
     "return": 2,
-    "status": "green"
+    "status": "cashout"
   },
   {
     "type": "bet",
@@ -96,7 +96,7 @@
       "Lay: CS: 0 x 1",
       "Lay: Over 1.5 Gols Live"
     ],
-    "stake": 15.35,
+    "stake": 15.36,
     "odd": 4.10,
     "return": 0,
     "status": "red"

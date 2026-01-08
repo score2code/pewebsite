@@ -93,7 +93,7 @@ export default function RelatorioExchangeClient({ bets, initialBankroll }: { bet
   const betsOnly = normalizedBets.filter(b => (b.type || 'bet') === 'bet');
   const transactions = normalizedBets.filter(b => b.type === 'transaction');
   const totalVolume = betsOnly.reduce((sum, b) => sum + (Number(b.stake) || 0), 0);
-  const totalReturn = betsOnly.reduce((sum, b) => sum + computeNetReturnFromBet(b), 0);
+  const totalReturn = betsOnly.filter(b => b.status !== 'pending').reduce((sum, b) => sum + computeNetReturnFromBet(b), 0);
   const initialAdjust = transactions.filter(t => Boolean(t.affectsInitial)).reduce((s, t) => s + computeTransactionEffect(t), 0);
   const runtimeTrans = transactions.filter(t => !Boolean(t.affectsInitial)).reduce((s, t) => s + computeTransactionEffect(t), 0);
   const initialBankrollAdjusted = initialBankroll + initialAdjust;

@@ -1,0 +1,88 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "league": "Itália - Série A",
+    "homeTeam": "Napoli",
+    "awayTeam": "Verona",
+    "prediction": [
+      "Lay: Verona"
+    ],
+    "stake": 3.10,
+    "odd": 1.52,
+    "return": 4.07,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Brentford",
+    "awayTeam": "Sunderland",
+    "prediction": [
+      "Back: Brentford"
+    ],
+    "stake": 1,
+    "odd": 2.30,
+    "return": 1.68,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "league": "Itália - Série A",
+    "homeTeam": "Lazio",
+    "awayTeam": "Fiorentina",
+    "prediction": [
+      "Back: Lazio"
+    ],
+    "stake": 1,
+    "odd": 2,
+    "return": 1,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Crystal Palace",
+    "awayTeam": "Aston Villa",
+    "prediction": [
+      "Back: Over 0.5 gols",
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 3,
+    "odd": 1.88,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "league": "Itália - Série A",
+    "homeTeam": "Parma",
+    "awayTeam": "Inter de Milão",
+    "prediction": [
+      "Back: Inter de Milão"
+    ],
+    "stake": 1,
+    "odd": 1.41,
+    "return": 1.36,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-07",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Leeds United",
+    "prediction": [
+      "Back: Newcastle",
+      "Back: Over 4.5 gols"
+    ],
+    "stake": 2.10,
+    "odd": 1.99,
+    "return": 2,
+    "status": "cashout"
+  }
+]
