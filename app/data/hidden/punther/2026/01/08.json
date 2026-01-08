@@ -1,0 +1,50 @@
+[
+  {
+    "type": "bet",
+    "model": "punther",
+    "date": "2026-01-08",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Arsenal",
+    "awayTeam": "Liverpool",
+    "prediction": [
+      "Dupla Chance: 1X",
+      "Arsenal - Total de Gols: Mais de 0.5",
+      "Total de Gols: Mais de 1.5",
+      "Handicap: Liverpool (2.5)"
+    ],
+    "stake": 1,
+    "odd": 1.95,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "rollover",
+    "date": "2026-01-08",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Nassr",
+    "awayTeam": "Al Qadisiyah",
+    "prediction": ["Over 1.5 gols"],
+    "stake": 5,
+    "odd": 1.10,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "leverage",
+    "date": "2026-01-08",
+    "league": "França - Super Copa",
+    "homeTeam": "PSG",
+    "awayTeam": "Olympique Marseille",
+    "prediction": [
+      "PSG - Total de Escanteios: Mais de 3.5",
+      "Olympique Marseille - Total de Escanteios: Mais de 2.5",
+      "Total de Gols: Mais de 1.5"
+    ],
+    "stake": 1,
+    "odd": 1.95,
+    "return": 0,
+    "status": "pending"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 15.61,
+    "date": "2026-01-08",
+    "affectsInitial": false,
+    "note": "Pessoal: Cartão Micro SD"
+  }
+]

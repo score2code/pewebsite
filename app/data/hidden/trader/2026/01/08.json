@@ -1,0 +1,44 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-08",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Hilal",
+    "awayTeam": "Al Hazem",
+    "prediction": [
+      "Back: CS 3x1",
+      "Back: CS Qualquer outra viória da casa"
+    ],
+    "stake": 1,
+    "odd": 15.50,
+    "return": 0.19,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-08",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Nassr",
+    "awayTeam": "Al Qadisiyah",
+    "prediction": [
+      "Back: CS 2 x 1",
+      "Back: CS 3 x 2"
+    ],
+    "stake": 3.20,
+    "odd": 17.49,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-08",
+    "league": "",
+    "homeTeam": "",
+    "awayTeam": "",
+    "prediction": [],
+    "stake": 1,
+    "odd": 0,
+    "return": 0,
+    "status": "pending"
+  }
+]

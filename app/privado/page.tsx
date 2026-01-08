@@ -26,6 +26,11 @@ export default function PrivadoIndexPage() {
       href: '/privado/relatorios',
       title: 'Relatórios',
       description: 'Tabela com volume, lucro e filtros.'
+    },,
+    {
+      href: '/privado/Anotacoes',
+      title: 'Anotações',
+      description: 'Anotações e observações sobre as estratégias'
     },
   ];
 
@@ -56,9 +61,9 @@ export default function PrivadoIndexPage() {
           </div>
           <Items category="analysis" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-            {pages.map((p) => (
-              <Link key={p.href} href={p.href} className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 transition-colors">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+            {pages.map((p: { href: string; title: string; description: string } = { href: '', title: '', description: '' }) => (
+              <Link key={p?.href} href={p?.href || ''} className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 transition-colors">
                 <div className="text-lg font-semibold text-dark-900 dark:text-light-100">{p.title}</div>
                 <div className="text-sm text-dark-900/70 dark:text-light-100/70 mt-1">{p.description}</div>
                 <div className="mt-3 inline-flex items-center text-sm text-purple-700 dark:text-purple-400">Acessar →</div>
