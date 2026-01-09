@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Itália - Série A",
+    "type": "liga",
+    "reason": "Liga muito irregular (Temporada 25/26), G4 sendo dominado por z4 e placares estranhos."
+  },
+  {
+    "name": "Arsenal",
+    "type": "time",
+    "reason": "Time mostra estabilidade (Temporada 25/26), mas não segue o padrão de dominante da tabela."
+  },
+  {
+    "name": "Liverpool",
+    "type": "time",
+    "reason": "Time muito irregular (Temporada 25/26), não segue padrões."
+  },
+  {
+    "name": "PAOK",
+    "type": "time",
+    "reason": "Time com odd esmagada (Temporada 25/26), mas já deixou muito a desejar em alguns jogos."
+  }
+]

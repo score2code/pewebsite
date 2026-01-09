@@ -1,0 +1,91 @@
+[
+  {
+    "title": "CS: Dutching 2x1 e 3x2",
+    "notes": [
+      {
+        "game": "Al-Nassr x Al-Qadisiyah",
+        "items": [
+          "Sem gol no primeiro tempo, prejuizo da metade do investimento",
+          "gol da zebra aos 50 min no segundo tempo, 3x2 quase dobra a odd e dá para sair se quiser",
+          "saindo no 0x1 (zebra ganhando) aos 54 min, possiveis ganhos no 2x1(3/6) e 3x2(lucro 6x), e perda de 1/6 do investimento se nao bater",
+          "Aos 80 min saindo o primeiro gol da casa (1x2), foi possivel fazer chashout pela segunda vez e com lucro de 50% do investimento"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "CS: Dutching 2x1 e 3x1",
+    "notes": [
+      {
+        "game": "PSG x Olympique Marseille",
+        "items": [
+          "Entrando no intervalo com o jogo 1x0, odds e jogo com times over estando boas",
+          "Prejuzo está em 1/3 do investimento aos 60 min no 1x0",
+          "Com gol aos 80 min, cashout para ter o freebet, só perde 5% do investimento se terminar o jogo 2x1 ."
+        ]
+      },
+      {
+        "game": "Arsenal x Liverpool",
+        "items": [
+          "Entrando em pre-live, aos 25 min, prejuizo de 10%, (0x0)",
+          "No intervalo em 0x0, o prejuizo está em 50% do investimento",
+          "Aos 60, ainda sem gol, 4/5 de prejuizo.",
+          "Full red por terminar em 0 x 0"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "CS: Qualquer outra vitoria da casa",
+    "notes": [
+      {
+        "game": "Al-Hilal x Al Hazm",
+        "items": [
+          "Após aos 70 min 2x0, fica preso",
+          "Apenas 1 gol no primeiro tempo 1x0, nao vale a pena entrar"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "CS: 3 x 1",
+    "notes": [
+      {
+        "game": "AC Milan x Genoa",
+        "items": [
+          "Entrando em pre-live na odd 22, gols aos 28 min da zebra (0x1), ja foi possivel dar cashout com 70% de lucro."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Over 2.5 Gols",
+    "notes": [
+      {
+        "game": "PSG x Olympique Marseille",
+        "items": [
+          "Partida 1x0, times grandes casa querendo fazer mais gols, odd 2.80 e 68 min de jogo. Saindo no 1x1 aos 80 min com 20% de lucro"
+        ]
+      },
+      {
+        "game": "AC Milan x Genoa",
+        "items": [
+          "Milan em casa, começando o segundo tempo, perdendo de 0x1. Entrando na odd 2.14 .",
+          "Full red, pois o 1 x 1 só veio aos 92 min"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Over 1.5 Gols",
+    "notes": [
+      {
+        "game": "Arsenal x Liverpool",
+        "items": [
+          "54 min de jogo e ainda 0x0, entrando na odd 2.85 .",
+          "Full red por terminar em 0 x 0"
+        ]
+      }
+    ]
+  }
+]

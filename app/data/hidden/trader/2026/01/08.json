@@ -26,19 +26,54 @@
     ],
     "stake": 3.20,
     "odd": 17.49,
-    "return": 0,
-    "status": "pending"
+    "return": 4.56,
+    "status": "cashout"
   },
   {
     "type": "bet",
     "date": "2026-01-08",
-    "league": "",
-    "homeTeam": "",
-    "awayTeam": "",
-    "prediction": [],
-    "stake": 1,
-    "odd": 0,
+    "league": "França - Super Copa",
+    "homeTeam": "PSG",
+    "awayTeam": "Olympique Marseille",
+    "prediction": [
+      "Back: CS 2 x 1",
+      "Back: CS 3 x 1",
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 4,
+    "odd": 11,
+    "return": 4.34,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-08",
+    "league": "Inglaterra - Premier League",
+    "homeTeam": "Arsenal",
+    "awayTeam": "Liverpool",
+    "prediction": [
+      "Back: CS 2 x 1",
+      "Back: CS 3 x 1",
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 3.70,
+    "odd": 12.50,
     "return": 0,
-    "status": "pending"
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-08",
+    "league": "Itália - Série A",
+    "homeTeam": "AC Milan",
+    "awayTeam": "Genoa",
+    "prediction": [
+      "Back: CS 3 x 1",
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 2,
+    "odd": 22,
+    "return": 1.66,
+    "status": "cashout"
   }
 ]

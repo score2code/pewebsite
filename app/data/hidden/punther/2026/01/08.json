@@ -15,7 +15,7 @@
     "stake": 1,
     "odd": 1.95,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -27,8 +27,8 @@
     "prediction": ["Over 1.5 gols"],
     "stake": 5,
     "odd": 1.10,
-    "return": 0,
-    "status": "pending"
+    "return": 5.50,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -44,7 +44,7 @@
     ],
     "stake": 1,
     "odd": 1.95,
-    "return": 0,
-    "status": "pending"
+    "return": 1,
+    "status": "cashout"
   }
 ]

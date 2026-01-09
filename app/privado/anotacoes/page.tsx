@@ -4,9 +4,20 @@ import type { Metadata } from 'next';
 import Breadcrumb from '@/app/components/ui/breadcrumb';
 import StrategiesClient from './NotesClient';
 
+type NoteItem = {
+  game: string;
+  items: string[];
+};
+
 type StrategyItem = {
   title: string;
-  notes: string[];
+  notes: NoteItem[];
+};
+
+type ExcludedItem = {
+  name: string;
+  type: 'liga' | 'time';
+  reason?: string;
 };
 
 export const metadata: Metadata = {
@@ -16,44 +27,26 @@ export const metadata: Metadata = {
 };
 
 async function loadStrategies(): Promise<StrategyItem[]> {
-  const dirCandidates = [
-    path.join(process.cwd(), 'app', 'data', 'hidden', 'notes'),
-    path.join(process.cwd(), 'data', 'hidden', 'notes'),
+  const files = [
+    path.join(process.cwd(), 'app', 'data', 'hidden', 'notes', 'default.json'),
+    path.join(process.cwd(), 'data', 'hidden', 'notes', 'default.json'),
   ];
-
-  const items: StrategyItem[] = [];
-
-  for (const baseDir of dirCandidates) {
+  for (const filePath of files) {
     try {
-      const years = await fs.readdir(baseDir).catch(() => []);
-      for (const y of years) {
-        const yearDir = path.join(baseDir, y);
-        const months = await fs.readdir(yearDir).catch(() => []);
-        for (const m of months) {
-          const monthDir = path.join(yearDir, m);
-          const files = await fs.readdir(monthDir).catch(() => []);
-          for (const f of files) {
-            if (f.endsWith('.json')) {
-              const filePath = path.join(monthDir, f);
-              try {
-                const content = await fs.readFile(filePath, 'utf-8');
-                const data = JSON.parse(content);
-                if (Array.isArray(data)) items.push(...data);
-              } catch {}
-            }
-          }
-        }
-      }
+      const content = await fs.readFile(filePath, 'utf-8');
+      const data = JSON.parse(content);
+      if (Array.isArray(data)) return data;
     } catch {}
   }
+  return [];
+}
 
-  if (items.length) return items;
-
-  const fileFallbacks = [
-    path.join(process.cwd(), 'app', 'data', 'hidden', 'notes.json'),
-    path.join(process.cwd(), 'data', 'hidden', 'notes.json'),
+async function loadExcluded(): Promise<ExcludedItem[]> {
+  const files = [
+    path.join(process.cwd(), 'app', 'data', 'hidden', 'notes', 'excluded.json'),
+    path.join(process.cwd(), 'data', 'hidden', 'notes', 'excluded.json'),
   ];
-  for (const filePath of fileFallbacks) {
+  for (const filePath of files) {
     try {
       const content = await fs.readFile(filePath, 'utf-8');
       const data = JSON.parse(content);
@@ -65,6 +58,7 @@ async function loadStrategies(): Promise<StrategyItem[]> {
 
 export default async function StrategiesPage() {
   const strategies = await loadStrategies();
+  const excludedList = await loadExcluded();
 
   return (
     <div className="min-h-screen pt-8 pb-16 px-4">
@@ -75,11 +69,10 @@ export default async function StrategiesPage() {
             Notas de Estratégias
           </h1>
           <p className="text-base md:text-lg text-dark-900/70 dark:text-light-100/70">
-            Anotações e observações importantes sobre cada estratégia de apostas.
+            Anotações e observações importantes sobre cada estratégia.
           </p>
         </header>
-
-        <StrategiesClient strategies={strategies} />
+        <StrategiesClient strategies={strategies} excludedList={excludedList} />
       </div>
     </div>
   );

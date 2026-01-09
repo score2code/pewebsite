@@ -28,7 +28,7 @@ export default function PrivadoIndexPage() {
       description: 'Tabela com volume, lucro e filtros.'
     },,
     {
-      href: '/privado/Anotacoes',
+      href: '/privado/anotacoes',
       title: 'Anotações',
       description: 'Anotações e observações sobre as estratégias'
     },
