@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "Duelo de titãs no Emirates. Ambos os times possuem ataques letais e estilos de jogo propositivos. O histórico recente mostra jogos movimentados e com chances para os dois lados, tornando o BTTS uma escolha sólida."
+    "analysis": "Duelo de titãs no Emirates. Ambos os times possuem ataques letais e estilos de jogo propositivos. O histórico recente mostra jogos movimentados e com chances para os dois lados, tornando o BTTS uma escolha sólida.",
+    "status": "red",
+    "reason": "Placar: 0 x 0"
   },
   {
     "id": "atletico-madrid-x-real-madrid",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Real Madrid (DNB)",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "O Derby de Madrid é sempre tenso, mas o Real Madrid costuma crescer nesses momentos decisivos. O DNB oferece proteção contra o empate, cenário comum em jogos truncados no Metropolitano."
+    "analysis": "O Derby de Madrid é sempre tenso, mas o Real Madrid costuma crescer nesses momentos decisivos. O DNB oferece proteção contra o empate, cenário comum em jogos truncados no Metropolitano.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "ac-milan-x-genoa",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: AC Milan",
     "confidence": 82,
-    "status": "pending",
-    "analysis": "O Milan no San Siro é muito forte e precisa dos pontos. O Genoa luta, mas a disparidade técnica é grande. A vitória dos Rossoneri é o resultado mais provável dada a necessidade de afirmação na tabela."
+    "analysis": "O Milan no San Siro é muito forte e precisa dos pontos. O Genoa luta, mas a disparidade técnica é grande. A vitória dos Rossoneri é o resultado mais provável dada a necessidade de afirmação na tabela.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "psg-x-olympique-marseille",
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 80,
-    "status": "pending",
-    "analysis": "Le Classique promete faíscas. O PSG em casa joga para golear, e o Marseille não costuma se acovardar. A tendência é de um jogo aberto, com muitas oportunidades de gol e placar elástico."
+    "analysis": "Le Classique promete faíscas. O PSG em casa joga para golear, e o Marseille não costuma se acovardar. A tendência é de um jogo aberto, com muitas oportunidades de gol e placar elástico.",
+    "status": "green",
+    "reason": "Placar: 2 x 2"
   }
 ]
