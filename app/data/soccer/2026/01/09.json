@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Real Sociedad (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "O Getafe é um adversário duro no Coliseum, mas a Real Sociedad possui maior qualidade técnica e organização tática. O DNB protege o investimento em um jogo que promete ser truncado."
+    "analysis": "O Getafe é um adversário duro no Coliseum, mas a Real Sociedad possui maior qualidade técnica e organização tática. O DNB protege o investimento em um jogo que promete ser truncado.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "eintracht-frankfurt-x-borussia-dortmund",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 82,
-    "status": "pending",
-    "analysis": "Clássico da Bundesliga com promessa de muitos gols. O Frankfurt é agressivo em casa, e o Dortmund tem um ataque poderoso, mas uma defesa que cede espaços, cenário ideal para o BTTS."
+    "analysis": "Clássico da Bundesliga com promessa de muitos gols. O Frankfurt é agressivo em casa, e o Dortmund tem um ataque poderoso, mas uma defesa que cede espaços, cenário ideal para o BTTS.",
+    "status": "green",
+    "reason": "Placar: 3 x 3"
   },
   {
     "id": "nec-nijmegen-x-utrecht",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "O Utrecht joga de forma ofensiva e o NEC costuma aceitar a troca de golpes. A tendência é de uma partida movimentada, com chances claras para ambos os lados superarem a linha de gols."
+    "analysis": "O Utrecht joga de forma ofensiva e o NEC costuma aceitar a troca de golpes. A tendência é de uma partida movimentada, com chances claras para ambos os lados superarem a linha de gols.",
+    "status": "postponed",
+    "reason": "Adiado"
   },
   {
     "id": "emmen-x-cambuur",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "A segunda divisão holandesa é conhecida por placares elásticos. Emmen e Cambuur são times que priorizam o ataque, tornando o Over 2.5 uma aposta de valor e alta probabilidade."
+    "analysis": "A segunda divisão holandesa é conhecida por placares elásticos. Emmen e Cambuur são times que priorizam o ataque, tornando o Over 2.5 uma aposta de valor e alta probabilidade.",
+    "status": "postponed",
+    "reason": "Adiado"
   },
   {
     "id": "willem-ii-tilburg-x-ado-den-haag",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "Duelo tradicional com histórico de gols. O Willem II é forte em casa, mas o ADO tem um ataque competente. A expectativa é de que as redes balancem para as duas equipes."
+    "analysis": "Duelo tradicional com histórico de gols. O Willem II é forte em casa, mas o ADO tem um ataque competente. A expectativa é de que as redes balancem para as duas equipes.",
+    "status": "postponed",
+    "reason": "Adiado"
   },
   {
     "id": "wrexham-x-nottingham-forest",
@@ -74,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Nottingham Forest",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Apesar da mística do Wrexham e do apoio de sua torcida, a diferença de nível entre as divisões é grande. O Forest, mesmo se rodar o elenco, tem qualidade suficiente para sair com a vitória."
+    "analysis": "Apesar da mística do Wrexham e do apoio de sua torcida, a diferença de nível entre as divisões é grande. O Forest, mesmo se rodar o elenco, tem qualidade suficiente para sair com a vitória.",
+    "status": "red",
+    "reason": "Placar: 3 x 3"
   }
 ]

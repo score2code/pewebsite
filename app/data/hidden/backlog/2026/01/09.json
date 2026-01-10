@@ -23,7 +23,6 @@
     "homeTeam": "Eintracht Frankfurt",
     "awayTeam": "Borussia Dortmund",
     "market": [
-      {"type": "trader", "method": "Lay ao Empate (LTD)"},
       {"type": "punther", "method": "Over 1.5 Live"},
       {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
       {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
@@ -39,7 +38,6 @@
     "homeTeam": "Al Kholood",
     "awayTeam": "Al Ittihad",
     "market": [
-      {"type": "trader", "method": "Lay ao Empate (LTD)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
       {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
       {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
@@ -73,8 +71,7 @@
     "market": [
       {"type": "trader", "method": "Under 2.5 gols"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"},
-      {"type": "trader", "method": "Lay ao Empate (LTD)"}
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": false,
     "note": "Duas potências africanas. Marrocos vem forte (semifinalista Copa 2022). Jogo decisivo de Copa, tende a ser cauteloso no início. Poucos gols, mas improvável empate final."
@@ -87,7 +84,6 @@
     "homeTeam": "Wrexham",
     "awayTeam": "Nottingham Forest",
     "market": [
-      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
       {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
       {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
@@ -103,7 +99,6 @@
     "homeTeam": "The New Saints",
     "awayTeam": "Colwyn Bay",
     "market": [
-      {"type": "trader", "method": "Lay ao Empate (LTD)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
       {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
       {"type": "punther", "method": "Over 1.5 Live"}

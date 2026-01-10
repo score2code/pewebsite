@@ -14,7 +14,7 @@ function encodeToken(k: string): string {
 }
 
 function checkPassword(input: string): boolean {
-  const target = typeof window !== 'undefined' ? atob('MzAw') : '300';
+  const target = process.env.NEXT_PUBLIC_TARGET_KEY;
   return String(input || '').trim() === target;
 }
 

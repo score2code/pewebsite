@@ -1,0 +1,45 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-09",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Mali",
+    "awayTeam": "Senegal",
+    "prediction": [
+      "Back: Under 3.5 gols",
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 1,
+    "odd": 4.03,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-09",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "Borussia Dortmund",
+    "prediction": [
+      "Freebet: Dortmund vence por 1a0 ou Anula"
+    ],
+    "stake": 2.37,
+    "odd": 0,
+    "return": 2.37,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-09",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "Borussia Dortmund",
+    "prediction": [
+      "Back: Over 3.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2.78,
+    "return": 1.59,
+    "status": "green"
+  }
+]

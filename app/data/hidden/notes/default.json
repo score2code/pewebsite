@@ -48,12 +48,38 @@
     ]
   },
   {
-    "title": "CS: 3 x 1",
+    "title": "CS: 3x1 - 1x3",
     "notes": [
       {
         "game": "AC Milan x Genoa",
         "items": [
           "Entrando em pre-live na odd 22, gols aos 28 min da zebra (0x1), ja foi possivel dar cashout com 70% de lucro."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Under 3.5 gols",
+    "notes": [
+      {
+        "game": "Mali x Senegal",
+        "items": [
+          "Entrando aos 8 min na odd 1.12",
+          "Esperando o lucro chegar em 5%, mas ainda estava em 4%, gol do Senegal, prejuizo está em 12%",
+          "Aos 34 min o prejuízo está em 4%",
+          "Saindo aos 47 min do primeiro tempo com lucro de 0%"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Over 3.5 Gols",
+    "notes": [
+      {
+        "game": "Eintracht Frankfurt x Borussia Dortmund",
+        "items": [
+          "Entrando aos 60 min, odd 2.78 com placar 1x1",
+          "Gol aos 67 min, 1x2 , com 61% de lucro"
         ]
       }
     ]
@@ -72,6 +98,15 @@
         "items": [
           "Milan em casa, começando o segundo tempo, perdendo de 0x1. Entrando na odd 2.14 .",
           "Full red, pois o 1 x 1 só veio aos 92 min"
+        ]
+      },
+      {
+        "game": "Mali x Senegal",
+        "items": [
+          "Entrando aos 61 min na odd 4.03, partida 0x1.",
+          "Aos 72 min de jogo, ainda 0x1, com 30% de prejuízo",
+          "Aos 80 min, 50% de prejuízo",
+          "Termina 0x1, full red"
         ]
       }
     ]

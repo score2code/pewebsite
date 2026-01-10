@@ -1,0 +1,60 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 5,
+    "date": "2026-01-09",
+    "affectsInitial": true,
+    "note": "Apostas Grátis - Sexta-feira "
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-09",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 1611.75,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-09",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 156416.19,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-09",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 486.90,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-09",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 21639.54,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-09",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 0,
+    "return": 0,
+    "status": "pending"
+  }
+]

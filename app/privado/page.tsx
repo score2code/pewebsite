@@ -52,9 +52,9 @@ export default function PrivadoIndexPage() {
           <Items category="tipster" />
           <Items category="tipster" tipster="Yuri" />
           <Items category="tipster" tipster="Rafaela" />
-          <Items category="tipster" tipster="Boleiros" />
+          {/* <Items category="tipster" tipster="Boleiros" />
           <Items category="tipster" tipster="Mundo Bet" />
-          <Items category="tipster" tipster="Tylty" />
+          <Items category="tipster" tipster="Tylty" /> */}
           <Items category="tipster" tipster="Edge2Green" />
           <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 mb-2">
             <h3 className="text-lg font-bold text-dark-900 dark:text-light-100 text-center">O RED é normal, bingos com apostas grátis</h3>

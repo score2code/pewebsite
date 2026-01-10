@@ -1,0 +1,10 @@
+[
+  {
+    "type": "transaction",
+    "kind": "withdrawal",
+    "amount": 39,
+    "date": "2026-01-09",
+    "affectsInitial": false,
+    "note": "Pessoal: Produtos de Higiene"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-09",
+    "tipster": "Yuri",
+    "stake": 0.50,
+    "odd": 3.04,
+    "return": 1.52,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-09",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.61,
+    "return": 1.61,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-09",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.61,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-09",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 1.87,
+    "return": 0,
+    "status": "red"
+  }
+]
