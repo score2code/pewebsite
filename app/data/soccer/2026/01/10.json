@@ -9,7 +9,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Betis (DNB)",
     "confidence": 74,
-    "status": "pending",
+    "status": "void",
+    "reason": "Placar: 1 x 1",
     "analysis": "O Betis possui um elenco tecnicamente superior e busca posições europeias. O Oviedo, jogando em casa, tentará travar o jogo, mas a qualidade individual dos visitantes deve prevalecer, com o DNB protegendo contra um eventual empate."
   },
   {
@@ -22,7 +23,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Villarreal",
     "confidence": 78,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 1",
     "analysis": "O Submarino Amarelo é muito forte no La Cerámica. O Alavés costuma ter dificuldades fora de casa contra times da parte de cima da tabela. A vitória dos mandantes é o cenário mais provável."
   },
   {
@@ -35,7 +37,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 75,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "O Girona pratica um futebol ofensivo e envolvente em casa, muitas vezes expondo sua defesa. O Osasuna tem contra-ataques perigosos, sugerindo um jogo aberto e com gols."
   },
   {
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Valencia",
     "confidence": 76,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "No Mestalla, o Valencia costuma impor seu ritmo, especialmente contra adversários de menor investimento como o Elche. A pressão da torcida deve empurrar o time para a vitória."
   },
   {
@@ -61,7 +65,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 80,
-    "status": "pending",
+    "status": "postponed",
+    "reason": "Adiado",
     "analysis": "Duelo tradicional de muitos gols na Bundesliga. Ambas as equipes priorizam o ataque e possuem defesas instáveis, criando o cenário perfeito para o mercado de ambas marcam."
   },
   {
@@ -74,7 +79,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: RB Leipzig",
     "confidence": 82,
-    "status": "pending",
+    "status": "postponed",
+    "reason": "Adiado",
     "analysis": "A diferença técnica entre os times é gritante. O Leipzig briga pelo topo e tem jogadores decisivos, enquanto o St. Pauli luta para sobreviver na elite. Vitória visitante é a aposta mais segura."
   },
   {
@@ -87,7 +93,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Union Berlin (DNB)",
     "confidence": 73,
-    "status": "pending",
+    "status": "void",
+    "reason": "Placar: 2 x 2",
     "analysis": "O Union Berlin é muito forte fisicamente em casa. O Mainz é um time chato, mas o fator casa e a solidez defensiva do Union dão vantagem aos mandantes, com segurança no DNB."
   },
   {
@@ -100,7 +107,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Freiburg",
     "confidence": 77,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 1",
     "analysis": "O Freiburg mantém uma estrutura tática sólida há anos. Jogando na Floresta Negra, é favorito contra um Hamburgo que oscila muito quando joga longe de seus domínios."
   },
   {
@@ -113,7 +121,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 75,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 2 x 2",
     "analysis": "Dois times que precisam somar pontos e não costumam se retrancar. O Köln joga de forma vertical, e o Heidenheim aceita o jogo franco, indicando uma partida com várias oportunidades de gol."
   },
   {
@@ -126,7 +135,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 84,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 4",
     "analysis": "Jogo de alto nível técnico. O Leverkusen tem um ataque avassalador, mas o Stuttgart também possui muita qualidade ofensiva. Expectativa de um jogo lá e cá, com gols para ambos."
   },
   {
@@ -139,7 +149,8 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Club América (DNB)",
     "confidence": 76,
-    "status": "pending",
+    "status": "void",
+    "reason": "Placar: 0 x 0",
     "analysis": "O América é um dos gigantes do continente e tem um elenco superior. Jogar em Tijuana (gramado sintético) é difícil, mas a qualidade das Águias deve prevalecer ou garantir ao menos o empate."
   },
   {
@@ -178,7 +189,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 81,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 0",
     "analysis": "O AZ é muito superior e costuma golear times da parte de baixo da tabela em casa. O Volendam tem uma defesa frágil, o que favorece um placar elástico."
   },
   {
@@ -191,7 +203,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Twente",
     "confidence": 80,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 1 x 1",
     "analysis": "O Twente faz uma campanha sólida e é muito forte em Enschede. O Zwolle terá dificuldades para conter a pressão inicial dos mandantes."
   },
   {
@@ -204,7 +217,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: PSV Eindhoven",
     "confidence": 88,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 5 x 1",
     "analysis": "Confronto desequilibrado. O PSV é uma potência na Holanda e deve vencer com facilidade o modesto Excelsior, possivelmente por mais de um gol de diferença."
   },
   {
@@ -217,7 +231,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: PAOK Thessaloniki",
     "confidence": 79,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 3",
     "analysis": "O PAOK briga pelo título e não pode perder pontos contra times do meio da tabela. A superioridade técnica e a necessidade de vitória apontam para o triunfo dos visitantes."
   },
   {
@@ -230,7 +245,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Olympiacos",
     "confidence": 81,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 0 x 2",
     "analysis": "Olympiacos é o time a ser batido na Grécia. Mesmo fora de casa, a profundidade do elenco e a experiência em jogos decisivos devem garantir a vitória."
   },
   {
@@ -243,7 +259,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Crystal Palace",
     "confidence": 85,
-    "status": "pending",
+    "status": "red",
+    "reason": "Placar: 2 x 1",
     "analysis": "A diferença de divisões é enorme. O Palace, mesmo que poupe alguns titulares, tem obrigação de vencer o Macclesfield sem grandes sustos."
   },
   {
@@ -256,7 +273,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Wolverhampton",
     "confidence": 83,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 6 x 1",
     "analysis": "Jogando no Molineux contra um time de divisão inferior, os Wolves são amplamente favoritos. A intensidade da Premier League deve ser demais para o Shrewsbury."
   },
   {
@@ -269,7 +287,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 72,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 1",
     "analysis": "O Sunderland tem feito bons jogos e pode surpreender. O Everton em casa vai para cima, mas sua defesa não é das mais confiáveis, abrindo espaço para gols de ambos."
   },
   {
@@ -282,7 +301,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 3.5",
     "confidence": 82,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 10 x 1",
     "analysis": "O City deve dominar completamente o jogo. Contra um adversário muito inferior, a tendência é de uma goleada, com o time de Guardiola criando inúmeras chances."
   },
   {
@@ -295,7 +315,8 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 78,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 3 x 3",
     "analysis": "Duelo entre times da Premier League que gostam de atacar. O Newcastle em casa é muito forte, mas o Bournemouth não se esconde. Jogo com cara de over."
   },
   {
@@ -308,7 +329,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 77,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 2",
     "analysis": "Confronto equilibrado entre duas equipes que brigam na parte de cima da tabela. Ambos os ataques são potentes e as defesas costumam ceder gols em jogos grandes."
   },
   {
@@ -321,7 +343,8 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Chelsea",
     "confidence": 80,
-    "status": "pending",
+    "status": "green",
+    "reason": "Placar: 1 x 5",
     "analysis": "Derby de Londres, mas com disparidade técnica. O Chelsea tem muito mais recursos e deve controlar a partida, vencendo o Charlton com autoridade."
   }
 ]

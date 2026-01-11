@@ -1,0 +1,52 @@
+[
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-10",
+    "analysis": 22,
+    "stake": 0.50,
+    "odd": 58.44,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-10",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 105.78,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-10",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 85.80,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-10",
+    "analysis": 14,
+    "stake": 0.50,
+    "odd": 1340.04,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-10",
+    "analysis": 9,
+    "stake": 0.50,
+    "odd": 111.99,
+    "return": 0,
+    "status": "red"
+  }
+]

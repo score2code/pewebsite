@@ -1,0 +1,17 @@
+[
+  {
+    "type": "bet",
+    "model": "punther",
+    "date": "2026-01-10",
+    "league": "-",
+    "homeTeam": "-",
+    "awayTeam": "-",
+    "prediction": [
+      "Bingo"
+    ],
+    "stake": 2,
+    "odd": 1.84,
+    "return": 3.70,
+    "status": "green"
+  }
+]

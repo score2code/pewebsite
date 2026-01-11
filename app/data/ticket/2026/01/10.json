@@ -8,7 +8,8 @@
     "time": "12:15",
     "timezone": "UTC",
     "prediction": "Resultado Final: Villarreal",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "bayer-leverkusen-x-stuttgart",
@@ -19,6 +20,7 @@
     "time": "14:30",
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
-    "status": "pending"
+    "status": "green",
+    "reason": "Placar: 1 x 4"
   }
 ]

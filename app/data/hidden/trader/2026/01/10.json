@@ -1,0 +1,115 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-10",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Oviedo",
+    "awayTeam": "Betis",
+    "prediction": [
+      "Back: CS: 1x2",
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 2,
+    "odd": 15,
+    "return": 2.82,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-10",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Bournemouth",
+    "prediction": [
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2,
+    "return": 1.01,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-10",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Argélia",
+    "awayTeam": "Nigéria",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 0,
+    "return": 1.39,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-10",
+    "league": "Países Baixos - Eredivisie",
+    "homeTeam": "Twente",
+    "awayTeam": "Zwolle",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 1.17,
+    "odd": 1.76,
+    "return": 1.22,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-10",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Akhdoud",
+    "awayTeam": "Al Ahli",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2,
+    "return": 1.02,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-10",
+    "league": "Países Baixos - Eredivisie",
+    "homeTeam": "Twente",
+    "awayTeam": "Zwolle",
+    "prediction": [
+      "Back: 1º Tempo - Over 0.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-10",
+    "league": "Brasil - Paulista - Série A1",
+    "homeTeam": "Portuguesa SP",
+    "awayTeam": "Palmeiras",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 2,
+    "odd": 0,
+    "return": 1.72,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-10",
+    "league": "México - Liga MX - Clausura",
+    "homeTeam": "Club León",
+    "awayTeam": "Cruz Azul",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 0,
+    "return": 1.45,
+    "status": "green"
+  }
+]

@@ -1,0 +1,434 @@
+[
+  {
+    "id": "14083218",
+    "date": "2026-01-10",
+    "time": "10:00",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Real Oviedo",
+    "awayTeam": "Betis",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Betis é time da elite espanhola. Deve dominar e vencer. Proteger contra zebra inicial com Lay 0-1, depois aproveitar com Back Delayed."
+  },
+  {
+    "id": "14083214",
+    "date": "2026-01-10",
+    "time": "12:15",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Villarreal",
+    "awayTeam": "Alavés",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"}
+    ],
+    "recommended": true,
+    "note": "La Liga. Villarreal favorito em casa contra Alavés. Jogo equilibrado mas aberto. LTD seguro, ambos podem marcar."
+  },
+  {
+    "id": "14062148",
+    "date": "2026-01-10",
+    "time": "11:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Freiburg",
+    "awayTeam": "Hamburger",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Bundesliga. Liga conhecida por muitos gols e jogos abertos. Freiburg e Hamburger costumam ter jogos movimentados."
+  },
+  {
+    "id": "14062147",
+    "date": "2026-01-10",
+    "time": "14:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Bayer Leverkusen",
+    "awayTeam": "Stuttgart",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": true,
+    "note": "Bundesliga. Leverkusen e Stuttgart são times ofensivos. Jogo de alto nível com muitos gols esperados."
+  },
+  {
+    "id": "15262367",
+    "date": "2026-01-10",
+    "time": "11:30",
+    "league": "França - Copa",
+    "homeTeam": "Orleans",
+    "awayTeam": "Mônaco",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Copa da França. Orleans é time inferior. Mônaco é gigante francês e deve dominar completamente."
+  },
+  {
+    "id": "15176515",
+    "date": "2026-01-10",
+    "time": "16:00",
+    "league": "Brasil - Paulista - Série A1",
+    "homeTeam": "Santos",
+    "awayTeam": "Novorizontino SP",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Paulistão. Santos na Vila Belmiro é favorito. Novorizontino competitivo mas inferior tecnicamente."
+  },
+  {
+    "id": "15176516",
+    "date": "2026-01-10",
+    "time": "20:30",
+    "league": "Brasil - Paulista - Série A1",
+    "homeTeam": "Portuguesa SP",
+    "awayTeam": "Palmeiras",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Paulistão. Palmeiras é muito superior. Portuguesa pode resistir no início mas Palmeiras deve vencer."
+  },
+  {
+    "id": "15188759",
+    "date": "2026-01-10",
+    "time": "18:30",
+    "league": "Brasil - Mineiro - Módulo I",
+    "homeTeam": "Cruzeiro MG",
+    "awayTeam": "Pouso Alegre",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Campeonato Mineiro. Cruzeiro muito superior ao Pouso Alegre. Diferença técnica absurda."
+  },
+  {
+    "id": "15238896",
+    "date": "2026-01-10",
+    "time": "22:00",
+    "league": "México - Liga MX - Clausura",
+    "homeTeam": "Santos Laguna",
+    "awayTeam": "Necaxa",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Liga MX - Clausura. Liga mexicana conhecida por jogos abertos e movimentados. Ambos atacam."
+  },
+  {
+    "id": "15238895",
+    "date": "2026-01-10",
+    "time": "22:00",
+    "league": "México - Liga MX - Clausura",
+    "homeTeam": "Club León",
+    "awayTeam": "Cruz Azul",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": true,
+    "note": "Liga MX - Clausura. Jogo entre times tradicionais. Liga MX sempre oferece gols e jogos abertos."
+  },
+  {
+    "id": "14053759",
+    "date": "2026-01-10",
+    "time": "12:30",
+    "league": "Países Baixos - Eredivisie",
+    "homeTeam": "AZ Alkmaar",
+    "awayTeam": "Volendam",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Eredivisie. AZ Alkmaar muito superior ao Volendam. Eredivisie sempre tem muitos gols."
+  },
+  {
+    "id": "14053763",
+    "date": "2026-01-10",
+    "time": "14:45",
+    "league": "Países Baixos - Eredivisie",
+    "homeTeam": "Twente",
+    "awayTeam": "Zwolle",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Eredivisie. Twente favorito em casa. Liga holandesa conhecida por muitos gols e jogos ofensivos."
+  },
+  {
+    "id": "14053745",
+    "date": "2026-01-10",
+    "time": "16:00",
+    "league": "Países Baixos - Eredivisie",
+    "homeTeam": "PSV Eindhoven",
+    "awayTeam": "Excelsior",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Eredivisie. PSV é líder e máquina de gols. Excelsior é fraco. PSV deve golear."
+  },
+  {
+    "id": "15330127",
+    "date": "2026-01-10",
+    "time": "17:00",
+    "league": "Portugal - Taça da Liga",
+    "homeTeam": "Vitória Guimarães",
+    "awayTeam": "Braga",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Taça da Liga portuguesa. Derby do Minho, grande rivalidade. Jogo de mata-mata intenso e aberto."
+  },
+  {
+    "id": "15326124",
+    "date": "2026-01-10",
+    "time": "12:45",
+    "league": "Turquia - Super Copa",
+    "homeTeam": "Galatasaray",
+    "awayTeam": "Fenerbahce",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": true,
+    "note": "Super Copa da Turquia. Derby de Istambul! Maior rivalidade turca. Jogo de altíssima intensidade."
+  },
+  {
+    "id": "14771928",
+    "date": "2026-01-10",
+    "time": "14:30",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Akhdoud",
+    "awayTeam": "Al Ahli",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Pro League saudita. Al Ahli tem elenco cheio de estrelas. Al Akhdoud é time pequeno. Diferença enorme."
+  },
+  {
+    "id": "14152055",
+    "date": "2026-01-10",
+    "time": "14:30",
+    "league": "Grécia - Super League",
+    "homeTeam": "Atromitos",
+    "awayTeam": "Olympiacos",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Super League grega. Olympiacos é gigante grego e domina a liga. Atromitos é inferior."
+  },
+  {
+    "id": "14035245",
+    "date": "2026-01-10",
+    "time": "12:00",
+    "league": "Escócia - Premiership",
+    "homeTeam": "Celtic",
+    "awayTeam": "Dundee United",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "Premiership escocesa. Celtic domina o futebol escocês. Dundee United muito inferior."
+  },
+  {
+    "id": "14058093",
+    "date": "2026-01-10",
+    "time": "13:00",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Argélia",
+    "awayTeam": "Nigéria",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Copa Africana. Clássico entre potências africanas. Jogo pode ser tático e truncado em mata-mata."
+  },
+  {
+    "id": "14058094",
+    "date": "2026-01-10",
+    "time": "16:00",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Egito",
+    "awayTeam": "Costa do Marfim",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Copa Africana. Egito e Costa do Marfim são favoritos ao título. Jogo equilibrado mas defensivo."
+  },
+  {
+    "id": "15197270",
+    "date": "2026-01-10",
+    "time": "12:00",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Exeter City",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "FA Cup inglesa. Manchester City contra time de divisão inferior. City deve golear."
+  },
+  {
+    "id": "15197266",
+    "date": "2026-01-10",
+    "time": "17:00",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Charlton Athletic",
+    "awayTeam": "Chelsea",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "FA Cup inglesa. Chelsea visita Charlton de divisão inferior. Chelsea favorito claro."
+  },
+  {
+    "id": "15197271",
+    "date": "2026-01-10",
+    "time": "14:45",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Tottenham",
+    "awayTeam": "Aston Villa",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "FA Cup inglesa. Tottenham vs Aston Villa. Dois times de alto nível. Jogo aberto e ofensivo."
+  },
+  {
+    "id": "15197286",
+    "date": "2026-01-10",
+    "time": "12:00",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Bournemouth",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "FA Cup inglesa. Newcastle vs Bournemouth. Times ofensivos. Jogo movimentado esperado."
+  },
+  {
+    "id": "15197275",
+    "date": "2026-01-10",
+    "time": "12:00",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Sheffield Wednesday",
+    "awayTeam": "Brentford",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "FA Cup inglesa. Brentford de divisão superior visita Sheffield Wednesday. Brentford favorito."
+  },
+  {
+    "id": "15197269",
+    "date": "2026-01-10",
+    "time": "09:15",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Wolverhampton",
+    "awayTeam": "Shrewsbury Town",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "FA Cup inglesa. Wolverhampton contra Shrewsbury de divisão inferior. Wolves deve dominar."
+  },
+  {
+    "id": "15197273",
+    "date": "2026-01-10",
+    "time": "12:00",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Fulham",
+    "awayTeam": "Middlesbrough",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "FA Cup inglesa. Fulham vs Middlesbrough. Fulham favorito mas Middlesbrough competitivo. Jogo aberto."
+  }
+]
