@@ -1,0 +1,74 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "tipster": "Yuri",
+    "stake": 0.50,
+    "odd": 12.53,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.65,
+    "return": 1.65,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "tipster": "Yuri",
+    "stake": 0.50,
+    "odd": 3.23,
+    "return": 1.62,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.75,
+    "return": 1.75,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "tipster": "Rafaela",
+    "stake": 0.50,
+    "odd": 2.24,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "tipster": "Edge2Green",
+    "stake": 1.57,
+    "odd": 1.67,
+    "return": 2.62,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "tipster": "Edge2Green",
+    "stake": 1,
+    "odd": 2.25,
+    "return": 0.36,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "tipster": "Edge2Green",
+    "stake": 0.50,
+    "odd": 2.70,
+    "return": 1.35,
+    "status": "green"
+  }
+]

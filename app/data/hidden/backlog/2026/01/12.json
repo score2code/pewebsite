@@ -1,0 +1,68 @@
+[
+  {
+    "id": "",
+    "date": "2026-01-12",
+    "time": "17:00",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Sevilla",
+    "awayTeam": "Celta Vigo",
+    "market": [],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "",
+    "date": "2026-01-12",
+    "time": "17:10",
+    "league": "França - Copa",
+    "homeTeam": "PSG",
+    "awayTeam": "Paris FC",
+    "market": [],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "",
+    "date": "2026-01-12",
+    "time": "14:30",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Hilal",
+    "awayTeam": "Al Nassr",
+    "market": [],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "",
+    "date": "2026-01-12",
+    "time": "16:00",
+    "league": "Países Baixos - Eerste Divisie",
+    "homeTeam": "Jong PSV Eindhoven",
+    "awayTeam": "TOP Oss",
+    "market": [],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "",
+    "date": "2026-01-12",
+    "time": "16:00",
+    "league": "Países Baixos - Eerste Divisie",
+    "homeTeam": "Jong AZ Alkmaar",
+    "awayTeam": "Jong Ajax Amsterdam",
+    "market": [],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "",
+    "date": "2026-01-12",
+    "time": "14:00",
+    "league": "Chipre - 1ª Divisão",
+    "homeTeam": "Pafos",
+    "awayTeam": "Omonia Aradippou",
+    "market": [],
+    "recommended": false,
+    "note": ""
+  }
+]

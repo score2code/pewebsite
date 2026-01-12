@@ -11,15 +11,50 @@
     ]
   },
   {
+    "title":"CS: Dutching 2x2 e 3x2",
+    "notes": [
+      {
+        "game": "Barcelona x Real Madrid",
+        "items": [
+          "Entrando aos 31 min em odd por volta de 26",
+          "Gol do Barcelona aos 35 min",
+          "14% de lucro aos 44 min",
+          "Gol do Real Madrid aos 46 min do primeiro tempo (1x1)",
+          "Gol do Barcelona aos 48 min do primeiro tempo (2x1)",
+          "Gol do Real Madrid aos 50 min do primeiro tempo (2x2)",
+          "O primeiro tempo terminou em 52 min",
+          "Saindo no intervalo com 122% de lucro se terminar 2x2, 233% de lucro se terminar 3x2 e qualquer outro placar, 147% de lucro",
+          "Aos 74 min mais 1 gol 3x2, batendo no placar, foi possivel fazer de novo o cashout. O lucro foi de 176% ."
+        ]
+      }
+    ]
+  },
+  {
+    "title":"CS: Dutching 2x2 e 3x1",
+    "notes": [
+      {
+        "game": "Inter de Milão x Napoli",
+        "items": [
+          "Entrando aos 23 min na odd 14.50 , placar 1x0",
+          "Gol do Napoli aos 27 min (1x1)",
+          "Fiz freebet no 3x1 logo após o gol",
+          "Penalti para a Inter aos 70 min",
+          "Gol marcado, 2x1, saindo com 40.5% de lucro se terminar 2x2, 167.5% de lucro se terminar 3x1 e qualquer outro placar, 42.5% de lucro da entrada inicial do dutching",
+          "Napoli empata em 2x2 aos 81 min"
+        ]
+      }
+    ]
+  },
+  {
     "title": "CS: Dutching 2x1 e 3x2",
     "notes": [
       {
         "game": "Al-Nassr x Al-Qadisiyah",
         "items": [
-          "Sem gol no primeiro tempo, prejuizo da metade do investimento",
-          "gol da zebra aos 50 min no segundo tempo, 3x2 quase dobra a odd e dá para sair se quiser",
-          "saindo no 0x1 (zebra ganhando) aos 54 min, possiveis ganhos no 2x1(3/6) e 3x2(lucro 6x), e perda de 1/6 do investimento se nao bater",
-          "Aos 80 min saindo o primeiro gol da casa (1x2), foi possivel fazer chashout pela segunda vez e com lucro de 50% do investimento"
+          "Sem gol no primeiro tempo, prejuízo da metade do investimento",
+          "Gol da zebra aos 50 min no segundo tempo (0x1), odd do 3x2 quase dobrou - possibilidade de cashout",
+          "Saindo no 0x1 (zebra ganhando) aos 54 min, possíveis ganhos no 2x1 (3/6) e 3x2 (lucro 6x), perda de 1/6 do investimento se não bater",
+          "Aos 80 min saiu o primeiro gol da casa (1x2), foi possível fazer cashout pela segunda vez com lucro de 50% do investimento"
         ]
       }
     ]
@@ -31,29 +66,46 @@
         "game": "PSG x Olympique Marseille",
         "items": [
           "Entrando no intervalo com o jogo 1x0, odds e jogo com times over estando boas",
-          "Prejuzo está em 1/3 do investimento aos 60 min no 1x0",
-          "Com gol aos 80 min, cashout para ter o freebet, só perde 5% do investimento se terminar o jogo 2x1 ."
+          "Prejuízo está em 1/3 do investimento aos 60 min no 1x0",
+          "Com gol aos 80 min (2x0), cashout para ter o freebet, só perde 5% do investimento se terminar o jogo 2x1"
         ]
       },
       {
         "game": "Arsenal x Liverpool",
         "items": [
-          "Entrando em pre-live, aos 25 min, prejuizo de 10%, (0x0)",
-          "No intervalo em 0x0, o prejuizo está em 50% do investimento",
-          "Aos 60 min, ainda sem gol, 4/5 de prejuizo.",
-          "Full red por terminar em 0x0"
+          "Entrando em pré-live, aos 25 min, prejuízo de 10% (0x0)",
+          "No intervalo em 0x0, o prejuízo está em 50% do investimento",
+          "Aos 60 min, ainda sem gol, 4/5 de prejuízo (80%)",
+          "Full red por terminar em 0x0 - jogo muito travado para esta estratégia"
         ]
       }
     ]
   },
   {
-    "title": "CS: Qualquer outra vitoria da casa",
+    "title": "CS: Qualquer outra vitória da casa",
     "notes": [
       {
         "game": "Al-Hilal x Al Hazm",
         "items": [
-          "Após aos 70 min 2x0, fica preso",
-          "Apenas 1 gol no primeiro tempo 1x0, nao vale a pena entrar"
+          "Após aos 70 min 2x0, fica preso sem possibilidade de cashout",
+          "Apenas 1 gol no primeiro tempo (1x0), não vale a pena entrar - odds não compensam"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "CS: 3x2 ou 2x3",
+    "notes": [
+      {
+        "game": "Portsmouth x Arsenal",
+        "items": [
+          "Entrando aos 5 min, com odd 12.50, após o primeiro gol da zebra (1x0)",
+          "aos 8 min, Arsenal empata (1x1)",
+          "lucro no momento está em 0%, aos 10 min",
+          "lucro no momento está em 9%, aos 19 min",
+          "lucro no momento está em 4%, aos 24 min",
+          "Gol aos 25 min (1x2)",
+          "Saindo aos 32 min com lucro de 0%"
         ]
       }
     ]
@@ -64,13 +116,38 @@
       {
         "game": "AC Milan x Genoa",
         "items": [
-          "Entrando em pre-live na odd 22, gols aos 28 min da zebra (0x1), ja foi possivel dar cashout com 70% de lucro."
+          "Entrando em pré-live na odd 22.0",
+          "Gol da zebra aos 28 min (0x1), já foi possível dar cashout com 70% de lucro - ótima entrada"
         ]
       },
       {
         "game": "Al Akhdoud x Al Ahli",
         "items": [
-          "Desisti depois de ver que o mandante é mais forte em casa, mas o favorito é o visitante. Vou mudar para o over 1.5 gols, pois está 0x0 aos 36 min."
+          "Desisti após análise: mandante é mais forte em casa, mas o favorito é o visitante",
+          "Mudança de estratégia: over 1.5 gols, pois estava 0x0 aos 36 min - adaptação necessária"
+        ]
+      },
+      {
+        "game": "Aberdeen x Rangers",
+        "items": [
+          "Entrando no 1x3 aos 20 min na odd 20",
+          "Gol dos Rangers aos 22 min (0x1)",
+          "Esperar mais 1 gol para sair, 60% de lucro aos 25 min",
+          "Segundo gol dos rangers aos 28 min, mas foi anulado",
+          "Aos 35 min o lucro está em 43%",
+          "Saindo aos 48 min do primeiro tempo, se terminar a partida em 1x3, 152% de prejuízo",
+          "se a partida não terminar 1x3, 14% de lucro",
+          "Correct score não é uma boa para sair bem após sair um gol"
+        ]
+      },
+      {
+        "game": "Lille x Olympique Lyon",
+        "items": [
+          "Entrando aos 9 min, com o placar 0x1, o primeiro gol saiu aos 1 min de jogo",
+          "Aos 19 min com 10% de prejuízo",
+          "Gol do Lille aos 40 min (1x1)",
+          "Saindo com 29% de prejuízo, a partida está mais favoravel para 2x2",
+          "Gol aos 43 min, 1x2 . Saí cedo demais, iria sair com lucro. Mas sem problemas, respeitei a leitura de jogo, Lille estava atacando mais."
         ]
       }
     ]
@@ -81,8 +158,8 @@
       {
         "game": "Bayer Leverkusen x Stuttgart",
         "items": [
-          "Ia entrar mas aos 8 min saiu 1 gol do stuttgart e a odd caiu, esperando subir de novo",
-          "Aos 28 min, Stuttgart fez o segundo, desisti da entrada (0x2)"
+          "Ia entrar mas aos 8 min saiu 1 gol do Stuttgart (0x1) e a odd caiu, esperando subir novamente",
+          "Aos 28 min, Stuttgart fez o segundo (0x2), desisti da entrada - jogo muito desequilibrado"
         ]
       }
     ]
@@ -93,14 +170,14 @@
       {
         "game": "Real Oviedo x Betis",
         "items": [
-          "Partida 0x0 aos 43 min, entrando com a odd 15",
-          "Terminou o primeiro tempo em 0x0 e a odd 17.50",
-          "Aos 50 min sem gols, a odd 21, mas diminuindo para odd 15.5 nos ataques",
-          "Aos 57 min, odd 27, com 50% de prejuízo",
-          "Aos 60 min, odd 34",
-          "Gol do Real Oviedo (Zebra em casa) aos 64 min. E continuo preso com prejuízo de 25%, porque o Betis não está muito bem",
-          "Saindo com prejuízo de 23% aos 69 min. Se a partida terminar em 1x2, o prejuízo será de 217%",
-          "A partida terminou em 1x1, apenas 23% de prejuízo"
+          "Partida 0x0 aos 43 min, entrando com a odd 15.0",
+          "Terminou o primeiro tempo em 0x0 com a odd 17.5",
+          "Aos 50 min sem gols, a odd subiu para 21.0, mas diminuindo para odd 15.5 nos ataques",
+          "Aos 57 min, odd 27.0, com 50% de prejuízo acumulado",
+          "Aos 60 min, odd atingiu 34.0 - pico máximo",
+          "Gol do Real Oviedo (zebra em casa) aos 64 min (1x0). Continuo preso com prejuízo de 25%, porque o Betis não está muito bem",
+          "Saindo com prejuízo de 23% aos 69 min. Se a partida terminar em 1x2, o prejuízo seria de 217%",
+          "A partida terminou em 1x1, prejuízo final de apenas 23% - salvou pela gestão de risco"
         ]
       }
     ]
@@ -112,9 +189,22 @@
         "game": "Mali x Senegal",
         "items": [
           "Entrando aos 8 min na odd 1.12",
-          "Esperando o lucro chegar em 5%, mas ainda estava em 4%, gol do Senegal, prejuizo está em 12%",
-          "Aos 34 min o prejuízo está em 4%",
-          "Saindo aos 47 min do primeiro tempo com lucro de 0%"
+          "Esperando o lucro chegar em 5%, mas ainda estava em 4% quando saiu gol do Senegal (0x1), prejuízo está em 12%",
+          "Aos 34 min o prejuízo diminuiu para 4%",
+          "Saindo aos 47 min do primeiro tempo com lucro de 0% - break even, gestão conservadora"
+        ]
+      },
+      {
+        "game": "Rayo Vallecano x Mallorca",
+        "items": [
+          "Entrando aos 6 min, odd 1.51 com placar 1x0, o primeiro gol saiu aos 4 min",
+          "olhando o historico dos 2 times, nos ultimos 4 jogos da mesma competição de cada time, só o Mallorca teve 1 jogo que chegou à 3 gols.",
+          "Aos 30 min, o Mallorca fez o gol de empate (1x1), o prejuízo aos 21 min está em 16%",
+          "Aos 40 min, analisando um penalti para o Rayo, ficou bem complicado o under.",
+          "Mais um gol (2x1), fugiu bem do padrão under gols",
+          "Era para ter saído no máximo no segundo gol.",
+          "Saindo aos 62 min, com 37% de prejuízo.",
+          "A partida terminou 2x1 e não teve gol no segundo tempo"
         ]
       }
     ]
@@ -125,8 +215,18 @@
       {
         "game": "Eintracht Frankfurt x Borussia Dortmund",
         "items": [
-          "Entrando aos 60 min, odd 2.78 com placar 1x1",
-          "Gol aos 67 min, 1x2 , com 61% de lucro"
+          "Entrando aos 60 min, odd 2.78 com placar 1x1 - jogo aberto",
+          "Gol aos 67 min (1x2), saindo com 61% de lucro - entrada certeira em jogo de times ofensivos"
+        ]
+      },
+      {
+        "game" : "Aberdeen x Rangers",
+        "items": [
+          "Entrando no intervalo na odd 4.8",
+          "Poderia esperar mais um pouco para ver se a pressão dos times continua, por sorte, continua e aos 48 min, odd 5.3",
+          "Aos 73 min, gol de penalti (0x2)",
+          "Saindo após o segundo gol, seria um prejuízo de 40%",
+          "Esperando a partida terminar foi full red, pois a partida terminou 0x2"
         ]
       }
     ]
@@ -137,23 +237,24 @@
       {
         "game": "PSG x Olympique Marseille",
         "items": [
-          "Partida 1x0, times grandes casa querendo fazer mais gols, odd 2.80 e 68 min de jogo. Saindo no 1x1 aos 80 min com 20% de lucro"
+          "Partida 1x0, times grandes, casa querendo fazer mais gols, odd 2.80 aos 68 min de jogo",
+          "Saindo no 1x1 aos 80 min com 20% de lucro - clássico sempre rende"
         ]
       },
       {
         "game": "AC Milan x Genoa",
         "items": [
-          "Milan em casa, começando o segundo tempo, perdendo de 0x1. Entrando na odd 2.14 .",
-          "Full red, pois o 1x1 só veio aos 92 min"
+          "Milan em casa, começando o segundo tempo perdendo de 0x1. Entrando na odd 2.14",
+          "Full red, pois o 1x1 só veio aos 92 min - muito tarde para aproveitar"
         ]
       },
       {
         "game": "Mali x Senegal",
         "items": [
-          "Entrando aos 61 min na odd 4.03, partida 0x1.",
+          "Entrando aos 61 min na odd 4.03, partida 0x1",
           "Aos 72 min de jogo, ainda 0x1, com 30% de prejuízo",
           "Aos 80 min, 50% de prejuízo",
-          "Termina 0x1, full red"
+          "Termina 0x1, full red - jogo travado demais"
         ]
       },
       {
@@ -161,9 +262,21 @@
         "items": [
           "Entrando aos 29 min, odd 2.04 no 0x0",
           "No intervalo ainda 0x0, com 43% de prejuízo",
-          "Gol so Newcastle aos 50, o lucro está em 3%.",
-          "Aguardar mais 1 gol, pois agora o jogo começa a correr",
-          "Dando cashout na odd 2.04, sem lucro e sem prejuízo"
+          "Gol do Newcastle aos 50 min (1x0), o lucro está em 3%",
+          "Aguardando mais 1 gol, pois agora o jogo começa a correr",
+          "Dando cashout na odd 2.04, sem lucro e sem prejuízo - decisão conservadora"
+        ]
+      },
+      {
+        "game": "Atlético San Luis x UANL Tigres",
+        "items": [
+          "Entrando aos 12 min, na odd 2.56",
+          "Entrando no intervalo com mais uma stake na odd 7",
+          "Gol do UANL Tigres aos 49 min do segundo tempo.",
+          "Gol do Atlético San Luis aos 75 min (1x1)",
+          "Saindo em freebet.",
+          "Gol logo em seguida aos 76 min (1x2)",
+          "Lucro de 243% das 2 stakes juntas"
         ]
       }
     ]
@@ -174,35 +287,35 @@
       {
         "game": "Arsenal x Liverpool",
         "items": [
-          "54 min de jogo e ainda 0x0, entrando na odd 2.85 .",
-          "Full red por terminar em 0x0"
+          "54 min de jogo e ainda 0x0, entrando na odd 2.85 - clássico travado",
+          "Full red por terminar em 0x0 - entrada arriscada não compensou"
         ]
       },
       {
         "game": "Real Oviedo x Betis",
         "items": [
-          "Entrando na odd 2.10 aos 78 min . A Partida está 1x0 e o Oviedo deveria ser a zebra",
-          "Gol do Betis aos 83 min . Saindo com lucro de 105%"
+          "Entrando na odd 2.10 aos 78 min. A partida está 1x0 e o Oviedo deveria ser a zebra",
+          "Gol do Betis aos 83 min (1x1). Saindo com lucro de 105% - excelente entrada tardia"
         ]
       },
       {
         "game": "Argélia x Nigéria",
         "items": [
-          "Entrando na odd 2 aos 31 min. Jogo corrido e quase já saiu gol, zagueiro tirou na linha",
-          "Gol da Nigeria aos 46 do segundo tempo . Saindo com lucro de 40%",
-          "Fez o segundo gol aos 58 min, saí cedo demais"
+          "Entrando na odd 2.0 aos 31 min. Jogo corrido e quase já saiu gol, zagueiro tirou na linha",
+          "Gol da Nigéria aos 46 min do primeiro tempo (0x1). Saindo com lucro de 40%",
+          "Fez o segundo gol aos 58 min (0x2), saí cedo demais - poderia ter lucrado mais"
         ]
       },
       {
         "game": "Al Akhdoud x Al Ahli",
         "items": [
-          "Início do segundo tempo já saiu 1 gol, anstes 0x0, estava esperando a pdd 2",
-          "O gol foi anulado nos 47 min, mas a odd 1.89 despencou para 1.66",
-          "Aos 53 min, entrando na odd 2",
+          "Início do segundo tempo já saiu 1 gol, antes 0x0, estava esperando a odd 2.0",
+          "O gol foi anulado aos 47 min, mas a odd 1.89 despencou para 1.66",
+          "Aos 53 min, entrando na odd 2.0 após recuperação",
           "Primeiro gol do Al Ahli aos 57 min (0x1)",
           "Aos 66 min, com a possibilidade ainda de 25% de lucro",
-          "Saindo aos 71 min com 2% de lucro",
-          "A partida terminou 0x1"
+          "Saindo aos 71 min com 2% de lucro - gestão conservadora",
+          "A partida terminou 0x1 - decisão acertada"
         ]
       },
       {
@@ -210,8 +323,8 @@
         "items": [
           "Entrando aos 48 min do segundo tempo na odd 1.76",
           "Veio o primeiro gol da zebra aos 66 min (0x1)",
-          "Saindo aos 75 min com 2% de lucro",
-          "Veio o 1x1 aos 86 min",
+          "Saindo aos 75 min com 2% de lucro - pequeno mas seguro",
+          "Veio o 1x1 aos 86 min - poderia ter lucrado mais",
           "A partida terminou 1x1"
         ]
       },
@@ -219,10 +332,10 @@
         "game": "Portuguesa SP x Palmeiras",
         "items": [
           "Entrando aos 45 min do segundo tempo na odd 2.39",
-          "O primeiro gol do Palmeiras saiu aos 53 min",
+          "O primeiro gol do Palmeiras saiu aos 53 min (0x1)",
           "Saindo aos 58 min com 60% de lucro",
-          "Entrando novamente com uma stake 18% menor aos 83 min na odd 2.62",
-          "6 min de acréscimo e nada. Com o lucro da primeira e prejuízo da segunda, o prejuízo foi de 22% da primeira stake"
+          "Entrando novamente com stake 18% menor aos 83 min na odd 2.62 - tentando dobrar lucro",
+          "6 min de acréscimo e nada. Com o lucro da primeira e prejuízo da segunda, o resultado final foi prejuízo de 22% da primeira stake - ganância penalizou"
         ]
       },
       {
@@ -230,7 +343,16 @@
         "items": [
           "Entrando aos 32 min na odd 1.88",
           "Gol aos 47 min do primeiro tempo (1x0), saindo com 45% de lucro",
-          "Club León fez o segundo aos 49 do segundo tempo"
+          "Club León fez o segundo aos 49 min do segundo tempo (2x0) - poderia ter esperado mais"
+        ]
+      },
+      {
+        "game": "Flamengo x Portuguesa RJ",
+        "items": [
+          "Entrando no intervalo, o placar do jogo é 0x0 e o flamnego está pressionando desde o começo, está na odd 2.34",
+          "Gol do portuguesa aos 58 min (0x1)",
+          "Aos 63 min, o lucro está em 44%",
+          "Saindo aos 65 min com 46% de lucro"
         ]
       }
     ]
@@ -241,8 +363,8 @@
       {
         "game": "Twente x Zwolle",
         "items": [
-          "Entrando aos 30 min na odd 2",
-          "Intervalo sem acréscimo e 0x0, full red"
+          "Entrando aos 30 min na odd 2.0 - entrada tardia",
+          "Intervalo sem acréscimo e 0x0, full red - muito arriscado entrar após 30 min nesta estratégia"
         ]
       }
     ]

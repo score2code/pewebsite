@@ -1,0 +1,274 @@
+[
+  {
+    "id": "15197278",
+    "date": "2026-01-11",
+    "time": "11:00",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Portsmouth",
+    "awayTeam": "Arsenal",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""}
+    ],
+    "recommended": true,
+    "note": "Arsenal é líder da Premier League e favorito absoluto. Portsmouth está lutando contra rebaixamento na Championship. Arsenal nunca perdeu em casa do Portsmouth na história da FA Cup (5 vitórias). Defesa do Arsenal é a melhor da Premier League (14 gols sofridos em 21 jogos). Mesmo com rotação, Arsenal tem equipe muito superior."
+  },
+  {
+    "id": "15197292",
+    "date": "2026-01-11",
+    "time": "13:30",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Manchester United",
+    "awayTeam": "Brighton",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "United sem técnico fixo (Fletcher interino após saída de Amorim). Brighton venceu 3 dos últimos 4 jogos em Old Trafford. Ambas as equipes marcaram em 12 dos últimos 14 jogos do United. Jogo aberto esperado com defesas vulneráveis de ambos os lados. Brighton forte ofensivamente."
+  },
+  {
+    "id": "14083223",
+    "date": "2026-01-11",
+    "time": "10:00",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Rayo Vallecano",
+    "awayTeam": "Mallorca",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": false,
+    "note": "Jogo equilibrado entre equipes de meio de tabela. Mallorca tem defesa sólida. Partida pode ser disputada e com poucos gols, mas com intensidade."
+  },
+  {
+    "id": "14083222",
+    "date": "2026-01-11",
+    "time": "12:15",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Levante",
+    "awayTeam": "Espanyol",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Derby regional espanhol. Jogos entre equipes em situação similar na tabela tendem a ser equilibrados. Pode ter gols mas também risco de empate."
+  },
+  {
+    "id": "15335105",
+    "date": "2026-01-11",
+    "time": "16:00",
+    "league": "Espanha - Super Copa",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Real Madrid",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"}
+    ],
+    "recommended": true,
+    "note": "El Clásico na final da Supercopa. Barcelona goleou Athletic 5-0 na semi. Real Madrid venceu Atlético 2-1 com dificuldade. Barcelona venceu 4 dos últimos 5 confrontos. Barça em forma excelente, teve mais tempo de descanso. Previsão de mais de 3.5 gols. Barcelona favorito mas jogo sempre imprevisível."
+  },
+  {
+    "id": "14062158",
+    "date": "2026-01-11",
+    "time": "11:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Borussia Monchengladbach",
+    "awayTeam": "Augsburg",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Under 2.5 gols"}
+    ],
+    "recommended": false,
+    "note": "Jogo entre equipes de meio/baixo da tabela da Bundesliga. Gladbach mandante tende a ter vantagem. Augsburg costuma ser defensivo fora de casa."
+  },
+  {
+    "id": "14062145",
+    "date": "2026-01-11",
+    "time": "13:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Bayern Munich",
+    "awayTeam": "Wolfsburg",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Bayern lidera Bundesliga com melhor campanha da história (13V-2E, 55 gols, 11 sofridos). Bayern NUNCA perdeu para Wolfsburg em casa na Bundesliga (26V-2E). Bayern marcou 2+ gols nos últimos 17 jogos contra Wolfsburg. Over 2.5 nos últimos 16 jogos do Bayern. Wolfsburg na 14ª posição, próximo da zona de rebaixamento. Bayern goleou Salzburg 5-0 em amistoso recente."
+  },
+  {
+    "id": "15262371",
+    "date": "2026-01-11",
+    "time": "17:00",
+    "league": "França - Copa",
+    "homeTeam": "Lille",
+    "awayTeam": "Olympique Lyon",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": true,
+    "note": "Clássico francês pela Copa da França. Duas equipes ofensivas que costumam fazer jogos movimentados. Lyon forte mas instável. Lille competitivo em casa."
+  },
+  {
+    "id": "15138051",
+    "date": "2026-01-11",
+    "time": "18:00",
+    "league": "Brasil - Carioca - Série A",
+    "homeTeam": "Flamengo",
+    "awayTeam": "Portuguesa RJ",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Flamengo com time Sub-20 mas muito forte. Flamengo não perde para Portuguesa há 10 jogos. Histórico: 68 vitórias Flamengo vs 3 vitórias Portuguesa em 75 jogos. Último confronto: Flamengo 5x0 Portuguesa. 9 dos últimos 10 jogos terminaram com Over 2.5. Flamengo marca no 2º tempo em 9 dos últimos 10 jogos. Mesmo com time alternativo, superioridade técnica é grande."
+  },
+  {
+    "id": "15176506",
+    "date": "2026-01-11",
+    "time": "16:00",
+    "league": "Brasil - Paulista - Série A1",
+    "homeTeam": "Corinthians",
+    "awayTeam": "Ponte Preta",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Back ao Favorito \"Delayed\""}
+    ],
+    "recommended": false,
+    "note": "Corinthians favorito jogando em casa no Paulistão. Ponte Preta vem da Série B. Corinthians deve impor seu ritmo mesmo com time misto no início do estadual."
+  },
+  {
+    "id": "15176504",
+    "date": "2026-01-11",
+    "time": "20:30",
+    "league": "Brasil - Paulista - Série A1",
+    "homeTeam": "Mirassol",
+    "awayTeam": "São Paulo",
+    "market": [
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
+    ],
+    "recommended": false,
+    "note": "São Paulo favorito mas Mirassol é equipe competitiva que joga bem em casa. Pode ser jogo equilibrado no início do Paulistão com ambos usando times mistos."
+  },
+  {
+    "id": "15188763",
+    "date": "2026-01-11",
+    "time": "18:00",
+    "league": "Brasil - Mineiro - Módulo I",
+    "homeTeam": "Atlético MG",
+    "awayTeam": "Betim",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": false,
+    "note": "Atlético MG muito superior tecnicamente. Betim é equipe pequena do interior. Galo deve vencer com facilidade mesmo com time alternativo no Mineiro."
+  },
+  {
+    "id": "15238898",
+    "date": "2026-01-11",
+    "time": "15:00",
+    "league": "México - Liga MX - Clausura",
+    "homeTeam": "UNAM Pumas",
+    "awayTeam": "Querétaro",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "trader", "method": "Under 2.5 gols"}
+    ],
+    "recommended": false,
+    "note": "Jogo do início do Clausura mexicano. Pumas mandante tem vantagem mas Querétaro pode ser competitivo. Liga MX costuma ter jogos equilibrados."
+  },
+  {
+    "id": "14053747",
+    "date": "2026-01-11",
+    "time": "12:45",
+    "league": "Países Baixos - Eredivisie",
+    "homeTeam": "Sparta Rotterdam",
+    "awayTeam": "Heracles Almelo",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"},
+      {"type": "trader", "method": "Under 2.5 gols"}
+    ],
+    "recommended": false,
+    "note": "Jogo da Eredivisie entre equipes de meio de tabela. Liga holandesa costuma ter jogos movimentados com gols. Sparta Rotterdam mandante tem ligeira vantagem."
+  },
+  {
+    "id": "14159112",
+    "date": "2026-01-11",
+    "time": "16:00",
+    "league": "Grécia - Super League",
+    "homeTeam": "Panathinaikos",
+    "awayTeam": "Panserraikos",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": false,
+    "note": "Panathinaikos é um dos grandes da Grécia e favorito absoluto. Panserraikos é equipe menor. Jogo deve ter vitória confortável do mandante."
+  },
+  {
+    "id": "14035246",
+    "date": "2026-01-11",
+    "time": "11:00",
+    "league": "Escócia - Premiership",
+    "homeTeam": "Dundee",
+    "awayTeam": "Hearts",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Under 2.5 gols"},
+      {"type": "punther", "method": "Over 0.5 Gols Final"}
+    ],
+    "recommended": false,
+    "note": "Jogo da Premiership escocesa entre equipes de meio/baixo da tabela. Hearts visitante pode ser competitivo. Partida equilibrada esperada."
+  },
+  {
+    "id": "14035244",
+    "date": "2026-01-11",
+    "time": "13:30",
+    "league": "Escócia - Premiership",
+    "homeTeam": "Aberdeen",
+    "awayTeam": "Rangers",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"}
+    ],
+    "recommended": true,
+    "note": "Rangers visitante é equipe forte. Aberdeen competitivo em casa. Jogo importante da Premiership escocesa. Partida intensa e disputada esperada com ambas as equipes buscando vitória."
+  }
+]

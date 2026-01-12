@@ -48,5 +48,15 @@
     "odd": 111.99,
     "return": 0,
     "status": "red"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-10",
+    "analysis": 26,
+    "stake": 0.50,
+    "odd": 990.11,
+    "return": 0,
+    "status": "red"
   }
 ]

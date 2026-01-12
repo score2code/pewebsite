@@ -1,0 +1,115 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Rayo Vallecano",
+    "awayTeam": "Mallorca",
+    "prediction": [
+      "Back: Under 3.5 gols"
+    ],
+    "stake": 1,
+    "odd": 1.51,
+    "return": 0.62,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "league": "Inglaterra - FA Cup",
+    "homeTeam": "Portsmouth",
+    "awayTeam": "Arsenal",
+    "prediction": [
+      "Back: CS: 2 x 3"
+    ],
+    "stake": 1,
+    "odd": 12.50,
+    "return": 1,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "league": "Escócia - Premiership",
+    "homeTeam": "Aberdeen",
+    "awayTeam": "Rangers",
+    "prediction": [
+      "Back: CS: 1x3",
+      "Back: Over 3.5 gols"
+    ],
+    "stake": 2,
+    "odd": 20,
+    "return": 1.13,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "league": "Espanha - Super Copa",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Real Madrid",
+    "prediction": [
+      "Back: CS: Dutching 2x2 e 3x2"
+    ],
+    "stake": 2.70,
+    "odd": 26.58,
+    "return": 7.25,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "league": "França - Copa",
+    "homeTeam": "Lille",
+    "awayTeam": "Olympique Lyon",
+    "prediction": [
+      "Back: CS: 1x3"
+    ],
+    "stake": 1,
+    "odd": 13.46,
+    "return": 0.71,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "league": "Itália - Série A",
+    "homeTeam": "Inter de Milão",
+    "awayTeam": "Napoli",
+    "prediction": [
+      "Back: CS: Dutching 2x2 e 3x1"
+    ],
+    "stake": 2,
+    "odd": 14.50,
+    "return": 2.77,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "league": "Brasil - Carioca - Série A",
+    "homeTeam": "Flamengo",
+    "awayTeam": "Portuguesa RJ",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2.34,
+    "return": 1.44,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-11",
+    "league": "México - Liga MX - Clausura",
+    "homeTeam": "Atlético San Luis",
+    "awayTeam": "UANL Tigres",
+    "prediction": [
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 2,
+    "odd": 2.40,
+    "return": 6.65,
+    "status": "green"
+  }
+]

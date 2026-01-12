@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Rayo Vallecano (DNB)",
     "confidence": 73,
-    "status": "pending",
-    "analysis": "Em Vallecas, o Rayo costuma pressionar e jogar com intensidade. O Mallorca, embora organizado defensivamente, tem dificuldades para propor o jogo fora de casa."
+    "analysis": "Em Vallecas, o Rayo costuma pressionar e jogar com intensidade. O Mallorca, embora organizado defensivamente, tem dificuldades para propor o jogo fora de casa.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "levante-x-espanyol",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Confronto direto com cara de equilíbrio. O Levante precisa atacar em casa, e o Espanyol possui um ataque competente que raramente passa em branco, favorecendo o BTTS."
+    "analysis": "Confronto direto com cara de equilíbrio. O Levante precisa atacar em casa, e o Espanyol possui um ataque competente que raramente passa em branco, favorecendo o BTTS.",
+    "status": "green",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "borussia-monchengladbach-x-augsburg",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Borussia Monchengladbach",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "O Gladbach no Borussia-Park tem uma postura muito agressiva. O Augsburg costuma ceder espaços que os anfitriões têm qualidade suficiente para explorar e vencer."
+    "analysis": "O Gladbach no Borussia-Park tem uma postura muito agressiva. O Augsburg costuma ceder espaços que os anfitriões têm qualidade suficiente para explorar e vencer.",
+    "status": "green",
+    "reason": "Placar: 4 x 0"
   },
   {
     "id": "bayern-munich-x-wolfsburg",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 3.5",
     "confidence": 84,
-    "status": "pending",
-    "analysis": "O Bayern em Munique é uma máquina de fazer gols. O Wolfsburg não tem defesa para segurar o ímpeto bávaro e o jogo tende a ser uma goleada ou uma partida muito aberta."
+    "analysis": "O Bayern em Munique é uma máquina de fazer gols. O Wolfsburg não tem defesa para segurar o ímpeto bávaro e o jogo tende a ser uma goleada ou uma partida muito aberta.",
+    "status": "green",
+    "reason": "Placar: 8 x 1"
   },
   {
     "id": "unam-pumas-x-queretaro",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: UNAM Pumas",
     "confidence": 80,
-    "status": "pending",
-    "analysis": "Jogar no Estádio Olímpico Universitário ao meio-dia é um pesadelo para os visitantes. Pumas é superior tecnicamente e deve aproveitar o fator casa e clima para vencer."
+    "analysis": "Jogar no Estádio Olímpico Universitário ao meio-dia é um pesadelo para os visitantes. Pumas é superior tecnicamente e deve aproveitar o fator casa e clima para vencer.",
+    "status": "red",
+    "reason": "Placar: 1 x 1"
   },
   {
     "id": "atletico-san-luis-x-uanl-tigres",
@@ -74,8 +79,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: UANL Tigres (DNB)",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Tigres possui um dos elencos mais caros e talentosos da liga. Mesmo fora, a qualidade individual deve sobressair contra um San Luis esforçado, mas limitado."
+    "analysis": "Tigres possui um dos elencos mais caros e talentosos da liga. Mesmo fora, a qualidade individual deve sobressair contra um San Luis esforçado, mas limitado.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "heerenveen-x-feyenoord-rotterdam",
@@ -87,8 +93,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Feyenoord Rotterdam",
     "confidence": 81,
-    "status": "pending",
-    "analysis": "O Feyenoord luta pelo topo e tem um time muito mais consistente. O Heerenveen oscila muito e terá dificuldades para segurar o ataque roterdamês."
+    "analysis": "O Feyenoord luta pelo topo e tem um time muito mais consistente. O Heerenveen oscila muito e terá dificuldades para segurar o ataque roterdamês.",
+    "status": "red",
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "telstar-x-ajax-amsterdam",
@@ -100,8 +107,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 83,
-    "status": "pending",
-    "analysis": "O Ajax, com sua filosofia ofensiva, enfrenta um Telstar que joga aberto. A disparidade técnica sugere muitos gols, principalmente por parte dos visitantes."
+    "analysis": "O Ajax, com sua filosofia ofensiva, enfrenta um Telstar que joga aberto. A disparidade técnica sugere muitos gols, principalmente por parte dos visitantes.",
+    "status": "green",
+    "reason": "Placar: 2 x 3"
   },
   {
     "id": "go-ahead-eagles-x-fortuna-sittard",
@@ -113,8 +121,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Jogo de meio de tabela onde ambas as equipes veem chances reais de vitória. O estilo de jogo direto de ambos favorece a criação de oportunidades e gols."
+    "analysis": "Jogo de meio de tabela onde ambas as equipes veem chances reais de vitória. O estilo de jogo direto de ambos favorece a criação de oportunidades e gols.",
+    "status": "green",
+    "reason": "Placar: 2 x 2"
   },
   {
     "id": "sparta-rotterdam-x-heracles-almelo",
@@ -126,8 +135,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Sparta Rotterdam",
     "confidence": 77,
-    "status": "pending",
-    "analysis": "O Sparta é muito forte em seu estádio (O Castelo). O Heracles tem um péssimo retrospecto como visitante, o que torna a vitória dos mandantes o resultado mais provável."
+    "analysis": "O Sparta é muito forte em seu estádio (O Castelo). O Heracles tem um péssimo retrospecto como visitante, o que torna a vitória dos mandantes o resultado mais provável.",
+    "status": "green",
+    "reason": "Placar: 2 x 0"
   },
   {
     "id": "levadiakos-x-volos-fc",
@@ -139,8 +149,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Volos FC (DNB)",
     "confidence": 72,
-    "status": "pending",
-    "analysis": "O Volos tem mostrado um futebol mais organizado nesta temporada. Contra um Levadiakos que luta contra o rebaixamento, o DNB nos visitantes oferece valor e segurança."
+    "analysis": "O Volos tem mostrado um futebol mais organizado nesta temporada. Contra um Levadiakos que luta contra o rebaixamento, o DNB nos visitantes oferece valor e segurança.",
+    "status": "red",
+    "reason": "Placar: 3 x 1"
   },
   {
     "id": "panathinaikos-x-panserraikos",
@@ -152,8 +163,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Panathinaikos",
     "confidence": 85,
-    "status": "pending",
-    "analysis": "O Panathinaikos é um dos gigantes gregos e joga em casa. A diferença de investimento e qualidade técnica é abismal, devendo resultar em uma vitória tranquila."
+    "analysis": "O Panathinaikos é um dos gigantes gregos e joga em casa. A diferença de investimento e qualidade técnica é abismal, devendo resultar em uma vitória tranquila.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "portsmouth-x-arsenal",
@@ -165,8 +177,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Arsenal",
     "confidence": 88,
-    "status": "pending",
-    "analysis": "Fratton Park é um estádio difícil, mas o Arsenal de Arteta tem um sistema muito bem definido. A qualidade técnica dos Gunners deve superar a vontade do Portsmouth sem grandes problemas."
+    "analysis": "Fratton Park é um estádio difícil, mas o Arsenal de Arteta tem um sistema muito bem definido. A qualidade técnica dos Gunners deve superar a vontade do Portsmouth sem grandes problemas.",
+    "status": "green",
+    "reason": "Placar: 1 x 4"
   },
   {
     "id": "manchester-united-x-brighton",
@@ -178,7 +191,8 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 79,
-    "status": "pending",
-    "analysis": "Revanche e copa. O Brighton joga para frente em qualquer estádio. O United em Old Trafford vai atacar, mas sua defesa segue instável, cenário clássico para gols de ambos os lados."
+    "analysis": "Revanche e copa. O Brighton joga para frente em qualquer estádio. O United em Old Trafford vai atacar, mas sua defesa segue instável, cenário clássico para gols de ambos os lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   }
 ]
