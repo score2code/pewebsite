@@ -1,0 +1,66 @@
+"use client"
+
+import { useState, useCallback, useMemo } from 'react'
+import Items from './util/items';
+
+type BetRow = {
+  date: string;
+  stake?: number;
+  odd?: number;
+  return?: number;
+  tipster?: string;
+  status?: 'green' | 'red' | 'void' | 'pending' | 'postponed' | 'cashout';
+  type?: 'bet' | 'transaction' | 'audit';
+  kind?: 'deposit' | 'withdraw' | 'withdrawal';
+  amount?: number;
+  affectsInitial?: boolean;
+  note?: string;
+};
+
+type Line = {
+  rollover: BetRow[]
+  punther: BetRow[],
+  trader: BetRow[],
+  tipster: BetRow[],
+  analysis: BetRow[],
+}
+
+export default function Dashboard({ totals }: { totals: Line }) {
+  const [amounts, setAmounts] = useState<Record<string, number>>({});
+
+  // Callback que cada Item chamará ao calcular seu próprio total
+  const handleUpdateAmount = useCallback((id: string, value: number) => {
+    setAmounts((prev) => {
+      // Evita re-renderizações infinitas se o valor for o mesmo
+      if (prev[id] === value) return prev;
+      return { ...prev, [id]: value };
+    });
+  }, []);
+
+  // Soma total de todos os valores reportados
+  const totalBankroll = useMemo(() => {
+    return Object.values(amounts).reduce((acc, curr) => acc + curr, 0);
+  }, [amounts]);
+
+  return (
+    <div>
+      <Items category="rollover" bets={totals.rollover} totalBankroll={totalBankroll} />
+      <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 mb-2">
+        <h3 className="text-lg font-bold text-dark-900 dark:text-light-100 text-center">Bancas com Dinheiro Real</h3>
+      </div>
+      <Items category="punther" bets={totals.punther} onCalculate={(val) => handleUpdateAmount('punther', val)} />
+      <Items category="trader" bets={totals.trader} onCalculate={(val) => handleUpdateAmount('trader', val)} />
+      <Items category="tipster" bets={totals.tipster} onCalculate={(val) => handleUpdateAmount('tipster', val)} />
+      <Items category="tipster" tipster="Yuri" bets={totals.tipster} />
+      <Items category="tipster" tipster="Rafaela" bets={totals.tipster} />
+      {/* <Items category="tipster" tipster="Boleiros" bets={totals.tipster} />
+      <Items category="tipster" tipster="Mundo Bet" bets={totals.tipster} />
+      <Items category="tipster" tipster="Tylty" bets={totals.tipster} /> */}
+      <Items category="tipster" tipster="Hemerson" bets={totals.tipster} />
+      <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 mb-2">
+        <h3 className="text-lg font-bold text-dark-900 dark:text-light-100 text-center">O RED é normal, bingos com apostas grátis</h3>
+      </div>
+      <Items category="analysis" bets={totals.analysis} onCalculate={(val) => handleUpdateAmount('analysis', val)} />
+    </div>
+  );
+}

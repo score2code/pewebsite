@@ -112,7 +112,7 @@ export default function RelatorioCasaClient({ bets, initialBankroll }: { bets: B
   const goalClass = goal > 0
     ? 'text-blue-700 dark:text-blue-400'
     : 'text-green-700 dark:text-green-400';
-  const tipster = ['Yuri', 'Rafaela', 'Tylty', 'Edge2Green', 'Boleiros', 'Mundo Bet'];
+  const tipster = ['Yuri', 'Rafaela', 'Tylty', 'Hemerson', 'Boleiros', 'Mundo Bet'];
   const totalBets = (tipster: string) => betsOnly.filter(b => b.tipster === tipster).length;
   const totalReds = (tipster: string) => betsOnly.filter(b => b.status === 'red' && b.tipster === tipster).length;
   const totalGreens = (tipster: string) => betsOnly.filter(b => b.status === 'green' && b.tipster === tipster).length;
