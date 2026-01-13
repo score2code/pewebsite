@@ -8,9 +8,9 @@
     "awayTeam": "Celta Vigo",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Under 2.5 gols"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": true,
     "note": "Sevilla em casa costuma pressionar desde o início. Celta Vigo tem defesa vulnerável mas ataca bem. Jogo equilibrado com tendência a gols, ideal para LTD e Over em live."
@@ -24,9 +24,9 @@
     "awayTeam": "Paris FC",
     "market": [
       {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2o Tempo"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2o Tempo"},
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": true,
     "note": "PSG é amplamente favorito contra time da segunda divisão. Diferença técnica enorme. Ideal para Back delayed (aguardar odds melhores) e apostar na vitória folgada do PSG."
@@ -41,8 +41,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0x1 / 1x0"},
       {"type": "trader", "method": "Correct Score (2x1 e 2x2)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
     "note": "Clássico saudita de alto nível (Neymar vs Cristiano Ronaldo). Ambas equipes ofensivas, jogo aberto e competitivo. Excelente para LTD e Over. Alta probabilidade de gols no 1º tempo."
@@ -57,8 +57,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0x1 / 1x0"},
       {"type": "trader", "method": "Correct Score (2x2)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "BTTS"}
     ],
     "recommended": true,
     "note": "Al-Ettifaq invicto há 7 jogos (4V, 3E). Ambos times marcaram em 9 dos últimos 11 jogos de cada equipe. H2H favorece Al-Ettifaq (6V-1D-1E), mas todos jogos com muitos gols. Wijnaldum (9 gols) vs Joshua King (12 gols). BTTS ocorreu em 7 dos últimos 9 confrontos diretos. Jogo com média de 3.94 gols esperados."

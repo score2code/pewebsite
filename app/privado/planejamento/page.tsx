@@ -80,7 +80,7 @@ const methods = [
     ],
   },
   {
-    name: 'Punther',
+    name: 'Punter',
     methods: [
       "Over 1.5 Live",
       "Over 0.5 Gols Final",

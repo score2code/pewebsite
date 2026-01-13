@@ -155,7 +155,7 @@ export default function MetodoRolloverPage() {
             </div>
             <div className="space-y-2">
               <h4 className="text-sm font-bold text-purple-700 dark:text-purple-400">3. Foco no Volume</h4>
-              <p className="text-xs text-dark-900/70 dark:text-light-100/70">Nesta página, o objetivo é girar o capital. O lucro alto deve ser buscado nas páginas de Trader e Punther.</p>
+              <p className="text-xs text-dark-900/70 dark:text-light-100/70">Nesta página, o objetivo é girar o capital. O lucro alto deve ser buscado nas páginas de Trader e Punter.</p>
             </div>
           </div>
         </section>

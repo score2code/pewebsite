@@ -160,45 +160,50 @@ export default async function Items({ category, bets, tipster, onCalculate, tota
         </div>
       </div>
       {category === 'rollover' && (
-        <div className={`grid grid-cols-2 md:grid-cols-8 gap-3 mb-2`}>
-          <div className="hidden md:flex items-center justify-end gap-2 ml-4">
-            <span className="text-indigo-400">└──</span>
+        <>
+          <div className="rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-yellow-900/20 p-4 hover:border-purple-400 dark:hover:border-purple-500 mb-2">
+            <h3 className="text-xs font-bold text-dark-900 dark:text-light-100 text-center">Fluxo de caixa</h3>
           </div>
-          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
-            <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
-            <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Banca inicial</div>
-              <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(initialBankroll)}</div>
+          <div className={`grid grid-cols-2 md:grid-cols-8 gap-3 mb-2`}>
+            <div className="hidden md:flex items-center justify-end gap-2 ml-4">
+              <span className="text-indigo-400">└──</span>
+            </div>
+            <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+              <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
+              <div className="flex-1">
+                <div className="text-xs text-dark-900/70 dark:text-light-100/70">Banca inicial</div>
+                <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(initialBankroll)}</div>
+              </div>
+            </div>
+            <div className="hidden md:flex items-center justify-center gap-2 ml-4">
+              <span className="text-indigo-400 text-3xl">-</span>
+            </div>
+            <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+              <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
+              <div className="flex-1">
+                <div className="text-xs text-dark-900/70 dark:text-light-100/70">Custos Pessoais</div>
+                <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(personalStake)}</div>
+              </div>
+            </div>
+            <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+              <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
+              <div className="flex-1">
+                <div className="text-xs text-dark-900/70 dark:text-light-100/70">Outras Bancas</div>
+                <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(othersBankroll)}</div>
+              </div>
+            </div>
+            <div className="hidden md:flex items-center justify-center gap-2 ml-4">
+              <span className="text-indigo-400 text-3xl">=</span>
+            </div>
+            <div className="rounded-lg  border border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-500/20 p-3 flex items-center gap-2 md:col-span-2">
+              <CircleDollarSign size={16} className="text-dark-900/70 dark:text-light-100/70" />
+              <div className="flex-1">
+                <div className="text-xs text-dark-900/70 dark:text-light-100/70">Total Atual</div>
+                <div className={`font-bold ${finalClass}`}>{formatCurrencyBRL(currentBankroll + (totalBankroll || 0))}</div>
+              </div>
             </div>
           </div>
-          <div className="hidden md:flex items-center justify-center gap-2 ml-4">
-            <span className="text-indigo-400 text-3xl">-</span>
-          </div>
-          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
-            <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
-            <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Custos Pessoais</div>
-              <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(personalStake)}</div>
-            </div>
-          </div>
-          <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
-            <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
-            <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Outras Bancas</div>
-              <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(othersBankroll)}</div>
-            </div>
-          </div>
-          <div className="hidden md:flex items-center justify-center gap-2 ml-4">
-            <span className="text-indigo-400 text-3xl">=</span>
-          </div>
-          <div className="rounded-lg  border border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-500/20 p-3 flex items-center gap-2 md:col-span-2">
-            <CircleDollarSign size={16} className="text-dark-900/70 dark:text-light-100/70" />
-            <div className="flex-1">
-              <div className="text-xs text-dark-900/70 dark:text-light-100/70">Total Atual</div>
-              <div className={`font-bold ${finalClass}`}>{formatCurrencyBRL(currentBankroll + (totalBankroll || 0))}</div>
-            </div>
-          </div>
-        </div>
+        </>
         )
       }
     </>

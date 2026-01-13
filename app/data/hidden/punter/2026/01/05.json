@@ -1,7 +1,7 @@
 [
   {
     "type": "bet",
-    "model": "punther",
+    "model": "punter",
     "date": "2026-01-05",
     "league": "-",
     "homeTeam": "-",
@@ -14,7 +14,7 @@
   },
   {
     "type": "bet",
-    "model": "punther",
+    "model": "punter",
     "date": "2026-01-05",
     "league": "Inglaterra - Championship",
     "homeTeam": "Leicester",

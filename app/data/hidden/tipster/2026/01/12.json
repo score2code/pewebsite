@@ -6,7 +6,7 @@
     "stake": 1,
     "odd": 3.13,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -15,7 +15,7 @@
     "stake": 1,
     "odd": 1.80,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -23,8 +23,8 @@
     "tipster": "Yuri",
     "stake": 1,
     "odd": 1.85,
-    "return": 0,
-    "status": "pending"
+    "return": 1.85,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -33,7 +33,7 @@
     "stake": 0.50,
     "odd": 5.06,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -42,7 +42,7 @@
     "stake": 1,
     "odd": 1.97,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -50,6 +50,33 @@
     "tipster": "Hemerson",
     "stake": 0.50,
     "odd": 25.43,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-12",
+    "tipster": "Hemerson",
+    "stake": 0.50,
+    "odd": 3.95,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-12",
+    "tipster": "Rafaela",
+    "stake": 1,
+    "odd": 3.74,
+    "return": 0,
+    "status": "pending"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-12",
+    "tipster": "Hemerson",
+    "stake": 0.55,
+    "odd": 6.67,
     "return": 0,
     "status": "pending"
   }

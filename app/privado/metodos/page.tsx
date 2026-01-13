@@ -12,7 +12,7 @@ export default function MetodoApostasIndexPage() {
   const methods = [
     { href: '/privado/metodos/rollover', title: 'Rollover', description: 'Plano semanal focado em volume.' },
     { href: '/privado/metodos/trader', title: 'Trader', description: 'Gestão ativa e operações por mercado.' },
-    { href: '/privado/metodos/punther', title: 'Punther', description: 'Meta mensal baseada em punther.' },
+    { href: '/privado/metodos/punter', title: 'Punter', description: 'Meta mensal baseada em punter.' },
   ];
 
   return (

@@ -9,7 +9,7 @@
     "market": [
       {"type": "trader", "method": "Under 2.5 gols"},
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
     ],
     "recommended": true,
@@ -23,9 +23,9 @@
     "homeTeam": "Pisa",
     "awayTeam": "Como",
     "market": [
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
       {"type": "trader", "method": "Under 2.5 gols"}
     ],
     "recommended": false,
@@ -42,7 +42,7 @@
       {"type": "trader", "method": "Under 2.5 gols"},
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Correct Score 3x1 - 1x3"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": true,
     "note": "Lecce tem pior ataque da liga (12 gols), Roma melhor defesa (12 sofridos). Roma favorita mas perdeu últimos 3 fora. Under 2.5 prioritário - jogo travado esperado. Lay 0-1 contra zebra do Lecce. Roma venceu últimos 9 confrontos contra Lecce."
@@ -57,7 +57,7 @@
     "market": [
       {"type": "trader", "method": "Under 2.5 gols"},
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
     ],
     "recommended": true,
@@ -71,10 +71,10 @@
     "homeTeam": "Sporting Lisboa",
     "awayTeam": "Vitória Guimarães",
     "market": [
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Sporting é um dos favoritos ao título português e joga em casa. Vitória também é time ofensivo. Esperado jogo aberto com gols. Over 1.5 Live prioritário. LTD eficiente - Sporting deve pressionar. DH Sporting + Over 1.5 tem boa value."
@@ -88,8 +88,8 @@
     "awayTeam": "Samsunspor",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
     ],
     "recommended": true,
@@ -103,9 +103,9 @@
     "homeTeam": "PAOK Thessaloniki",
     "awayTeam": "Atromitos",
     "market": [
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
     ],
     "recommended": false,
@@ -121,8 +121,8 @@
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "Over 1.5 Live"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"}
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"}
     ],
     "recommended": true,
     "note": "Rangers em grande forma (3 vitórias seguidas, venceu Celtic 3-1). Aberdeen demitiu técnico após 4 derrotas seguidas fora. Rangers venceu 5 dos últimos 7 contra Aberdeen. LTD prioritário - Rangers deve dominar em casa. Back delayed se odds subirem."
@@ -136,7 +136,7 @@
     "awayTeam": "RD do Congo",
     "market": [
       {"type": "trader", "method": "Under 2.5 gols"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
     ],
@@ -153,7 +153,7 @@
     "market": [
       {"type": "trader", "method": "Under 2.5 gols"},
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
     ],
     "recommended": false,
@@ -167,9 +167,9 @@
     "homeTeam": "The New Saints",
     "awayTeam": "Bala Town",
     "market": [
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"}
     ],
     "recommended": false,

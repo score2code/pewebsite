@@ -3,15 +3,15 @@ import Breadcrumb from '@/app/components/ui/breadcrumb';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Métodos Punther - Live',
+  title: 'Métodos Punter - Live',
   description: 'Estratégias de apostas diretas em gols e favoritos.',
   robots: { index: false, follow: false },
 };
 
-export default function MetodoPuntherPage() {
+export default function MetodoPunterPage() {
   const metodos = [
     {
-      titulo: "Punther Over 1.5 Live",
+      titulo: "Punter Over 1.5 Live",
       selecao: "Jogos com média histórica de gols alta (> 2.5 gols por jogo).",
       entrada: "Aos 15'-20' do 1º tempo se estiver 0x0 OU aos 60' se estiver 1-0 ou 0-1.",
       validacao: "Delay Ball: AP1 > 60. Jogo com muitas transições e ataques rápidos.",
@@ -73,7 +73,7 @@ export default function MetodoPuntherPage() {
 
         {/* Header - Identico ao Trader */}
         <header className="bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 md:p-8 mb-6 md:mb-8 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
-          <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-2">Métodos Punther: Live</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-light-100 mb-2">Métodos Punter: Live</h1>
           <p className="text-base md:text-lg text-dark-900/70 dark:text-light-100/70">Foco em análise de valor e estatísticas de pressão em tempo real (Punter).</p>
           <div className="mt-3">
             <Link href="/privado/planejamento" className="text-sm inline-flex items-center gap-1 text-purple-700 dark:text-purple-400 font-medium">Ver Planejamento →</Link>
@@ -127,7 +127,7 @@ export default function MetodoPuntherPage() {
 
         {/* Footer Info Box - Estilo Trader */}
         <section className="mt-8 bg-light-100/50 dark:bg-dark-800/50 rounded-xl p-6 border border-light-300 dark:border-dark-600 shadow-custom dark:shadow-custom-dark backdrop-blur-sm">
-          <h2 className="font-semibold text-dark-900 dark:text-light-100 mb-3 uppercase text-sm tracking-widest">Mentalidade Punther</h2>
+          <h2 className="font-semibold text-dark-900 dark:text-light-100 mb-3 uppercase text-sm tracking-widest">Mentalidade Punter</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="space-y-2">
               <h4 className="text-sm font-bold text-purple-700 dark:text-purple-400">1. Análise Live</h4>
@@ -139,7 +139,7 @@ export default function MetodoPuntherPage() {
             </div>
             <div className="space-y-2">
               <h4 className="text-sm font-bold text-purple-700 dark:text-purple-400">3. Red Faz Parte</h4>
-              <p className="text-xs text-dark-900/70 dark:text-light-100/70">No punther, o que importa é a taxa de acerto e o valor a longo prazo.</p>
+              <p className="text-xs text-dark-900/70 dark:text-light-100/70">No punter, o que importa é a taxa de acerto e o valor a longo prazo.</p>
             </div>
           </div>
         </section>

@@ -65,7 +65,7 @@ async function loadBets(category: string): Promise<BetRow[]> {
 export default async function PrivadoIndexPage() {
   const totals = {
     rollover: await loadBets('rollover'),
-    punther: await loadBets('punther'),
+    punter: await loadBets('punter'),
     trader: await loadBets('trader'),
     tipster: await loadBets('tipster'),
     analysis: await loadBets('analysis'),
@@ -74,7 +74,7 @@ export default async function PrivadoIndexPage() {
     {
       href: '/privado/metodos',
       title: 'Métodos',
-      description: 'Rollover, Trader e Punther.'
+      description: 'Rollover, Trader e Punter.'
     },
     {
       href: '/privado/planejamento',

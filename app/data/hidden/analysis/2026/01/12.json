@@ -1,0 +1,10 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 4,
+    "date": "2026-01-12",
+    "affectsInitial": true,
+    "note": "Supercoins"
+  }
+]

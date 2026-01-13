@@ -7,9 +7,9 @@
     "homeTeam": "Arsenal",
     "awayTeam": "Liverpool",
     "market": [
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Under 2.5 gols"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
     "note": "Arsenal em ótima forma em casa, líder do campeonato. Liverpool sem Salah e instável defensivamente. Clássico equilibrado com tendência de gols, Arsenal favorito mas Liverpool competitivo. Histórico recente indica jogo movimentado."
@@ -22,9 +22,9 @@
     "homeTeam": "Atletico Madrid",
     "awayTeam": "Real Madrid",
     "market": [
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": true,
     "note": "Dérbi madrilenho decisivo pela semifinal. Atlético venceu 5-2 no confronto anterior na temporada, chegando confiante. Real Madrid sem Mbappé, Militão e TAA, mas em boa sequência. Rivalidade histórica indica jogo intenso e com gols."
@@ -37,9 +37,9 @@
     "homeTeam": "AC Milan",
     "awayTeam": "Genoa",
     "market": [
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
       {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Milan invicto há 16 jogos na Série A, forte em casa (7 vitórias nos últimos 9 no San Siro). Genoa lutando contra rebaixamento, 4 jogos sem vencer. Milan com Pulisic e Leão disponíveis. Histórico favorável aos donos da casa."
@@ -52,8 +52,8 @@
     "homeTeam": "PSG",
     "awayTeam": "Olympique Marseille",
     "market": [
-      {"type": "punther", "method": "Over 1.5 Live"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
     ],
     "recommended": true,
@@ -67,9 +67,9 @@
     "homeTeam": "Al Hilal",
     "awayTeam": "Al Hazem",
     "market": [
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
       {"type": "trader", "method": "Back ao Favorito \"Delayed\""},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": true,
     "note": "Al Hilal líder isolado, 9 vitórias consecutivas, média de 2.77 gols por jogo. Al Hazem na zona de rebaixamento. Histórico devastador: Al Hilal invicto nos últimos 8 confrontos. Diferença técnica gigantesca, Al Hilal não perde há 8 jogos contra esse adversário."
@@ -82,8 +82,8 @@
     "homeTeam": "Al Nassr",
     "awayTeam": "Al Qadisiyah",
     "market": [
-      {"type": "punther", "method": "Over 1.5 Live"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
       {"type": "trader", "method": "Back ao Favorito \"Delayed\""}
     ],
     "recommended": true,
@@ -97,9 +97,9 @@
     "homeTeam": "Al Najma Manama",
     "awayTeam": "Al Ettifaq",
     "market": [
-      {"type": "punther", "method": "Over 0.5 Gols Final"},
-      {"type": "punther", "method": "Over 1.5 Live"},
-      {"type": "punther", "method": "Handicap Asiático +0.5 Zebra"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Handicap Asiático +0.5 Zebra"}
     ],
     "recommended": false,
     "note": "Jogo equilibrado entre times de meio de tabela. Al Ettifaq invicto nos últimos jogos, mas ambos com desempenhos irregulares. Partida pode ser disputada com chances para ambos os lados."

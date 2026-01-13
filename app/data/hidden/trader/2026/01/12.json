@@ -1,3 +1,62 @@
 [
-
+  {
+    "type": "bet",
+    "date": "2026-01-12",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Hilal",
+    "awayTeam": "Al Nassr",
+    "prediction": [
+      "Back: CS: Dutching 2x2 e 3x2",
+      "Back: CS: 3x1"
+    ],
+    "stake": 3,
+    "odd": 17.50,
+    "return": 3.81,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-12",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al-Ettifaq",
+    "awayTeam": "Al-Khaleej",
+    "prediction": [
+      "Back: CS: 3x1"
+    ],
+    "stake": 1,
+    "odd": 15,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-12",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Sevilla",
+    "awayTeam": "Celta Vigo",
+    "prediction": [
+      "Back: CS: 2x1",
+      "Back: CS: 1x2",
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 3,
+    "odd": 15.50,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-12",
+    "league": "França - Copa",
+    "homeTeam": "PSG",
+    "awayTeam": "Paris FC",
+    "prediction": [
+      "Back: CS: 3x1",
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 2,
+    "odd": 14,
+    "return": 0,
+    "status": "red"
+  }
 ]

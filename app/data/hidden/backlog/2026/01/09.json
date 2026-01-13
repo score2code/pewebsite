@@ -8,9 +8,9 @@
     "awayTeam": "Real Sociedad",
     "market": [
       {"type": "trader", "method": "Under 2.5 gols"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"},
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": true,
     "note": "Getafe é extremamente defensivo, mas Real Sociedad tem qualidade ofensiva. Jogo equilibrado com tendência a poucos gols. Under 2.5 é forte opção, mas pelo menos 1 gol é esperado."
@@ -23,9 +23,9 @@
     "homeTeam": "Eintracht Frankfurt",
     "awayTeam": "Borussia Dortmund",
     "market": [
-      {"type": "punther", "method": "Over 1.5 Live"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Clássico da Bundesliga com histórico de muitos gols. Ambas equipes atacam muito. Dortmund é favorito, mas Frankfurt joga bem em casa. LTD excelente opção - improvável que termine empatado."
@@ -39,8 +39,8 @@
     "awayTeam": "Al Ittihad",
     "market": [
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Al Ittihad (com Benzema) é muito superior. Grande diferença técnica. Favorito deve dominar e vencer. Back delayed pode ter ótima odd se houver empate inicial."
@@ -55,8 +55,8 @@
     "market": [
       {"type": "trader", "method": "Under 2.5 gols"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"},
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": false,
     "note": "Jogo equilibrado entre seleções africanas fortes. Jogos de Copa tendem a ser mais cautelosos. Senegal tecnicamente superior, mas Mali é competitivo. Poucos gols esperados, jogo tático."
@@ -71,7 +71,7 @@
     "market": [
       {"type": "trader", "method": "Under 2.5 gols"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": false,
     "note": "Duas potências africanas. Marrocos vem forte (semifinalista Copa 2022). Jogo decisivo de Copa, tende a ser cauteloso no início. Poucos gols, mas improvável empate final."
@@ -85,8 +85,8 @@
     "awayTeam": "Nottingham Forest",
     "market": [
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "FA Cup, divisão inferior vs Premier League. Forest é muito superior tecnicamente. Zebra improvável. Se Wrexham abrir o placar, Back delayed tem ótimo valor. Forest deve vencer."
@@ -100,8 +100,8 @@
     "awayTeam": "Colwyn Bay",
     "market": [
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": false,
     "note": "The New Saints é dominante no País de Gales (campeão recorrente). Grande diferença técnica. Favorito deve vencer com facilidade. Muitos gols esperados do TNS."

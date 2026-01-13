@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RelatoriosIndexPrivadoPage() {
   const reports = [
     { href: '/privado/relatorios/orcamento', title: 'Orçamento', description: 'Relatório com dados de budget/**' },
-    { href: '/privado/relatorios/punther', title: 'Punther', description: 'Relatório com dados de punther/**' },
+    { href: '/privado/relatorios/punter', title: 'Punter', description: 'Relatório com dados de punter/**' },
     { href: '/privado/relatorios/trader', title: 'Trader', description: 'Relatório com dados de trader/**' },
     { href: '/privado/relatorios/analise', title: 'Análises', description: 'Relatório com dados de analysis/**' },
     { href: '/privado/relatorios/tipster', title: 'Tipster', description: 'Relatório com dados de tipster/**' },

@@ -9,8 +9,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": true,
     "note": "Betis é time da elite espanhola. Deve dominar e vencer. Proteger contra zebra inicial com Lay 0-1, depois aproveitar com Back Delayed."
@@ -24,9 +24,9 @@
     "awayTeam": "Alavés",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"}
     ],
     "recommended": true,
     "note": "La Liga. Villarreal favorito em casa contra Alavés. Jogo equilibrado mas aberto. LTD seguro, ambos podem marcar."
@@ -40,9 +40,9 @@
     "awayTeam": "Hamburger",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
     "note": "Bundesliga. Liga conhecida por muitos gols e jogos abertos. Freiburg e Hamburger costumam ter jogos movimentados."
@@ -56,8 +56,8 @@
     "awayTeam": "Stuttgart",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"}
     ],
     "recommended": true,
@@ -73,8 +73,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": true,
     "note": "Copa da França. Orleans é time inferior. Mônaco é gigante francês e deve dominar completamente."
@@ -88,9 +88,9 @@
     "awayTeam": "Novorizontino SP",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Paulistão. Santos na Vila Belmiro é favorito. Novorizontino competitivo mas inferior tecnicamente."
@@ -105,8 +105,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Paulistão. Palmeiras é muito superior. Portuguesa pode resistir no início mas Palmeiras deve vencer."
@@ -121,8 +121,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": true,
     "note": "Campeonato Mineiro. Cruzeiro muito superior ao Pouso Alegre. Diferença técnica absurda."
@@ -136,9 +136,9 @@
     "awayTeam": "Necaxa",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
     "note": "Liga MX - Clausura. Liga mexicana conhecida por jogos abertos e movimentados. Ambos atacam."
@@ -152,9 +152,9 @@
     "awayTeam": "Cruz Azul",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": true,
     "note": "Liga MX - Clausura. Jogo entre times tradicionais. Liga MX sempre oferece gols e jogos abertos."
@@ -169,8 +169,8 @@
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Eredivisie. AZ Alkmaar muito superior ao Volendam. Eredivisie sempre tem muitos gols."
@@ -184,9 +184,9 @@
     "awayTeam": "Zwolle",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
     "note": "Eredivisie. Twente favorito em casa. Liga holandesa conhecida por muitos gols e jogos ofensivos."
@@ -201,8 +201,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Eredivisie. PSV é líder e máquina de gols. Excelsior é fraco. PSV deve golear."
@@ -216,9 +216,9 @@
     "awayTeam": "Braga",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
     "note": "Taça da Liga portuguesa. Derby do Minho, grande rivalidade. Jogo de mata-mata intenso e aberto."
@@ -232,9 +232,9 @@
     "awayTeam": "Fenerbahce",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": true,
     "note": "Super Copa da Turquia. Derby de Istambul! Maior rivalidade turca. Jogo de altíssima intensidade."
@@ -249,8 +249,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": true,
     "note": "Pro League saudita. Al Ahli tem elenco cheio de estrelas. Al Akhdoud é time pequeno. Diferença enorme."
@@ -265,8 +265,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Super League grega. Olympiacos é gigante grego e domina a liga. Atromitos é inferior."
@@ -281,8 +281,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "Premiership escocesa. Celtic domina o futebol escocês. Dundee United muito inferior."
@@ -296,9 +296,9 @@
     "awayTeam": "Nigéria",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Under 2.5 gols"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": false,
     "note": "Copa Africana. Clássico entre potências africanas. Jogo pode ser tático e truncado em mata-mata."
@@ -312,9 +312,9 @@
     "awayTeam": "Costa do Marfim",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Under 2.5 gols"},
-      {"type": "punther", "method": "Over 0.5 Gols Final"}
+      {"type": "punter", "method": "Over 0.5 Gols Final"}
     ],
     "recommended": false,
     "note": "Copa Africana. Egito e Costa do Marfim são favoritos ao título. Jogo equilibrado mas defensivo."
@@ -329,8 +329,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "FA Cup inglesa. Manchester City contra time de divisão inferior. City deve golear."
@@ -345,8 +345,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": true,
     "note": "FA Cup inglesa. Chelsea visita Charlton de divisão inferior. Chelsea favorito claro."
@@ -360,9 +360,9 @@
     "awayTeam": "Aston Villa",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
     "note": "FA Cup inglesa. Tottenham vs Aston Villa. Dois times de alto nível. Jogo aberto e ofensivo."
@@ -376,9 +376,9 @@
     "awayTeam": "Bournemouth",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
     "note": "FA Cup inglesa. Newcastle vs Bournemouth. Times ofensivos. Jogo movimentado esperado."
@@ -393,8 +393,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"},
-      {"type": "punther", "method": "Over 1.5 Live"}
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"},
+      {"type": "punter", "method": "Over 1.5 Live"}
     ],
     "recommended": true,
     "note": "FA Cup inglesa. Brentford de divisão superior visita Sheffield Wednesday. Brentford favorito."
@@ -409,8 +409,8 @@
     "market": [
       {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
       {"type": "trader", "method": "Back ao Favorito 'Delayed'"},
-      {"type": "punther", "method": "DH (Favorito) + Over 1.5"},
-      {"type": "punther", "method": "Favorito Marcar no 2º Tempo"}
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
     ],
     "recommended": true,
     "note": "FA Cup inglesa. Wolverhampton contra Shrewsbury de divisão inferior. Wolves deve dominar."
@@ -424,9 +424,9 @@
     "awayTeam": "Middlesbrough",
     "market": [
       {"type": "trader", "method": "Lay ao Empate (LTD)"},
-      {"type": "punther", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Over 1.5 Live"},
       {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
-      {"type": "punther", "method": "Over 0.5 Gols HT"}
+      {"type": "punter", "method": "Over 0.5 Gols HT"}
     ],
     "recommended": true,
     "note": "FA Cup inglesa. Fulham vs Middlesbrough. Fulham favorito mas Middlesbrough competitivo. Jogo aberto."

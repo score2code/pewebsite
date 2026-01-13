@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 
 type BetRow = {
   date: string;
-  model?: 'punther' | 'rollover' | 'leverage';
+  model?: 'punter' | 'rollover' | 'leverage';
   league?: string;
   homeTeam?: string;
   awayTeam?: string;

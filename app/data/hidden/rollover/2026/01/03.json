@@ -67,7 +67,7 @@
     "amount": 30,
     "date": "2026-01-03",
     "affectsInitial": false,
-    "note": "Banca: Punther"
+    "note": "Banca: Punter"
   },
   {
     "type": "audit",
@@ -75,7 +75,7 @@
     "league": "-",
     "homeTeam": "-",
     "awayTeam": "-",
-    "prediction": ["Punther"],
+    "prediction": ["Punter"],
     "stake": 2,
     "odd": 0,
     "return": 2.66,

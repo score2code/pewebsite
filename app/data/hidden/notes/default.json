@@ -26,6 +26,25 @@
           "Saindo no intervalo com 122% de lucro se terminar 2x2, 233% de lucro se terminar 3x2 e qualquer outro placar, 147% de lucro",
           "Aos 74 min mais 1 gol 3x2, batendo no placar, foi possivel fazer de novo o cashout. O lucro foi de 176% ."
         ]
+      },
+      {
+        "game": "Al Hilal x Al Nassr",
+        "items": [
+          "Entrando no pré-live, 3x2 odd 17.50 e 2x2 odd 11.50",
+          "Entrando no back 3x1 aos 24 min na odd 20",
+          "Gol do Al Nassr aos 43 min",
+          "O prejuízo está alto no momento (2/3 stake) e se espera o gol do favorito",
+          "GOl de pênalti aos 57 min para o Al Hilal. Saiu o 1x1",
+          "Goleiro do Al Nassr, expulso aos 60 min",
+          "Foi uma zona fazer o cashout aos 66 min",
+          "A principio 5% de prejuízo se terminar em 2x2 e 26% se terminar 3x2",
+          "Se terminar 3x1, 33% de lucro, e qualuqer outro placar 19% de lucro",
+          "Gol do Al Hilal aos 81 min (2x1)",
+          "Mais um pênalti aos 92 min (3x1)",
+          "Agora após cashout, só tenho red se terminar 3x2",
+          "A partida terminou 3x1, saio com 28% de lucro",
+          "Não fez sentido o risco com 3 placares contra sair rapido e o resultado final"
+        ]
       }
     ]
   },
@@ -149,6 +168,23 @@
           "Saindo com 29% de prejuízo, a partida está mais favoravel para 2x2",
           "Gol aos 43 min, 1x2 . Saí cedo demais, iria sair com lucro. Mas sem problemas, respeitei a leitura de jogo, Lille estava atacando mais."
         ]
+      },
+      {
+        "game": "Al-Ettifaq x Al-Khaleej",
+        "items": [
+          "Entrando no 3x1 aos 34 min na odd 15, o placar atual está 1x0",
+          "Gol de penalti do Al-Khaleej aos 44 min (1x1)",
+          "O prejuízo no momento está em 100% aos 72 min",
+          "Gol anulado aos 64 min, o prejuízo está em 73%",
+          "Gol do Al-Khaleej aos 84 min, full red (1x2)"
+        ]
+      },
+      {
+        "game": "PSG x Paris FC",
+        "items": [
+          "Entrando aos 21 min na odd 14",
+          "Partida termina 0x1, full red"
+        ]
       }
     ]
   },
@@ -178,6 +214,14 @@
           "Gol do Real Oviedo (zebra em casa) aos 64 min (1x0). Continuo preso com prejuízo de 25%, porque o Betis não está muito bem",
           "Saindo com prejuízo de 23% aos 69 min. Se a partida terminar em 1x2, o prejuízo seria de 217%",
           "A partida terminou em 1x1, prejuízo final de apenas 23% - salvou pela gestão de risco"
+        ]
+      },
+      {
+        "game": "Sevilla x Celta Vigo",
+        "items": [
+          "Entrando no 2x1 aos 28 min na odd 15.50",
+          "No intervalo entrando no 1x2 na odd 28, pois acredito que a zebra vai surpreender",
+          "Pênalti aos 86 min, partida termina 0x1, full red"
         ]
       }
     ]
@@ -353,6 +397,20 @@
           "Gol do portuguesa aos 58 min (0x1)",
           "Aos 63 min, o lucro está em 44%",
           "Saindo aos 65 min com 46% de lucro"
+        ]
+      },
+      {
+        "game": "Sevilla x Celta Vigo",
+        "items": [
+          "Entrando aos 35 min na odd 2.24, para proteger o CS",
+          "Pênalti aos 86 min, partida termina 0x1, full red"
+        ]
+      },
+      {
+        "game": "PSG x Paris FC",
+        "items": [
+          "Entrando aos 65 min na odd 2.66, para proteger o CS",
+          "Partida termina 0x1, full red"
         ]
       }
     ]

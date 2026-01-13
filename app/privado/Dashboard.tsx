@@ -19,7 +19,7 @@ type BetRow = {
 
 type Line = {
   rollover: BetRow[]
-  punther: BetRow[],
+  punter: BetRow[],
   trader: BetRow[],
   tipster: BetRow[],
   analysis: BetRow[],
@@ -46,9 +46,9 @@ export default function Dashboard({ totals }: { totals: Line }) {
     <div>
       <Items category="rollover" bets={totals.rollover} totalBankroll={totalBankroll} />
       <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 mb-2">
-        <h3 className="text-lg font-bold text-dark-900 dark:text-light-100 text-center">Bancas com Dinheiro Real</h3>
+        <h3 className="text-md font-bold text-dark-900 dark:text-light-100 text-center">Bancas com Dinheiro Real</h3>
       </div>
-      <Items category="punther" bets={totals.punther} onCalculate={(val) => handleUpdateAmount('punther', val)} />
+      <Items category="punter" bets={totals.punter} onCalculate={(val) => handleUpdateAmount('punter', val)} />
       <Items category="trader" bets={totals.trader} onCalculate={(val) => handleUpdateAmount('trader', val)} />
       <Items category="tipster" bets={totals.tipster} onCalculate={(val) => handleUpdateAmount('tipster', val)} />
       <Items category="tipster" tipster="Yuri" bets={totals.tipster} />
@@ -58,7 +58,7 @@ export default function Dashboard({ totals }: { totals: Line }) {
       <Items category="tipster" tipster="Tylty" bets={totals.tipster} /> */}
       <Items category="tipster" tipster="Hemerson" bets={totals.tipster} />
       <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-4 hover:border-purple-400 dark:hover:border-purple-500 mb-2">
-        <h3 className="text-lg font-bold text-dark-900 dark:text-light-100 text-center">O RED é normal, bingos com apostas grátis</h3>
+        <h3 className="text-md font-bold text-dark-900 dark:text-light-100 text-center">O RED é normal, bingos com apostas grátis</h3>
       </div>
       <Items category="analysis" bets={totals.analysis} onCalculate={(val) => handleUpdateAmount('analysis', val)} />
     </div>
