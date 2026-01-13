@@ -52,8 +52,8 @@ export default function Dashboard({ totals }: { totals: Line }) {
       <Items category="trader" bets={totals.trader} onCalculate={(val) => handleUpdateAmount('trader', val)} />
       <Items category="tipster" bets={totals.tipster} onCalculate={(val) => handleUpdateAmount('tipster', val)} />
       <Items category="tipster" tipster="Yuri" bets={totals.tipster} />
-      <Items category="tipster" tipster="Rafaela" bets={totals.tipster} />
-      {/* <Items category="tipster" tipster="Boleiros" bets={totals.tipster} />
+      {/* <Items category="tipster" tipster="Rafaela" bets={totals.tipster} />
+      <Items category="tipster" tipster="Boleiros" bets={totals.tipster} />
       <Items category="tipster" tipster="Mundo Bet" bets={totals.tipster} />
       <Items category="tipster" tipster="Tylty" bets={totals.tipster} /> */}
       <Items category="tipster" tipster="Hemerson" bets={totals.tipster} />

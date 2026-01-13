@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Sevilla",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Jogando no Ramón Sánchez Pizjuán, o Sevilla costuma impor seu ritmo. O Celta tem oscilado fora de casa, o que favorece o mandante para conquistar os 3 pontos."
+    "analysis": "Jogando no Ramón Sánchez Pizjuán, o Sevilla costuma impor seu ritmo. O Celta tem oscilado fora de casa, o que favorece o mandante para conquistar os 3 pontos.",
+    "status": "red",
+    "reason": "PLacar 0 x 1"
   },
   {
     "id": "jong-psv-eindhoven-x-top-oss",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 85,
-    "status": "pending",
-    "analysis": "A Eerste Divisie é conhecida por jogos abertos. O Jong PSV tem um ataque produtivo e enfrenta um TOP Oss que cede muitos espaços. Tendência clara de over."
+    "analysis": "A Eerste Divisie é conhecida por jogos abertos. O Jong PSV tem um ataque produtivo e enfrenta um TOP Oss que cede muitos espaços. Tendência clara de over.",
+    "status": "postponed",
+    "reason": "Adiado"
   },
   {
     "id": "jong-az-alkmaar-x-jong-ajax-amsterdam",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 82,
-    "status": "pending",
-    "analysis": "Duelo de academias ofensivas. Jong AZ e Jong Ajax priorizam o ataque em detrimento da defesa, criando um cenário ideal para gols de ambos os lados."
+    "analysis": "Duelo de academias ofensivas. Jong AZ e Jong Ajax priorizam o ataque em detrimento da defesa, criando um cenário ideal para gols de ambos os lados.",
+    "status": "green",
+    "reason": "Placar: 1 x 2"
   },
   {
     "id": "liverpool-x-barnsley",
@@ -48,7 +51,8 @@
     "timezone": "UTC",
     "prediction": "Liverpool vence o 1º Tempo",
     "confidence": 88,
-    "status": "pending",
-    "analysis": "Diferença técnica abismal. O Liverpool deve pressionar desde o início em Anfield para resolver o jogo cedo, tornando a vitória no primeiro tempo muito provável."
+    "analysis": "Diferença técnica abismal. O Liverpool deve pressionar desde o início em Anfield para resolver o jogo cedo, tornando a vitória no primeiro tempo muito provável.",
+    "status": "green",
+    "reason": "Placar no 1º Tempo: 2 x 1"
   }
 ]

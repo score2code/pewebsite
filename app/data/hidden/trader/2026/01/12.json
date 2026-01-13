@@ -58,5 +58,19 @@
     "odd": 14,
     "return": 0,
     "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-12",
+    "league": "NFL",
+    "homeTeam": "Pittsburgh Steelers",
+    "awayTeam": "Houston Texans",
+    "prediction": [
+      "Back: Moneyline"
+    ],
+    "stake": 1.36,
+    "odd": 2,
+    "return": 0,
+    "status": "red"
   }
 ]
