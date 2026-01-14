@@ -1,0 +1,180 @@
+[
+  {
+    "id": "14058103",
+    "date": "2026-01-14",
+    "time": "14:00",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Senegal",
+    "awayTeam": "Egito",
+    "market": [
+      {"type": "trader", "method": "Over 1.5 FT 30+"}
+    ],
+    "recommended": false,
+    "note": "Reedição de final. Jogo tende a ser truncado; aguardar desvalorização da odd para entrar no Over."
+  },
+  {
+    "id": "14062164",
+    "date": "2026-01-14",
+    "time": "14:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Wolfsburg",
+    "awayTeam": "St. Pauli",
+    "market": [
+      {"type": "trader", "method": "+0.5 HT"},
+      {"type": "trader", "method": "Over 1.5 FT 30+"},
+      {"type": "trader", "method": "Back CS 3x1 Correção"}
+    ],
+    "recommended": false,
+    "note": "Wolfsburg favorito em casa contra equipe tecnicamente inferior. Boa leitura para gols no HT."
+  },
+  {
+    "id": "15286007",
+    "date": "2026-01-14",
+    "time": "15:45",
+    "league": "Portugal - Taça da Liga",
+    "homeTeam": "Fafe",
+    "awayTeam": "Sporting Braga",
+    "market": [
+      {"type": "trader", "method": "+0.5 HT"}
+    ],
+    "recommended": true,
+    "note": "Diferença técnica abismal. Braga deve pressionar desde o início em busca do gol cedo."
+  },
+  {
+    "id": "14062167",
+    "date": "2026-01-14",
+    "time": "16:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Koln",
+    "awayTeam": "Bayern Munich",
+    "market": [
+      {"type": "trader", "method": "+0.5 HT"},
+      {"type": "trader", "method": "Back Visitante"}
+    ],
+    "recommended": true,
+    "note": "Bayern favorito absoluto. Buscar valor no Back se a odd estiver acima de 1.45 ou no Live."
+  },
+  {
+    "id": "14062149",
+    "date": "2026-01-14",
+    "time": "16:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Leipzig",
+    "awayTeam": "Freiburg",
+    "market": [
+      {"type": "trader", "method": "Back Casa"},
+      {"type": "trader", "method": "Back CS 3x1 Correção"},
+      {"type": "trader", "method": "Back CS 2x2 Correção"}
+    ],
+    "recommended": true,
+    "note": "Leipzig muito forte em casa. Freiburg costuma marcar fora, o que justifica a proteção no CS 2x2."
+  },
+  {
+    "id": "14062166",
+    "date": "2026-01-14",
+    "time": "16:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Hoffenheim",
+    "awayTeam": "Borussia M'gladbach",
+    "market": [
+      {"type": "trader", "method": "BTTS"},
+      {"type": "trader", "method": "+2.5 FT"}
+    ],
+    "recommended": false,
+    "note": "Duelo clássico de Over na Bundesliga. Duas defesas instáveis e ataques produtivos."
+  },
+  {
+    "id": "15327736",
+    "date": "2026-01-14",
+    "time": "17:00",
+    "league": "Espanha - Copa del Rey",
+    "homeTeam": "Albacete",
+    "awayTeam": "Real Madrid",
+    "market": [
+      {"type": "trader", "method": "Back Visitante"},
+      {"type": "trader", "method": "+0.5 HT"}
+    ],
+    "recommended": true,
+    "note": "Copa do Rei: atenção à escalação do Real. Se for time misto, o HT pode ser mais valorizado."
+  },
+  {
+    "id": "15268210",
+    "date": "2026-01-14",
+    "time": "17:00",
+    "league": "Inglaterra - EFL Cup",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Arsenal",
+    "market": [
+      {"type": "trader", "method": "Lay 1x0"},
+      {"type": "trader", "method": "Lay 2x0"}
+    ],
+    "recommended": false,
+    "note": "Derby de Londres com alta liquidez. Jogo aberto, difícil as zebras de placar baixo se manterem."
+  },
+  {
+    "id": "14058101",
+    "date": "2026-01-14",
+    "time": "17:00",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Nigéria",
+    "awayTeam": "Marrocos",
+    "market": [
+      {"type": "trader", "method": "Back CS 2x2 Correção"}
+    ],
+    "recommended": false,
+    "note": "Confronto de gigantes africanos. Tendência de jogo técnico e equilíbrio tático."
+  },
+  {
+    "id": "15267916",
+    "date": "2026-01-14",
+    "time": "17:45",
+    "league": "Portugal - Taça da Liga",
+    "homeTeam": "Porto",
+    "awayTeam": "Benfica",
+    "market": [
+      {"type": "trader", "method": "Live"}
+    ],
+    "recommended": false,
+    "note": "O 'Clássico'. Muita volatilidade e risco. Melhor trabalhar 100% no Live conforme o comportamento."
+  },
+  {
+    "id": "15327739",
+    "date": "2026-01-14",
+    "time": "17:00",
+    "league": "Espanha - Copa del Rey",
+    "homeTeam": "Betis",
+    "awayTeam": "Elche",
+    "market": [
+      {"type": "trader", "method": "Live"},
+      {"type": "trader", "method": "Back Casa"}
+    ],
+    "recommended": false,
+    "note": "Betis costuma levar a sério a Copa. Elche deve jogar por uma bola."
+  },
+  {
+    "id": "15176505",
+    "date": "2026-01-14",
+    "time": "19:00",
+    "league": "Brasil - Paulista - Série A1",
+    "homeTeam": "Primavera",
+    "awayTeam": "Mirassol",
+    "market": [
+      {"type": "trader", "method": "Back Visitante"}
+    ],
+    "recommended": false,
+    "note": "Mirassol tem estrutura superior e elenco mais rodado para o início de estadual."
+  },
+  {
+    "id": "15176510",
+    "date": "2026-01-14",
+    "time": "19:30",
+    "league": "Brasil - Paulista - Série A1",
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Santos",
+    "market": [
+      {"type": "trader", "method": "Back Casa"}
+    ],
+    "recommended": true,
+    "note": "Clássico da Saudade. Palmeiras mantém base vitoriosa; Santos em reconstrução. Favoritismo mandante."
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Dutching em Live (CS)",
+    "description": "NUNCA faça dutching de Correct Score após o início do jogo. As odds caem rápido e você fica preso. Só opere dutching CS no pré-live.",
+    "example": "Caso real: Stuttgart x Frankfurt - Prejuízo de -1% evitável"
+  },
+  {
+    "title": "Esperar placar exato com 100%+ de lucro",
+    "description": "Se você já tem 100-150% de lucro no 2x2 ou 1x1, REALIZE. Esperar o 3x2 ou 2x1 exato é ganância — o jogo pode virar contra você.",
+    "example": "Caso real: Barcelona x Madrid - Saiu com 176% (não esperou 3x2)"
+  },
+  {
+    "title": "Under após 1º gol — Esperar padrão",
+    "description": "Se entrou no Under 3.5 e saiu 1 gol, SAIA. Cada gol adicional aumenta 50%+ o prejuízo. Não espere voltar ao padrão.",
+    "example": "Caso real: Rayo x Mallorca - Prejuízo de -37% por não sair no 2º gol"
+  },
+  {
+    "title": "CS em jogos com 1 gol antes dos 10'",
+    "description": "Se o 1º gol sair antes dos 10', as odds de CS já caíram 40-60%. Não compensa entrar — você perdeu o timing.",
+    "example": "Regra: CS só entra pré-live ou após 15' sem gol"
+  },
+  {
+    "title": "Reentrada no mesmo jogo (Martingale)",
+    "description": "Entrar 2x no mesmo jogo tentando 'recuperar' ou 'dobrar' lucro é viés emocional, não análise.",
+    "example": "Caso real: Portuguesa x Palmeiras - Prejuízo de 22%"
+  },
+  {
+    "title": "Operar clássicos e mata-matas",
+    "description": "Evite derbies (PSG x Marseille) e finais de semana de eliminatórias. Jogos táticos e travados.",
+    "example": "Caso real: Arsenal x Liverpool - 0x0, Full red"
+  },
+  {
+    "title": "",
+    "description": "",
+    "example": ""
+  }
+]

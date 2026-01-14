@@ -1,0 +1,47 @@
+[
+    {
+      "titulo": "Over 4.5 Gols",
+      "selecao": "Times ultra-ofensivos (média >3 gols/jogo AMBOS) + Jogo já com 2 ou 3 gols. NUNCA entre em 0x0 ou 1x0.",
+      "entrada": "Entre apenas aos 60-75' com placar de 2x2 ou 2x1. Odd mínima: @2.5. Se placar já está 3x2, entre imediatamente.",
+      "validacao": "Jogo precisa estar ABERTO e com contra-ataques constantes. Se um time recuar, DESISTA — jogo vai 'morrer'.",
+      "lucro": "Saia no 5º gol com 80-100% de lucro. Não espere o 6º — cada minuto após o 5º gol aumenta risco de full time.",
+      "stopLoss": "Se chegar aos 85' sem o 5º gol, aceite -100%. PROIBIDO reentrar ou fazer martingale.",
+      "obs": "ALTA VARIÂNCIA. Stake máx: 3% da banca. CASES REAIS: Roma x Torino — Green aos 88' (2x3), lucro 92%. Stuttgart x Frankfurt — Green aos 87' (3x2). Timing ideal: Entre quando o jogo já está 'pegando fogo'."
+    },
+    {
+      "titulo": "Over 3.5 Gols",
+      "selecao": "Jogos abertos com AMBOS atacando. Times conhecidos por jogos de muitos gols (Bundesliga, Eredivisie).",
+      "entrada": "Entre aos 60-70' com placar 1x1 ou 1x2. Odd mínima @2.5. Se já tem 2 gols antes dos 30', monitore mas não entre ainda.",
+      "validacao": "Jogo precisa estar 'lá e cá' com contra-ataques. Se um time dominar 70%+ de posse, DESISTA — vai virar posse estéril.",
+      "lucro": "Saia no 4º gol com 50-80% de lucro. CASE REAL: Frankfurt x Dortmund — 1x1 aos 60', odd 2.78, green no 1x2 aos 67' (+61%).",
+      "stopLoss": "CASE REAL: Aberdeen x Rangers — Entrou no intervalo odd 4.8, gol de pênalti aos 73' (0x2), full red. Regra: Se chegar aos 75' sem o 4º gol, saia com -40%.",
+      "obs": "Stake máx: 4% da banca. Entrada no INTERVALO é arriscada — espere ver se a pressão continua no 2ºT antes de entrar."
+    },
+    {
+      "titulo": "Over 2.5 Gols",
+      "selecao": "Times ofensivos (média >2 gols/jogo) + Defesas frágeis. EVITE clássicos travados (Arsenal x Liverpool).",
+      "entrada": "Entre aos 60-80' com favorito PERDENDO ou EMPATANDO e odd @2.0+. NUNCA entre em 2x0 cedo — jogo pode 'morrer'.",
+      "validacao": "Já deve ter havido >8 finalizações no jogo. Favorito precisa estar pressionando forte (AP1 > 70). Jogo precisa estar 'corrido'.",
+      "lucro": "Saia no 3º gol com 40-100% de lucro. CASES REAIS: PSG x Marseille (1x1 aos 80', +20%). Atlético x Tigres (1x2 aos 76', +243% com 2 stakes). Newcastle x Bournemouth (+3% no 2x0).",
+      "stopLoss": "Se entrar aos 70' e chegar aos 85' sem gol, aceite -100%. FULL RED casos: Milan x Genoa (1x1 aos 92'), Mali x Senegal (0x1 final), Newcastle x City (0x2 gol aos 97').",
+      "obs": "Stake máx: 5% da banca. Seus melhores greens foram em jogos de 'clássicos locais' (PSG x Marseille) e times latino-americanos ofensivos. EVITE times europeus defensivos."
+    },
+    {
+      "titulo": "Over 1.5 Gols",
+      "selecao": "Jogos equilibrados ou com zebra ganhando. Odd mínima: @2.0 para compensar risco. EVITE jogos muito travados (Arsenal x Liverpool).",
+      "entrada": "TIMING CRÍTICO: Entre aos 70-83' com 0x0 ou 1x0. Suas melhores entradas foram aos 78-83'. NUNCA entre antes dos 60' nesta estratégia.",
+      "validacao": "Jogo precisa estar 'corrido' (ritmo alto, contra-ataques, >6 finalizações). Se jogo está 'morno', DESISTA.",
+      "lucro": "Saia no 2º gol com 40-105% de lucro. GREENS REAIS: Real Oviedo x Betis (+105% aos 83'), Argélia x Nigéria (+40% aos 46'), Al Akhdoud x Al Ahli (+2% aos 71'), Twente x Zwolle (+2% aos 75'), Portuguesa x Palmeiras (+46% aos 65'), Club León x Cruz Azul (+45% aos 47'), Flamengo x Portuguesa (+46% aos 65').",
+      "stopLoss": "Se entrar aos 70' e chegar aos 85-90' sem gol, aceite -100%. FULL REDS: Arsenal x Liverpool (0x0), Sevilla x Celta (0x1 pênalti), PSG x Paris FC (0x1). PROIBIDO reentrar no mesmo jogo.",
+      "obs": "PADRÃO IDENTIFICADO: Taxa de acerto de 70%+ quando entrada é aos 75'+. Stake máx: 5% da banca. NUNCA entre 2x no mesmo jogo (caso Portuguesa x Palmeiras: -22% por ganância)."
+    },
+    {
+      "titulo": "1º Tempo - Over 0.5 Gols",
+      "selecao": "Times ofensivos que costumam marcar cedo. EVITE times que 'estudam' o adversário no 1ºT.",
+      "entrada": "TIMING MÁXIMO: Aos 20-25' com 0x0. Odd mínima @2.0. NUNCA entre após os 30' — risco > retorno.",
+      "validacao": "Deve haver >4 finalizações + 2 ataques perigosos claros. Se jogo está 'morno', DESISTA.",
+      "lucro": "Saia no 1º gol com lucro de 100%+. CASE REAL: Mainz x Heidenheim — Entrada aos 23' odd 2.05, gol aos 28', green.",
+      "stopLoss": "FULL REDS REAIS: Twente x Zwolle (entrada aos 30', 0x0 no intervalo sem acréscimo), Newcastle x City (entrada aos 35' odd 3.08, sem gol). REGRA: Se passar dos 40' sem gol, prejuízo de -100% é INEVITÁVEL.",
+      "obs": "ALTA VARIÂNCIA. Stake máx: 3% da banca. Entrada após os 30' tem taxa de acerto < 30%. Se entrar, que seja aos 20-23' no MÁXIMO."
+    }
+  ]

@@ -1,0 +1,74 @@
+[
+  {
+    "titulo": "Back ao Favorito 'Delayed'",
+    "selecao": "Super Favorito (@1.30 a @1.50) jogando em casa + Zebra recuada (formação defensiva).",
+    "entrada": "Entre aos 15-20' SE: (1) estiver 0x0, (2) odd subiu 15%+ da pré-live, (3) favorito teve 2+ finalizações no gol.",
+    "validacao": "AP1 > 60 + Zebra com formação 5-4-1 ou similar. O favorito deve estar dominando.",
+    "lucro": "Golo do Favorito: A Odd pré @1.40 estará @1.75+. Saia imediatamente com lucro limpo.",
+    "stopLoss": "Golo da Zebra: Se sofrer 0x1, saia com prejuízo máximo de 50%. Não espere correção.",
+    "obs": "Você aposta no mesmo time, mas com odd muito mais lucrativa. Evite se o favorito estiver sem artilheiro titular."
+  },
+  {
+    "titulo": "Correct Score Cruzado (2x1 e 1x2)",
+    "selecao": "Jogos 'Over' com Ambas Marcam. Times ofensivos e defesas frágeis (média >2.5 gols/jogo).",
+    "entrada": "Dutching: Dividir stake entre 2-1 e 1-2 no pré-live ou aos 15-20' se 0x0.",
+    "validacao": "AP1 de ambos somados > 80. O jogo precisa estar 'lá e cá'. Se zebra fizer 1x0, só continue se favorito tiver >5 finalizações.",
+    "lucro": "Sweet Spot no 1x1: Se bater 1x1 entre 60-75', REALIZE 80% da posição. Deixe 20% para o 2x1/1x2.",
+    "stopLoss": "Se chegar aos 80' ainda 0x0 ou 1x0 com AP1 caindo, saia com -30% máximo. Não espere milagre.",
+    "obs": "Ganha na tensão do 3º gol. CRÍTICO: No 1x1, sempre realize lucro parcial. Não seja ganancioso."
+  },
+  {
+    "titulo": "Lay ao Empate (LTD)",
+    "selecao": "Favorito em casa (Odd 1.5-2.0) + Empate < 4.50. Evite clássicos/derbies (times se respeitam no 1ºT).",
+    "entrada": "Aos 20 minutos de jogo com 0x0 no placar.",
+    "validacao": "AP1 > 60 no Delay Ball (Favorito amassando). Se favorito sem artilheiro titular, reduza stake em 50%.",
+    "lucro": "Sai logo após o golo do favorito com 15-25% de lucro.",
+    "stopLoss": "Sai aos 70 minutos se continuar 0x0 (Sem exceção! Aceite o loss de -100%).",
+    "obs": "Responsabilidade máx R$ 4,00 por jogo (20% da banca). Em PSG x Marseille e similares, evite operar."
+  },
+  {
+    "titulo": "Lay 0-1 (Contra a Zebra)",
+    "selecao": "Favorito @1.40 a @1.70 em casa. Zebra com ataque muito fraco (< 0.5 gols/jogo fora).",
+    "entrada": "Pré-Live ou nos primeiros 10 min de jogo.",
+    "validacao": "AP2 (zebra) < 30. A zebra não pode estar contra-atacando. Favorito deve ter >65% de posse.",
+    "lucro": "Favorito marca: Se faz 1-0, o placar 0-1 'morre' e você ganha. Saia com 80-100% de lucro.",
+    "stopLoss": "Zebra marca: Se ficar 0-1, prejuízo máximo de -200%. Saia imediatamente ou espere 1-1 se favorito reagir forte.",
+    "obs": "Alta Taxa de Acerto (70-80%). Você ganha em quase todos os cenários, mas o risco no 0-1 é alto."
+  },
+  {
+    "titulo": "Correct Score 3x1 - 1x3",
+    "selecao": "Favorito claro em casa (@ < 1.40) + Zebra com ataque fraco (xG < 0.8 nos últimos 3 jogos).",
+    "entrada": "Back 3-1 Pré-Live na odd >13.0 OU após 1º gol da zebra (odd dispara). CRÍTICO: Não entre em CS após um gol — a odd cai e você fica preso.",
+    "validacao": "AP1 > 70 no Delay Ball. Favorito precisa estar 'amassando'. EVITE se zebra for forte em casa ou jogo travado.",
+    "lucro": "Melhor cenário: Gol da ZEBRA primeiro (0x1). A odd do 3x1 dispara 70%+ e você sai com lucro imediato. Se favorito faz 1x0, espere até 2x1 para cash out com 40%+.",
+    "stopLoss": "Se favorito fizer 2x0 antes dos 60', SAIA — risco de 3x0/4x0. Se zebra mantém 0x1 após 60', aceite loss de -100% (não espere milagre).",
+    "obs": "DADOS REAIS: Milan x Genoa teve green com gol da zebra aos 28'. Aberdeen x Rangers: Saiu após 1º gol dos Rangers, lucro 14% (evitou -152% se tivesse esperado). NÃO opere CS em jogos travados ou derbies."
+  },
+  {
+    "titulo": "Correct Score 2x2 e 3x2 (Dutching)",
+    "selecao": "Times ofensivos com histórico de jogos abertos (média >2.5 gols). EVITE derbies e clássicos táticos.",
+    "entrada": "Pré-Live ou aos 30-35' com 0x0/1x0. Odds ideais: 2x2 @ >11.0 e 3x2 @ >17.0. Se 1º gol sair antes dos 10', DESISTA (odd já caiu demais).",
+    "validacao": "Ambos times com AP > 40. Jogo precisa estar 'corrido' e aberto. Se um time recuar após gol, saia — risco de 1x0/2x0.",
+    "lucro": "Sweet Spot: No 1x1 entre 45-50' do 1ºT, você tem 100%+ de lucro. SEMPRE realize 70% da posição. No 2x2, saia com 120%+ (não espere o 3x2).",
+    "stopLoss": "Se chegar 2x1 ou 1x2 aos 70'+ sem chances claras de empate, saia com -30%. No 3x1, aceite loss imediato — não há volta.",
+    "obs": "CASE REAL: Barcelona x Madrid — Lucro de 176% no 3x2 após cashout no intervalo (2x2). Al Hilal x Al Nassr: Saiu no 3x1 com 28% (evitou -100% no 3x2). REGRA: Nunca espere o placar exato se já tem 100%+ no 2x2."
+  },
+  {
+    "titulo": "Correct Score 2x1 e 3x2 (Dutching)",
+    "selecao": "Zebra forte em casa + Favorito visitante vulnerável (sem artilheiro titular ou desfalques).",
+    "entrada": "Dutching pré-live ou aos 15-20' se 0x0. Odds mínimas: 2x1 @ >10.0 e 3x2 @ >15.0.",
+    "validacao": "AP2 (zebra) > 50. A zebra precisa estar ATACANDO. Se favorito dominar, SAIA — você apostou no time errado.",
+    "lucro": "Gol da ZEBRA primeiro (1x0): Cash out imediato com 50%+ de lucro. Se favorito empata (1x1), espere o 2x1 mas com stop aos 75'.",
+    "stopLoss": "Se favorito fizer 0x1, saia com -50% máximo. Se chegar 1x1 aos 80', realize lucro parcial (não espere o 2x1).",
+    "obs": "CASE REAL: Al-Nassr x Al-Qadisiyah — Gol da zebra aos 50' (0x1), cash out com lucro. 2º cashout aos 80' no 1x2 (+50%). Stuttgart x Frankfurt: Prejuízo de -1% ao fazer dutching live — EVITE dutching em live, só pré-live."
+  },
+  {
+    "titulo": "Under 3.5 Gols",
+    "selecao": "Ligas de Under (Série B, Ligue 2) ou jogos equilibrados com times defensivos. EVITE times muito ofensivos.",
+    "entrada": "Aos 6-10' com 0x0 ou aos 5-8' após 1º gol (1x0). Odd mínima @1.10. Se já tem 2 gols antes dos 30', DESISTA.",
+    "validacao": "AP1+AP2 < 60 (somatório). Jogo precisa estar 'morno', ritmo lento, sem pressão ofensiva clara.",
+    "lucro": "Meta: 0-5% de lucro. SAIA quando atingir OU no intervalo. GREENS REAIS: Mali x Senegal (0% break-even aos 47' do 1ºT após gol aos 8').",
+    "stopLoss": "REGRA CRÍTICA: Saia IMEDIATAMENTE no 2º gol. Cada gol adicional = +50% de prejuízo. CASE REAL: Rayo x Mallorca — 2º gol aos 30', deveria ter saído. Esperou até os 62', prejuízo de -37%. A partida terminou 2x1 (sem gol no 2ºT).",
+    "obs": "Estratégia de BAIXO RISCO e BAIXO RETORNO. Use stakes fixas pequenas (2-3% da banca). NUNCA faça martingale. Se tomar 1 gol, aceite 10-15% de prejuízo e saia — não espere 'padrão' voltar."
+  }
+]
