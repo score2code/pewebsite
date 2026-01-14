@@ -1,0 +1,100 @@
+[
+  {
+    "id": "14062161",
+    "date": "2026-01-13",
+    "time": "14:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Stuttgart",
+    "awayTeam": "Eintracht Frankfurt",
+    "market": [
+      {"type": "trader", "method": "Back Casa"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "punther", "method": "Over 2.5 Live"}
+    ],
+    "recommended": true,
+    "note": "Confronto direto por vaga europeia. Ambas as equipes possuem ataques verticais. O LTD é forte aqui pois o empate raramente persiste em jogos abertos da Bundesliga."
+  },
+  {
+    "id": "14062154",
+    "date": "2026-01-13",
+    "time": "16:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Werder Bremen",
+    "market": [
+      {"type": "trader", "method": "Back Casa"},
+      {"type": "trader", "method": "Correct Score 3x1"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"},
+      {"type": "punther", "method": "Over 1.5 Live"}
+    ],
+    "recommended": true,
+    "note": "O Dortmund no Signal Iduna Park é muito forte. Se o gol não sair cedo, o Back 'Delayed' oferece valor. A tendência é de vitória do mandante com gols."
+  },
+  {
+    "id": "14062169",
+    "date": "2026-01-13",
+    "time": "16:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Hamburger",
+    "awayTeam": "Bayer 04 Leverkusen",
+    "market": [
+      {"type": "trader", "method": "Correct Score 1x2"},
+      {"type": "punther", "method": "Over 0.5 Gols HT"},
+      {"type": "punther", "method": "BTTS"}
+    ],
+    "recommended": false,
+    "note": "O Leverkusen de Xabi Alonso mantém o favoritismo, mas o Hamburgo em casa costuma ser valente. Lay 0-1 protege contra o gol isolado da zebra."
+  },
+  {
+    "id": "14062156",
+    "date": "2026-01-13",
+    "time": "16:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Mainz 05",
+    "awayTeam": "Heidenheim",
+    "market": [
+      {"type": "trader", "method": "Live"}
+    ],
+    "recommended": false,
+    "note": "Jogo de equilíbrio técnico e defesas postadas. O Under 2.5 é o mercado principal, com o Heidenheim explorando bem o handicap positivo fora de casa."
+  },
+  {
+    "id": "15327737",
+    "date": "2026-01-13",
+    "time": "17:00",
+    "league": "Espanha - Copa del Rey",
+    "homeTeam": "Deportivo La Coruña",
+    "awayTeam": "Atlético Madrid",
+    "market": [
+      {"type": "trader", "method": "Back Visitante"}
+    ],
+    "recommended": true,
+    "note": "Copa do Rei costuma ter rotação de elenco, mas a hierarquia do Atlético deve prevalecer contra o Depor. O Lay 0-1 é seguro para evitar surpresas iniciais."
+  },
+  {
+    "id": "15246970",
+    "date": "2026-01-13",
+    "time": "17:00",
+    "league": "Inglaterra - EFL Cup",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Manchester City",
+    "market": [
+      {"type": "trader", "method": "Live"}
+    ],
+    "recommended": true,
+    "note": "O jogo do dia. Em copas inglesas, City e Newcastle não costumam jogar pelo empate. Intensidade altíssima favorece o LTD e gols no 1º tempo."
+  },
+  {
+    "id": "14787844",
+    "date": "2026-01-13",
+    "time": "17:00",
+    "league": "Itália - Copa",
+    "homeTeam": "Roma",
+    "awayTeam": "Torino",
+    "market": [
+      {"type": "trader", "method": "Over +1.5FT 30+"}
+    ],
+    "recommended": false,
+    "note": "Estilo italiano de mata-mata. Roma favorita, mas o Torino é uma equipe física que amarra o jogo. Se a Roma não marcar cedo, o Under ganha valor."
+  }
+]

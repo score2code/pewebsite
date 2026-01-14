@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Manchester City",
     "confidence": 78,
-    "status": "pending",
-    "analysis": "City com posse dominante e criação constante; Newcastle tende a sofrer em transições defensivas contra ataques posicionais. Valor no resultado final sem recorrer a handicap."
+    "analysis": "City com posse dominante e criação constante; Newcastle tende a sofrer em transições defensivas contra ataques posicionais. Valor no resultado final sem recorrer a handicap.",
+    "status": "green",
+    "reason": "Placar: 0 x 2"
   },
   {
     "id": "stuttgart-x-eintracht-frankfurt",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 80,
-    "status": "pending",
-    "analysis": "Stuttgart agressivo em casa e Frankfurt eficiente em transições; ambas as defesas concedem chances claras. Cenário favorável para gols dos dois lados."
+    "analysis": "Stuttgart agressivo em casa e Frankfurt eficiente em transições; ambas as defesas concedem chances claras. Cenário favorável para gols dos dois lados.",
+    "status": "green",
+    "reason": "Placar: 3 x 2"
   },
   {
     "id": "borussia-dortmund-x-werder-bremen",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 83,
-    "status": "pending",
-    "analysis": "Dortmund com alta produção ofensiva e Bremen vulnerável fora; ritmo de jogo e volume de finalizações sugerem um over sustentável sem necessidade de handicap."
+    "analysis": "Dortmund com alta produção ofensiva e Bremen vulnerável fora; ritmo de jogo e volume de finalizações sugerem um over sustentável sem necessidade de handicap.",
+    "status": "green",
+    "reason": "Placar: 3 x 0"
   },
   {
     "id": "mainz-x-heidenheim",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Mainz (DNB)",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Jogo de margem apertada; Mainz mais sólido em casa e Heidenheim competitivo. DNB reduz variância mantendo boa confiança sem recorrer a handicap."
+    "analysis": "Jogo de margem apertada; Mainz mais sólido em casa e Heidenheim competitivo. DNB reduz variância mantendo boa confiança sem recorrer a handicap.",
+    "status": "green",
+    "reason": "Placar: 2 x 1"
   },
   {
     "id": "hamburger-x-bayer-leverkusen",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 86,
-    "status": "pending",
-    "analysis": "Leverkusen apresenta ataque de elite e impõe ritmo alto; Hamburger concede espaços. Jogo com forte tendência de gols, mantendo alta confiança no over."
+    "analysis": "Leverkusen apresenta ataque de elite e impõe ritmo alto; Hamburger concede espaços. Jogo com forte tendência de gols, mantendo alta confiança no over.",
+    "status": "postponed",
+    "reason": "Adiado"
   },
   {
     "id": "as-roma-x-torino-fc",
@@ -74,8 +79,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: AS Roma (DNB)",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Roma forte no Olímpico e Torino com bloco baixo disciplinado. DNB favorece o mandante, reduzindo risco de empate sem usar handicap."
+    "analysis": "Roma forte no Olímpico e Torino com bloco baixo disciplinado. DNB favorece o mandante, reduzindo risco de empate sem usar handicap.",
+    "status": "red",
+    "reason": "Placar: 2 x 3"
   }
 ]
 

@@ -1,0 +1,22 @@
+[
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-13",
+    "analysis": 30,
+    "stake": 0.50,
+    "odd": 423.72,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "model": "free",
+    "date": "2026-01-13",
+    "analysis": 13,
+    "stake": 0.50,
+    "odd": 12.27,
+    "return": 0,
+    "status": "pending"
+  }
+]

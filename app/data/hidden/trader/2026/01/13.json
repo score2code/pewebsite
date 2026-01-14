@@ -1,0 +1,75 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-13",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Stuttgart",
+    "awayTeam": "Eintracht Frankfurt",
+    "prediction": [
+      "Back: CS: 3x2 - Qualquer outra vitória em casa",
+      "Back: CS: Qualquer outra vitória em casa",
+      "Back: Over 4.5 gols"
+    ],
+    "stake": 3,
+    "odd": 2.68,
+    "return": 4.59,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-13",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Werder Bremen",
+    "prediction": [
+      "Back: CS: 3x1"
+    ],
+    "stake": 1,
+    "odd": 13,
+    "return": 1,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-13",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Mainz 05",
+    "awayTeam": "Heidenheim",
+    "prediction": [
+      "Back: 1º Tempo - Over 0.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2.05,
+    "return": 2.01,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-13",
+    "league": "Inglaterra - EFL Cup",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Manchester City",
+    "prediction": [
+      "Back: 1º Tempo - Over 0.5 gols",
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 2,
+    "odd": 3,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-13",
+    "league": "Itália - Copa",
+    "homeTeam": "Roma",
+    "awayTeam": "Torino",
+    "prediction": [
+      "Back: Over 4.5 gols"
+    ],
+    "stake": 1,
+    "odd": 4,
+    "return": 1.88,
+    "status": "green"
+  }
+]
