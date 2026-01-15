@@ -6,7 +6,7 @@
     "stake": 0.50,
     "odd": 3.69,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -15,7 +15,7 @@
     "stake": 0.50,
     "odd": 19.41,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -24,7 +24,7 @@
     "stake": 0.50,
     "odd": 11.22,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   },
   {
     "type": "bet",
@@ -32,6 +32,60 @@
     "tipster": "Hemerson",
     "stake": 0.50,
     "odd": 2.59,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.65,
+    "return": 1.65,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 2,
+    "return": 2,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.67,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "tipster": "Yuri",
+    "stake": 0.50,
+    "odd": 2,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.72,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "tipster": "Yuri",
+    "stake": 0.50,
+    "odd": 2.12,
     "return": 0,
     "status": "pending"
   }

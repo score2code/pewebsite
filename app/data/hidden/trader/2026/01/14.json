@@ -1,0 +1,128 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Senegal",
+    "awayTeam": "Egito",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 3,
+    "return": 0.76,
+    "status": "cashout"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Wolfsburg",
+    "awayTeam": "St. Pauli",
+    "prediction": [
+      "Back: CS: 3x1"
+    ],
+    "stake": 1,
+    "odd": 20,
+    "return": 1.67,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "league": "Portugal - Taça da Liga",
+    "homeTeam": "Fafe",
+    "awayTeam": "Sporting Braga",
+    "prediction": [
+      "Back: 1º Tempo - Over 0.5 gols"
+    ],
+    "stake": 1,
+    "odd": 2,
+    "return": 1.96,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Koln",
+    "awayTeam": "Bayern Munich",
+    "prediction": [
+      "Back: Match Odds - Bayern Munich"
+    ],
+    "stake": 1.91,
+    "odd": 1.80,
+    "return": 2.52,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Leipzig",
+    "awayTeam": "Freiburg",
+    "prediction": [
+      "Back: CS: Dutching 2x2 e 3x1"
+    ],
+    "stake": 2.30,
+    "odd": 19,
+    "return": 2.73,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Hoffenheim",
+    "awayTeam": "Borussia M'gladbach",
+    "prediction": [
+      "Back: BTTS"
+    ],
+    "stake": 1,
+    "odd": 1.76,
+    "return": 1.76,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "league": "Copa Africana das Nações",
+    "homeTeam": "Nigéria",
+    "awayTeam": "Marrocos",
+    "prediction": [
+      "Back: CS 2x2"
+    ],
+    "stake": 1,
+    "odd": 23,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "league": "Espanha - Copa del Rey",
+    "homeTeam": "Albacete",
+    "awayTeam": "Real Madrid",
+    "prediction": [
+      "Back: Match Odds - Real Madrid"
+    ],
+    "stake": 1,
+    "odd": 2.76,
+    "return": 1.71,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-14",
+    "league": "Brasil - Catarinense - Série A",
+    "homeTeam": "Avaí",
+    "awayTeam": "Carlos Renaux",
+    "prediction": [
+      "Back: Over 1.5 gols"
+    ],
+    "stake": 1,
+    "odd": 1.60,
+    "return": 0,
+    "status": "red"
+  }
+]

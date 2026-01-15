@@ -36,11 +36,13 @@ interface ItemsProps {
   category: string;
   bets: any[];
   tipster?: string;
-  onCalculate?: (total: number) => void;
+  onCalculate?: (params: { currentBankroll: number, entries: number, rollover: number }) => void;
   totalBankroll?: number
+  totalEntries?: number
+  totalRollover?: number
 }
 
-export default async function Items({ category, bets, tipster, onCalculate, totalBankroll }: ItemsProps) {
+export default async function Items({ category, bets, tipster, onCalculate, totalBankroll, totalEntries, totalRollover }: ItemsProps) {
   const transactions = bets.filter(b => b.type === 'transaction');
   const initialAdjust = transactions.filter(t => Boolean(t.affectsInitial)).reduce((s, t) => s + computeTransactionEffect(t), 0);
   const runtimeTrans = transactions.filter(t => !Boolean(t.affectsInitial)).reduce((s, t) => s + computeTransactionEffect(t), 0);
@@ -67,7 +69,7 @@ export default async function Items({ category, bets, tipster, onCalculate, tota
 
   useEffect(() => {
     if(currentBankroll && onCalculate) {
-      onCalculate(currentBankroll);
+      onCalculate({ currentBankroll, entries: totalBets(), rollover: totalStake()  });
     }
   }, [currentBankroll, onCalculate]);
 
@@ -172,30 +174,58 @@ export default async function Items({ category, bets, tipster, onCalculate, tota
               <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
               <div className="flex-1">
                 <div className="text-xs text-dark-900/70 dark:text-light-100/70">Banca inicial</div>
-                <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(initialBankroll)}</div>
+                <div className="font-bold text-blue-700 dark:text-blue-400">{formatCurrencyBRL(initialBankroll)}</div>
               </div>
             </div>
             <div className="hidden md:flex items-center justify-center gap-2 ml-4">
               <span className="text-indigo-400 text-3xl">-</span>
             </div>
-            <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+            <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2 col-span-2">
               <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
               <div className="flex-1">
                 <div className="text-xs text-dark-900/70 dark:text-light-100/70">Custos Pessoais</div>
-                <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(personalStake)}</div>
-              </div>
-            </div>
-            <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
-              <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
-              <div className="flex-1">
-                <div className="text-xs text-dark-900/70 dark:text-light-100/70">Outras Bancas</div>
-                <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(othersBankroll)}</div>
+                <div className="font-bold text-red-700 dark:text-red-400">{formatCurrencyBRL(personalStake)}</div>
               </div>
             </div>
             <div className="hidden md:flex items-center justify-center gap-2 ml-4">
               <span className="text-indigo-400 text-3xl">=</span>
             </div>
-            <div className="rounded-lg  border border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-500/20 p-3 flex items-center gap-2 md:col-span-2">
+            <div className={`rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2  md:col-span-2`}>
+              <TrendingUp size={16} className={`text-blue-700 dark:text-blue-400`} />
+              <div className="flex-1">
+                <div className="text-xs text-dark-900/70 dark:text-light-100/70">Disponível para trabalhar</div>
+                <div className={`font-bold text-blue-700 dark:text-blue-400`}>{formatCurrencyBRL(initialBankroll - personalStake)}</div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div className="rounded-lg border border-pink-200 dark:border-gray-700 bg-gray-50 dark:bg-blue-900/20 p-4 hover:border-purple-400 dark:hover:border-purple-500 mb-2">
+            <h3 className="text-xs font-bold text-dark-900 dark:text-light-100 text-center">Fluxo das bancas</h3>
+          </div>
+          <div className={`grid grid-cols-2 md:grid-cols-4 gap-3 mb-2`}>
+            <div className="rounded-lg border border-light-300 dark:border-dark-600 bg-light-100/50 dark:bg-dark-800/50 p-3 flex items-center gap-2">
+              <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
+              <div className="flex-1">
+                <div className="text-xs text-dark-900/70 dark:text-light-100/70">Total nas Bancas</div>
+                <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(othersBankroll)}</div>
+              </div>
+            </div>
+            <div className="rounded-lg border border-orange-200 dark:border-orange-700 bg-orange-50 dark:bg-orange-900/20 p-3 flex items-center gap-2">
+              <Coins size={16} className="text-orange-700 dark:text-orange-400" />
+              <div className="flex-1">
+                <div className="text-xs text-orange-700 dark:text-orange-400">Total de Volume</div>
+                <div className="font-bold text-orange-700 dark:text-orange-400">{formatCurrencyBRL(totalRollover || 0)}</div>
+              </div>
+            </div>
+            <div className="rounded-lg border border-indigo-200 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-900/20 p-3 flex items-center gap-2">
+              <ListChecks size={16} className="text-indigo-700 dark:text-indigo-400" />
+              <div className="flex-1">
+                <div className="text-xs text-indigo-700 dark:text-indigo-400">Total de Entradas</div>
+                <div className="font-bold text-indigo-700 dark:text-indigo-400">{(totalEntries || 0)}</div>
+              </div>
+            </div>
+            <div className="rounded-lg border border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-500/20 p-3 flex items-center gap-2">
               <CircleDollarSign size={16} className="text-dark-900/70 dark:text-light-100/70" />
               <div className="flex-1">
                 <div className="text-xs text-dark-900/70 dark:text-light-100/70">Total Atual</div>

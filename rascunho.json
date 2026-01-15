@@ -1,7 +1,103 @@
 [
   {
+    "type": "Over 1.5 gols",
+    "game": "Senegal x Egito",
+    "items": [
+      "Entrando nos 46 min do segundo tempo na odd 3",
+      "Gol do senegal aos 77 min (1x0)",
+      "3% de lucro aos 79 min do jogo",
+      "Fazendo cashout aos 85 min, não estou confiando em ter mais 1 gol, só Senegal bem superior e Egito só na defesa",
+      "24% de prejuízo",
+      "A partida terminou 1x0, foi bom sair"
+    ]
+  },
+  {
+    "type": "CS 3x1",
+    "game": "Wolfsburg x St. Pauli",
+    "items": [
+      "Entrando no CS 3x1 aos 1 min na odd 20",
+      "Gol de pênalti do Wolfsburg aos 25 min, no momento aos 29 min no lucro de 43%",
+      "Gol do St. Pauli aos 40 min (1x1)",
+      "Colocando em frebet aos 41 min, o valor que ficar é o mesmo da stake de entrada",
+      "Intervalo, o lucro da freebet esta em 89%",
+      "Fazendo cashout aos 59 min com 70% de lucro",
+      "Gol do Wolfsburg aos 86 min 2x1, e termina neste placar"
+    ]
+  },
+  {
+    "type": "+0.5 HT",
+    "game": "Fafe x porting Braga",
+    "items": [
+      "Entrando aos 25 min na odd 2",
+      "35 min e ainda 0x0, prejuízo de 30%",
+      "Fafe fez o gol aos 41 min, green"
+    ]
+  },
+  {
+    "type": "Match Odds - Bayern Munich",
+    "game": "Koln x Bayern Munich",
+    "items": [
+      "Entrando aos 45 min do primeiro tempo na odd 1.80, com o placar 1x0",
+      "Gol do Bayern Munich aos 48 min do primeiro tempo (1x1)",
+      "Cashout aos 58 min de 4% de lucro",
+      "Entrando novamente no back Bayern aos 64 min na odd 1.80",
+      "Gol aos 70 min do Bayern (1x2), saindo com 60% de lucro"
+    ]
+  },
+  {
+    "type": "CS: Dutching 2x2 e 3x1",
+    "game": "Leipzig x Freiburg",
+    "items": [
+      "Entrando aos 14 min no 2x2 na odd 19.50 e 3x1 na odd 16",
+      "Primeiro tempo terminou 0x0",
+      "Gol aos 53 min do Leipzig (1x0)",
+      "Gol aos 56 min do Leipzig (2x0)",
+      "Fazendo o cashout com lucro 20%"
+    ]
+  },
+  {
+    "type": "BTTS",
+    "game": "Hoffenheim x Borussia M'gladbach",
+    "items": [
+      "Entrando no BTTS aos 15 min na odd 1.80",
+      "Gol de pênalti aos 22 min do Hoffenheim",
+      "Gol aos 24 min do Hoffenheim (2x0)",
+      "Gol aos 46 min do primeiro tempo do Hoffenheim (3x0)",
+      "Gol aos 48 min do primeiro tempo do Hoffenheim (4x0)",
+      "Gol aos 69 min do Borussia M'gladbach (4x1), green"
+    ]
+  },
+  {
+    "type": "CS 2x2",
+    "game": "Nigéria x Marrocos",
+    "items": [
+      "Entrando aos 10 min na odd 22",
+      "Intervalo e ainda 0x0",
+      "A partida encerra em 0x0, full red"
+    ]
+  },
+  {
+    "type": "Match Odds - Real Madrid",
+    "game": "Albacete x Real Madrid",
+    "items": [
+      "Emtrando aos 44 min após o placar 1x0 na odd 2.76",
+      "Gol aos 48 min do primeiro tempo do Real Madrid (1x1)",
+      "Fazendo o cashout no intervalo com o lucro de 74%"
+    ]
+  },
+  {
+    "type": "Over 1.5 gols",
+    "game": "Avaí x Carlos Renaux",
+    "items": [
+      "Entrando aos 69 min, na odd 1.60, placar atual 1x0",
+      "Ter inou 1x0, full red"
+    ]
+  },
+  {
     "type": "",
     "game": "",
-    "items": []
+    "items": [
+      ""
+    ]
   }
 ]

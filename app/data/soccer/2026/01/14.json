@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 79,
-    "status": "pending",
-    "analysis": "Derby londrino de alta intensidade. Chelsea e Arsenal com dinâmica ofensiva forte e linhas defensivas expostas em transições, favorecendo o BTTS com boa margem."
+    "analysis": "Derby londrino de alta intensidade. Chelsea e Arsenal com dinâmica ofensiva forte e linhas defensivas expostas em transições, favorecendo o BTTS com boa margem.",
+    "status": "green",
+    "reason": "Placar: 2x3"
   },
   {
     "id": "wolfsburg-x-st-pauli",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: Wolfsburg",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Wolfsburg mais qualificado tecnicamente e com elenco profundo para copas; St. Pauli competitivo, mas tende a sofrer fora contra pressão e bolas paradas."
+    "analysis": "Wolfsburg mais qualificado tecnicamente e com elenco profundo para copas; St. Pauli competitivo, mas tende a sofrer fora contra pressão e bolas paradas.",
+    "status": "green",
+    "reason": "Placar: 2x1"
   },
   {
     "id": "fc-koln-x-bayern-munich",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Bayern Munich vence o 1º Tempo",
     "confidence": 86,
-    "status": "pending",
-    "analysis": "Bayern inicia jogos com pressão alta e volume ofensivo; Koln costuma ceder chances cedo. Valor em vencer o 1º tempo, mantendo alta confiança."
+    "analysis": "Bayern inicia jogos com pressão alta e volume ofensivo; Koln costuma ceder chances cedo. Valor em vencer o 1º tempo, mantendo alta confiança.",
+    "status": "red",
+    "reason": "Placar: 1º Tempo 1x1"
   },
   {
     "id": "rb-leipzig-x-freiburg",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: RB Leipzig",
     "confidence": 76,
-    "status": "pending",
-    "analysis": "Leipzig com controle territorial e boa criação; Freiburg competitivo, mas inferior fora contra blocos médios e pressão pós-perda. Resultado final favorece o mandante."
+    "analysis": "Leipzig com controle territorial e boa criação; Freiburg competitivo, mas inferior fora contra blocos médios e pressão pós-perda. Resultado final favorece o mandante.",
+    "status": "green",
+    "reason": "Placar: 2x0"
   },
   {
     "id": "hoffenheim-x-borussia-monchengladbach",
@@ -61,8 +65,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 82,
-    "status": "pending",
-    "analysis": "Duas equipes com proposta ofensiva e defesas vulneráveis em bolas cruzadas e transições. Ritmo alto e criação sugerem over com boa confiança."
+    "analysis": "Duas equipes com proposta ofensiva e defesas vulneráveis em bolas cruzadas e transições. Ritmo alto e criação sugerem over com boa confiança.",
+    "status": "green",
+    "reason": "Placar: 5x1"
   }
 ]
 
