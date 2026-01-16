@@ -1,0 +1,10 @@
+[
+  {
+    "type": "transaction",
+    "kind": "deposit",
+    "amount": 6.15,
+    "date": "2026-01-15",
+    "affectsInitial": false,
+    "note": "Correção de valores"
+  }
+]

@@ -67,8 +67,8 @@
     ],
     "stake": 1,
     "odd": 2,
-    "return": 1.02,
-    "status": "pending"
+    "return": 1,
+    "status": "cashout"
   },
   {
     "type": "bet",

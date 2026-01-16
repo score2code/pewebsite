@@ -18,6 +18,7 @@ type BetRow = {
   amount?: number;
   affectsInitial?: boolean;
   note?: string;
+  isDepositFree?: boolean;
 };
 
 export const metadata: Metadata = {

@@ -1,3 +1,106 @@
 [
-
+  {
+    "id": "15327735",
+    "date": "2026-01-15",
+    "time": "17:00",
+    "league": "Espanha - Copa del Rey",
+    "homeTeam": "Racing Santander",
+    "awayTeam": "Barcelona",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "14062165",
+    "date": "2026-01-15",
+    "time": "16:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Augsburg",
+    "awayTeam": "Union Berlin",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "14844296",
+    "date": "2026-01-15",
+    "time": "16:45",
+    "league": "Itália - Série A",
+    "homeTeam": "Como",
+    "awayTeam": "AC Milan",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "14844293",
+    "date": "2026-01-15",
+    "time": "14:30",
+    "league": "Itália - Série A",
+    "homeTeam": "Verona",
+    "awayTeam": "Bologna",
+    "market": [
+      {"type": "trader", "method": "Under 2.5 gols"}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "15268268",
+    "date": "2026-01-15",
+    "time": "17:00",
+    "league": "Países Baixos - Copa",
+    "homeTeam": "Sparta Rotterdam",
+    "awayTeam": "Volendam",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "15187142",
+    "date": "2026-01-15",
+    "time": "14:30",
+    "league": "Turquia - Copa",
+    "homeTeam": "Besiktas",
+    "awayTeam": "Ankara Keciorengucu",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "15183817",
+    "date": "2026-01-15",
+    "time": "16:30",
+    "league": "Bélgica - Copa",
+    "homeTeam": "Anderlecht",
+    "awayTeam": "Gent",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "15298489",
+    "date": "2026-01-15",
+    "time": "21:30",
+    "league": "Colômbia - Copa",
+    "homeTeam": "Junior Barranquilla",
+    "awayTeam": "Independiente Santa Fe",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  }
 ]

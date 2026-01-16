@@ -51,12 +51,13 @@ export default async function Items({ category, bets, tipster, onCalculate, tota
   const totalGreens = (tipster?: string) => bets.filter(b => b.type === 'bet' && b.status === 'green' && (!tipster || b.tipster === tipster)).length;
   const totalOthers = (tipster?: string) => bets.filter(b => b.type === 'bet' && b.status !== 'green' && b.status !== 'red' && b.status !== 'pending' && (!tipster || b.tipster === tipster)).length;
   const totalStake = (tipster?: string) => bets.filter(b => b.status !== 'pending' && b.type !== 'transaction' && (!tipster || b.tipster === tipster)).reduce((sum, b) => sum + (b.stake || 0), 0);
-  const totalReturn = (tipster?: string) => bets.filter(b => b.status !== 'pending' && b.type !== 'transaction' && (!tipster || b.tipster === tipster)).reduce((sum, b) => sum + (b.return || 0), 0) - totalStake(tipster);
-  const currentBankroll = initialAdjust + totalReturn(tipster) + runtimeTrans
+  const depositFree = bets.filter(b => b.type === 'transaction' && b.kind == 'deposit' && b.isDepositFree === true).reduce((sum, b) => sum + (b.amount || 0), 0);
+  const totalReturn = (tipster?: string) => bets.filter(b => b.status !== 'pending' && b.type !== 'transaction' && (!tipster || b.tipster === tipster)).reduce((sum, b) => sum + (b.return || 0), 0) - (totalStake(tipster) - depositFree);
+  const currentBankroll = initialAdjust + totalReturn(tipster) + runtimeTrans - depositFree
 
   const returnClass = `${totalReturn(tipster) > 0 ? 'text-green-700 dark:text-green-400' : totalReturn(tipster) < 0 ? 'text-red-700 dark:text-red-400' : 'text-dark-900/70 dark:text-light-100/70'}`
   const bankrollClass = `${(initialAdjust + totalReturn(tipster)) > initialAdjust ? 'text-green-700 dark:text-green-400' : (initialAdjust + totalReturn(tipster)) < initialAdjust ? 'text-red-700 dark:text-red-400' : 'text-dark-900/70 dark:text-light-100/70'}`
-  const finalClass = `${(currentBankroll + totalBankroll) > currentBankroll ? 'text-green-700 dark:text-green-400' : (currentBankroll + totalBankroll) < currentBankroll ? 'text-red-700 dark:text-red-400' : 'text-dark-900/70 dark:text-light-100/70'}`
+  const finalClass = `${(currentBankroll + (totalBankroll || 0)) > currentBankroll ? 'text-green-700 dark:text-green-400' : (currentBankroll + (totalBankroll || 0)) < currentBankroll ? 'text-red-700 dark:text-red-400' : 'text-dark-900/70 dark:text-light-100/70'}`
   let personalStake = 0;
   let othersBankroll = 0;
   let initialBankroll = 0;
@@ -114,7 +115,7 @@ export default async function Items({ category, bets, tipster, onCalculate, tota
           <Banknote size={16} className="text-dark-900/70 dark:text-light-100/70" />
           <div className="flex-1">
             <div className="text-xs text-dark-900/70 dark:text-light-100/70">Banca Atual</div>
-            <div className={`font-bold ${bankrollClass}`}>{formatCurrencyBRL(initialAdjust + totalReturn(tipster) + runtimeTrans)}</div>
+            <div className={`font-bold ${bankrollClass}`}>{formatCurrencyBRL(initialAdjust + totalReturn(tipster) + runtimeTrans - depositFree)}</div>
           </div>
         </div>
         )}
@@ -229,7 +230,7 @@ export default async function Items({ category, bets, tipster, onCalculate, tota
               <CircleDollarSign size={16} className="text-dark-900/70 dark:text-light-100/70" />
               <div className="flex-1">
                 <div className="text-xs text-dark-900/70 dark:text-light-100/70">Total Atual</div>
-                <div className={`font-bold ${finalClass}`}>{formatCurrencyBRL(currentBankroll + (totalBankroll || 0))}</div>
+                <div className={`font-bold ${finalClass} ${depositFree}`}>{formatCurrencyBRL(currentBankroll + (totalBankroll || 0))}</div>
               </div>
             </div>
           </div>

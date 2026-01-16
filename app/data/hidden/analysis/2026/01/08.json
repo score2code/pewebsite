@@ -5,7 +5,8 @@
     "amount": 2,
     "date": "2026-01-08",
     "affectsInitial": true,
-    "note": "Super Spin"
+    "note": "Super Spin",
+    "isDepositFree": true
   },
   {
     "type": "bet",

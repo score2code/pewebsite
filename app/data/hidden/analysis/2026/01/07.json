@@ -5,7 +5,8 @@
     "amount": 4,
     "date": "2026-01-07",
     "affectsInitial": true,
-    "note": "Supercoins"
+    "note": "Supercoins",
+    "isDepositFree": true
   },
   {
     "type": "bet",
@@ -34,8 +35,8 @@
     "analysis": 19,
     "stake": 0.50,
     "odd": 1910.97,
-    "return": 0,
-    "status": "pending"
+    "return": 22.02,
+    "status": "cashout"
   },
   {
     "type": "bet",
@@ -44,8 +45,8 @@
     "analysis": 19,
     "stake": 0.50,
     "odd": 167.27,
-    "return": 0,
-    "status": "pending"
+    "return": 5.68,
+    "status": "cashout"
   },
   {
     "type": "bet",

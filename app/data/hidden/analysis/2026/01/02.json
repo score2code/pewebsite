@@ -45,6 +45,7 @@
     "amount": 5,
     "date": "2026-01-02",
     "affectsInitial": true,
-    "note": "Apostas Grátis - Sexta-feira "
+    "note": "Apostas Grátis - Sexta-feira",
+    "isDepositFree": true
   }
 ]

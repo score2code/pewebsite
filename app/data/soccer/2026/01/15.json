@@ -9,8 +9,9 @@
     "timezone": "UTC",
     "prediction": "Ambas as Equipes Marcam: Sim (BTTS)",
     "confidence": 74,
-    "status": "pending",
-    "analysis": "Augsburg pressiona em casa e o Union explora transições rápidas; ambas criam chances claras e tendem a marcar ao menos uma vez."
+    "analysis": "Augsburg pressiona em casa e o Union explora transições rápidas; ambas criam chances claras e tendem a marcar ao menos uma vez.",
+    "status": "green",
+    "reason": "Placar: 1x1"
   },
   {
     "id": "deportivo-toluca-x-santos-laguna",
@@ -22,8 +23,9 @@
     "timezone": "UTC",
     "prediction": "Total de Gols: Mais de 2.5",
     "confidence": 82,
-    "status": "pending",
-    "analysis": "Liga MX com jogos abertos; Toluca e Santos têm ataques móveis e defesas que concedem espaços. Ritmo e volume indicam over 2.5 com boa confiança."
+    "analysis": "Liga MX com jogos abertos; Toluca e Santos têm ataques móveis e defesas que concedem espaços. Ritmo e volume indicam over 2.5 com boa confiança.",
+    "status": "green",
+    "reason": "Placar: 3x1"
   },
   {
     "id": "uanl-tigres-x-unam-pumas",
@@ -35,8 +37,9 @@
     "timezone": "UTC",
     "prediction": "Resultado Final: UANL Tigres",
     "confidence": 81,
-    "status": "pending",
-    "analysis": "Tigres com elenco superior e controle de posse em casa; Pumas sente o ambiente e tende a sofrer em bolas paradas e ataques posicionais."
+    "analysis": "Tigres com elenco superior e controle de posse em casa; Pumas sente o ambiente e tende a sofrer em bolas paradas e ataques posicionais.",
+    "status": "red",
+    "reason": "Placar: 0x1"
   },
   {
     "id": "anderlecht-x-gent",
@@ -48,8 +51,9 @@
     "timezone": "UTC",
     "prediction": "Empate Anula Aposta: Anderlecht (DNB)",
     "confidence": 75,
-    "status": "pending",
-    "analysis": "Jogo equilibrado, mas Anderlecht apresenta solidez em casa e melhor controle territorial. DNB reduz variância mantendo valor no mandante."
+    "analysis": "Jogo equilibrado, mas Anderlecht apresenta solidez em casa e melhor controle territorial. DNB reduz variância mantendo valor no mandante.",
+    "status": "green",
+    "reason": "Placar: 1x0"
   }
 ]
 

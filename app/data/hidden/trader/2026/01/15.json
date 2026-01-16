@@ -1,0 +1,45 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-15",
+    "league": "Itália - Série A",
+    "homeTeam": "Verona",
+    "awayTeam": "Bologna",
+    "prediction": [
+      "Back: Under 0.5 gols",
+      "Lay: CS 1x2"
+    ],
+    "stake": 3,
+    "odd": 8.6,
+    "return": 3.90,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-15",
+    "league": "Espanha - Copa del Rey",
+    "homeTeam": "Racing Santander",
+    "awayTeam": "Barcelona",
+    "prediction": [
+      "Back: Match Odds - Barcelona"
+    ],
+    "stake": 6,
+    "odd": 1.50,
+    "return": 8.01,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-15",
+    "league": "Brasil - Paulista - Série A1",
+    "homeTeam": "São Paulo",
+    "awayTeam": "São Bernardo",
+    "prediction": [
+      "Back: Match Odds - São Paulo"
+    ],
+    "stake": 3,
+    "odd": 2.50,
+    "return": 6.16,
+    "status": "green"
+  }
+]

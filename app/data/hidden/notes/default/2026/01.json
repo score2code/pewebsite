@@ -3,9 +3,65 @@
     "title": "Match Odds",
     "notes": [
       {
-        "game": "",
+        "game": "Koln x Bayern Munich",
         "items": [
-          ""
+          "Entrando aos 45 min do primeiro tempo na odd 1.80, com o placar 1x0, à favor do Bayern",
+          "Gol do Bayern Munich aos 48 min do primeiro tempo (1x1)",
+          "Cashout aos 58 min de 4% de lucro",
+          "Entrando novamente no back Bayern aos 64 min na odd 1.80",
+          "Gol aos 70 min do Bayern (1x2), saindo com 60% de lucro"
+        ]
+      },
+      {
+        "game": "Albacete x Real Madrid",
+        "items": [
+          "Emtrando aos 44 min após o placar 1x0 na odd 2.76, à favor do Real Madrid",
+          "Gol aos 48 min do primeiro tempo do Real Madrid (1x1)",
+          "Fazendo o cashout no intervalo com o lucro de 74%"
+        ]
+      },
+      {
+        "game": "Racing Santander x Barcelona",
+        "items": [
+          "Entrando aos 60 min na odd 1.50, à favor do Barcelona",
+          "Gol do Barcelona aos 66 min (0x1)",
+          "Fazendo o cashout com lucro de 70%"
+        ]
+      },
+      {
+        "game": "São Paulo x São Bernardo",
+        "items": [
+          "Entrando aos 27 min na odd 2, à favor do São Paulo",
+          "Na odd 3.50, entrando com mais uma stake aos 60 min",
+          "Gol aos 79 min, saindo com 110% de lucro"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Ambas marcam",
+    "notes": [
+      {
+        "game": "Hoffenheim x Borussia M'gladbach",
+        "items": [
+          "Entrando no BTTS aos 15 min na odd 1.80",
+          "Gol de pênalti aos 22 min do Hoffenheim",
+          "Gol aos 24 min do Hoffenheim (2x0)",
+          "Gol aos 46 min do primeiro tempo do Hoffenheim (3x0)",
+          "Gol aos 48 min do primeiro tempo do Hoffenheim (4x0)",
+          "Gol aos 69 min do Borussia M'gladbach (4x1), green"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lay 1x2",
+    "notes": [
+      {
+        "game": "Verona x Bologna",
+        "items": [
+          "Entrando aos 40 min na odd 6 e stake 2, placar atual 1x2",
+          "Gol aos 43 min do Bologna 1x3, green"
         ]
       }
     ]
@@ -80,6 +136,16 @@
           "Penalti para a Inter aos 70 min",
           "Gol marcado, 2x1, saindo com 40.5% de lucro se terminar 2x2, 167.5% de lucro se terminar 3x1 e qualquer outro placar, 42.5% de lucro da entrada inicial do dutching",
           "Napoli empata em 2x2 aos 81 min"
+        ]
+      },
+      {
+        "game": "Leipzig x Freiburg",
+        "items": [
+          "Entrando aos 14 min no 2x2 na odd 19.50 e 3x1 na odd 16",
+          "Primeiro tempo terminou 0x0",
+          "Gol aos 53 min do Leipzig (1x0)",
+          "Gol aos 56 min do Leipzig (2x0)",
+          "Fazendo o cashout com lucro 20%"
         ]
       }
     ]
@@ -214,6 +280,18 @@
           "Aos 16 min, com 29% de lucro",
           "Aos 17 min entrando no freebet, se terminar 3x1, será 300% de lucro da stake"
         ]
+      },
+      {
+        "game": "Wolfsburg x St. Pauli",
+        "items": [
+          "Entrando no CS 3x1 aos 1 min na odd 20",
+          "Gol de pênalti do Wolfsburg aos 25 min, no momento aos 29 min no lucro de 43%",
+          "Gol do St. Pauli aos 40 min (1x1)",
+          "Colocando em frebet aos 41 min, o valor que ficar é o mesmo da stake de entrada",
+          "Intervalo, o lucro da freebet esta em 89%",
+          "Fazendo cashout aos 59 min com 70% de lucro",
+          "Gol do Wolfsburg aos 86 min 2x1, e termina neste placar"
+        ]
       }
     ]
   },
@@ -225,6 +303,14 @@
         "items": [
           "Ia entrar mas aos 8 min saiu 1 gol do Stuttgart (0x1) e a odd caiu, esperando subir novamente",
           "Aos 28 min, Stuttgart fez o segundo (0x2), desisti da entrada - jogo muito desequilibrado"
+        ]
+      },
+      {
+        "game": "Nigéria x Marrocos",
+        "items": [
+          "Entrando aos 10 min na odd 22",
+          "Intervalo e ainda 0x0",
+          "A partida encerra em 0x0, full red"
         ]
       }
     ]
@@ -278,6 +364,18 @@
           "Era para ter saído no máximo no segundo gol.",
           "Saindo aos 62 min, com 37% de prejuízo.",
           "A partida terminou 2x1 e não teve gol no segundo tempo"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Under 0.5 gols",
+    "notes": [
+      {
+        "game": "Verona x Bologna",
+        "items": [
+          "Entrando aos 8 min na odd 8.6",
+          "Gol aos 13 min do Verona, full red"
         ]
       }
     ]
@@ -470,6 +568,24 @@
           "Entrando aos 65 min na odd 2.66, para proteger o CS",
           "Partida termina 0x1, full red"
         ]
+      },
+      {
+        "game": "Senegal x Egito",
+        "items": [
+          "Entrando nos 46 min do segundo tempo na odd 3",
+          "Gol do senegal aos 77 min (1x0)",
+          "3% de lucro aos 79 min do jogo",
+          "Fazendo cashout aos 85 min, não estou confiando em ter mais 1 gol, só Senegal bem superior e Egito só na defesa",
+          "24% de prejuízo",
+          "A partida terminou 1x0, foi bom sair"
+        ]
+      },
+      {
+        "game": "Avaí x Carlos Renaux",
+        "items": [
+          "Entrando aos 69 min, na odd 1.60, placar atual 1x0",
+          "Ter inou 1x0, full red"
+        ]
       }
     ]
   },
@@ -495,6 +611,14 @@
         "items": [
           "Entrando aos 23 min na odd 2.05",
           "Gol aos 28 min do Mainz 05, green"
+        ]
+      },
+      {
+        "game": "Fafe x porting Braga",
+        "items": [
+          "Entrando aos 25 min na odd 2",
+          "35 min e ainda 0x0, prejuízo de 30%",
+          "Fafe fez o gol aos 41 min, green"
         ]
       }
     ]
