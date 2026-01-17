@@ -1,0 +1,38 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-16",
+    "tipster": "Yuri",
+    "stake": 1,
+    "odd": 1.61,
+    "return": 1.61,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-16",
+    "tipster": "Hemerson",
+    "stake": 1,
+    "odd": 2.02,
+    "return": 0,
+    "status": "red"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-16",
+    "tipster": "Rafaela",
+    "stake": 0.50,
+    "odd": 1.77,
+    "return": 0.89,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-16",
+    "tipster": "Hemerson",
+    "stake": 0.50,
+    "odd": 4.98,
+    "return": 0,
+    "status": "red"
+  }
+]

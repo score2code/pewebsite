@@ -1,0 +1,121 @@
+[
+  {
+    "id": "14064464",
+    "date": "2026-01-16",
+    "time": "17:00",
+    "league": "França - Lingue 1",
+    "homeTeam": "PSG",
+    "awayTeam": "Lille",
+    "market": [
+      {"type": "trader", "method": "Lay 0-1 (Contra a Zebra)"},
+      {"type": "trader", "method": "Correct Score 3x1"},
+      {"type": "trader", "method": "Back ao Favorito"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "punter", "method": "DNB (Empate Anula) Favorito"}
+    ],
+    "recommended": true,
+    "note": "O PSG é o favorito absoluto pelo controle total do jogo (70% de posse) e histórico de 4 vitórias seguidas em casa contra o Lille. Embora o Lille tenha um ataque eficiente (1.9 gols/jogo), sua defesa e indisciplina (5 vermelhos) são vulneráveis ao volume de chances do PSG (6.8 chutes no alvo). A estatística sugere um jogo com muitos gols e vitória do mandante, mantendo o padrão de 'Ambas Marcam'."
+  },
+  {
+    "id": "14064463",
+    "date": "2026-01-16",
+    "time": "15:00",
+    "league": "França - Lingue 1",
+    "homeTeam": "Mônaco",
+    "awayTeam": "Lorient",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "14288930",
+    "date": "2026-01-16",
+    "time": "17:15",
+    "league": "Portugal - Primeira Liga",
+    "homeTeam": "Sporting Lisboa",
+    "awayTeam": "Casa Pia",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "14083229",
+    "date": "2026-01-16",
+    "time": "17:00",
+    "league": "Espanha - La Liga",
+    "homeTeam": "Espanyol",
+    "awayTeam": "Girona",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "14062174",
+    "date": "2026-01-16",
+    "time": "16:30",
+    "league": "Alemanha - Bundesliga",
+    "homeTeam": "Werder Bremen",
+    "awayTeam": "Eintracht Frankfurt",
+    "market": [
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "trader", "method": "Correct Score Cruzado (2x1 e 1x2)"},
+      {"type": "trader", "method": "Back ao Favorito"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "punter", "method": "Over 1.5 Live"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "O jogo coloca frente a frente o Frankfurt, com ataque potente (2,1 gols/jogo), contra um Bremen indisciplinado e com defesa vazada. O histórico no estádio do Bremen é de muitos gols (média 4,0) e equilíbrio, mas a fase atual de ambas as defesas é crítica. A expectativa estatística é de um confronto com Ambas Marcam e Over 2.5 gols, dado que os dois times sofrem cerca de 2 gols por partida."
+  },
+  {
+    "id": "14771944",
+    "date": "2026-01-16",
+    "time": "14:30",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Ittihad",
+    "awayTeam": "Al Ettifaq",
+    "market": [
+      {"type": "trader", "method": "Back ao Favorito"},
+      {"type": "trader", "method": "Lay ao Empate (LTD)"},
+      {"type": "trader", "method": "Correct Score 3x1"},
+      {"type": "punter", "method": "DH (Favorito) + Over 1.5"},
+      {"type": "punter", "method": "Over 0.5 Gols HT"},
+      {"type": "punter", "method": "Favorito Marcar no 2º Tempo"}
+    ],
+    "recommended": true,
+    "note": "O Al-Ittihad é favorito pelo domínio técnico (63,2% de posse) e solidez em casa (0 gols sofridos nos últimos jogos), contra um Al-Ettifaq que marca muito fora (2,3 gols/jogo), mas falha defensivamente. O histórico aponta para um jogo aberto (média de 3,75 gols), tornando métodos de Back Favorito e Over Gols os mais consistentes. O risco reside na indisciplina do Ittihad (4 cartões vermelhos), único fator que pode equilibrar as estatísticas de volume ofensivo."
+  },
+  {
+    "id": "14056482",
+    "date": "2026-01-16",
+    "time": "16:00",
+    "league": "Países Baixos - Eerste Divisie",
+    "homeTeam": "ADO Den Haag",
+    "awayTeam": "Cambuur",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  },
+  {
+    "id": "14032380",
+    "date": "2026-01-16",
+    "time": "16:45",
+    "league": "Bélgica - Pro League",
+    "homeTeam": "Club Brugge",
+    "awayTeam": "RAAL La Louviere",
+    "market": [
+      {"type": "trader", "method": ""}
+    ],
+    "recommended": false,
+    "note": ""
+  }
+]

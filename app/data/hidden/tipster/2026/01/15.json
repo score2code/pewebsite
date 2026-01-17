@@ -59,8 +59,8 @@
     "tipster": "Rafaela",
     "stake": 0.50,
     "odd": 3.01,
-    "return": 0,
-    "status": "pending"
+    "return": 1.51,
+    "status": "green"
   },
   {
     "type": "bet",
@@ -69,6 +69,6 @@
     "stake": 1,
     "odd": 1.56,
     "return": 0,
-    "status": "pending"
+    "status": "red"
   }
 ]

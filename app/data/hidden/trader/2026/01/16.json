@@ -1,0 +1,30 @@
+[
+  {
+    "type": "bet",
+    "date": "2026-01-16",
+    "league": "Arábia Saudita - Pro League",
+    "homeTeam": "Al Ittihad",
+    "awayTeam": "Al Ettifaq",
+    "prediction": [
+      "Back: CS 2x2"
+    ],
+    "stake": 1,
+    "odd": 46,
+    "return": 1.27,
+    "status": "green"
+  },
+  {
+    "type": "bet",
+    "date": "2026-01-16",
+    "league": "França - Lingue 1",
+    "homeTeam": "PSG",
+    "awayTeam": "Lille",
+    "prediction": [
+      "Back: Over 2.5 gols"
+    ],
+    "stake": 2,
+    "odd": 2.56,
+    "return": 3.15,
+    "status": "green"
+  }
+]
